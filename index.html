@@ -126,6 +126,8 @@
   <button class="sbLink" type="button" data-view="customtests"><span class="sbIc"><svg class="ic" aria-hidden="true"><use href="#i-pen"/></svg></span><span class="sbLabel">Custom tests</span></button>
   <button class="sbLink" type="button" id="sbRevision" data-view="revision"><span class="sbIc"><svg class="ic" aria-hidden="true"><use href="#i-repeat"/></svg></span><span class="sbLabel">Revision</span><span class="sbBadge" id="sbRevBadge" style="display:none"></span></button>
   <button class="sbLink" type="button" data-view="factcards"><span class="sbIc"><svg class="ic" aria-hidden="true"><use href="#i-cards"/></svg></span><span class="sbLabel">Fact Cards</span><span class="fcFunTag">Fun</span></button>
+  <div class="sbSec">NCRTC D01</div>
+  <button class="sbLink" type="button" data-view="ncrtc"><span class="sbIc"><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg></span><span class="sbLabel">NCRTC MCQs</span></button>
   <div class="sbSec">Learn</div>
   <button class="sbLink" type="button" data-view="warmup"><span class="sbIc"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg></span><span class="sbLabel">Warm-Up</span></button>
   <button class="sbLink" type="button" data-view="drills"><span class="sbIc"><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg></span><span class="sbLabel">Lessons &amp; drills</span></button>
@@ -167,6 +169,8 @@
     <button class="mrow" type="button" data-view="customtests"><span><svg class="ic" aria-hidden="true"><use href="#i-pen"/></svg>Custom tests</span><span class="mval"><svg class="ic" aria-hidden="true"><use href="#i-chev-right"/></svg></span></button>
     <button class="mrow" type="button" data-view="revision"><span><svg class="ic" aria-hidden="true"><use href="#i-repeat"/></svg>Revision</span><span class="mval" id="drawerRevDue"></span></button>
     <button class="mrow" type="button" data-view="factcards"><span><svg class="ic" aria-hidden="true"><use href="#i-cards"/></svg>Fact Cards</span><span class="mval"><svg class="ic" aria-hidden="true"><use href="#i-chev-right"/></svg></span></button>
+    <h3 class="drawerH">NCRTC D01</h3>
+    <button class="mrow" type="button" data-view="ncrtc"><span><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg>NCRTC MCQs</span><span class="mval"><svg class="ic" aria-hidden="true"><use href="#i-chev-right"/></svg></span></button>
     <h3 class="drawerH">Learn</h3>
     <button class="mrow" type="button" data-view="warmup"><span><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg>Warm-Up</span><span class="mval"><svg class="ic" aria-hidden="true"><use href="#i-chev-right"/></svg></span></button>
     <button class="mrow" type="button" data-view="drills"><span><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg>Lessons &amp; drills</span><span class="mval"><svg class="ic" aria-hidden="true"><use href="#i-chev-right"/></svg></span></button>
@@ -942,6 +946,35 @@
   </div>
 </section>
 
+<section class="view" id="view-ncrtc">
+  <div class="navBackRow"><button class="pill navBackBtn" type="button"><svg class="ic" aria-hidden="true"><use href="#i-chev-left"/></svg>Back</button></div>
+  <h1>NCRTC — Supervisor-I (Operations) D01</h1>
+  <div id="ncBody"><p class="sub">Loading tests…</p></div>
+  <div id="ncRunner" style="display:none">
+    <div class="ncWrap">
+      <div class="card ncQCard">
+        <div class="ncMeta"><strong id="ncTestTitle"></strong></div>
+        <p class="sub" id="ncProgress" style="margin:4px 0 0"></p>
+        <div class="ncQText" id="ncQText"></div>
+        <div class="ncOpts" id="ncOpts"></div>
+        <div class="ncNavRow">
+          <button class="pill" type="button" id="ncPrevBtn">← Previous</button>
+          <button class="pill" type="button" id="ncNextBtn">Next →</button>
+          <button class="btn" type="button" id="ncSubmitBtn" style="margin-left:auto">Submit test</button>
+          <button class="pill" type="button" id="ncQuitBtn">Quit</button>
+        </div>
+      </div>
+      <div class="card ncPalCard">
+        <strong>Question palette</strong>
+        <div class="ncPalette" id="ncPalette"></div>
+        <div class="ncPalSummary" id="ncPalSummary"></div>
+        <div class="ncLegend"><span><span class="ncDot" style="background:var(--primary)"></span>Attempted</span><span><span class="ncDot" style="background:var(--surface3)"></span>Not attempted</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="ncResult" style="display:none"></div>
+</section>
+
 </main>
 
 <nav class="bottomNav" aria-label="Quick navigation">
@@ -981,7 +1014,7 @@
     <a href="rrb-ntpc-typing-test/">RRB NTPC</a>
   </div>
   <div class="footBottom">
-    <span>© 2026 TypeSetu · v8</span>
+    <span>© 2026 TypeSetu · v9</span>
     <span>Practice tool — not affiliated with SSC, RRB or Delhi Police.</span>
   </div>
 </footer>
@@ -1003,6 +1036,8 @@
 <script src="assets/js/revision-drills.js"></script>
 
 <script src="assets/js/fact-cards.js"></script>
+
+<script src="assets/js/ncrtc.js"></script>
 
 <script src="assets/js/navigation.js"></script>
 
