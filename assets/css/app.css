@@ -944,3 +944,32 @@ body:not([data-screen="home"]) .footBottom{margin-top:0}
 .warmCard{border-left:4px solid var(--acc,var(--primary))}
 #remLauncher .setGroup{margin-top:2px}
 @media(prefers-reduced-motion:reduce){ .optGear,.partHead{transition:none} }
+
+/* ===== Push 5 — Eku motivation overlay (v8) ===== */
+/* Shown for ~3.8s after an HCM mock / Custom Test, before the result.
+   The finished result is computed first and held behind it (.motivHold). */
+.motivOverlay{display:none;position:fixed;inset:0;z-index:65;background:rgba(13,15,18,.78);-webkit-backdrop-filter:blur(7px) saturate(1.2);backdrop-filter:blur(7px) saturate(1.2);align-items:center;justify-content:center;padding:24px 18px;cursor:pointer;text-align:center}
+.motivOverlay.show{display:flex}
+.motivInner{position:relative;max-width:560px;background:radial-gradient(ellipse at 50% 38%,rgba(217,122,11,.16),transparent 65%);border-radius:var(--r-xl);padding:28px 22px}
+.motivTag{font-size:11px;letter-spacing:.22em;font-weight:700;color:rgba(247,246,243,.62);text-transform:uppercase;margin-bottom:14px}
+.motivLine{animation:motivPop 3.8s ease-in-out both}
+.motivName{display:block;font-size:clamp(36px,8vw,50px);font-weight:800;line-height:1.05;background:linear-gradient(92deg,#d97a0b,#db2777 48%,#2b45c8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+:root[data-theme="dark"] .motivName{background:linear-gradient(92deg,#f0a13c,#f0568c 48%,#7d92ff);-webkit-background-clip:text;background-clip:text}
+.motivMsg{display:block;margin-top:10px;font-size:clamp(20px,5vw,27px);font-weight:700;line-height:1.3;color:#f7f6f3}
+.motivDots{position:absolute;inset:0;pointer-events:none}
+.motivDots i{position:absolute;width:7px;height:7px;border-radius:50%;animation:motivFloat 3.4s ease-in-out infinite}
+.motivDots i:nth-child(1){left:12%;top:22%;background:#d97a0b}
+.motivDots i:nth-child(2){left:84%;top:28%;background:#db2777;animation-delay:.5s}
+.motivDots i:nth-child(3){left:20%;top:74%;background:#5b7cff;animation-delay:1s}
+.motivDots i:nth-child(4){left:78%;top:70%;background:#45c283;animation-delay:1.4s}
+.motivDots i:nth-child(5){left:50%;top:12%;background:#a78bfa;animation-delay:.8s;width:5px;height:5px}
+.motivBar{margin:18px auto 0;width:120px;height:4px;border-radius:2px;background:rgba(247,246,243,.22);overflow:hidden}
+.motivBar i{display:block;height:100%;width:40%;border-radius:2px;background:linear-gradient(90deg,#d97a0b,#db2777);animation:motivSlide 1.4s ease-in-out infinite alternate}
+.motivSkip{margin-top:14px;font-size:12.5px;color:rgba(247,246,243,.6)}
+.resultBox.motivHold{visibility:hidden}
+@keyframes motivPop{0%{transform:scale(.86);opacity:0}10%{transform:scale(1.04);opacity:1}17%{transform:scale(1)}88%{opacity:1}100%{transform:scale(.98);opacity:.3}}
+@keyframes motivFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+@keyframes motivSlide{from{transform:translateX(-30%)}to{transform:translateX(190%)}}
+@media(prefers-reduced-motion:reduce){ .motivLine,.motivDots i,.motivBar i{animation:none} }
+/* "New" tag on freshly added HCM hub mocks (saffron, dtag family) */
+.d-new{background:var(--saffron);color:#fff;font-weight:700;margin-left:8px;vertical-align:2px}
