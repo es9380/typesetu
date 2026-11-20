@@ -146,6 +146,7 @@ function submitTest(){
 }
 function doSubmit(){
   var qs=cur.data.questions, score=0;
+  var skipped=cur.answers.filter(function(a){return a===null;}).length;
   qs.forEach(function(q,i){ if(cur.answers[i]===q.answer) score++; });
   cur.score=score; cur.submitted=true;
   saveBest(cur.test.id,score,qs.length);
@@ -154,7 +155,7 @@ function doSubmit(){
   var pct=Math.round(100*score/qs.length);
   var html='<div class="card ncScoreCard"><h2>'+esc(cur.test.title)+"</h2>"+
     '<div class="ncScoreBig">'+score+" / "+qs.length+'</div>'+
-    '<div class="ncScorePct">'+pct+'% · Correct '+score+' · Wrong '+(qs.filter(function(q,i){return cur.answers[i]!==null&&cur.answers[i]!==q.answer;}).length)+' · Skipped '+un+"</div>"+
+    '<div class="ncScorePct">'+pct+'% · Correct '+score+' · Wrong '+(qs.filter(function(q,i){return cur.answers[i]!==null&&cur.answers[i]!==q.answer;}).length)+' · Skipped '+skipped+"</div>"+
     '<div class="ncCardBtns"><button class="btn" type="button" id="ncRetakeBtn">Retake test</button>'+
     '<button class="pill" type="button" id="ncBackBtn">All tests</button></div></div>';
   html+='<h2 class="ncCatHead">Review — every question with explanation</h2>';
