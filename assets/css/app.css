@@ -1018,3 +1018,6 @@ body:not([data-screen="home"]) .footBottom{margin-top:0}
 .ncROpt.yourWrong{background:var(--redSoft);border-color:var(--red)}
 .ncMark{font-weight:700;font-size:.82rem}
 .ncExplain{color:var(--muted);line-height:1.55;margin:4px 0 0}
+.ncModalOv{position:fixed;inset:0;background:rgba(10,12,20,.45);display:flex;align-items:center;justify-content:center;z-index:999;padding:16px}
+.ncModal{max-width:420px;width:100%;padding:20px}
+.ncModal p{line-height:1.55;margin:0 0 14px}
