@@ -1,0 +1,448 @@
+{
+ "id": "gs-economics-1",
+ "category": "gs",
+ "group": "GS — Economics",
+ "title": "Economics Test 1 (Indian Economy Basics — most probable)",
+ "questions": [
+  {
+   "q": "Gross Domestic Product (GDP) of a country means:",
+   "options": [
+    "The total income earned by government in a year",
+    "The total value of exports only",
+    "The total market value of all final goods and services produced within the country in a year",
+    "The money printed by the central bank in a year"
+   ],
+   "answer": 2,
+   "explain": "Gross Domestic Product (GDP) counts only final goods and services produced inside the country's borders, by Indians and foreigners alike."
+  },
+  {
+   "q": "Gross National Product (GNP) is calculated as:",
+   "options": [
+    "Gross Domestic Product (GDP) plus net income earned from abroad",
+    "Gross Domestic Product (GDP) minus exports",
+    "Gross Domestic Product (GDP) plus government borrowings",
+    "Only the income of farmers and factories"
+   ],
+   "answer": 0,
+   "explain": "Gross National Product (GNP) adds what Indians earn abroad (minus what foreigners earn in India) to Gross Domestic Product (GDP)."
+  },
+  {
+   "q": "Per capita income of a country is obtained by dividing:",
+   "options": [
+    "National income by the number of workers",
+    "Government income by the number of states",
+    "Total exports by total imports",
+    "National income by the total population"
+   ],
+   "answer": 3,
+   "explain": "Per capita income is simply the average income per person — total national income divided by population."
+  },
+  {
+   "q": "In India, the official estimates of national income are prepared by the:",
+   "options": [
+    "Reserve Bank of India (RBI)",
+    "National Statistical Office (NSO)",
+    "National Institution for Transforming India (NITI Aayog)",
+    "Finance Commission"
+   ],
+   "answer": 1,
+   "explain": "The National Statistical Office (NSO), under the Ministry of Statistics, compiles national income and Gross Domestic Product (GDP) data."
+  },
+  {
+   "q": "Agriculture, animal husbandry, fishing and mining belong to which sector of the economy?",
+   "options": [
+    "Primary sector",
+    "Secondary sector",
+    "Tertiary sector",
+    "Service sector"
+   ],
+   "answer": 0,
+   "explain": "The primary sector takes things directly from nature; manufacturing is secondary and services form the tertiary sector."
+  },
+  {
+   "q": "Manufacturing and industries, which convert raw materials into finished goods, belong to the:",
+   "options": [
+    "Primary sector",
+    "Tertiary sector",
+    "Informal sector",
+    "Secondary sector"
+   ],
+   "answer": 3,
+   "explain": "The secondary sector processes primary products — for example, cotton (primary) into cloth (secondary)."
+  },
+  {
+   "q": "Which sector contributes the largest share to India's Gross Domestic Product (GDP)?",
+   "options": [
+    "Agriculture sector",
+    "Services (tertiary) sector",
+    "Manufacturing sector",
+    "Mining sector"
+   ],
+   "answer": 1,
+   "explain": "Services like trade, transport, banking and information technology contribute more than half of India's Gross Domestic Product (GDP), though agriculture employs the most people."
+  },
+  {
+   "q": "Which sector employs the largest number of people in India?",
+   "options": [
+    "Information technology",
+    "Banking",
+    "Agriculture",
+    "Tourism"
+   ],
+   "answer": 2,
+   "explain": "Even though its share in Gross Domestic Product (GDP) has fallen, agriculture still gives work to the largest share of India's population."
+  },
+  {
+   "q": "Inflation in an economy means:",
+   "options": [
+    "A fall in prices of all goods",
+    "Rise in price of one item for one day",
+    "Increase in the supply of goods",
+    "A general and continuous rise in prices"
+   ],
+   "answer": 3,
+   "explain": "When inflation rises, the purchasing power of money falls — the same money buys less than before."
+  },
+  {
+   "q": "Retail inflation in India, which affects the common person's cost of living, is measured mainly by the:",
+   "options": [
+    "Wholesale Price Index (WPI)",
+    "Consumer Price Index (CPI)",
+    "Sensex",
+    "Gross Domestic Product (GDP) deflator"
+   ],
+   "answer": 1,
+   "explain": "The Consumer Price Index (CPI) tracks prices of goods and services households buy; the Reserve Bank of India (RBI) sets its inflation target in Consumer Price Index (CPI) terms."
+  },
+  {
+   "q": "The Wholesale Price Index (WPI) measures changes in prices at the:",
+   "options": [
+    "Retail shops",
+    "Stock market",
+    "Wholesale level (goods sold in bulk)",
+    "Foreign exchange market"
+   ],
+   "answer": 2,
+   "explain": "The Wholesale Price Index (WPI) covers goods traded in bulk and does not include services, unlike the Consumer Price Index (CPI)."
+  },
+  {
+   "q": "Fiscal policy of a country — relating to taxation and government spending — is framed by the:",
+   "options": [
+    "Government (Ministry of Finance)",
+    "Reserve Bank of India (RBI)",
+    "Securities and Exchange Board of India (SEBI)",
+    "National Statistical Office (NSO)"
+   ],
+   "answer": 0,
+   "explain": "Fiscal policy is the government's tool (taxes and expenditure), while monetary policy belongs to the Reserve Bank of India (RBI)."
+  },
+  {
+   "q": "Monetary policy of India — controlling money supply and interest rates — is framed by the:",
+   "options": [
+    "Ministry of Finance",
+    "Reserve Bank of India (RBI)",
+    "Securities and Exchange Board of India (SEBI)",
+    "National Bank for Agriculture and Rural Development (NABARD)"
+   ],
+   "answer": 1,
+   "explain": "The Reserve Bank of India (RBI), through its Monetary Policy Committee, decides the repo rate and other money controls."
+  },
+  {
+   "q": "Repo rate is the rate at which:",
+   "options": [
+    "The Reserve Bank of India (RBI) borrows from banks",
+    "The public deposits money in banks",
+    "Commercial banks borrow money from the Reserve Bank of India (RBI)",
+    "The government borrows from the public"
+   ],
+   "answer": 2,
+   "explain": "When the Reserve Bank of India (RBI) raises the repo rate, loans become costlier, which helps control inflation."
+  },
+  {
+   "q": "Reverse repo rate is the rate at which:",
+   "options": [
+    "The Reserve Bank of India (RBI) borrows money from commercial banks",
+    "Banks borrow from the Reserve Bank of India (RBI)",
+    "Banks lend to farmers",
+    "The government lends to banks"
+   ],
+   "answer": 0,
+   "explain": "Reverse repo is the opposite of repo — banks park their extra funds with the Reserve Bank of India (RBI) and earn this rate."
+  },
+  {
+   "q": "Cash Reserve Ratio (CRR) is the share of a bank's deposits that it must keep as cash with the:",
+   "options": [
+    "State Bank of India (SBI)",
+    "Ministry of Finance",
+    "National Bank for Agriculture and Rural Development (NABARD)",
+    "Reserve Bank of India (RBI)"
+   ],
+   "answer": 3,
+   "explain": "Cash Reserve Ratio (CRR) is fixed by the Reserve Bank of India (RBI); raising it reduces the money banks can lend."
+  },
+  {
+   "q": "Statutory Liquidity Ratio (SLR) requires banks to maintain a part of their deposits in:",
+   "options": [
+    "Only foreign currency",
+    "Shares of companies",
+    "Liquid assets like cash, gold and government securities",
+    "Loans to big industries"
+   ],
+   "answer": 2,
+   "explain": "Statutory Liquidity Ratio (SLR), like Cash Reserve Ratio (CRR), is a reserve requirement decided by the Reserve Bank of India (RBI)."
+  },
+  {
+   "q": "Bank rate is the rate at which the Reserve Bank of India (RBI) lends money to banks for the:",
+   "options": [
+    "Long term",
+    "Very short term (overnight)",
+    "Only for home loans",
+    "Only for farm loans"
+   ],
+   "answer": 0,
+   "explain": "Bank rate is the long-term lending rate of the Reserve Bank of India (RBI), while repo serves shorter-term needs."
+  },
+  {
+   "q": "Open Market Operations (OMO) by the Reserve Bank of India (RBI) mean:",
+   "options": [
+    "Opening new bank branches",
+    "Selling gold to the public",
+    "Fixing prices of essential goods",
+    "Buying and selling of government securities to control money supply"
+   ],
+   "answer": 3,
+   "explain": "Through Open Market Operations (OMO), the Reserve Bank of India (RBI) sells securities to absorb extra money and buys them to inject money."
+  },
+  {
+   "q": "The Reserve Bank of India (RBI) was established in the year:",
+   "options": [
+    "1934",
+    "1935",
+    "1947",
+    "1950"
+   ],
+   "answer": 1,
+   "explain": "The Reserve Bank of India (RBI) began working on 1 April 1935 under the Reserve Bank of India (RBI) Act, 1934."
+  },
+  {
+   "q": "The Reserve Bank of India (RBI) was nationalised in the year:",
+   "options": [
+    "1949",
+    "1935",
+    "1951",
+    "1969"
+   ],
+   "answer": 0,
+   "explain": "Established in 1935 as a shareholders' bank, the Reserve Bank of India (RBI) was nationalised on 1 January 1949 — the two years are asked as a pair."
+  },
+  {
+   "q": "The headquarters of the Reserve Bank of India (RBI) is located at:",
+   "options": [
+    "New Delhi",
+    "Kolkata",
+    "Chennai",
+    "Mumbai"
+   ],
+   "answer": 3,
+   "explain": "The Reserve Bank of India (RBI) first worked from Kolkata but shifted its headquarters to Mumbai in 1937."
+  },
+  {
+   "q": "Currency notes in India (except the one-rupee note) are issued by the:",
+   "options": [
+    "Ministry of Finance",
+    "Reserve Bank of India (RBI)",
+    "State Bank of India (SBI)",
+    "India Government Mint"
+   ],
+   "answer": 1,
+   "explain": "Notes of two rupees and above bear the signature of the Governor of the Reserve Bank of India (RBI)."
+  },
+  {
+   "q": "The one-rupee note in India is issued by the:",
+   "options": [
+    "Reserve Bank of India (RBI)",
+    "State Bank of India (SBI)",
+    "Ministry of Finance (signed by the Finance Secretary)",
+    "National Bank for Agriculture and Rural Development (NABARD)"
+   ],
+   "answer": 2,
+   "explain": "The one-rupee note and all coins are issued by the Ministry of Finance — the single exception to the Reserve Bank of India (RBI) rule."
+  },
+  {
+   "q": "India's First Five Year Plan (1951-56) gave the highest priority to:",
+   "options": [
+    "Heavy industries",
+    "Defence production",
+    "Information technology",
+    "Agriculture and irrigation"
+   ],
+   "answer": 3,
+   "explain": "The First Five Year Plan focused on food production and irrigation after Partition; heavy industry came with the Second Plan."
+  },
+  {
+   "q": "The Second Five Year Plan (1956-61), based on the model of Professor P.C. Mahalanobis, emphasised:",
+   "options": [
+    "Agriculture only",
+    "Heavy and basic industries",
+    "Village handicrafts",
+    "Foreign trade"
+   ],
+   "answer": 1,
+   "explain": "Steel plants at Bhilai, Durgapur and Rourkela were set up under the Mahalanobis strategy of the Second Plan."
+  },
+  {
+   "q": "The Green Revolution in India is associated with a big increase in the production of:",
+   "options": [
+    "Milk",
+    "Fish",
+    "Foodgrains, especially wheat and rice",
+    "Cotton cloth"
+   ],
+   "answer": 2,
+   "explain": "New high-yielding seeds, fertilisers and irrigation raised foodgrain output sharply from the late 1960s."
+  },
+  {
+   "q": "Who is regarded as the father of the Green Revolution in India?",
+   "options": [
+    "Dr M.S. Swaminathan",
+    "Dr Verghese Kurien",
+    "Dr Norman Borlaug",
+    "Dr A.P.J. Abdul Kalam"
+   ],
+   "answer": 0,
+   "explain": "Dr M.S. Swaminathan led the scientific side of India's Green Revolution; Norman Borlaug was its global pioneer."
+  },
+  {
+   "q": "The White Revolution in India is related to increased production of:",
+   "options": [
+    "Rice",
+    "Milk",
+    "Steel",
+    "Petroleum"
+   ],
+   "answer": 1,
+   "explain": "Operation Flood made India the world's largest milk producer — this was the White Revolution."
+  },
+  {
+   "q": "Who is known as the father of the White Revolution in India?",
+   "options": [
+    "Dr M.S. Swaminathan",
+    "Dr Vikram Sarabhai",
+    "Dr Verghese Kurien",
+    "Dr Homi Bhabha"
+   ],
+   "answer": 2,
+   "explain": "Dr Verghese Kurien built the Amul cooperative model at Anand, Gujarat, which powered the White Revolution."
+  },
+  {
+   "q": "The Planning Commission of India, which prepared the Five Year Plans, was set up in the year:",
+   "options": [
+    "1950",
+    "1947",
+    "1952",
+    "1965"
+   ],
+   "answer": 0,
+   "explain": "The Planning Commission was created in March 1950 and worked till it was replaced in 2015."
+  },
+  {
+   "q": "According to the Census of India 2011, the literacy rate of India was about:",
+   "options": [
+    "65.46%",
+    "82.14%",
+    "52.21%",
+    "74.04%"
+   ],
+   "answer": 3,
+   "explain": "Census 2011 recorded literacy at 74.04% — male literacy about 82% and female literacy about 65%."
+  },
+  {
+   "q": "According to the Census of India 2011, the sex ratio of India (females per 1,000 males) was:",
+   "options": [
+    "940",
+    "933",
+    "943",
+    "927"
+   ],
+   "answer": 2,
+   "explain": "The 2011 sex ratio was 943; Kerala had the highest sex ratio among states, above 1,000."
+  },
+  {
+   "q": "According to the Census of India 2011, the population density of India was about:",
+   "options": [
+    "382 persons per square kilometre",
+    "325 persons per square kilometre",
+    "267 persons per square kilometre",
+    "450 persons per square kilometre"
+   ],
+   "answer": 0,
+   "explain": "Density rose from 325 in 2001 to 382 in 2011; Bihar was the most densely populated state."
+  },
+  {
+   "q": "The total population of India as per the Census of 2011 was about:",
+   "options": [
+    "102 crore",
+    "84 crore",
+    "138 crore",
+    "121 crore"
+   ],
+   "answer": 3,
+   "explain": "Census 2011 counted about 121 crore people, making India then the second most populous country."
+  },
+  {
+   "q": "Disguised unemployment — where more people work than are actually needed — is most commonly found in Indian:",
+   "options": [
+    "Banks",
+    "Agriculture",
+    "Software companies",
+    "Railways"
+   ],
+   "answer": 1,
+   "explain": "In disguised unemployment, removing some workers from a family farm would not reduce its output at all."
+  },
+  {
+   "q": "The Human Development Index (HDI) is published every year by the:",
+   "options": [
+    "United Nations Development Programme (UNDP)",
+    "World Bank",
+    "International Monetary Fund (IMF)",
+    "World Trade Organization (WTO)"
+   ],
+   "answer": 0,
+   "explain": "The Human Development Index (HDI) ranks countries by health, education and income; it is released by the United Nations Development Programme (UNDP)."
+  },
+  {
+   "q": "The Indian economy is best described as a:",
+   "options": [
+    "Pure capitalist economy",
+    "Pure socialist economy",
+    "Completely state-controlled economy",
+    "Mixed economy"
+   ],
+   "answer": 3,
+   "explain": "India has both private enterprise and a public sector — this combination is called a mixed economy."
+  },
+  {
+   "q": "The growth of an economy is best measured by a sustained rise in its:",
+   "options": [
+    "Price level",
+    "Real Gross Domestic Product (GDP)",
+    "Population",
+    "Government expenditure"
+   ],
+   "answer": 1,
+   "explain": "Real Gross Domestic Product (GDP) removes the effect of price rise, so it shows the true increase in production."
+  },
+  {
+   "q": "The foreign exchange reserves of India are held and managed by the:",
+   "options": [
+    "Ministry of Commerce",
+    "State Bank of India (SBI)",
+    "Reserve Bank of India (RBI)",
+    "Export-Import Bank of India (EXIM Bank)"
+   ],
+   "answer": 2,
+   "explain": "The Reserve Bank of India (RBI) keeps India's foreign currency assets and gold reserves safe."
+  }
+ ]
+}

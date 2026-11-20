@@ -1,0 +1,503 @@
+{
+ "id": "tech-i-2",
+ "category": "technical",
+ "group": "Unit i — RRTS / High Speed Operations",
+ "title": "Timetable, Traffic Regulation, Station Operations & OCC Functions",
+ "questions": [
+  {
+   "q": "Frequency of trains is calculated as:",
+   "options": [
+    "Headway multiplied by 60",
+    "60 divided by headway in minutes",
+    "60 divided by dwell time",
+    "Running time divided by headway"
+   ],
+   "answer": 1,
+   "explain": "Frequency (trains/hour) = 60 / headway (minutes)."
+  },
+  {
+   "q": "If headway is 5 minutes, the frequency is:",
+   "options": [
+    "5 trains per hour",
+    "10 trains per hour",
+    "15 trains per hour",
+    "12 trains per hour"
+   ],
+   "answer": 3,
+   "explain": "60 / 5 = 12 trains per hour."
+  },
+  {
+   "q": "If headway is 4 minutes, the frequency is:",
+   "options": [
+    "15 trains per hour",
+    "12 trains per hour",
+    "20 trains per hour",
+    "10 trains per hour"
+   ],
+   "answer": 0,
+   "explain": "60 / 4 = 15 trains per hour."
+  },
+  {
+   "q": "If headway is 6 minutes, the frequency is:",
+   "options": [
+    "6 trains per hour",
+    "12 trains per hour",
+    "10 trains per hour",
+    "15 trains per hour"
+   ],
+   "answer": 2,
+   "explain": "60 / 6 = 10 trains per hour."
+  },
+  {
+   "q": "If headway is 3 minutes, the frequency is:",
+   "options": [
+    "15 trains per hour",
+    "18 trains per hour",
+    "20 trains per hour",
+    "30 trains per hour"
+   ],
+   "answer": 2,
+   "explain": "60 / 3 = 20 trains per hour — shorter headway means more trains."
+  },
+  {
+   "q": "A shorter headway on a line requires:",
+   "options": [
+    "Better signalling (moving block / European Train Control System (ETCS)) and disciplined dwell time",
+    "Longer platforms only",
+    "More ticket counters",
+    "Slower trains"
+   ],
+   "answer": 0,
+   "explain": "Trains can run closer only when signalling allows it and station dwell stays disciplined."
+  },
+  {
+   "q": "A timetable is built from:",
+   "options": [
+    "Only running time",
+    "Only dwell time",
+    "Crew rest time only",
+    "Running time + dwell time + margins/recovery time"
+   ],
+   "answer": 3,
+   "explain": "The recovery margin is what lets a late train become on-time again."
+  },
+  {
+   "q": "Dwell time is described as the biggest controllable cause of delay because:",
+   "options": [
+    "Signals fail daily",
+    "Passenger boarding/alighting time varies and can stretch at every station",
+    "Trains are always late from the depot",
+    "Fares change frequently"
+   ],
+   "answer": 1,
+   "explain": "Heavy boarding and door obstructions stretch dwell — hence Platform Screen Door (PSD) discipline and announcements matter."
+  },
+  {
+   "q": "Dwell time increases most due to:",
+   "options": [
+    "Long platforms",
+    "Heavy boarding/alighting and door obstructions",
+    "Good weather",
+    "New trains"
+   ],
+   "answer": 1,
+   "explain": "Passenger exchange is the biggest variable in dwell time."
+  },
+  {
+   "q": "'Regulation' of trains means:",
+   "options": [
+    "Repairing trains in the depot",
+    "Selling tickets during peak hours",
+    "Cleaning stations at night",
+    "Operations Control Centre (OCC)'s live adjustment of the plan to restore even spacing and protect the overall service"
+   ],
+   "answer": 3,
+   "explain": "Regulation = holding, short-turning, inserting a spare or cancelling a trip — live, by Operations Control Centre (OCC)."
+  },
+  {
+   "q": "Holding a train briefly at a station during regulation is done to:",
+   "options": [
+    "Restore even spacing between trains",
+    "Punish the crew",
+    "Save electricity only",
+    "Let the driver rest"
+   ],
+   "answer": 0,
+   "explain": "A short hold re-creates an even headway so passengers further down get regular service."
+  },
+  {
+   "q": "'Short-turning' a train means:",
+   "options": [
+    "Reducing its coaches",
+    "Sending it to the depot for washing",
+    "Terminating it before its destination and turning it back to recover the timetable / fill a gap",
+    "Coupling it to another train"
+   ],
+   "answer": 2,
+   "explain": "Short-turning is a classic Operations Control Centre (OCC) tool for a late train — it restores service where the crowd is."
+  },
+  {
+   "q": "During regulation, stops may be skipped:",
+   "options": [
+    "Whenever the driver wishes",
+    "Whenever the train is 1 minute late",
+    "Only when authorised",
+    "Never, under any rule in any system"
+   ],
+   "answer": 2,
+   "explain": "Skipping stops is a regulation tool but strictly only with authorisation."
+  },
+  {
+   "q": "Inserting a spare train during the day is a regulation tool used to:",
+   "options": [
+    "Fill a gap in service caused by a late or failed train",
+    "Increase the fare collection",
+    "Replace the Station Controller",
+    "Test new coaches"
+   ],
+   "answer": 0,
+   "explain": "A spare train from the depot plugs the gap and protects the headway."
+  },
+  {
+   "q": "Cancelling one trip can be the right regulation decision when it:",
+   "options": [
+    "Saves the cost of one driver",
+    "Makes the timetable book thinner",
+    "Is ordered by passengers",
+    "Protects the overall service instead of letting one late train disturb the whole line"
+   ],
+   "answer": 3,
+   "explain": "Regulation always prefers protecting the many over perfecting one train."
+  },
+  {
+   "q": "The golden rule of regulation is:",
+   "options": [
+    "Always run the late train first",
+    "Regulate for even headway, not just for the timetable clock — passengers feel gaps, not minutes",
+    "Never hold any train",
+    "Cancel every late train"
+   ],
+   "answer": 1,
+   "explain": "Two trains in 2 minutes then none for 18 is worse than one every 10 — even gaps are what passengers feel."
+  },
+  {
+   "q": "Peak-hour service planning needs:",
+   "options": [
+    "Minimum fleet deployment",
+    "Maximum fleet deployment and minimum turnaround",
+    "Longest possible dwell",
+    "Only spare trains running"
+   ],
+   "answer": 1,
+   "explain": "Peak demand follows maximum trains out and fastest terminal turnaround."
+  },
+  {
+   "q": "Off-peak service differs from peak mainly in:",
+   "options": [
+    "No safety rules applying",
+    "Trains running without Operations Control Centre (OCC)",
+    "Stations remaining closed",
+    "Lower frequency matched to lower demand"
+   ],
+   "answer": 3,
+   "explain": "Frequency follows demand; safety and control rules stay the same."
+  },
+  {
+   "q": "Which is a station operations duty?",
+   "options": [
+    "Platform supervision and safe dispatch of trains",
+    "Designing new trainsets",
+    "Setting national fares",
+    "Repairing traction substations"
+   ],
+   "answer": 0,
+   "explain": "Station staff supervise platforms and dispatch trains safely, among many other duties."
+  },
+  {
+   "q": "During a sudden crowd surge at a station, the Station Controller's correct FIRST action is:",
+   "options": [
+    "Stop all trains on the line",
+    "Close the station without informing anyone",
+    "Regulate/control entry at the gates and inform Operations Control Centre (OCC)",
+    "Switch off the escalators"
+   ],
+   "answer": 2,
+   "explain": "Control the inflow and keep Operations Control Centre (OCC) informed — platform overcrowding is the real danger."
+  },
+  {
+   "q": "Which is part of station operations?",
+   "options": [
+    "Traction power design",
+    "Crew medical examinations",
+    "Passenger information and announcements",
+    "Track welding"
+   ],
+   "answer": 2,
+   "explain": "Announcements and information displays keep passengers moving correctly through the station."
+  },
+  {
+   "q": "Automatic Fare Collection (AFC) gates and ticketing support at a station are handled as part of:",
+   "options": [
+    "Station operations",
+    "Depot maintenance",
+    "Operations Control Centre (OCC) power control",
+    "Track engineering"
+   ],
+   "answer": 0,
+   "explain": "Station staff support Automatic Fare Collection (AFC) gates, ticketing, lost & found and amenity checks."
+  },
+  {
+   "q": "Assistance to Divyangjan and priority passengers is the responsibility of:",
+   "options": [
+    "Only other passengers",
+    "Only the train manufacturer",
+    "No one — it is not a station duty",
+    "Station staff, as part of station operations"
+   ],
+   "answer": 3,
+   "explain": "Priority-passenger assistance is an explicit station operations duty."
+  },
+  {
+   "q": "The safe dispatch rule for a train at a platform is: it may depart only when",
+   "options": [
+    "Most passengers have boarded",
+    "Train and Platform Screen Door (PSD) doors are closed and locked, the platform is clear in the dispatch zone, and departure authority exists",
+    "The announcement has finished",
+    "The next train is visible"
+   ],
+   "answer": 1,
+   "explain": "All three conditions — doors proved closed, platform clear, authority present — must hold before departure."
+  },
+  {
+   "q": "Who owns the station and is its on-site commander in an emergency until relieved?",
+   "options": [
+    "The Train Operator",
+    "The Station Controller",
+    "The Power Controller",
+    "The Automatic Fare Collection (AFC) vendor"
+   ],
+   "answer": 1,
+   "explain": "The Station Controller owns the station and commands on site in an emergency until relieved."
+  },
+  {
+   "q": "Operations Control Centre (OCC) stands for:",
+   "options": [
+    "Operational Crew Centre",
+    "Overhead Control Cabin",
+    "Operations Coordination Cell (depot)",
+    "Operations Control Centre"
+   ],
+   "answer": 3,
+   "explain": "Operations Control Centre (OCC) is the Operations Control Centre — the brain of the railway, working 24x7."
+  },
+  {
+   "q": "Operations Control Centre (OCC) supervises train running mainly through:",
+   "options": [
+    "Automatic Train Supervision (ATS) screens showing train positions and signalling state",
+    "Paper registers at stations",
+    "Passenger feedback forms",
+    "Ticket sales data"
+   ],
+   "answer": 0,
+   "explain": "Controllers work with a complete line picture: Automatic Train Supervision (ATS), power state, Closed-Circuit Television (CCTV) and radio."
+  },
+  {
+   "q": "Which is an Operations Control Centre (OCC) function?",
+   "options": [
+    "Cleaning of stations",
+    "Manufacture of trainsets",
+    "Timetable execution and train regulation",
+    "Fixing of fares"
+   ],
+   "answer": 2,
+   "explain": "Operations Control Centre (OCC) executes the timetable live and regulates trains when reality deviates from plan."
+  },
+  {
+   "q": "During an incident, Operations Control Centre (OCC) is responsible for:",
+   "options": [
+    "Only writing the next day's report",
+    "Only informing the press",
+    "Incident management, decision-making and coordination with stations, trains, depots and emergency services",
+    "Handing everything to the nearest station without instructions"
+   ],
+   "answer": 2,
+   "explain": "Operations Control Centre (OCC) holds the full line picture, which is why its instructions override local wishes during incidents."
+  },
+  {
+   "q": "Traction power control coordination in Operations Control Centre (OCC) is done with:",
+   "options": [
+    "The Power Controller / Supervisory Control and Data Acquisition (SCADA)",
+    "The Automatic Fare Collection (AFC) system",
+    "The Station Controller's diary",
+    "The ticket vending machine"
+   ],
+   "answer": 0,
+   "explain": "The Power Controller works the traction power through Supervisory Control and Data Acquisition (SCADA), coordinated by Operations Control Centre (OCC)."
+  },
+  {
+   "q": "Passenger information during disruptions is:",
+   "options": [
+    "Decided separately by each station",
+    "Given only after the incident ends",
+    "Left to rumours",
+    "Approved/coordinated by Operations Control Centre (OCC) so all stations and trains say the same thing"
+   ],
+   "answer": 3,
+   "explain": "Operations Control Centre (OCC) approves passenger information so the whole line speaks with one voice."
+  },
+  {
+   "q": "Operations Control Centre (OCC) maintains which record of operations?",
+   "options": [
+    "Only the fare register",
+    "Event logging and reporting of instructions and incidents",
+    "Only staff attendance",
+    "No records are kept"
+   ],
+   "answer": 1,
+   "explain": "Every Operations Control Centre (OCC) instruction is logged and recorded — vital for later analysis."
+  },
+  {
+   "q": "In the Operations Control Centre (OCC), overall charge of a shift rests with:",
+   "options": [
+    "The Traffic Controller",
+    "The Chief Controller",
+    "The Power Controller",
+    "The Depot Manager"
+   ],
+   "answer": 1,
+   "explain": "Chief Controller has overall charge; Traffic and Power Controllers work within that coordination."
+  },
+  {
+   "q": "The Traffic Controller in Operations Control Centre (OCC) mainly looks after:",
+   "options": [
+    "Traction power switching",
+    "Depot shunting only",
+    "Station cleanliness",
+    "Train regulation and Automatic Train Supervision (ATS) working"
+   ],
+   "answer": 3,
+   "explain": "Traffic Controller = train movement; Power Controller = traction power."
+  },
+  {
+   "q": "The Power Controller in Operations Control Centre (OCC) mainly looks after:",
+   "options": [
+    "Traction power control through Supervisory Control and Data Acquisition (SCADA)",
+    "Train regulation",
+    "Passenger announcements",
+    "Lost & found"
+   ],
+   "answer": 0,
+   "explain": "Power Controller handles the 25 kV traction supply picture for the line."
+  },
+  {
+   "q": "Why do Operations Control Centre (OCC) instructions override a station's local wishes during an incident?",
+   "options": [
+    "Because OCC staff are senior in age",
+    "Because stations have no telephones",
+    "Because OCC has the complete line picture — trains, signalling, power, Closed-Circuit Television (CCTV) and radio",
+    "Because the rule book is kept only at OCC"
+   ],
+   "answer": 2,
+   "explain": "Only Operations Control Centre (OCC) sees the whole network at once, so its decisions govern during incidents."
+  },
+  {
+   "q": "Operations Control Centre (OCC) authorises which of the following?",
+   "options": [
+    "Staff leave applications",
+    "Ticket refunds",
+    "Degraded working, possessions, evacuations and emergency response",
+    "Canteen menus"
+   ],
+   "answer": 2,
+   "explain": "Major operational decisions — degraded working, possession, evacuation — are authorised by Operations Control Centre (OCC)."
+  },
+  {
+   "q": "A station's duties include checking amenities such as:",
+   "options": [
+    "Lifts, escalators and lighting, plus cleanliness",
+    "Only the fare chart frame",
+    "Only the name board",
+    "Nothing — amenities are not checked"
+   ],
+   "answer": 0,
+   "explain": "Amenity checks (lifts, escalators, lighting) and cleanliness are daily station duties."
+  },
+  {
+   "q": "Lost & found at a station is part of:",
+   "options": [
+    "Operations Control Centre (OCC) power control",
+    "Depot engineering",
+    "Signalling maintenance",
+    "Station operations"
+   ],
+   "answer": 3,
+   "explain": "Lost & found is one of the listed station operations duties."
+  },
+  {
+   "q": "Security coordination at a station is done by:",
+   "options": [
+    "The Train Operator alone",
+    "Station staff coordinating with security agencies, as part of station operations",
+    "Passengers themselves",
+    "The train manufacturer"
+   ],
+   "answer": 1,
+   "explain": "Station operations includes security coordination alongside crowd and dispatch duties."
+  },
+  {
+   "q": "The public timetable given to passengers differs from the working timetable because the public timetable:",
+   "options": [
+    "Shows only the passenger-facing arrival and departure times, not internal operational timings",
+    "Is written only in Hindi",
+    "Contains the crew roster",
+    "Shows goods train timings"
+   ],
+   "answer": 0,
+   "explain": "The working timetable carries extra internal detail — depot moves, time allowances, empty runs — while the public timetable shows only what a passenger needs."
+  },
+  {
+   "q": "'Recovery time' (slack) built into a timetable means:",
+   "options": [
+    "Extra time deliberately added to running or turnaround time to absorb small delays",
+    "The lunch break of the crew",
+    "Time kept for ticket checking",
+    "The time a train spends in the depot"
+   ],
+   "answer": 0,
+   "explain": "A little planned slack lets a slightly late train regain its path without every following train becoming late."
+  },
+  {
+   "q": "A 'clockface' timetable is one in which trains depart:",
+   "options": [
+    "Only when the platform clock strikes twelve",
+    "At the same repeating minutes past every hour, making the pattern easy to remember",
+    "Only during peak hours",
+    "In order of their train numbers"
+   ],
+   "answer": 1,
+   "explain": "Clockface timings — for example at 05, 20, 35 and 50 minutes past each hour — give passengers a simple, memorable, regular service."
+  },
+  {
+   "q": "Holding a train for two extra minutes so that passengers from a delayed connecting service can board is an example of regulation done for:",
+   "options": [
+    "Revenue collection",
+    "Connectivity — protecting the passenger's onward journey",
+    "Crew convenience",
+    "Cleaning the train"
+   ],
+   "answer": 1,
+   "explain": "Regulation is not only about the clock; a short, deliberate hold can save hundreds of passengers a long wait for the next connection."
+  },
+  {
+   "q": "A turnback (reversal) siding at a terminal station is provided so that a train can:",
+   "options": [
+    "Be washed during the day",
+    "Change direction and start its return trip quickly without blocking the platform line for long",
+    "Stable overnight",
+    "Load freight"
+   ],
+   "answer": 1,
+   "explain": "Turnback sidings let trains reverse clear of the platform, keeping terminal capacity high during frequent peak services."
+  }
+ ]
+}

@@ -1,0 +1,448 @@
+{
+ "id": "tech-v-2",
+ "category": "technical",
+ "group": "Unit v — Emergency & Contingency Management",
+ "title": "Fire & Smoke Emergency",
+ "questions": [
+  {
+   "q": "Fire needs three things together to keep burning. These are:",
+   "options": [
+    "Heat, smoke and light",
+    "Fuel, water and oxygen",
+    "Heat, fuel and oxygen — removing any one extinguishes the fire",
+    "Heat, fuel and carbon dioxide"
+   ],
+   "answer": 2,
+   "explain": "This is the fire triangle — every extinguishing method works by removing heat, fuel or oxygen."
+  },
+  {
+   "q": "In the commonly used Indian training classification, a fire involving live electrical equipment is class:",
+   "options": [
+    "Class E",
+    "Class A",
+    "Class B",
+    "Class D"
+   ],
+   "answer": 0,
+   "explain": "Class A is solids, B liquids, C gases, D metals — and E is the electrical class used in Indian training."
+  },
+  {
+   "q": "A fire in a heap of wooden sleepers and packing material is a class:",
+   "options": [
+    "Class B — liquids",
+    "Class C — gases",
+    "Class E — electrical",
+    "Class A — solid materials"
+   ],
+   "answer": 3,
+   "explain": "Wood, paper and cloth are ordinary solids — Class A fires."
+  },
+  {
+   "q": "A petrol or oil fire belongs to class:",
+   "options": [
+    "Class A — solids",
+    "Class B — flammable liquids",
+    "Class C — gases",
+    "Class D — metals"
+   ],
+   "answer": 1,
+   "explain": "Liquids like petrol and oil are Class B — they spread if fought wrongly, so the extinguisher choice matters."
+  },
+  {
+   "q": "For a fire on live electrical equipment, the correct extinguishers are:",
+   "options": [
+    "CO2 or dry powder",
+    "Water jet",
+    "Foam only",
+    "Sand and water together"
+   ],
+   "answer": 0,
+   "explain": "CO2 and dry powder do not conduct electricity — they are the safe choice on live equipment."
+  },
+  {
+   "q": "Water must never be used on a live electrical fire because:",
+   "options": [
+    "Water makes the fire burn brighter",
+    "Water is too costly to waste",
+    "Water conducts electricity and can electrocute the person using it",
+    "Water damages the paint of equipment"
+   ],
+   "answer": 2,
+   "explain": "The jet becomes a live conductor back to the user's hands — a classic exam trap."
+  },
+  {
+   "q": "Fire is reported on a train standing at a station platform. The correct action is:",
+   "options": [
+    "Depart immediately to clear the station",
+    "Keep the train there, open the doors and evacuate passengers onto the platform",
+    "Close the doors and wait inside",
+    "Drive the train into the tunnel to isolate it"
+   ],
+   "answer": 1,
+   "explain": "A train already at a station is already at the safest evacuation place — use it."
+  },
+  {
+   "q": "Fire is reported on a moving train inside a tunnel, and the train can still move. The best action is:",
+   "options": [
+    "Stop at once and evacuate inside the tunnel",
+    "Open all doors while the train is moving",
+    "Reverse back through the tunnel against the traffic direction",
+    "Drive the train to the nearest station and evacuate there"
+   ],
+   "answer": 3,
+   "explain": "A burning train stopped in a tunnel is the worst case — the station gives light, space, staff and ambulances."
+  },
+  {
+   "q": "A burning train in a tunnel genuinely cannot move. The priority becomes:",
+   "options": [
+    "Wait in the tunnel until the fire burns itself out",
+    "Send passengers out in all directions to find exits",
+    "Continue normal service on the other line at full speed",
+    "Inform Operations Control Centre (OCC), protect and evacuate passengers under control towards fresh air, with ventilation set correctly"
+   ],
+   "answer": 3,
+   "explain": "If the train cannot reach the station, controlled evacuation against the smoke flow is the fallback."
+  },
+  {
+   "q": "In a station fire, the ventilation system should be set to:",
+   "options": [
+    "Normal comfort mode",
+    "Smoke-extraction mode, pushing smoke away from the evacuation routes",
+    "Off, to save power",
+    "Supply mode blowing air towards the fire and the exits together"
+   ],
+   "answer": 1,
+   "explain": "Passengers must walk in fresh air — ventilation protects the escape route, not the fire."
+  },
+  {
+   "q": "During a fire evacuation, passengers should move:",
+   "options": [
+    "Against the smoke flow, towards fresh air",
+    "With the smoke flow, as it is faster",
+    "Towards the nearest train",
+    "Into the tunnel to escape the station"
+   ],
+   "answer": 0,
+   "explain": "Smoke kills faster than flame — moving against its flow leads to breathable air."
+  },
+  {
+   "q": "Why must lifts not be used during a fire evacuation?",
+   "options": [
+    "Lifts are reserved for staff during fires",
+    "Lifts are too slow for large crowds",
+    "A lift can fail, trap people, or open onto the fire floor",
+    "Lift lobbies are locked during all emergencies"
+   ],
+   "answer": 2,
+   "explain": "Stairs are the fire exit; a lift shaft can fill with smoke and the car can stop at the fire level."
+  },
+  {
+   "q": "Escalators during a station fire evacuation are:",
+   "options": [
+    "Run at double speed",
+    "Stopped or used as stairs, as directed by staff",
+    "Reserved for passengers with luggage",
+    "Switched off and barricaded permanently"
+   ],
+   "answer": 1,
+   "explain": "A stopped escalator is simply a staircase — used as directed, never as a moving crowd machine."
+  },
+  {
+   "q": "A small fire has just started in an electrical cabinet and a trained staff member is present. He should:",
+   "options": [
+    "Attack it at once with a CO2 or dry powder extinguisher, if it is safe to do so",
+    "Pour a bucket of water over it",
+    "Wait for the fire brigade before doing anything",
+    "Open the cabinet and fan the flames out"
+   ],
+   "answer": 0,
+   "explain": "Small, early fires are the only ones staff fight — with the correct extinguisher and a safe escape behind them."
+  },
+  {
+   "q": "Staff should attempt to fight a fire themselves only when:",
+   "options": [
+    "The fire has spread to two rooms",
+    "Passengers ask them to try",
+    "It is small and early, they are trained, have the right extinguisher and a safe exit",
+    "The fire brigade is delayed by an hour"
+   ],
+   "answer": 2,
+   "explain": "Beyond the small-and-early stage, the job is evacuation and handover, not firefighting."
+  },
+  {
+   "q": "On discovering a fire, the first information Operations Control Centre (OCC)/station control needs is:",
+   "options": [
+    "The name of the person who saw it first",
+    "The cost of equipment nearby",
+    "The train's catering details",
+    "The exact location of the fire"
+   ],
+   "answer": 3,
+   "explain": "Location decides everything — response, ventilation mode, evacuation route and brigade access."
+  },
+  {
+   "q": "When fire services arrive at a station, staff hand over with a brief covering:",
+   "options": [
+    "Location of the fire, electrical status, and any casualties",
+    "The day's ticket collection figures",
+    "The station's cleaning schedule",
+    "Names of all staff on leave"
+   ],
+   "answer": 0,
+   "explain": "One clear brief — where it is, whether power is live, and who is hurt — lets the brigade start work at once."
+  },
+  {
+   "q": "During a fire evacuation, traction power of the affected section may need to be isolated when:",
+   "options": [
+    "Passengers complain about the lights",
+    "People may contact electrical equipment, or fire services need to use water",
+    "The fire is in another city",
+    "The timetable is running late"
+   ],
+   "answer": 1,
+   "explain": "Isolation protects evacuees and firefighters — especially before water is used anywhere near equipment."
+  },
+  {
+   "q": "A staff member is assigned to meet the fire brigade. Where should he wait?",
+   "options": [
+    "Inside the station control room",
+    "At the station entrance of his choice",
+    "At the designated access point, to guide them straight to the site",
+    "At the depot, by phone"
+   ],
+   "answer": 2,
+   "explain": "Minutes saved in guiding the brigade in are worth more than extra equipment waiting outside."
+  },
+  {
+   "q": "Smoke is spreading in an underground station but no flames are visible. The correct approach is:",
+   "options": [
+    "Treat it as a fire emergency — ventilate, evacuate and investigate under control",
+    "Ignore it until flames appear",
+    "Open all platform screen doors and continue service",
+    "Announce that it is only a technical fault and do nothing"
+   ],
+   "answer": 0,
+   "explain": "Smoke without flame still kills and still signals fire somewhere — it is never ignored."
+  },
+  {
+   "q": "The fire alarm in a station should trigger, among other things:",
+   "options": [
+    "Automatic cancellation of all tickets",
+    "Music to keep passengers calm",
+    "Closure of all exits to contain the smoke",
+    "Clear Public Address (PA) announcements telling passengers what happened, where to go and what not to do"
+   ],
+   "answer": 3,
+   "explain": "Announcements direct the evacuation — what happened, where to go, and no lifts."
+  },
+  {
+   "q": "After a station fire evacuation, who can declare the all-clear for people to re-enter?",
+   "options": [
+    "Any passenger who sees no smoke",
+    "The first staff member to return",
+    "Only the authorised command, after the area is checked and accounted for",
+    "The train operator of the next service"
+   ],
+   "answer": 2,
+   "explain": "Re-entry on assumption is how people walk back into danger — the all-clear is a formal decision."
+  },
+  {
+   "q": "Passengers are evacuating from a smoky platform. A man heads back towards the smoke to collect his bag. Staff should:",
+   "options": [
+    "Let him go as the bag is his property",
+    "Stop him and direct him to the assembly point — belongings are never worth a life",
+    "Ask another passenger to fetch it",
+    "Escort a group back for everyone's luggage"
+   ],
+   "answer": 1,
+   "explain": "Returning into smoke for property is a classic cause of fire deaths — staff prevent it firmly."
+  },
+  {
+   "q": "Which extinguisher-related pairing is correct?",
+   "options": [
+    "Electrical fire — CO2 extinguisher",
+    "Electrical fire — water extinguisher",
+    "Petrol fire — water jet",
+    "Metal fire — foam only"
+   ],
+   "answer": 0,
+   "explain": "Match the medium to the class: CO2/dry powder for electrical is the pairing examiners test most."
+  },
+  {
+   "q": "In a tunnel fire, the ventilation direction is chosen so that:",
+   "options": [
+    "Smoke is pushed over the evacuees to speed them up",
+    "Air is stopped completely in the tunnel",
+    "Smoke collects at the evacuation route",
+    "Evacuees walk into fresh air while smoke is pushed away from them"
+   ],
+   "answer": 3,
+   "explain": "Ventilation is a life-safety system here — it defends the walking route."
+  },
+  {
+   "q": "A train operator smells burning inside his train at a station. His first two actions are:",
+   "options": [
+    "Depart quickly to clear the platform",
+    "Raise the alarm and inform Operations Control Centre (OCC), keeping the train at the station",
+    "Investigate alone for ten minutes first",
+    "Ask passengers to check under their seats"
+   ],
+   "answer": 1,
+   "explain": "Alarm plus information starts the whole response; departing would carry a possible fire into the tunnel."
+  },
+  {
+   "q": "Why is a fire in a train standing in a tunnel considered the worst case?",
+   "options": [
+    "Tunnels have no mobile signal for passengers",
+    "The train cannot be cleaned there",
+    "Smoke and heat are trapped, exits are far, and help cannot reach quickly",
+    "Passengers cannot buy refreshments"
+   ],
+   "answer": 2,
+   "explain": "Confined smoke, distance from exits and difficult access combine — hence the rule to reach a station."
+  },
+  {
+   "q": "During evacuation for fire, the assembly point is used to:",
+   "options": [
+    "Gather everyone and take a headcount to confirm nobody is missing",
+    "Sell refreshments to evacuated passengers",
+    "Park the rescue vehicles",
+    "Hold a press conference"
+   ],
+   "answer": 0,
+   "explain": "Assembly plus headcount is how 'everyone out' is proved, not assumed."
+  },
+  {
+   "q": "A fire is reported in a closed room at a station and the door feels hot. The staff member should:",
+   "options": [
+    "Open it quickly to look inside",
+    "Not open it; inform control, evacuate the area and let fire services handle it",
+    "Pour water under the door and open it",
+    "Send a passenger to check"
+   ],
+   "answer": 1,
+   "explain": "A hot door means a developed fire behind it — opening feeds it air and endangers the opener."
+  },
+  {
+   "q": "What is the correct order in a station fire response?",
+   "options": [
+    "Restore, evacuate, report, ventilate, call fire services",
+    "Call press, evacuate, detect, fight, report",
+    "Fight the fire first in all cases, report afterwards",
+    "Detect and report, ventilate, evacuate, call fire services, fight small fires only, then account and restore"
+   ],
+   "answer": 3,
+   "explain": "Detection and information start the chain; restoration comes only after accounting and certification."
+  },
+  {
+   "q": "If smoke enters a train standing at a platform from a station fire, the operator should:",
+   "options": [
+    "Follow Operations Control Centre (OCC)/station instructions — detrain passengers away from the smoke as directed",
+    "Close doors and keep passengers inside indefinitely",
+    "Depart into the tunnel without instruction",
+    "Open doors on the smoke side only"
+   ],
+   "answer": 0,
+   "explain": "The train becomes part of the station evacuation — movements follow the incident command, not habit."
+  },
+  {
+   "q": "Fire services ask whether the section's power is isolated. This information matters to them because:",
+   "options": [
+    "It decides their vehicle's parking place",
+    "It changes the colour of the smoke",
+    "It decides whether they can safely use water and approach equipment",
+    "It is needed for their attendance register"
+   ],
+   "answer": 2,
+   "explain": "Electrical status is a life-safety fact for firefighters — it is always in the handover brief."
+  },
+  {
+   "q": "A small dustbin fire on a platform is noticed early. The proportionate response is:",
+   "options": [
+    "Evacuate the whole city station network",
+    "Close the station for the full day automatically",
+    "Ignore it as too small to matter",
+    "Extinguish it with the correct extinguisher, inform station control, and watch the area"
+   ],
+   "answer": 3,
+   "explain": "Small fires are fought early and reported — neither ignored nor inflated into a network closure."
+  },
+  {
+   "q": "Why are fire exits and emergency gates opened during a station evacuation?",
+   "options": [
+    "To let fresh passengers enter faster",
+    "To give the crowd several wide, quick routes out instead of one narrow flow",
+    "To cool the station with outside air",
+    "To allow shops to close early"
+   ],
+   "answer": 1,
+   "explain": "Exit capacity decides evacuation time — every opened gate relieves the crowd."
+  },
+  {
+   "q": "After a fire incident ends, trains may resume only after:",
+   "options": [
+    "Inspection and certification that the area and systems are safe",
+    "The smoke smell has faded",
+    "Passengers have stopped complaining",
+    "One hour has passed since the fire"
+   ],
+   "answer": 0,
+   "explain": "Resumption is gated by a 'declared fit' — never by the clock or by smell."
+  },
+  {
+   "q": "The correct technique for using a portable fire extinguisher is remembered as PASS. It stands for:",
+   "options": [
+    "Pull the pin, Aim at the base of the fire, Squeeze the handle, Sweep from side to side",
+    "Push, Alarm, Shout, Sprinkle",
+    "Pick, Aim, Spray, Stop",
+    "Pull, Aim, Spray at the flames' top, Shake"
+   ],
+   "answer": 0,
+   "explain": "Pull, Aim (at the base, where the fuel is), Squeeze, Sweep — the PASS sequence is the standard first-aid firefighting method taught across Indian Railways and metro systems."
+  },
+  {
+   "q": "A Manual Call Point (the red break-glass unit) on a station wall is used to:",
+   "options": [
+    "Open the fare gates",
+    "Manually raise the fire alarm at once when a person discovers a fire, without waiting for automatic detectors",
+    "Call the station master's office telephone",
+    "Stop an escalator"
+   ],
+   "answer": 1,
+   "explain": "Detectors react to smoke or heat; a Manual Call Point lets a human raise the alarm the second a fire is seen. Breaking the glass sets off the station fire alarm sequence."
+  },
+  {
+   "q": "During a station fire, ordinary lifts must not be used by passengers — but a designated fire lift is different because it is:",
+   "options": [
+    "Faster than other lifts",
+    "Reserved for the fire services, with protected shaft and power supply, so firefighters can reach upper or lower levels under their control",
+    "Used by staff to save their belongings",
+    "Open to passengers who have a special ticket"
+   ],
+   "answer": 1,
+   "explain": "The 'no lifts in fire' rule is for public lifts, which may fail or open onto smoke. A fire lift is a protected tool of the fire brigade — passengers still use stairs and ramps."
+  },
+  {
+   "q": "A fire involving reactive metals such as magnesium (Class D) needs special care because:",
+   "options": [
+    "It is not really a fire",
+    "Water and ordinary extinguishers can react violently with burning metal; only special dry powder meant for metal fires should be used",
+    "It goes out on its own in seconds",
+    "It can be blown out by fanning"
+   ],
+   "answer": 1,
+   "explain": "Class D metal fires are a specialist case: the wrong agent makes them worse. Isolate the area, inform the Operations Control Centre (OCC) and leave metal fires to the fire services with the correct powder."
+  },
+  {
+   "q": "In a smoke-filled area, the safest way for a person to move towards an exit is to:",
+   "options": [
+    "Run upright as fast as possible through the smoke",
+    "Stay low — crouch or crawl — because hot smoke and toxic gases rise and the cleaner air is near the floor",
+    "Hold their breath and walk backwards",
+    "Wait in the middle of the room until the smoke clears"
+   ],
+   "answer": 1,
+   "explain": "Smoke kills more people than flames. Hot smoke layers at the ceiling, so the breathable air is low — stay low, cover nose and mouth if possible, and move to fresh air."
+  }
+ ]
+}

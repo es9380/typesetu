@@ -1,0 +1,503 @@
+{
+ "id": "tech-iv-1",
+ "category": "technical",
+ "group": "Unit iv — Risk Assessment & Operational Safety",
+ "title": "Hazard Identification & Operational Risk Assessment",
+ "questions": [
+  {
+   "q": "A hazard is best defined as:",
+   "options": [
+    "An accident that has already happened",
+    "Anything with the potential to cause harm",
+    "A rule violation",
+    "The cost of damage"
+   ],
+   "answer": 1,
+   "explain": "Hazard = potential to harm. A moving train, 25 kV Overhead Equipment (OHE) and a crowded platform are all hazards."
+  },
+  {
+   "q": "Risk is calculated as:",
+   "options": [
+    "Hazard × Cost",
+    "Severity ÷ Time",
+    "Likelihood of harm × Severity of harm",
+    "Likelihood + Luck"
+   ],
+   "answer": 2,
+   "explain": "Risk answers two questions about a hazard: how likely is harm, and how bad would it be?"
+  },
+  {
+   "q": "Risk assessment is best described as:",
+   "options": [
+    "A systematic process: identify hazards → who may be harmed and how → evaluate risk → decide controls → record → review",
+    "Guessing dangers on the day",
+    "A form filled after an accident",
+    "Counting past accidents only"
+   ],
+   "answer": 0,
+   "explain": "Assessment happens before work, in this order, and ends with recording and review — not with a guess."
+  },
+  {
+   "q": "Residual risk means:",
+   "options": [
+    "The risk before any control",
+    "A risk that cannot be identified",
+    "Zero risk",
+    "The risk remaining after controls are applied"
+   ],
+   "answer": 3,
+   "explain": "Controls reduce risk; what remains is residual risk, and it must be As Low As Reasonably Practicable (ALARP)."
+  },
+  {
+   "q": "As Low As Reasonably Practicable (ALARP) stands for:",
+   "options": [
+    "As Late As Railway Permits",
+    "All Levels Are Risky Possibly",
+    "As Low As Reasonably Practicable",
+    "As Low As Rarely Possible"
+   ],
+   "answer": 2,
+   "explain": "As Low As Reasonably Practicable (ALARP): keep reducing risk until further reduction would cost grossly more than the safety it buys."
+  },
+  {
+   "q": "Which of these is an operational hazard in the book's list?",
+   "options": [
+    "25 kV Overhead Equipment (OHE) (electrical hazard)",
+    "The colour of the train",
+    "The station's name board",
+    "The ticket price"
+   ],
+   "answer": 0,
+   "explain": "Operations looks for hazards in train movement, electricity, fire, crowd, falls, trespass and human factors."
+  },
+  {
+   "q": "Which is a human-factor hazard?",
+   "options": [
+    "Wet rails",
+    "High voltage",
+    "Strong wind",
+    "Fatigue and distraction of staff"
+   ],
+   "answer": 3,
+   "explain": "Human factors — fatigue, distraction — are hazards just like electricity or weather."
+  },
+  {
+   "q": "Hazard identification in operations uses which methods?",
+   "options": [
+    "Only waiting for accidents",
+    "Inspections, job safety analysis, incident data, staff reporting and HAZID (Hazard Identification) / Hazard and Operability Study (HAZOP) (Hazard and Operability Study) studies",
+    "Only newspaper reports",
+    "Only passenger complaints"
+   ],
+   "answer": 1,
+   "explain": "Hazards are hunted actively: inspections, Job Safety Analysis (JSA), past incident data, staff reports and formal studies."
+  },
+  {
+   "q": "HAZID (Hazard Identification) / Hazard and Operability Study (HAZOP) (Hazard and Operability Study) studies are used especially when:",
+   "options": [
+    "Every train departs",
+    "A new system is introduced or a change is made",
+    "A ticket is sold",
+    "A shift ends"
+   ],
+   "answer": 1,
+   "explain": "New systems and changes get formal hazard studies because their hazards are not yet known from experience."
+  },
+  {
+   "q": "Job Safety Analysis (JSA) examines:",
+   "options": [
+    "A worker's salary",
+    "The timetable",
+    "A specific job, step by step, to find its hazards before work starts",
+    "Annual leave"
+   ],
+   "answer": 2,
+   "explain": "Job Safety Analysis (JSA) breaks a job into steps and asks at each step: what can hurt here, and how do we control it?"
+  },
+  {
+   "q": "In a risk matrix, the two axes are:",
+   "options": [
+    "Likelihood (rare to almost certain) and Severity (minor to catastrophic)",
+    "Cost and time",
+    "Staff and passengers",
+    "Speed and distance"
+   ],
+   "answer": 0,
+   "explain": "Every risk is placed on the matrix by how likely it is and how severe it would be."
+  },
+  {
+   "q": "A risk rated High (red) in the matrix means:",
+   "options": [
+    "Proceed with routine procedures",
+    "Ignore it if busy",
+    "Monitor it next year",
+    "It must be controlled before work proceeds"
+   ],
+   "answer": 3,
+   "explain": "Red = control before work. The matrix is a decision tool, not a decoration."
+  },
+  {
+   "q": "A Medium (amber) risk calls for:",
+   "options": [
+    "Stopping all work forever",
+    "No action",
+    "Controls plus monitoring",
+    "Only Personal Protective Equipment (PPE)"
+   ],
+   "answer": 2,
+   "explain": "Amber risks proceed only with controls in place and the risk watched."
+  },
+  {
+   "q": "A Low (green) risk is managed by:",
+   "options": [
+    "Routine procedures",
+    "Senior-level enquiry",
+    "Cancelling the work",
+    "Emergency response"
+   ],
+   "answer": 0,
+   "explain": "Green does not mean ignored — it means normal procedures are a sufficient control."
+  },
+  {
+   "q": "Why must catastrophic severity never be ignored just because likelihood is low?",
+   "options": [
+    "Because the matrix says so formally",
+    "Because inspectors check it",
+    "It can be ignored safely",
+    "Because if it happens, the consequences are unacceptable — low probability does not cancel catastrophic harm"
+   ],
+   "answer": 3,
+   "explain": "A rare derailment or electrocution is still catastrophic. Severity keeps its vote in the assessment."
+  },
+  {
+   "q": "A typical risk matrix is of what size?",
+   "options": [
+    "2 × 2",
+    "5 × 5 — five likelihood levels by five severity levels",
+    "10 × 10 only",
+    "1 × 5"
+   ],
+   "answer": 1,
+   "explain": "The book teaches the typical 5×5 matrix behind the low/medium/high/extreme bands."
+  },
+  {
+   "q": "In the book's banding, a High risk requires:",
+   "options": [
+    "Proceeding with routine procedure",
+    "Stopping — a senior decision before proceeding",
+    "Accepting and monitoring",
+    "Only informing passengers"
+   ],
+   "answer": 1,
+   "explain": "High = stop and escalate; the decision to proceed sits at senior level with proper controls."
+  },
+  {
+   "q": "An Extreme/Intolerable risk means:",
+   "options": [
+    "Proceed with extra care",
+    "Proceed at night",
+    "Work must not proceed at all",
+    "Proceed if staff volunteer"
+   ],
+   "answer": 2,
+   "explain": "Intolerable is the red line: no controls discussion — the work simply does not start."
+  },
+  {
+   "q": "The correct order of the risk-assessment process is:",
+   "options": [
+    "Identify hazards → decide who may be harmed and how → evaluate the risk → decide controls → record → review",
+    "Decide controls → identify hazards → record → evaluate → review",
+    "Evaluate → record → identify → review → controls",
+    "Record → identify → controls → evaluate → harm"
+   ],
+   "answer": 0,
+   "explain": "Assessment flows from finding hazards to controlling them, then writing it down and reviewing it."
+  },
+  {
+   "q": "When must a risk assessment be reviewed?",
+   "options": [
+    "Never — once done it is final",
+    "Only every ten years",
+    "Only when a manager changes",
+    "When conditions change, after incidents, and as part of the regular review cycle"
+   ],
+   "answer": 3,
+   "explain": "A stale assessment describes a railway that no longer exists; change and incidents trigger review."
+  },
+  {
+   "q": "Staff reporting contributes to hazard identification because:",
+   "options": [
+    "It increases paperwork",
+    "It replaces inspections",
+    "Front-line staff see hazards in daily work that inspections may miss",
+    "It is a complaint system"
+   ],
+   "answer": 2,
+   "explain": "The person doing the job daily is a hazard sensor — reporting channels turn their observations into controls."
+  },
+  {
+   "q": "Incident data helps risk assessment by showing:",
+   "options": [
+    "Which hazards have already caused harm or near-misses, and how often",
+    "Which staff to punish",
+    "Ticket sales trends",
+    "Canteen preferences"
+   ],
+   "answer": 0,
+   "explain": "Past incidents and near-misses are evidence of likelihood — the matrix is fed by real data."
+  },
+  {
+   "q": "Scenario: A wet, slippery platform in the rainy season. The hazard and risk are:",
+   "options": [
+    "Hazard: rain; risk: zero",
+    "Hazard: passengers; risk: delay",
+    "There is no hazard",
+    "Hazard: wet surface; risk: likelihood of falls × severity of injuries to passengers"
+   ],
+   "answer": 3,
+   "explain": "Separate the two words: the wet platform is the hazard; the chance and consequence of a fall is the risk."
+  },
+  {
+   "q": "Extreme weather appears in hazard identification as:",
+   "options": [
+    "Not a hazard",
+    "An operational hazard affecting safe working",
+    "Only a passenger comfort issue",
+    "A timetable issue only"
+   ],
+   "answer": 1,
+   "explain": "Extreme weather can create hazards across the railway — it belongs in the hazard list."
+  },
+  {
+   "q": "Objects on the track and trespassers are examples of:",
+   "options": [
+    "Controls",
+    "Hazards identified in operational areas",
+    "Barriers",
+    "Lessons learned"
+   ],
+   "answer": 1,
+   "explain": "Anything that can cause harm — a trespasser, a fallen object — is identified and assessed as a hazard."
+  },
+  {
+   "q": "Interface failures are listed as hazards because:",
+   "options": [
+    "Interfaces never fail",
+    "Only paperwork fails",
+    "Where systems meet (train–platform, Operations Control Centre (OCC)–field), failures can create harm",
+    "Interfaces are not part of operations"
+   ],
+   "answer": 2,
+   "explain": "Hazards hide at interfaces: Platform Screen Door (PSD)–train, Operations Control Centre (OCC)–station, power–train. Assessment must look there specifically."
+  },
+  {
+   "q": "What does 'who may be harmed and how' add to hazard identification?",
+   "options": [
+    "It turns a general hazard into specific risks for specific people",
+    "Nothing",
+    "It is a legal formality",
+    "It delays assessment"
+   ],
+   "answer": 0,
+   "explain": "A live wire is a hazard; 'track staff may touch it during maintenance' is the risk picture that drives controls."
+  },
+  {
+   "q": "As Low As Reasonably Practicable (ALARP) requires risk to be reduced until:",
+   "options": [
+    "The budget runs out",
+    "Staff get tired",
+    "Risk becomes exactly zero",
+    "Further reduction would cost grossly more than the safety gained"
+   ],
+   "answer": 3,
+   "explain": "As Low As Reasonably Practicable (ALARP) is a balance with a thumb on the safety side: stop reducing only when the cost is grossly disproportionate."
+  },
+  {
+   "q": "Scenario: A hazard is very unlikely but would kill many people if it occurred. Correct treatment:",
+   "options": [
+    "Ignore it as too unlikely",
+    "Mention it in a footnote only",
+    "Assess and control it seriously — catastrophic severity is never dismissed for low likelihood",
+    "Wait for it to happen once"
+   ],
+   "answer": 2,
+   "explain": "Likelihood is only half the product. Catastrophic × rare still demands real controls."
+  },
+  {
+   "q": "Recording the risk assessment matters because:",
+   "options": [
+    "It makes the decisions traceable and reviewable, and shows controls were decided before work",
+    "It fills files",
+    "It replaces doing the controls",
+    "It is needed only for audits"
+   ],
+   "answer": 0,
+   "explain": "If it is not recorded, it cannot be reviewed, checked or learned from."
+  },
+  {
+   "q": "Which is the best source for spotting a hazard in an existing operation?",
+   "options": [
+    "A single annual walk",
+    "Only senior officers' opinions",
+    "Only equipment manuals",
+    "A combination of inspections, incident/near-miss data and staff reporting"
+   ],
+   "answer": 3,
+   "explain": "No single method sees everything — inspections, data and front-line reports together give the full picture."
+  },
+  {
+   "q": "A hazard is different from a risk because:",
+   "options": [
+    "They are the same thing",
+    "A hazard is the potential to cause harm; risk is the likelihood and severity of that harm occurring",
+    "Risk comes before hazard always",
+    "A hazard is always an accident"
+   ],
+   "answer": 1,
+   "explain": "Exam favourite: hazard = potential; risk = likelihood × severity of that potential becoming real."
+  },
+  {
+   "q": "Fire and smoke in a station are treated in hazard identification as:",
+   "options": [
+    "Only cleanliness issues",
+    "Hazards whose risk is assessed for passengers and staff",
+    "Only insurance matters",
+    "Not operational hazards"
+   ],
+   "answer": 1,
+   "explain": "Fire/smoke can kill quickly in enclosed stations — it is a core operational hazard."
+  },
+  {
+   "q": "Crowd crush on a platform is:",
+   "options": [
+    "A control measure",
+    "A type of barrier",
+    "A hazard arising from crowd density at the platform",
+    "Impossible in stations"
+   ],
+   "answer": 2,
+   "explain": "Crowd crush is listed among operational hazards — density itself can injure and kill."
+  },
+  {
+   "q": "Before introducing a changed working method, the correct safety step is:",
+   "options": [
+    "Assess the risks of the change (e.g., Hazard and Operability Study (HAZOP)-style review/Job Safety Analysis (JSA)) before it goes live",
+    "Introduce it and assess later",
+    "Ask passengers first",
+    "No assessment is needed for small changes"
+   ],
+   "answer": 0,
+   "explain": "Change creates new hazards; assessment precedes introduction, not the first accident after it."
+  },
+  {
+   "q": "The output of a risk assessment should directly decide:",
+   "options": [
+    "The staff uniform",
+    "The train colour",
+    "The announcement script",
+    "What controls are needed for the work to proceed safely"
+   ],
+   "answer": 3,
+   "explain": "Assessment is not academic — its output is the control set for the job."
+  },
+  {
+   "q": "Scenario: Likelihood 'rare', severity 'catastrophic', no controls yet. The matrix position demands:",
+   "options": [
+    "Routine procedures only",
+    "Ignoring the risk",
+    "Serious controls and senior attention before the activity proceeds",
+    "A note in the log book only"
+   ],
+   "answer": 2,
+   "explain": "Catastrophic severity pulls the risk up the matrix even at low likelihood — control it before proceeding."
+  },
+  {
+   "q": "Why does the assessment ask for severity 'of harm', not 'of damage cost'?",
+   "options": [
+    "Because the matrix measures harm to people first, not money",
+    "Costs are secret",
+    "Damage is never counted",
+    "Severity means delay minutes"
+   ],
+   "answer": 0,
+   "explain": "Severity is about injury and death first — that is why punctuality and cost never outrank it."
+  },
+  {
+   "q": "A risk that remains after all planned controls is the:",
+   "options": [
+    "Initial risk",
+    "Hidden risk",
+    "Zero risk",
+    "Residual risk, which must be As Low As Reasonably Practicable (ALARP) and accepted knowingly"
+   ],
+   "answer": 3,
+   "explain": "You work with residual risk every day — the duty is to make it As Low As Reasonably Practicable (ALARP) and know what remains."
+  },
+  {
+   "q": "In operational risk assessment, which pairing of step and tool is correct?",
+   "options": [
+    "Hazard identification — the matrix; Risk evaluation — Personal Protective Equipment (PPE)",
+    "Hazard identification — inspections and HAZID; Risk evaluation — the likelihood × severity matrix",
+    "Both steps — the duty roster",
+    "Hazard identification — punishment; evaluation — fines"
+   ],
+   "answer": 1,
+   "explain": "First find and list the hazards, then score each one on the matrix to decide controls."
+  },
+  {
+   "q": "A hazard log (hazard register) is maintained throughout the life of a railway system in order to:",
+   "options": [
+    "Record staff attendance",
+    "Record every identified hazard with its assessed risk, the controls applied and its current status, so no known hazard is ever lost track of",
+    "Store old timetables",
+    "List passenger complaints"
+   ],
+   "answer": 1,
+   "explain": "Hazards are identified over years by many different people. The hazard log is the system's memory: each hazard, its risk, its controls and whether it is closed or still open — reviewed whenever anything changes."
+  },
+  {
+   "q": "A Hazard and Operability Study (HAZOP) examines a system mainly by:",
+   "options": [
+    "Watching it run for one day",
+    "Applying guide words such as 'No', 'More', 'Less' and 'Reverse' to each part of the design to systematically find deviations from the intended operation",
+    "Asking passengers for opinions",
+    "Counting past accidents only"
+   ],
+   "answer": 1,
+   "explain": "Hazard and Operability Study (HAZOP) is structured imagination: for each element, the team asks what happens if there is NO flow, MORE pressure, LESS speed, REVERSE movement — and whether the result can cause harm. It finds hazards before the system is ever built or changed."
+  },
+  {
+   "q": "A Job Safety Analysis (JSA) is done by:",
+   "options": [
+    "Reading the accident reports of other railways",
+    "Breaking a specific job into its steps and identifying the hazards and precautions at each step before the job is done",
+    "Interviewing passengers",
+    "Checking the weather only"
+   ],
+   "answer": 1,
+   "explain": "Job Safety Analysis (JSA) looks at one real job — say, cleaning a Platform Screen Door (PSD) track-side sensor — step by step: where can a hand slip, what is live, what can move? Each step gets its precaution before work starts, not after an injury."
+  },
+  {
+   "q": "In a bow-tie diagram of a hazard, the 'top event' sits in the centre with:",
+   "options": [
+    "Only causes on the left",
+    "Threats and preventive barriers on the left, and consequences with recovery barriers on the right",
+    "Only consequences on the right",
+    "The inquiry report attached"
+   ],
+   "answer": 1,
+   "explain": "The bow-tie shows the whole story of one hazard: what can cause the loss-of-control event, what stops it happening, and if it happens anyway, what limits the damage. Weak or missing barriers are visible at a glance."
+  },
+  {
+   "q": "In risk tolerability terms, a risk assessed as 'intolerable' must be:",
+   "options": [
+    "Accepted if the service is important",
+    "Reduced regardless of cost, or the activity must not be carried out — it cannot be justified by benefits",
+    "Monitored once a year",
+    "Transferred to passengers"
+   ],
+   "answer": 1,
+   "explain": "Above the intolerable line there is no bargaining: the risk comes down or the activity stops. Only below that line does As Low As Reasonably Practicable (ALARP) begin, where further reduction is balanced against grossly disproportionate cost."
+  }
+ ]
+}

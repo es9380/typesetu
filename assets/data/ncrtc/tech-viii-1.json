@@ -1,0 +1,448 @@
+{
+ "id": "tech-viii-1",
+ "category": "technical",
+ "group": "Unit viii — Adaptability & Situational Awareness",
+ "title": "Changing Conditions & Degraded Mode Working",
+ "questions": [
+  {
+   "q": "Situational awareness (situational awareness (SA)) has three levels. Level 1 is:",
+   "options": [
+    "Perception — noticing the elements: train positions, alarms, weather, crowd build-up",
+    "Comprehension — understanding meaning",
+    "Writing the report",
+    "Projection — predicting the future"
+   ],
+   "answer": 0,
+   "explain": "Level 1 = see it. Perception gathers the raw picture before any meaning is made of it."
+  },
+  {
+   "q": "Level 2 of situational awareness is:",
+   "options": [
+    "Noticing a single alarm",
+    "Understanding what the elements mean together — e.g. late train + single spare + peak hour = headway collapse coming",
+    "Predicting the exact time of failure",
+    "Counting passengers"
+   ],
+   "answer": 1,
+   "explain": "Level 2 = understand it. Separate facts combine into one meaning — that is comprehension."
+  },
+  {
+   "q": "Level 3 of situational awareness, projection, means:",
+   "options": [
+    "Reporting to seniors",
+    "Showing the plan on a projector",
+    "Predicting how the situation will develop in the near future and acting before it happens",
+    "Project management"
+   ],
+   "answer": 2,
+   "explain": "Level 3 = predict it. The controller pre-positions the spare train BEFORE the collapse, not after."
+  },
+  {
+   "q": "A controller notices a late train, knows there is only one spare, and warns stations of a coming headway collapse while pre-positioning the spare. He is demonstrating:",
+   "options": [
+    "Poor concentration",
+    "Over-reaction",
+    "Level 1 only",
+    "All three situational awareness (SA) levels — perception, comprehension and projection"
+   ],
+   "answer": 3,
+   "explain": "See it, understand it, predict it — and act on the prediction. That is complete situational awareness."
+  },
+  {
+   "q": "Situational awareness is LOST mainly by:",
+   "options": [
+    "Team cross-checks",
+    "Structured scanning",
+    "Fixation on one problem, overload, fatigue and poor handover",
+    "Briefings"
+   ],
+   "answer": 2,
+   "explain": "Tunnel vision, tiredness, overload and weak handovers are the classic situational awareness (SA) killers in control rooms."
+  },
+  {
+   "q": "Situational awareness is PROTECTED by:",
+   "options": [
+    "Structured scanning, briefings, complete shift handovers and team cross-checks",
+    "Working alone without interruption",
+    "Skipping handovers when busy",
+    "Keeping information in one's head"
+   ],
+   "answer": 0,
+   "explain": "situational awareness (SA) survives on system habits: scanning, briefings, full handovers and colleagues who cross-check you."
+  },
+  {
+   "q": "A complete shift handover must include:",
+   "options": [
+    "Personal messages for friends",
+    "Only completed work",
+    "Only the shift time",
+    "The state of every train, defects, restrictions and pending actions — nothing 'in the head only'"
+   ],
+   "answer": 3,
+   "explain": "The incoming shift inherits your picture. Anything left in your head leaves with you — and becomes their surprise."
+  },
+  {
+   "q": "Degraded mode working is best described as:",
+   "options": [
+    "Improvising new rules on the spot",
+    "A planned, practised way of running a reduced but safe service when part of the system has failed",
+    "Stopping all trains for any fault",
+    "Running the full timetable regardless"
+   ],
+   "answer": 1,
+   "explain": "Degraded working is a planned skill, not improvisation. Staff must be as fluent in it as in automatic running."
+  },
+  {
+   "q": "Why must staff be fluent in restricted/manual procedures?",
+   "options": [
+    "Because automatic running needs staff least — when automation fails, human skill carries the railway",
+    "Manual procedures are easier",
+    "Examiners prefer old methods",
+    "Manual running is used daily"
+   ],
+   "answer": 0,
+   "explain": "Automation fails rarely but completely. The day it fails is the day manual fluency is the only thing running the service."
+  },
+  {
+   "q": "Conditions change mid-shift: a section's capacity drops due to a failure. The adaptable response is:",
+   "options": [
+    "Insist on the original timetable",
+    "Accept the lower capacity honestly, re-plan the service around it with even gaps, and inform passengers",
+    "Promise normal service to keep passengers calm",
+    "Hide the change from stations"
+   ],
+   "answer": 1,
+   "explain": "Adapt the plan, never the safety rules. An honest reduced service beats a fictional full one."
+  },
+  {
+   "q": "During degraded working, the service promise to passengers should be:",
+   "options": [
+    "Whatever each station chooses",
+    "Normal service, to avoid complaints",
+    "A realistic reduced service — fewer trains with even gaps — honestly announced",
+    "No information until repairs finish"
+   ],
+   "answer": 2,
+   "explain": "Do not promise normal service on a broken railway. Even gaps and honest information keep trust and order."
+  },
+  {
+   "q": "'Protecting a usable core service rather than collapsing everything' means:",
+   "options": [
+    "Closing healthy sections too",
+    "Cancelling alternate days",
+    "Running trains only near the depot",
+    "Keeping the maximum safe service running on the healthy part instead of letting the whole timetable disintegrate chasing the full plan"
+   ],
+   "answer": 3,
+   "explain": "Continuity = a stable core service survives. Chasing the full timetable in degraded conditions usually collapses everything."
+  },
+  {
+   "q": "Safety and service continuity are balanced by:",
+   "options": [
+    "Letting passengers decide",
+    "Trading a little safety for more trains",
+    "Never trading safety away, but running the maximum service possible inside the safe envelope",
+    "Stopping all service at any risk"
+   ],
+   "answer": 2,
+   "explain": "Safety is the boundary, not a bargaining chip. Within it, the professional keeps the best service running."
+  },
+  {
+   "q": "Weather suddenly worsens with heavy rain during the evening peak. The adaptable controller:",
+   "options": [
+    "Anticipates flooding, adhesion and crowd effects, warns stations, adjusts the plan and informs passengers early",
+    "Waits for the first incident to react",
+    "Cancels the peak service entirely",
+    "Continues the plan unchanged"
+   ],
+   "answer": 0,
+   "explain": "Changing conditions demand early re-planning. Projection — acting before the effects land — is Level 3 situational awareness (SA) in action."
+  },
+  {
+   "q": "A controller is fixated on one failed train while a crowd builds dangerously at another station, unnoticed. This is a failure of:",
+   "options": [
+    "Radio discipline",
+    "Uniform standards",
+    "Memory of rules",
+    "Situational awareness — fixation on one problem blinded him to the whole picture"
+   ],
+   "answer": 3,
+   "explain": "Fixation is the textbook situational awareness (SA) loss. The whole board must keep being scanned, especially during an incident."
+  },
+  {
+   "q": "Fatigue in a controller most directly damages:",
+   "options": [
+    "Radio range",
+    "Perception and projection — Levels 1 and 3 of situational awareness (SA)",
+    "Pay and allowances",
+    "Knowledge of rules"
+   ],
+   "answer": 1,
+   "explain": "Tired eyes miss indications; tired minds stop predicting. Fatigue attacks the first and last levels of situational awareness (SA)."
+  },
+  {
+   "q": "A junior staff member sees a developing risk that seniors have missed. Graded assertiveness requires him to:",
+   "options": [
+    "Speak up clearly and immediately through the proper channel",
+    "Mention it at the next day's briefing",
+    "Discuss it with passengers",
+    "Stay silent — rank decides"
+   ],
+   "answer": 0,
+   "explain": "Rank never outranks a live safety observation. Speaking up is a duty, protected by procedure."
+  },
+  {
+   "q": "During single-line/degraded working on one section, the rest of the line should:",
+   "options": [
+    "Also stop in sympathy",
+    "Continue the best possible service, with the degraded section re-planned around it",
+    "Run at full speed to compensate",
+    "Be ignored by Operations Control Centre (OCC)"
+   ],
+   "answer": 1,
+   "explain": "One degraded section must not degrade the whole railway. Isolate the problem, serve the rest."
+  },
+  {
+   "q": "Short-turning trains during a disruption is an adaptability tool because it:",
+   "options": [
+    "Avoids announcements",
+    "Confuses passengers",
+    "Restores even headway on the healthy core section instead of letting gaps bunch through the failed area",
+    "Reduces staff work"
+   ],
+   "answer": 2,
+   "explain": "Short turns rebuild a regular service where the railway is healthy — the core keeps its rhythm."
+  },
+  {
+   "q": "When the plan must change, the change should be communicated:",
+   "options": [
+    "By rumour",
+    "At the end of the shift",
+    "Only to the depot",
+    "Once, clearly, to all affected points — stations, trains and staff — so everyone works to the same new plan"
+   ],
+   "answer": 3,
+   "explain": "A new plan that reaches only some points creates five different railways. One clear broadcast, all points, same plan."
+  },
+  {
+   "q": "A degraded service is running with longer gaps. Passenger information should:",
+   "options": [
+    "Blame the failed equipment",
+    "Stop, since service is abnormal",
+    "Be more frequent and honest — including expected gaps and alternatives",
+    "Promise improvement every few minutes"
+   ],
+   "answer": 2,
+   "explain": "In degraded working, information is part of the service. Honest gaps and alternatives keep crowds calm and moving."
+  },
+  {
+   "q": "The difference between normal and degraded working, in one line:",
+   "options": [
+    "Normal = automatic running to timetable; degraded = partial failure, reduced but safely running service under adapted procedures",
+    "Degraded means no rules apply",
+    "Normal means manual working",
+    "Degraded means staff work harder only"
+   ],
+   "answer": 0,
+   "explain": "Degraded is not chaos and not closure — it is a reduced, planned, safe mode between normal and emergency."
+  },
+  {
+   "q": "A new restriction is imposed on a section mid-shift. For situational awareness (SA), this restriction must be:",
+   "options": [
+    "Announced only to passengers",
+    "Written on a loose paper",
+    "Remembered by the controller alone",
+    "Recorded, briefed to all affected staff, and included in the shift handover"
+   ],
+   "answer": 3,
+   "explain": "Restrictions live in records and handovers, not in one person's memory. That is how the next shift stays aware."
+  },
+  {
+   "q": "Two trains approach a degraded section from opposite ends. The controller's situational awareness (SA) task is to:",
+   "options": [
+    "Let them sort it out",
+    "Project the conflict early and regulate — hold or sequence the trains before they block each other",
+    "Watch and record only",
+    "Speed up both"
+   ],
+   "answer": 1,
+   "explain": "Projection exists for this moment: see the conflict before it forms and regulate while options still exist."
+  },
+  {
+   "q": "Keeping one person (usually the Operations Control Centre (OCC) in-charge) free from hands-on tasks during degraded working protects:",
+   "options": [
+    "The overall picture — someone must hold the whole situation while others execute tasks",
+    "The log's neatness",
+    "Shift timings",
+    "His comfort"
+   ],
+   "answer": 0,
+   "explain": "If the in-charge dives into one task, nobody is watching the whole board. Holding the picture is itself the job."
+  },
+  {
+   "q": "A driver reports worsening track conditions in rain, trip after trip. The adaptable system response is:",
+   "options": [
+    "Note each report separately and forget",
+    "Recognise the trend, warn all trains, consider speed restriction per procedure and inform Operations Control Centre (OCC) control for a section-level decision",
+    "Tell the driver to be careful only",
+    "Wait for an accident to confirm"
+   ],
+   "answer": 1,
+   "explain": "Repeated reports are a changing condition announcing itself. Trends trigger section-level protection, not trip-level sympathy."
+  },
+  {
+   "q": "Which practice best maintains situational awareness (SA) during a long, quiet night shift?",
+   "options": [
+    "Sleeping in turns without handover",
+    "Relaxing scan discipline since nothing happens",
+    "Structured scanning at intervals and cross-checks, because quiet shifts breed the complacency that misses the one abnormal value",
+    "Switching off alarms"
+   ],
+   "answer": 2,
+   "explain": "Quiet is an situational awareness (SA) hazard. Discipline is what carries awareness through the hours when nothing seems to happen."
+  },
+  {
+   "q": "When degraded working begins, the FIRST communication priority is:",
+   "options": [
+    "Updating the monthly report",
+    "Calling the enquiry officer",
+    "Informing the media",
+    "Ensuring every affected point knows the mode has changed and what the new plan is"
+   ],
+   "answer": 3,
+   "explain": "Mode changes fail when points work to different assumptions. Tell everyone the new mode and plan, first."
+  },
+  {
+   "q": "A platform screen door fault forces manual door working at one station. This is an example of:",
+   "options": [
+    "A reason to close the line",
+    "Abnormal mode — stopping everything",
+    "Degraded working — a planned reduced procedure keeping a safe service running at that station",
+    "Normal working"
+   ],
+   "answer": 2,
+   "explain": "A local failure handled by a prescribed reduced procedure, service continuing safely — that is degraded working exactly."
+  },
+  {
+   "q": "An adaptable operator treats an unexpected timetable change request from a station as:",
+   "options": [
+    "New information to assess against the whole picture — accept, modify or refuse with reasons communicated back",
+    "Always acceptable",
+    "Always refusable",
+    "An insult to the plan"
+   ],
+   "answer": 0,
+   "explain": "Adaptability is not obedience or rigidity. Assess against the whole picture, decide, and communicate the decision."
+  },
+  {
+   "q": "The strongest protection against situational awareness (SA) loss at shift change is:",
+   "options": [
+    "Leaving early",
+    "A group photograph",
+    "A fast, informal chat",
+    "A structured handover — written and verbal — covering trains, defects, restrictions, incidents and pending actions"
+   ],
+   "answer": 3,
+   "explain": "Most 'new shift incidents' are old incidents whose handover was weak. Structure is the protection."
+  },
+  {
+   "q": "During degraded working, promising connections and last-train commitments should be:",
+   "options": [
+    "Forgotten entirely",
+    "Protected where safely possible, and honestly revised where not — with passengers told early",
+    "Guaranteed regardless of conditions",
+    "Decided by each station separately"
+   ],
+   "answer": 1,
+   "explain": "Continuity includes people's onward journeys. Protect commitments where you can; where you cannot, early honesty is the service."
+  },
+  {
+   "q": "A controller keeps re-checking the whole network display even while managing one degraded section. This demonstrates:",
+   "options": [
+    "Maintained situational awareness beyond the immediate incident",
+    "Indecision",
+    "Delay in work",
+    "Distrust of staff"
+   ],
+   "answer": 0,
+   "explain": "The next incident rarely waits for the first to finish. Scanning the whole board during one problem is professional situational awareness (SA)."
+  },
+  {
+   "q": "Improvisation differs from adaptability because:",
+   "options": [
+    "They are the same",
+    "Adaptability works within rules and principles using practised degraded procedures; improvisation invents untested actions outside them",
+    "Improvisation is always better",
+    "Adaptability needs no training"
+   ],
+   "answer": 1,
+   "explain": "Adapt to the plan, never invent the rules. Practised degraded procedures are the adaptable operator's toolkit."
+  },
+  {
+   "q": "When conditions return to normal after degraded working, the correct sequence is:",
+   "options": [
+    "Keep degraded mode forever",
+    "Resume full service instantly on one report",
+    "Confirm the failure is cleared and certified, restore in phases, inform all points, then normal working",
+    "Let each station decide"
+   ],
+   "answer": 2,
+   "explain": "Restoration is phased and certified, like the failure was managed. One optimistic report does not rebuild a timetable."
+  },
+  {
+   "q": "'Attention tunnelling' — a common cause of lost situational awareness — means:",
+   "options": [
+    "Looking through a tunnel carefully",
+    "Fixating on one problem or display for so long that other developing changes in the situation are missed",
+    "Working only in tunnels",
+    "A type of tunnel ventilation fault"
+   ],
+   "answer": 1,
+   "explain": "Under pressure, attention narrows onto the loudest problem. While the operator fights one fault, a second situation grows unseen — periodic deliberate scanning of the whole picture is the antidote."
+  },
+  {
+   "q": "Conditions on a section are changing faster than the current plan can handle. The golden rule is to:",
+   "options": [
+    "Keep trains moving and think faster",
+    "Return the operation to a known safe state — for example holding or stopping trains as per rules — while the new situation is assessed and a fresh plan is made",
+    "Hand the problem to the next shift",
+    "Wait for conditions to settle on their own"
+   ],
+   "answer": 1,
+   "explain": "You cannot plan clearly inside a situation that is still moving. A known safe state buys the one thing decision-making needs — time — and movement can always be restarted once the picture is understood."
+  },
+  {
+   "q": "'Mode confusion' in automated systems happens when:",
+   "options": [
+    "Two trains run on one line",
+    "The operator believes the system is in one automation mode while it is actually in another, and acts on the wrong belief",
+    "The timetable has two versions",
+    "A driver changes his shift"
+   ],
+   "answer": 1,
+   "explain": "Modern systems behave differently in different modes — what the train will do 'by itself' changes. If the operator's mental picture of the mode is wrong, his correct-looking action produces a surprise. Always confirming the actual mode is a core operating habit."
+  },
+  {
+   "q": "An operation is called 'resilient' mainly when it has:",
+   "options": [
+    "The newest trains",
+    "Margins to absorb disturbance — spare trains and crew, headway margin and alternative routes — so a single failure degrades service gracefully instead of collapsing it",
+    "Zero staff leave",
+    "The fastest timetable possible"
+   ],
+   "answer": 1,
+   "explain": "A timetable planned at 100% capacity breaks completely at the first failure. Resilience is built from deliberate slack: the spare train, the standby crew and the time margin are what adaptability spends when conditions change."
+  },
+  {
+   "q": "Immediately after a sudden, unexpected event, a trained operator's first move should be a brief pause to re-orient, because:",
+   "options": [
+    "There is nothing else to do",
+    "The 'startle effect' makes the first reflexive action likely to be wrong — a few seconds to perceive the real situation prevents a hasty action that worsens it",
+    "Rules require a tea break",
+    "Passengers expect silence"
+   ],
+   "answer": 1,
+   "explain": "Startle hijacks thinking for a few seconds. Trained crews are taught to pause, look, and let perception catch up before touching controls — the pause feels slow but prevents the classic wrong first action."
+  }
+ ]
+}

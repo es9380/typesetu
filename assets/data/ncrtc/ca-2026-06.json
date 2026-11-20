@@ -1,0 +1,448 @@
+{
+ "id": "ca-2026-06",
+ "category": "ca",
+ "group": "Current Affairs",
+ "title": "Current Affairs — June 2026",
+ "questions": [
+  {
+   "q": "Surha Tal, declared India's 100th Ramsar site in June 2026, is located in which district of Uttar Pradesh?",
+   "options": [
+    "Basti",
+    "Azamgarh",
+    "Gorakhpur",
+    "Ballia"
+   ],
+   "answer": 3,
+   "explain": "Surha Tal in Ballia became India's 100th Ramsar site (a wetland of international importance under the Ramsar Convention); Uttar Pradesh (UP) then had 13 such sites."
+  },
+  {
+   "q": "India signed a $629 million deal in June 2026 to export BrahMos supersonic cruise missiles to which country?",
+   "options": [
+    "Vietnam",
+    "Indonesia",
+    "Philippines",
+    "Malaysia"
+   ],
+   "answer": 0,
+   "explain": "The $629 million BrahMos export deal was signed with Vietnam; BrahMos is an India–Russia joint venture missile."
+  },
+  {
+   "q": "Who took over as the 31st Chief of the Army Staff (COAS) on 30 June 2026?",
+   "options": [
+    "Gen Anil Chauhan",
+    "Gen Upendra Dwivedi",
+    "Gen Dhiraj Seth",
+    "Lt Gen Rajiv Ghai"
+   ],
+   "answer": 2,
+   "explain": "General Dhiraj Seth became the 31st Chief of the Army Staff (COAS) on 30 June 2026; General Anil Chauhan is the Chief of Defence Staff (CDS)."
+  },
+  {
+   "q": "Who won the Indian Premier League (IPL) 2026 title?",
+   "options": [
+    "Mumbai Indians",
+    "Royal Challengers Bengaluru",
+    "Gujarat Titans",
+    "Chennai Super Kings"
+   ],
+   "answer": 1,
+   "explain": "Royal Challengers Bengaluru (RCB) beat Gujarat Titans by 5 wickets in the final to win their second consecutive Indian Premier League (IPL) title."
+  },
+  {
+   "q": "Who became the first Indian to win the Norway Chess title in 2026?",
+   "options": [
+    "Vidit Gujrathi",
+    "Arjun Erigaisi",
+    "D. Gukesh",
+    "R. Praggnanandhaa"
+   ],
+   "answer": 3,
+   "explain": "R. Praggnanandhaa became the first Indian to win Norway Chess, one of the world's strongest chess tournaments."
+  },
+  {
+   "q": "Which state became the 36th State/Union Territory to join Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY)?",
+   "options": [
+    "Jharkhand",
+    "West Bengal",
+    "Odisha",
+    "Delhi"
+   ],
+   "answer": 1,
+   "explain": "West Bengal joined Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY), which provides ₹5 lakh health cover per family per year."
+  },
+  {
+   "q": "The Pradhan Mantri Street Vendor's AtmaNirbhar Nidhi (PM SVANidhi) scheme, which completed six years on 1 June 2026, provides collateral-free loans to ___",
+   "options": [
+    "Street vendors",
+    "Startups",
+    "Self-help groups",
+    "Farmers"
+   ],
+   "answer": 0,
+   "explain": "The Pradhan Mantri Street Vendor's AtmaNirbhar Nidhi (PM SVANidhi) gives street vendors collateral-free loans in tranches of ₹10,000, ₹20,000 and ₹50,000."
+  },
+  {
+   "q": "The revised Index of Industrial Production (IIP) series released in June 2026 uses which base year?",
+   "options": [
+    "2017–18",
+    "2022–23",
+    "2011–12",
+    "2020–21"
+   ],
+   "answer": 1,
+   "explain": "The Ministry of Statistics and Programme Implementation (MoSPI) revised the Index of Industrial Production (IIP) base year to 2022–23."
+  },
+  {
+   "q": "India's Gross Domestic Product (GDP) growth rate for the financial year 2025–26 was ___",
+   "options": [
+    "8.2%",
+    "7.2%",
+    "5.9%",
+    "6.5%"
+   ],
+   "answer": 3,
+   "explain": "India's Gross Domestic Product (GDP) grew by 6.5% in the financial year 2025–26."
+  },
+  {
+   "q": "Which country hosted the Group of Seven (G7) Summit attended by Prime Minister Modi in June 2026?",
+   "options": [
+    "France",
+    "Italy",
+    "Germany",
+    "Canada"
+   ],
+   "answer": 0,
+   "explain": "France hosted the Group of Seven (G7) Summit in June 2026, which Prime Minister (PM) Modi attended."
+  },
+  {
+   "q": "In June 2026, which country became the ninth country where India's Unified Payments Interface (UPI) is accepted?",
+   "options": [
+    "Vietnam",
+    "Bhutan",
+    "Cambodia",
+    "Sri Lanka"
+   ],
+   "answer": 2,
+   "explain": "Cambodia became the ninth country accepting the Unified Payments Interface (UPI), India's instant payment system."
+  },
+  {
+   "q": "According to the Global Peace Index 2026, which country is the most peaceful in the world?",
+   "options": [
+    "Iceland",
+    "Singapore",
+    "Ireland",
+    "New Zealand"
+   ],
+   "answer": 0,
+   "explain": "Iceland topped the Global Peace Index 2026; India ranked 127th."
+  },
+  {
+   "q": "The Kavach train safety system upgrade approved in June 2026 is called ___",
+   "options": [
+    "Kavach 3.0",
+    "Kavach 4.0",
+    "Kavach 5.0",
+    "Kavach 2.0"
+   ],
+   "answer": 1,
+   "explain": "Kavach 4.0, India's automatic train protection system, was approved for expansion across more railway sections."
+  },
+  {
+   "q": "India's first satellite-based aircraft landing (at Udaipur airport) used which system?",
+   "options": [
+    "IRNSS",
+    "Bhuvan",
+    "GPS Aided GEO Augmented Navigation (GAGAN)",
+    "NAVIC"
+   ],
+   "answer": 2,
+   "explain": "The landing used GPS Aided GEO Augmented Navigation (GAGAN), India's satellite-based augmentation system, on an IndiGo Airbus A320."
+  },
+  {
+   "q": "Microsoft unveiled which quantum computing chip in June 2026?",
+   "options": [
+    "Majorana 2",
+    "Sycamore",
+    "Condor",
+    "Willow"
+   ],
+   "answer": 0,
+   "explain": "Microsoft unveiled the Majorana 2 quantum chip, built for more stable qubits."
+  },
+  {
+   "q": "Who became the first footballer to receive the Princess of Asturias Award for Sports?",
+   "options": [
+    "Kylian Mbappé",
+    "Cristiano Ronaldo",
+    "Neymar",
+    "Lionel Messi"
+   ],
+   "answer": 3,
+   "explain": "Lionel Messi became the first footballer to receive Spain's Princess of Asturias Award for Sports."
+  },
+  {
+   "q": "Jainendra K. Jain, an Indian-American physicist, won which prestigious prize in 2026?",
+   "options": [
+    "Nobel Prize in Physics",
+    "Breakthrough Prize",
+    "Wolf Prize in Physics",
+    "Abel Prize"
+   ],
+   "answer": 2,
+   "explain": "Jainendra K. Jain won the Wolf Prize in Physics 2026 for work on composite fermions."
+  },
+  {
+   "q": "National Statistics Day is observed on 29 June to mark the birth anniversary of ___",
+   "options": [
+    "C. R. Rao",
+    "V. K. R. V. Rao",
+    "P. C. Mahalanobis",
+    "Dadabhai Naoroji"
+   ],
+   "answer": 2,
+   "explain": "National Statistics Day (29 June) marks the birth anniversary of Prasanta Chandra Mahalanobis, founder of the Indian Statistical Institute."
+  },
+  {
+   "q": "Who took oath as the 24th Chief Minister of Karnataka on 3 June 2026?",
+   "options": [
+    "H. D. Kumaraswamy",
+    "D. K. Shivakumar",
+    "Siddaramaiah",
+    "Basavaraj Bommai"
+   ],
+   "answer": 1,
+   "explain": "D. K. Shivakumar became the 24th Chief Minister (CM) of Karnataka on 3 June 2026."
+  },
+  {
+   "q": "India and which country signed a Comprehensive Economic Partnership Agreement (CEPA) in June 2026?",
+   "options": [
+    "Oman",
+    "Qatar",
+    "Bahrain",
+    "Saudi Arabia"
+   ],
+   "answer": 0,
+   "explain": "India signed a Comprehensive Economic Partnership Agreement (CEPA) with Oman in June 2026."
+  },
+  {
+   "q": "Who won the men's singles title at the French Open 2026?",
+   "options": [
+    "Jannik Sinner",
+    "Carlos Alcaraz",
+    "Daniil Medvedev",
+    "Alexander Zverev"
+   ],
+   "answer": 3,
+   "explain": "Alexander Zverev won the French Open 2026 men's singles title at Roland Garros, Paris."
+  },
+  {
+   "q": "Satwiksairaj Rankireddy and Chirag Shetty won the men's doubles title at which 2026 tournament?",
+   "options": [
+    "All England Open",
+    "India Open",
+    "Singapore Open",
+    "Indonesia Open"
+   ],
+   "answer": 2,
+   "explain": "The pair Satwiksairaj Rankireddy and Chirag Shetty won the Singapore Open men's doubles title in June 2026."
+  },
+  {
+   "q": "Sarvam AI, which became India's 130th unicorn in June 2026, works in which field?",
+   "options": [
+    "Artificial Intelligence (AI)",
+    "Edtech",
+    "Fintech",
+    "Agritech"
+   ],
+   "answer": 0,
+   "explain": "Sarvam AI, an artificial intelligence (AI) company building Indian-language models, became India's 130th unicorn (a startup valued over $1 billion)."
+  },
+  {
+   "q": "According to the Hurun Global Unicorn Index 2026, India's rank in number of unicorns is ___",
+   "options": [
+    "2nd",
+    "4th",
+    "3rd",
+    "5th"
+   ],
+   "answer": 1,
+   "explain": "India ranked 4th in the Hurun Global Unicorn Index 2026 with 61 unicorns."
+  },
+  {
+   "q": "The world's first facility producing hydrogen using nuclear process heat was inaugurated in June 2026 at ___",
+   "options": [
+    "Kaiga",
+    "Tarapur",
+    "Kudankulam",
+    "Kalpakkam"
+   ],
+   "answer": 3,
+   "explain": "The facility at Kalpakkam (Tamil Nadu) uses nuclear process heat to produce hydrogen — a world first."
+  },
+  {
+   "q": "'Mission Sana', launched in June 2026, relates to ___",
+   "options": [
+    "India's first indigenous super pressure balloon",
+    "An ocean cleanup drive",
+    "A deep-sea mission",
+    "A lunar sample return"
+   ],
+   "answer": 0,
+   "explain": "Mission Sana is India's first indigenous super pressure balloon for long-duration atmospheric research."
+  },
+  {
+   "q": "Which Indian state got its first fully solar-powered border outpost, set up by the Border Security Force (BSF) in June 2026?",
+   "options": [
+    "Rajasthan",
+    "Punjab",
+    "Gujarat",
+    "Jammu and Kashmir"
+   ],
+   "answer": 2,
+   "explain": "The Border Security Force (BSF) set up its first fully solar-powered border outpost in Gujarat."
+  },
+  {
+   "q": "The new Producer Price Index (PPI) and revised Wholesale Price Index (WPI) series launched on 15 June 2026 use which base year?",
+   "options": [
+    "2011–12",
+    "2017–18",
+    "2019–20",
+    "2022–23"
+   ],
+   "answer": 3,
+   "explain": "Both the Producer Price Index (PPI) and the revised Wholesale Price Index (WPI) series use base year 2022–23."
+  },
+  {
+   "q": "India won which football championship in June 2026, defeating the Maldives in the final?",
+   "options": [
+    "South Asian Football Federation (SAFF) Women's Championship",
+    "Asian Football Confederation (AFC) Women's Cup",
+    "South Asian Games football",
+    "SAFF Men's Championship"
+   ],
+   "answer": 0,
+   "explain": "India won the South Asian Football Federation (SAFF) Women's Championship 2026."
+  },
+  {
+   "q": "Who won the Orange Cap (most runs) in the Indian Premier League (IPL) 2026?",
+   "options": [
+    "Abhishek Sharma",
+    "Shubman Gill",
+    "Virat Kohli",
+    "Vaibhav Suryavanshi"
+   ],
+   "answer": 3,
+   "explain": "Young batter Vaibhav Suryavanshi won the Orange Cap in the Indian Premier League (IPL) 2026."
+  },
+  {
+   "q": "The joint military exercise 'Shakti' is held between India and which country?",
+   "options": [
+    "France",
+    "United States",
+    "Russia",
+    "Japan"
+   ],
+   "answer": 0,
+   "explain": "Exercise Shakti is the India–France joint military exercise; the Defence Research and Development Organisation (DRDO) also tested a laser-based counter-drone system in June 2026."
+  },
+  {
+   "q": "Which Indian cricketer was named Player of the Match in the Indian Premier League (IPL) 2026 final?",
+   "options": [
+    "Rajat Patidar",
+    "Krunal Pandya",
+    "Shubman Gill",
+    "Virat Kohli"
+   ],
+   "answer": 3,
+   "explain": "Virat Kohli was Player of the Match in the Indian Premier League (IPL) 2026 final."
+  },
+  {
+   "q": "The Zojila Tunnel, whose breakthrough was scheduled in June 2026, connects Srinagar with ___",
+   "options": [
+    "Jammu",
+    "Kargil town only",
+    "Leh",
+    "Manali"
+   ],
+   "answer": 2,
+   "explain": "The Zojila Tunnel (about 13 km) will give all-weather connectivity between Srinagar and Leh in Ladakh."
+  },
+  {
+   "q": "Which organisation signed a Memorandum of Understanding (MoU) with the National Health Authority in June 2026 for Ayushman Bharat digital health integration in West Bengal?",
+   "options": [
+    "World Health Organization (WHO)",
+    "National Informatics Centre",
+    "West Bengal health department (state government)",
+    "Indian Council of Medical Research (ICMR)"
+   ],
+   "answer": 2,
+   "explain": "The Memorandum of Understanding (MoU) was signed with the Government of West Bengal as the state joined the National Health Authority's digital health ecosystem."
+  },
+  {
+   "q": "The indigenous human papillomavirus (HPV) test kit validated in June 2026 is used for screening which cancer?",
+   "options": [
+    "Oral cancer",
+    "Lung cancer",
+    "Breast cancer",
+    "Cervical cancer"
+   ],
+   "answer": 3,
+   "explain": "The human papillomavirus (HPV) test kit screens for cervical cancer, which is linked to HPV infection."
+  },
+  {
+   "q": "Who became the 48th Vice Chief of the Naval Staff (VCNS) in June 2026?",
+   "options": [
+    "Vice Admiral Dinesh Tripathi",
+    "Vice Admiral Krishna Swaminathan",
+    "Vice Admiral Ajay Kochhar",
+    "Vice Admiral Sanjay Bhalla"
+   ],
+   "answer": 2,
+   "explain": "Vice Admiral Ajay Kochhar became the 48th Vice Chief of the Naval Staff (VCNS) in June 2026."
+  },
+  {
+   "q": "The first commercial electric vertical take-off and landing (eVTOL) air taxi trial in India was conducted in which state?",
+   "options": [
+    "Maharashtra",
+    "Gujarat",
+    "Karnataka",
+    "Andhra Pradesh"
+   ],
+   "answer": 3,
+   "explain": "Andhra Pradesh hosted India's first commercial electric vertical take-off and landing (eVTOL) air taxi trial in June 2026."
+  },
+  {
+   "q": "India signed an agreement in June 2026 to co-develop jet engines with which country?",
+   "options": [
+    "France",
+    "Russia",
+    "United Kingdom",
+    "United States"
+   ],
+   "answer": 0,
+   "explain": "India and France agreed to co-develop advanced jet engines in June 2026."
+  },
+  {
+   "q": "The book 'The Emergency Files' released in June 2026 is associated with which period of Indian history?",
+   "options": [
+    "The Mandal Commission",
+    "The 1962 war",
+    "Partition of India",
+    "The Emergency of 1975–77"
+   ],
+   "answer": 3,
+   "explain": "'The Emergency Files' documents the Emergency of 1975–77, a frequently asked topic in Indian polity and history."
+  },
+  {
+   "q": "Which Indian city hosted the 2026 Commonwealth Games (CWG) preparatory 'King's Baton Relay' event in India in June 2026?",
+   "options": [
+    "New Delhi",
+    "Ahmedabad",
+    "Mumbai",
+    "Bhubaneswar"
+   ],
+   "answer": 1,
+   "explain": "Ahmedabad, the host city of the 2030 Commonwealth Games (CWG), received the King's Baton Relay in June 2026."
+  }
+ ]
+}

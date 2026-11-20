@@ -1,0 +1,448 @@
+{
+ "id": "gs-geography-2",
+ "category": "gs",
+ "group": "GS — Geography",
+ "title": "Geography Test 2 (Physical & World Geography — most probable)",
+ "questions": [
+  {
+   "q": "The largest continent of the world by area is:",
+   "options": [
+    "Africa",
+    "North America",
+    "Asia",
+    "Europe"
+   ],
+   "answer": 2,
+   "explain": "Asia is the largest continent; Africa is second."
+  },
+  {
+   "q": "The largest ocean of the world is the:",
+   "options": [
+    "Pacific Ocean",
+    "Atlantic Ocean",
+    "Indian Ocean",
+    "Arctic Ocean"
+   ],
+   "answer": 0,
+   "explain": "The Pacific is the largest and deepest ocean, covering about one-third of Earth's surface."
+  },
+  {
+   "q": "The longest river in the world is generally considered to be the:",
+   "options": [
+    "Amazon",
+    "Yangtze",
+    "Mississippi",
+    "Nile"
+   ],
+   "answer": 3,
+   "explain": "The Nile (about 6,650 km) is the longest; the Amazon carries the greatest volume of water."
+  },
+  {
+   "q": "The largest hot desert in the world is the:",
+   "options": [
+    "Thar",
+    "Sahara",
+    "Gobi",
+    "Kalahari"
+   ],
+   "answer": 1,
+   "explain": "The Sahara in North Africa is the largest hot desert; the largest desert overall is Antarctica (a cold desert)."
+  },
+  {
+   "q": "The largest desert of the world (of all types) is:",
+   "options": [
+    "Antarctica",
+    "Sahara",
+    "Arabian",
+    "Gobi"
+   ],
+   "answer": 0,
+   "explain": "Antarctica is a polar (cold) desert and the largest desert overall — a favourite trap against the Sahara."
+  },
+  {
+   "q": "The Prime Meridian, from which longitudes are measured, passes through:",
+   "options": [
+    "Paris",
+    "New York",
+    "Delhi",
+    "Greenwich, London (0°)"
+   ],
+   "answer": 3,
+   "explain": "Longitudes run 0° at Greenwich to 180° east and west."
+  },
+  {
+   "q": "The Earth rotates on its axis from:",
+   "options": [
+    "East to West",
+    "West to East",
+    "North to South",
+    "South to North"
+   ],
+   "answer": 1,
+   "explain": "West-to-east rotation causes the Sun to appear to rise in the east."
+  },
+  {
+   "q": "The Equator is the latitude marked as:",
+   "options": [
+    "23.5°N",
+    "66.5°N",
+    "0°",
+    "90°"
+   ],
+   "answer": 2,
+   "explain": "The Equator divides Earth into Northern and Southern Hemispheres; Tropic of Cancer is 23.5°N."
+  },
+  {
+   "q": "Change of seasons on Earth is caused by:",
+   "options": [
+    "Rotation of Earth",
+    "Distance from the Sun only",
+    "Moon's revolution",
+    "Revolution of Earth with its tilted axis"
+   ],
+   "answer": 3,
+   "explain": "Earth's revolution around the Sun, combined with the 23.5° tilt of its axis, produces seasons."
+  },
+  {
+   "q": "The largest country in the world by area is:",
+   "options": [
+    "Canada",
+    "Russia",
+    "China",
+    "United States of America (USA)"
+   ],
+   "answer": 1,
+   "explain": "Russia is the largest, followed by Canada and China; India is seventh."
+  },
+  {
+   "q": "The smallest country in the world is:",
+   "options": [
+    "Monaco",
+    "Maldives",
+    "Vatican City",
+    "Singapore"
+   ],
+   "answer": 2,
+   "explain": "Vatican City (about 0.49 sq km) is the world's smallest country."
+  },
+  {
+   "q": "The Angel Falls, the world's highest waterfall, is located in:",
+   "options": [
+    "Venezuela",
+    "United States of America (USA)",
+    "Canada",
+    "Zimbabwe"
+   ],
+   "answer": 0,
+   "explain": "Angel Falls (979 m) is in Venezuela; Victoria Falls is on the Zambezi, and Niagara is on the United States of America (USA)-Canada border."
+  },
+  {
+   "q": "The Great Barrier Reef, the world's largest coral reef system, lies off the coast of:",
+   "options": [
+    "Indonesia",
+    "Australia",
+    "Japan",
+    "Brazil"
+   ],
+   "answer": 1,
+   "explain": "It stretches along Queensland, in north-east Australia."
+  },
+  {
+   "q": "The river that carries the largest volume of water in the world is the:",
+   "options": [
+    "Nile",
+    "Congo",
+    "Amazon",
+    "Yangtze"
+   ],
+   "answer": 2,
+   "explain": "The Amazon discharges more water than the next several large rivers combined."
+  },
+  {
+   "q": "The longest river of Asia is the:",
+   "options": [
+    "Yangtze",
+    "Yellow River (Huang He)",
+    "Mekong",
+    "Ganga"
+   ],
+   "answer": 0,
+   "explain": "The Yangtze (China) is Asia's longest river; the Huang He is called China's Sorrow for its floods."
+  },
+  {
+   "q": "The deepest lake in the world is:",
+   "options": [
+    "Caspian Sea",
+    "Lake Tanganyika",
+    "Lake Superior",
+    "Lake Baikal"
+   ],
+   "answer": 3,
+   "explain": "Lake Baikal in Siberia (Russia) is the deepest and holds about one-fifth of the world's fresh surface water."
+  },
+  {
+   "q": "The largest lake in the world by surface area is the:",
+   "options": [
+    "Lake Superior",
+    "Lake Victoria",
+    "Caspian Sea",
+    "Aral Sea"
+   ],
+   "answer": 2,
+   "explain": "The Caspian Sea, between Europe and Asia, is the world's largest enclosed water body."
+  },
+  {
+   "q": "The largest island in the world is:",
+   "options": [
+    "Greenland",
+    "New Guinea",
+    "Borneo",
+    "Madagascar"
+   ],
+   "answer": 0,
+   "explain": "Greenland is the largest island; Australia is counted as a continent, not an island."
+  },
+  {
+   "q": "The Suez Canal connects the:",
+   "options": [
+    "Persian Gulf and Arabian Sea",
+    "Atlantic and Pacific Oceans",
+    "Black Sea and Caspian Sea",
+    "Mediterranean Sea and Red Sea"
+   ],
+   "answer": 3,
+   "explain": "The Suez Canal (Egypt) shortens the Europe-Asia sea route; the Panama Canal joins the Atlantic and Pacific."
+  },
+  {
+   "q": "The Panama Canal connects the:",
+   "options": [
+    "Mediterranean and Red Sea",
+    "Atlantic Ocean and Pacific Ocean",
+    "Indian and Pacific Oceans",
+    "Arctic and Atlantic Oceans"
+   ],
+   "answer": 1,
+   "explain": "Panama Canal across Central America links the Atlantic and Pacific oceans."
+  },
+  {
+   "q": "The Strait of Gibraltar separates Spain from Morocco and joins the Mediterranean Sea with the:",
+   "options": [
+    "Atlantic Ocean",
+    "Red Sea",
+    "Black Sea",
+    "Arabian Sea"
+   ],
+   "answer": 0,
+   "explain": "Gibraltar is the narrow gateway between Europe and Africa at the Mediterranean's western end."
+  },
+  {
+   "q": "The Strait of Malacca, a busy shipping lane, lies between:",
+   "options": [
+    "India and Sri Lanka",
+    "Japan and Korea",
+    "Iran and Oman",
+    "Malaysia and Indonesia (Sumatra)"
+   ],
+   "answer": 3,
+   "explain": "Malacca Strait connects the Indian Ocean side with the South China Sea; Palk Strait separates India and Sri Lanka."
+  },
+  {
+   "q": "The International Date Line roughly follows the meridian of:",
+   "options": [
+    "0°",
+    "180°",
+    "90°E",
+    "82.5°E"
+   ],
+   "answer": 1,
+   "explain": "Crossing the 180° Date Line changes the calendar day — a day is gained or lost."
+  },
+  {
+   "q": "Ocean tides are mainly caused by the gravitational pull of the:",
+   "options": [
+    "Sun only",
+    "Earth's rotation",
+    "Moon",
+    "Ocean currents"
+   ],
+   "answer": 2,
+   "explain": "The Moon's gravity is the main cause of tides; the Sun also contributes (spring and neap tides)."
+  },
+  {
+   "q": "Tsunamis are most commonly caused by:",
+   "options": [
+    "High tides",
+    "Cyclones only",
+    "Volcanic ash",
+    "Undersea earthquakes"
+   ],
+   "answer": 3,
+   "explain": "A sudden displacement of the sea floor by an undersea earthquake displaces huge water volumes, creating tsunamis."
+  },
+  {
+   "q": "The 'Ring of Fire', a zone of frequent earthquakes and volcanoes, surrounds the:",
+   "options": [
+    "Atlantic Ocean",
+    "Pacific Ocean",
+    "Indian Ocean",
+    "Mediterranean Sea"
+   ],
+   "answer": 1,
+   "explain": "Most of the world's active volcanoes lie around the Pacific Ring of Fire."
+  },
+  {
+   "q": "Earthquakes are measured (magnitude) on the:",
+   "options": [
+    "Beaufort scale",
+    "Decibel scale",
+    "Richter scale",
+    "Kelvin scale"
+   ],
+   "answer": 2,
+   "explain": "Magnitude is measured on the Richter scale with a seismograph; the Beaufort scale measures wind."
+  },
+  {
+   "q": "Weather phenomena such as clouds and rain occur mainly in which layer of the atmosphere?",
+   "options": [
+    "Troposphere",
+    "Stratosphere",
+    "Ionosphere",
+    "Exosphere"
+   ],
+   "answer": 0,
+   "explain": "The troposphere, the lowest layer, contains almost all weather; the stratosphere above it holds the ozone layer."
+  },
+  {
+   "q": "The ozone layer, which absorbs harmful ultraviolet rays, is located in the:",
+   "options": [
+    "Troposphere",
+    "Stratosphere",
+    "Mesosphere",
+    "Thermosphere"
+   ],
+   "answer": 1,
+   "explain": "Ozone in the stratosphere shields life from the Sun's Ultraviolet (UV) radiation."
+  },
+  {
+   "q": "The most abundant gas in Earth's atmosphere is:",
+   "options": [
+    "Oxygen (about 21%)",
+    "Carbon dioxide",
+    "Nitrogen (about 78%)",
+    "Argon"
+   ],
+   "answer": 2,
+   "explain": "Nitrogen makes up about 78% and oxygen about 21% of the air."
+  },
+  {
+   "q": "The longest mountain range in the world (on land) is the:",
+   "options": [
+    "Andes",
+    "Himalayas",
+    "Rockies",
+    "Alps"
+   ],
+   "answer": 0,
+   "explain": "The Andes of South America stretch about 7,000 km; the Himalayas have the highest peaks."
+  },
+  {
+   "q": "The driest desert in the world is the:",
+   "options": [
+    "Sahara",
+    "Namib",
+    "Gobi",
+    "Atacama (Chile)"
+   ],
+   "answer": 3,
+   "explain": "The Atacama in northern Chile is the driest non-polar desert on Earth."
+  },
+  {
+   "q": "Niagara Falls is located on the border of:",
+   "options": [
+    "United States of America (USA) and Mexico",
+    "Brazil and Argentina",
+    "USA and Canada",
+    "Zambia and Zimbabwe"
+   ],
+   "answer": 2,
+   "explain": "Niagara lies between Ontario (Canada) and New York (United States of America (USA)); Victoria Falls is on the Zambia-Zimbabwe border."
+  },
+  {
+   "q": "The Volga, the longest river of Europe, flows in:",
+   "options": [
+    "Russia",
+    "Germany",
+    "France",
+    "Ukraine"
+   ],
+   "answer": 0,
+   "explain": "The Volga (about 3,530 km) drains into the Caspian Sea; the Danube is Europe's second longest."
+  },
+  {
+   "q": "Japan is often called the 'Land of the Rising Sun' because it lies to the:",
+   "options": [
+    "West of Asia",
+    "South of the Equator",
+    "North Pole region",
+    "East of the Asian mainland"
+   ],
+   "answer": 3,
+   "explain": "Japan's name (Nihon) itself means 'origin of the Sun'."
+  },
+  {
+   "q": "The Dead Sea is famous for being:",
+   "options": [
+    "The deepest lake",
+    "One of the saltiest water bodies, at the lowest land elevation on Earth",
+    "The largest freshwater lake",
+    "A volcanic crater lake"
+   ],
+   "answer": 1,
+   "explain": "Its high salinity lets swimmers float easily; its shore is the lowest land point on Earth."
+  },
+  {
+   "q": "Greenwich Mean Time (GMT) is the standard time of the meridian passing through:",
+   "options": [
+    "London (0° longitude)",
+    "Paris",
+    "Washington",
+    "Moscow"
+   ],
+   "answer": 0,
+   "explain": "All world time zones are counted east (+) and west (−) from the Greenwich meridian."
+  },
+  {
+   "q": "The Strait of Hormuz, vital for oil shipments, connects the Persian Gulf with the:",
+   "options": [
+    "Red Sea",
+    "Mediterranean Sea",
+    "Caspian Sea",
+    "Gulf of Oman (Arabian Sea)"
+   ],
+   "answer": 3,
+   "explain": "A large share of the world's traded oil passes through the narrow Hormuz strait."
+  },
+  {
+   "q": "Which is the largest peninsula in the world?",
+   "options": [
+    "Indian Peninsula",
+    "Arabian Peninsula",
+    "Korean Peninsula",
+    "Iberian Peninsula"
+   ],
+   "answer": 1,
+   "explain": "The Arabian Peninsula (Saudi Arabia and neighbours) is the world's largest."
+  },
+  {
+   "q": "Mount Kilimanjaro, the highest peak of Africa, is located in:",
+   "options": [
+    "Kenya",
+    "Ethiopia",
+    "Tanzania",
+    "Uganda"
+   ],
+   "answer": 2,
+   "explain": "Kilimanjaro (5,895 m) is a dormant volcano in Tanzania, near the Kenyan border."
+  }
+ ]
+}

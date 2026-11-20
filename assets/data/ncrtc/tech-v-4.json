@@ -1,0 +1,393 @@
+{
+ "id": "tech-v-4",
+ "category": "technical",
+ "group": "Unit v — Emergency & Contingency Management",
+ "title": "Signalling / Train Control Failure",
+ "questions": [
+  {
+   "q": "The first sign of a signalling/train control failure at Operations Control Centre (OCC) is typically:",
+   "options": [
+    "Loss of train detection or indications, or European Train Control System (ETCS)/Automatic Train Supervision (ATS) failure indications on the Operations Control Centre (OCC) screens",
+    "A passenger complaint about delays",
+    "A failure of the station lighting",
+    "The depot asking for a train"
+   ],
+   "answer": 0,
+   "explain": "Detection and indication loss on the control screens is how the failure announces itself."
+  },
+  {
+   "q": "On detecting a signalling failure, the immediate protective action is to:",
+   "options": [
+    "Speed up trains to clear the area quickly",
+    "Let trains continue on the timetable",
+    "Switch off all station announcements",
+    "Stop or hold trains at stations or safe points in the affected area"
+   ],
+   "answer": 3,
+   "explain": "Protect first — trains are held at safe points before anything is diagnosed in detail."
+  },
+  {
+   "q": "After trains are held, the next step in a signalling failure is to:",
+   "options": [
+    "Resume normal working at once",
+    "Identify the failed boundary — which section, which equipment, and which trains are inside it",
+    "Cancel the whole day's service",
+    "Send all passengers home"
+   ],
+   "answer": 1,
+   "explain": "You cannot authorise degraded working until you know exactly what has failed and who is affected."
+  },
+  {
+   "q": "Degraded working during a signalling failure means trains:",
+   "options": [
+    "Run normally because drivers can see the track",
+    "Run faster to make up lost time",
+    "Proceed in the prescribed restricted mode under Operations Control Centre (OCC) authorisation, at restricted speed with increased spacing",
+    "Run without any authorisation if the line looks clear"
+   ],
+   "answer": 2,
+   "explain": "Restricted speed plus bigger gaps replace the failed automatic protection."
+  },
+  {
+   "q": "A manual train movement in a failed-signalling area requires:",
+   "options": [
+    "Authority as per the rule book — written or verbal with read-back — before moving",
+    "Only the driver's confidence",
+    "A nod from a platform staff member",
+    "The passengers' agreement"
+   ],
+   "answer": 0,
+   "explain": "Authority with read-back is the substitute for the missing signals — no authority, no movement."
+  },
+  {
+   "q": "In the affected section during degraded signalling working, the usual rule is:",
+   "options": [
+    "As many trains as can fit",
+    "Only one train in the affected section at a time, as prescribed",
+    "Two trains if both drivers agree",
+    "Trains at normal headway"
+   ],
+   "answer": 1,
+   "explain": "One train in the section removes the collision risk that signalling normally manages."
+  },
+  {
+   "q": "Why is speed restricted during manual/degraded signalling working?",
+   "options": [
+    "To save electricity during the failure",
+    "Because passengers dislike fast trains",
+    "To give engineers time to reach the site",
+    "Without automatic protection, the driver needs distance and time to stop on sight and on instructions"
+   ],
+   "answer": 3,
+   "explain": "Restricted speed is the human replacement for Automatic Train Protection (ATP) — stopping distance must stay inside visible, authorised space."
+  },
+  {
+   "q": "If a signalling failure is total in an area, the correct decision is to:",
+   "options": [
+    "Run trains on drivers' judgement alone",
+    "Close the entire network permanently",
+    "Suspend service in the affected area and apply manual working rules until engineers certify restoration",
+    "Wait one hour and resume automatically"
+   ],
+   "answer": 2,
+   "explain": "Total failure means no safe degraded mode — suspension plus certified restoration is the rule."
+  },
+  {
+   "q": "During a signalling failure, stations and passengers must be given:",
+   "options": [
+    "No information until the failure is repaired",
+    "Delay information, with extra staff sent to key stations",
+    "Only the technical fault codes",
+    "Free tickets for the next day"
+   ],
+   "answer": 1,
+   "explain": "Information and extra hands at stations are part of the failure response, not an afterthought."
+  },
+  {
+   "q": "Restoration after a signalling failure is done:",
+   "options": [
+    "In stages — reset/repair, a test movement at caution, then a step back up to normal headway",
+    "Instantly at full speed and normal headway",
+    "Only after a full day's closure",
+    "By the first passenger train at line speed"
+   ],
+   "answer": 0,
+   "explain": "Staged restoration proves the system before trusting it with a full service."
+  },
+  {
+   "q": "Who certifies that signalling is fit before normal working resumes?",
+   "options": [
+    "The first train driver to pass through",
+    "The station master on duty alone",
+    "The responsible signalling engineer/controller — resumption without certification is prohibited",
+    "Any technician who was nearby"
+   ],
+   "answer": 2,
+   "explain": "The 'declared fit' gate applies to signalling exactly as to track and power."
+  },
+  {
+   "q": "A train is inside the failed section when the failure occurs. It should:",
+   "options": [
+    "Continue to its destination at normal speed",
+    "Reverse out of the section on the driver's decision",
+    "Open doors and detrain passengers at once",
+    "Stop or proceed only as instructed by Operations Control Centre (OCC) under the degraded rules"
+   ],
+   "answer": 3,
+   "explain": "Trains inside the failure are moved one instruction at a time under Operations Control Centre (OCC) control."
+  },
+  {
+   "q": "Read-back of a verbal movement authority is essential because:",
+   "options": [
+    "It proves the driver received the exact authority — limits, section and conditions — without error",
+    "It fills the radio channel so others cannot speak",
+    "It is a formality with no safety value",
+    "It replaces the need for Operations Control Centre (OCC) to log the authority"
+   ],
+   "answer": 0,
+   "explain": "A misheard authority can send a train into an occupied section — read-back catches the error."
+  },
+  {
+   "q": "Which is a correct cause-and-response pair for signalling failure?",
+   "options": [
+    "Loss of train detection — increase frequency",
+    "Loss of train detection — open all Platform Screen Doors (PSDs) permanently",
+    "Loss of train detection — hold trains, identify the boundary, authorise degraded working",
+    "Loss of train detection — evacuate all stations at once"
+   ],
+   "answer": 2,
+   "explain": "The response scales with the failure: protect, identify, degrade, restore."
+  },
+  {
+   "q": "Platform Screen Doors are affected by a signalling failure because:",
+   "options": [
+    "Platform Screen Doors (PSDs) run on an unrelated system with no link at all",
+    "Platform Screen Doors (PSDs) are integrated with signalling/train control — their operation must be managed under the degraded procedure",
+    "Platform Screen Doors (PSDs) cause signalling failures",
+    "Platform Screen Doors (PSDs) must be removed during failures"
+   ],
+   "answer": 1,
+   "explain": "Platform Screen Door (PSD)-signalling integration is a Regional Rapid Transit System (RRTS) feature — a signalling failure plan always includes the doors."
+  },
+  {
+   "q": "During degraded working, headway between trains will:",
+   "options": [
+    "Decrease to clear the backlog",
+    "Stay exactly as in the normal timetable",
+    "Become zero at stations",
+    "Increase — trains run further apart than normal"
+   ],
+   "answer": 3,
+   "explain": "Wider spacing is the price of manual protection — capacity falls, safety holds."
+  },
+  {
+   "q": "A driver in a degraded-working section receives conflicting instructions from two sources. He should:",
+   "options": [
+    "Follow the most recent voice he heard",
+    "Follow whichever instruction is faster",
+    "Stop and seek clarification from Operations Control Centre (OCC) — the single controlling authority",
+    "Decide himself and inform Operations Control Centre (OCC) later"
+   ],
+   "answer": 2,
+   "explain": "One controlling authority prevents conflicting movements — doubt means stop and ask."
+  },
+  {
+   "q": "Why are extra staff sent to key stations during a long signalling failure?",
+   "options": [
+    "To repair the signalling equipment themselves",
+    "To manage crowds, give information and assist with manual procedures at stations",
+    "To sell tickets for bus services",
+    "To close the stations early"
+   ],
+   "answer": 1,
+   "explain": "Failures are managed at stations as much as on the track — people and information need hands."
+  },
+  {
+   "q": "The correct order for handling a signalling failure is:",
+   "options": [
+    "Detect, protect (hold trains), identify the boundary, authorise degraded working, inform, restore in stages",
+    "Authorise movements, detect, protect, restore, inform",
+    "Restore, inform, detect, identify, protect",
+    "Inform passengers, resume service, identify the fault later"
+   ],
+   "answer": 0,
+   "explain": "This sequence mirrors the flowchart: protection before diagnosis, diagnosis before movement."
+  },
+  {
+   "q": "A signalling failure affects only one section. Service on the rest of the line should:",
+   "options": [
+    "Stop everywhere for the whole day",
+    "Run into the failed section as normal",
+    "Be replaced entirely by buses at once",
+    "Continue, regulated around the affected section with short-turns as needed"
+   ],
+   "answer": 3,
+   "explain": "Failures are contained — the healthy network keeps running around the protected area."
+  },
+  {
+   "q": "What does 'manual working' replace during a signalling failure?",
+   "options": [
+    "The need for drivers in trains",
+    "The automatic detection and authority system — replaced by human authority, restricted speed and spacing",
+    "The passenger information system",
+    "The traction power supply"
+   ],
+   "answer": 1,
+   "explain": "Manual working is the rule-book fallback when the automatic system cannot protect movements."
+  },
+  {
+   "q": "A test movement after signalling repair is run at caution mainly to:",
+   "options": [
+    "Prove the restored equipment works correctly before normal speeds and headways return",
+    "Give passengers a slow scenic trip",
+    "Check the train's catering stock",
+    "Train a new driver"
+   ],
+   "answer": 0,
+   "explain": "The first movement is an experiment under control — its success authorises the step up."
+  },
+  {
+   "q": "During a signalling failure at night with few passengers, the safety rules:",
+   "options": [
+    "Can be relaxed as the risk is low",
+    "Allow normal speed on sight",
+    "Remain exactly the same — degraded working does not relax with low traffic",
+    "Allow drivers to self-authorise movements"
+   ],
+   "answer": 2,
+   "explain": "Low traffic reduces consequences, not the rules — protection standards never depend on crowd size."
+  },
+  {
+   "q": "If the signalling failure also causes loss of Operations Control Centre (OCC)'s view of train positions, Operations Control Centre (OCC) should:",
+   "options": [
+    "Assume trains are where the timetable says",
+    "Continue normal working from memory",
+    "Ask passengers to report train positions",
+    "Treat it as more serious — rely on reports from trains/stations and restrict movements further"
+   ],
+   "answer": 3,
+   "explain": "Losing detection removes Operations Control Centre (OCC)'s eyes — uncertainty always means more restriction, never less."
+  },
+  {
+   "q": "Which information is most important when logging a signalling failure?",
+   "options": [
+    "Time, affected section/equipment, trains held, authorities issued and restoration certification",
+    "The names of delayed passengers",
+    "The weather at the time",
+    "The number of announcements made"
+   ],
+   "answer": 0,
+   "explain": "The log must let an enquiry rebuild the event — times, boundaries, authorities and the fit declaration."
+  },
+  {
+   "q": "A passenger train approaches a section where signalling has just failed, but its own signals appear normal. The driver should:",
+   "options": [
+    "Proceed at full speed since his signals look fine",
+    "Obey Operations Control Centre (OCC)'s instructions for the affected area — local appearance does not override control information",
+    "Stop permanently and detrain passengers",
+    "Ignore Operations Control Centre (OCC) as the train is unaffected"
+   ],
+   "answer": 1,
+   "explain": "Failures can be partial and deceptive — Operations Control Centre (OCC) holds the complete picture."
+  },
+  {
+   "q": "Bus bridging is most likely to be arranged during a signalling failure when:",
+   "options": [
+    "The failure lasts five minutes",
+    "Passengers ask for a road trip",
+    "A single train is delayed slightly",
+    "The failure is prolonged and the affected section cannot sustain even degraded rail service"
+   ],
+   "answer": 3,
+   "explain": "Buses replace trains only when degraded rail working cannot carry the load for a long period."
+  },
+  {
+   "q": "After restoration, why is headway built back gradually instead of restoring the full timetable at once?",
+   "options": [
+    "Drivers need rest between trips",
+    "Passengers prefer fewer trains",
+    "Trains are out of position and the system must be proven stable — a phased build-up avoids a second collapse",
+    "The timetable office opens late"
+   ],
+   "answer": 2,
+   "explain": "Phased restoration is itself a safety and stability procedure."
+  },
+  {
+   "q": "In Regional Rapid Transit System (RRTS), the train control involved in such failures includes:",
+   "options": [
+    "Token block working only",
+    "European Train Control System (ETCS)-based signalling with Automatic Train Supervision (ATS) supervision at Operations Control Centre (OCC)",
+    "Semaphore signals only",
+    "Hand flags as the normal system"
+   ],
+   "answer": 1,
+   "explain": "Namo Bharat runs on European Train Control System (ETCS) over Long Term Evolution (LTE) with Automatic Train Supervision (ATS) at Operations Control Centre (OCC) — its failure handling follows that system."
+  },
+  {
+   "q": "The single most dangerous action during a signalling failure would be:",
+   "options": [
+    "Allowing trains to run at normal speed on drivers' own judgement without authority",
+    "Holding trains at stations",
+    "Informing passengers about delays",
+    "Sending extra staff to stations"
+   ],
+   "answer": 0,
+   "explain": "Unauthorised normal-speed running removes every layer of protection at once."
+  },
+  {
+   "q": "A Signal Passed At Danger (SPAD) occurs during degraded working. The train involved must:",
+   "options": [
+    "Continue slowly to the next station",
+    "Stop, and not move again without fresh authority from the Operations Control Centre (OCC); the event is reported and treated as a serious incident",
+    "Reverse back behind the signal on its own",
+    "Wait five minutes and proceed"
+   ],
+   "answer": 1,
+   "explain": "A Signal Passed At Danger (SPAD) means the last safety barrier was crossed. The train stops, the Operations Control Centre (OCC) takes charge, and the case is investigated — never covered up by moving on."
+  },
+  {
+   "q": "A track circuit fails and shows a section 'occupied' although no train is confirmed there. Until the section is proved clear, it must be treated as:",
+   "options": [
+    "Clear, because the indication is probably false",
+    "Occupied — trains may enter only one at a time, on written/verbal authority with read-back, at restricted speed",
+    "Open for normal automatic working",
+    "Closed permanently"
+   ],
+   "answer": 1,
+   "explain": "A failed track circuit cannot prove the section is empty, so the safe assumption is 'occupied'. Movements continue cautiously on authority, exactly as if a train were standing there."
+  },
+  {
+   "q": "During a signalling failure, a set of points (the movable rails that change a train's route) must be passed over by trains. Before any train uses them, the points must be:",
+   "options": [
+    "Painted a bright colour",
+    "Clamped and locked in the required position, and the clamping verified",
+    "Left free so they can move if needed",
+    "Oiled by the driver"
+   ],
+   "answer": 1,
+   "explain": "With powered operation and detection lost, a clamp physically locks the points so they cannot move under a train. Clamp, lock, verify — then authorise the movement."
+  },
+  {
+   "q": "With automatic signalling dead on a double-line section, the degraded method that keeps movements safe is based on the absolute-block principle, which means:",
+   "options": [
+    "Trains follow each other closely at sight",
+    "Only one train is allowed in the section between two stations at a time, admitted on authority from the receiving end",
+    "Trains run on the wrong line freely",
+    "The fastest train gets the section first"
+   ],
+   "answer": 1,
+   "explain": "Absolute block is the oldest and safest degraded rule: one section, one train. Capacity falls sharply, but two trains can never be sent into the same space."
+  },
+  {
+   "q": "Where signals themselves cannot be used during a failure, authorised staff at the spot guide trains using:",
+   "options": [
+    "Hand signals — flags by day and lamps by night — shown from a position where the driver can clearly see them",
+    "Whistles only",
+    "Mobile phone torches waved randomly",
+    "Shouting from the platform end"
+   ],
+   "answer": 0,
+   "explain": "Hand signals are the human backup of the signal system: a green flag or lamp authorises movement, red stops it. The signaller stands where the driver cannot miss the indication."
+  }
+ ]
+}

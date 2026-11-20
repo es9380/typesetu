@@ -1,0 +1,393 @@
+{
+ "id": "tech-iv-3",
+ "category": "technical",
+ "group": "Unit iv — Risk Assessment & Operational Safety",
+ "title": "Risk in Degraded Operation, Failure Scenarios & Lessons Learned",
+ "questions": [
+  {
+   "q": "Degraded operation increases risk mainly because:",
+   "options": [
+    "Trains are older",
+    "One or more automatic safety/operational barriers are unavailable, so humans must compensate",
+    "Passengers complain more",
+    "Lights are brighter"
+   ],
+   "answer": 1,
+   "explain": "A lost automatic layer transfers its work to people — that transfer is the extra risk."
+  },
+  {
+   "q": "A 'compensating barrier' in degraded working is:",
+   "options": [
+    "Removing more equipment",
+    "A faster timetable",
+    "An extra measure added to replace a lost barrier — lower speed, extra staff, Operations Control Centre (OCC) authorisation or time limits",
+    "A type of Personal Protective Equipment (PPE)"
+   ],
+   "answer": 2,
+   "explain": "When a barrier is removed, compensating barriers are deliberately added so total protection is maintained."
+  },
+  {
+   "q": "When Automatic Train Operation (ATO) fails and trains run in Automatic Train Protection (ATP) manual mode, a typical compensating measure is:",
+   "options": [
+    "Reduced speed and increased headway as prescribed",
+    "Higher speed to recover time",
+    "Switching off ATP",
+    "Removing the operator"
+   ],
+   "answer": 0,
+   "explain": "A lost automatic layer is replaced by time, space and human attention."
+  },
+  {
+   "q": "Automatic Train Protection (ATP) is isolated for a movement. The risk position is:",
+   "options": [
+    "Unchanged",
+    "Improved",
+    "A routine matter needing nothing extra",
+    "A key functional barrier is gone — movement needs strict compensating controls and authorisation"
+   ],
+   "answer": 3,
+   "explain": "Isolating Automatic Train Protection (ATP) removes the machine that stops the train — degraded rules and authorisation must fill the gap."
+  },
+  {
+   "q": "One Platform Screen Door (PSD) door has failed and is isolated, with supervision posted. This is an example of:",
+   "options": [
+    "Intolerable risk in all cases",
+    "Elimination",
+    "Degraded working managed by a compensating measure (staff supervision)",
+    "Normal working"
+   ],
+   "answer": 2,
+   "explain": "A failed barrier plus a posted human compensating control is managed degraded working."
+  },
+  {
+   "q": "Single-line working on a double-line section increases risk because:",
+   "options": [
+    "A normal barrier — separate lines for each direction — is removed, so movements must be controlled by procedure and authorisation",
+    "Trains become heavier",
+    "The line is shorter",
+    "Drivers get bored"
+   ],
+   "answer": 0,
+   "explain": "Two-way traffic on one line survives on procedure: authorisation, communication and strict control."
+  },
+  {
+   "q": "Which is NOT a compensating measure in degraded working?",
+   "options": [
+    "Lower speed",
+    "Extra staff",
+    "Operations Control Centre (OCC) authorisation and time limits",
+    "Increasing speed to clear the section quickly"
+   ],
+   "answer": 3,
+   "explain": "Speed is the enemy in degraded mode — compensations add time, people and control, never speed."
+  },
+  {
+   "q": "Failure scenarios are studied in risk assessment so that:",
+   "options": [
+    "Staff can be frightened",
+    "Controls and responses are planned before the failure happens in service",
+    "Reports look complete",
+    "Failures can be ignored"
+   ],
+   "answer": 1,
+   "explain": "Imagining the failure in advance is how the railway writes its degraded-working rules."
+  },
+  {
+   "q": "After an incident, the investigation looks mainly for:",
+   "options": [
+    "A person to blame quickly",
+    "The root cause — why the barriers failed — not merely who was present",
+    "A press statement",
+    "The cost of damage first"
+   ],
+   "answer": 1,
+   "explain": "Root-cause investigation finds the failed layers; blame alone fixes nothing."
+  },
+  {
+   "q": "'Lessons learned' from an incident must lead to:",
+   "options": [
+    "Blaming one person and closing the file",
+    "A press release only",
+    "Changes in design, procedure or training, shared across the whole organisation",
+    "Nothing"
+   ],
+   "answer": 2,
+   "explain": "If the same failure can happen at the next station, the lesson was not learned."
+  },
+  {
+   "q": "Corrective actions after an investigation are:",
+   "options": [
+    "Tracked to closure, not just recommended",
+    "Forgotten after the meeting",
+    "Left to individual memory",
+    "Optional"
+   ],
+   "answer": 0,
+   "explain": "An action without follow-up is a wish. Tracking to closure is what makes it a control."
+  },
+  {
+   "q": "Lessons are shared across the organisation through:",
+   "options": [
+    "Word of mouth in one station",
+    "Personal diaries",
+    "Nothing — lessons stay local",
+    "Circulars, training updates and rule changes"
+   ],
+   "answer": 3,
+   "explain": "A lesson locked in one station's file protects nobody else; circulars and training spread it."
+  },
+  {
+   "q": "Near-miss data prevents accidents because (Heinrich's principle):",
+   "options": [
+    "Near-misses are lucky charms",
+    "Accidents are random and unpreventable",
+    "Many near-misses precede one serious accident — fixing near-miss causes removes the accident's foundation",
+    "Only injuries teach lessons"
+   ],
+   "answer": 2,
+   "explain": "Near-misses are free lessons: the same causes, without the injury — yet."
+  },
+  {
+   "q": "Which scenario is INTOLERABLE, where work must not start?",
+   "options": [
+    "Staff on track with the Overhead Equipment (OHE) live and no possession",
+    "A wet platform with staff deployed",
+    "A train running 3 minutes late",
+    "One Platform Screen Door (PSD) door isolated with supervision"
+   ],
+   "answer": 0,
+   "explain": "Live Overhead Equipment (OHE) + people on track + no protection is the red zone of every risk matrix."
+  },
+  {
+   "q": "In degraded working, why is extra communication required?",
+   "options": [
+    "To keep staff entertained",
+    "Because radios work better then",
+    "It is not required",
+    "Because a procedural barrier must strengthen when automatic barriers weaken"
+   ],
+   "answer": 3,
+   "explain": "Communication carries more of the safety load when machines carry less of it."
+  },
+  {
+   "q": "Time limits on degraded working help because:",
+   "options": [
+    "They make staff hurry",
+    "They bound the period of higher risk and force review or restoration",
+    "They are a formality",
+    "They replace authorisation"
+   ],
+   "answer": 1,
+   "explain": "Degraded mode is a temporary state with an expiry — not a new normal."
+  },
+  {
+   "q": "Scenario: Signalling fails on a section; trains are authorised by Operations Control Centre (OCC) at reduced speed with increased spacing. This is:",
+   "options": [
+    "Normal working",
+    "Degraded working with compensating barriers — authorisation, speed and spacing replacing the lost signalling layer",
+    "Intolerable in all cases",
+    "Elimination"
+   ],
+   "answer": 1,
+   "explain": "The pattern to recognise: lost barrier → named compensations → controlled continuation of service."
+  },
+  {
+   "q": "What is the danger of degraded working continuing for a long time?",
+   "options": [
+    "Nothing — practice makes it safe",
+    "Trains wear out",
+    "The temporary, higher-risk way of working starts to feel normal — normalisation of the degraded state",
+    "Staff get promotions"
+   ],
+   "answer": 2,
+   "explain": "Degraded mode tolerated too long becomes an accepted risk — time limits and restoration pressure prevent that drift."
+  },
+  {
+   "q": "An incident investigation that ends with 'driver error' and nothing else has failed because:",
+   "options": [
+    "It has not asked why the system allowed one human error to become an accident — the root cause lies in the layers",
+    "Driver error is never real",
+    "Investigations should blame managers instead",
+    "Reports must be longer"
+   ],
+   "answer": 0,
+   "explain": "Human error is the start of the question, not the end: which barriers should have caught it?"
+  },
+  {
+   "q": "Corrective and preventive actions differ in that corrective actions:",
+   "options": [
+    "Are the same thing",
+    "Happen only after the next accident",
+    "Are optional extras",
+    "Fix the cause found, while preventive actions stop similar failures elsewhere before they happen"
+   ],
+   "answer": 3,
+   "explain": "Fix here (corrective) and fix everywhere it could happen (preventive) — both come out of lessons learned."
+  },
+  {
+   "q": "Scenario: A Platform Screen Door (PSD) fault repeats at three stations. 'Lessons learned' properly applied means:",
+   "options": [
+    "Each station repairs its own quietly",
+    "Waiting for a serious incident",
+    "A system-level fix — design/procedure change and a circular to all stations — not three local repairs",
+    "Blaming the maintenance staff thrice"
+   ],
+   "answer": 2,
+   "explain": "Repeated local failures are one system lesson. The fix and the message must travel organisation-wide."
+  },
+  {
+   "q": "Why must lessons learned be written into rules and training?",
+   "options": [
+    "So the protection survives staff transfers and time — the system remembers even when individuals forget",
+    "For examination purposes only",
+    "To make rule books thicker",
+    "It need not be written"
+   ],
+   "answer": 0,
+   "explain": "People rotate; rules and training are the organisation's memory."
+  },
+  {
+   "q": "During degraded operation with a barrier removed, Operations Control Centre (OCC) authorisation is required because:",
+   "options": [
+    "Operations Control Centre (OCC) likes paperwork",
+    "Drivers cannot be trusted at all",
+    "Authorisation replaces all other controls",
+    "A senior, network-level decision must own the extra risk and set its conditions"
+   ],
+   "answer": 3,
+   "explain": "Extra risk needs an owner: Operations Control Centre (OCC) authorises, sets speed/staff/time conditions and monitors the degraded state."
+  },
+  {
+   "q": "A failure scenario in which several barriers fail together illustrates:",
+   "options": [
+    "A single-cause accident",
+    "The Swiss-cheese model in real life — holes aligning across layers",
+    "Bad luck only",
+    "A Personal Protective Equipment (PPE) failure"
+   ],
+   "answer": 1,
+   "explain": "Real accidents are multi-layer failures; that is why investigations examine every layer, not the last one only."
+  },
+  {
+   "q": "What should happen to a compensating measure when normal working is restored?",
+   "options": [
+    "It stays forever without review",
+    "It is withdrawn in order as the original barrier returns — degraded arrangements are formally closed",
+    "It is forgotten",
+    "Staff decide individually"
+   ],
+   "answer": 1,
+   "explain": "Degraded working is opened and closed formally; compensations end when the real barrier is back and proved."
+  },
+  {
+   "q": "Incident prevention, as taught in this unit, is mainly built from:",
+   "options": [
+    "Luck",
+    "Punishment",
+    "Hazard identification, risk controls, barrier maintenance and lessons from past incidents and near-misses",
+    "Insurance"
+   ],
+   "answer": 2,
+   "explain": "Prevention is a system output: find hazards, control them, keep barriers alive and learn from every event."
+  },
+  {
+   "q": "Scenario: After a near-miss, the enquiry finds a confusing procedure. The best lesson-learned action is:",
+   "options": [
+    "Rewrite the procedure clearly, circulate it and train staff — and track the action to closure",
+    "Punish the staff who were confused",
+    "File the report without changes",
+    "Wait for an accident to confirm"
+   ],
+   "answer": 0,
+   "explain": "The procedure was a holed layer; fixing it, spreading it and verifying closure is the complete lesson cycle."
+  },
+  {
+   "q": "Why are degraded-mode risks assessed separately from normal-mode risks?",
+   "options": [
+    "Degraded mode is rare",
+    "Assessment is duplicated for formality",
+    "They are not assessed",
+    "Because the barrier set is different — risks that are controlled normally may be exposed when a layer is removed"
+   ],
+   "answer": 3,
+   "explain": "Change the layers and you change the risk: degraded working needs its own assessment and controls."
+  },
+  {
+   "q": "Extra staff posted during degraded working act as:",
+   "options": [
+    "Passengers' guides only",
+    "A punishment posting",
+    "A human compensating barrier, watching and controlling what the failed system no longer does",
+    "Decoration"
+   ],
+   "answer": 2,
+   "explain": "People replace the machine's eyes and hands — that is a deliberate barrier substitution, with its own limits."
+  },
+  {
+   "q": "The final test of whether a lesson was truly learned is:",
+   "options": [
+    "The same failure does not happen again — because design, procedure or training actually changed",
+    "A report was written",
+    "A meeting was held",
+    "A circular was printed but unread"
+   ],
+   "answer": 0,
+   "explain": "Learning is proved by changed reality, not by paperwork."
+  },
+  {
+   "q": "A common-cause failure is dangerous in degraded operation because:",
+   "options": [
+    "It is very rare and can be ignored",
+    "One single event — such as a total power failure — can disable several barriers at the same time, exactly when the operation is already weakened",
+    "It only affects one small component",
+    "It is easy to predict"
+   ],
+   "answer": 1,
+   "explain": "Normal safety assumes barriers fail one at a time. A common cause — power, flooding, a shared system — knocks out several together, which is why degraded modes demand fresh assessment instead of business as usual."
+  },
+  {
+   "q": "'Normalisation of deviance' — a known accident precursor — means:",
+   "options": [
+    "Making new rules every week",
+    "Small rule deviations are repeated without an accident, so the deviation slowly starts to be treated as normal and acceptable, until the day conditions align for a disaster",
+    "Staff becoming too strict",
+    "Deviations being reported too often"
+   ],
+   "answer": 1,
+   "explain": "Every shortcut that 'worked last time' teaches the team the wrong lesson. Investigations of major accidents repeatedly find that the fatal practice had become routine long before the accident — the deviance had been normalised."
+  },
+  {
+   "q": "A 'lesson learned' from an incident is genuinely learned only when:",
+   "options": [
+    "It is mentioned in a meeting",
+    "It results in an actual change — to procedure, training, design or supervision — and the change is verified to be in use",
+    "It is written in a report that is filed",
+    "The staff involved are transferred"
+   ],
+   "answer": 1,
+   "explain": "A lesson identified is not a lesson learned. Learning is complete only when something in the real system changes and someone checks that the change is actually being followed on the ground."
+  },
+  {
+   "q": "Degraded working that continues for many hours without restoration creates extra risk mainly through:",
+   "options": [
+    "Passenger boredom",
+    "Staff fatigue, growing workarounds and fading vigilance — the longer the abnormal state lasts, the more its own hazards grow",
+    "Ticket revenue loss",
+    "Cleaner platforms"
+   ],
+   "answer": 1,
+   "explain": "Degraded mode is a bridge, not a destination. Time pressure, tired staff and improvised practices accumulate, so the plan must either restore normal working or step the service down to a level the degraded state can safely sustain."
+  },
+  {
+   "q": "Contingency plans for failures are exercised through drills and simulations mainly so that:",
+   "options": [
+    "Staff can be marked for promotion",
+    "Staff discover the plan's gaps and build real skill in safety, instead of reading the plan for the first time during a real emergency",
+    "Passengers can watch",
+    "The plan document becomes longer"
+   ],
+   "answer": 1,
+   "explain": "A plan that has never been practised is a hope, not a capability. Drills expose missing equipment, unclear roles and slow steps while the cost of finding them is still zero."
+  }
+ ]
+}

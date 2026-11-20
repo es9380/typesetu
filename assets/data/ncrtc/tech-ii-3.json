@@ -1,0 +1,448 @@
+{
+ "id": "tech-ii-3",
+ "category": "technical",
+ "group": "Unit ii — Operational Systems & Interfaces",
+ "title": "Traction & Power Supply Interface",
+ "questions": [
+  {
+   "q": "The traction power supply of the Delhi–Meerut Regional Rapid Transit System (RRTS) is:",
+   "options": [
+    "25 kV AC Overhead Equipment (OHE)",
+    "750 V DC third rail",
+    "1500 V DC overhead",
+    "Diesel-electric only"
+   ],
+   "answer": 0,
+   "explain": "Regional Rapid Transit System (RRTS) uses 25 kV 50 Hz AC overhead electrification, the mainline family built for high speed."
+  },
+  {
+   "q": "Trains draw 25 kV AC power from the Overhead Equipment (OHE) through the:",
+   "options": [
+    "Third-rail shoe",
+    "Pantograph",
+    "Battery pack",
+    "Diesel generator"
+   ],
+   "answer": 1,
+   "explain": "The pantograph on the train's roof collects current from the overhead equipment."
+  },
+  {
+   "q": "OHE stands for:",
+   "options": [
+    "Operational Headway Estimate",
+    "Overhead Earthing",
+    "Overhead Equipment",
+    "Onboard Heating Equipment"
+   ],
+   "answer": 2,
+   "explain": "Overhead Equipment (OHE) is the overhead wire equipment that feeds the trains."
+  },
+  {
+   "q": "Sectioning of traction power means:",
+   "options": [
+    "Trains are divided into sections",
+    "Platforms are divided for crowds",
+    "Tickets are sectioned by zone",
+    "The supply is divided into small sections that can be isolated separately for work or faults"
+   ],
+   "answer": 3,
+   "explain": "Sectioning lets one part be switched off without killing power to the whole line."
+  },
+  {
+   "q": "If traction power trips in one section, the operational effect is:",
+   "options": [
+    "The entire Regional Rapid Transit System (RRTS) shuts down",
+    "Only that section is affected — trains there coast/stop, other sections keep running",
+    "All trains reverse to depot",
+    "Platform Screen Doors (PSDs) lock permanently"
+   ],
+   "answer": 1,
+   "explain": "A trip is local to its section; the rest of the line continues — that is why sectioning exists."
+  },
+  {
+   "q": "SCADA stands for:",
+   "options": [
+    "System Control And Door Automation",
+    "Signal Control And Data Access",
+    "Station Computer And Display Array",
+    "Supervisory Control And Data Acquisition"
+   ],
+   "answer": 3,
+   "explain": "Supervisory Control And Data Acquisition (SCADA) is the system for remote switching and monitoring — here, of traction power."
+  },
+  {
+   "q": "Supervisory Control And Data Acquisition (SCADA) is used by the Power Controller to:",
+   "options": [
+    "Switch and monitor traction power supply remotely, under Operations Control Centre (OCC) coordination",
+    "Drive trains",
+    "Sell tickets",
+    "Make announcements"
+   ],
+   "answer": 0,
+   "explain": "The Power Controller in Operations Control Centre (OCC) works the power supply through Supervisory Control And Data Acquisition (SCADA), coordinated with operations."
+  },
+  {
+   "q": "Where does the Power Controller sit?",
+   "options": [
+    "At every station",
+    "In the train cab",
+    "In the Operations Control Centre (OCC)",
+    "At the depot gate"
+   ],
+   "answer": 2,
+   "explain": "Power control is centralised in Operations Control Centre (OCC) so power and train movements are coordinated together."
+  },
+  {
+   "q": "Before a section is re-energised after a fault, what must be confirmed?",
+   "options": [
+    "That passengers are waiting",
+    "That the timetable is printed",
+    "Nothing — just switch on",
+    "That the section is clear and the fault has been addressed"
+   ],
+   "answer": 3,
+   "explain": "Re-energising without confirming the section is clear and the fault dealt with is prohibited."
+  },
+  {
+   "q": "Re-energising a section without confirming it is clear is:",
+   "options": [
+    "Prohibited",
+    "Standard practice",
+    "Allowed during peak hours",
+    "The driver's decision"
+   ],
+   "answer": 0,
+   "explain": "Never re-charge blind — a person or fault may still be in that section."
+  },
+  {
+   "q": "Until the Overhead Equipment (OHE) is formally isolated and earthed, it must be treated as:",
+   "options": [
+    "Safe to touch",
+    "Switched off",
+    "LIVE",
+    "Only partly dangerous"
+   ],
+   "answer": 2,
+   "explain": "The standing rule: Overhead Equipment (OHE) is live until formally isolated AND earthed — paperwork and earthing, not assumption."
+  },
+  {
+   "q": "A section described as 'charged' means:",
+   "options": [
+    "It is isolated and safe",
+    "It is energised (live) with traction supply",
+    "Its battery is full",
+    "A train is standing there"
+   ],
+   "answer": 1,
+   "explain": "Charged = live. Isolated and earthed = safe to work on. Never confuse the two words."
+  },
+  {
+   "q": "A section described as 'isolated and earthed' means:",
+   "options": [
+    "It is at full voltage",
+    "It is feeding trains normally",
+    "It is switched off from supply and connected to earth, making it safe for work",
+    "It is under repair by passengers"
+   ],
+   "answer": 2,
+   "explain": "Isolation removes the supply; earthing removes any residual/induction danger."
+  },
+  {
+   "q": "A neutral section in Overhead Equipment (OHE) is:",
+   "options": [
+    "A platform area",
+    "A short unpowered length of overhead equipment between supply sections",
+    "A type of signal",
+    "A neutral gear in the train"
+   ],
+   "answer": 1,
+   "explain": "Neutral sections separate feeding sections electrically; trains coast through them."
+  },
+  {
+   "q": "A feeder in traction power is:",
+   "options": [
+    "A train driver",
+    "A ticket machine",
+    "A platform staff member",
+    "A supply line/cable that carries power to the Overhead Equipment (OHE) from a substation"
+   ],
+   "answer": 3,
+   "explain": "Feeders connect substations to the overhead equipment they supply."
+  },
+  {
+   "q": "The traction substation's role is to:",
+   "options": [
+    "Receive grid power and feed it to the Overhead Equipment (OHE) sections at traction voltage",
+    "House the Operations Control Centre (OCC)",
+    "Store spare coaches",
+    "Print tickets"
+   ],
+   "answer": 0,
+   "explain": "Substations step grid supply into the traction system and feed the sections."
+  },
+  {
+   "q": "Auxiliary power supply at stations normally comes from:",
+   "options": [
+    "Utility (grid) supply with Diesel Generator (DG)/Uninterruptible Power Supply (UPS) backup for essential loads",
+    "The train pantograph",
+    "Solar panels only",
+    "Hand generators"
+   ],
+   "answer": 0,
+   "explain": "Stations run on utility power, with diesel generator/Uninterruptible Power Supply (UPS) backup keeping essential loads alive."
+  },
+  {
+   "q": "Which station loads are treated as essential and backed up?",
+   "options": [
+    "Advertising boards",
+    "Lighting, Platform Screen Door (PSD), signalling, communication and fire systems",
+    "Escalator music",
+    "All commercial shops equally"
+   ],
+   "answer": 1,
+   "explain": "Essential loads — lighting, Platform Screen Doors (PSDs), signalling, telecom and fire systems — get Diesel Generator (DG)/Uninterruptible Power Supply (UPS) backup."
+  },
+  {
+   "q": "A train is standing in a section where power has tripped. What will it generally do?",
+   "options": [
+    "Speed up to clear the section",
+    "Run on its fare-collection battery",
+    "Coast to a stop / remain stopped in that section until power is restored or it is moved as per procedure",
+    "Reverse automatically to the last station"
+   ],
+   "answer": 2,
+   "explain": "No power, no traction — the train stops in that section; other sections are unaffected."
+  },
+  {
+   "q": "Why must operations know exactly which Overhead Equipment (OHE) section is live and which is off?",
+   "options": [
+    "For preparing the fare chart",
+    "To decide coach cleaning",
+    "Only for record keeping",
+    "Because the same wire that moves trains can kill a person on the track"
+   ],
+   "answer": 3,
+   "explain": "Power knowledge is life-safety knowledge for anyone going near the track."
+  },
+  {
+   "q": "The home-Miniature Circuit Breaker (MCB) comparison in operations means:",
+   "options": [
+    "Homes and railways use identical voltage",
+    "Just as you switch off a room's MCB before the electrician works, a traction section is isolated and proved off before anyone works near it",
+    "Passengers can switch power",
+    "MCBs run the trains"
+   ],
+   "answer": 1,
+   "explain": "Same discipline, railway scale: isolate the exact section, let everyone concerned know, then work."
+  },
+  {
+   "q": "Who coordinates traction power switching with train operations?",
+   "options": [
+    "Each driver independently",
+    "Station masters by phone tree",
+    "The Automatic Fare Collection (AFC) supervisor",
+    "The Power Controller under Operations Control Centre (OCC) coordination"
+   ],
+   "answer": 3,
+   "explain": "Switching affects trains, so it is done by the Power Controller in coordination with Operations Control Centre (OCC)."
+  },
+  {
+   "q": "If a power trip occurs repeatedly in the same section, the sensible operational response is:",
+   "options": [
+    "Treat it as an unresolved fault — do not keep re-energising blindly; get the fault investigated",
+    "Keep switching on until it holds",
+    "Ignore it during peak hours",
+    "Blame the drivers"
+   ],
+   "answer": 0,
+   "explain": "Repeated trips are the system reporting a fault; repeated blind re-energising can worsen damage or endanger staff."
+  },
+  {
+   "q": "During a traction power failure in one section, trains in other sections:",
+   "options": [
+    "Must all stop",
+    "Are diverted to the depot",
+    "Continue running normally",
+    "Run without signalling"
+   ],
+   "answer": 2,
+   "explain": "Sectioning confines the failure — the rest of the railway keeps working."
+  },
+  {
+   "q": "What data does Supervisory Control And Data Acquisition (SCADA) give the Power Controller besides switching control?",
+   "options": [
+    "Passenger counts",
+    "Ticket sales",
+    "Weather forecasts",
+    "Monitoring data — the state and loading of the power supply sections"
+   ],
+   "answer": 3,
+   "explain": "Supervisory Control And Data Acquisition (SCADA) = control AND data acquisition: he can see the supply state, not just switch it."
+  },
+  {
+   "q": "A maintenance team is to work near the Overhead Equipment (OHE). The power condition they need is:",
+   "options": [
+    "The section formally isolated and earthed, with the isolation communicated to all concerned",
+    "Charged but with warning boards",
+    "Switched off at the train only",
+    "Any condition during night hours"
+   ],
+   "answer": 0,
+   "explain": "Work near Overhead Equipment (OHE) needs formal isolation + earthing, known to everyone involved — the Miniature Circuit Breaker (MCB) discipline."
+  },
+  {
+   "q": "The phrase 'traction/power supply interface' with operations refers to:",
+   "options": [
+    "The design of pantographs only",
+    "The electricity bill",
+    "The working relationship between the power system and train operations — sections, switching, trips and coordination",
+    "Station lighting design"
+   ],
+   "answer": 2,
+   "explain": "Operations must live with power decisions daily — that shared boundary is the interface."
+  },
+  {
+   "q": "A train entering a dead (unpowered) section unexpectedly will:",
+   "options": [
+    "Catch fire automatically",
+    "Lose traction power and coast/stop",
+    "Speed up",
+    "Switch to battery and continue at full speed"
+   ],
+   "answer": 1,
+   "explain": "An unpowered section gives no traction; the train coasts and stops — which is why section states are communicated."
+  },
+  {
+   "q": "Which is the correct order of ideas for making Overhead Equipment (OHE) safe for work?",
+   "options": [
+    "Earth it → keep it charged → work",
+    "Work first → isolate later",
+    "Isolate the section → earth it → treat as safe for work",
+    "Just inform the driver"
+   ],
+   "answer": 2,
+   "explain": "Isolation first, then earthing; only then is the section treated as safe."
+  },
+  {
+   "q": "Uninterruptible Power Supply (UPS) backup at a station mainly protects:",
+   "options": [
+    "Trains against derailment",
+    "Essential electrical loads against short power interruptions",
+    "Passengers against fare hikes",
+    "Platform Screen Doors (PSDs) against opening"
+   ],
+   "answer": 1,
+   "explain": "Uninterruptible Power Supply (UPS) bridges essential station loads through interruptions until Diesel Generator (DG)/grid supply takes over."
+  },
+  {
+   "q": "Why is a power trip's section identification important to the train controller?",
+   "options": [
+    "Only for the electricity bill",
+    "To inform advertisers",
+    "It is not important",
+    "So he knows exactly which trains/section are affected and can regulate the rest of the service"
+   ],
+   "answer": 3,
+   "explain": "Knowing the affected section tells the controller which trains are stuck and which services can continue."
+  },
+  {
+   "q": "If Supervisory Control And Data Acquisition (SCADA) shows a section as isolated but a driver reports the Overhead Equipment (OHE) there as live, the safe action is:",
+   "options": [
+    "Treat the OHE as LIVE until the discrepancy is resolved and proved",
+    "Trust the screen over the report without checking",
+    "Send staff onto the track",
+    "Ignore the report"
+   ],
+   "answer": 0,
+   "explain": "Any doubt means LIVE — the fail-safe rule beats the display."
+  },
+  {
+   "q": "Auxiliary supply failure at a station affects primarily:",
+   "options": [
+    "Station systems such as lighting, Platform Screen Doors (PSDs) and communications (not train traction)",
+    "The 25 kV traction supply of trains",
+    "The signalling of the whole line necessarily",
+    "Ticket prices"
+   ],
+   "answer": 0,
+   "explain": "Auxiliary supply powers the station; traction supply powers trains — different systems, different effects."
+  },
+  {
+   "q": "The Power Controller wants to isolate a section for urgent repair while trains are running. He must:",
+   "options": [
+    "Isolate instantly without informing operations",
+    "Coordinate with Operations Control Centre (OCC)/train controller so trains are kept clear of that section before isolation",
+    "Ask passengers to move the trains",
+    "Isolate only the Platform Screen Doors (PSDs)"
+   ],
+   "answer": 1,
+   "explain": "Power switching and train movements are planned together — coordination before isolation."
+  },
+  {
+   "q": "Which statement is TRUE about Regional Rapid Transit System (RRTS) traction?",
+   "options": [
+    "It is 750 V DC third rail controlled by drivers",
+    "It cannot be sectioned",
+    "It is 25 kV AC overhead, sectioned, Supervisory Control And Data Acquisition (SCADA)-controlled from Operations Control Centre (OCC), and treated as live until isolated and earthed",
+    "It is safe to touch when trains are not running"
+   ],
+   "answer": 2,
+   "explain": "That one sentence carries the whole traction interface: voltage, sectioning, Supervisory Control And Data Acquisition (SCADA) and the live-until-earthed rule."
+  },
+  {
+   "q": "A section insulator in the Overhead Equipment (OHE) is provided mainly to:",
+   "options": [
+    "Stop a train physically at a section boundary",
+    "Keep two electrical sections separate while letting the pantograph pass smoothly from one to the other",
+    "Earth the Overhead Equipment (OHE) permanently",
+    "Support the contact wire from the mast"
+   ],
+   "answer": 1,
+   "explain": "A section insulator gives electrical separation with mechanical continuity — the pantograph glides across, but the two sections of Overhead Equipment (OHE) stay electrically apart for separate feeding and isolation."
+  },
+  {
+   "q": "A section of Overhead Equipment (OHE) trips and the fault is suspected to be momentary (for example a bird or a falling twig causing a flashover). Standard practice before declaring a permanent fault is to:",
+   "options": [
+    "Leave the section dead for the whole day",
+    "Test-charge the section once under the Power Controller's direction — if it holds, restore supply; if it trips again, treat it as a real fault",
+    "Send a train through at full speed to clear it",
+    "Earth the section and start repairs without checking"
+   ],
+   "answer": 1,
+   "explain": "Many trips are momentary. One controlled test-charge, ordered by the Power Controller in the Operations Control Centre (OCC), separates a self-cleared flashover from a genuine fault that needs isolation and repair."
+  },
+  {
+   "q": "A train's pantograph gets entangled with the Overhead Equipment (OHE) and damages it (dewirement). The operator's correct immediate actions are to:",
+   "options": [
+    "Raise the spare pantograph and continue",
+    "Pull the train forward to free the pantograph",
+    "Stop the train, lower/secure the pantograph, inform the Operations Control Centre (OCC) and not move until the section is isolated and inspected",
+    "Ask passengers to push the train clear of the damaged wire"
+   ],
+   "answer": 2,
+   "explain": "Moving with an entangled pantograph tears down more Overhead Equipment (OHE). Stop, secure, report — the section must be isolated and the damage inspected before anything moves."
+  },
+  {
+   "q": "In a 25 kV AC traction system, the return current from the train flows back to the traction substation mainly through:",
+   "options": [
+    "The platform screen doors",
+    "The running rails, which are bonded and connected back to the substation",
+    "The telecom cable screen",
+    "The train's air-conditioning system"
+   ],
+   "answer": 1,
+   "explain": "The circuit is: substation → Overhead Equipment (OHE) → pantograph → train → wheels → running rails → substation. That is why rail bonding is part of the traction system, not just track work."
+  },
+  {
+   "q": "A traction substation fails, so the sections it normally feeds are supplied from the neighbouring substations instead. This arrangement, called extended feeding, usually means operations must expect:",
+   "options": [
+    "Higher voltage and faster trains",
+    "No effect at all on train running",
+    "Greater voltage drop over the longer feed length, so train movements may need regulation or restriction until normal feeding returns",
+    "Complete closure of the whole line in every case"
+   ],
+   "answer": 2,
+   "explain": "Extended feeding keeps the line alive, but power travels further and voltage drop grows. The Operations Control Centre (OCC) may space trains out or restrict performance until the failed substation is back."
+  }
+ ]
+}

@@ -1,0 +1,503 @@
+{
+ "id": "tech-v-1",
+ "category": "technical",
+ "group": "Unit v — Emergency & Contingency Management",
+ "title": "Train Failure & Train Evacuation",
+ "questions": [
+  {
+   "q": "A train fails between stations. What is the universal emergency sequence that should guide every action?",
+   "options": [
+    "Protect, inform, assess, act, evacuate if needed, restore, then report",
+    "Inform, evacuate, protect, restore, report, assess",
+    "Restore, report, protect, evacuate, inform, assess",
+    "Act, evacuate, restore, protect, report, inform"
+   ],
+   "answer": 0,
+   "explain": "This order protects life first and paperwork last — every emergency answer in operations follows it."
+  },
+  {
+   "q": "In any emergency, what comes first — passengers, property or the timetable?",
+   "options": [
+    "The timetable, then property, then life",
+    "Safety of life, then property, then the timetable",
+    "Property, then life, then the timetable",
+    "All three carry equal priority"
+   ],
+   "answer": 1,
+   "explain": "Life before property, property before timetable — always. Restoring service never outranks protecting people."
+  },
+  {
+   "q": "A train loses power and stops in a section. The operator's very first actions are to:",
+   "options": [
+    "Open all doors so passengers can leave quickly",
+    "Start walking passengers towards the next station",
+    "Secure the train with brakes and inform Operations Control Centre (OCC) of the exact location, condition and passenger load",
+    "Leave the cab to inspect the track ahead"
+   ],
+   "answer": 2,
+   "explain": "A secured train and an informed Operations Control Centre (OCC) come before everything else — OCC cannot plan a rescue it does not know about."
+  },
+  {
+   "q": "After reporting a failed train, the operator should next:",
+   "options": [
+    "Try any repair he personally thinks may work, without a time limit",
+    "Wait silently without trying anything at all",
+    "Ask passengers to push the train to the next station",
+    "Attempt only the authorised troubleshooting and restart steps, guided by Operations Control Centre (OCC), within the allowed time"
+   ],
+   "answer": 3,
+   "explain": "Troubleshooting is authorised and time-bound — many failures clear here, but endless trying delays the rescue decision."
+  },
+  {
+   "q": "Who takes the final decision on how a failed train and its passengers will be recovered?",
+   "options": [
+    "The train operator alone",
+    "Operations Control Centre (OCC), choosing between self-recovery, rescue by another train, or evacuation",
+    "The senior-most passenger on board",
+    "The nearest station master alone"
+   ],
+   "answer": 1,
+   "explain": "The operator reports and secures; Operations Control Centre (OCC) sees the whole network picture and authorises the recovery plan."
+  },
+  {
+   "q": "A rescue train is sent to a failed train mainly to:",
+   "options": [
+    "Carry officials to inspect the failed train",
+    "Deliver spare parts to the depot",
+    "Run the failed train's remaining timetable trips",
+    "Move the failed train, or transfer its passengers under Operations Control Centre (OCC) control"
+   ],
+   "answer": 3,
+   "explain": "Rescue working is a planned degraded operation — the rescue train pushes/pulls the failed train or takes its passengers."
+  },
+  {
+   "q": "Which is the most preferred way to get passengers off a failed train?",
+   "options": [
+    "Move the train to a station platform and detrain them there",
+    "Detrain them onto the track between stations",
+    "Detrain them through the tunnel walkway",
+    "Ask them to climb down wherever the train stopped"
+   ],
+   "answer": 0,
+   "explain": "A platform gives light, space, staff and help — so reaching a station is always the first preference."
+  },
+  {
+   "q": "If a failed train cannot reach a station, the next preferred evacuation route is:",
+   "options": [
+    "Directly onto the open track",
+    "Through the driver's cab window",
+    "Along the walkway or through cross-passages, under Operations Control Centre (OCC) control",
+    "Over the roof of the train"
+   ],
+   "answer": 2,
+   "explain": "Walkways and cross-passages are designed evacuation routes — controlled and protected, unlike the open track."
+  },
+  {
+   "q": "Track-level evacuation of passengers is treated as:",
+   "options": [
+    "The first and fastest option",
+    "The normal method in tunnels",
+    "Something passengers may start themselves",
+    "The last resort, used only when no safer option exists"
+   ],
+   "answer": 3,
+   "explain": "The track has live rails, other trains and poor footing — it is used only when every safer route is ruled out."
+  },
+  {
+   "q": "Before any track-level evacuation begins, which condition is essential?",
+   "options": [
+    "The next train has passed the section",
+    "Passengers have collected all their luggage",
+    "Trains are stopped on the affected lines and traction power is confirmed isolated where required",
+    "The media has been informed about the incident"
+   ],
+   "answer": 2,
+   "explain": "Nobody steps onto a track until movements are stopped and the power status is confirmed safe under Operations Control Centre (OCC) authority."
+  },
+  {
+   "q": "During an evacuation, why are staff positioned along the route to the safe place?",
+   "options": [
+    "To check tickets of evacuating passengers",
+    "To guide passengers, assist the vulnerable and keep the flow moving in one direction",
+    "To photograph the evacuation for records",
+    "To count the seats left empty in the train"
+   ],
+   "answer": 1,
+   "explain": "Positioned staff turn a crowd into an orderly flow — like ushers in a dark cinema hall."
+  },
+  {
+   "q": "Passengers must never be allowed to self-evacuate from a failed train because:",
+   "options": [
+    "Uncontrolled movement on a live railway can kill — evacuation must be authorised and protected",
+    "It makes the operator's report longer",
+    "It delays the rescue train's paperwork",
+    "Self-evacuation is not mentioned in the timetable"
+   ],
+   "answer": 0,
+   "explain": "People forcing doors onto live tracks have died in real railways — control is what keeps evacuation safe."
+  },
+  {
+   "q": "Why does the crew keep passengers informed with announcements during a long train failure?",
+   "options": [
+    "Announcements repair the train faster",
+    "Passengers are legally entitled to a commentary",
+    "Information prevents panic, and panic injures more people than most failures do",
+    "Silence would damage the train's Public Address (PA) system"
+   ],
+   "answer": 2,
+   "explain": "An informed passenger stays seated and calm; a silent train fills with rumours and fear."
+  },
+  {
+   "q": "During controlled detrainment, who is assisted first?",
+   "options": [
+    "Children, the elderly, wheelchair users and others who need help",
+    "Passengers holding season tickets",
+    "Passengers sitting nearest the doors",
+    "Staff travelling off duty"
+   ],
+   "answer": 0,
+   "explain": "Vulnerability decides priority — those who cannot manage ladders and walkways alone are helped first."
+  },
+  {
+   "q": "Passengers are detrained from a failed train through:",
+   "options": [
+    "Any window they can open",
+    "The emergency hammer exit in the roof",
+    "Doors they force open themselves",
+    "The designated door, using the ladder or ramp provided, with staff at the detrainment point"
+   ],
+   "answer": 3,
+   "explain": "One controlled exit point with staff and equipment is safer than many improvised exits."
+  },
+  {
+   "q": "After all passengers have left a failed train, what must be done before the section can reopen?",
+   "options": [
+    "The train is cleaned for the next service",
+    "The train and the route are checked and everyone is counted clear",
+    "Tickets of all passengers are collected",
+    "A press note about the incident is issued"
+   ],
+   "answer": 1,
+   "explain": "Count out must equal count in — a section never reopens on assumption."
+  },
+  {
+   "q": "Once evacuation is complete, the failed train is:",
+   "options": [
+    "Moved to the depot when it is safe to do so",
+    "Left in the section permanently",
+    "Pushed into the nearest tunnel cross-passage",
+    "Opened for passengers to collect luggage at leisure"
+   ],
+   "answer": 0,
+   "explain": "Clearing the failed train from the running line, when safe, is part of completing the recovery."
+  },
+  {
+   "q": "A passenger tries to force open a door of a failed train in a tunnel. The crew should:",
+   "options": [
+    "Help him open it to keep him calm",
+    "Ignore it as a minor matter",
+    "Stop him, reassure passengers and repeat clear announcements on what is happening and what to do",
+    "Unlock all doors to release the pressure"
+   ],
+   "answer": 2,
+   "explain": "Forced doors lead to the track danger — calm, clear information is the tool that stops it."
+  },
+  {
+   "q": "Which information does Operations Control Centre (OCC) most need in the operator's first report of a train failure?",
+   "options": [
+    "The operator's duty roster for the week",
+    "Exact location, train condition and passenger load",
+    "The names of all passengers on board",
+    "The weather at the depot that morning"
+   ],
+   "answer": 1,
+   "explain": "Location, condition and load decide the rescue plan — Operations Control Centre (OCC) plans from these three facts."
+  },
+  {
+   "q": "Why is a fixed time limit set for troubleshooting a failed train?",
+   "options": [
+    "Because spare parts expire after that time",
+    "To give the rescue train time to be cleaned",
+    "Because passengers stop listening after that time",
+    "So that rescue or evacuation is not delayed while attempts continue endlessly"
+   ],
+   "answer": 3,
+   "explain": "Batteries, patience and conditions all run down — a time limit forces a timely decision."
+  },
+  {
+   "q": "Two trains are involved: one failed, one sent to assist. Their coupling and movement must be:",
+   "options": [
+    "Decided between the two operators by phone",
+    "Done at full line speed to save time",
+    "Carried out only under Operations Control Centre (OCC) authorisation and the prescribed rescue procedure",
+    "Left to the senior operator's judgement alone"
+   ],
+   "answer": 2,
+   "explain": "Rescue movements are degraded operations with their own rules — unauthorised coupling can create a second incident."
+  },
+  {
+   "q": "In a tunnel, why is detraining passengers at a station better than along the tunnel walkway?",
+   "options": [
+    "The walkway is reserved for staff only",
+    "The station offers staff, light, medical help and safe exits all in one place",
+    "Stations are closer to the depot",
+    "Passengers prefer stations for shopping"
+   ],
+   "answer": 1,
+   "explain": "Every facility a passenger may need exists at a station and almost none exist in a tunnel."
+  },
+  {
+   "q": "A failed train can move slowly on its own power. Operations Control Centre (OCC) will most likely direct it to:",
+   "options": [
+    "The nearest station, to detrain passengers safely at the platform",
+    "The middle of the next tunnel",
+    "Continue its full journey regardless",
+    "The depot with passengers still on board"
+   ],
+   "answer": 0,
+   "explain": "If it can crawl, it crawls to a platform — detrainment there is the safest ending."
+  },
+  {
+   "q": "What should passengers be clearly told NOT to do during a train evacuation?",
+   "options": [
+    "Remain seated until instructed",
+    "Listen to crew announcements",
+    "Help children and elderly passengers",
+    "Force doors, enter the track on their own, or go back for luggage"
+   ],
+   "answer": 3,
+   "explain": "The NOT list prevents the three classic killers: forced doors, lone track entry and luggage delays."
+  },
+  {
+   "q": "Why is the passenger count maintained during and after an evacuation?",
+   "options": [
+    "For ticket refund calculations",
+    "To prove nobody is left behind in the train or along the route",
+    "For the catering contractor's records",
+    "To update the passenger information display"
+   ],
+   "answer": 1,
+   "explain": "Counting is the safety net — an uncounted evacuation can leave a person behind in a tunnel."
+  },
+  {
+   "q": "A train fails on a viaduct (elevated section). The evacuation principles differ from a tunnel mainly in that:",
+   "options": [
+    "Passengers may jump down as the height is small",
+    "No Operations Control Centre (OCC) authorisation is needed on a viaduct",
+    "The same controlled method applies — walkway under Operations Control Centre (OCC) control, track level only as a last resort",
+    "Evacuation is never permitted on a viaduct"
+   ],
+   "answer": 2,
+   "explain": "Height changes the route furniture, not the principles: controlled, authorised, protected."
+  },
+  {
+   "q": "During evacuation planning, Operations Control Centre (OCC) briefs the receiving station mainly so that:",
+   "options": [
+    "The station can close its booking office",
+    "The station can announce commercial offers",
+    "The station master can inform the press first",
+    "Staff, first aid and onward arrangements are ready when passengers arrive"
+   ],
+   "answer": 3,
+   "explain": "A prepared receiving station turns an arrival of hundreds into an orderly handover."
+  },
+  {
+   "q": "The operator of a failed train notices smoke smell while troubleshooting. His priority now:",
+   "options": [
+    "Stop troubleshooting, protect passengers, inform Operations Control Centre (OCC) immediately — the incident has changed class",
+    "Finish the restart attempt first",
+    "Open windows and continue the journey",
+    "Ask passengers if they also smell it"
+   ],
+   "answer": 0,
+   "explain": "A possible fire outranks a failure — the emergency sequence restarts at 'protect and inform'."
+  },
+  {
+   "q": "Why must movements on the adjacent line also be stopped or cautioned during a track evacuation?",
+   "options": [
+    "To give the rescue train a parking place",
+    "Passengers near the track could be struck by a train on the neighbouring line",
+    "So that the adjacent train's passengers can watch",
+    "Because both lines share one driver"
+   ],
+   "answer": 1,
+   "explain": "Evacuating people stand close to the other line — its trains are a direct danger to them."
+  },
+  {
+   "q": "A controlled evacuation is ordered. Who gives the final 'go' for passengers to start leaving the train?",
+   "options": [
+    "The first passenger who reaches the door",
+    "The operator acting entirely on his own",
+    "Operations Control Centre (OCC), after the area has been made safe and staff are positioned",
+    "The station master of the nearest station by phone to passengers"
+   ],
+   "answer": 2,
+   "explain": "The go-ahead follows safety confirmation — movements stopped, power dealt with, staff in place."
+  },
+  {
+   "q": "After an evacuation, a passenger reports chest pain at the station. The correct action is:",
+   "options": [
+    "Give first aid, inform Operations Control Centre (OCC)/station control and arrange ambulance/medical handover",
+    "Ask him to rest and continue his journey later",
+    "Send him back to the train to sit down",
+    "Wait for the next scheduled ambulance round"
+   ],
+   "answer": 0,
+   "explain": "Medical needs found during evacuation are handled as a medical emergency in parallel."
+  },
+  {
+   "q": "Which quality of an evacuation matters most in judging whether it was done well?",
+   "options": [
+    "It finished in the shortest possible time",
+    "No train was delayed by it",
+    "It required the fewest staff",
+    "Everyone reached a safe place, accounted for, without injury — not how fast it was"
+   ],
+   "answer": 3,
+   "explain": "Order, not speed, is the standard — a fast, chaotic evacuation is a failed one."
+  },
+  {
+   "q": "A train fails just short of a station platform, doors not aligned with the platform. The best course is:",
+   "options": [
+    "Open whichever doors hang over the platform edge",
+    "Let agile passengers jump the gap",
+    "Follow Operations Control Centre (OCC)'s instruction — move to align if possible, else controlled detrainment by the prescribed method",
+    "Ask passengers to pull the train forward"
+   ],
+   "answer": 2,
+   "explain": "Partial alignment is a trap — improvised jumping causes falls; the prescribed method controls it."
+  },
+  {
+   "q": "During a long failure, the train's batteries mainly serve to:",
+   "options": [
+    "Restart the traction motors repeatedly",
+    "Keep lights and ventilation running for a limited period while decisions are taken",
+    "Power the train to the next station",
+    "Charge passengers' mobile phones"
+   ],
+   "answer": 1,
+   "explain": "Batteries buy time, not movement — decisions must be completed inside that time."
+  },
+  {
+   "q": "Why does Operations Control Centre (OCC) sometimes choose passenger transfer to a rescue train instead of towing the failed train first?",
+   "options": [
+    "Towing is never permitted in Regional Rapid Transit System (RRTS)",
+    "The rescue train needs passenger load for balance",
+    "Passengers enjoy changing trains",
+    "Transfer can clear passengers faster and more safely than a slow tow in some situations"
+   ],
+   "answer": 3,
+   "explain": "The aim is people to safety first; the failed train can be recovered afterwards."
+  },
+  {
+   "q": "The receiving end of an evacuation route must be a 'safe place'. This means:",
+   "options": [
+    "A place clear of trains, live equipment and the incident itself, where passengers can assemble",
+    "Any place outside the train",
+    "The nearest road, whatever its traffic",
+    "Inside the next train standing in the section"
+   ],
+   "answer": 0,
+   "explain": "A safe place is defined by what it is clear of — danger must not follow the passengers."
+  },
+  {
+   "q": "An operator secures a failed train. 'Secure' here means:",
+   "options": [
+    "All doors locked with passengers inside permanently",
+    "The train's valuables locked in the cab",
+    "Brakes applied and the train protected so it cannot move unexpectedly",
+    "A security guard posted at each door"
+   ],
+   "answer": 2,
+   "explain": "A secured train stays where it stopped — no roll-away risk while people move around it."
+  },
+  {
+   "q": "If evacuation is ordered but a few passengers refuse to leave the train, staff should:",
+   "options": [
+    "Leave them and close the evacuation",
+    "Persuade calmly, explain the reason, assist them — and report the situation to Operations Control Centre (OCC)",
+    "Physically drag them out immediately",
+    "Cancel the evacuation for everyone"
+   ],
+   "answer": 1,
+   "explain": "Refusal is handled by communication and escalation, never by abandonment or force as a first step."
+  },
+  {
+   "q": "The incident log for a train evacuation must finally show:",
+   "options": [
+    "That evacuation is complete, all persons are accounted for and Operations Control Centre (OCC) has logged completion",
+    "Only the time the train failed",
+    "The list of delayed trains",
+    "The names of staff on leave"
+   ],
+   "answer": 0,
+   "explain": "The log closes the safety loop — completion and accounting are formally recorded."
+  },
+  {
+   "q": "After passengers are evacuated and the line is clear, service recovery begins with:",
+   "options": [
+    "Running extra trains at double speed to catch up",
+    "Cancelling the rest of the day's service",
+    "Refunding all tickets first",
+    "Moving the failed train clear when safe and restoring the section under Operations Control Centre (OCC) direction"
+   ],
+   "answer": 3,
+   "explain": "Recovery follows the same control: the failed train is cleared, then the timetable is rebuilt."
+  },
+  {
+   "q": "A rescue train has coupled to a failed train and will propel it to the next station. Before the combined unit moves, the crews must complete:",
+   "options": [
+    "A fresh ticket check of all passengers",
+    "A brake continuity test — proving the brakes apply and release through the whole combined train from the driving cab in use",
+    "A full timetable revision",
+    "Repainting of the train number boards"
+   ],
+   "answer": 1,
+   "explain": "Coupling joins two trains into one machine. A brake continuity test proves the driver of the combined unit can actually brake the whole consist before it moves with or near passengers."
+  },
+  {
+   "q": "In a twin-bore tunnel, cross passages connect the two bores at intervals. During an evacuation from a failed train, their role is to:",
+   "options": [
+    "Store maintenance tools",
+    "Let passengers walk from the incident bore into the non-incident bore, which acts as a safe route away from the train",
+    "Allow trains to change tunnels",
+    "House the signalling equipment"
+   ],
+   "answer": 1,
+   "explain": "The other bore is the tunnel's built-in escape route. Cross passages turn it into a safe place reachable on foot, under Operations Control Centre (OCC) control and with movements in that bore stopped or controlled."
+  },
+  {
+   "q": "A passenger in a failed train presses the emergency intercom/alarm. The correct handling is:",
+   "options": [
+    "Ignore it — passengers always panic",
+    "The operator answers, learns the problem, informs the Operations Control Centre (OCC) and announcements are made; the alarm is never treated as a joke until checked",
+    "The train doors open automatically at once",
+    "The passenger is fined before anyone listens"
+   ],
+   "answer": 1,
+   "explain": "The emergency intercom is the passengers' interface with the crew. Every activation is answered and reported to the Operations Control Centre (OCC) — it may be the first warning of a medical case or smoke."
+  },
+  {
+   "q": "A train fails on a steep gradient (slope). The extra danger the operator must guard against while securing the train is:",
+   "options": [
+    "Passengers getting bored",
+    "The train rolling back or running away down the gradient if brakes are not fully applied and the train properly secured",
+    "Loss of mobile phone signal",
+    "The air-conditioning stopping"
+   ],
+   "answer": 1,
+   "explain": "On a gradient, gravity is a standing threat. Full brake application and proper securing come before troubleshooting — a rolling train turns a failure into a collision."
+  },
+  {
+   "q": "When passengers are detrained onto a trackside walkway, doors are enabled only on the walkway side of the train. This 'side selection' matters because:",
+   "options": [
+    "It saves battery power",
+    "Opening doors on the wrong side would put passengers onto the adjacent track or into a drop, instead of onto the safe walkway",
+    "Passengers prefer one side of the train",
+    "It makes counting passengers faster"
+   ],
+   "answer": 1,
+   "explain": "Only the safe side is ever opened. Side selection by the operator, confirmed with the Operations Control Centre (OCC), is what keeps an evacuation route safe instead of creating a second accident."
+  }
+ ]
+}

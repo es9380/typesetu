@@ -1,0 +1,393 @@
+{
+ "id": "tech-ii-6",
+ "category": "technical",
+ "group": "Unit ii — Operational Systems & Interfaces",
+ "title": "AFC & Passenger Information Systems",
+ "questions": [
+  {
+   "q": "AFC stands for:",
+   "options": [
+    "Automatic Fare Collection",
+    "Automatic Fare Control-room",
+    "Advanced Fare Card",
+    "Automatic Fire Collection"
+   ],
+   "answer": 0,
+   "explain": "Automatic Fare Collection (AFC) is the gate-and-card system that lets passengers in and collects the fare without a ticket window."
+  },
+  {
+   "q": "The main components of an Automatic Fare Collection (AFC) system are:",
+   "options": [
+    "Signals, points and track circuits",
+    "Gates, ticket vending machines, card readers and a central clearing system",
+    "Pantographs and feeders",
+    "Platform Screen Doors (PSDs) and escalators"
+   ],
+   "answer": 1,
+   "explain": "Gates (flap barriers), Ticket Vending Machines (TVMs), readers and the central clearing house make up Automatic Fare Collection (AFC)."
+  },
+  {
+   "q": "TVM stands for:",
+   "options": [
+    "Train Video Monitor",
+    "Track Voltage Meter",
+    "Ticket Vending Machine",
+    "Telecom Voice Module"
+   ],
+   "answer": 2,
+   "explain": "Ticket Vending Machines (TVMs) are the self-service machines that sell/issue tickets and cards."
+  },
+  {
+   "q": "NCMC stands for:",
+   "options": [
+    "National Central Metro Card",
+    "New Card for Metro Cities",
+    "National Cash Mobility Card",
+    "National Common Mobility Card"
+   ],
+   "answer": 3,
+   "explain": "National Common Mobility Card (NCMC) — 'One Nation One Card' — is designed to work across metros, Regional Rapid Transit System (RRTS) and buses like one ATM card in every bank."
+  },
+  {
+   "q": "Regional Rapid Transit System (RRTS) Automatic Fare Collection (AFC) supports which fare media?",
+   "options": [
+    "Cash only",
+    "National Common Mobility Card (NCMC), Quick Response (QR) tickets and contactless payment",
+    "Paper tickets only",
+    "Monthly passes only"
+   ],
+   "answer": 1,
+   "explain": "Namo Bharat ticketing works with National Common Mobility Card (NCMC), Quick Response (QR) and digital/contactless payment."
+  },
+  {
+   "q": "The 'central clearing' function in Automatic Fare Collection (AFC) does the job of:",
+   "options": [
+    "Clearing tracks for trains",
+    "Clearing platforms of crowds",
+    "Clearing signal faults",
+    "Settling and reconciling fare transactions centrally across the system"
+   ],
+   "answer": 3,
+   "explain": "Clearing is the back-office settlement that sorts out who gets what from each card journey."
+  },
+  {
+   "q": "Automatic Fare Collection (AFC) gates at stations are usually of which type?",
+   "options": [
+    "Flap barriers",
+    "Swing doors of wood",
+    "Turnstile cages",
+    "Open passages with no barrier"
+   ],
+   "answer": 0,
+   "explain": "Flap-barrier gates open on a valid tap and close behind the passenger."
+  },
+  {
+   "q": "Besides collecting fares, Automatic Fare Collection (AFC) data helps operations by:",
+   "options": [
+    "Driving trains",
+    "Controlling signals",
+    "Revealing passenger load patterns",
+    "Repairing Platform Screen Doors (PSDs)"
+   ],
+   "answer": 2,
+   "explain": "Gate data shows where and when crowds build — operations uses it to plan service and staffing."
+  },
+  {
+   "q": "PIS stands for:",
+   "options": [
+    "Public Intercom Service",
+    "Platform Inspection System",
+    "Power Information Scheme",
+    "Passenger Information System"
+   ],
+   "answer": 3,
+   "explain": "Passenger Information System (PIS) is the displays/boards side of passenger information."
+  },
+  {
+   "q": "PAS stands for:",
+   "options": [
+    "Public Address System",
+    "Passenger Alarm System",
+    "Platform Access Scheme",
+    "Power Auxiliary Supply"
+   ],
+   "answer": 0,
+   "explain": "Public Address System (PAS) is the announcement side — spoken information to passengers."
+  },
+  {
+   "q": "Passenger Information Display System (PIDS) displays at stations show:",
+   "options": [
+    "Only advertisements",
+    "Driver names",
+    "Train timings, destinations and disruption information",
+    "Power voltages"
+   ],
+   "answer": 2,
+   "explain": "Passenger Information Displays carry timings, destinations, delays and safety messages."
+  },
+  {
+   "q": "Help points/intercoms at stations are part of:",
+   "options": [
+    "Automatic Fare Collection (AFC) clearing house",
+    "Passenger information/communication systems — the Passenger Information System (PIS) family",
+    "Traction Supervisory Control And Data Acquisition (SCADA)",
+    "Interlocking"
+   ],
+   "answer": 1,
+   "explain": "Help points connect passengers to staff — they sit with the Passenger Information System (PIS)/communication family."
+  },
+  {
+   "q": "During an incident, passenger information given out must be:",
+   "options": [
+    "Whatever station staff guess",
+    "Delayed until the next day",
+    "Approved and accurate information from Operations Control Centre (OCC), to prevent panic and rumours",
+    "Given only on social media"
+   ],
+   "answer": 2,
+   "explain": "In incidents, accurate Operations Control Centre (OCC)-approved information is an operational duty — wrong information creates panic."
+  },
+  {
+   "q": "Why is accurate passenger information called an operational duty, not a courtesy?",
+   "options": [
+    "It is only for marketing",
+    "Because wrong or absent information causes panic, rumours and unsafe crowd behaviour",
+    "Passengers do not read displays",
+    "It has no safety effect"
+   ],
+   "answer": 1,
+   "explain": "Crowds act on information; controlling information is part of controlling the incident."
+  },
+  {
+   "q": "A smart card tap at the gate is an example of:",
+   "options": [
+    "Communications-Based Train Control (CBTC)",
+    "Regenerative braking",
+    "Axle counting",
+    "Automatic Fare Collection (AFC) in action — the same card family works across systems"
+   ],
+   "answer": 3,
+   "explain": "Your metro/National Common Mobility Card (NCMC) card tapping at the gate is Automatic Fare Collection (AFC) — one card, many systems."
+  },
+  {
+   "q": "If Automatic Fare Collection (AFC) gates at a station fail during peak hour, operations must:",
+   "options": [
+    "Manage passenger entry/exit by the prescribed fallback (staff-supervised/manual arrangements) and report the fault",
+    "Close the railway permanently",
+    "Let no one travel ever",
+    "Open the track gates instead"
+   ],
+   "answer": 0,
+   "explain": "Fare system failure is handled by controlled manual fallback and fault reporting — passengers still travel safely."
+  },
+  {
+   "q": "Quick Response (QR) tickets in Regional Rapid Transit System (RRTS) are used as:",
+   "options": [
+    "A fare medium validated at Automatic Fare Collection (AFC) gates",
+    "A signalling code",
+    "A type of Platform Screen Door (PSD)",
+    "A power coupon"
+   ],
+   "answer": 0,
+   "explain": "Quick Response (QR)-based tickets are scanned at the gates just like cards are tapped."
+  },
+  {
+   "q": "Station computer in the Automatic Fare Collection (AFC) chain does what?",
+   "options": [
+    "Drives the trains at that station",
+    "Collects and manages the station's AFC data and links it to the central system",
+    "Controls the Overhead Equipment (OHE)",
+    "Runs the escalators"
+   ],
+   "answer": 1,
+   "explain": "Each station's Automatic Fare Collection (AFC) equipment reports through its station computer to the central clearing system."
+  },
+  {
+   "q": "Which of these is NOT an Automatic Fare Collection (AFC) component?",
+   "options": [
+    "Flap-barrier gate",
+    "Ticket vending machine",
+    "Eurobalise",
+    "Central clearing house"
+   ],
+   "answer": 2,
+   "explain": "Eurobalises belong to European Train Control System (ETCS) signalling; the rest are Automatic Fare Collection (AFC)."
+  },
+  {
+   "q": "Passenger load patterns from Automatic Fare Collection (AFC) data would most help Operations Control Centre (OCC) decide:",
+   "options": [
+    "Which driver to punish",
+    "The colour of trains",
+    "Ticket paper size",
+    "Where crowding is building and whether service/staffing needs adjustment"
+   ],
+   "answer": 3,
+   "explain": "Entry/exit counts by station and time are a live crowding picture for controllers."
+  },
+  {
+   "q": "During a service disruption, Passenger Information System (PIS)/Public Address System (PAS) should announce:",
+   "options": [
+    "Nothing until service is normal",
+    "The disruption, its effect and what passengers should do — accurately and promptly",
+    "Only the next train's number",
+    "Advertisements first"
+   ],
+   "answer": 1,
+   "explain": "Disruption information is safety information: what happened, what it means, what to do."
+  },
+  {
+   "q": "A display shows a wrong destination for a departing train. This is:",
+   "options": [
+    "A minor cosmetic issue",
+    "The passengers' problem",
+    "Impossible to fix",
+    "An operational fault to be corrected immediately, because passengers act on it"
+   ],
+   "answer": 3,
+   "explain": "Wrong information moves crowds wrongly — treat it as a real fault and fix/announce the correction."
+  },
+  {
+   "q": "Contactless payment at gates means:",
+   "options": [
+    "Passengers can pay/enter using contactless cards or devices without a separate ticket purchase step",
+    "No fare is charged",
+    "Gates are removed",
+    "Cash is compulsory"
+   ],
+   "answer": 0,
+   "explain": "Contactless media speed up entry — the fare is still collected by Automatic Fare Collection (AFC)."
+  },
+  {
+   "q": "The link between Automatic Fare Collection (AFC) and operations is that:",
+   "options": [
+    "AFC drives trains",
+    "Operations never uses AFC data",
+    "AFC is both the fare system and a source of passenger-flow intelligence for operations",
+    "AFC replaces Operations Control Centre (OCC)"
+   ],
+   "answer": 2,
+   "explain": "Gates collect money and data; operations uses the data."
+  },
+  {
+   "q": "If a passenger's card is rejected at the gate, the front-line resolution point is:",
+   "options": [
+    "The Operations Control Centre (OCC) chief controller personally",
+    "The Power Controller",
+    "The driver",
+    "Station staff/customer care handling as per Automatic Fare Collection (AFC) procedure, not the train operator"
+   ],
+   "answer": 3,
+   "explain": "Card/gate issues are station-level Automatic Fare Collection (AFC) matters handled by station staff."
+  },
+  {
+   "q": "Why do Passenger Information System (PIS) announcements during incidents come from/through Operations Control Centre (OCC) approval?",
+   "options": [
+    "To keep one consistent, verified version of information across all stations and trains",
+    "To delay information",
+    "Because stations have no speakers",
+    "For advertising control"
+   ],
+   "answer": 0,
+   "explain": "One source = one story; conflicting local guesses create rumours and panic."
+  },
+  {
+   "q": "Tokens, in systems that use them, are:",
+   "options": [
+    "Signalling tokens for block working",
+    "Power coupons",
+    "A single-journey fare medium handled by the Automatic Fare Collection (AFC) system",
+    "Platform Screen Door (PSD) keys"
+   ],
+   "answer": 2,
+   "explain": "Do not confuse Automatic Fare Collection (AFC) journey tokens with block-working tokens — context decides the meaning."
+  },
+  {
+   "q": "A station's Public Address (PA) announcement cannot be heard on the platform. Operationally this is:",
+   "options": [
+    "Not a problem at all",
+    "A Public Address System (PAS) fault to report — in an emergency that platform cannot receive spoken instructions",
+    "A fare issue",
+    "A traction fault"
+   ],
+   "answer": 1,
+   "explain": "If people cannot hear announcements, emergency communication to that platform is broken — report it."
+  },
+  {
+   "q": "The Passenger Information System (PIS) inside the train and the PIS at the station should:",
+   "options": [
+    "Always differ",
+    "Be run by advertisers",
+    "Tell a consistent story, both fed from the same operational information",
+    "Show only the time"
+   ],
+   "answer": 2,
+   "explain": "Consistency between on-train and station information keeps passengers calm and correctly directed."
+  },
+  {
+   "q": "The one-line summary of Automatic Fare Collection (AFC) + Passenger Information System (PIS) for operations is:",
+   "options": [
+    "AFC and PIS are purely commercial systems",
+    "AFC moves passengers in and counts them; PIS/Public Address System (PAS) keeps them informed — both are operational tools, not just passenger conveniences",
+    "Only AFC matters",
+    "PIS is decoration"
+   ],
+   "answer": 1,
+   "explain": "Fare collection, crowd data and passenger information all feed directly into running the railway."
+  },
+  {
+   "q": "In a closed Automatic Fare Collection (AFC) system, a passenger who taps in at entry but does not tap out at exit will generally face:",
+   "options": [
+    "A free journey",
+    "An incomplete journey — the system cannot calculate the fare, so the card is charged as per rule (often the maximum fare) or has to be regularised at the station",
+    "Immediate arrest at the gate",
+    "A double refund"
+   ],
+   "answer": 1,
+   "explain": "Fare is calculated from the entry–exit pair. A missing exit tap leaves an incomplete journey in the Automatic Fare Collection (AFC) system, settled by the railway's rule, not by guesswork at the gate."
+  },
+  {
+   "q": "Automatic Fare Collection (AFC) gate lanes at a station can be set as entry-only, exit-only or bi-directional. Operations changes these modes mainly to:",
+   "options": [
+    "Make the station look modern",
+    "Match the direction of the passenger rush — more entry lanes in the morning peak, more exit lanes in the evening peak",
+    "Test the gates every hour",
+    "Reduce the number of staff on duty"
+   ],
+   "answer": 1,
+   "explain": "Peak flow is one-directional. Reversible Automatic Fare Collection (AFC) lanes let the station pour its gate capacity into the direction passengers are actually moving."
+  },
+  {
+   "q": "A passenger reports a lost smart card and it is 'blacklisted' in the Automatic Fare Collection (AFC) system. This means:",
+   "options": [
+    "Only the reporting station will reject it",
+    "The card number is blocked centrally, so gates across the network will reject it if anyone tries to use it",
+    "The card is physically destroyed at the station counter",
+    "The passenger can never travel again"
+   ],
+   "answer": 1,
+   "explain": "Blacklisting works because Automatic Fare Collection (AFC) is networked: one report at any station protects the balance at every gate on the system."
+  },
+  {
+   "q": "On the Passenger Information System (PIS) and Public Address System (PAS), message priority during operations is:",
+   "options": [
+    "Commercial advertisements first, train information later",
+    "Safety and emergency messages override everything else; routine service information comes next",
+    "All messages have equal priority",
+    "The longest message plays first"
+   ],
+   "answer": 1,
+   "explain": "Passenger Information System (PIS) displays and Public Address System (PAS) announcements follow a priority ladder — an emergency instruction must never wait behind a routine or commercial message."
+  },
+  {
+   "q": "If the central Automatic Fare Collection (AFC) system or its link to a station fails, well-designed station gates keep working by:",
+   "options": [
+    "Opening permanently for free travel",
+    "Refusing every passenger until the link returns",
+    "Working in offline mode — validating cards locally and storing the transactions to upload when the link is restored",
+    "Switching to paper tickets automatically"
+   ],
+   "answer": 2,
+   "explain": "Offline working is graceful degradation for Automatic Fare Collection (AFC): passengers keep moving, transactions are stored at the station, and the central system settles them later."
+  }
+ ]
+}

@@ -1,0 +1,448 @@
+{
+ "id": "gs-polity-1",
+ "category": "gs",
+ "group": "GS — Polity",
+ "title": "Indian Polity Test 1 (Constitution & Institutions — most probable)",
+ "questions": [
+  {
+   "q": "The Constitution of India was adopted by the Constituent Assembly on:",
+   "options": [
+    "26 January 1950",
+    "15 August 1947",
+    "26 November 1949",
+    "9 December 1946"
+   ],
+   "answer": 2,
+   "explain": "Adopted on 26 Nov 1949 (now Constitution Day); it came into force on 26 January 1950."
+  },
+  {
+   "q": "The Constitution of India came into force on:",
+   "options": [
+    "26 January 1950",
+    "26 November 1949",
+    "15 August 1947",
+    "2 October 1950"
+   ],
+   "answer": 0,
+   "explain": "India became a Republic on 26 January 1950, the date chosen to honour Purna Swaraj Day of 1930."
+  },
+  {
+   "q": "The Chairman of the Drafting Committee of the Constitution was:",
+   "options": [
+    "Dr Rajendra Prasad",
+    "Jawaharlal Nehru",
+    "Sardar Patel",
+    "Dr B.R. Ambedkar"
+   ],
+   "answer": 3,
+   "explain": "Ambedkar chaired the Drafting Committee; Rajendra Prasad was President of the Constituent Assembly."
+  },
+  {
+   "q": "The President of the Constituent Assembly was:",
+   "options": [
+    "Dr B.R. Ambedkar",
+    "Dr Rajendra Prasad",
+    "Dr S. Radhakrishnan",
+    "C. Rajagopalachari"
+   ],
+   "answer": 1,
+   "explain": "Rajendra Prasad presided over the Constituent Assembly and later became India's first President."
+  },
+  {
+   "q": "Originally, the Constitution of India contained:",
+   "options": [
+    "395 Articles, 22 Parts and 8 Schedules",
+    "448 Articles, 25 Parts and 12 Schedules",
+    "365 Articles, 20 Parts and 10 Schedules",
+    "300 Articles, 18 Parts and 7 Schedules"
+   ],
+   "answer": 0,
+   "explain": "Amendments have since expanded it to about 470 Articles, 25 Parts and 12 Schedules."
+  },
+  {
+   "q": "At present, the Constitution of India has how many Schedules?",
+   "options": [
+    "8",
+    "10",
+    "11",
+    "12"
+   ],
+   "answer": 3,
+   "explain": "Originally 8 schedules; four more were added by amendments (9th land reforms, 10th anti-defection, 11th Panchayats, 12th Municipalities)."
+  },
+  {
+   "q": "The words 'Socialist' and 'Secular' were added to the Preamble by the:",
+   "options": [
+    "44th Amendment, 1978",
+    "42nd Amendment, 1976",
+    "52nd Amendment, 1985",
+    "86th Amendment, 2002"
+   ],
+   "answer": 1,
+   "explain": "The 42nd Amendment (mini-Constitution) also added 'Integrity' and the Fundamental Duties."
+  },
+  {
+   "q": "The idea of Directive Principles of State Policy was borrowed from the Constitution of:",
+   "options": [
+    "United States of America (USA)",
+    "Britain",
+    "Ireland",
+    "Canada"
+   ],
+   "answer": 2,
+   "explain": "DPSPs came from Ireland; Fundamental Rights came from the United States of America (USA) and the parliamentary system from Britain."
+  },
+  {
+   "q": "The Fundamental Rights in the Indian Constitution were borrowed from:",
+   "options": [
+    "Ireland",
+    "Canada",
+    "Australia",
+    "United States of America (USA)"
+   ],
+   "answer": 3,
+   "explain": "The United States of America (USA) also inspired judicial review and an independent judiciary."
+  },
+  {
+   "q": "The federal system with a strong Centre was borrowed mainly from:",
+   "options": [
+    "United States of America (USA)",
+    "Canada",
+    "Australia",
+    "France"
+   ],
+   "answer": 1,
+   "explain": "Canada's model of federation with a powerful central government suited India's unity needs."
+  },
+  {
+   "q": "The Concurrent List in the Seventh Schedule was borrowed from:",
+   "options": [
+    "Canada",
+    "Germany",
+    "Australia",
+    "South Africa"
+   ],
+   "answer": 2,
+   "explain": "Subjects in the Concurrent List can be legislated by both the Centre and the States."
+  },
+  {
+   "q": "The Fundamental Duties were borrowed from the Constitution of:",
+   "options": [
+    "Union of Soviet Socialist Republics (USSR) (Russia)",
+    "United States of America (USA)",
+    "Japan",
+    "Ireland"
+   ],
+   "answer": 0,
+   "explain": "Added later by the 42nd Amendment, 1976, on the Swaran Singh Committee's recommendation."
+  },
+  {
+   "q": "Article 14 of the Constitution guarantees:",
+   "options": [
+    "Freedom of speech",
+    "Equality before law",
+    "Right to life",
+    "Right against exploitation"
+   ],
+   "answer": 1,
+   "explain": "Article 14 gives equality before law to every person in India."
+  },
+  {
+   "q": "Article 21 protects:",
+   "options": [
+    "Right to equality",
+    "Freedom of religion",
+    "Protection of life and personal liberty",
+    "Right to education"
+   ],
+   "answer": 2,
+   "explain": "Article 21 is the most widely expanded right; the Supreme Court has read many rights (privacy, clean environment) into it."
+  },
+  {
+   "q": "Free and compulsory education to children aged 6-14 years is guaranteed by:",
+   "options": [
+    "Article 21A",
+    "Article 19",
+    "Article 29",
+    "Article 45"
+   ],
+   "answer": 0,
+   "explain": "Article 21A was inserted by the 86th Amendment, 2002; the Right to Education (RTE) Act followed in 2009."
+  },
+  {
+   "q": "Dr Ambedkar described which Article as the 'heart and soul' of the Constitution?",
+   "options": [
+    "Article 21",
+    "Article 19",
+    "Article 368",
+    "Article 32"
+   ],
+   "answer": 3,
+   "explain": "Article 32 lets citizens move the Supreme Court directly for enforcement of Fundamental Rights through writs."
+  },
+  {
+   "q": "The writ 'Habeas Corpus' is issued to:",
+   "options": [
+    "Command a public officer to do his duty",
+    "Stop a lower court from exceeding its powers",
+    "Produce a person before the court (against illegal detention)",
+    "Question a person's title to a public office"
+   ],
+   "answer": 2,
+   "explain": "Habeas Corpus = 'to have the body' — it protects personal liberty; Mandamus = command to do duty, Quo Warranto = question title to office."
+  },
+  {
+   "q": "The office of the President of India is mentioned in Article:",
+   "options": [
+    "52",
+    "61",
+    "72",
+    "76"
+   ],
+   "answer": 0,
+   "explain": "Article 52 says 'There shall be a President of India'; impeachment is in Article 61."
+  },
+  {
+   "q": "The minimum age required to become the President of India is:",
+   "options": [
+    "25 years",
+    "30 years",
+    "40 years",
+    "35 years"
+   ],
+   "answer": 3,
+   "explain": "President and Vice-President need 35 years; Rajya Sabha 30; Lok Sabha 25."
+  },
+  {
+   "q": "The oath of office to the President of India is administered by the:",
+   "options": [
+    "Vice-President",
+    "Chief Justice of India",
+    "Prime Minister",
+    "Speaker of Lok Sabha"
+   ],
+   "answer": 1,
+   "explain": "The Chief Justice of India (CJI) (or the senior-most Supreme Court judge available) swears in the President."
+  },
+  {
+   "q": "The Vice-President of India is the ex-officio Chairman of the:",
+   "options": [
+    "Rajya Sabha",
+    "Lok Sabha",
+    "National Institution for Transforming India (NITI) Aayog",
+    "Finance Commission"
+   ],
+   "answer": 0,
+   "explain": "The Vice-President presides over the Rajya Sabha; the Lok Sabha elects its own Speaker."
+  },
+  {
+   "q": "The Council of Ministers is collectively responsible to the:",
+   "options": [
+    "Rajya Sabha",
+    "President",
+    "Parliament as a whole",
+    "Lok Sabha"
+   ],
+   "answer": 3,
+   "explain": "Under Article 75, the ministry stays in office only while it holds the confidence of the Lok Sabha."
+  },
+  {
+   "q": "A Money Bill can be introduced only in the:",
+   "options": [
+    "Rajya Sabha",
+    "Lok Sabha",
+    "Either House",
+    "Joint sitting"
+   ],
+   "answer": 1,
+   "explain": "Under Article 110, a Money Bill originates only in the Lok Sabha; Rajya Sabha can only recommend changes within 14 days."
+  },
+  {
+   "q": "Who certifies whether a Bill is a Money Bill or not?",
+   "options": [
+    "The President",
+    "The Finance Minister",
+    "The Speaker of the Lok Sabha",
+    "The Chairman of Rajya Sabha"
+   ],
+   "answer": 2,
+   "explain": "The Speaker's decision on a Money Bill is final."
+  },
+  {
+   "q": "The Supreme Court of India was established under Article:",
+   "options": [
+    "214",
+    "226",
+    "368",
+    "124"
+   ],
+   "answer": 3,
+   "explain": "Article 124 establishes the Supreme Court; High Courts are under Article 214."
+  },
+  {
+   "q": "The Comptroller and Auditor General (Comptroller and Auditor General of India (CAG)) of India is appointed under Article:",
+   "options": [
+    "76",
+    "148",
+    "280",
+    "324"
+   ],
+   "answer": 1,
+   "explain": "The Comptroller and Auditor General of India (CAG) audits the accounts of the Union and the States; Article 76 = Attorney General, 280 = Finance Commission, 324 = Election Commission."
+  },
+  {
+   "q": "The Election Commission of India functions under Article:",
+   "options": [
+    "315",
+    "280",
+    "324",
+    "356"
+   ],
+   "answer": 2,
+   "explain": "Article 324 gives the Election Commission the power to conduct elections to Parliament, State Legislatures and the offices of President and Vice-President."
+  },
+  {
+   "q": "The Union Public Service Commission (UPSC) is provided for in Article:",
+   "options": [
+    "315",
+    "324",
+    "280",
+    "312"
+   ],
+   "answer": 0,
+   "explain": "Article 315 creates the Union Public Service Commission (UPSC) for the Union and State PSCs for the states."
+  },
+  {
+   "q": "The Finance Commission, constituted every five years, is set up under Article:",
+   "options": [
+    "263",
+    "280",
+    "148",
+    "312"
+   ],
+   "answer": 1,
+   "explain": "The Finance Commission recommends how taxes are shared between the Centre and the States."
+  },
+  {
+   "q": "The first law officer of the Government of India is the:",
+   "options": [
+    "Solicitor General",
+    "Comptroller and Auditor General of India (CAG)",
+    "Attorney General (Article 76)",
+    "Chief Justice"
+   ],
+   "answer": 2,
+   "explain": "The Attorney General advises the Union Government on legal matters and can speak in Parliament (without voting)."
+  },
+  {
+   "q": "The 42nd Amendment of 1976 is popularly known as the:",
+   "options": [
+    "Mini-Constitution",
+    "People's Amendment",
+    "Emergency Amendment",
+    "Federal Amendment"
+   ],
+   "answer": 0,
+   "explain": "It made sweeping changes — Preamble, Fundamental Duties, DPSPs and more — hence 'mini-Constitution'."
+  },
+  {
+   "q": "The Right to Property was removed from the Fundamental Rights by the:",
+   "options": [
+    "42nd Amendment, 1976",
+    "52nd Amendment, 1985",
+    "73rd Amendment, 1992",
+    "44th Amendment, 1978"
+   ],
+   "answer": 3,
+   "explain": "Property is now only a legal/constitutional right under Article 300A — no longer a Fundamental Right."
+  },
+  {
+   "q": "The power of Parliament to amend the Constitution is given in Article:",
+   "options": [
+    "352",
+    "356",
+    "368",
+    "395"
+   ],
+   "answer": 2,
+   "explain": "Article 368 lays down the amendment procedure; the Supreme Court's Kesavananda ruling limits it by the 'basic structure' doctrine."
+  },
+  {
+   "q": "A joint sitting of both Houses of Parliament is provided for in Article:",
+   "options": [
+    "108",
+    "110",
+    "123",
+    "368"
+   ],
+   "answer": 0,
+   "explain": "The President summons a joint sitting (presided over by the Lok Sabha Speaker) to resolve a deadlock on an ordinary bill."
+  },
+  {
+   "q": "The Rajya Sabha is:",
+   "options": [
+    "Dissolved every 5 years",
+    "Dissolved with the Lok Sabha",
+    "Elected directly by the people",
+    "A permanent body, never fully dissolved"
+   ],
+   "answer": 3,
+   "explain": "One-third of Rajya Sabha members retire every two years; each member's term is 6 years."
+  },
+  {
+   "q": "The normal term of the Lok Sabha is:",
+   "options": [
+    "4 years",
+    "5 years",
+    "6 years",
+    "7 years"
+   ],
+   "answer": 1,
+   "explain": "Unless dissolved earlier, the Lok Sabha continues for five years from its first meeting."
+  },
+  {
+   "q": "The President can issue an Ordinance when Parliament is not in session under Article:",
+   "options": [
+    "123",
+    "213",
+    "352",
+    "368"
+   ],
+   "answer": 0,
+   "explain": "Article 123 empowers presidential ordinances (213 is the Governor's corresponding power); an ordinance must be approved within six weeks of Parliament reassembling."
+  },
+  {
+   "q": "The Governor of a State is appointed by the:",
+   "options": [
+    "Prime Minister",
+    "Chief Minister",
+    "Chief Justice of India",
+    "President (Article 155)"
+   ],
+   "answer": 3,
+   "explain": "The Governor holds office during the pleasure of the President."
+  },
+  {
+   "q": "Impeachment of the President of India can be initiated in:",
+   "options": [
+    "Lok Sabha only",
+    "Either House of Parliament",
+    "Rajya Sabha only",
+    "Supreme Court"
+   ],
+   "answer": 1,
+   "explain": "Under Article 61, the charge can be preferred by either House and investigated by the other."
+  },
+  {
+   "q": "The maximum strength of the Rajya Sabha, as fixed by the Constitution, is:",
+   "options": [
+    "245",
+    "238",
+    "250",
+    "260"
+   ],
+   "answer": 2,
+   "explain": "The Rajya Sabha can have at most 250 members (238 elected + 12 nominated); its present strength is 245."
+  }
+ ]
+}

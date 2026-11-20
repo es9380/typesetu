@@ -1,0 +1,393 @@
+{
+ "id": "tech-v-5",
+ "category": "technical",
+ "group": "Unit v — Emergency & Contingency Management",
+ "title": "Traction Power Failure & Telecom Failure",
+ "questions": [
+  {
+   "q": "A traction power failure is first detected at control through:",
+   "options": [
+    "A passenger's phone call to the depot",
+    "The station master's weekly report",
+    "A Supervisory Control And Data Acquisition (SCADA) alarm, after which the Power Controller identifies the dead section and the trains standing in it",
+    "A drop in ticket sales"
+   ],
+   "answer": 2,
+   "explain": "Supervisory Control And Data Acquisition (SCADA) sees the power system — identifying the dead section and its trains is step one."
+  },
+  {
+   "q": "When power fails, trains in the dead section should first try to:",
+   "options": [
+    "Coast to a station if possible; otherwise stand secured",
+    "Accelerate to build momentum through the section",
+    "Detrain passengers immediately wherever they stop",
+    "Reverse to the previous power section without instruction"
+   ],
+   "answer": 0,
+   "explain": "A train at a station is always better than a train stranded in a section — coasting there is the first aim."
+  },
+  {
+   "q": "While a train stands without traction power, its batteries keep which services running for a limited time?",
+   "options": [
+    "Traction motors at full power",
+    "Lights and ventilation",
+    "The air-conditioning at full load",
+    "All station escalators"
+   ],
+   "answer": 1,
+   "explain": "Battery backup covers lights and ventilation — it buys decision time, it does not move the train."
+  },
+  {
+   "q": "The Power Controller's main restoration attempt is to:",
+   "options": [
+    "Wait for the fault to clear itself",
+    "Order all trains to detrain passengers",
+    "Switch off the healthy sections as well",
+    "Isolate the fault and reconfigure the supply to feed the section from the healthy side"
+   ],
+   "answer": 3,
+   "explain": "Like a home changeover switch at railway scale — feed the dead section from a healthy source."
+  },
+  {
+   "q": "During a power failure, station essential services run on:",
+   "options": [
+    "Backup power supply",
+    "Traction power borrowed from trains",
+    "Passengers' cooperation alone",
+    "No power at all until the grid returns"
+   ],
+   "answer": 0,
+   "explain": "Stations are designed to keep essential services alive on backup during a traction/grid failure."
+  },
+  {
+   "q": "If a power failure becomes prolonged, the planned outcome for a train that cannot be moved is:",
+   "options": [
+    "Leaving passengers on board indefinitely",
+    "Asking passengers to find their own way along the track",
+    "Controlled detrainment of its passengers, with bus bridging arranged as needed",
+    "Running diesel vehicles into the tunnel immediately"
+   ],
+   "answer": 2,
+   "explain": "Prolonged failure converts to a controlled detrainment — planned, staffed and protected."
+  },
+  {
+   "q": "Service on the sections that still have power should be:",
+   "options": [
+    "Stopped across the whole network automatically",
+    "Run into the dead section to pick up passengers",
+    "Increased to double frequency",
+    "Regulated — trains short-turned at the boundary of the dead section"
+   ],
+   "answer": 3,
+   "explain": "The live network keeps working around the dead section, turning back at its edge."
+  },
+  {
+   "q": "Why must service be restored gradually after a power failure, recharging step by step?",
+   "options": [
+    "To give staff time to announce each train",
+    "To avoid a second trip caused by everything drawing power at once",
+    "Because trains forget their routes",
+    "To save the cost of electricity"
+   ],
+   "answer": 1,
+   "explain": "A sudden full load can trip the supply again — gradual restoration protects the recovery."
+  },
+  {
+   "q": "Passengers in a train standing without power most need:",
+   "options": [
+    "Regular information and calm reassurance while lights and ventilation run on battery",
+    "Complete silence from the crew",
+    "Instructions to open windows and doors",
+    "A promise of the exact restoration minute"
+   ],
+   "answer": 0,
+   "explain": "Information prevents panic in a dark, standing train — honest updates, not false promises."
+  },
+  {
+   "q": "Detrainment during a power failure is prepared only when:",
+   "options": [
+    "Ten minutes have passed in every case",
+    "A single passenger demands it",
+    "The train cannot be moved, or conditions inside it become unsafe",
+    "The power controller is on leave"
+   ],
+   "answer": 2,
+   "explain": "Detrainment is a decision with conditions — immobility or unsafe conditions, not the clock alone."
+  },
+  {
+   "q": "In the home-inverter comparison used for power failure, the Power Controller's role matches:",
+   "options": [
+    "The battery that stores the charge",
+    "The electrician who tries the changeover to another supply",
+    "The fan that keeps running",
+    "The house owner who leaves home"
+   ],
+   "answer": 1,
+   "explain": "Mains fail, battery carries the load briefly, the electrician reconfigures — the railway works the same way, bigger."
+  },
+  {
+   "q": "A total telecom failure occurs between Operations Control Centre (OCC) and a section. The governing safety principle is:",
+   "options": [
+    "No communication, no movement beyond the prescribed limits",
+    "Trains continue on timetable timings",
+    "Drivers use hand signals from passengers",
+    "Trains run faster to reach a working radio area"
+   ],
+   "answer": 0,
+   "explain": "Movement authority travels by communication — when it cannot travel, movements stop or stay within strict limits."
+  },
+  {
+   "q": "When the main radio/telecom channel fails, staff should fall back to:",
+   "options": [
+    "Shouting between stations",
+    "Personal social-media messaging only",
+    "Waiting silently for the channel to return",
+    "Alternate channels — backup radio, telephone, fixed line, or runner/pre-arranged signals as per rules"
+   ],
+   "answer": 3,
+   "explain": "The fallback ladder exists in the rules — communication is restored by another route, not by hope."
+  },
+  {
+   "q": "During a telecom failure, train movements that cannot be communicated with safely should be:",
+   "options": [
+    "Increased to clear the section",
+    "Left to each driver's choice",
+    "Reduced or stopped",
+    "Handed over to station staff permanently"
+   ],
+   "answer": 2,
+   "explain": "If Operations Control Centre (OCC) cannot speak to a train, that train's movements shrink to what the rules safely allow."
+  },
+  {
+   "q": "Why is a 'runner' or pre-arranged signal an acceptable last-resort communication method?",
+   "options": [
+    "It is a laid-down fallback in the rules, so the message and its authority are still controlled",
+    "It is faster than radio",
+    "It needs no training",
+    "Passengers can also use it"
+   ],
+   "answer": 0,
+   "explain": "Even the oldest fallback is rule-based — authority stays documented and controlled."
+  },
+  {
+   "q": "A driver loses radio contact with Operations Control Centre (OCC) while approaching a station in normal running. He should:",
+   "options": [
+    "Continue the whole journey as if nothing happened",
+    "Follow the prescribed failure procedure — proceed only as the rules permit and re-establish contact",
+    "Detrain passengers at the next signal",
+    "Reverse to the previous station"
+   ],
+   "answer": 1,
+   "explain": "Communication failure has its own rule-book procedure — improvisation is not part of it."
+  },
+  {
+   "q": "Which failure pair is correctly matched with its first control action?",
+   "options": [
+    "Telecom failure — isolate traction power",
+    "Power failure — issue movement authorities by flag",
+    "Telecom failure — fall back to alternate channels and restrict movements",
+    "Signalling failure — arrange an ambulance"
+   ],
+   "answer": 2,
+   "explain": "Each failure has its own first move — for telecom it is alternate channels plus restriction."
+  },
+  {
+   "q": "During a power failure, why is keeping passengers informed especially urgent?",
+   "options": [
+    "Passengers must vote on the next step",
+    "The Public Address (PA) system uses traction power",
+    "Information restores the power faster",
+    "Battery-backed light and ventilation are time-limited, and uninformed passengers in a dark train panic sooner"
+   ],
+   "answer": 3,
+   "explain": "The battery clock is ticking — calm, informed passengers make the eventual decision easier and safer."
+  },
+  {
+   "q": "A section loses power while two trains stand in it. Restoration priority for moving trains is decided by:",
+   "options": [
+    "Operations Control Centre (OCC) with the Power Controller, based on position, passenger load and the reconfiguration plan",
+    "Whichever driver asks first",
+    "The train with the loudest passengers",
+    "The train nearest the depot gate"
+   ],
+   "answer": 0,
+   "explain": "Recovery is planned centrally — position and load, not noise, set the order."
+  },
+  {
+   "q": "After power is restored to a section, the first trains through should run:",
+   "options": [
+    "At maximum speed to test the supply",
+    "As directed after restoration, building up gradually to normal service",
+    "Only after a full day's observation",
+    "Without passengers for a week"
+   ],
+   "answer": 1,
+   "explain": "Gradual build-up proves the supply while the service returns."
+  },
+  {
+   "q": "A telecom failure coincides with a signalling failure in the same area. The combined effect is:",
+   "options": [
+    "No worse than a single failure",
+    "Easier, as staff have less to do",
+    "A reason to run trains on sight at normal speed",
+    "More restrictive than either alone — movements are limited to what can be authorised and communicated safely"
+   ],
+   "answer": 3,
+   "explain": "Failures stack — when both protection and communication degrade, restriction deepens."
+  },
+  {
+   "q": "Station staff lose all communication with Operations Control Centre (OCC) during an incident at their station. They should:",
+   "options": [
+    "Wait doing nothing until contact returns",
+    "Evacuate the whole city network",
+    "Act under the local incident command as per rules, use any alternate channel, and protect trains and passengers",
+    "Ask passengers to relay messages by phone to Operations Control Centre (OCC) as official authority"
+   ],
+   "answer": 2,
+   "explain": "Local command exists for exactly this gap — protection continues while communication is restored by other means."
+  },
+  {
+   "q": "The correct order for handling a traction power failure is:",
+   "options": [
+    "Detect through Supervisory Control and Data Acquisition (SCADA), identify the dead section, try reconfiguration, regulate live sections, detrain only if prolonged or unsafe, restore gradually",
+    "Detrain everyone, detect, restore instantly, identify later",
+    "Restore at full load, identify, detect, regulate",
+    "Regulate, detrain, detect, restore, identify"
+   ],
+   "answer": 0,
+   "explain": "Detect and identify come before decisions; detrainment is conditional; restoration is gradual."
+  },
+  {
+   "q": "Why does the Power Controller isolate the faulty part before reconfiguring supply?",
+   "options": [
+    "To punish the faulty equipment",
+    "So the fault cannot trip the healthy supply that will feed the section",
+    "Because isolation is needed for the report only",
+    "To darken the section for inspection"
+   ],
+   "answer": 1,
+   "explain": "Feeding a live fault from a healthy source just spreads the failure — isolate first."
+  },
+  {
+   "q": "A train stands in a tunnel without power and ventilation on battery is weakening. This pushes the decision towards:",
+   "options": [
+    "Waiting indefinitely as batteries recharge themselves",
+    "Opening train doors into the tunnel without protection",
+    "Expediting restoration or moving to controlled detrainment before conditions become unsafe",
+    "Turning off the lights to save the battery for later"
+   ],
+   "answer": 2,
+   "explain": "Worsening conditions inside the train are one of the two triggers for detrainment."
+  },
+  {
+   "q": "During a prolonged power failure, bus bridging means:",
+   "options": [
+    "Arranging buses to carry passengers around the affected section between stations",
+    "Buses entering the tunnel to collect passengers",
+    "Passengers walking on the road bridge above",
+    "Replacing all trains permanently with buses"
+   ],
+   "answer": 0,
+   "explain": "Bridging keeps the journey possible while the railway section is out of service."
+  },
+  {
+   "q": "Which statement about telecom fallback is correct?",
+   "options": [
+    "Any movement is allowed once a mobile phone is available",
+    "Fallback channels remove all restrictions automatically",
+    "A runner can authorise unlimited movements",
+    "Movements may continue only within the limits the fallback communication can safely support"
+   ],
+   "answer": 3,
+   "explain": "The fallback defines the limit — weaker communication means smaller, slower movements."
+  },
+  {
+   "q": "A power failure affects only the traction supply; station lighting and Public Address (PA) still work on backup. Passenger handling should:",
+   "options": [
+    "Treat the station as fully failed",
+    "Use the working station systems fully — announcements, guidance and orderly holding or detrainment",
+    "Close the station immediately in all cases",
+    "Stop all announcements to save backup power"
+   ],
+   "answer": 1,
+   "explain": "Partial failure means using what still works — station systems are a resource in the response."
+  },
+  {
+   "q": "The most dangerous response to a telecom failure would be:",
+   "options": [
+    "Holding trains at stations",
+    "Using the telephone fallback",
+    "Continuing normal-speed movements with no communication between Operations Control Centre (OCC) and trains",
+    "Reducing the service frequency"
+   ],
+   "answer": 2,
+   "explain": "Trains that the Operations Control Centre (OCC) cannot speak to cannot be protected — running at normal speed with no communication is the trap answer."
+  },
+  {
+   "q": "After both power and telecom are restored following a combined failure, normal service resumes:",
+   "options": [
+    "In a phased pattern after systems are tested and certified, with passengers informed",
+    "Instantly, the moment the lights return",
+    "Only after a week of trials",
+    "Without informing passengers, to avoid questions"
+   ],
+   "answer": 0,
+   "explain": "Restoration is phased and certified for every system — power and communication alike."
+  },
+  {
+   "q": "After a traction supply trip, the Power Controller recharges the section and it trips again immediately, twice in a row. This pattern most likely means:",
+   "options": [
+    "The substation needs a rest",
+    "A permanent fault is present on the section (for example a fallen wire or a foreign object) — stop recharging, isolate the section and get it inspected",
+    "Passengers are overloading the trains",
+    "The timetable is too tight"
+   ],
+   "answer": 1,
+   "explain": "A supply that trips once may be a passing fault; one that trips again on recharging is telling you the fault is still there. Repeated feeding into a permanent fault damages equipment and endangers staff."
+  },
+  {
+   "q": "A train loses power and stops inside a neutral section (the short dead length of Overhead Equipment (OHE) between two feeding areas). Even after supply is restored to both sides, this train still cannot move on its own because:",
+   "options": [
+    "Its driver has left",
+    "The neutral section itself carries no power by design — the train must be pushed or pulled out of it into a live section",
+    "Its brakes have locked permanently",
+    "The section has been closed for the day"
+   ],
+   "answer": 1,
+   "explain": "A neutral section separates two power feeds and is always dead; trains normally coast through it on momentum. A train stranded inside it needs rescue to reach live Overhead Equipment (OHE)."
+  },
+  {
+   "q": "The Supervisory Control And Data Acquisition (SCADA) system of the power network itself fails, so the Power Controller can no longer switch supplies remotely. Working continues by:",
+   "options": [
+    "Stopping all trains till the computers return",
+    "Sending staff to the substations to operate the switches locally, step by step on the Power Controller's instructions given over recorded communication",
+    "Letting each station switch as it likes",
+    "Feeding all sections from one substation at once"
+   ],
+   "answer": 1,
+   "explain": "Supervisory Control And Data Acquisition (SCADA) is the remote-control layer, not the supply itself. When it fails, hands replace motors: local operation, one step at a time, under central instruction and full logging."
+  },
+  {
+   "q": "To keep a dead section moving, supply is extended into it from the neighbouring substation (extended feeding). The price of this arrangement is:",
+   "options": [
+    "Nothing — it is as good as normal supply",
+    "The extended feed has load limits, so fewer trains, reduced speed or both are imposed on that section",
+    "Trains must run in the opposite direction",
+    "Passengers must pay a surcharge"
+   ],
+   "answer": 1,
+   "explain": "One substation doing the work of two can only carry so much load. Extended feeding keeps a thinner, slower service alive — it is a degraded mode, not a full cure."
+  },
+  {
+   "q": "Only one train's radio set has failed while the rest of the network communicates normally. The correct handling of that train is:",
+   "options": [
+    "Treat it as a total network failure and stop the whole line",
+    "Let it proceed cautiously to the next station, communicate there by fixed telephone or hand signals, and get the set repaired or the train replaced as directed by the Operations Control Centre (OCC)",
+    "Let it run the whole day without any radio",
+    "Ask its passengers to relay messages"
+   ],
+   "answer": 1,
+   "explain": "A single failed set is a train defect, not a system failure. The train is nursed to a place where communication exists, and the Operations Control Centre (OCC) decides repair, withdrawal or continued working."
+  }
+ ]
+}

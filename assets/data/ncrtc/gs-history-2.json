@@ -1,0 +1,448 @@
+{
+ "id": "gs-history-2",
+ "category": "gs",
+ "group": "GS — History",
+ "title": "Indian History Test 2 (Modern India & Freedom Struggle — most probable)",
+ "questions": [
+  {
+   "q": "The Battle of Plassey (1757), which began British rule in India, was fought between Robert Clive and:",
+   "options": [
+    "Mir Jafar",
+    "Shah Alam II",
+    "Siraj-ud-Daulah",
+    "Tipu Sultan"
+   ],
+   "answer": 2,
+   "explain": "Clive defeated the Nawab of Bengal, Siraj-ud-Daulah, at Plassey (Palashi) in present-day West Bengal."
+  },
+  {
+   "q": "The Battle of Buxar was fought in:",
+   "options": [
+    "1764",
+    "1757",
+    "1772",
+    "1782"
+   ],
+   "answer": 0,
+   "explain": "After Buxar (1764), the East India Company got the Diwani (revenue rights) of Bengal, Bihar and Odisha."
+  },
+  {
+   "q": "The first British law to regulate the East India Company was the:",
+   "options": [
+    "Charter Act, 1813",
+    "Government of India Act, 1858",
+    "Indian Councils Act, 1861",
+    "Regulating Act, 1773"
+   ],
+   "answer": 3,
+   "explain": "The Regulating Act 1773 was Parliament's first step to control the Company; it created the Governor-General of Bengal."
+  },
+  {
+   "q": "The Revolt of 1857 began on 10 May 1857 at:",
+   "options": [
+    "Delhi",
+    "Meerut",
+    "Barrackpore",
+    "Kanpur"
+   ],
+   "answer": 1,
+   "explain": "Sepoys at Meerut rose on 10 May 1857 and marched to Delhi the next day."
+  },
+  {
+   "q": "Mangal Pandey, whose action sparked early unrest in 1857, was a sepoy at:",
+   "options": [
+    "Barrackpore",
+    "Meerut",
+    "Jhansi",
+    "Lucknow"
+   ],
+   "answer": 0,
+   "explain": "Mangal Pandey attacked British officers at Barrackpore (near Kolkata) in March 1857 over the greased cartridges."
+  },
+  {
+   "q": "During the Revolt of 1857, the Mughal emperor proclaimed as the leader of the revolt was:",
+   "options": [
+    "Shah Alam II",
+    "Akbar II",
+    "Wajid Ali Shah",
+    "Bahadur Shah Zafar"
+   ],
+   "answer": 3,
+   "explain": "The aged Bahadur Shah Zafar was declared Emperor of India by the rebels in Delhi."
+  },
+  {
+   "q": "Rani Lakshmibai, the heroine of 1857, fought the British at:",
+   "options": [
+    "Kanpur",
+    "Jhansi",
+    "Lucknow",
+    "Arrah"
+   ],
+   "answer": 1,
+   "explain": "The Rani of Jhansi died fighting near Gwalior in 1858 and is the most remembered woman leader of the revolt."
+  },
+  {
+   "q": "Kunwar Singh, the elderly zamindar who led the 1857 revolt, belonged to:",
+   "options": [
+    "Awadh",
+    "Bundelkhand",
+    "Bihar (Jagdishpur)",
+    "Rohilkhand"
+   ],
+   "answer": 2,
+   "explain": "Kunwar Singh of Jagdishpur (Arrah, Bihar) fought the British at the age of about 80."
+  },
+  {
+   "q": "Begum Hazrat Mahal led the Revolt of 1857 in:",
+   "options": [
+    "Delhi",
+    "Kanpur",
+    "Jhansi",
+    "Lucknow (Awadh)"
+   ],
+   "answer": 3,
+   "explain": "Begum Hazrat Mahal ruled Awadh in the name of her son Birjis Qadr during the revolt."
+  },
+  {
+   "q": "After the Revolt of 1857, the rule of India passed to the British Crown by the:",
+   "options": [
+    "Regulating Act, 1773",
+    "Government of India Act, 1858",
+    "Charter Act, 1833",
+    "Indian Councils Act, 1892"
+   ],
+   "answer": 1,
+   "explain": "The Act of 1858 ended Company rule; the Queen's Proclamation followed, and the Viceroy replaced the Governor-General."
+  },
+  {
+   "q": "The Indian National Congress was founded in:",
+   "options": [
+    "1880",
+    "1905",
+    "1885",
+    "1919"
+   ],
+   "answer": 2,
+   "explain": "The Indian National Congress (INC) was founded in December 1885 with A.O. Hume's initiative."
+  },
+  {
+   "q": "The first President of the Indian National Congress was:",
+   "options": [
+    "W.C. Bonnerjee",
+    "A.O. Hume",
+    "Dadabhai Naoroji",
+    "Surendranath Banerjee"
+   ],
+   "answer": 0,
+   "explain": "Womesh Chunder Bonnerjee presided over the first session; Hume was the founder-secretary, not president — a classic trap."
+  },
+  {
+   "q": "The first session of the Indian National Congress (1885) was held at:",
+   "options": [
+    "Calcutta",
+    "Bombay (Mumbai)",
+    "Madras",
+    "Poona"
+   ],
+   "answer": 1,
+   "explain": "The first session met in Bombay with 72 delegates; it was originally planned at Poona."
+  },
+  {
+   "q": "The Partition of Bengal (1905) was carried out by:",
+   "options": [
+    "Lord Ripon",
+    "Lord Dalhousie",
+    "Lord Curzon",
+    "Lord Minto"
+   ],
+   "answer": 2,
+   "explain": "Curzon divided Bengal, officially for administration; Indians saw it as divide and rule."
+  },
+  {
+   "q": "The movement launched in response to the Partition of Bengal was the:",
+   "options": [
+    "Swadeshi Movement",
+    "Non-Cooperation Movement",
+    "Civil Disobedience Movement",
+    "Quit India Movement"
+   ],
+   "answer": 0,
+   "explain": "Swadeshi (use Indian goods, boycott foreign goods) was the direct answer to Bengal's partition; the partition was annulled in 1911."
+  },
+  {
+   "q": "The Muslim League was founded in 1906 at:",
+   "options": [
+    "Aligarh",
+    "Lucknow",
+    "Delhi",
+    "Dhaka"
+   ],
+   "answer": 3,
+   "explain": "The All-India Muslim League was founded in Dhaka in December 1906."
+  },
+  {
+   "q": "The Lucknow Pact of 1916 is known for:",
+   "options": [
+    "Partition of Bengal",
+    "Separate electorates abolition",
+    "Congress-League unity and Congress reunion",
+    "Gandhi's arrest"
+   ],
+   "answer": 2,
+   "explain": "At Lucknow, Congress and the Muslim League made a joint scheme, and the two Congress factions (Moderates and Extremists) reunited."
+  },
+  {
+   "q": "Mahatma Gandhi returned to India from South Africa in:",
+   "options": [
+    "1915",
+    "1905",
+    "1919",
+    "1920"
+   ],
+   "answer": 0,
+   "explain": "Gandhi returned on 9 January 1915 — the day now marked as Pravasi Bharatiya Divas."
+  },
+  {
+   "q": "Gandhi's first Satyagraha in India (1917) was at:",
+   "options": [
+    "Kheda",
+    "Ahmedabad",
+    "Bardoli",
+    "Champaran"
+   ],
+   "answer": 3,
+   "explain": "At Champaran (Bihar) Gandhi fought for indigo farmers forced to grow indigo under the tinkathia system."
+  },
+  {
+   "q": "The Jallianwala Bagh massacre took place on:",
+   "options": [
+    "10 May 1919",
+    "13 April 1919",
+    "6 April 1930",
+    "23 March 1931"
+   ],
+   "answer": 1,
+   "explain": "On Baisakhi day, 13 April 1919, General Dyer's troops fired on an unarmed crowd in Amritsar."
+  },
+  {
+   "q": "The officer responsible for the Jallianwala Bagh firing was:",
+   "options": [
+    "General Dyer",
+    "Lord Curzon",
+    "General O'Dwyer",
+    "Lord Irwin"
+   ],
+   "answer": 0,
+   "explain": "Brigadier-General R.E.H. Dyer ordered the firing; the massacre shocked India and weakened faith in British rule."
+  },
+  {
+   "q": "The Non-Cooperation Movement was launched by Gandhi in:",
+   "options": [
+    "1919",
+    "1922",
+    "1930",
+    "1920"
+   ],
+   "answer": 3,
+   "explain": "Launched in August 1920 against the Rowlatt Act, Jallianwala Bagh and the Khilafat wrongs."
+  },
+  {
+   "q": "Gandhi withdrew the Non-Cooperation Movement in 1922 because of:",
+   "options": [
+    "The Simon Commission",
+    "The Chauri Chaura incident",
+    "His arrest in 1920",
+    "The Gandhi-Irwin Pact"
+   ],
+   "answer": 1,
+   "explain": "At Chauri Chaura (UP), a mob killed 22 policemen; Gandhi, committed to non-violence, called off the movement."
+  },
+  {
+   "q": "The Simon Commission (1928) was boycotted because:",
+   "options": [
+    "It was headed by Gandhi",
+    "It supported Purna Swaraj",
+    "It had no Indian member",
+    "It met in London only"
+   ],
+   "answer": 2,
+   "explain": "All seven members were British; Indians protested with 'Simon Go Back' across the country."
+  },
+  {
+   "q": "Lala Lajpat Rai died in 1928 from injuries received during a protest against:",
+   "options": [
+    "The Rowlatt Act",
+    "The Salt tax",
+    "The Cabinet Mission",
+    "The Simon Commission"
+   ],
+   "answer": 3,
+   "explain": "He was lathi-charged during the Lahore protest against Simon Commission and died shortly after."
+  },
+  {
+   "q": "The Dandi March of 1930 was undertaken to break the:",
+   "options": [
+    "Rowlatt Act",
+    "Salt law",
+    "Press Act",
+    "Arms Act"
+   ],
+   "answer": 1,
+   "explain": "Gandhi walked from Sabarmati to Dandi (12 March–6 April 1930) and made salt, starting the Civil Disobedience Movement."
+  },
+  {
+   "q": "The movement that began with the Dandi March was the:",
+   "options": [
+    "Non-Cooperation Movement",
+    "Quit India Movement",
+    "Civil Disobedience Movement",
+    "Swadeshi Movement"
+   ],
+   "answer": 2,
+   "explain": "Civil Disobedience (1930-34) meant deliberately breaking unjust laws, beginning with the salt law."
+  },
+  {
+   "q": "The Gandhi-Irwin Pact was signed in:",
+   "options": [
+    "1931",
+    "1929",
+    "1932",
+    "1935"
+   ],
+   "answer": 0,
+   "explain": "Under the 1931 pact Gandhi suspended Civil Disobedience and agreed to attend the Second Round Table Conference."
+  },
+  {
+   "q": "The Poona Pact (1932) was an agreement between Gandhi and:",
+   "options": [
+    "Jinnah",
+    "B.R. Ambedkar",
+    "Irwin",
+    "MacDonald"
+   ],
+   "answer": 1,
+   "explain": "The Poona Pact replaced separate electorates for Depressed Classes with reserved seats in joint electorates."
+  },
+  {
+   "q": "The Quit India Movement was launched in:",
+   "options": [
+    "August 1920",
+    "March 1930",
+    "August 1942",
+    "January 1947"
+   ],
+   "answer": 2,
+   "explain": "Launched on 8 August 1942 at Bombay with Gandhi's call of 'Do or Die'."
+  },
+  {
+   "q": "The slogan 'Do or Die' (Karo Ya Maro) is associated with:",
+   "options": [
+    "Quit India Movement",
+    "Non-Cooperation Movement",
+    "Civil Disobedience Movement",
+    "Indian National Army (INA) trials"
+   ],
+   "answer": 0,
+   "explain": "Gandhi gave this mantra during the Quit India Movement of 1942."
+  },
+  {
+   "q": "The Indian National Army (Azad Hind Fauj) was led by:",
+   "options": [
+    "Rash Behari Bose",
+    "Mohan Singh",
+    "Jawaharlal Nehru",
+    "Subhas Chandra Bose"
+   ],
+   "answer": 3,
+   "explain": "Bose took command of the Indian National Army (INA) in 1943 in Singapore and gave the call 'Delhi Chalo' and 'Jai Hind'."
+  },
+  {
+   "q": "The Forward Bloc party was founded in 1939 by:",
+   "options": [
+    "Jawaharlal Nehru",
+    "C. Rajagopalachari",
+    "Subhas Chandra Bose",
+    "Jayaprakash Narayan"
+   ],
+   "answer": 2,
+   "explain": "After resigning as Congress President in 1939, Bose formed the Forward Bloc."
+  },
+  {
+   "q": "Bhagat Singh, Rajguru and Sukhdev were hanged on:",
+   "options": [
+    "23 March 1931",
+    "13 April 1919",
+    "8 August 1942",
+    "26 January 1930"
+   ],
+   "answer": 0,
+   "explain": "They were executed in Lahore jail for the Saunders murder case; 23 March is observed as Shaheed Diwas."
+  },
+  {
+   "q": "The Cabinet Mission, which proposed a plan for India's future constitution, came in:",
+   "options": [
+    "1942",
+    "1945",
+    "1947",
+    "1946"
+   ],
+   "answer": 3,
+   "explain": "The Cabinet Mission (1946) proposed a federal union and grouping of provinces; it set the path to the Constituent Assembly."
+  },
+  {
+   "q": "The last Viceroy of British India was:",
+   "options": [
+    "Lord Wavell",
+    "Lord Mountbatten",
+    "Lord Linlithgow",
+    "Lord Irwin"
+   ],
+   "answer": 1,
+   "explain": "Mountbatten, the last Viceroy, also became the first Governor-General of independent India."
+  },
+  {
+   "q": "The first Indian Governor-General of independent India was:",
+   "options": [
+    "C. Rajagopalachari",
+    "Lord Mountbatten",
+    "Dr Rajendra Prasad",
+    "Sardar Vallabhbhai Patel"
+   ],
+   "answer": 0,
+   "explain": "Rajaji took over from Mountbatten in June 1948 and was the only Indian to hold the post."
+  },
+  {
+   "q": "India became independent on 15 August 1947 under the:",
+   "options": [
+    "Government of India Act, 1935",
+    "Cabinet Mission Plan",
+    "Cripps Proposals",
+    "Indian Independence Act, 1947"
+   ],
+   "answer": 3,
+   "explain": "The British Parliament's Independence Act created the two dominions of India and Pakistan."
+  },
+  {
+   "q": "Shivaji, the founder of the Maratha kingdom, was crowned (coronation) in 1674 at:",
+   "options": [
+    "Pune",
+    "Raigad",
+    "Satara",
+    "Kolhapur"
+   ],
+   "answer": 1,
+   "explain": "Shivaji was crowned Chhatrapati at Raigad fort in 1674; he was famous for guerrilla warfare in the Sahyadris."
+  },
+  {
+   "q": "The Third Battle of Panipat (1761) was fought between the Marathas and:",
+   "options": [
+    "Babur",
+    "Nadir Shah",
+    "Ahmad Shah Abdali",
+    "Tipu Sultan"
+   ],
+   "answer": 2,
+   "explain": "Abdali (Durrani) defeated the Marathas in 1761, a turning point that weakened Maratha power in the north."
+  }
+ ]
+}

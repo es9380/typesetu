@@ -1,0 +1,448 @@
+{
+ "id": "tech-vii-2",
+ "category": "technical",
+ "group": "Unit vii — Analytical & Decision-Making Skills",
+ "title": "Incident Analysis, Prioritisation & Time-Critical Decision-Making",
+ "questions": [
+  {
+   "q": "The correct priority order for actions in an incident is:",
+   "options": [
+    "Protect life, contain, inform & care, restore & record",
+    "Record, restore, inform, protect",
+    "Inform the media, restore, protect",
+    "Restore, inform, protect, record"
+   ],
+   "answer": 0,
+   "explain": "P1 protect life, P2 contain, P3 inform & care, P4 restore & record. This order never changes, whatever the incident."
+  },
+  {
+   "q": "P1 — 'Now' — class actions are those that:",
+   "options": [
+    "Restore the timetable",
+    "Protect life: stop/protect movements, isolate energy, start rescue and first aid",
+    "Print the report",
+    "Arrange replacement buses"
+   ],
+   "answer": 1,
+   "explain": "P1 is only about life: protection, isolation, rescue. Everything else queues behind it."
+  },
+  {
+   "q": "P2 — 'Next' — containment means:",
+   "options": [
+    "Writing the analysis report",
+    "Resuming full service",
+    "Isolating the failed section or system so the problem cannot spread to healthy sections",
+    "Informing passengers"
+   ],
+   "answer": 2,
+   "explain": "Contain second: cut the failure off from the healthy railway so one problem cannot become five."
+  },
+  {
+   "q": "P3 — 'Then' — covers:",
+   "options": [
+    "Root-cause analysis",
+    "Staff discipline",
+    "Repair work",
+    "Passengers informed and cared for — announcements, alternatives like bus bridging, agencies updated"
+   ],
+   "answer": 3,
+   "explain": "After protection and containment comes people-care: honest information and practical alternatives."
+  },
+  {
+   "q": "P4 — 'After' — includes:",
+   "options": [
+    "Rescue operations",
+    "Stopping trains",
+    "Phased restoration of service, reporting, analysis and corrective action",
+    "Declaring the emergency"
+   ],
+   "answer": 2,
+   "explain": "Restore and record come last — phased resumption, then the report and analysis that prevent a repeat."
+  },
+  {
+   "q": "The OODA loop used for decisions under time pressure stands for:",
+   "options": [
+    "Observe, Orient, Decide, Act — then re-observe",
+    "Open, Offer, Decide, Archive",
+    "Observe, Obey, Depart, Arrive",
+    "Order, Operate, Delay, Announce"
+   ],
+   "answer": 0,
+   "explain": "Observe → Orient → Decide → Act → observe again. A decision is a loop, not a single event."
+  },
+  {
+   "q": "In a time-critical situation, the controller should choose:",
+   "options": [
+    "No option until the enquiry advises",
+    "The option that looks best in the report",
+    "The perfect option, however long it takes",
+    "The safest workable option available now, then revise as facts arrive"
+   ],
+   "answer": 3,
+   "explain": "A good decision now beats a perfect decision late. Safety is never the thing traded away for speed or elegance."
+  },
+  {
+   "q": "The 5 Whys technique works by:",
+   "options": [
+    "Asking five witnesses",
+    "Asking 'why' repeatedly until the answer reaches a fixable system cause",
+    "Listing five faults",
+    "Taking five minutes per decision"
+   ],
+   "answer": 1,
+   "explain": "Each 'why' goes one layer deeper — past the person, to the system weakness that can actually be fixed."
+  },
+  {
+   "q": "In 5 Whys analysis, a good stopping point is when:",
+   "options": [
+    "The cause is a system weakness that can be fixed — e.g. two alarms sharing one tone, so the alarm was missed",
+    "Five minutes have passed",
+    "The first 'why' is answered",
+    "A person has been named to blame"
+   ],
+   "answer": 0,
+   "explain": "Stop at the system cause: 'the operator forgot' is not a root cause; 'the alarm was not distinctive' is fixable."
+  },
+  {
+   "q": "The Fishbone (Ishikawa) diagram groups possible causes under:",
+   "options": [
+    "Stations of the line",
+    "Man, Machine, Material, Method, Environment",
+    "Days of the week",
+    "Train numbers"
+   ],
+   "answer": 1,
+   "explain": "The fishbone heads stop an enquiry from blaming the nearest human by forcing all cause families to be examined."
+  },
+  {
+   "q": "Post-incident analysis begins with:",
+   "options": [
+    "Informing the press",
+    "Punishing the staff involved",
+    "Reconstructing the timeline from logs, recordings and event data",
+    "Guessing the cause from experience"
+   ],
+   "answer": 2,
+   "explain": "Facts first: the timeline from logs and recordings is the skeleton on which all analysis hangs."
+  },
+  {
+   "q": "The 'immediate cause' of an incident is:",
+   "options": [
+    "The manager's policy",
+    "The weather on the day",
+    "The deepest system weakness",
+    "What directly happened — the event that triggered the incident"
+   ],
+   "answer": 3,
+   "explain": "Immediate cause = what happened. Underlying causes explain why it was possible; the root cause is the fixable system weakness."
+  },
+  {
+   "q": "The 'root cause' differs from the immediate cause because it is:",
+   "options": [
+    "Found only by senior officers",
+    "Less important",
+    "The underlying system weakness whose correction prevents the whole class of incidents",
+    "Always a machine failure"
+   ],
+   "answer": 2,
+   "explain": "Fixing the immediate cause repairs one incident. Fixing the root cause protects every future shift."
+  },
+  {
+   "q": "A train fails in a section and passengers are waiting on two crowded platforms. The FIRST decision is:",
+   "options": [
+    "Protect the section and the failed train, stopping/regulating other movements",
+    "Announce a new timetable",
+    "Start the root-cause analysis",
+    "Arrange a bus bridge"
+   ],
+   "answer": 0,
+   "explain": "Life and protection first (P1). Buses, announcements and analysis all follow in their P3/P4 order."
+  },
+  {
+   "q": "Two trains are delayed and one spare train is available. The best prioritisation is to deploy the spare:",
+   "options": [
+    "To the least crowded section to keep it simple",
+    "Only after full recovery",
+    "To the section nearest the depot",
+    "Where it restores headway for the maximum passengers on the worst-affected section"
+   ],
+   "answer": 3,
+   "explain": "Scarce resources go where they do the most good — worst-affected section, maximum passengers, judged objectively."
+  },
+  {
+   "q": "One platform line is free and two delayed trains need it. Allocation should be decided by:",
+   "options": [
+    "Loudest complaint",
+    "Safety first, then passenger load and network impact",
+    "Coin toss",
+    "Driver seniority"
+   ],
+   "answer": 1,
+   "explain": "Objective criteria in safety order. Personal influence and noise are not prioritisation tools."
+  },
+  {
+   "q": "A decision has been taken and new facts show it is no longer the best one. The controller should:",
+   "options": [
+    "Change it openly and communicate the change to all concerned",
+    "Blame the junior who gave the facts",
+    "Stick to it to save face",
+    "Hide the change"
+   ],
+   "answer": 0,
+   "explain": "Updating a decision on new facts is professionalism. The failure is hiding the change, not making it."
+  },
+  {
+   "q": "After taking a major operational decision, the controller must:",
+   "options": [
+    "Forget it and move on",
+    "Communicate it on the proper channel, monitor its effect, and record it",
+    "Wait for the next shift to check it",
+    "Announce it in the press"
+   ],
+   "answer": 1,
+   "explain": "Decide → communicate → monitor → revise → record. An unmonitored decision is only half a decision."
+  },
+  {
+   "q": "Why should a major decision and its reason be stated on the recorded channel?",
+   "options": [
+    "Recordings are never reviewed",
+    "For entertainment value",
+    "So the reasoning is on record — the enquiry and the team can see what was decided, why, and on what facts",
+    "To fill the log"
+   ],
+   "answer": 2,
+   "explain": "Recorded reasoning protects the decision-maker and lets the whole team act on the same understanding."
+  },
+  {
+   "q": "A fire is reported on a train approaching a station, and simultaneously a minor signalling fault appears elsewhere. Correct prioritisation:",
+   "options": [
+    "Do both personally in turn",
+    "Wait to see which becomes bigger",
+    "Fix the signalling fault first — it is simpler",
+    "Fire first: protect life, bring the train to the station as per procedure; contain the minor fault in parallel/next"
+   ],
+   "answer": 3,
+   "explain": "Risk ranks the work, not arrival order or simplicity. Life-safety is P1; the minor fault is contained next."
+  },
+  {
+   "q": "An incident is unfolding and information is incomplete. Waiting for complete information before acting is wrong because:",
+   "options": [
+    "Rules forbid information gathering",
+    "Information is never incomplete",
+    "Protection delayed is protection denied — the incident grows while you wait; act on the safest reading of available facts",
+    "Seniors dislike questions"
+   ],
+   "answer": 2,
+   "explain": "Decide with 80% information, communicate, and revise. The clock does not stop for the incident — or for you."
+  },
+  {
+   "q": "During an incident, 'safest containment' means:",
+   "options": [
+    "The action that stops the situation getting worse with the least new risk — e.g. isolating the failed section",
+    "Closing the whole railway for the day",
+    "Waiting for the enquiry",
+    "The fastest repair"
+   ],
+   "answer": 0,
+   "explain": "Containment first limits damage. Repair and restoration are later steps, in their own priority slots."
+  },
+  {
+   "q": "A recurring signal failure at one location has caused three incidents this month. Analysis should focus on:",
+   "options": [
+    "Punishing all drivers",
+    "Increasing the timetable speed",
+    "Which driver was present each time",
+    "The system pattern at that location — equipment, environment or method — through tools like 5 Whys and fishbone"
+   ],
+   "answer": 3,
+   "explain": "Three incidents at one place are a system speaking. Analyse the pattern, not the people who happened to be there."
+  },
+  {
+   "q": "Which sequence correctly shows immediate analysis during a live incident?",
+   "options": [
+    "Blame → punish → restore",
+    "What failed → what it affects → what happens if nothing is done → safest containment",
+    "Report → enquiry → blame",
+    "Wait → watch → hope"
+   ],
+   "answer": 1,
+   "explain": "The four live questions keep the controller ahead of the incident instead of chasing it."
+  },
+  {
+   "q": "A controller must choose between two workable options under time pressure, one safer but slower, one faster but riskier. The rule is:",
+   "options": [
+    "Safety is never the trade — choose the safest workable option",
+    "Ask passengers to vote",
+    "Delay the decision",
+    "Always the faster one"
+   ],
+   "answer": 0,
+   "explain": "Within time pressure, 'workable' means safe first. Speed is recovered later; an accident is not."
+  },
+  {
+   "q": "Passenger information during a long incident is a P3 action. It should begin:",
+   "options": [
+    "Only after full restoration",
+    "Early, alongside containment — people who are informed stay calmer and cooperate",
+    "After the enquiry report",
+    "Only if passengers ask"
+   ],
+   "answer": 1,
+   "explain": "Informing is care, and it starts early — not as an afterthought when the technical work is done."
+  },
+  {
+   "q": "The purpose of timeline reconstruction after an incident is to:",
+   "options": [
+    "Replace the recordings",
+    "Fill the report's pages",
+    "Establish the true sequence of events from records, so causes can be separated from effects",
+    "Decide punishments quickly"
+   ],
+   "answer": 2,
+   "explain": "Sequence reveals causation. Without a true timeline, analysis is opinion stacked on opinion."
+  },
+  {
+   "q": "In fishbone analysis, a cause like 'the checklist step was badly worded' belongs under:",
+   "options": [
+    "Man",
+    "Machine",
+    "Material",
+    "Method"
+   ],
+   "answer": 3,
+   "explain": "A badly worded checklist is a Method cause — the way of working, not the worker, was weak."
+  },
+  {
+   "q": "A cause like 'the relay was life-expired' belongs under which fishbone head?",
+   "options": [
+    "Environment",
+    "Man",
+    "Machine/Material — equipment and its condition",
+    "Method"
+   ],
+   "answer": 2,
+   "explain": "Equipment condition sits under Machine/Material. Grouping causes correctly keeps the analysis complete."
+  },
+  {
+   "q": "Heavy fog on the day of an incident would be examined under which fishbone head?",
+   "options": [
+    "Environment",
+    "Material",
+    "Man",
+    "Machine"
+   ],
+   "answer": 0,
+   "explain": "Weather and surroundings are Environment causes — real contributors that no individual could control."
+  },
+  {
+   "q": "A spare train, two buses and one engineering team are available for a major disruption. Prioritisation of these resources should be based on:",
+   "options": [
+    "Equal shares to everyone regardless of need",
+    "Keeping resources in reserve for later",
+    "Which team asked first",
+    "Safety needs first, then maximum passenger benefit and network recovery"
+   ],
+   "answer": 3,
+   "explain": "Resources follow risk and benefit, not turn-taking. Hoarding help during an incident helps no one."
+  },
+  {
+   "q": "After an incident, the analysis report should distinguish clearly between:",
+   "options": [
+    "Senior and junior staff",
+    "Immediate cause, underlying causes and root cause",
+    "Local and foreign equipment",
+    "Day and night shifts"
+   ],
+   "answer": 1,
+   "explain": "Three levels of cause, three levels of fix. Mixing them produces weak corrective actions."
+  },
+  {
+   "q": "A controller realises mid-incident that the situation is beyond his authority and resources. The correct decision-making step is:",
+   "options": [
+    "Escalate immediately with a clear statement of the situation, actions taken and help needed",
+    "Hand over informally to a colleague",
+    "Wait for the shift to end",
+    "Continue silently and hope"
+   ],
+   "answer": 0,
+   "explain": "Recognising your limit and escalating early is itself a good decision. Late escalation is a common root cause."
+  },
+  {
+   "q": "Why is 'who is to blame' the WRONG first question in incident analysis?",
+   "options": [
+    "Blame is never anyone's job",
+    "It stops people reporting honestly and hides the system causes — analysis must first establish what happened and why it was possible",
+    "It wastes paper",
+    "Blame questions are too easy"
+   ],
+   "answer": 1,
+   "explain": "Blame-first enquiries get silence and cover-ups. Fact-first analysis gets the system weakness that can actually be fixed."
+  },
+  {
+   "q": "A decision taken under pressure turns out well. It should still be:",
+   "options": [
+    "Announced to the media",
+    "Forgotten",
+    "Recorded with its reasons, so the learning is available for training and future incidents",
+    "Kept secret by the controller"
+   ],
+   "answer": 2,
+   "explain": "Good decisions are data too. Recording the reasoning turns one person's judgement into the whole team's learning."
+  },
+  {
+   "q": "The Swiss-cheese model of accident causation teaches that an incident happens when:",
+   "options": [
+    "One person makes one mistake",
+    "The holes in several layers of defence — design, procedures, supervision, training — line up at the same moment, so no layer stops the event",
+    "The cheese is old",
+    "Only old equipment is involved"
+   ],
+   "answer": 1,
+   "explain": "No single layer is perfect; safety comes from layers covering each other's holes. Analysis therefore examines every layer, not just the last person's action."
+  },
+  {
+   "q": "A month of delay data shows 5 locations causing most of the line's lost minutes, out of 40 stations. Applying the Pareto idea, analysis and resources should go first to:",
+   "options": [
+    "All 40 stations equally",
+    "Those few locations causing the bulk of the delays — fixing the vital few removes most of the loss",
+    "The newest station",
+    "Whichever station complains loudest"
+   ],
+   "answer": 1,
+   "explain": "Pareto's pattern — a small share of causes producing most of the effect — is how limited engineering time is aimed. Equal effort everywhere is equal waste."
+  },
+  {
+   "q": "Every time-critical decision has a 'decision deadline' — the last moment by which deciding still changes the outcome. A controller identifies it by asking:",
+   "options": [
+    "'What does the rule book's first page say?'",
+    "'After what point will my decision no longer be able to prevent the bad outcome?' — and decides before that point, with whatever information exists then",
+    "'Who will sign the report?'",
+    "'When does my shift end?'"
+   ],
+   "answer": 1,
+   "explain": "A perfect decision delivered after its deadline is worthless. Working backwards from the point of no return tells the controller how much thinking time he truly has."
+  },
+  {
+   "q": "Between two possible actions in an incident, one is easily reversible (a train can be re-routed back) and the other is not (a section re-energised). Decision discipline says:",
+   "options": [
+    "Take both at the same speed",
+    "The reversible action can be taken quickly on partial information; the irreversible one deserves the extra check, because it cannot be taken back",
+    "Always choose the irreversible one first",
+    "Delay both equally"
+   ],
+   "answer": 1,
+   "explain": "Reversibility buys speed: what can be undone can be tried. What cannot be undone — like restoring power — earns its pause for verification."
+  },
+  {
+   "q": "A risk matrix helps prioritisation by placing each hazard according to:",
+   "options": [
+    "Its cost and its colour",
+    "How likely it is to happen (likelihood) combined with how bad it would be (severity) — high-likelihood, high-severity hazards get action first",
+    "The seniority of the reporter",
+    "The day of the week"
+   ],
+   "answer": 1,
+   "explain": "Likelihood times severity is the common language of risk. It stops rare-but-deadly and frequent-but-small hazards from being treated as the same problem."
+  }
+ ]
+}

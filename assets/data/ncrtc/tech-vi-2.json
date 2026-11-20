@@ -1,0 +1,393 @@
+{
+ "id": "tech-vi-2",
+ "category": "technical",
+ "group": "Unit vi — Operational Communication",
+ "title": "Emergency Communication, Incident Reporting, Documentation & Escalation",
+ "questions": [
+  {
+   "q": "The first step in the emergency communication flow is that the person at the site:",
+   "options": [
+    "Declares the emergency to Operations Control Centre (OCC) with identity, location and nature in one clear message",
+    "Writes a detailed report first",
+    "Calls the media helpline",
+    "Waits for Operations Control Centre (OCC) to discover the problem"
+   ],
+   "answer": 0,
+   "explain": "Raise it first: one clear message — who you are, where you are, what has happened. Operations Control Centre (OCC) cannot act on what it does not know."
+  },
+  {
+   "q": "After Operations Control Centre (OCC) acknowledges an emergency, its immediate actions include:",
+   "options": [
+    "Only noting it in the log",
+    "Protecting the area — stopping movements, cutting power if needed — and dispatching help",
+    "Asking the site to manage alone",
+    "Waiting for senior management"
+   ],
+   "answer": 1,
+   "explain": "Acknowledge and act: protect the area first, then send help. Protection stops the incident from growing."
+  },
+  {
+   "q": "At Escalation Level 1, charge of the incident passes to:",
+   "options": [
+    "The maintenance contractor",
+    "The train driver",
+    "The duty officer / Chief Controller",
+    "The nearest passenger"
+   ],
+   "answer": 2,
+   "explain": "Level 1: the duty officer/Chief Controller takes charge and all points act on his instructions — one commander, no confusion."
+  },
+  {
+   "q": "Escalation Level 2 is reached when:",
+   "options": [
+    "The shift ends",
+    "The log is completed",
+    "The driver requests it",
+    "Senior management is informed and external agencies — police, fire, hospitals, district administration — are engaged"
+   ],
+   "answer": 3,
+   "explain": "Level 2 brings in senior management and outside agencies through laid-down contacts, when the incident exceeds railway resources."
+  },
+  {
+   "q": "An emergency can be declared closed (stood down) only by:",
+   "options": [
+    "The site staff who raised it",
+    "Any senior passenger",
+    "Operations Control Centre (OCC), after certification that the situation is safe/normal",
+    "The fire brigade alone"
+   ],
+   "answer": 2,
+   "explain": "Only Operations Control Centre (OCC) declares stand-down, after proper certification. Local staff cannot close an emergency on their own."
+  },
+  {
+   "q": "After stand-down, logs and recordings of the incident must be:",
+   "options": [
+    "Preserved for the enquiry",
+    "Edited to remove mistakes",
+    "Kept only if someone asks",
+    "Deleted to save space"
+   ],
+   "answer": 0,
+   "explain": "Logs and recordings are evidence. They are preserved exactly as made, for the enquiry that follows."
+  },
+  {
+   "q": "A written incident report should be:",
+   "options": [
+    "Written in general terms without times",
+    "Completed a week later from memory",
+    "Full of opinions about who is at fault",
+    "Factual, timed and sequential — facts only, no blame language"
+   ],
+   "answer": 3,
+   "explain": "A report answers what, where, when, who, what was done and what is pending — facts only. Blame belongs to the enquiry, not the report."
+  },
+  {
+   "q": "The saying 'if it is not written, it did not happen' means:",
+   "options": [
+    "Reports are a formality",
+    "Undocumented actions cannot be proved, checked or learned from — documentation is part of the work itself",
+    "Only written orders matter",
+    "Voice messages are illegal"
+   ],
+   "answer": 1,
+   "explain": "In operations, the record is the proof. Good documentation protects staff and helps the system learn."
+  },
+  {
+   "q": "Log entries must be made:",
+   "options": [
+    "At the time of the event; late entries are marked as late, never silently back-timed",
+    "Only for major accidents",
+    "By the junior-most staff member",
+    "At the end of the week"
+   ],
+   "answer": 0,
+   "explain": "Logs are completed at the time. A late entry is honestly marked late — back-timing a log is falsification."
+  },
+  {
+   "q": "If a log entry contains an error, the correct way to fix it is:",
+   "options": [
+    "Overwrite it so it looks original",
+    "Add a fresh, timed correction entry, leaving the original readable",
+    "Tear out the page",
+    "Erase it neatly"
+   ],
+   "answer": 1,
+   "explain": "A log is a legal record. Corrections are new entries; the original stays readable. Overwriting is treated as tampering."
+  },
+  {
+   "q": "Times written in incident records should come from:",
+   "options": [
+    "Personal wristwatches",
+    "Memory",
+    "The system clock",
+    "The station wall clock, approximately"
+   ],
+   "answer": 2,
+   "explain": "Use the system clock so that logs, recordings and event data all match on one timeline during the enquiry."
+  },
+  {
+   "q": "The master record of an incident in the control organisation is:",
+   "options": [
+    "A personal diary",
+    "The next day's newspaper",
+    "A staff chat group",
+    "The Operations Control Centre (OCC)/control log with time-stamped entries and recordings"
+   ],
+   "answer": 3,
+   "explain": "Enquiries run on the Operations Control Centre (OCC) log and recordings. Everything else is secondary."
+  },
+  {
+   "q": "The normal reporting chain for an incident is:",
+   "options": [
+    "Site → media → Operations Control Centre (OCC)",
+    "Driver → passengers → OCC",
+    "Site → Operations Control Centre (OCC) immediately by voice, with the written report following within the prescribed time",
+    "Written report first, voice call next week"
+   ],
+   "answer": 2,
+   "explain": "Voice first, immediately — protection cannot wait for paperwork. The written report follows within the prescribed time."
+  },
+  {
+   "q": "Evidence to be preserved after an incident includes:",
+   "options": [
+    "Recordings, logs, Closed-Circuit Television (CCTV) and event recorder data",
+    "Only photographs",
+    "Nothing, if service has resumed",
+    "Only the damaged part"
+   ],
+   "answer": 0,
+   "explain": "Preserve recordings, logs, Closed-Circuit Television (CCTV) and event recorders together — together they reconstruct the incident truthfully."
+  },
+  {
+   "q": "Escalation, in simple words, means:",
+   "options": [
+    "Hiding a problem till it solves itself",
+    "Resigning from the post",
+    "Arguing with the senior officer",
+    "Passing the matter to the next higher authority, with full facts, when it exceeds your powers or resources"
+   ],
+   "answer": 3,
+   "explain": "Escalate early with full facts. A small incident reported late becomes a big incident."
+  },
+  {
+   "q": "A station controller realises an incident needs resources beyond his station. The best action is:",
+   "options": [
+    "Struggle silently to avoid looking weak",
+    "Escalate immediately to Operations Control Centre (OCC) with the facts and the help needed",
+    "Wait for the next shift to decide",
+    "Ask passengers to arrange help"
+   ],
+   "answer": 1,
+   "explain": "Escalation is a strength, not a weakness. Early escalation brings resources while they can still change the outcome."
+  },
+  {
+   "q": "During an emergency, passenger announcements must avoid:",
+   "options": [
+    "Speculation and blaming other departments",
+    "Alternative route advice",
+    "Calm, polite language",
+    "Expected time of the next update"
+   ],
+   "answer": 0,
+   "explain": "Announce facts and actions being taken. Causes and blame are for the enquiry — speculation creates panic and rumours."
+  },
+  {
+   "q": "A crew member notices a small lineside fire and informs Operations Control Centre (OCC), which arranges fire help. The crew's next documentation duty is:",
+   "options": [
+    "Nothing — a voice call is enough",
+    "Ensure the event is entered in the log/report factually with times",
+    "Write the report only if the fire spreads",
+    "Inform the media"
+   ],
+   "answer": 1,
+   "explain": "Voice action first, but the record must follow: what, where, when, who, action taken. Undocumented incidents cannot be reviewed."
+  },
+  {
+   "q": "An officer asks you to quietly change a time in the incident log to 'make it look better'. You should:",
+   "options": [
+    "Rewrite the whole log",
+    "Comply, he is senior",
+    "Refuse — log entries are never altered; corrections go in as fresh entries",
+    "Change it but tell no one"
+   ],
+   "answer": 2,
+   "explain": "Altering a log is tampering with a legal record, whoever asks. The honest route is a fresh correction entry."
+  },
+  {
+   "q": "Why is blame language kept out of incident reports?",
+   "options": [
+    "Reports are read by passengers",
+    "Blame words are difficult to spell",
+    "To protect guilty staff",
+    "Because cause-finding belongs to the enquiry; the report's job is verified facts, on which blame or learning is later based"
+   ],
+   "answer": 3,
+   "explain": "Facts first. If reports mix opinion and blame, the enquiry cannot separate what happened from what someone felt."
+  },
+  {
+   "q": "External agencies like police and fire are engaged during a big incident:",
+   "options": [
+    "Through passengers' phones",
+    "By any staff member from personal contacts",
+    "Through laid-down contacts, coordinated via Operations Control Centre (OCC)/management",
+    "Only after the incident ends"
+   ],
+   "answer": 2,
+   "explain": "Agency help comes through official, laid-down contacts so that response is coordinated and recorded, not random."
+  },
+  {
+   "q": "A late report reaches Operations Control Centre (OCC) two hours after a minor incident. The correct handling is:",
+   "options": [
+    "Accept and record it marked as a late entry, with actual times shown",
+    "Reject all late reports",
+    "Destroy it",
+    "Back-date it to the incident time quietly"
+   ],
+   "answer": 0,
+   "explain": "Honesty over neatness: mark it late and record true times. A visibly late entry is a process issue; a back-timed one is falsification."
+  },
+  {
+   "q": "Which of these belongs in an incident report?",
+   "options": [
+    "'Probably the motor is burnt, in my opinion'",
+    "'Management should punish the staff involved'",
+    "'The driver is careless and always late'",
+    "'At 14:05, Train 204 stopped at km 12.4; driver reported loss of traction; section protected at 14:07'"
+   ],
+   "answer": 3,
+   "explain": "Times, place, facts, action taken — that is a report. Opinions, guesses and punishment demands are not."
+  },
+  {
+   "q": "The purpose of preserving Closed-Circuit Television (CCTV) and recordings after an incident is to:",
+   "options": [
+    "Punish as many staff as possible",
+    "Allow a fair, fact-based reconstruction of what actually happened",
+    "Fill storage space",
+    "Show to passengers on request"
+   ],
+   "answer": 1,
+   "explain": "Evidence protects the innocent and identifies the real cause. Without it, enquiries run on memory and opinion."
+  },
+  {
+   "q": "When should the first voice report of an incident reach Operations Control Centre (OCC)?",
+   "options": [
+    "Immediately, as soon as the person at site can safely make it",
+    "After the written report is ready",
+    "Only if injuries occur",
+    "Within the same shift"
+   ],
+   "answer": 0,
+   "explain": "Immediately. Every minute of delay is a minute Operations Control Centre (OCC) cannot protect the section or send help."
+  },
+  {
+   "q": "A supervisor learns that a near-miss at his station was never reported by the staff involved. The correct response is:",
+   "options": [
+    "Ignore it, no harm was done",
+    "Ensure it is reported and recorded now, marked with its actual reporting time",
+    "Punish first, report later",
+    "Delete the Closed-Circuit Television (CCTV) to close the matter"
+   ],
+   "answer": 1,
+   "explain": "Near-misses must be reported — they are free lessons. Record it now, honestly timed, so the system can learn."
+  },
+  {
+   "q": "During a major incident, who keeps the master log of events and decisions?",
+   "options": [
+    "The agency officer on site",
+    "Each station separately, unconnected",
+    "Operations Control Centre (OCC)/control, as the single master record",
+    "The driver of the affected train"
+   ],
+   "answer": 2,
+   "explain": "One master record at Operations Control Centre (OCC) prevents five conflicting versions. Stations keep local notes, but the Operations Control Centre (OCC) log is authoritative."
+  },
+  {
+   "q": "The stand-down message at the end of an emergency should include:",
+   "options": [
+    "An apology from staff",
+    "The names of staff to be punished",
+    "Only 'all clear' with no details",
+    "Confirmation that the area is certified safe/normal and which restrictions, if any, continue"
+   ],
+   "answer": 3,
+   "explain": "Stand-down must state the certified position clearly — what is normal again and what is still restricted — so nobody guesses."
+  },
+  {
+   "q": "Why are late, altered or casual reports themselves treated as a safety failure?",
+   "options": [
+    "Reports are checked for spelling",
+    "They waste paper",
+    "Because decisions, enquiries and learning all depend on the record — a bad record can hide the real cause and repeat the incident",
+    "Only handwriting matters"
+   ],
+   "answer": 2,
+   "explain": "Reporting discipline is safety discipline. A corrupted record defeats protection, enquiry and prevention together."
+  },
+  {
+   "q": "A train crew finishes handling a medical emergency and the passenger is handed over. To close the loop correctly they must:",
+   "options": [
+    "Report completion to Operations Control Centre (OCC) and ensure the incident is documented with times and actions",
+    "Announce the passenger's medical details to everyone",
+    "Wait for the passenger to thank them",
+    "Simply resume and forget it"
+   ],
+   "answer": 0,
+   "explain": "Report completion back to Operations Control Centre (OCC) and document it. The loop closes with a report, not with silence."
+  },
+  {
+   "q": "During a major incident, a television reporter calls the station office for details. Staff should:",
+   "options": [
+    "Give their personal view of the cause",
+    "Refer the query to the authorised spokesperson / public relations channel and give out no facts or opinions themselves",
+    "Read out the incident log",
+    "Refuse to say even whether trains are running"
+   ],
+   "answer": 1,
+   "explain": "One authorised voice speaks to the media. Unauthorised comments create wrong news, panic and legal trouble — while passenger-facing service information still continues normally."
+  },
+  {
+   "q": "An escalation contact matrix (a ready list kept at the control desk) is useful because it fixes in advance:",
+   "options": [
+    "The duty rosters for next month",
+    "Which authority is to be called for which type and size of incident, with current phone numbers — so nobody searches for contacts mid-emergency",
+    "The list of holidays",
+    "The names of all passengers"
+   ],
+   "answer": 1,
+   "explain": "Escalation fails most often at 'whom do I call now?' A tested, updated matrix turns that into a ten-second lookup during the worst minutes."
+  },
+  {
+   "q": "Before a damaged section is handed back for normal working, the departments involved record agreement through:",
+   "options": [
+    "A verbal 'okay' on the platform",
+    "A joint inspection note — signed by the responsible departments — recording what was checked, what was repaired and any restriction that continues",
+    "A photograph shared on social media",
+    "The station master's diary alone"
+   ],
+   "answer": 1,
+   "explain": "The joint note is the document that says 'we have all seen it and accept it back'. Signatures make responsibility clear if questions come later."
+  },
+  {
+   "q": "Voice recordings and Closed-Circuit Television (CCTV) footage of an incident are handed over for investigation. Good evidence practice requires:",
+   "options": [
+    "Editing out the dull parts",
+    "Labelling, sealing and recording every handover (chain of custody) so the evidence is provably untouched",
+    "Keeping a copy on a personal phone",
+    "Deleting the originals after copying"
+   ],
+   "answer": 1,
+   "explain": "Evidence that cannot prove it is untouched loses its value. The chain-of-custody record — who held it, when, and in what condition — is what makes recordings believable."
+  },
+  {
+   "q": "At the end of each shift, the control organisation compiles a daily occurrence report. Its main purpose is:",
+   "options": [
+    "Filling a file nobody reads",
+    "Giving management one factual summary of the day's incidents, failures and pending matters so patterns, pending repairs and risks are visible at a glance",
+    "Replacing all individual incident reports",
+    "Listing staff attendance"
+   ],
+   "answer": 1,
+   "explain": "Individual reports tell single stories; the daily summary shows the whole day. Repeated small failures visible in it are tomorrow's big incident, caught early."
+  }
+ ]
+}

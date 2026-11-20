@@ -1,0 +1,338 @@
+{
+ "id": "tech-iii-4",
+ "category": "technical",
+ "group": "Unit iii — Safety Regulations & Standards",
+ "title": "Incident / Accident Reporting",
+ "questions": [
+  {
+   "q": "An incident or accident must first be reported:",
+   "options": [
+    "At the end of the shift",
+    "Immediately, by the fastest means, to Operations Control Centre (OCC)/station control",
+    "Only in writing next day",
+    "After discussing with colleagues"
+   ],
+   "answer": 1,
+   "explain": "Control cannot protect or rescue what it does not know — the first report goes immediately by the fastest means."
+  },
+  {
+   "q": "The first report of an incident should contain:",
+   "options": [
+    "Only the name of the staff on duty",
+    "Only the train number",
+    "What happened, where, when, who/what is involved, casualties, current state and help needed",
+    "A guess about who is to blame"
+   ],
+   "answer": 2,
+   "explain": "What-where-when-who, casualties, present state and help needed — facts that let Operations Control Centre (OCC) act at once."
+  },
+  {
+   "q": "After the immediate first report, what must follow?",
+   "options": [
+    "A written report in the prescribed format within the stipulated time",
+    "Nothing further",
+    "A newspaper statement",
+    "A verbal report next week"
+   ],
+   "answer": 0,
+   "explain": "Fast verbal first, then the formal written report in the laid-down format and time."
+  },
+  {
+   "q": "Why must evidence and records be preserved after an incident?",
+   "options": [
+    "To decorate the enquiry file",
+    "So they can be deleted later",
+    "They need not be preserved",
+    "Logs, Closed-Circuit Television (CCTV) and voice recordings are needed for investigation"
+   ],
+   "answer": 3,
+   "explain": "The event record is the investigation's raw material — preserve logs, Closed-Circuit Television (CCTV) and voice recordings untouched."
+  },
+  {
+   "q": "What may be altered at an incident scene?",
+   "options": [
+    "Anything, once photographs are taken",
+    "Debris can be cleared for trains immediately in all cases",
+    "Nothing — except what must be moved to save life",
+    "Evidence can be rearranged for convenience"
+   ],
+   "answer": 2,
+   "explain": "Do not alter the scene except to save life; investigators must see it as it was."
+  },
+  {
+   "q": "Which three categories are all recorded in incident reporting?",
+   "options": [
+    "Accidents, incidents and near-misses",
+    "Only accidents with deaths",
+    "Only accidents with damage",
+    "Only incidents seen by passengers"
+   ],
+   "answer": 0,
+   "explain": "Classification matters: accidents, incidents AND near-misses are all recorded in the system."
+  },
+  {
+   "q": "A near-miss is best described as:",
+   "options": [
+    "A small accident with minor injury",
+    "A rumour",
+    "A type of signal",
+    "An event that could have caused harm but did not — this time"
+   ],
+   "answer": 3,
+   "explain": "A near-miss is a free lesson: the same event, repeated, can become the real accident."
+  },
+  {
+   "q": "Near-miss reporting helps the system mainly by:",
+   "options": [
+    "Punishing staff automatically",
+    "Preventing the real accident — near-miss data shows where the system is weak before anyone is hurt",
+    "Reducing the number of trains",
+    "Filling up registers"
+   ],
+   "answer": 1,
+   "explain": "Near-miss reporting is how systems prevent the real accident; it is encouraged, not punished automatically."
+  },
+  {
+   "q": "Scenario: A train stops just short of an obstruction; nobody is hurt and nothing is damaged. This should be:",
+   "options": [
+    "Forgotten, since nothing happened",
+    "Reported and recorded as a near-miss through the proper channel",
+    "Mentioned only in the canteen",
+    "Reported only if media asks"
+   ],
+   "answer": 1,
+   "explain": "No injury does not mean no report — a near-miss is reported like a lesson the system must learn."
+  },
+  {
+   "q": "Scenario: Staff at an accident site need to move wreckage to reach an injured passenger. This is:",
+   "options": [
+    "Forbidden in all cases",
+    "Allowed only after the enquiry ends",
+    "Permitted — saving life overrides scene preservation",
+    "Allowed only by passengers"
+   ],
+   "answer": 2,
+   "explain": "The one exception to 'do not alter the scene' is saving life."
+  },
+  {
+   "q": "The first report should be made through:",
+   "options": [
+    "The laid-down channel to Operations Control Centre (OCC)/control, immediately and factually",
+    "Social media first",
+    "Newspapers first",
+    "A personal phone call to a friend"
+   ],
+   "answer": 0,
+   "explain": "Immediate, factual and through the proper channel — control acts on facts, not on rumours."
+  },
+  {
+   "q": "Why does the first report ask for 'help needed'?",
+   "options": [
+    "For the press release",
+    "For the duty roster",
+    "It is not asked",
+    "So Operations Control Centre (OCC) can arrange the right rescue, medical and support resources without delay"
+   ],
+   "answer": 3,
+   "explain": "Stating help needed lets control send ambulances, rescue teams or power staff in parallel, not in sequence."
+  },
+  {
+   "q": "Which of these must be preserved as part of the event record?",
+   "options": [
+    "Only the broken parts",
+    "Only passenger tickets",
+    "Operations Control Centre (OCC) logs, Closed-Circuit Television (CCTV) footage and voice recordings",
+    "Only the timetable"
+   ],
+   "answer": 2,
+   "explain": "Logs, Closed-Circuit Television (CCTV) and voice records together reconstruct what happened, in what order."
+  },
+  {
+   "q": "Guessing or adding blame in the first incident report is wrong because:",
+   "options": [
+    "The first report must be factual — what, where, when and the current state",
+    "Reports should be entertaining",
+    "Blame speeds up rescue",
+    "Facts are not needed"
+   ],
+   "answer": 0,
+   "explain": "Facts first; causes and responsibility are for the investigation, not the emergency call."
+  },
+  {
+   "q": "What does 'classification matters' mean in incident reporting?",
+   "options": [
+    "Only the most serious event of the year is recorded",
+    "All events are called accidents",
+    "Categories are chosen randomly",
+    "Accidents, incidents and near-misses are recorded in their correct categories so trends can be seen"
+   ],
+   "answer": 3,
+   "explain": "Correct classification lets the organisation spot patterns — ten near-misses at one spot demand action."
+  },
+  {
+   "q": "Scenario: You witness a colleague's error that nearly caused an incident, but he requests you to stay silent. You should:",
+   "options": [
+    "Stay silent as a favour",
+    "Report it as a near-miss through the proper channel — silence defeats prevention",
+    "Tell only other colleagues",
+    "Wait to see if it happens again"
+   ],
+   "answer": 1,
+   "explain": "Near-miss reporting protects everyone, including the colleague; hiding it keeps the hazard alive."
+  },
+  {
+   "q": "The written incident report differs from the first report in that it is:",
+   "options": [
+    "Optional and informal",
+    "In the prescribed format, detailed, and submitted within the stipulated time",
+    "Given only verbally",
+    "Sent to newspapers"
+   ],
+   "answer": 1,
+   "explain": "First report = speed; written report = complete, formatted and on time."
+  },
+  {
+   "q": "Who receives the immediate incident report in an operational area?",
+   "options": [
+    "The canteen in-charge",
+    "The advertising agency",
+    "Operations Control Centre (OCC) / station control",
+    "The passenger association"
+   ],
+   "answer": 2,
+   "explain": "Operations Control Centre (OCC)/station control is the nerve centre — it receives the report and coordinates the response."
+  },
+  {
+   "q": "Why are voice recordings of control communications preserved?",
+   "options": [
+    "They show exactly what instructions were given and acknowledged during the event",
+    "For training mimicry",
+    "They are never preserved",
+    "For entertainment"
+   ],
+   "answer": 0,
+   "explain": "Voice records, with logs and Closed-Circuit Television (CCTV), let investigators verify instructions and repeat-backs."
+  },
+  {
+   "q": "A minor incident with no injury and no damage still requires:",
+   "options": [
+    "No action at all",
+    "Only a verbal mention next month",
+    "Destroying the record",
+    "Recording as an incident/near-miss as applicable — not silence"
+   ],
+   "answer": 3,
+   "explain": "Small events are data. Recorded, they prevent big events; ignored, they repeat."
+  },
+  {
+   "q": "The correct order after an incident occurs is:",
+   "options": [
+    "Written report → wait → report verbally → alter scene",
+    "Alter scene → report next day → preserve nothing",
+    "Report immediately by fastest means → protect/assist as required → preserve evidence → written report in format and time",
+    "Report to media → written report → inform Operations Control Centre (OCC)"
+   ],
+   "answer": 2,
+   "explain": "Speed first, preservation alongside, paperwork in format after — in that order."
+  },
+  {
+   "q": "What is the biggest harm of delaying an incident report till duty ends?",
+   "options": [
+    "Control cannot protect the site, arrange help or stop related movements in time",
+    "The report looks untidy",
+    "The log book fills late",
+    "Nothing — delay is harmless"
+   ],
+   "answer": 0,
+   "explain": "Minutes matter: a late report leaves other trains, staff and passengers exposed to the same hazard."
+  },
+  {
+   "q": "Incident reporting channels exist mainly so that:",
+   "options": [
+    "Staff can be blamed quickly",
+    "Forms can be completed",
+    "Passengers can be informed first",
+    "The right people learn the right facts fast enough to act"
+   ],
+   "answer": 3,
+   "explain": "Reporting is an operational tool — fast facts to the people who can protect, rescue and investigate."
+  },
+  {
+   "q": "Scenario: Closed-Circuit Television (CCTV) at a station captured a near-miss on the platform edge. The footage should be:",
+   "options": [
+    "Deleted to save storage",
+    "Preserved as part of the event record for review and learning",
+    "Edited before review",
+    "Shown on social media"
+   ],
+   "answer": 1,
+   "explain": "Closed-Circuit Television (CCTV) is evidence and a learning tool — preserve it unedited for the review."
+  },
+  {
+   "q": "Lessons from incident reports feed back into the system through:",
+   "options": [
+    "The canteen notice board only",
+    "Investigation findings and corrective actions, so the same event does not repeat",
+    "Annual day celebrations",
+    "Nothing — reports are filed and forgotten"
+   ],
+   "answer": 1,
+   "explain": "A report that changes nothing was wasted; its value is the prevention it creates."
+  },
+  {
+   "q": "In Indian Railways practice, events such as an averted collision or a signal passed at danger that caused no damage are still formally recorded because they are classed as:",
+   "options": [
+    "Non-events",
+    "Indicative accidents — events that indicate a dangerous failure even though no harm resulted",
+    "Public complaints",
+    "Routine delays"
+   ],
+   "answer": 1,
+   "explain": "Indicative accidents are warnings the system gives for free: the same failure with slightly worse luck becomes a real accident. Recording and analysing them is how the railway learns without paying in lives."
+  },
+  {
+   "q": "A serious railway accident in India is statutorily inquired into by:",
+   "options": [
+    "The station master",
+    "The Commissioner of Railway Safety (CRS), an independent authority under the Railways Act",
+    "The train driver",
+    "A newspaper committee"
+   ],
+   "answer": 1,
+   "explain": "The Commissioner of Railway Safety (CRS) is independent of the railway organisation itself, so the inquiry is not the railway marking its own homework. For metros, the corresponding independent authority is the Commissioner of Metro Railway Safety (CMRS)."
+  },
+  {
+   "q": "Only part of the information about an accident is available with you. The correct reporting action is:",
+   "options": [
+    "Wait until every detail is confirmed before reporting anything",
+    "Report the facts known so far immediately, clearly marking what is unconfirmed, and keep updating as facts arrive",
+    "Guess the missing details to make the report complete",
+    "Let the next shift report it"
+   ],
+   "answer": 1,
+   "explain": "Control acts on the first report — rescue and protection cannot wait for a perfect report. Known facts go immediately; unconfirmed points are flagged as unconfirmed, never guessed, and updates follow."
+  },
+  {
+   "q": "At an accident site, the area and equipment should not be disturbed before investigation, EXCEPT for:",
+   "options": [
+    "Taking photographs for social media",
+    "Rescuing trapped or injured persons and preventing further harm",
+    "Cleaning up quickly to restart services",
+    "Removing damaged parts for repair"
+   ],
+   "answer": 1,
+   "explain": "Life comes before evidence: rescue and preventing a second accident always justify disturbing the site. Everything else waits, because moved equipment and erased marks can destroy the evidence that reveals the true cause."
+  },
+  {
+   "q": "A 'just culture' in incident reporting means:",
+   "options": [
+    "Every mistake is punished equally",
+    "Staff who honestly report genuine mistakes and near-misses are not punished for the reporting itself, so reporting rises and the organisation learns — while reckless or deliberate violations are still dealt with",
+    "Nobody is ever responsible for anything",
+    "Reports are filed only by managers"
+   ],
+   "answer": 1,
+   "explain": "If reporting brings punishment, staff hide events and the railway flies blind. Just culture protects honest reporting but still acts against recklessness — that balance is what keeps reports flowing."
+  }
+ ]
+}

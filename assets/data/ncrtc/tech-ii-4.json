@@ -1,0 +1,448 @@
+{
+ "id": "tech-ii-4",
+ "category": "technical",
+ "group": "Unit ii — Operational Systems & Interfaces",
+ "title": "Platform Screen Doors & Station Systems",
+ "questions": [
+  {
+   "q": "Platform Screen Doors (PSDs) are installed at:",
+   "options": [
+    "The platform edge, forming a barrier between passengers and the track",
+    "Inside the train coaches",
+    "At the station entrance only",
+    "On the roof of the station"
+   ],
+   "answer": 0,
+   "explain": "Platform Screen Doors (PSDs) are glass doors along the platform edge that separate waiting passengers from the track."
+  },
+  {
+   "q": "Platform Screen Doors (PSDs) open only when:",
+   "options": [
+    "Passengers press a button",
+    "A train is berthed correctly at the platform and its doors align with the PSDs",
+    "The station opens in the morning",
+    "Every five minutes"
+   ],
+   "answer": 1,
+   "explain": "Like lift doors: correct stop, alignment and interlock first — opening second."
+  },
+  {
+   "q": "Platform Screen Doors (PSDs) are synchronised/interlocked with:",
+   "options": [
+    "The Automatic Fare Collection (AFC) gates",
+    "The escalators",
+    "The train and the signalling system",
+    "The ticket machines"
+   ],
+   "answer": 2,
+   "explain": "Platform Screen Door (PSD) opening is interlocked with the berthed train and signalling — they are part of the safety system."
+  },
+  {
+   "q": "Correct berthing for Platform Screen Door (PSD) opening means:",
+   "options": [
+    "The train is moving slowly past",
+    "The train is anywhere on the line",
+    "The platform is empty",
+    "The train has stopped within the allowed tolerance at the platform"
+   ],
+   "answer": 3,
+   "explain": "Platform Screen Doors (PSDs) need the train stopped within tolerance so its doors line up with the screen doors."
+  },
+  {
+   "q": "A key safety benefit of Platform Screen Doors (PSDs) is:",
+   "options": [
+    "They increase train speed",
+    "They prevent falls and trespass onto the track",
+    "They reduce the fare",
+    "They replace signalling"
+   ],
+   "answer": 1,
+   "explain": "A closed platform edge stops people falling or entering the track area."
+  },
+  {
+   "q": "Platform Screen Doors (PSDs) help air-conditioned (especially underground) stations by:",
+   "options": [
+    "Cooling the trains",
+    "Removing the need for ventilation",
+    "Heating the platform",
+    "Reducing air-conditioning loss to the tunnel/track area"
+   ],
+   "answer": 3,
+   "explain": "The screen keeps cooled platform air in, cutting AC loss and improving efficiency."
+  },
+  {
+   "q": "Platform Screen Doors (PSDs) also help operations by:",
+   "options": [
+    "Improving crowd discipline at the platform edge",
+    "Driving the train",
+    "Counting tickets",
+    "Powering the Overhead Equipment (OHE)"
+   ],
+   "answer": 0,
+   "explain": "Passengers queue at marked door positions — orderly boarding instead of a platform-edge crowd."
+  },
+  {
+   "q": "If one Platform Screen Door (PSD) panel/leaf fails, the correct handling is:",
+   "options": [
+    "Cancel all trains",
+    "Remove the entire PSD system",
+    "Isolate the faulty door panel, operate manually as per procedure, deploy staff at that spot and continue in a controlled degraded manner",
+    "Ask passengers to hold the door"
+   ],
+   "answer": 2,
+   "explain": "Isolate – supervise with staff – inform – proceed: controlled degraded working, not chaos."
+  },
+  {
+   "q": "A Platform Screen Door (PSD) that is isolated due to a fault means:",
+   "options": [
+    "The whole station closes",
+    "Trains skip the station forever",
+    "Passengers may open it freely",
+    "That door is taken out of automatic service and its location is supervised by staff"
+   ],
+   "answer": 3,
+   "explain": "Isolation removes the faulty door from service while staff watch that opening."
+  },
+  {
+   "q": "If a Platform Screen Door (PSD) detects an obstruction while closing, it will typically:",
+   "options": [
+    "Re-open and re-close in a cycle, then need fault handling if the obstruction persists",
+    "Force close with full power",
+    "Lock the train permanently",
+    "Sound the fire alarm"
+   ],
+   "answer": 0,
+   "explain": "Obstruction detection re-opens the door for safety; repeated failure becomes a fault to be handled."
+  },
+  {
+   "q": "Manual/emergency release of a Platform Screen Door (PSD) exists mainly for:",
+   "options": [
+    "Daily passenger convenience",
+    "Cleaning the glass",
+    "Evacuation and emergency situations",
+    "Advertising display"
+   ],
+   "answer": 2,
+   "explain": "Emergency release lets people escape through the screen in an emergency — it is not for normal use."
+  },
+  {
+   "q": "The lift-door comparison explains Platform Screen Doors (PSDs) because:",
+   "options": [
+    "Lifts and PSDs use the same motors",
+    "Car and floor doors open together only when the lift has stopped level, and the lift won't move with a door open — PSDs and train doors interlock the same way",
+    "Passengers operate both",
+    "Both are made of glass"
+   ],
+   "answer": 1,
+   "explain": "Stopped, level, aligned, interlocked — the lift is the everyday picture of Platform Screen Door (PSD) logic."
+  },
+  {
+   "q": "Which other systems belong to the 'station systems' family?",
+   "options": [
+    "Only Automatic Fare Collection (AFC) gates",
+    "Train traction motors",
+    "Fire detection and suppression, ventilation, lifts/escalators, Building Management System (BMS), Public Address (PA) and display boards",
+    "Axle counters"
+   ],
+   "answer": 2,
+   "explain": "Station systems include fire systems, ventilation, lifts/escalators/travelators, Building Management System (BMS), Public Address System (PAS) and information displays."
+  },
+  {
+   "q": "BMS in a station stands for:",
+   "options": [
+    "Brake Management System",
+    "Building Management System",
+    "Booking Management Service",
+    "Block Management System"
+   ],
+   "answer": 1,
+   "explain": "Building Management System (BMS) monitors/controls the station building's systems such as ventilation, lighting and lifts."
+  },
+  {
+   "q": "Ventilation is most critical in which station environment?",
+   "options": [
+    "Open-air depots",
+    "Rural halts",
+    "Car parks",
+    "Underground sections, where it is vital for smoke extraction in a fire"
+   ],
+   "answer": 3,
+   "explain": "In underground stations, ventilation/smoke extraction can be the difference between a safe and a fatal evacuation."
+  },
+  {
+   "q": "During a fire in an underground station, the ventilation system's key job is:",
+   "options": [
+    "Smoke extraction/control so evacuation routes stay usable",
+    "Cooling the shops",
+    "Announcing trains",
+    "Charging the Overhead Equipment (OHE)"
+   ],
+   "answer": 0,
+   "explain": "Smoke, not flame, is the biggest killer — ventilation keeps escape paths tenable."
+  },
+  {
+   "q": "A station's public address and display boards are part of:",
+   "options": [
+    "Passenger information — Public Address System (PAS) / Passenger Information System (PIS) — station systems",
+    "Traction power",
+    "Interlocking",
+    "Train Control and Management System (TCMS)"
+   ],
+   "answer": 0,
+   "explain": "Public Address (PA) and displays tell passengers train timings, destinations, disruptions and safety messages."
+  },
+  {
+   "q": "If a lift or escalator at a station fails, the operational response is generally:",
+   "options": [
+    "Ignore it",
+    "Take it out of service safely, inform/barricade as needed and arrange alternatives for passengers who need it",
+    "Let passengers repair it",
+    "Close the whole station in all cases"
+   ],
+   "answer": 1,
+   "explain": "Failed passenger facilities are isolated and managed; the station works around them under control."
+  },
+  {
+   "q": "A passenger is trapped at a closed Platform Screen Door (PSD) while a train is berthed with doors open on the other side. Staff should:",
+   "options": [
+    "Force the glass panels apart by hand",
+    "Ask the train to move slightly",
+    "Follow the PSD/train door procedure — use the prescribed controls/release and coordinate with the train operator and Operations Control Centre (OCC)",
+    "Break the glass immediately in every case"
+   ],
+   "answer": 2,
+   "explain": "Platform Screen Door (PSD) incidents have procedures and coordination — improvisation at the platform edge is dangerous."
+  },
+  {
+   "q": "Why must a failed Platform Screen Door (PSD) location be staffed?",
+   "options": [
+    "For selling tickets",
+    "To clean the glass",
+    "Staff presence is not needed",
+    "Because that opening is no longer protected automatically, so a person must watch the platform edge there"
+   ],
+   "answer": 3,
+   "explain": "Isolation removes automatic protection at that door — a staff member replaces it with human supervision."
+  },
+  {
+   "q": "Platform Screen Doors (PSDs) will NOT open if:",
+   "options": [
+    "Passengers are waiting",
+    "The train has stopped outside the berthing tolerance or doors do not align",
+    "The platform is crowded",
+    "It is peak hour"
+   ],
+   "answer": 1,
+   "explain": "No correct berth, no alignment, no opening — the interlock enforces it."
+  },
+  {
+   "q": "Which supply backs up Platform Screen Doors (PSDs) during a station power failure?",
+   "options": [
+    "Train pantograph power",
+    "No backup exists",
+    "Hand cranks only",
+    "Auxiliary supply with Diesel Generator (DG)/Uninterruptible Power Supply (UPS) backup for essential loads"
+   ],
+   "answer": 3,
+   "explain": "Platform Screen Doors (PSDs) are an essential load, backed by the station's Diesel Generator (DG)/Uninterruptible Power Supply (UPS) auxiliary system."
+  },
+  {
+   "q": "Fire detection and suppression systems at stations interface with operations mainly by:",
+   "options": [
+    "Raising early alarms so staff/Operations Control Centre (OCC) can start the fire response and evacuation if needed",
+    "Selling fire insurance",
+    "Driving trains away automatically",
+    "Replacing staff training"
+   ],
+   "answer": 0,
+   "explain": "Early detection buys evacuation time — alarms feed straight into the operational response."
+  },
+  {
+   "q": "A Platform Screen Door (PSD) fault is reported but trains are running normally otherwise. The service should:",
+   "options": [
+    "Stop the entire line indefinitely",
+    "Run with all PSDs opened permanently",
+    "Continue in a controlled degraded manner with the faulty door isolated and supervised, informing Operations Control Centre (OCC)",
+    "Skip all stations"
+   ],
+   "answer": 2,
+   "explain": "One faulty door = local degraded working, not a line shutdown."
+  },
+  {
+   "q": "What proves Platform Screen Doors (PSDs) are part of the safety system and not just furniture?",
+   "options": [
+    "They are made of glass",
+    "They carry advertisements",
+    "They are cleaned daily",
+    "They are interlocked with the train and signalling and open only on correct berthing"
+   ],
+   "answer": 3,
+   "explain": "Interlocking with train and signalling makes Platform Screen Doors (PSDs) a safety system, not a partition."
+  },
+  {
+   "q": "During evacuation through the platform, Platform Screen Doors (PSDs)' role is:",
+   "options": [
+    "They can be released/opened as per emergency procedure so passengers can move between train, platform and trackside as directed",
+    "They must remain locked in all situations",
+    "They display the evacuation fare",
+    "They count evacuees"
+   ],
+   "answer": 0,
+   "explain": "Emergency release exists precisely so the screen never becomes a trap during evacuation."
+  },
+  {
+   "q": "A train stops correctly but one Platform Screen Door (PSD) does not open while all others do. Best immediate action?",
+   "options": [
+    "Hold the train until it opens by itself",
+    "Ask passengers to push it open",
+    "Treat it as a single-door fault: passengers use adjacent doors, staff attend, isolate/supervise that door and inform Operations Control Centre (OCC)",
+    "Cancel the train"
+   ],
+   "answer": 2,
+   "explain": "One door out of many is a local fault — manage boarding through other doors and isolate the faulty one."
+  },
+  {
+   "q": "Which is NOT a benefit of Platform Screen Doors (PSDs)?",
+   "options": [
+    "Preventing falls/trespass on track",
+    "Increasing the maximum speed of trains",
+    "Reducing air-conditioning loss",
+    "Helping crowd discipline"
+   ],
+   "answer": 1,
+   "explain": "Platform Screen Doors (PSDs) protect people and save AC energy; train speed is set by signalling and traction, not platform doors."
+  },
+  {
+   "q": "Travelators at stations are part of:",
+   "options": [
+    "Train propulsion",
+    "Fare collection",
+    "Station passenger-movement systems, along with lifts and escalators",
+    "Signalling"
+   ],
+   "answer": 2,
+   "explain": "Lifts, escalators and travelators move passengers within the station — one family of station systems."
+  },
+  {
+   "q": "If smoke is detected in a station, which combination responds together?",
+   "options": [
+    "Only the Automatic Fare Collection (AFC) gates",
+    "Fire detection/suppression, ventilation (smoke extraction), Public Address (PA) announcements and staff/Operations Control Centre (OCC) actions",
+    "Only the Platform Screen Door (PSD) motors",
+    "Only the ticket machines"
+   ],
+   "answer": 1,
+   "explain": "Station emergencies are answered by systems working together — detection, ventilation, information and people."
+  },
+  {
+   "q": "Why do Platform Screen Doors (PSDs) improve safety during crowded peak hours specifically?",
+   "options": [
+    "They make trains arrive faster",
+    "They check tickets",
+    "They widen the platform",
+    "They keep the crowd behind a barrier until a correctly berthed train's doors align, preventing surges onto the track"
+   ],
+   "answer": 3,
+   "explain": "The barrier holds the crowd back from the edge until boarding is actually possible."
+  },
+  {
+   "q": "A Platform Screen Door (PSD) panel is isolated and supervised. A passenger asks why a staff member is standing there. The correct reason is:",
+   "options": [
+    "The isolated door has lost automatic protection, so staff supervision replaces it until repair",
+    "The staff member is checking tickets",
+    "It is a marketing survey",
+    "The door will open by hand for everyone"
+   ],
+   "answer": 0,
+   "explain": "Human supervision substitutes for the disabled automatic protection at that door."
+  },
+  {
+   "q": "Which statement about station systems is correct?",
+   "options": [
+    "They are monitored/controlled largely through systems like Building Management System (BMS) and are backed by auxiliary power for essential loads",
+    "They work without any power",
+    "They are unrelated to operations",
+    "They are controlled by passengers"
+   ],
+   "answer": 0,
+   "explain": "Station systems are an operations concern — monitored via Building Management System (BMS) and kept alive by backup power."
+  },
+  {
+   "q": "If all Platform Screen Doors (PSDs) at a platform fail to open with a correctly berthed train, the likely interface to check first is:",
+   "options": [
+    "The fare structure",
+    "The PSD–train/signalling interface and control system, coordinated with Operations Control Centre (OCC)",
+    "The coach Heating, Ventilation and Air Conditioning (HVAC)",
+    "The timetable printing"
+   ],
+   "answer": 1,
+   "explain": "Platform Screen Doors (PSDs) take their cue from the train/signalling interface; a total failure points there, handled with Operations Control Centre (OCC)."
+  },
+  {
+   "q": "The main operational lesson of the Platform Screen Door (PSD) topic is:",
+   "options": [
+    "PSDs are decorative glass",
+    "Any PSD fault stops the railway forever",
+    "PSDs are interlocked safety equipment: correct berthing opens them, faults are isolated and supervised, and service continues in a controlled degraded way",
+    "Passengers should operate PSDs themselves"
+   ],
+   "answer": 2,
+   "explain": "Interlock, isolation, supervision, degraded continuation — that is the whole Platform Screen Door (PSD) doctrine in one line."
+  },
+  {
+   "q": "A passenger is trapped in the gap between the closed train doors and the closed Platform Screen Doors (PSDs) as the train is about to depart. The safety principle that applies is:",
+   "options": [
+    "The train may depart slowly — the passenger can jump clear",
+    "The train must not start; the doors must be re-opened or the emergency release used to free the passenger first",
+    "The passenger should be pulled out through the window",
+    "Only the next train needs to be warned"
+   ],
+   "answer": 1,
+   "explain": "The space between train door and Platform Screen Door (PSD) is a trap zone. Departure is forbidden until the trapped person is freed — door closed-and-locked proof and staff vigilance exist for exactly this case."
+  },
+  {
+   "q": "Full-height Platform Screen Doors (PSDs) and half-height platform screen gates are chosen differently mainly because:",
+   "options": [
+    "Full-height doors are only decorative",
+    "Half-height gates are stronger in a fire",
+    "Full-height Platform Screen Doors (PSDs) seal the platform from the tunnel for air-conditioning and smoke control in underground stations, while half-height gates suit elevated stations where a full seal is not needed",
+    "There is no difference between them"
+   ],
+   "answer": 2,
+   "explain": "Underground stations need the full seal — cooled air stays in and smoke stays out. Elevated stations in open air commonly use half-height gates, which still guard the platform edge."
+  },
+  {
+   "q": "During a station fire evacuation, the Automatic Fare Collection (AFC) gates are designed to:",
+   "options": [
+    "Keep collecting fares so revenue is not lost",
+    "Lock shut to stop people re-entering the concourse",
+    "Switch to emergency mode and open freely so passengers can exit without tapping any card",
+    "Start charging the maximum fare to every card"
+   ],
+   "answer": 2,
+   "explain": "In emergency mode the Automatic Fare Collection (AFC) gates open for free exit — fare collection must never slow an evacuation. Entry is stopped by staff and announcements instead."
+  },
+  {
+   "q": "Each Platform Screen Door (PSD) leaf at a platform carries an identification number. The operational reason is:",
+   "options": [
+    "For advertising space booking",
+    "So a fault can be reported, logged and attended by exact door location — matching the train door position — instead of a vague 'one door is faulty'",
+    "To count how many doors the station has for passengers",
+    "Only for the manufacturer's records"
+   ],
+   "answer": 1,
+   "explain": "Precise door numbers make the interface exact: the station reports 'Platform Screen Door (PSD) 14 faulty', the Operations Control Centre (OCC) logs it, and maintenance goes straight to the right leaf."
+  },
+  {
+   "q": "Fast-moving trains push a column of air ahead of them in tunnels — the piston effect. Station and tunnel ventilation design handles this mainly through:",
+   "options": [
+    "Stronger platform lighting",
+    "Vent shafts and pressure-relief openings that let the pushed air escape or enter, so platforms do not get violent gusts",
+    "Slowing every train to walking speed",
+    "Sealing every tunnel opening permanently"
+   ],
+   "answer": 1,
+   "explain": "A train in a tunnel is like a piston in a cylinder. Vent shafts give that air somewhere to go, keeping platform conditions and Platform Screen Door (PSD) loads within limits."
+  }
+ ]
+}

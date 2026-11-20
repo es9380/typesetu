@@ -1,0 +1,393 @@
+{
+ "id": "tech-ii-5",
+ "category": "technical",
+ "group": "Unit ii — Operational Systems & Interfaces",
+ "title": "Telecom & Operational Communication Systems",
+ "questions": [
+  {
+   "q": "Telecom in a railway is best described as:",
+   "options": [
+    "Its nervous system — radio, telephones and data links connecting trains, stations and Operations Control Centre (OCC)",
+    "Only the public announcement speakers",
+    "The ticket-selling network",
+    "A passenger entertainment system"
+   ],
+   "answer": 0,
+   "explain": "Radio, phones and data links carry every command and report — if communication dies, the railway slows to its safest fallback."
+  },
+  {
+   "q": "Train-to-Operations Control Centre (OCC) voice communication on Regional Rapid Transit System (RRTS) is based mainly on:",
+   "options": [
+    "Terrestrial Trunked Radio (TETRA) only",
+    "Long Term Evolution (LTE) radio",
+    "Hand signals",
+    "Public mobile phones of drivers"
+   ],
+   "answer": 1,
+   "explain": "Regional Rapid Transit System (RRTS) radio is Long Term Evolution (LTE)-based (the 4G family), carrying European Train Control System (ETCS) data and voice; metros traditionally used Terrestrial Trunked Radio (TETRA)."
+  },
+  {
+   "q": "Metro systems traditionally used which radio technology?",
+   "options": [
+    "Long Term Evolution (LTE) only",
+    "Wi-Fi hotspots",
+    "Terrestrial Trunked Radio (TETRA)",
+    "Semaphore"
+   ],
+   "answer": 2,
+   "explain": "Terrestrial Trunked Radio (TETRA) was the traditional metro train radio; Regional Rapid Transit System (RRTS) uses Long Term Evolution (LTE)."
+  },
+  {
+   "q": "Which services does the telecom system carry besides voice?",
+   "options": [
+    "Only passenger Wi-Fi",
+    "Only advertising content",
+    "Only fare data",
+    "Data networks carrying signalling and Supervisory Control And Data Acquisition (SCADA), plus Closed-Circuit Television (CCTV) and Public Address System (PAS)/Passenger Information System (PIS) control"
+   ],
+   "answer": 3,
+   "explain": "Telecom carries signalling/Supervisory Control And Data Acquisition (SCADA) data, Closed-Circuit Television (CCTV), Public Address (PA)/Passenger Information System (PIS) control and the clock system, not just voice."
+  },
+  {
+   "q": "The railway clock system exists to:",
+   "options": [
+    "Show passengers decorative time",
+    "Keep synchronised time across the whole railway — critical for logs and investigations",
+    "Set ticket prices",
+    "Control train speed"
+   ],
+   "answer": 1,
+   "explain": "One time everywhere means logs, recordings and event sequences can be matched during investigations."
+  },
+  {
+   "q": "Why are operational radio/telephone channels recorded?",
+   "options": [
+    "For entertainment",
+    "To sell recordings",
+    "Recording is not done",
+    "So instructions and events can be verified later, especially in investigations"
+   ],
+   "answer": 3,
+   "explain": "Recorded channels only — operational instructions belong on channels that leave a record."
+  },
+  {
+   "q": "Every train on the radio network has:",
+   "options": [
+    "A unique radio identity linked to its train number",
+    "The same shared identity",
+    "No identity",
+    "A passenger's phone number"
+   ],
+   "answer": 0,
+   "explain": "A unique identity tied to the train number means Operations Control Centre (OCC) always knows who is speaking."
+  },
+  {
+   "q": "Telephone/intercom systems in operations connect mainly:",
+   "options": [
+    "Passengers with each other",
+    "Shops in the station",
+    "Operations Control Centre (OCC) with stations and key operational points",
+    "Drivers' families"
+   ],
+   "answer": 2,
+   "explain": "Intercom/telephone links are the fixed voice backbone between Operations Control Centre (OCC), stations and operational points."
+  },
+  {
+   "q": "Closed-Circuit Television (CCTV) in operations depends on telecom because:",
+   "options": [
+    "CCTV works without any network",
+    "CCTV is part of Automatic Fare Collection (AFC)",
+    "CCTV replaces radio",
+    "CCTV pictures travel over the telecom/data network to stations and Operations Control Centre (OCC)"
+   ],
+   "answer": 3,
+   "explain": "Cameras are only useful if their pictures reach the people who act — that carriage is telecom's job."
+  },
+  {
+   "q": "If the train radio fails completely, the railway's general response is to:",
+   "options": [
+    "Slow to its safest fallback working as per procedure, using alternative communication means",
+    "Continue at full speed regardless",
+    "Stop all communication attempts",
+    "Let drivers use personal phones as the primary system"
+   ],
+   "answer": 0,
+   "explain": "Communication failure = degraded, safest-fallback working; the system never just carries on blind."
+  },
+  {
+   "q": "A driver cannot contact Operations Control Centre (OCC) on the train radio. The best action is to:",
+   "options": [
+    "Keep driving at full speed and hope",
+    "Ask a passenger to call OCC",
+    "Use the prescribed alternative means (e.g. other radio mode/telephone at the next station or as per procedure) and follow failure rules",
+    "Abandon the train"
+   ],
+   "answer": 2,
+   "explain": "Procedures define backup communication paths — use them and obey the failure rules for movement."
+  },
+  {
+   "q": "Why must operational instructions be given only on recorded channels?",
+   "options": [
+    "Recording makes the voice clearer",
+    "An unrecorded instruction cannot be proved or reconstructed later",
+    "It is a legal formality with no purpose",
+    "Passengers demand it"
+   ],
+   "answer": 1,
+   "explain": "In any incident inquiry, what was said must be verifiable — hence recorded channels only."
+  },
+  {
+   "q": "Public Address System (PAS)/Passenger Information System (PIS) control through telecom allows Operations Control Centre (OCC)/stations to:",
+   "options": [
+    "Sell tickets centrally",
+    "Drive trains remotely",
+    "Send announcements and display information across stations and trains in a coordinated way",
+    "Switch traction power"
+   ],
+   "answer": 2,
+   "explain": "Central Public Address (PA)/Passenger Information System (PIS) control is how one accurate message reaches every platform during a disruption."
+  },
+  {
+   "q": "Data networks for signalling and Supervisory Control And Data Acquisition (SCADA) must be:",
+   "options": [
+    "Open to the public",
+    "Reliable and protected, because they carry safety and power-control information",
+    "The same as passenger Wi-Fi",
+    "Optional extras"
+   ],
+   "answer": 1,
+   "explain": "Signalling and Supervisory Control And Data Acquisition (SCADA) data ride on telecom — their reliability is an operational safety matter."
+  },
+  {
+   "q": "The main difference between Long Term Evolution (LTE) on Regional Rapid Transit System (RRTS) and Terrestrial Trunked Radio (TETRA) in older metros is:",
+   "options": [
+    "TETRA carries European Train Control System (ETCS) on RRTS",
+    "LTE is used only for tickets",
+    "There is no difference",
+    "RRTS LTE carries ETCS signalling data and voice together; TETRA was mainly a voice radio tradition in metros"
+   ],
+   "answer": 3,
+   "explain": "On Regional Rapid Transit System (RRTS) the same Long Term Evolution (LTE) family carries both the European Train Control System (ETCS) data and operational voice."
+  },
+  {
+   "q": "A station reports its intercom to Operations Control Centre (OCC) is dead but train radio is working. Operations should:",
+   "options": [
+    "Use the working alternative channel, log/report the fault and get it repaired",
+    "Close the station in all cases",
+    "Stop all trains",
+    "Ignore it — one channel is enough forever"
+   ],
+   "answer": 0,
+   "explain": "Degraded communication is managed by alternatives plus fault reporting, not by panic or neglect."
+  },
+  {
+   "q": "Synchronised clocks matter most when:",
+   "options": [
+    "Reconstructing an incident from logs and recordings of different systems",
+    "Selling monthly passes",
+    "Printing timetables",
+    "Announcing delays"
+   ],
+   "answer": 0,
+   "explain": "If every system's clock differs, no one can prove the true sequence of events."
+  },
+  {
+   "q": "Which of these belongs to the telecom family of systems?",
+   "options": [
+    "Axle counters",
+    "The clock system (synchronised time across the railway)",
+    "Pantographs",
+    "Flap barriers"
+   ],
+   "answer": 1,
+   "explain": "Radio, telephones, Closed-Circuit Television (CCTV) carriage, Public Address (PA)/Passenger Information System (PIS) control and the clock system are telecom; the rest belong elsewhere."
+  },
+  {
+   "q": "During a major disruption, telecom's most valuable contribution is:",
+   "options": [
+    "Playing music on platforms",
+    "Counting passengers",
+    "Keeping Operations Control Centre (OCC), stations, trains and field staff in one coordinated information loop",
+    "Charging phones"
+   ],
+   "answer": 2,
+   "explain": "Coordination lives or dies on communication — telecom keeps everyone on the same picture."
+  },
+  {
+   "q": "A radio message is unclear and partly missed by the driver. Correct practice is to:",
+   "options": [
+    "Act on the guessed meaning",
+    "Ignore it",
+    "Answer 'okay' anyway",
+    "Ask for it to be repeated/reconfirmed rather than acting on a guess"
+   ],
+   "answer": 3,
+   "explain": "Safety-critical messages are never guessed — repeat and confirm (read-back discipline)."
+  },
+  {
+   "q": "Why does each train's radio identity matter during an emergency?",
+   "options": [
+    "For billing radio use",
+    "Operations Control Centre (OCC) can address and track instructions to the exact train involved",
+    "It does not matter",
+    "To display on Passenger Information System (PIS)"
+   ],
+   "answer": 1,
+   "explain": "In an emergency, instructions must reach the right train unambiguously — identity makes that possible."
+  },
+  {
+   "q": "If the Closed-Circuit Television (CCTV) network fails at a station, the direct operational loss is:",
+   "options": [
+    "Train traction power",
+    "Fare collection",
+    "Overhead Equipment (OHE) supply",
+    "Visual monitoring of platforms/areas — staff must compensate with physical presence and reporting"
+   ],
+   "answer": 3,
+   "explain": "Losing Closed-Circuit Television (CCTV) means losing eyes, not power — compensate with people until it is restored."
+  },
+  {
+   "q": "Telecom failure affecting signalling data in European Train Control System (ETCS) territory would be serious because:",
+   "options": [
+    "Movement Authority reaches trains by radio/data — without it, trains cannot be authorised normally",
+    "Signals are painted on trains",
+    "Drivers carry paper maps only",
+    "Automatic Fare Collection (AFC) would stop"
+   ],
+   "answer": 0,
+   "explain": "In European Train Control System (ETCS) L2 the radio IS the authority path; data failure strikes at train movement itself."
+  },
+  {
+   "q": "Which statement about operational communication systems is correct?",
+   "options": [
+    "They include only mobile phones",
+    "They are a passenger luxury",
+    "They include voice radio, telephones, data networks, Closed-Circuit Television (CCTV) carriage, Public Address (PA)/Passenger Information System (PIS) control and synchronised clocks",
+    "They are separate from operations"
+   ],
+   "answer": 2,
+   "explain": "Telecom is a bundle of operational systems, all serving control and safety."
+  },
+  {
+   "q": "A controller gives a long instruction mixing several actions. The telecom discipline expected is:",
+   "options": [
+    "Casual chat on any channel",
+    "Speaking to several trains at once without identities",
+    "No confirmation needed",
+    "Clear, structured communication on the recorded channel, with confirmation"
+   ],
+   "answer": 3,
+   "explain": "Structure, identity and confirmation are what make radio communication safe."
+  },
+  {
+   "q": "The phrase 'communication dies, the railway slows to its safest fallback' teaches that:",
+   "options": [
+    "Loss of communication is itself a degraded mode requiring reduced, safest working",
+    "Trains can run normally without communication",
+    "Only passengers are affected",
+    "Depots close"
+   ],
+   "answer": 0,
+   "explain": "No communication = no normal operation; the fallback is deliberately slower and safer."
+  },
+  {
+   "q": "Help points/intercoms at stations let passengers:",
+   "options": [
+    "Talk to the driver directly",
+    "Buy tickets by voice",
+    "Reach staff/control for assistance or emergency information",
+    "Open Platform Screen Doors (PSDs)"
+   ],
+   "answer": 2,
+   "explain": "Passenger help points are part of the communication family linking public to control."
+  },
+  {
+   "q": "Why should personal mobile phones not replace the operational radio as the primary channel?",
+   "options": [
+    "Drivers do not own phones",
+    "Operational channels are recorded, identity-linked and controlled; personal phones are none of these",
+    "Mobiles have no coverage anywhere",
+    "Operations Control Centre (OCC) has no phone number"
+   ],
+   "answer": 1,
+   "explain": "Record, identity and control are exactly what an official channel guarantees and a personal phone does not."
+  },
+  {
+   "q": "A fault in the clock system is noticed (station clock differs from Operations Control Centre (OCC) time). It should be:",
+   "options": [
+    "Ignored as cosmetic",
+    "Fixed by passengers",
+    "Reported and corrected, because unsynchronised time corrupts logs and investigations",
+    "Used to change the timetable"
+   ],
+   "answer": 2,
+   "explain": "Wrong time is an evidence problem — report it like any other operational fault."
+  },
+  {
+   "q": "The telecom interface with signalling on Regional Rapid Transit System (RRTS) can be summarised as:",
+   "options": [
+    "Telecom and signalling are unrelated",
+    "Long Term Evolution (LTE) radio carries European Train Control System (ETCS) movement authorities and voice, making telecom part of the train-control chain itself",
+    "Telecom only carries Closed-Circuit Television (CCTV)",
+    "Signalling carries the radio"
+   ],
+   "answer": 1,
+   "explain": "On Regional Rapid Transit System (RRTS), telecom is not beside the signalling system — it is inside it."
+  },
+  {
+   "q": "Train radio systems provide a 'group call' facility. Its main operational use is:",
+   "options": [
+    "Letting passengers talk to each other",
+    "Letting the Operations Control Centre (OCC) speak to all trains (or all stations) in an area at once, for example to announce a disruption or an instruction that affects everyone",
+    "Recording music for the trains",
+    "Replacing all individual calls permanently"
+   ],
+   "answer": 1,
+   "explain": "In a disruption the same message must reach every train together. A group call from the Operations Control Centre (OCC) does in seconds what separate calls to each train cannot."
+  },
+  {
+   "q": "On the operational radio network, an emergency call is treated differently from a routine call because it:",
+   "options": [
+    "Is charged at a higher rate",
+    "Gets priority — it can override or pre-empt routine traffic so the emergency message gets through immediately",
+    "Is allowed only once a day",
+    "Must wait for the routine call to finish"
+   ],
+   "answer": 1,
+   "explain": "Priority working means an emergency call never queues behind routine chatter. Getting the message through at once is itself a safety function of the telecom system."
+  },
+  {
+   "q": "Continuous radio coverage inside tunnels is normally provided by:",
+   "options": [
+    "The driver's personal mobile phone",
+    "A radiating ('leaky feeder') cable run along the tunnel that carries the radio signal to and from trains",
+    "Loudspeakers fixed on tunnel walls",
+    "Signal lamps repeated every few metres"
+   ],
+   "answer": 1,
+   "explain": "Radio waves do not travel well through a tunnel on their own. A leaky feeder cable radiates the signal along the tunnel, so train radio and data links keep working underground."
+  },
+  {
+   "q": "After a serious incident, the voice recordings of operational channels must be:",
+   "options": [
+    "Deleted quickly to save storage",
+    "Edited to remove embarrassing parts",
+    "Preserved and made available for the incident investigation, so what was said and when can be established exactly",
+    "Given to the press before the inquiry"
+   ],
+   "answer": 2,
+   "explain": "Recordings are evidence. Preserved voice logs let investigators rebuild the sequence of instructions and reports — one reason all operational communication stays on recorded channels."
+  },
+  {
+   "q": "The direct 'hotline' telephone between the Operations Control Centre (OCC) and a station is preferred for urgent operational talk because:",
+   "options": [
+    "It is cheaper than other phones",
+    "It connects instantly to the right desk without dialling or going through a switchboard, and it is a recorded operational channel",
+    "It cannot be heard by anyone else in the room",
+    "It works without any power supply"
+   ],
+   "answer": 1,
+   "explain": "A hotline removes delay and wrong numbers at the worst moment: lift, speak, and the station's operational desk answers — with the conversation recorded like all safety communication."
+  }
+ ]
+}

@@ -1,0 +1,338 @@
+{
+ "id": "tech-iii-5",
+ "category": "technical",
+ "group": "Unit iii — Safety Regulations & Standards",
+ "title": "Safety Responsibilities, Discipline & Safety-Critical Communication",
+ "questions": [
+  {
+   "q": "Safety in operations is whose responsibility?",
+   "options": [
+    "Only the safety department's",
+    "Line responsibility — every staff member owns the safety of their own task",
+    "Only the senior officer's",
+    "Only Operations Control Centre (OCC)'s"
+   ],
+   "answer": 1,
+   "explain": "Safety is line responsibility: each person owns their task's safety; supervisors verify, they do not merely trust."
+  },
+  {
+   "q": "What is the supervisor's safety role?",
+   "options": [
+    "To sign papers without checking",
+    "To do everyone's work himself",
+    "To verify that work is done safely — not merely trust that it was",
+    "To report only accidents"
+   ],
+   "answer": 2,
+   "explain": "Supervisors verify. Trust without verification is how unsafe habits grow unnoticed."
+  },
+  {
+   "q": "Personal Protective Equipment (PPE) is mandatory where?",
+   "options": [
+    "In depots, on tracks and in workshops, as prescribed",
+    "Only during inspections",
+    "Only for new staff",
+    "Nowhere — it is optional"
+   ],
+   "answer": 0,
+   "explain": "Helmets, gloves, hi-vis and other Personal Protective Equipment (PPE) as prescribed are compulsory in depots, tracks and workshops."
+  },
+  {
+   "q": "Which discipline rule applies to alcohol and drugs on duty?",
+   "options": [
+    "A small amount is allowed",
+    "Checks happen only after accidents",
+    "Only drivers are checked",
+    "No duty under alcohol/drugs — breath-analyser checks are standard"
+   ],
+   "answer": 3,
+   "explain": "Zero tolerance: breath-analyser checks are a standard part of railway discipline."
+  },
+  {
+   "q": "Using a mobile phone in a way that distracts from safety duty is:",
+   "options": [
+    "Allowed during slow periods",
+    "Allowed for senior staff",
+    "Prohibited — no mobile distraction on safety duty",
+    "Encouraged for coordination"
+   ],
+   "answer": 2,
+   "explain": "A distracted operator is a failed barrier. Mobile distraction on safety duty is a discipline offence."
+  },
+  {
+   "q": "'Normalisation of deviance' means:",
+   "options": [
+    "Repeated small shortcuts gradually becoming accepted as normal — a known cause of accidents",
+    "Following rules more strictly over time",
+    "A type of signal failure",
+    "Changing duty rosters"
+   ],
+   "answer": 0,
+   "explain": "When shortcuts stop shocking anyone, the accident is already on its way — that drift is normalisation of deviance."
+  },
+  {
+   "q": "A staff member feels too fatigued to perform safety duty safely. Reporting this is:",
+   "options": [
+    "A punishable offence",
+    "A sign of laziness",
+    "Allowed only once a year",
+    "A protected act — prescribed rest and fitness for duty are safety requirements"
+   ],
+   "answer": 3,
+   "explain": "Fatigue is a hazard. Reporting unfitness is protected — the system wants the report, not a tired operator."
+  },
+  {
+   "q": "Prescribed rest for operational staff exists because:",
+   "options": [
+    "Staff welfare is a formality",
+    "Fatigue degrades attention and decision-making, raising accident risk",
+    "Trains run slower at night",
+    "It is a colonial custom"
+   ],
+   "answer": 1,
+   "explain": "Rest is a safety control, not a perk — tired staff miss signals, messages and hazards."
+  },
+  {
+   "q": "Safety-critical communication requires which elements?",
+   "options": [
+    "Speaking fast and casually",
+    "Identification, a clear message, read-back and confirmation",
+    "Using nicknames",
+    "Talking over each other"
+   ],
+   "answer": 1,
+   "explain": "Say who you are, say it clearly, hear it repeated back, confirm it — that is safety-critical communication."
+  },
+  {
+   "q": "Read-back in safety-critical communication means:",
+   "options": [
+    "Reading the rule book aloud",
+    "Repeating messages to passengers",
+    "The receiver repeats the message back so the sender can confirm it was heard correctly",
+    "Writing the message twice"
+   ],
+   "answer": 2,
+   "explain": "Read-back catches hearing errors before they become movement errors — the telephone game played honestly."
+  },
+  {
+   "q": "Why are casual tone and nicknames unacceptable in safety-critical communication?",
+   "options": [
+    "They create ambiguity about who is speaking and what is instructed",
+    "They are impolite",
+    "They take longer",
+    "They are acceptable"
+   ],
+   "answer": 0,
+   "explain": "Standard, identified, unambiguous speech is itself a safety barrier."
+  },
+  {
+   "q": "Operational discipline includes which of these?",
+   "options": [
+    "Only wearing the uniform",
+    "Only attendance and seniority",
+    "Only completing paperwork",
+    "Following rules, taking no shortcuts, keeping unauthorised persons out of cab/control areas, and fitness for duty"
+   ],
+   "answer": 3,
+   "explain": "Discipline is behaviour when nobody is watching — rules followed, shortcuts refused, areas kept secure, staff fit."
+  },
+  {
+   "q": "Scenario: A colleague suggests skipping a check 'because we always do and nothing happens'. This thinking is:",
+   "options": [
+    "Practical experience",
+    "Good time management",
+    "Normalisation of deviance — the shortcut must be refused and the full procedure followed",
+    "Approved by custom"
+   ],
+   "answer": 2,
+   "explain": "'Nothing happened last time' is the most dangerous sentence in operations — refuse the shortcut."
+  },
+  {
+   "q": "Scenario: You are called for safety duty but have had almost no sleep. The correct action is:",
+   "options": [
+    "Report yourself unfit as per rules — reporting unfitness is protected",
+    "Take duty and drink tea to stay awake",
+    "Take duty and avoid telling anyone",
+    "Ask a passenger to keep you awake"
+   ],
+   "answer": 0,
+   "explain": "An unfit operator is a hazard to hundreds. Report it; the system protects that honesty."
+  },
+  {
+   "q": "Who is responsible for the safety of a task — the worker or the supervisor?",
+   "options": [
+    "Only the worker",
+    "Only the supervisor",
+    "Neither — Operations Control Centre (OCC) alone",
+    "Both: the worker owns the safety of the task; the supervisor verifies it is done safely"
+   ],
+   "answer": 3,
+   "explain": "Ownership sits with the doer, verification with the supervisor — both layers are required."
+  },
+  {
+   "q": "A breath-analyser check before safety duty is best understood as:",
+   "options": [
+    "A punishment",
+    "A standard fitness-for-duty control, applied routinely",
+    "Applied only to juniors",
+    "A formality that can be skipped"
+   ],
+   "answer": 1,
+   "explain": "Routine checks keep the zero-alcohol rule real; they are a control, not an accusation."
+  },
+  {
+   "q": "What should a receiver do if a safety-critical message is unclear?",
+   "options": [
+    "Guess the meaning",
+    "Ask for it to be repeated/rephrased and confirm by read-back before acting",
+    "Act on the most likely meaning",
+    "Ignore the message"
+   ],
+   "answer": 1,
+   "explain": "Unclear message = no action until it is clear and read back. Guessing is not a procedure."
+  },
+  {
+   "q": "Why must unauthorised persons be kept out of cabs and control areas?",
+   "options": [
+    "To keep the areas clean",
+    "Only for secrecy",
+    "They can distract staff and interfere with safety-critical work",
+    "They may be allowed freely"
+   ],
+   "answer": 2,
+   "explain": "Cab and control areas are safety workplaces — access is restricted to authorised staff only."
+  },
+  {
+   "q": "Which habit best shows operational discipline?",
+   "options": [
+    "Following the laid-down procedure fully, even when a shortcut would save time and nobody is watching",
+    "Finishing fastest",
+    "Skipping checks during rush",
+    "Depending on memory instead of procedure"
+   ],
+   "answer": 0,
+   "explain": "Discipline is what you do unsupervised — the full procedure, every time."
+  },
+  {
+   "q": "Fatigue, distraction and shortcuts are grouped together in the book as:",
+   "options": [
+    "Minor issues",
+    "Management problems only",
+    "Unrelated topics",
+    "Human-factor threats to safety that discipline and rostering must control"
+   ],
+   "answer": 3,
+   "explain": "Alcohol, mobiles, fatigue and shortcuts all attack the human barrier — discipline is the counter-control."
+  },
+  {
+   "q": "If an Operations Control Centre (OCC) instruction is received, the receiver must:",
+   "options": [
+    "Execute first and confirm later",
+    "Pass it to any colleague",
+    "Identify themselves, listen, read back the instruction and confirm before executing",
+    "Write it down next day"
+   ],
+   "answer": 2,
+   "explain": "Identify — listen — read back — confirm — then execute. Skipping read-back skips the error check."
+  },
+  {
+   "q": "A staff member notices a supervisor repeatedly ignoring a safety procedure. The right course is:",
+   "options": [
+    "Report it through the proper channel — safety responsibility applies at every level",
+    "Ignore it; he is senior",
+    "Copy him to save time",
+    "Discuss it only in the canteen"
+   ],
+   "answer": 0,
+   "explain": "No rank exempts anyone from safety rules; reporting through the proper channel is the protected route."
+  },
+  {
+   "q": "Personal Protective Equipment (PPE) protects best when:",
+   "options": [
+    "It replaces all other precautions",
+    "It is carried in the hand",
+    "It is worn only for photographs",
+    "It is worn as prescribed, as the last line of defence behind procedure and protection"
+   ],
+   "answer": 3,
+   "explain": "Personal Protective Equipment (PPE) is mandatory but it is the last line — possession, isolation and procedure come before it."
+  },
+  {
+   "q": "What is the link between discipline and safety-critical communication?",
+   "options": [
+    "There is no link",
+    "Disciplined communication — standard format, identification, read-back — is part of operational discipline",
+    "Communication is separate from discipline",
+    "Only written communication counts"
+   ],
+   "answer": 1,
+   "explain": "How you speak on duty is discipline: standard, identified, read back and confirmed."
+  },
+  {
+   "q": "The statement 'supervisors verify, they do not merely trust' teaches that:",
+   "options": [
+    "Supervisors should do all work themselves",
+    "Verification is an active safety duty of supervision, not a paper exercise",
+    "Trust is forbidden between colleagues",
+    "Verification is optional for experienced staff"
+   ],
+   "answer": 1,
+   "explain": "A supervisor's signature should mean 'I checked', not 'I assumed' — that is the safety culture the exam tests."
+  },
+  {
+   "q": "Safety-critical communication must use standard phraseology and avoid slang or private shortcuts mainly because:",
+   "options": [
+    "It sounds more formal",
+    "Standard words have one agreed meaning for every sender and receiver, while slang and shortcuts can be understood differently under stress",
+    "It makes the message longer",
+    "Rules demand English only"
+   ],
+   "answer": 1,
+   "explain": "In an emergency there is no time to decode personal styles. Standard phraseology is a shared code: the same words, the same meaning, for a driver, a station controller and Operations Control Centre (OCC) alike."
+  },
+  {
+   "q": "The phonetic alphabet (Alfa, Bravo, Charlie…) is used in radio communication to:",
+   "options": [
+    "Make messages secret",
+    "Distinguish similar-sounding letters and numbers (like B/D or 5/9) so identifiers, train numbers and locations are copied exactly",
+    "Speak faster",
+    "Impress the receiver"
+   ],
+   "answer": 1,
+   "explain": "On a noisy radio channel, 'B' and 'D' sound alike but 'Bravo' and 'Delta' never do. The phonetic alphabet removes letter-confusion from safety-critical identifiers."
+  },
+  {
+   "q": "A staff member reports for safety-critical duty under the influence of alcohol. In railway discipline this is treated as:",
+   "options": [
+    "A minor personal matter",
+    "A serious offence — the person must be removed from safety duty and dealt with under disciplinary rules, because impaired staff endanger everyone",
+    "Acceptable if he feels fine",
+    "Acceptable on night shifts"
+   ],
+   "answer": 1,
+   "explain": "Alcohol slows reaction and judgement exactly in the faculties safety duty depends on. 'Feeling fine' is not a test — reporting under influence is itself a grave breach of safety discipline."
+  },
+  {
+   "q": "'Stop-work authority' in a safety culture means:",
+   "options": [
+    "Only the senior-most officer may stop work",
+    "Any staff member who sees an imminent danger has the authority — and the duty — to stop the work or movement immediately and report it",
+    "Work stops only at shift end",
+    "Passengers may stop any work"
+   ],
+   "answer": 1,
+   "explain": "Danger does not wait for hierarchy. Empowering the person who actually sees the hazard to stop the job is one of the strongest real-world safety barriers, and good organisations protect staff who use it in good faith."
+  },
+  {
+   "q": "A safety-critical shift handover is complete only when:",
+   "options": [
+    "The outgoing staff member leaves on time",
+    "Defects, restrictions, pending instructions and abnormal conditions are handed over verbally AND recorded in the log, and the incoming staff member has understood and accepted them",
+    "The register is signed without reading",
+    "Only the train positions are mentioned"
+   ],
+   "answer": 1,
+   "explain": "Most handovers fail silently — something known to one shift never reaches the next. Verbal briefing plus a written log plus confirmed understanding closes all three gaps."
+  }
+ ]
+}

@@ -1,0 +1,503 @@
+{
+ "id": "tech-iii-3",
+ "category": "technical",
+ "group": "Unit iii — Safety Regulations & Standards",
+ "title": "Worksite Possession & Isolation Procedures",
+ "questions": [
+  {
+   "q": "What is a 'possession' of a section?",
+   "options": [
+    "Buying the land beside the track",
+    "The section is formally handed over for maintenance work, with train running suspended or controlled within it",
+    "A train standing in the section",
+    "Possession of a passenger's ticket"
+   ],
+   "answer": 1,
+   "explain": "Possession means protected, time-bound control of the track for work — not ownership of land."
+  },
+  {
+   "q": "What is the exam name for the full possession process taught in the book?",
+   "options": [
+    "General duty roster",
+    "Caution order working",
+    "Engineering Possession with Traction Isolation and Permit to Work (PTW)",
+    "Token block working"
+   ],
+   "answer": 2,
+   "explain": "Plan, possession, isolation, earthing and Permit to Work (PTW) together form this named process — process-order questions are guaranteed on it."
+  },
+  {
+   "q": "What is the correct order for safe work on track under live Overhead Equipment (OHE) territory?",
+   "options": [
+    "Isolate the power, earth the OHE, then issue the Permit to Work",
+    "Permit to Work, isolate, earth",
+    "Earth, permit, isolate",
+    "Switch off, start work, earth later"
+   ],
+   "answer": 0,
+   "explain": "Power off, then earthed dead, then the paper permission — reversing any two can kill."
+  },
+  {
+   "q": "Earthing of the Overhead Equipment (OHE) comes at which point?",
+   "options": [
+    "Before isolation",
+    "After the work is finished",
+    "Only if staff ask for it",
+    "After isolation and before the Permit to Work is issued"
+   ],
+   "answer": 3,
+   "explain": "Isolation alone does not make a wire safe; earthing proves it dead, and only then is the Permit to Work (PTW) issued."
+  },
+  {
+   "q": "Until what point must Overhead Equipment (OHE) be treated as LIVE?",
+   "options": [
+    "Until trains stop running",
+    "Until night falls",
+    "Until it is formally isolated, earthed and covered by a permit",
+    "Until staff wear gloves"
+   ],
+   "answer": 2,
+   "explain": "This is the most repeated safety line in railway exams: Overhead Equipment (OHE) is live until isolated, earthed and permitted."
+  },
+  {
+   "q": "What is the FIRST stage of a possession?",
+   "options": [
+    "Planning — the work is planned and the possession requested and approved in advance",
+    "Staff entering the track",
+    "Restoring the power",
+    "Running the first train"
+   ],
+   "answer": 0,
+   "explain": "Possessions are planned in advance: place, time, limits, staff and protection are approved before anything happens."
+  },
+  {
+   "q": "Who grants possession of a section?",
+   "options": [
+    "The station announcer",
+    "Any supervisor on site",
+    "The train operator",
+    "Operations Control Centre (OCC) (the Traffic Controller), for a defined section and a defined time"
+   ],
+   "answer": 3,
+   "explain": "Operations Control Centre (OCC) grants possession after the last train clears, for exact limits and an exact time window."
+  },
+  {
+   "q": "Before possession is granted, what must happen to the section?",
+   "options": [
+    "The first train must enter it",
+    "The last train must clear the section",
+    "Passengers must be detrained onto it",
+    "Power must be restored"
+   ],
+   "answer": 1,
+   "explain": "Possession is taken only after the last train has cleared the section being handed over."
+  },
+  {
+   "q": "Who takes possession on site and controls the worksite?",
+   "options": [
+    "Any fitter present",
+    "The designated Person-in-Charge (PIC)",
+    "The power controller",
+    "A contractor's labourer"
+   ],
+   "answer": 1,
+   "explain": "The Person-in-Charge (PIC) takes possession from Operations Control Centre (OCC), receives the Permit to Work (PTW) and controls all staff and tools inside the limits."
+  },
+  {
+   "q": "When the Person-in-Charge (PIC) takes possession, the limits are made certain by:",
+   "options": [
+    "A verbal guess",
+    "A notice on the board",
+    "Confirmation by repeat-back and logging of the limits",
+    "The PIC's memory alone"
+   ],
+   "answer": 2,
+   "explain": "Limits confirmed by repeat-back and logged — the same discipline as every safety-critical instruction."
+  },
+  {
+   "q": "Protection of a possessed section includes:",
+   "options": [
+    "Signals/blocks set to stop trains entering, with scotches/stop boards as prescribed",
+    "Opening all signals to clear trains faster",
+    "Removing all stop boards",
+    "Leaving signals as they were"
+   ],
+   "answer": 0,
+   "explain": "The section is physically and signal-wise sealed: signals at danger, blocks applied, scotches/stop boards placed."
+  },
+  {
+   "q": "If the work can foul the adjacent line, what extra care is needed?",
+   "options": [
+    "None — only the work line matters",
+    "Trains on the adjacent line are sped up",
+    "The adjacent line is ignored",
+    "Precautions for the adjacent line as prescribed, so that line is protected too"
+   ],
+   "answer": 3,
+   "explain": "Work that can foul a neighbouring line extends the protection thinking to that line as well."
+  },
+  {
+   "q": "Who switches off the traction power for the section?",
+   "options": [
+    "The Person-in-Charge (PIC) personally at the wire",
+    "Any staff with a key",
+    "The Power Controller, through Supervisory Control And Data Acquisition (SCADA)/switching arrangements",
+    "The station master"
+   ],
+   "answer": 2,
+   "explain": "Isolation is done by the Power Controller remotely through Supervisory Control And Data Acquisition (SCADA)/switching — not by worksite staff at the Overhead Equipment (OHE)."
+  },
+  {
+   "q": "Power isolation for the section means:",
+   "options": [
+    "Traction power is isolated for that section and earthing devices are then applied",
+    "Only the station lights are switched off",
+    "The whole city's power is cut",
+    "Trains run on battery instead"
+   ],
+   "answer": 0,
+   "explain": "Isolation plus earthing: the section's Overhead Equipment (OHE) is switched off, then short-circuiting/earthing devices are applied."
+  },
+  {
+   "q": "The Permit to Work is issued to whom?",
+   "options": [
+    "Every labourer individually by Operations Control Centre (OCC)",
+    "The train operator",
+    "The station announcer",
+    "The Person-in-Charge (PIC) of the worksite"
+   ],
+   "answer": 3,
+   "explain": "The Permit to Work (PTW) ties a named person — the Person-in-Charge (PIC) — a named section and a named time together."
+  },
+  {
+   "q": "What are the three things that must ALL be present before staff work on the Overhead Equipment (OHE) section?",
+   "options": [
+    "Gloves, boots and a torch",
+    "Isolation, earthing and a Permit to Work",
+    "A supervisor, a flag and a whistle",
+    "Power, permission and passengers removed"
+   ],
+   "answer": 1,
+   "explain": "Isolation + earthing + permit — all three, in that logic. Missing any one makes the work unsafe and unlawful."
+  },
+  {
+   "q": "During the work stage, who may be inside the possession limits?",
+   "options": [
+    "Any staff member who is curious",
+    "Only authorised staff, with tools and materials accounted for",
+    "Passengers taking a shortcut",
+    "Unauthorised contractors"
+   ],
+   "answer": 1,
+   "explain": "Only authorised staff inside; every tool and material is accounted for so nothing is left on the track."
+  },
+  {
+   "q": "Why is a lookout/safety watch posted during work where required?",
+   "options": [
+    "To count the tools",
+    "To make tea for the staff",
+    "To warn staff of approaching danger, such as a movement on an adjacent line",
+    "To speak to passengers"
+   ],
+   "answer": 2,
+   "explain": "The lookout's only job is watching for danger and warning the gang in time."
+  },
+  {
+   "q": "During possession, communication must be maintained between:",
+   "options": [
+    "The worksite (Person-in-Charge (PIC)) and Operations Control Centre (OCC)",
+    "The worksite and passengers",
+    "The PIC and the canteen",
+    "Nobody — silence is required"
+   ],
+   "answer": 0,
+   "explain": "A communication check with Operations Control Centre (OCC)/Person-in-Charge (PIC) is maintained throughout the work."
+  },
+  {
+   "q": "What is the correct order of the six possession stages?",
+   "options": [
+    "Work → Planning → Protection → Hand-back → Isolation → Possession",
+    "Protection → Work → Planning → Isolation → Hand-back → Possession",
+    "Isolation → Planning → Work → Possession → Hand-back → Protection",
+    "Planning → Taking possession → Protection → Power isolation → Work → Hand-back"
+   ],
+   "answer": 3,
+   "explain": "Learn this order cold: plan it, take it, protect it, isolate it, work in it, hand it back."
+  },
+  {
+   "q": "What must the Person-in-Charge (PIC) do before handing back the possession?",
+   "options": [
+    "Simply walk away when time ends",
+    "Restore the power himself",
+    "Certify the work complete and that all staff, tools and materials are clear of the track",
+    "Send the first train through to check"
+   ],
+   "answer": 2,
+   "explain": "Certification comes first: work complete, men and material counted and clear — then hand-back can begin."
+  },
+  {
+   "q": "Power may be restored only when:",
+   "options": [
+    "Both Person-in-Charge (PIC) and Operations Control Centre (OCC) confirm — after the PIC's certification that the line is clear and fit",
+    "The PIC alone decides silently",
+    "The time window expires",
+    "The first train is waiting"
+   ],
+   "answer": 0,
+   "explain": "Restoration follows certification and joint Person-in-Charge (PIC) + Operations Control Centre (OCC) confirmation — never the clock alone."
+  },
+  {
+   "q": "In what order are the Permit to Work (PTW) and earths dealt with at the end of work?",
+   "options": [
+    "Power restored → earths removed → PTW cancelled → Person-in-Charge (PIC) certifies",
+    "Earths removed → PIC certifies → power restored → PTW cancelled",
+    "PTW cancelled → power restored → earths removed → PIC certifies",
+    "PIC certifies clear → PTW is cancelled → earths are removed → power is restored"
+   ],
+   "answer": 3,
+   "explain": "The closing steps run in exact reverse discipline: certify, cancel the permit, remove earths, restore power."
+  },
+  {
+   "q": "After hand-back, how may the first train be run, as prescribed?",
+   "options": [
+    "At full line speed immediately",
+    "At caution speed, after any trial/inspection as prescribed",
+    "Without informing the operator",
+    "Only after one hour in all cases"
+   ],
+   "answer": 1,
+   "explain": "Hand-back may include a trial/inspection run and a first train at caution speed before normal service resumes."
+  },
+  {
+   "q": "Handing back possession early because work finished sooner is:",
+   "options": [
+    "Forbidden in all circumstances",
+    "Allowed only after Person-in-Charge (PIC) certification and formal hand-back to Operations Control Centre (OCC)",
+    "Done by a phone call to the driver",
+    "Automatic when staff leave"
+   ],
+   "answer": 1,
+   "explain": "Early hand-back is fine — but only through the same formal certification and hand-back, never informally."
+  },
+  {
+   "q": "What is the absolute rule about entering the track during live (traffic) hours?",
+   "options": [
+    "Entry is allowed if you are quick",
+    "Entry is allowed in uniform",
+    "No track entry in live hours without proper authority",
+    "Entry is allowed at night"
+   ],
+   "answer": 2,
+   "explain": "Live hours plus no authority equals a prohibited and potentially fatal combination."
+  },
+  {
+   "q": "Scenario: The power has been switched off for your section but earthing is not yet applied. Can staff start work?",
+   "options": [
+    "No — switching off alone does not make the wire safe; earthing and Permit to Work (PTW) must follow first",
+    "Yes, switched off means safe",
+    "Yes, if they wear gloves",
+    "Yes, for a few minutes only"
+   ],
+   "answer": 0,
+   "explain": "This is the classic exam trap: isolation without earthing is incomplete protection."
+  },
+  {
+   "q": "Scenario: A worker wants to enter the possession to collect a forgotten tool after hand-back. He should:",
+   "options": [
+    "Enter quickly since he knows the site",
+    "Ask the first train to slow down for him",
+    "Enter from the platform end quietly",
+    "Not enter — the possession is over; entry now needs fresh authority through Operations Control Centre (OCC)/Person-in-Charge (PIC) channels"
+   ],
+   "answer": 3,
+   "explain": "After hand-back the track is live railway again. The forgotten tool waits for a new authorised access."
+  },
+  {
+   "q": "What do scotches and stop boards do in a possession?",
+   "options": [
+    "Decorate the worksite",
+    "Hold the tools",
+    "Physically mark and block the limits so trains cannot enter the protected section",
+    "Show the staff where to stand"
+   ],
+   "answer": 2,
+   "explain": "Scotches/stop boards are physical protection at the limits, backing up the signals and blocks."
+  },
+  {
+   "q": "Why must tools and materials be 'accounted for' before hand-back?",
+   "options": [
+    "So nothing is left on the track to foul or damage the first train",
+    "For the stores register only",
+    "So staff can be paid",
+    "It is not actually required"
+   ],
+   "answer": 0,
+   "explain": "A spanner left on the rail can derail a train — counting men and material is a safety step, not clerical work."
+  },
+  {
+   "q": "The traffic/power plan and caution orders for a planned possession are issued:",
+   "options": [
+    "After the work is over",
+    "Only if the work is delayed",
+    "Verbally at the last minute",
+    "In advance, as part of the planning and sanction stage"
+   ],
+   "answer": 3,
+   "explain": "Planning includes the traffic and power plan plus caution orders, all issued before the possession begins."
+  },
+  {
+   "q": "Which sequence is correct inside the protection-and-isolation steps?",
+   "options": [
+    "Issue Permit to Work (PTW) → protect → earth → isolate",
+    "Protect the section (signals at danger, points secured) → isolate power → earth the Overhead Equipment (OHE) → issue PTW",
+    "Earth → isolate → protect → issue PTW",
+    "Isolate → issue PTW → earth → protect"
+   ],
+   "answer": 1,
+   "explain": "First keep trains out, then kill the power, then earth it, then permit the work — in that order."
+  },
+  {
+   "q": "A possession's limits and time are best described as:",
+   "options": [
+    "Flexible, extendable by the Person-in-Charge (PIC) alone",
+    "Defined and fixed — work stays within the protected limits and the permitted time only",
+    "Decided by the workers on site",
+    "Unlimited once granted"
+   ],
+   "answer": 1,
+   "explain": "The Person-in-Charge (PIC) controls staff and tools strictly inside the granted limits and time window."
+  },
+  {
+   "q": "Who resumes normal working after hand-back?",
+   "options": [
+    "The Person-in-Charge (PIC)",
+    "The power controller alone",
+    "Operations Control Centre (OCC), once possession is formally handed back",
+    "The first train's operator"
+   ],
+   "answer": 2,
+   "explain": "Operations Control Centre (OCC) granted the possession and Operations Control Centre (OCC) resumes normal working after formal hand-back."
+  },
+  {
+   "q": "Scenario: During work, the Person-in-Charge (PIC) loses radio contact with Operations Control Centre (OCC). The safe action is:",
+   "options": [
+    "Stop or secure the work as per procedure and re-establish communication — the communication check must be maintained",
+    "Continue working silently till the end",
+    "Send a worker along the track to Operations Control Centre (OCC)",
+    "Ignore it; communication is optional"
+   ],
+   "answer": 0,
+   "explain": "Communication with Operations Control Centre (OCC) is a condition of the possession; losing it means securing the work until contact returns."
+  },
+  {
+   "q": "Why is the Permit to Work (PTW) issued only AFTER earthing, never before?",
+   "options": [
+    "Because of office timing",
+    "Because the Person-in-Charge (PIC) arrives late",
+    "It can be issued any time",
+    "Because the permit certifies the section is proved dead and safe to touch — which only earthing establishes"
+   ],
+   "answer": 3,
+   "explain": "The Permit to Work (PTW) is a safety certificate, not a formality: it can only certify safety that has actually been created."
+  },
+  {
+   "q": "What happens to signals protecting the section during hand-back?",
+   "options": [
+    "They stay at danger forever",
+    "Workers remove them casually",
+    "Protection is removed in order, as part of the formal hand-back, before normal service resumes",
+    "They are removed before the Person-in-Charge (PIC) certifies"
+   ],
+   "answer": 2,
+   "explain": "Protection comes off in the prescribed order during hand-back — after certification, never before it."
+  },
+  {
+   "q": "A trial or inspection after hand-back is done:",
+   "options": [
+    "As prescribed, before normal service fully resumes",
+    "Never — trains just start",
+    "Only if passengers demand it",
+    "By passengers on the first train"
+   ],
+   "answer": 0,
+   "explain": "Where prescribed, a trial/inspection run proves the section before normal service resumes."
+  },
+  {
+   "q": "Which statement about adjacent-line working is correct?",
+   "options": [
+    "The adjacent line needs no thought",
+    "Trains on the adjacent line protect themselves",
+    "Work can spread onto it freely",
+    "If work can foul the adjacent line, precautions for that line must be taken as prescribed"
+   ],
+   "answer": 3,
+   "explain": "Fouling risk does not stop at the possession boundary — the adjacent line gets its own precautions."
+  },
+  {
+   "q": "The single most dangerous misunderstanding about a switched-off Overhead Equipment (OHE) is:",
+   "options": [
+    "Believing it needs a Permit to Work (PTW)",
+    "Believing switched off means safe to touch — without earthing it may still be live or become live",
+    "Believing the Person-in-Charge (PIC) is in charge",
+    "Believing Operations Control Centre (OCC) must be informed"
+   ],
+   "answer": 1,
+   "explain": "Isolation can fail or be reversed; earthing is what proves and keeps the wire dead. Treat Overhead Equipment (OHE) as live until earthed and permitted."
+  },
+  {
+   "q": "A Permit to Work (PTW) for work on or near the track may be received only by:",
+   "options": [
+    "Any worker present at the site",
+    "A competent, authorised person (the Person-in-Charge) who has been briefed and is named for that work",
+    "The youngest member of the team",
+    "A contractor's supervisor from another site"
+   ],
+   "answer": 1,
+   "explain": "The Permit to Work (PTW) transfers a defined safety responsibility to one named, competent person. If anyone could receive it, nobody would truly own the safety of the worksite."
+  },
+  {
+   "q": "Even after a section is isolated at the switching points, local earths are applied at the worksite itself mainly to protect against:",
+   "options": [
+    "Rain",
+    "Accidental re-energisation and induced voltage from adjacent live sections appearing at the work point",
+    "Dust on the wire",
+    "Theft of the wire"
+   ],
+   "answer": 1,
+   "explain": "Isolation happens far away; danger can still reach the worksite through a switching mistake or induction from a neighbouring live section. A local earth at the work point clamps the wire to earth potential exactly where people are touching it."
+  },
+  {
+   "q": "An isolated Overhead Equipment (OHE) section running parallel to a live section can still show a dangerous voltage because of:",
+   "options": [
+    "Static from passengers' clothes",
+    "Electromagnetic induction from the adjacent live conductor",
+    "The colour of the wire",
+    "Battery leakage from trains"
+   ],
+   "answer": 1,
+   "explain": "Parallel live conductors induce voltage in a dead conductor — this is why 'switched off' is never treated as 'safe' until the section is earthed at the worksite."
+  },
+  {
+   "q": "Engineering possessions are normally planned and published in advance (for example in a weekly possession programme) mainly so that:",
+   "options": [
+    "Staff can choose their favourite shifts",
+    "Operations, maintenance and power-supply teams can coordinate traffic regulation, isolation and manpower before the night of the work",
+    "The public can watch the work",
+    "No approval is needed later"
+   ],
+   "answer": 1,
+   "explain": "A possession touches trains, power, signals and people at once. Publishing it in advance lets every team plan around the same window — an unplanned possession is an emergency exception, not the method."
+  },
+  {
+   "q": "Before the Person-in-Charge hands back a possession, he must account for:",
+   "options": [
+    "Only the senior staff",
+    "Every person, and also tools and materials — nothing and nobody may be left on or near the line",
+    "Only the machines",
+    "Only the paperwork"
+   ],
+   "answer": 1,
+   "explain": "Hand-back certifies the line is fit for trains. A forgotten tool on the track or a missing worker is as dangerous as unfinished work, so people, tools and materials are all counted and confirmed clear."
+  }
+ ]
+}

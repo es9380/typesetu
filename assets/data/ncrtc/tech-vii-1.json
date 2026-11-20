@@ -1,0 +1,393 @@
+{
+ "id": "tech-vii-1",
+ "category": "technical",
+ "group": "Unit vii — Analytical & Decision-Making Skills",
+ "title": "Interpreting Operational Data & Identifying Abnormal Conditions",
+ "questions": [
+  {
+   "q": "Which of these are the main sources a controller reads together to interpret operations?",
+   "options": [
+    "Automatic Train Supervision (ATS)/train graph, headway and dwell data, fault/alarm lists, passenger load data and weather reports",
+    "Only the timetable book",
+    "Only passenger complaints",
+    "Only the previous day's newspaper"
+   ],
+   "answer": 0,
+   "explain": "No single screen tells the truth. Controllers read the train graph, alarms, loads and weather together."
+  },
+  {
+   "q": "On a train graph, the horizontal and vertical axes represent:",
+   "options": [
+    "Speed and distance",
+    "Time and stations/distance",
+    "Passengers and fare",
+    "Trains and drivers"
+   ],
+   "answer": 1,
+   "explain": "Time runs across, stations/distance run down. Each train is a line moving through both."
+  },
+  {
+   "q": "On a train graph, a train line that starts flattening (becoming more horizontal) indicates:",
+   "options": [
+    "The graph paper is faulty",
+    "The train is speeding up",
+    "Delay is building — the train is spending more time without covering distance",
+    "The train has reached the depot"
+   ],
+   "answer": 2,
+   "explain": "A steady slope means on-time running. Flattening means time is passing without progress — delay is growing."
+  },
+  {
+   "q": "Crossing points on a train graph show:",
+   "options": [
+    "Where tickets are checked",
+    "Where the graph is folded",
+    "Where passengers change trains",
+    "Where trains meet or pass each other"
+   ],
+   "answer": 3,
+   "explain": "Where lines cross, trains meet or pass. Controllers watch these points when re-planning a disturbed service."
+  },
+  {
+   "q": "A 'knock-on delay' means:",
+   "options": [
+    "A delay only at the depot",
+    "A delay caused by passengers knocking on doors",
+    "One late train delaying the trains behind it through loss of headway",
+    "A delay announced twice"
+   ],
+   "answer": 2,
+   "explain": "One late train eats the gap of the next. Spotting the knock-on pattern early is a core controller skill."
+  },
+  {
+   "q": "The service runs at 5-minute headway. One train loses 6 minutes. The correct reading is:",
+   "options": [
+    "The train has consumed more than one full headway slot, so followers will be delayed unless regulated",
+    "Only that train will be late, followers are unaffected",
+    "Headway will automatically increase",
+    "Nothing serious — 6 minutes is small"
+   ],
+   "answer": 0,
+   "explain": "Six minutes lost against a 5-minute headway means over one full slot gone. Without regulation, the delay passes backwards."
+  },
+  {
+   "q": "An 'abnormal condition' is best defined as:",
+   "options": [
+    "A new timetable",
+    "A train running exactly on time",
+    "Any condition on a festival day",
+    "Any deviation from the expected state — an alarm active, a parameter out of range, a train not responding, or a report that does not match the display"
+   ],
+   "answer": 3,
+   "explain": "Abnormal = deviation from expected. The skill is noticing the one value that does not fit the pattern."
+  },
+  {
+   "q": "An alarm sounds in Operations Control Centre (OCC). Before verification, the alarm must be treated as:",
+   "options": [
+    "A nuisance to be cancelled",
+    "Real, until verified false",
+    "Someone else's problem",
+    "False, to avoid panic"
+   ],
+   "answer": 1,
+   "explain": "Treat every alarm as real until verified false. Cancel-and-forget has caused real accidents."
+  },
+  {
+   "q": "One sensor shows a section occupied, but the driver of the only train there reports the section clear and Closed-Circuit Television (CCTV) shows it empty. The sound approach is:",
+   "options": [
+    "Cross-check independent sources — a single source can lie (failed sensor); two or more independent sources agreeing confirm the picture, while following safety procedure",
+    "Trust the driver blindly and ignore the sensor",
+    "Delete the alarm from the list",
+    "Trust the sensor blindly and stop the railway for the day"
+   ],
+   "answer": 0,
+   "explain": "One source can fail. Closed-Circuit Television (CCTV) + driver report + occupancy together build the true picture — but procedure still governs the response."
+  },
+  {
+   "q": "Which pattern signals a developing system problem rather than bad luck?",
+   "options": [
+    "One door fault in a month",
+    "The same door fault recurring three times in a few days",
+    "A single late arrival in rain",
+    "One passenger complaint"
+   ],
+   "answer": 1,
+   "explain": "Recurrence is data. The same fault again and again means a system problem needing analysis, not repeated resets."
+  },
+  {
+   "q": "The word 'threshold' in operational data means:",
+   "options": [
+    "The maximum speed of the train",
+    "The station entrance",
+    "The limit value which, when crossed, triggers a defined action",
+    "The average value of the day"
+   ],
+   "answer": 2,
+   "explain": "Threshold = the trigger limit. Good controllers act when a value crosses its threshold, not after damage is done."
+  },
+  {
+   "q": "A station's dwell times have been rising slowly day by day in peak hours. This 'trend' most likely indicates:",
+   "options": [
+    "The data system is broken",
+    "Passengers are becoming faster",
+    "Nothing — daily figures are random",
+    "A developing problem at that station that will surface as delays if not investigated"
+   ],
+   "answer": 3,
+   "explain": "Trend is direction over time. A quietly rising dwell time is tomorrow's delay announcing itself today."
+  },
+  {
+   "q": "Passenger load (Automatic Fare Collection (AFC)) data is operationally useful mainly because it:",
+   "options": [
+    "Counts staff attendance",
+    "Shows ticket colours",
+    "Helps predict crowding and plan capacity and regulation where people actually are",
+    "Replaces the train graph"
+   ],
+   "answer": 2,
+   "explain": "Load data tells the controller where the people are — essential for crowding control and service planning."
+  },
+  {
+   "q": "Weather reports matter to operations data interpretation because:",
+   "options": [
+    "Rain, fog, heat and storms change adhesion, visibility, failures and passenger behaviour — the same numbers mean different things in different weather",
+    "Weather decides the timetable colour",
+    "They fill the notice board",
+    "Drivers like weather news"
+   ],
+   "answer": 0,
+   "explain": "Data is read in context. A wet, stormy day changes what a delay or fault pattern is likely to become."
+  },
+  {
+   "q": "A train repeatedly loses about two minutes at the same station every trip. The best interpretation is:",
+   "options": [
+    "All trains everywhere are slowing down",
+    "The timetable is wrong everywhere",
+    "The driver is careless",
+    "There is a location-specific cause at that station — platform, door, crowd or equipment — worth investigating"
+   ],
+   "answer": 3,
+   "explain": "Same train, same place, same loss — the pattern points at the place, not the person. Investigate the station-specific cause."
+  },
+  {
+   "q": "During analysis of a running incident, the FIRST questions are:",
+   "options": [
+    "Who is to blame and who pays?",
+    "What failed, what is it affecting, what happens next if nothing is done, and what is the safest containment?",
+    "When will the media call?",
+    "Whose shift is ending?"
+   ],
+   "answer": 1,
+   "explain": "Present risk first: what failed, what it affects, what happens next, safest containment. Blame belongs to the later enquiry."
+  },
+  {
+   "q": "A single alarm among hundreds of normal indications is easy to miss. The professional defence is:",
+   "options": [
+    "Structured scanning of indications in a set order, so the one abnormal value is systematically caught",
+    "Reading only the largest screen",
+    "Waiting for someone to phone",
+    "Hoping alarms are rare"
+   ],
+   "answer": 0,
+   "explain": "Skill is a system, not luck. Structured scanning makes the abnormal value stand out every time."
+  },
+  {
+   "q": "Two independent indications agree that a train has stopped mid-section, while the train's own report is delayed. Operations Control Centre (OCC) should:",
+   "options": [
+    "Wait indefinitely for the train's report",
+    "Act on the confirmed picture — protect the section and try to contact the train — while continuing verification",
+    "Assume the train is in the depot",
+    "Cancel the indications as faulty"
+   ],
+   "answer": 1,
+   "explain": "Two agreeing independent sources confirm the picture enough to protect. Protection never waits for perfect information."
+  },
+  {
+   "q": "Headway data is best used to:",
+   "options": [
+    "Measure platform length",
+    "Count passengers",
+    "See whether the gap between trains is healthy, shrinking or growing — and regulate before gaps collapse",
+    "Choose the train colour"
+   ],
+   "answer": 2,
+   "explain": "Headway is the pulse of the service. A shrinking or uneven headway warns of bunching and collapse ahead."
+  },
+  {
+   "q": "A fault list shows many minor alarms cleared quickly during the day. The analytical value of this list is:",
+   "options": [
+    "It proves staff were busy",
+    "It replaces the incident report",
+    "None — cleared alarms are finished",
+    "Patterns: repeated minor alarms in one system often precede a major failure of that system"
+   ],
+   "answer": 3,
+   "explain": "Minor alarms are early warnings in writing. Reading their pattern is how major failures get prevented."
+  },
+  {
+   "q": "An indication conflicts with another indication about the same train's position. The controller's first duty is:",
+   "options": [
+    "Ignore both",
+    "Pick the more convenient one",
+    "Treat the situation as not yet confirmed — protect movements as per procedure and verify from an independent source",
+    "Announce the train's position to passengers confidently"
+   ],
+   "answer": 2,
+   "explain": "Conflicting data = unconfirmed data. Protect first, verify from an independent source, then act on facts."
+  },
+  {
+   "q": "Why should timetable-versus-actual be read together with fault history rather than alone?",
+   "options": [
+    "Delay figures show the effect; fault history shows the likely cause — together they support a correct decision",
+    "Rules require two screens",
+    "It impresses supervisors",
+    "It makes the report longer"
+   ],
+   "answer": 0,
+   "explain": "Effect without cause leads to wrong regulation. Reading data together is the difference between reacting and understanding."
+  },
+  {
+   "q": "A platform is reported overcrowded while the train graph shows a 15-minute gap in service. Combining both, the controller understands:",
+   "options": [
+    "The crowd is imagining the gap",
+    "Only announcements are needed",
+    "Two unrelated facts",
+    "The gap is feeding the crowd, and the crowd will slow the next train's dwell — a worsening cycle needing regulation and crowd control together"
+   ],
+   "answer": 3,
+   "explain": "Level-2 understanding: facts combine into a cycle. The response must attack both the gap and the crowd."
+  },
+  {
+   "q": "Which is an example of an abnormal condition needing response?",
+   "options": [
+    "A train departing on time",
+    "A parameter reading outside its normal range on Supervisory Control And Data Acquisition (SCADA)",
+    "A routine defect entry for the depot",
+    "A scheduled maintenance notice"
+   ],
+   "answer": 1,
+   "explain": "A parameter out of range is a deviation from the expected state — the definition of abnormal — and must be verified and acted on."
+  },
+  {
+   "q": "After noticing an abnormal reading, the next step is to:",
+   "options": [
+    "Verify it — check a second source or get a field report — and assess what it affects",
+    "Wait for the shift to change",
+    "Reset the display",
+    "Announce it as an accident"
+   ],
+   "answer": 0,
+   "explain": "Notice → verify → assess impact. Acting on unverified data, or ignoring it, are both failures."
+  },
+  {
+   "q": "A train does not respond to calls and its graph line has stopped moving. This combination most likely indicates:",
+   "options": [
+    "The train is early",
+    "A stopped train with a possible communication or power problem — treat as an incident and protect",
+    "The graph is being redrawn",
+    "The driver is on a break"
+   ],
+   "answer": 1,
+   "explain": "No response + no movement = treat as real. Protect the section and establish facts through other sources."
+  },
+  {
+   "q": "Reading operational data 'by exception' means:",
+   "options": [
+    "Reading only exceptions written by staff",
+    "Reading every value equally",
+    "Focusing attention on values that deviate from normal, while normal values confirm the system is healthy",
+    "Ignoring all alarms"
+   ],
+   "answer": 2,
+   "explain": "Hundreds of values are normal; the controller's eye is trained on the exceptions — the deviations that carry risk."
+  },
+  {
+   "q": "A heat wave is forecast and rail temperatures are rising. Interpreting this data early allows the controller to:",
+   "options": [
+    "Cancel the forecast",
+    "Blame the weather department later",
+    "Do nothing until a failure occurs",
+    "Anticipate speed restrictions, equipment stress and passenger needs before they become incidents"
+   ],
+   "answer": 3,
+   "explain": "Good interpretation is forward-looking: today's weather data is tomorrow's operating condition, planned for in advance."
+  },
+  {
+   "q": "Which single habit most improves a controller's data interpretation?",
+   "options": [
+    "Trusting the first report received",
+    "Memorising yesterday's timetable",
+    "Regularly comparing planned versus actual and asking 'why' for every growing gap",
+    " Watching only the alarm screen"
+   ],
+   "answer": 2,
+   "explain": "Planned vs actual, with a 'why' for every gap — that daily discipline is what builds the trained eye."
+  },
+  {
+   "q": "A station reports 'all normal' but the Automatic Train Supervision (ATS) shows its train held for 6 minutes. The inconsistency itself means:",
+   "options": [
+    "The picture is not confirmed — one of the sources is wrong, and Operations Control Centre (OCC) must reconcile them before trusting either",
+    "Automatic Train Supervision (ATS) is always wrong",
+    "Nothing — 6 minutes is normal",
+    "The station is lying"
+   ],
+   "answer": 0,
+   "explain": "A report inconsistent with the display is itself an abnormal condition. Reconcile the sources; never build decisions on a contradiction."
+  },
+  {
+   "q": "The timetable gives a train some 'recovery time' (extra minutes built into the schedule beyond the pure running and stop time). Reading the data, this buffer exists so that:",
+   "options": [
+    "Drivers can take longer breaks",
+    "Small delays can be absorbed on the way, so a slightly late train can still reach its destination on time",
+    "Trains can run slower for comfort",
+    "The graph looks neat"
+   ],
+   "answer": 1,
+   "explain": "Recovery time is the timetable's shock absorber. A controller who knows where the buffer sits knows which late trains will heal themselves and which need active regulation."
+  },
+  {
+   "q": "Modern trains estimate how crowded each coach is mainly from:",
+   "options": [
+    "The driver's guess",
+    "The coach's weight, sensed through the suspension (air springs) — more passengers means measurably more weight",
+    "The number of tickets sold that day",
+    "Camera counting at every door"
+   ],
+   "answer": 1,
+   "explain": "Passenger load data often comes from the train itself: suspension pressure rises with weight. Controllers use it to spot crush loading before a station reports it."
+  },
+  {
+   "q": "In an alarm flood — dozens of alarms appearing together after one disturbance — the skilled way to find the real cause is to look first at:",
+   "options": [
+    "The newest alarm on the screen",
+    "The first (earliest) alarm in time order — the 'first-out' — because later alarms are usually its effects",
+    "The alarm with the loudest sound",
+    "Only the red-coloured alarms"
+   ],
+   "answer": 1,
+   "explain": "Alarm floods are cascades: one root event triggers many followers. Reading in time order from the first-out alarm separates the cause from its noise."
+  },
+  {
+   "q": "One train's energy consumption per trip has quietly risen about 15% over a week while others on the same duty are unchanged. The data most likely points to:",
+   "options": [
+    "Costlier electricity",
+    "A developing defect on that train — for example a dragging brake or a traction problem — needing inspection",
+    "Passengers charging more phones",
+    "A timetable change"
+   ],
+   "answer": 1,
+   "explain": "Energy is a health signal. One train steadily using more power than its sisters is working against something — the data has found a defect before the failure has."
+  },
+  {
+   "q": "A line's 'average delay' for the day is only 1 minute, yet passengers complain the evening peak was chaos. The data lesson is:",
+   "options": [
+    "Passengers exaggerate",
+    "Averages hide peaks — the controller must also read the worst-period figures, because a good daily average can cover a collapsed peak hour",
+    "The complaint register is faulty",
+    "Only averages matter for reports"
+   ],
+   "answer": 1,
+   "explain": "Twenty-two good hours can bury two terrible ones in an average. Reading the peak separately is what turns data into the passengers' real experience."
+  }
+ ]
+}

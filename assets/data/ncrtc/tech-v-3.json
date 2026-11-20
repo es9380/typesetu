@@ -1,0 +1,393 @@
+{
+ "id": "tech-v-3",
+ "category": "technical",
+ "group": "Unit v — Emergency & Contingency Management",
+ "title": "Medical Emergency & Passenger Evacuation",
+ "questions": [
+  {
+   "q": "A passenger collapses inside a moving train. The operator's first action is to:",
+   "options": [
+    "Stop the train immediately between stations",
+    "Inform Operations Control Centre (OCC) so that the station where help will wait is ready with first aid and a wheelchair/stretcher",
+    "Ask fellow passengers to complete the treatment",
+    "Speed up to reach the final destination"
+   ],
+   "answer": 1,
+   "explain": "Advance information turns a platform into a prepared medical point — stopping in a section traps the patient."
+  },
+  {
+   "q": "In a medical emergency on a train, the patient is usually taken off at:",
+   "options": [
+    "Whichever station comes first, ready or not",
+    "The depot, at the end of the trip",
+    "The station where medical help has been arranged to meet the train",
+    "The station nearest the passenger's home"
+   ],
+   "answer": 2,
+   "explain": "Operations Control Centre (OCC) balances patient urgency against trapping a full train in a section — help waits at a chosen station."
+  },
+  {
+   "q": "Who arranges the ambulance for a medical emergency reported from a train?",
+   "options": [
+    "Operations Control Centre (OCC)/station control, to meet the train at the designated station",
+    "The patient himself, after detraining",
+    "The train operator, from the cab phone directory",
+    "The catering staff on board"
+   ],
+   "answer": 0,
+   "explain": "Coordination is centralised — the ambulance is sent to the right station before the train arrives."
+  },
+  {
+   "q": "What should the receiving station keep ready at the exact coach position?",
+   "options": [
+    "A ticket refund counter",
+    "The station master's office keys",
+    "Refreshments for the patient",
+    "Wheelchair, stretcher and the first-aid team"
+   ],
+   "answer": 3,
+   "explain": "Knowing the coach position saves minutes — help waits at the door the patient will use."
+  },
+  {
+   "q": "First aid for a collapsed passenger should be given by:",
+   "options": [
+    "Any passenger who volunteers, however untrained",
+    "The youngest passenger available",
+    "Trained staff or first responders, until medical help takes over",
+    "Nobody — first aid is only for hospitals"
+   ],
+   "answer": 2,
+   "explain": "Trained first aid bridges the gap until the ambulance crew arrives."
+  },
+  {
+   "q": "A train carrying a serious patient is approaching the designated station. The train should be held there:",
+   "options": [
+    "Only as long as needed to hand the patient over safely",
+    "For a fixed one hour in every case",
+    "Until the patient fully recovers on board",
+    "Not at all — the patient must jump quickly"
+   ],
+   "answer": 0,
+   "explain": "The hold is measured by the handover, not by a fixed rule — patient first, but the line must flow again."
+  },
+  {
+   "q": "When a patient is handed over to medical help, staff should pass on:",
+   "options": [
+    "The patient's ticket for refund",
+    "A note of what happened, when, and what first aid was given",
+    "The train's delay statement",
+    "Nothing — the doctors will guess"
+   ],
+   "answer": 1,
+   "explain": "A written note of events and treatment given helps the medical team continue care without gaps."
+  },
+  {
+   "q": "Which passenger evacuation triggers are correct for a station?",
+   "options": [
+    "Rain outside the station",
+    "A train running five minutes late",
+    "A passenger losing a ticket",
+    "Fire, smoke, bomb threat or security direction, structural emergency, or a crowd emergency"
+   ],
+   "answer": 3,
+   "explain": "Evacuation is for threats to life or safety — not for weather or routine delays."
+  },
+  {
+   "q": "The first announcement in a station evacuation must clearly state:",
+   "options": [
+    "What has happened, where to go, and what NOT to do",
+    "The commercial offers in station shops",
+    "The full history of the incident",
+    "Only the station name, repeatedly"
+   ],
+   "answer": 0,
+   "explain": "People act on three things: the problem, the route, and the forbidden actions (like using lifts in a fire)."
+  },
+  {
+   "q": "During a station evacuation, after opening exits, staff must also:",
+   "options": [
+    "Lock all side rooms immediately",
+    "Sweep toilets and side rooms so nobody is left behind",
+    "Check the ticket gates' cash",
+    "Switch off all station lighting"
+   ],
+   "answer": 1,
+   "explain": "A sweep finds the person in the toilet or rest room who never heard the announcement."
+  },
+  {
+   "q": "Passengers with disabilities or limited mobility are evacuated using:",
+   "options": [
+    "The normal crowd flow without any help",
+    "Lifts, in all circumstances including fire",
+    "Evacuation chairs and refuge points, with staff assistance",
+    "Goods trolleys from the parcels office"
+   ],
+   "answer": 2,
+   "explain": "Evacuation chairs and refuge points exist exactly for those who cannot use stairs quickly."
+  },
+  {
+   "q": "The 'all-clear' after a station evacuation can be given only by:",
+   "options": [
+    "The authorised command, after checks and headcount are complete",
+    "Any staff member who feels it is safe",
+    "The passengers waiting outside",
+    "The operator of the next arriving train"
+   ],
+   "answer": 0,
+   "explain": "Re-entry is a formal decision — it follows accounting, not feelings."
+  },
+  {
+   "q": "In a crowd emergency on a platform, the very first control action is to:",
+   "options": [
+    "Push the crowd towards the platform edge",
+    "Open more entry gates to relieve the gates",
+    "Ask passengers to run to the trains",
+    "Stop further entry into the station/platform"
+   ],
+   "answer": 3,
+   "explain": "Adding more people to a crush makes it worse — entry stops before anything else."
+  },
+  {
+   "q": "A platform is dangerously crowded at one end. Relief should begin at:",
+   "options": [
+    "The emptiest point first",
+    "The densest point first",
+    "The ticket counter",
+    "The station entrance only"
+   ],
+   "answer": 1,
+   "explain": "Pressure is relieved where it can hurt people — the densest point is the danger point."
+  },
+  {
+   "q": "During an evacuation, a crowd flow must never be:",
+   "options": [
+    "Pushed against an incoming evacuation flow moving the opposite way",
+    "Guided by staff at junctions",
+    "Slowed at narrow gates",
+    "Counted at the assembly point"
+   ],
+   "answer": 0,
+   "explain": "Opposing flows lock and crush — evacuation routes are one-direction systems."
+  },
+  {
+   "q": "A person has fallen onto the track from a platform. Staff should first:",
+   "options": [
+    "Jump onto the track at once to pull him out",
+    "Shout to the person to climb up unaided",
+    "Operate the emergency stop facility where provided and inform Operations Control Centre (OCC) to stop trains and arrange power protection",
+    "Film the incident for the enquiry"
+   ],
+   "answer": 2,
+   "explain": "Stop the danger first — trains and power. Track entry for rescue needs authority and protection."
+  },
+  {
+   "q": "Why must nobody enter the track for a rescue without authority and power protection?",
+   "options": [
+    "The track is cleaned only at night",
+    "Rescue is a police-only job in all cases",
+    "The timetable does not allow it",
+    "A rescuer on a live track becomes a second casualty"
+   ],
+   "answer": 3,
+   "explain": "Unprotected rescue attempts multiply casualties — protection first, then rescue."
+  },
+  {
+   "q": "A medical emergency occurs on a crowded platform. Along with first aid, staff must:",
+   "options": [
+    "Clear space around the patient and inform Operations Control Centre (OCC)/station control for an ambulance",
+    "Move the patient through the crowd to the exit at once",
+    "Announce the patient's name and illness to everyone",
+    "Stop all trains in the network for the day"
+   ],
+   "answer": 0,
+   "explain": "Space, first aid and an arranged ambulance — the platform version of the same system."
+  },
+  {
+   "q": "A passenger feels unwell and dizzy on a train but is conscious. The sensible course is:",
+   "options": [
+    "Ignore it as it is not an emergency at all",
+    "Inform Operations Control Centre (OCC), seat and monitor him, and detrain him at a station where staff can help if needed",
+    "Stop the train in the section immediately",
+    "Ask him to stand near the door for air"
+   ],
+   "answer": 1,
+   "explain": "Not every case needs a section stop — information, monitoring and a prepared station cover most."
+  },
+  {
+   "q": "During a passenger evacuation, who guides flows at stairs, gates and junctions?",
+   "options": [
+    "Only the station master, alone",
+    "Passengers who know the station well",
+    "Positioned staff at each key point",
+    "Nobody — crowds sort themselves out"
+   ],
+   "answer": 2,
+   "explain": "Guidance at choke points is what keeps an evacuation moving instead of jamming."
+  },
+  {
+   "q": "An evacuation is ordered due to a bomb threat. Passengers should be moved:",
+   "options": [
+    "As directed by security/police, away from the threatened area, without touching suspicious objects",
+    "Towards the object to identify it",
+    "Only after their tickets are checked",
+    "Into the nearest train for shelter"
+   ],
+   "answer": 0,
+   "explain": "Security threats run on police direction — distance and not touching anything are the life-savers."
+  },
+  {
+   "q": "At the assembly point after evacuation, the essential activity is:",
+   "options": [
+    "Distributing refreshments first",
+    "Allowing everyone to leave immediately",
+    "Collecting feedback forms",
+    "Headcount — confirming every person is accounted for"
+   ],
+   "answer": 3,
+   "explain": "The headcount is the proof of a completed evacuation."
+  },
+  {
+   "q": "A wheelchair user is on an upper floor during a station fire evacuation. The correct method is:",
+   "options": [
+    "Carry him down in his wheelchair by two passengers",
+    "Move him to a refuge point and evacuate with an evacuation chair by trained staff",
+    "Use the lift as a special exception",
+    "Leave him and inform the fire brigade of the floor only"
+   ],
+   "answer": 1,
+   "explain": "Refuge points and evacuation chairs are the planned method — lifts stay forbidden in fire."
+  },
+  {
+   "q": "Why are emergency gates opened during a station evacuation instead of using only the normal gates?",
+   "options": [
+    "Emergency gates are closer to the shops",
+    "Normal gates must be preserved for revenue",
+    "Normal gates are too narrow and slow for a full crowd leaving at once",
+    "Emergency gates are opened for practice only"
+   ],
+   "answer": 2,
+   "explain": "Evacuation speed depends on exit width — emergency gates remove the bottleneck."
+  },
+  {
+   "q": "A train is held at a station for a medical case and other passengers grow restless. The crew should:",
+   "options": [
+    "Keep them informed — reason for the hold and expected delay",
+    "Refuse to give any reason",
+    "Blame the sick passenger by name",
+    "Ask restless passengers to leave the station"
+   ],
+   "answer": 0,
+   "explain": "Information keeps a held train calm — the same rule as in a train failure."
+  },
+  {
+   "q": "A passenger is found unconscious in a station toilet during a fire evacuation sweep. Staff should:",
+   "options": [
+    "Lock the toilet and continue the sweep",
+    "Wait for him to wake up",
+    "Note it for the end-of-shift report only",
+    "Raise the alarm, move him to safety with help if possible, and report his condition and location"
+   ],
+   "answer": 3,
+   "explain": "The sweep exists to find exactly this person — he is rescued and reported, never left."
+  },
+  {
+   "q": "In a medical emergency, why does Operations Control Centre (OCC) prefer detraining the patient at a planned station rather than stopping in the section?",
+   "options": [
+    "Section stops are against the timetable only",
+    "Patients recover faster at stations",
+    "In a section there is no platform, no stretcher access and no ambulance reach",
+    "Ambulances are not allowed near tracks by law in any case"
+   ],
+   "answer": 2,
+   "explain": "Everything a patient needs exists at a station and nothing exists in a section."
+  },
+  {
+   "q": "Which is a correct pairing for evacuation assistance priority?",
+   "options": [
+    "Season-ticket holders — first",
+    "Children, elderly, pregnant women and persons with disabilities — first",
+    "Passengers with the largest luggage — first",
+    "Staff families — first"
+   ],
+   "answer": 1,
+   "explain": "Vulnerability, not ticket class, decides who is helped first."
+  },
+  {
+   "q": "After a station evacuation ends, the incident record must show:",
+   "options": [
+    "Trigger, actions taken, headcount result and the all-clear authority",
+    "Only the number of trains delayed",
+    "The names of passengers who complained",
+    "The day's weather report"
+   ],
+   "answer": 0,
+   "explain": "The record proves the evacuation was completed and accounted — part of the safety loop."
+  },
+  {
+   "q": "A serious medical case is reported from a train two stations away from a major hospital interchange. Operations Control Centre (OCC) will most likely:",
+   "options": [
+    "Order an immediate section stop",
+    "Cancel the patient's journey at the next small station without help",
+    "Arrange the ambulance and team at the interchange station and direct the train there",
+    "Ask the patient to travel to the hospital by himself later"
+   ],
+   "answer": 2,
+   "explain": "Help is placed where it is strongest — the train goes to the arranged medical point."
+  },
+  {
+   "q": "In serious injuries, the 'golden hour' idea means the railway's medical response should aim at:",
+   "options": [
+    "Completing all paperwork within one hour",
+    "Getting the patient to proper medical care as fast as possible — outcomes are best when treatment starts within the first hour",
+    "Waiting one hour to see if the patient recovers",
+    "Holding the train for one full hour"
+   ],
+   "answer": 1,
+   "explain": "The first hour after a serious injury is when quick treatment saves the most lives. Everything — first aid, stretcher, ambulance — is arranged to beat that clock."
+  },
+  {
+   "q": "A passenger is found not breathing and with no pulse. A trained staff member or trained bystander should immediately start:",
+   "options": [
+    "Giving the patient water",
+    "Cardiopulmonary Resuscitation (CPR) — chest compressions — and continue until medical help takes over",
+    "Moving the patient to a seat",
+    "Waiting silently for the ambulance"
+   ],
+   "answer": 1,
+   "explain": "Cardiopulmonary Resuscitation (CPR) keeps blood moving to the brain when the heart has stopped. Starting it at once, and not stopping till professionals arrive, is the life-saving action."
+  },
+  {
+   "q": "In most Indian states, the free government ambulance service for a medical emergency is summoned on the number:",
+   "options": [
+    "100",
+    "108",
+    "101",
+    "139"
+   ],
+   "answer": 1,
+   "explain": "108 is the emergency ambulance number in most Indian states (112 is the combined emergency number). Stations keep these numbers ready — searching for them during an emergency wastes the golden time."
+  },
+  {
+   "q": "A patient with a suspected spinal (back or neck) injury should generally:",
+   "options": [
+    "Be carried quickly by his arms and legs",
+    "Not be moved except by trained medical staff with proper support, unless he is in immediate danger where he lies",
+    "Be made to sit up and drink water",
+    "Be walked to the first-aid room to keep him awake"
+   ],
+   "answer": 1,
+   "explain": "Moving a spinal injury wrongly can cause permanent paralysis. Keep the patient still and supported, protect him from further harm, and let the trained medical team shift him."
+  },
+  {
+   "q": "Passengers are being detrained onto the track because the train cannot move. Before anyone steps down, the most important protection is:",
+   "options": [
+    "Checking that all passengers have their luggage",
+    "Stopping or cautioning trains on the adjacent (other) line and posting staff to guide passengers to a safe place clear of all tracks",
+    "Switching off the station lights",
+    "Announcing the train's next departure time"
+   ],
+   "answer": 1,
+   "explain": "The biggest danger in track detrainment is a train on the other line. That line is protected first, and passengers are led along a safe route away from every track."
+  }
+ ]
+}
