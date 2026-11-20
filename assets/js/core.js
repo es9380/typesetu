@@ -1042,6 +1042,59 @@ function practiceLine(s){
   if(top) return top;
   return "Solid practice run — accuracy first, and speed follows.";
 }
+/* ===== Push 5 — Eku motivation overlay (v8) =====
+   After an exam-context finish on this screen (HCM hub mock, HCM Custom
+   Test, Real Exam Mode) the result is computed and rendered as usual, then
+   held (.motivHold) behind this overlay for ~3.8s; a tap skips to it.
+   Practice finishes never call this. exams.js calls it for the exam
+   engine's Custom Tests only (hub mocks there go straight to results). */
+var MOTIV_NAMES=["Sonu beta","Moti","Eku","Ekta"];
+var MOTIV_GOOD=[
+  "ese hi laga rah — sab ho jaega",
+  "tu kar sakti hai — tension nahi lene ka",
+  "sab sahi hai — trust the process",
+  "mehnat kabhi waste nahi jaati",
+  "rukna nahi hai — bas chalte rehna hai",
+  "bola tha na — ho gaya! ese hi roz thoda thoda",
+  "tu apne sapne se bas kuch mock door hai",
+  "dheere dheere hi sahi — race teri hi hai",
+  "aaj ka mock kal ki seat pakki kar raha hai",
+  "khud pe bharosa rakh — baaki sab ho jaega"
+];
+var MOTIV_KEEP=[
+  "ek mock se kuch decide nahi hota — agla wala tera hai",
+  "girna allowed hai, rukna nahi",
+  "aaj speed kam hai, kal nahi hogi — practice jaari rakh",
+  "galtiyan hi sikhati hain — tu seekh rahi hai",
+  "haar tab hoti hai jab ruk jaate hain — tu rukne wali nahi",
+  "thoda sa aur — bas thoda sa aur roz"
+];
+var motivTimer=null, motivReveal=null, motivShown=false;
+function motivPick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+function showMotivation(qualified, revealFn){
+  var ov=document.getElementById("motivOverlay");
+  if(!ov){ if(typeof revealFn==="function") revealFn(); return; }
+  if(motivShown) hideMotivation(true); /* never strand a held result */
+  var nameEl=document.getElementById("motivName"), msgEl=document.getElementById("motivMsg");
+  if(nameEl) nameEl.textContent=motivPick(MOTIV_NAMES);
+  if(msgEl) msgEl.textContent=motivPick(qualified? MOTIV_GOOD : MOTIV_KEEP);
+  motivReveal=(typeof revealFn==="function")? revealFn : null;
+  motivShown=true;
+  ov.classList.add("show"); ov.setAttribute("aria-hidden","false");
+  var line=ov.querySelector(".motivLine");
+  if(line){ line.style.animation="none"; void line.offsetWidth; line.style.animation=""; }
+  motivTimer=setTimeout(function(){ hideMotivation(true); },3800);
+}
+function hideMotivation(runReveal){
+  var ov=document.getElementById("motivOverlay");
+  if(motivTimer){ clearTimeout(motivTimer); motivTimer=null; }
+  if(ov){ ov.classList.remove("show"); ov.setAttribute("aria-hidden","true"); }
+  motivShown=false;
+  var fn=motivReveal; motivReveal=null;
+  if(runReveal && fn) fn();
+}
+var motivOvEl=document.getElementById("motivOverlay");
+if(motivOvEl) motivOvEl.addEventListener("click",function(){ hideMotivation(true); });
 function finishTest(){
   if(state.finished) return; state.finished=true;
   if(typeof updateNumHint==="function") updateNumHint();
@@ -1218,6 +1271,17 @@ function finishTest(){
   var fxEl=document.getElementById("rForensics");
   if(fxEl) fxEl.innerHTML= entry.telemetry? forensicsHtml(entry.telemetry,{engine:"E3",examId:"hcm",netWpm:s.net,grossWpm:s.gross,acc:s.acc,chars:s.pos,completion: state.target.length? (s.pos/state.target.length*100):0, wordsTyped:s.words}) : "";
   rb.scrollIntoView({behavior:"smooth",block:"nearest"});
+  /* Push 5: exam-context finishes hold the rendered result behind the
+     motivation overlay (practice finishes never reach this branch). */
+  if(isExamCtx()){
+    rb.classList.add("motivHold");
+    showMotivation(qual, function(){
+      rb.classList.remove("motivHold");
+      /* the ring sweep ran while held — reset and sweep again on reveal */
+      rb.querySelectorAll(".ringFg").forEach(function(c){ c.style.strokeDashoffset="201.06"; });
+      if(typeof animateRings==="function") animateRings(rb);
+    });
+  }
 }
 
 function activatePanel(name){
