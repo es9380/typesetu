@@ -121,11 +121,30 @@ function renderQuestion(){
   el("ncPalSummary").textContent="Attempted "+(qs.length-un)+" · Left "+un;
 }
 
+function ncConfirm(msg){
+  return new Promise(function(resolve){
+    var ov=document.createElement("div");
+    ov.className="ncModalOv";
+    ov.innerHTML='<div class="card ncModal"><p>'+esc(msg).replace(/\n/g,"<br>")+'</p>'+
+      '<div class="ncCardBtns"><button class="btn" type="button" data-nc="ok">Yes, continue</button>'+
+      '<button class="pill" type="button" data-nc="cancel">Cancel</button></div></div>';
+    document.body.appendChild(ov);
+    ov.addEventListener("click",function(e){
+      var b=e.target.closest? e.target.closest("[data-nc]"):null;
+      if(!b && e.target!==ov) return;
+      var ok=b? b.getAttribute("data-nc")==="ok" : false;
+      ov.remove(); resolve(ok);
+    });
+  });
+}
+
 function submitTest(){
   if(!cur) return;
   var un=cur.answers.filter(function(a){return a===null;}).length;
   var msg="Submit this test?"+(un? "\n\n"+un+" question(s) are still unattempted — they will score 0 (no negative marking).":"");
-  if(!window.confirm(msg)) return;
+  ncConfirm(msg).then(function(ok){ if(ok) doSubmit(); });
+}
+function doSubmit(){
   var qs=cur.data.questions, score=0;
   qs.forEach(function(q,i){ if(cur.answers[i]===q.answer) score++; });
   cur.score=score; cur.submitted=true;
@@ -167,8 +186,9 @@ document.addEventListener("DOMContentLoaded",function(){
   if(next) next.addEventListener("click",function(){ if(cur&&cur.idx<cur.data.questions.length-1){ cur.idx++; renderQuestion(); } });
   if(sub) sub.addEventListener("click",submitTest);
   if(quit) quit.addEventListener("click",function(){
-    if(cur && !cur.submitted && !window.confirm("Leave this test? Your answers in this attempt will be lost.")) return;
-    cur=null; el("ncRunner").style.display="none"; renderLanding(); window.scrollTo(0,0);
+    var leave=function(){ cur=null; el("ncRunner").style.display="none"; renderLanding(); window.scrollTo(0,0); };
+    if(cur && !cur.submitted){ ncConfirm("Leave this test? Your answers in this attempt will be lost.").then(function(ok){ if(ok) leave(); }); }
+    else leave();
   });
 });
 
