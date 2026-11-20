@@ -973,3 +973,48 @@ body:not([data-screen="home"]) .footBottom{margin-top:0}
 @media(prefers-reduced-motion:reduce){ .motivLine,.motivDots i,.motivBar i{animation:none} }
 /* "New" tag on freshly added HCM hub mocks (saffron, dtag family) */
 .d-new{background:var(--saffron);color:#fff;font-weight:700;margin-left:8px;vertical-align:2px}
+
+/* ===== NCRTC MCQ module (v9) ===== */
+.ncCatHead{margin:26px 0 6px;font-size:1.15rem}
+.ncGroupHead{margin:16px 0 8px;color:var(--muted);font-size:.95rem}
+.ncGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.ncCard{display:flex;flex-direction:column;gap:8px}
+.ncCardTop strong{font-size:1rem;line-height:1.35}
+.ncMeta{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:.85rem;flex-wrap:wrap}
+.ncBest{color:var(--green);font-weight:600}
+.ncCardBtns{display:flex;gap:8px;margin-top:auto;align-items:center;flex-wrap:wrap}
+.ncPdfBtn{text-decoration:none}
+.ncWrap{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:16px;align-items:start}
+@media (max-width:820px){.ncWrap{grid-template-columns:1fr}}
+.ncQCard{padding:18px}
+.ncQText{font-size:1.08rem;line-height:1.5;margin:6px 0 14px;font-weight:600}
+.ncOpts{display:flex;flex-direction:column;gap:9px}
+.ncOpt{display:flex;gap:10px;align-items:flex-start;text-align:left;padding:11px 13px;border:1px solid var(--lineStrong);border-radius:var(--r);background:var(--surface);color:var(--ink);cursor:pointer;font:inherit;line-height:1.4}
+.ncOpt:hover{border-color:var(--primary)}
+.ncOpt.sel{border-color:var(--primary);background:var(--primarySoft);box-shadow:var(--ring)}
+.ncOptKey{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--surface3);display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:.82rem;margin-top:1px}
+.ncOpt.sel .ncOptKey{background:var(--primary);color:#fff}
+.ncNavRow{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.ncPalCard{padding:14px;position:sticky;top:12px}
+.ncPalette{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:10px 0}
+.ncPalBtn{padding:7px 0;border:1px solid var(--lineStrong);border-radius:8px;background:var(--surface);color:var(--ink);cursor:pointer;font:inherit;font-size:.85rem}
+.ncPalBtn.done{background:var(--primary);border-color:var(--primary);color:#fff}
+.ncPalBtn.now{box-shadow:var(--ring);border-color:var(--primary);font-weight:700}
+.ncPalSummary{color:var(--muted);font-size:.85rem}
+.ncLegend{display:flex;gap:12px;color:var(--muted);font-size:.8rem;margin-top:8px;flex-wrap:wrap}
+.ncDot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:middle}
+.ncScoreCard{text-align:left;padding:20px}
+.ncScoreBig{font-size:2.2rem;font-weight:800;margin:6px 0 2px}
+.ncScorePct{color:var(--muted);margin-bottom:14px}
+.ncReview{padding:16px;margin-bottom:12px}
+.ncReviewHead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;line-height:1.45}
+.ncTag{flex:0 0 auto;font-size:.75rem;font-weight:700;padding:3px 9px;border-radius:999px}
+.ncTag.ok{background:var(--greenSoft);color:var(--green)}
+.ncTag.bad{background:var(--redSoft);color:var(--red)}
+.ncTag.skip{background:var(--orangeSoft);color:var(--warn)}
+.ncReviewOpts{display:flex;flex-direction:column;gap:6px;margin:12px 0}
+.ncROpt{display:flex;gap:10px;align-items:flex-start;padding:8px 11px;border:1px solid var(--line);border-radius:var(--r-sm);line-height:1.4}
+.ncROpt.correct{background:var(--greenSoft);border-color:var(--green)}
+.ncROpt.yourWrong{background:var(--redSoft);border-color:var(--red)}
+.ncMark{font-weight:700;font-size:.82rem}
+.ncExplain{color:var(--muted);line-height:1.55;margin:4px 0 0}
