@@ -20,7 +20,7 @@ function flowText(t){ return (t||"").replace(/\s+/g," "); }
 function batchTests(examId){
   var sp=specOf(examId); var raw=PASSAGE_BATCH[examId]||[];
   return raw.map(function(p,i){
-    return {id:p.tid,num:i+1,name:(examId==="hcm"?"HCM":sp.short)+" Mock "+(i+1),text:flowText(p.text),diff:p.diff,topic:p.topic};
+    return {id:p.tid,num:i+1,name:(examId==="hcm"?"HCM":sp.short)+" Mock "+(i+1),text:flowText(p.text),diff:p.diff,topic:p.topic,isNew:!!p.isNew};
   });
 }
 function hcmTests(){ return batchTests("hcm"); }
@@ -128,7 +128,7 @@ function renderTestList(){
     var act= att
       ? "<button class='btn secondary trResult' data-tid='"+t.id+"' type='button'>Result</button><button class='btn btnStart trStart' data-tid='"+t.id+"' type='button'>Retake</button>"
       : "<button class='btn btnStart trStart' data-tid='"+t.id+"' type='button'>Start Test →</button>";
-    rowsHtml+="<div class='testRow'><span class='trNum'>"+t.num+"</span><span class='trMain'><strong>"+escapeHtml(t.name)+"</strong>"+(t.topic?"<span class='trTopic'>"+escapeHtml(t.topic)+"</span>":"")+"<span>"+wc+" words · "+fmtNum(t.text.length)+" keystrokes"+(att?" · ✓ Attempted":"")+"</span></span><span class='dtag d-"+t.diff+"'>"+(t.diff==="easy"?"Easy":t.diff==="medium"?"Moderate":"Hard")+"</span><span class='trAct'>"+act+"</span></div>";
+    rowsHtml+="<div class='testRow'><span class='trNum'>"+t.num+"</span><span class='trMain'><strong>"+escapeHtml(t.name)+"</strong>"+((sp.id==="hcm"&&t.isNew)?"<span class='dtag d-new'>New</span>":"")+(t.topic?"<span class='trTopic'>"+escapeHtml(t.topic)+"</span>":"")+"<span>"+wc+" words · "+fmtNum(t.text.length)+" keystrokes"+(att?" · ✓ Attempted":"")+"</span></span><span class='dtag d-"+t.diff+"'>"+(t.diff==="easy"?"Easy":t.diff==="medium"?"Moderate":"Hard")+"</span><span class='trAct'>"+act+"</span></div>";
   });
   wrap.innerHTML= rowsHtml||"<p class='small'>No tests match these filters.</p>";
   wrap.querySelectorAll(".trStart").forEach(function(b){ b.addEventListener("click",function(){ startHubTest(sp.id,b.dataset.tid); }); });
@@ -440,7 +440,15 @@ function finishExamTest(){
   if(window.__fbUser){ saveResultToCloud(entry).then(function(){ try{renderDashboard();renderHistory();renderTrends();}catch(e){} }); }
   try{ renderDashboard(); renderHistory(); renderTrends(); }catch(e){}
   renderExamResult(result);
-  showViewReplace("examresult");
+  /* Push 5: Custom Tests (only) pause on the motivation overlay before the
+     result — hub mocks in this engine go straight to their result. Custom
+     runs are the ones views.js launches with a "custom-" test id. */
+  var isCustomRun= !!(t && typeof t.id==="string" && t.id.indexOf("custom-")===0);
+  if(isCustomRun && typeof showMotivation==="function"){
+    showMotivation(!!result.qual, function(){ showViewReplace("examresult"); });
+  } else {
+    showViewReplace("examresult");
+  }
 }
 function mkEntry(sp,t,o){
   var nowIso=new Date().toISOString();
