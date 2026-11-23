@@ -54,6 +54,12 @@ ul.tight li { margin-bottom: 4px; }
 }
 .more-pop button:hover { background: var(--surface-2); }
 .more-pop .more-state { margin-left: auto; color: var(--muted); font-size: 13px; font-weight: 700; }
+.more-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 4px 4px 6px 10px; color: var(--muted); font-size: 12.5px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .04em;
+}
+.more-pop .more-x { width: auto; flex: none; padding: 3px 9px; font-size: 14px; line-height: 1.2; color: var(--muted); text-transform: none; letter-spacing: 0; }
 .exam-menu-pop { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; margin-bottom: var(--sp-3); }
 .exam-menu-pop[hidden] { display: none; }
 
@@ -65,7 +71,6 @@ ul.tight li { margin-bottom: 4px; }
 }
 .hud-v { font-size: 20px; font-weight: 800; font-variant-numeric: tabular-nums; }
 .hud-l { font-size: 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
-.hud.rem .hud-net, .hud.rem .hud-marks { display: none; }
 .hud-ring { align-items: center; }
 .hud-ring svg { flex: none; }
 .prog { height: 5px; background: var(--surface-3); border-radius: 99px; overflow: hidden; margin-bottom: var(--sp-2); }
@@ -81,7 +86,7 @@ ul.tight li { margin-bottom: 4px; }
   padding: var(--sp-4) var(--sp-5); max-height: 46vh; overflow-y: auto; cursor: text;
 }
 .typeBox.focused { border-color: var(--accent); box-shadow: var(--ring); }
-.typeText { font-family: var(--font-type); font-size: 19px; line-height: 1.9; white-space: pre-wrap; word-break: break-word; position: relative; }
+.typeText { font-family: var(--font-type); font-size: 19px; line-height: 1.9; white-space: pre-wrap; word-break: break-word; position: relative; text-align: left; word-spacing: normal; letter-spacing: normal; }
 .typeText .ch { border-radius: 3px; }
 .typeText .ch.ok { color: var(--pass); }
 .typeText .ch.bad { color: var(--error); background: var(--error-soft); }
@@ -109,22 +114,36 @@ ul.tight li { margin-bottom: 4px; }
   box-shadow: var(--shadow-sm), inset 0 0 0 1px var(--border);
   padding: 30px 34px; max-height: 52vh; overflow-y: auto;
   font-family: var(--font-serif); font-size: 18.5px; line-height: 1.85;
+  text-align: left; word-spacing: normal; letter-spacing: normal;
 }
 .paperSheet .pw { border-radius: 3px; padding: 1px 0; }
 .paperSheet .pw.lineHl { background: var(--target-soft); }
 .paperSheet .pw.curW { font-weight: 700; box-shadow: inset 0 -2px 0 var(--target); }
+
+/* Paper View blank typing box: the type box stops showing the passage
+   (type-over-words) and shows only the user's typed text, plainly. */
+.paperTyped {
+  display: none; font-family: var(--font-type); font-size: 19px; line-height: 1.9;
+  white-space: pre-wrap; word-break: break-word; text-align: left;
+  word-spacing: normal; letter-spacing: normal; min-height: calc(19px * 1.9 * 3);
+}
+.typeBox.paperBox .paperTyped { display: block; }
+.typeBox.paperBox .typeText, .typeBox.paperBox .caretEl { display: none; }
+.paperTyped .ph { color: var(--faint); }
+.ptCaret { display: inline-block; width: 2px; height: 1.05em; background: var(--accent-2); vertical-align: text-bottom; animation: caretBlink 1.1s steps(1) infinite; }
 
 /* ---- exam engine surface ---- */
 .exPassage {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   padding: var(--sp-4) var(--sp-5); font-family: var(--font-type); font-size: 19px; line-height: 1.75;
   max-height: 30vh; overflow-y: auto; margin-bottom: var(--sp-3); white-space: pre-wrap;
+  text-align: left; word-spacing: normal; letter-spacing: normal;
 }
 .exTypedWrap {
   position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   padding: var(--sp-4) var(--sp-5); min-height: 120px; cursor: text;
 }
-#exTyped { font-family: var(--font-type); font-size: 19px; line-height: 1.75; white-space: pre-wrap; word-break: break-word; }
+#exTyped { font-family: var(--font-type); font-size: 19px; line-height: 1.75; white-space: pre-wrap; word-break: break-word; text-align: left; word-spacing: normal; letter-spacing: normal; }
 #exTyped .ph { color: var(--faint); }
 .exCaret { display: inline-block; width: 2px; height: 1.05em; background: var(--accent-2); vertical-align: text-bottom; animation: caretBlink 1.1s steps(1) infinite; }
 
@@ -253,11 +272,12 @@ ul.tight li { margin-bottom: 4px; }
 .rc-table td { padding: 7px 10px; border-bottom: 1px solid var(--border); font-size: 15px; }
 .rc-actions { display: flex; gap: 8px; margin-top: var(--sp-4); }
 
-/* ---- Zen Focus Mode ---- */
-.site-header, .site-footer, .command-bar { transition: opacity .35s var(--ease), transform .35s var(--ease); }
+/* ---- Zen Focus Mode v2 ---- */
+.site-header, .site-footer, .command-bar, .stage-top { transition: opacity .35s var(--ease), transform .35s var(--ease); }
 body.zen .site-header, body.zen .site-footer { opacity: 0; pointer-events: none; }
 body.zen .command-bar { opacity: 0; pointer-events: none; transform: translateY(-6px); }
-body.zen .stage-top { opacity: .25; }
+body.zen .stage-top { opacity: .3; }
+body.zen main#app, body.zen main#app * { cursor: none; }   /* pointer hides while typing; moving the mouse brings it back */
 
 /* ---- print ---- */
 #printArea { display: none; }

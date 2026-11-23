@@ -45,12 +45,12 @@
 :root[data-theme="light"] {
   color-scheme: light;
 
-  --canvas: #F8FAFC;
-  --surface: #FFFFFF;
-  --surface-2: #F1F5F9;
-  --surface-3: #E8EEF5;
-  --border: #E2E8F0;
-  --border-strong: #CBD5E1;
+  --canvas: #F6F3ED;
+  --surface: #FDFCF9;
+  --surface-2: #EFEAE0;
+  --surface-3: #E6DFD0;
+  --border: #E7E0D2;
+  --border-strong: #D5C9B4;
 
   --text: #0F172A;
   --muted: #5B6B7F;

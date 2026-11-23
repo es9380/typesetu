@@ -50,3 +50,49 @@
   .slab-bar { flex-wrap: wrap; }
   .slab-seg { flex: 1 1 30%; }
 }
+
+/* ================= v13 — live demo ================= */
+.demo { max-width: 720px; margin: 0 0 var(--sp-5); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--sp-4); box-shadow: var(--shadow-sm); }
+.demo-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--sp-3); font-size: 12.5px; }
+.demo-tag { color: var(--accent-2); font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.demo-hud { display: flex; gap: var(--sp-4); color: var(--muted); }
+.demo-hud b { color: var(--text); font-variant-numeric: tabular-nums; }
+.demo-box { position: relative; background: var(--paper); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: var(--sp-4); cursor: text; outline: none; transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease); }
+.demo-box:focus { border-color: var(--accent); box-shadow: var(--ring); }
+.demo-text { font-family: var(--font-type); font-size: clamp(16px, 2.4vw, 20px); line-height: 1.75; color: var(--faint); word-break: break-word; }
+.demo-text span { position: relative; }
+.demo-text .ok { color: var(--paper-ink); }
+.demo-text .bad { color: var(--error); background: var(--error-soft); border-radius: 3px; }
+.demo-text .cur::before { content: ""; position: absolute; left: -1px; top: 12%; height: 76%; width: 2px; background: var(--accent-2); border-radius: 2px; animation: caretBlink 1s steps(1) infinite; }
+.demo-box:not(:focus) .cur::before { animation: none; opacity: .35; }
+@keyframes caretBlink { 50% { opacity: 0; } }
+.demo-hint { margin-top: var(--sp-2); font-size: 12.5px; color: var(--muted); }
+.demo-box:focus .demo-hint, .demo-box.finished .demo-hint { visibility: hidden; }
+.demo-done { display: flex; justify-content: space-between; align-items: center; gap: var(--sp-3); flex-wrap: wrap; margin-top: var(--sp-3); animation: viewIn .25s var(--ease); }
+.demo-done[hidden], .demo-hud[hidden] { display: none; }
+.demo-done b { color: var(--pass); }
+.demo-actions { display: flex; gap: var(--sp-2); flex-wrap: wrap; }
+
+/* ================= v13 — Today strip ================= */
+.today-strip { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: var(--sp-3); margin: var(--sp-4) 0; }
+.today-card { display: flex; align-items: center; gap: var(--sp-4); padding: var(--sp-4); flex-wrap: wrap; }
+.today-card.today-next { flex-direction: column; align-items: flex-start; gap: var(--sp-2); }
+.today-next h3 { display: flex; align-items: center; gap: 8px; margin: 0; }
+.today-next h3 .ic { color: var(--target); }
+.today-next p { margin: 0; font-size: 14px; }
+.tring { position: relative; width: 84px; height: 84px; flex: none; }
+.tring svg { display: block; }
+.tr-bg { fill: none; stroke: var(--surface-3); stroke-width: 7; }
+.tr-fg { fill: none; stroke: var(--accent); stroke-width: 7; stroke-linecap: round; transition: stroke-dashoffset .9s var(--ease); }
+.tring.ready .tr-fg { stroke: var(--accent-2); }
+.tring.goal .tr-fg { stroke: var(--target); }
+.tring.goal.done .tr-fg, .tring.goal.done.goal .tr-fg { stroke: var(--pass); }
+.tr-label { position: absolute; inset: 0; display: grid; place-items: center; font-weight: 800; font-size: 17px; letter-spacing: -.02em; }
+.tr-sub { font-weight: 700; font-size: 14.5px; line-height: 1.35; flex: 1 1 120px; }
+.tr-sub small { display: block; margin-top: 2px; font-weight: 500; font-size: 12.5px; color: var(--muted); }
+.linkbtn { background: none; border: 0; padding: 0; color: var(--accent-2); cursor: pointer; font-size: 12.5px; }
+.linkbtn:hover { text-decoration: underline; }
+kbd { font-family: var(--font-type); font-size: 12.5px; background: var(--surface-2); border: 1px solid var(--border-strong); border-bottom-width: 2px; border-radius: 6px; padding: 1px 7px; }
+
+@media (max-width: 860px) { .today-strip { grid-template-columns: 1fr; } }
+@media (min-width: 861px) and (max-width: 1100px) { .today-strip { grid-template-columns: 1fr 1fr; } .today-next { grid-column: 1 / -1; } }

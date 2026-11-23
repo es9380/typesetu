@@ -143,3 +143,25 @@
   background: var(--surface-3); color: var(--text); border: 1px solid var(--border); border-radius: 8px;
   font-size: 12px; font-weight: 500; padding: 5px 9px; white-space: nowrap; z-index: 120; pointer-events: none; box-shadow: var(--shadow-sm);
 }
+
+/* ================= v13 — polish ================= */
+.btn { transition: transform var(--dur) var(--ease), filter var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease); }
+.btn:active { transform: translateY(1px) scale(.985); }
+.card, .quick-card, .stat-cell { transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease); }
+.stat-cell:hover { border-color: var(--border-strong); transform: translateY(-1px); }
+.quick-card:hover { box-shadow: var(--shadow-sm); }
+
+/* skeleton loaders (shown while a route module loads) */
+.skel { border-radius: var(--radius); background: linear-gradient(100deg, var(--surface) 30%, var(--surface-2) 50%, var(--surface) 70%); background-size: 220% 100%; animation: skel 1.3s linear infinite; }
+.skel-line { height: 14px; border-radius: 8px; margin-bottom: 12px; }
+.skel-hero { height: 38px; width: min(520px, 80%); margin-bottom: 18px; }
+.skel-box { height: 150px; margin-bottom: 14px; }
+.skel-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.skel-row .skel { height: 110px; }
+@keyframes skel { from { background-position: 120% 0; } to { background-position: -120% 0; } }
+
+/* personal-best celebration (result screen) */
+.pb-burst { position: relative; display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: var(--radius-pill); background: var(--pass-soft); color: var(--pass); font-weight: 700; font-size: 13.5px; animation: pbPop .5s var(--ease); }
+@keyframes pbPop { 0% { transform: scale(.7); opacity: 0; } 60% { transform: scale(1.08); } 100% { transform: scale(1); opacity: 1; } }
+.confetti-piece { position: fixed; top: -12px; width: 8px; height: 12px; border-radius: 2px; z-index: 300; pointer-events: none; animation: confettiFall linear forwards; }
+@keyframes confettiFall { to { transform: translateY(105vh) rotate(720deg); opacity: .9; } }
