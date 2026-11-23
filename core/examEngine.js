@@ -184,6 +184,7 @@ export function mountHcmStage(container, opts) {
     bsAllowed: true
   };
   let paperHold = false, paperProgScroll = false;
+  let lastPaperInputAt = 0; /* v19: timestamp of the last capture input (see the typeBox scroll guard below) */
   let bsUser = null; /* session-only backspace override for Official mocks (v16) */
   let spanCache = [], spanText = [];
   const zen = makeZen();
@@ -209,8 +210,6 @@ export function mountHcmStage(container, opts) {
       '<div class="paper-wrap" id="paperWrap" style="display:none">' +
         '<div class="paper-head"><span class="paper-title">Paper View</span>' +
           '<span class="paper-tools">' +
-            '<button class="pill" type="button" data-layout="top">Top / Bottom</button>' +
-            '<button class="pill" type="button" data-layout="side">Side by Side</button>' +
             '<span class="paper-font" role="group" aria-label="Paper text size">' +
               '<button class="pill" type="button" data-pfont="0">S</button>' +
               '<button class="pill" type="button" data-pfont="1">M</button>' +
@@ -540,7 +539,31 @@ export function mountHcmStage(container, opts) {
     /* Typed box: keep the caret's line in view with nearest semantics —
        if it slips below the bottom, scroll just enough to rest it one
        line above the bottom edge; if it rises above the top (backspacing
-       up), just enough to rest it one line below the top edge. */
+       up), just enough to rest it one line below the top edge.
+       v19: after a real key event the browser natively "reveals"
+       the caret inside the hidden #capture textarea, and because
+       that textarea is a child of this scroll box, the reveal
+       re-scrolls the BOX to the caret's position in the TEXTAREA's
+       own (different-font, different-wrap) layout — overriding this
+       function's synchronous set and pinning the box to a lagging
+       position that saturates once the textarea scrolls internally.
+       (Proven by CDP instrumentation on the v18 code: the app set
+       the correct advancing values every keystroke while the
+       effective scrollTop stayed frozen at the textarea-layout
+       position — 218px on the repro passage — and a manual scroll
+       to the caret was yanked back to that same pin.) The fix is
+       timing: the input handler re-asserts this follow in its
+       post-input rAF, after the reveal has landed — the same
+       pattern screen view always used, which is why screen view
+       never showed the bug. A typeBox scroll guard (wired with the
+       stage's listeners) is kept as a second layer: if any scroll
+       lands within 400ms of a keystroke with the caret outside the
+       zone, it re-runs this follow against the live caret.
+       Programmatic value sets and CDP insertText don't trigger the
+       native reveal, which is why synthetic tests missed this for
+       two versions; and always verify scroll fixes in a FRESH
+       browser profile — a long-lived test browser once served
+       pre-fix code and made the working fix look broken. */
     const pt = q("#paperTyped"); if (!pt) return;
     const caret = pt.querySelector(".ptCaret"); if (!caret) return;
     const lh = paperLineH(pt, 1.9);
@@ -587,10 +610,12 @@ export function mountHcmStage(container, opts) {
        because renderText()/updatePaperSheet() still call it. */
   }
   function paintPaperLayout() {
-    const wrap = q("#paperWrap"); if (!wrap) return;
-    const side = SETTINGS.paperLayout === "side";
-    const area = q("#typeArea"); if (area) area.classList.toggle("side", side);
-    wrap.querySelectorAll("[data-layout]").forEach(function (b) { b.classList.toggle("active", (b.getAttribute("data-layout") === "side") === side); });
+    /* v19: ONE Paper View layout — Top/Bottom, like the pre-redesign
+       site (which had no layout switcher at all). Side-by-Side is
+       removed: the stage always renders Top/Bottom, and a stored
+       SETTINGS.paperLayout === "side" is simply never applied (the
+       stored settings key itself is left exactly as it is). */
+    const area = q("#typeArea"); if (area) area.classList.remove("side");
   }
   function scrollStageIntoView() {
     /* v18: ONE page scroll, only on entering Paper View (setPaperView's
@@ -714,6 +739,7 @@ export function mountHcmStage(container, opts) {
   let pendingWinY = null, pendingWinX = null;
   capture.addEventListener("input", function () {
     if (S.finished) return;
+    lastPaperInputAt = performance.now();
     const wy = (pendingWinY != null ? pendingWinY : window.scrollY), wx = (pendingWinX != null ? pendingWinX : window.scrollX);
     let v = capture.value;
     TEL.feed(v);
@@ -743,7 +769,8 @@ export function mountHcmStage(container, opts) {
     renderText(); updateStats(S.started ? (Date.now() - S.startT) / 1000 : 0);
     requestAnimationFrame(function () {
       if (window.scrollY !== wy || window.scrollX !== wx) window.scrollTo(wx, wy);
-      if (!S.paperView) scrollCursorIntoView(S.caret); /* Paper View scrolls on the renderText path instead (v17) */
+      if (S.paperView) scrollPaperTyped();
+      else scrollCursorIntoView(S.caret);
       pendingWinY = null; pendingWinX = null;
     });
     const mhEl = q("#modeHint");
@@ -1164,8 +1191,21 @@ export function mountHcmStage(container, opts) {
   q("#prBackBtn").addEventListener("click", function () { if (typeof opts.onExit === "function") opts.onExit(); });
   q("#paperPrint").addEventListener("click", function () { printPassage(S.currentName, S.target); });
   q("#paperSheet").addEventListener("scroll", function () { if (!paperProgScroll) paperHold = true; });
-  q("#paperWrap").querySelectorAll("[data-layout]").forEach(function (b) {
-    b.addEventListener("click", function () { SETTINGS.paperLayout = b.getAttribute("data-layout"); persistSettings(); paintPaperLayout(); renderText(); });
+  /* v19 scroll guard (second layer under the input handler's rAF
+     re-assert — see scrollPaperTyped): the browser's native
+     caret-reveal re-scrolls this box after the render-path set, and
+     its scroll fires a scroll event like any other. If a scroll
+     lands within 400ms of a keystroke (i.e. it is the reveal, not
+     the user) and it left the caret line outside the zone, re-assert
+     the follow against the LIVE caret. Our own corrective set also
+     fires this listener, but by then the caret is in zone and
+     scrollPaperTyped no-ops, so it terminates. Manual scrolls while
+     not typing (outside the 400ms window) are never touched — the
+     box fights nobody. */
+  typeBox.addEventListener("scroll", function () {
+    if (!S.paperView || S.finished) return;
+    if (performance.now() - lastPaperInputAt > 400) return;
+    scrollPaperTyped();
   });
   q("#paperWrap").querySelectorAll("[data-pfont]").forEach(function (b) {
     b.addEventListener("click", function () {
