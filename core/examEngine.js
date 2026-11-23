@@ -1,0 +1,1399 @@
+/* core/examEngine.js — the typing stages (Stage 2).
+   Two mounts, both behaviour-identical ports of the current live engines:
+     mountHcmStage  — the main screen engine (core.js): HCM hub mocks,
+                      HCM Custom Tests, Real Exam Mode, and (Stage 3)
+                      practice contexts on the same code path.
+     mountExamStage — the exam engine (exams.js): CHSL / CGL (E1) and
+                      RRB (E2), hub mocks + custom mocks.
+   Scoring comes from core/scoringMatrix.js (verbatim math); telemetry
+   from core/telemetry.js; finish side effects (history, bests, revision
+   bank, cloud via the Stage 1 bridge) match the old finish paths exactly.
+   Input handling is direct-DOM: the capture textarea's own input event
+   drives a span-class update — no framework re-render per keystroke. */
+
+import {
+  SETTINGS, persistSettings, loadHist, saveHist, loadDone, saveDone,
+  pushBest, lessonStatus, loadBest, sortBestArr, newClientId
+} from "./storage.js";
+import {
+  hcmMarksFor, hcmBandLabel, fmtTime, wordCountOf, alignWordsHcm,
+  displayFlagsHcm, classifyChar, classifyPair, scoreWords, hcmWordTokens
+} from "./scoringMatrix.js";
+import { fmtNum, dispErrPct } from "../data/exams.js";
+import { TEL, buildHcmTelemetry, buildExamTelemetry } from "./telemetry.js";
+import { forensicsHtml, revFeed } from "./forensics.js";
+import { cloud } from "../services/cloudBridge.js";
+import { soundOn, setSound, keyClick } from "../services/soundEngine.js";
+import { appState } from "./state.js";
+import { renderCommandBar } from "../components/FloatingCommandBar.js";
+import { openPassageModal } from "../components/PassageModal.js";
+import { showMotivation } from "../components/MotivationOverlay.js";
+import { fingerKeyboardHtml } from "../components/FingerKeyboard.js";
+import { escapeHtml } from "../components/ProfilePopover.js";
+import { icon } from "../components/icons.js";
+import { downloadFile } from "../services/backup.js";
+import {
+  hcmResultSkeleton, animateRings, cmpComparisonHtml,
+  renderExamResultInto, openResultCard
+} from "../features/examArena/resultView.js";
+
+export const ENGINE_STAGE = 2;
+export function engineReady() { return true; }
+
+/* ============================ shared bits ============================ */
+
+function printPassage(name, text) {
+  let pa = document.getElementById("printArea");
+  if (!pa) { pa = document.createElement("div"); pa.id = "printArea"; document.body.appendChild(pa); }
+  pa.innerHTML = "<h2>" + escapeHtml(name || "Passage") + "</h2><p>" + escapeHtml(text || "") + "</p>";
+  document.body.classList.add("printing-passage");
+  try { window.print(); } catch (e) {}
+  setTimeout(function () { document.body.classList.remove("printing-passage"); }, 300);
+}
+
+/* askConfirm — verbatim port of the current exams.js confirm modal. */
+function ensureConfirmBox() {
+  let box = document.getElementById("confirmBox");
+  if (box) return box;
+  box = document.createElement("div");
+  box.id = "confirmBox";
+  box.className = "confirm-box";
+  box.innerHTML = '<div class="confirm-card"><h3 id="confirmTitle"></h3><p id="confirmText"></p>' +
+    '<div class="confirm-actions"><button class="btn secondary" type="button" id="confirmNo">Keep typing</button>' +
+    '<button class="btn" type="button" id="confirmYes">Yes, submit</button></div></div>';
+  document.body.appendChild(box);
+  return box;
+}
+function askConfirm(title, text, onYes, onNo) {
+  ensureConfirmBox();
+  document.getElementById("confirmTitle").textContent = title;
+  document.getElementById("confirmText").textContent = text;
+  const box = document.getElementById("confirmBox"); box.classList.add("open");
+  const yes = document.getElementById("confirmYes"), no = document.getElementById("confirmNo");
+  const newYes = yes.cloneNode(true), newNo = no.cloneNode(true);
+  yes.parentNode.replaceChild(newYes, yes); no.parentNode.replaceChild(newNo, no);
+  newYes.addEventListener("click", function () { box.classList.remove("open"); onYes(); });
+  newNo.addEventListener("click", function () { box.classList.remove("open"); if (onNo) onNo(); });
+}
+
+/* Zen Focus Mode (prompt §4): first keystroke fades the chrome; mouse
+   move, Esc or finish restores it. */
+function makeZen() {
+  let on = false;
+  function enter() { if (!on) { on = true; document.body.classList.add("zen"); } }
+  function exit() { if (on) { on = false; document.body.classList.remove("zen"); } }
+  function onKey(e) { if (e.key === "Escape") exit(); }
+  function onMove() { exit(); }
+  document.addEventListener("keydown", onKey);
+  return {
+    enter: enter, exit: exit,
+    watchMouse: function (el) { el.addEventListener("mousemove", onMove); },
+    destroy: function () { document.removeEventListener("keydown", onKey); exit(); }
+  };
+}
+
+/* ⚙ More popover — Finger Keyboard, Sound, Download/Print passage.
+   NO auto-submit option anywhere (sid's standing rule). */
+function morePopHtml() {
+  return '<div class="more-pop" hidden>' +
+    '<button type="button" data-more="kb">' + icon("keyboard") + '<span>Finger Keyboard</span><span class="more-state" data-ms="kb"></span></button>' +
+    '<button type="button" data-more="sound">' + icon("eye") + '<span>Sound</span><span class="more-state" data-ms="sound"></span></button>' +
+    '<button type="button" data-more="download">' + icon("download") + '<span>Download passage</span></button>' +
+    '<button type="button" data-more="print">' + icon("printer") + '<span>Print passage</span></button>' +
+  '</div>';
+}
+function wireMorePop(pop, kbSection, getPassage) {
+  function paint() {
+    const kb = pop.querySelector('[data-ms="kb"]'); if (kb) kb.textContent = SETTINGS.kb ? "On" : "Off";
+    const sn = pop.querySelector('[data-ms="sound"]'); if (sn) sn.textContent = soundOn() ? "On" : "Off";
+  }
+  paint();
+  pop.addEventListener("click", function (e) {
+    const b = e.target.closest("[data-more]"); if (!b) return;
+    const act = b.getAttribute("data-more");
+    if (act === "kb") {
+      SETTINGS.kb = !SETTINGS.kb; persistSettings();
+      if (kbSection) { kbSection.style.display = SETTINGS.kb ? "block" : "none"; if (SETTINGS.kb && !kbSection.dataset.built) { kbSection.querySelector("#keyboard").innerHTML = fingerKeyboardHtml(); kbSection.dataset.built = "1"; } }
+    } else if (act === "sound") { setSound(!soundOn()); }
+    else if (act === "download") { const p = getPassage(); downloadFile("hcm-passage.txt", p.name + "\nDelhi Police HCM — paper-to-screen practice passage\n\n" + p.text, "text/plain"); }
+    else if (act === "print") { const p2 = getPassage(); printPassage(p2.name, p2.text); }
+    paint();
+  });
+  return { paint: paint };
+}
+
+/* =====================================================================
+   HCM STAGE — verbatim port of the current core.js main engine.
+   opts: { silo:{key,items:[{id,name,text,isDrill,diff,topic}],index,capSec},
+           ctx:"exam"|"practice", durMin, paperView, mode:"official"|"custom",
+           examLabel, onExit(), onFinish(entry), onPractiseMistakes(entry),
+           onExamSwitch(examId), onMistakeDrillResult(mres,s), onRevisionStreamResult() } */
+export function mountHcmStage(container, opts) {
+  opts = opts || {};
+  const S = {
+    target: "", base: "", typed: [], caret: 0, started: false, startT: 0,
+    durMin: opts.durMin || 5, timer: null, finished: false,
+    errCat: { spelling: 0, capital: 0, punct: 0, spacing: 0, other: 0 }, errKeys: {}, errWords: {},
+    currentId: "", currentName: "", isDrill: false, examMode: false,
+    paperView: !!opts.paperView, bsCount: 0, lastMistakes: [],
+    ctx: opts.ctx === "exam" ? "exam" : "practice",
+    silo: opts.silo || null, capSec: (opts.silo && opts.silo.capSec) || 0,
+    bsAllowed: true
+  };
+  let preExamState = null;
+  let paperHold = false, paperProgScroll = false;
+  let spanCache = [], spanText = [];
+  const zen = makeZen();
+
+  container.innerHTML =
+    '<div class="stage-wrap" id="hcmStage">' +
+      '<div class="stage-top">' +
+        '<button class="pill" type="button" id="stBack">← Back</button>' +
+        '<span class="stage-title" id="stTitle"></span>' +
+        '<span style="flex:1"></span>' +
+        '<button class="btn secondary sm" type="button" id="endTestBtn" style="display:none">End Test</button>' +
+      '</div>' +
+      '<div class="stage-bar" id="stBar"></div>' +
+      morePopHtml() +
+      '<div class="exam-menu-pop" id="stExamMenu" hidden></div>' +
+      '<div class="hud" id="stHud">' +
+        '<div class="hud-cell"><span class="hud-v" id="sTime">0:00</span><span class="hud-l" id="sTimeLabel">Time left</span></div>' +
+        '<div class="hud-cell hud-net"><span class="hud-v" id="sNet">0</span><span class="hud-l">Net WPM</span></div>' +
+        '<div class="hud-cell hud-marks"><span class="hud-v" id="sMarks">—</span><span class="hud-l">Predicted marks</span></div>' +
+      '</div>' +
+      '<div class="prog"><i id="progBar"></i></div>' +
+      '<p class="size-line small" id="sizeLine"></p>' +
+      '<div class="type-area" id="typeArea">' +
+      '<div class="paper-wrap" id="paperWrap" style="display:none">' +
+        '<div class="paper-head"><span class="paper-title">Paper View</span>' +
+          '<span class="paper-tools">' +
+            '<button class="pill" type="button" data-layout="top">Top / Bottom</button>' +
+            '<button class="pill" type="button" data-layout="side">Side by Side</button>' +
+            '<button class="pill" type="button" id="paperPrint" aria-label="Print passage">' + icon("printer") + '</button>' +
+          '</span></div>' +
+        '<div class="paperSheet" id="paperSheet"><div id="paperSheetText"></div></div>' +
+      '</div>' +
+      '<div class="typeBox" id="typeBox"><div class="typeText" id="typeText"></div><div class="caretEl" id="caretEl"></div>' +
+        '<textarea id="capture" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type here"></textarea>' +
+      '</div>' +
+      '</div>' +
+      '<p class="modeHint small" id="modeHint"></p>' +
+      '<div class="stage-actions">' +
+        '<button class="btn" type="button" id="submitBtn" style="display:none">Submit</button>' +
+        '<button class="btn secondary" type="button" id="restartBtn">Restart</button>' +
+      '</div>' +
+      '<div class="kbSection" id="kbSection" style="display:none"><h3>Finger keyboard — which finger presses which key</h3><div id="keyboard"></div></div>' +
+      '<div id="resultSlot">' + hcmResultSkeleton() + '</div>' +
+      '<div class="lhist" id="lessonHistory" aria-live="polite"></div>' +
+    '</div>';
+
+  const q = function (sel) { return container.querySelector(sel); };
+  const capture = q("#capture"), typeBox = q("#typeBox"), typeText = q("#typeText");
+  const morePop = q(".more-pop");
+  const kbSection = q("#kbSection");
+  const more = wireMorePop(morePop, kbSection, function () { return { name: S.currentName, text: S.target }; });
+  if (SETTINGS.kb) { kbSection.style.display = "block"; kbSection.querySelector("#keyboard").innerHTML = fingerKeyboardHtml(); kbSection.dataset.built = "1"; }
+  zen.watchMouse(container);
+
+  function isExamCtx() { return !!(S.examMode || S.ctx === "exam"); }
+  function highlightOn() {
+    if (typeof SETTINGS.highlight === "boolean") return SETTINGS.highlight;
+    if (S.examMode || S.paperView) return false;
+    return true;
+  }
+  function bsLocked() { return S.examMode || opts.mode !== "custom"; }
+  function bsEffective() { return bsLocked() ? true : S.bsAllowed; }
+
+  /* ---------- command bar ---------- */
+  function paintBar() {
+    const slot = q("#stBar"); if (!slot) return;
+    slot.innerHTML = "";
+    const bar = renderCommandBar({
+      examLabel: opts.examLabel || "Delhi Police HCM",
+      duration: S.durMin,
+      backspace: bsEffective(),
+      backspaceLocked: bsLocked(),
+      liveErrors: highlightOn(),
+      paperView: S.paperView,
+      realExamMode: S.examMode,
+      onAction: onBarAction
+    });
+    if (S.examMode) {
+      bar.querySelectorAll('[data-act="duration"],[data-act="passage"],[data-act="exam"]').forEach(function (b) { b.disabled = true; });
+    }
+    slot.appendChild(bar);
+  }
+  function onBarAction(name, value) {
+    if (name === "exam") {
+      const menu = q("#stExamMenu");
+      if (!menu.hidden) { menu.hidden = true; return; }
+      menu.innerHTML = ["hcm", "chsl", "cgl", "rrb"].map(function (id) {
+        return '<button type="button" class="pill" data-sw="' + id + '">' + escapeHtml(({ hcm: "Delhi Police HCM", chsl: "SSC CHSL", cgl: "SSC CGL DEST", rrb: "RRB NTPC" })[id]) + '</button>';
+      }).join("");
+      menu.hidden = false;
+      menu.querySelectorAll("[data-sw]").forEach(function (b) {
+        b.addEventListener("click", function () { menu.hidden = true; if (typeof opts.onExamSwitch === "function") opts.onExamSwitch(b.getAttribute("data-sw")); });
+      });
+    }
+    else if (name === "duration") { if (!S.examMode) { setDuration(+value); paintBar(); focusCapture(); } }
+    else if (name === "passage") { if (!S.examMode) openPicker(); }
+    else if (name === "paper") { setPaperView(!S.paperView); paintBar(); focusCapture(); }
+    else if (name === "backspace") { if (!bsLocked()) { S.bsAllowed = !S.bsAllowed; paintBar(); focusCapture(); } }
+    else if (name === "errors") { SETTINGS.highlight = !highlightOn(); persistSettings(); renderText(); paintBar(); focusCapture(); }
+    else if (name === "realexam") { setExamMode(!S.examMode); paintBar(); }
+    else if (name === "more") { morePop.hidden = !morePop.hidden; more.paint(); }
+  }
+  function openPicker() {
+    const s = S.silo; if (!s || !s.items) return;
+    const groupsMap = {}, order = [];
+    s.items.forEach(function (it) {
+      const g = it.diff ? (it.diff === "easy" ? "Easy" : it.diff === "medium" ? "Moderate" : "Hard") : "Passages";
+      if (!groupsMap[g]) { groupsMap[g] = []; order.push(g); }
+      groupsMap[g].push({ id: it.id, name: it.name, sub: (it.topic ? it.topic + " · " : "") + wordCountOf(it.text) + " words", diff: it.diff || null, done: lessonStatus(it.id).completed });
+    });
+    openPassageModal({
+      title: "Choose a passage",
+      groups: order.map(function (g) { return { label: g, items: groupsMap[g] }; }),
+      onPick: function (item) {
+        let idx = -1; s.items.forEach(function (it, i) { if (it.id === item.id) idx = i; });
+        if (idx >= 0) { loadSiloIndex(idx); focusCapture(); }
+      }
+    });
+  }
+
+  /* ---------- target / load / reset (verbatim ports) ---------- */
+  function buildTarget(base) {
+    const t = base || "";
+    if (!isExamCtx()) return t;
+    if (S.examMode || S.currentId === "sim10") return t;
+    const need = S.durMin * 50;
+    const words = t.split(/\s+/).filter(Boolean);
+    if (words.length <= need) return t;
+    let cut = words.slice(0, need);
+    let endIdx = -1;
+    for (let i = cut.length - 1; i >= Math.max(0, cut.length - 15); i--) { if (/[.!?]["')\]]?$/.test(cut[i])) { endIdx = i; break; } }
+    if (endIdx >= Math.floor(need * 0.6)) cut = cut.slice(0, endIdx + 1);
+    return cut.join(" ");
+  }
+  function updateSizeLine() {
+    const sl = q("#sizeLine"); if (!sl) return;
+    const shown = wordCountOf(S.target);
+    if (!isExamCtx()) {
+      sl.textContent = "Loaded: " + (S.currentName || "") + " · " + shown + " words · practice" + (S.capSec ? " · up to " + Math.round(S.capSec / 60) + " min" : "");
+    } else if (S.examMode || S.currentId === "sim10") {
+      sl.textContent = "Loaded: " + (S.currentName || "Exam passage") + " · " + shown + " words · 10 min";
+    } else {
+      sl.textContent = "Loaded: " + (S.currentName || "") + " · " + shown + " words · " + S.durMin + " min";
+    }
+  }
+  function loadText(id, name, base, isDrill) {
+    S.currentId = id; S.currentName = name; S.isDrill = !!isDrill;
+    S.base = base; resetTest();
+    updateLessonHistory();
+  }
+  function loadSiloIndex(i) {
+    const s = S.silo; if (!s || !s.items || !s.items[i]) return;
+    s.index = i; const it = s.items[i];
+    loadText(it.id, it.name, it.text, it.isDrill);
+  }
+  function resetTest() {
+    clearInterval(S.timer);
+    S.target = buildTarget(S.base || "");
+    S.typed = []; S.caret = 0; S.started = false; S.finished = false;
+    S.errCat = { spelling: 0, capital: 0, punct: 0, spacing: 0, other: 0 }; S.errKeys = {}; S.errWords = {};
+    S.bsCount = 0; S.lastMistakes = [];
+    capture.value = "";
+    const rb = q("#resultBox"); if (rb) rb.style.display = "none";
+    const prR = q("#pracResult"); if (prR) prR.style.display = "none";
+    typeBox.scrollTop = 0;
+    renderText(); updateStats(0);
+    typeBox.scrollTop = 0;
+    const t0 = isExamCtx() ? fmtTime(S.durMin * 60) : fmtTime(0);
+    q("#sTime").textContent = t0;
+    const lbl = q("#sTimeLabel"); if (lbl) lbl.textContent = isExamCtx() ? "Time left" : "Time";
+    q("#progBar").style.width = "0%";
+    q("#modeHint").textContent = "";
+    if (S.paperView) updatePaperSheet();
+    if (S.paperView) { paperHold = false; const psh = q("#paperSheet"); if (psh) psh.scrollTop = 0; }
+    if (S.examMode) {
+      q("#modeHint").textContent = "Real exam mode · " + S.currentName + " · 10 min · stats hidden until the end";
+      const ebx = q("#endTestBtn"); if (ebx) { ebx.style.display = ""; ebx.disabled = true; }
+    }
+    updateSizeLine();
+    paintSubmitBtn();
+    updateLessonHistory();
+    TEL.setTarget(S.target, "pos");
+  }
+
+  /* ---------- rendering (verbatim ports) ---------- */
+  function buildSpans() {
+    const t = S.target; let html = "";
+    for (let i = 0; i < t.length; i++) { html += '<span class="ch">' + escapeHtml(t[i]) + '</span>'; }
+    typeText.innerHTML = html;
+    spanCache = new Array(t.length);
+    spanText = new Array(t.length);
+    for (let j = 0; j < t.length; j++) { spanCache[j] = "ch"; spanText[j] = t[j]; }
+  }
+  function renderText() {
+    const t = S.target, pos = S.typed.length;
+    const cpos = Math.max(0, Math.min(S.caret || 0, pos));
+    const raw = !highlightOn();
+    typeText.classList.toggle("raw", raw);
+    if (typeText.children.length !== t.length) buildSpans();
+    for (let i = 0; i < t.length; i++) {
+      let cls = "ch";
+      const glyph = i < pos ? S.typed[i].ch : t[i];
+      if (spanText[i] !== glyph) { spanText[i] = glyph; typeText.children[i].textContent = glyph; }
+      if (i < pos) {
+        if (raw) cls += " typed";
+        else cls += S.typed[i].ok ? " ok typed" : (glyph === " " ? " bad spaceBad typed" : " bad typed");
+      }
+      else if (i === pos) { cls += " cur"; }
+      if (spanCache[i] !== cls) { spanCache[i] = cls; typeText.children[i].className = cls; }
+    }
+    scrollCursorIntoView(cpos);
+    positionCaret(cpos);
+    syncPaperScroll();
+    paintPaperLine();
+  }
+  function scrollCursorIntoView(pos) {
+    const kids = typeText.children, total = kids.length;
+    if (!total) return;
+    const idx = Math.min(Math.max(pos, 0), total - 1);
+    const cur = kids[idx];
+    if (!cur) return;
+    const savedWinY = window.scrollY, savedWinX = window.scrollX;
+    const boxRect = typeBox.getBoundingClientRect();
+    let curRect = cur.getBoundingClientRect();
+    if ((curRect.height === 0 || curRect.width === 0) && idx > 0) {
+      const prevRect = kids[idx - 1].getBoundingClientRect();
+      if (prevRect.height > 0) curRect = prevRect;
+    }
+    let lh = parseFloat(window.getComputedStyle(typeText).lineHeight);
+    if (isNaN(lh) || lh <= 0) lh = curRect.height > 0 ? curRect.height : 42;
+    const borderTop = typeBox.clientTop || 0;
+    const lineTop = curRect.top - boxRect.top + typeBox.scrollTop;
+    const lineBottom = lineTop + lh;
+    const viewH = typeBox.clientHeight;
+    const viewTop = typeBox.scrollTop + borderTop, viewBottom = viewTop + viewH;
+    let desired = typeBox.scrollTop;
+    if (lineBottom + lh > viewBottom) { desired = lineBottom + lh - borderTop - viewH; }
+    if (lineTop - lh < desired + borderTop) { desired = lineTop - lh - borderTop; }
+    const maxScroll = Math.max(0, typeBox.scrollHeight - typeBox.clientHeight);
+    if (desired > maxScroll) desired = maxScroll;
+    if (desired < 0) desired = 0;
+    if (desired !== typeBox.scrollTop) typeBox.scrollTop = desired;
+    if (window.scrollY !== savedWinY || window.scrollX !== savedWinX) window.scrollTo(savedWinX, savedWinY);
+  }
+  let caretBlinkKey = "";
+  function caretOffsetInBox(node) {
+    let x = 0, y = 0, n = node;
+    while (n && n !== typeBox) { x += (n.offsetLeft || 0); y += (n.offsetTop || 0); n = n.offsetParent; }
+    return { x: x, y: y };
+  }
+  function positionCaret(pos) {
+    const el = q("#caretEl"); if (!el) return;
+    const kids = typeText.children, total = kids.length;
+    if (!total) { el.classList.remove("on"); return; }
+    let lh = parseFloat(window.getComputedStyle(typeText).lineHeight);
+    if (isNaN(lh) || lh <= 0) lh = 42;
+    let x, y;
+    if (pos < total) {
+      const span = kids[pos], off = caretOffsetInBox(span);
+      if ((span.offsetWidth === 0 || span.offsetHeight === 0) && pos > 0) {
+        const prev = kids[pos - 1], poff = caretOffsetInBox(prev);
+        x = poff.x + (prev.offsetWidth || 0); y = poff.y;
+      } else { x = off.x; y = off.y; }
+    } else {
+      const last = kids[total - 1], loff = caretOffsetInBox(last);
+      x = loff.x + (last.offsetWidth || 0); y = loff.y;
+    }
+    el.style.left = (x - 1) + "px";
+    el.style.top = (y + lh * 0.14) + "px";
+    el.style.height = (lh * 0.72) + "px";
+    el.classList.add("on");
+    const key = pos + "|" + x + "|" + y;
+    if (key !== caretBlinkKey) {
+      caretBlinkKey = key;
+      el.style.animation = "none";
+      void el.offsetWidth;
+      el.style.animation = "";
+    }
+  }
+  function syncPaperScroll() {
+    if (!S.paperView) return;
+    const sh = q("#paperSheet"); if (!sh) return;
+    const max = sh.scrollHeight - sh.clientHeight; if (max <= 0) return;
+    const prog = S.target.length ? S.typed.length / S.target.length : 0;
+    const target = Math.round(prog * max);
+    if (paperHold) { if (Math.abs(sh.scrollTop - target) <= 48) paperHold = false; else return; }
+    if (Math.abs(sh.scrollTop - target) < 2) return;
+    paperProgScroll = true; sh.scrollTop = target;
+    requestAnimationFrame(function () { paperProgScroll = false; });
+  }
+  function focusCapture() {
+    try { capture.focus({ preventScroll: true }); } catch (e) { capture.focus(); }
+  }
+
+  /* ---------- Paper View 2.0 ---------- */
+  function updatePaperSheet() {
+    const el = q("#paperSheetText"); if (!el) return;
+    el.innerHTML = S.target.split(" ").map(function (w) { return '<span class="pw">' + escapeHtml(w) + '</span>'; }).join(" ");
+    paintPaperLine();
+  }
+  function paintPaperLine() {
+    if (!S.paperView) return;
+    const el = q("#paperSheetText"); if (!el || !el.children.length) return;
+    const spans = el.children;
+    const typedStr = typedString();
+    let wi = typedStr ? typedStr.split(" ").length - 1 : 0;
+    wi = Math.max(0, Math.min(wi, spans.length - 1));
+    const top = spans[wi].offsetTop;
+    for (let i = 0; i < spans.length; i++) {
+      spans[i].classList.toggle("lineHl", !S.examMode && spans[i].offsetTop === top);
+      spans[i].classList.toggle("curW", i === wi);
+    }
+  }
+  function paintPaperLayout() {
+    const wrap = q("#paperWrap"); if (!wrap) return;
+    const side = SETTINGS.paperLayout === "side";
+    const area = q("#typeArea"); if (area) area.classList.toggle("side", side);
+    wrap.querySelectorAll("[data-layout]").forEach(function (b) { b.classList.toggle("active", (b.getAttribute("data-layout") === "side") === side); });
+  }
+  function setPaperView(on) {
+    S.paperView = !!on;
+    const wrap = q("#paperWrap"); if (wrap) wrap.style.display = S.paperView ? "block" : "none";
+    if (S.examMode) { SETTINGS.examPaper = !!on; persistSettings(); }
+    renderText();
+    if (S.paperView) {
+      updatePaperSheet();
+      paintPaperLayout();
+      paperHold = false;
+      const sh = q("#paperSheet"); if (sh) sh.scrollTop = 0;
+      renderText();
+    }
+  }
+
+  /* ---------- stats (verbatim) ---------- */
+  function typedString() { let v = ""; S.typed.forEach(function (x) { v += x.ch; }); return v; }
+  function stats(el) {
+    const typedStr = typedString(), pos = typedStr.length;
+    const al = alignWordsHcm(S.target, typedStr);
+    const mins = Math.max(el, 1) / 60;
+    const W5 = Math.round(pos / 5);
+    const gross = W5 / mins;
+    const net = Math.max(0, (W5 - 10 * al.mistakes) / mins);
+    const acc = W5 ? Math.max(0, Math.min(100, (W5 - al.mistakes) / W5 * 100)) : 100;
+    const accChar = pos ? (al.correctChars / pos * 100) : 100;
+    const words = W5;
+    return { pos: pos, errs: al.mistakes, gross: gross, net: net, acc: acc, accChar: accChar, words: words };
+  }
+  function updateStats(el) {
+    const s = stats(el || (S.started ? (Date.now() - S.startT) / 1000 : 0));
+    q("#sNet").textContent = Math.round(s.net);
+    const m = q("#sMarks");
+    if (!S.started || s.pos < 10) { m.textContent = "—"; }
+    else { const mk = hcmMarksFor(s.net); m.textContent = s.net < 30 ? "0 · DQ" : mk + " / 25"; }
+    if (!isExamCtx()) {
+      const pb2 = q("#progBar");
+      if (pb2) pb2.style.width = (S.target.length ? Math.min(100, s.pos / S.target.length * 100) : 0) + "%";
+    }
+  }
+  function startTimer() {
+    S.started = true; S.startT = Date.now();
+    zen.enter();
+    paintSubmitBtn();
+    const eb0 = q("#endTestBtn"); if (eb0 && S.examMode) eb0.disabled = false;
+    S.timer = setInterval(function () {
+      const el = (Date.now() - S.startT) / 1000, total = S.durMin * 60;
+      if (!isExamCtx()) {
+        q("#sTime").textContent = fmtTime(el);
+        q("#progBar").style.width = (S.target.length ? Math.min(100, S.typed.length / S.target.length * 100) : 0) + "%";
+        updateStats(el);
+        if (S.capSec && el >= S.capSec) finishTest();
+        return;
+      }
+      q("#sTime").textContent = fmtTime(total - el);
+      q("#progBar").style.width = Math.min(100, el / total * 100) + "%";
+      updateStats(el);
+      if (el >= total) finishTest();
+    }, 200);
+  }
+
+  /* ---------- input path (verbatim ports) ---------- */
+  let pendingWinY = null, pendingWinX = null;
+  capture.addEventListener("input", function () {
+    if (S.finished) return;
+    const wy = (pendingWinY != null ? pendingWinY : window.scrollY), wx = (pendingWinX != null ? pendingWinX : window.scrollX);
+    let v = capture.value;
+    TEL.feed(v);
+    if (!S.started && v.length > 0) startTimer();
+    if (v.length > S.target.length) {
+      const csCap = capture.selectionStart;
+      v = v.slice(0, S.target.length);
+      capture.value = v;
+      const csNew = Math.max(0, Math.min(csCap != null ? csCap : v.length, v.length));
+      try { capture.setSelectionRange(csNew, csNew); } catch (e) {}
+    }
+    S.errCat = { spelling: 0, capital: 0, punct: 0, spacing: 0, other: 0 }; S.errKeys = {}; S.errWords = {};
+    S.typed = [];
+    for (let i = 0; i < v.length && i < S.target.length; i++) {
+      const exp = S.target[i], got = v[i], ok = exp === got;
+      S.typed.push({ ch: got, ok: ok });
+      if (!ok) {
+        S.errCat[classifyChar(exp, got)]++;
+        S.errKeys[exp] = (S.errKeys[exp] || 0) + 1;
+        const w = currentWord(i); if (w) S.errWords[w] = (S.errWords[w] || 0) + 1;
+      }
+    }
+    const dfl = displayFlagsHcm(S.target, v.slice(0, S.typed.length));
+    for (let di = 0; di < S.typed.length; di++) { S.typed[di].ok = !!dfl[di]; }
+    const selNow = capture.selectionStart;
+    S.caret = Math.max(0, Math.min(selNow != null ? selNow : S.typed.length, S.typed.length));
+    renderText(); updateStats(S.started ? (Date.now() - S.startT) / 1000 : 0);
+    requestAnimationFrame(function () {
+      if (window.scrollY !== wy || window.scrollX !== wx) window.scrollTo(wx, wy);
+      scrollCursorIntoView(S.caret);
+      pendingWinY = null; pendingWinX = null;
+    });
+    const mhEl = q("#modeHint");
+    if (S.typed.length >= S.target.length) {
+      if (mhEl) mhEl.textContent = S.examMode
+        ? "Text complete — timer still running. You can still correct anything; press End Test when ready."
+        : isExamCtx()
+          ? "Text complete — timer still running. You can still correct anything; press Submit when ready."
+          : "Text complete — that's the whole text. You can still correct anything; press Finish to see your result.";
+    } else if (mhEl && mhEl.textContent.indexOf("Text complete") === 0) {
+      mhEl.textContent = S.examMode ? "Real exam mode · " + S.currentName + " · " + S.durMin + " min · stats hidden until the end" : "";
+    }
+    paintSubmitBtn();
+  });
+  function currentWord(pos) {
+    const t = S.target; let s = pos; while (s > 0 && t[s - 1] !== " ") s--;
+    let e = pos; while (e < t.length && t[e] !== " ") e++;
+    return t.slice(s, e);
+  }
+  function setHcmCaret(c) {
+    c = Math.max(0, Math.min(c, S.typed.length));
+    S.caret = c;
+    try { capture.setSelectionRange(c, c); } catch (e) {}
+    renderText();
+  }
+  function syncHcmCaret() {
+    if (S.finished) return;
+    const cs = capture.selectionStart; if (cs == null) return;
+    const c2 = Math.max(0, Math.min(cs, S.typed.length));
+    if (c2 !== S.caret) { S.caret = c2; renderText(); }
+  }
+  function hcmLineCaret(dir) {
+    const kids = typeText.children, total = kids.length;
+    if (!total) return S.caret;
+    const c = Math.max(0, Math.min(S.caret || 0, S.typed.length));
+    const anchorIdx = Math.min(c, total - 1);
+    const anchor = kids[anchorIdx];
+    const aTop = anchor.offsetTop;
+    const aLeft = c < total ? anchor.offsetLeft : anchor.offsetLeft + anchor.offsetWidth;
+    const rowTops = [];
+    for (let i = 0; i < total; i++) { if (rowTops.indexOf(kids[i].offsetTop) < 0) rowTops.push(kids[i].offsetTop); }
+    rowTops.sort(function (a, b) { return a - b; });
+    if (dir === "home" || dir === "end") {
+      let first = -1, last = -1;
+      for (let j = 0; j < total; j++) { if (kids[j].offsetTop === aTop) { if (first < 0) first = j; last = j; } }
+      if (first < 0) return c;
+      return dir === "home" ? Math.min(first, S.typed.length) : Math.min(last + 1, S.typed.length);
+    }
+    let targetTop = null, ri;
+    if (dir === "up") { for (ri = rowTops.length - 1; ri >= 0; ri--) { if (rowTops[ri] < aTop) { targetTop = rowTops[ri]; break; } } }
+    else { for (ri = 0; ri < rowTops.length; ri++) { if (rowTops[ri] > aTop) { targetTop = rowTops[ri]; break; } } }
+    if (targetTop == null) return c;
+    let best = -1, bestD = Infinity;
+    for (let k = 0; k < total; k++) {
+      if (kids[k].offsetTop !== targetTop) continue;
+      const d = Math.abs(kids[k].offsetLeft - aLeft);
+      if (d < bestD) { bestD = d; best = k; }
+    }
+    if (best < 0) return c;
+    const lastSpan = kids[best];
+    const nc = (aLeft > lastSpan.offsetLeft + lastSpan.offsetWidth) ? best + 1 : best;
+    return Math.max(0, Math.min(nc, S.typed.length));
+  }
+  capture.addEventListener("keydown", function (e) {
+    pendingWinY = window.scrollY; pendingWinX = window.scrollX;
+    if (e.key === "Backspace" && !bsEffective()) { e.preventDefault(); return; }
+    if (e.key === "Backspace" && !S.finished) S.bsCount++;
+    if (S.finished) return;
+    if (e.key === "ArrowUp" || e.key === "ArrowDown" || e.key === "Home" || e.key === "End") {
+      e.preventDefault();
+      setHcmCaret(hcmLineCaret(e.key === "ArrowUp" ? "up" : e.key === "ArrowDown" ? "down" : e.key === "Home" ? "home" : "end"));
+    }
+  });
+  capture.addEventListener("keyup", function (e) {
+    if (e.key === "ArrowLeft" || e.key === "ArrowRight") syncHcmCaret();
+  });
+  capture.addEventListener("select", function () { syncHcmCaret(); });
+  typeBox.addEventListener("click", function (e) {
+    focusCapture(); typeBox.classList.add("focused");
+    if (S.finished) return;
+    const span = (e.target && e.target.classList && e.target.classList.contains("ch")) ? e.target : null;
+    if (span) {
+      const idx = Array.prototype.indexOf.call(typeText.children, span);
+      if (idx >= 0) {
+        const r = span.getBoundingClientRect();
+        setHcmCaret(idx + ((e.clientX > r.left + r.width / 2) ? 1 : 0));
+      }
+    } else {
+      setHcmCaret(S.typed.length);
+    }
+  });
+  typeBox.addEventListener("keydown", function (e) {
+    if (e.target === capture) return;
+    if (e.key === "PageDown" || e.key === "PageUp") { e.preventDefault(); focusCapture(); return; }
+    if (e.key === "Backspace") {
+      e.preventDefault(); focusCapture();
+      if (S.finished) return;
+      if (!bsEffective()) return;
+      if (capture.value.length) {
+        S.bsCount++;
+        capture.value = capture.value.slice(0, -1);
+        capture.dispatchEvent(new Event("input", { bubbles: true }));
+      }
+      return;
+    }
+    if (e.key && e.key.length === 1) {
+      e.preventDefault(); focusCapture();
+      if (!S.finished) {
+        capture.value += e.key;
+        capture.dispatchEvent(new Event("input", { bubbles: true }));
+      }
+      return;
+    }
+    if (document.activeElement !== capture) focusCapture();
+  });
+  capture.addEventListener("blur", function () { typeBox.classList.remove("focused"); });
+
+  /* ---------- scoring helpers (verbatim) ---------- */
+  function computeMistakes() {
+    const al = alignWordsHcm(S.target || "", typedString());
+    const map = {}, order = [];
+    al.pairs.forEach(function (p) {
+      if (p.kind === "ok") return;
+      let exp, got;
+      if (p.kind === "sub") { exp = p.exp; got = p.got; }
+      else if (p.kind === "spacing") { exp = p.exp; got = p.got; }
+      else if (p.kind === "del") { exp = p.exp; got = "(missed)"; }
+      else { exp = "(extra)"; got = p.got; }
+      const key = exp + "" + got;
+      if (!map[key]) { map[key] = { exp: exp, got: got, count: 0 }; order.push(map[key]); }
+      map[key].count++;
+    });
+    order.sort(function (a, b) { return b.count - a.count; });
+    const uniq = []; order.forEach(function (r) { if (r.exp !== "(extra)" && uniq.indexOf(r.exp) < 0) uniq.push(r.exp); });
+    return { rows: order.slice(0, 40), total: al.mistakes, unique: uniq };
+  }
+  function deriveErrCats() {
+    const al = alignWordsHcm(S.target || "", typedString());
+    const cat = { spelling: 0, capital: 0, punct: 0, spacing: 0, other: 0 }, keys = {}, words = {};
+    al.pairs.forEach(function (p) {
+      if (p.kind === "ok") return;
+      if (p.kind === "spacing") { cat.spacing++; keys[" "] = (keys[" "] || 0) + 1; p.exp.split(" ").forEach(function (w) { if (w) words[w] = (words[w] || 0) + 1; }); return; }
+      if (p.kind === "del") { cat.other++; words[p.exp] = (words[p.exp] || 0) + 1; return; }
+      if (p.kind === "ins") { cat.other++; return; }
+      const e = p.exp, g = p.got;
+      if (e.length !== g.length && (e.indexOf(g) === 0 || g.indexOf(e) === 0)) {
+        cat.spacing++; keys[" "] = (keys[" "] || 0) + 1;
+      } else {
+        const lim = Math.max(e.length, g.length); let counted = false;
+        for (let i2 = 0; i2 < lim; i2++) {
+          const ec = i2 < e.length ? e[i2] : "", gc = i2 < g.length ? g[i2] : "";
+          if (ec === gc) continue;
+          if (!counted) { cat[classifyChar(ec || " ", gc || " ")]++; counted = true; }
+          const kk = ec || gc; keys[kk] = (keys[kk] || 0) + 1;
+        }
+      }
+      words[e] = (words[e] || 0) + 1;
+    });
+    S.errCat = cat; S.errKeys = keys; S.errWords = words;
+  }
+  function practiceLine(s) {
+    if (s.pos > 0 && s.errs === 0) return "Not a single error — that's exam-grade control.";
+    if (s.accChar >= 98) return "Accuracy at the 98% gate — exam-grade control. Speed will follow.";
+    const cats = [["spelling", "Biggest leak: spelling — slow down on the words that broke, not everywhere."],
+      ["capital", "Biggest leak: capitals — opposite-hand Shift, every single time."],
+      ["punct", "Biggest leak: punctuation — read the marks as part of the word."],
+      ["spacing", "Biggest leak: spacing — one space after punctuation, always."],
+      ["other", "Biggest leak: skipped or extra words — keep your eyes a phrase ahead of your fingers."]];
+    let top = null, topN = 0;
+    cats.forEach(function (c) { const n = S.errCat[c[0]] || 0; if (n > topN) { topN = n; top = c[1]; } });
+    if (top) return top;
+    return "Solid practice run — accuracy first, and speed follows.";
+  }
+
+  /* ---------- finish (verbatim port of finishTest) ---------- */
+  function finishTest() {
+    if (S.finished) return; S.finished = true;
+    zen.exit();
+    clearInterval(S.timer);
+    const sbF = q("#submitBtn"); if (sbF) sbF.style.display = "none";
+    let el;
+    if (isExamCtx()) {
+      el = S.started ? Math.min((Date.now() - S.startT) / 1000, S.durMin * 60) : 0;
+      if (el <= 0) el = S.durMin * 60;
+    } else {
+      el = S.started ? (Date.now() - S.startT) / 1000 : 0;
+    }
+    const s = stats(el), mk = hcmMarksFor(s.net), qual = s.net >= 30;
+    deriveErrCats();
+    let prevBest = null;
+    try { prevBest = lessonStatus(S.currentId).best; } catch (e) {}
+    const mres = computeMistakes(); S.lastMistakes = mres.unique;
+    const rb = q("#resultBox"); rb.style.display = "block";
+    if (isExamCtx()) {
+      rb.className = "resultBox" + (qual ? "" : " fail");
+      rb.dataset.mode = "exam";
+      q("#rTitle").textContent = (S.isDrill ? "Drill result — " : "Test result — ") + S.currentName;
+      q("#rVerdict").innerHTML = qual
+        ? "✅ <strong>Qualified.</strong> Net " + Math.round(s.net) + " WPM earns <strong>" + mk + " / 25 marks</strong> in the HCM merit list." + (mk === 25 ? " Full marks band — now make this repeatable in the 10-minute simulation." : " Next band needs net " + (s.net <= 35 ? 36 : s.net <= 40 ? 41 : s.net <= 45 ? 46 : 51) + " WPM.")
+        : "❌ <strong>Below qualifying speed.</strong> Net " + Math.round(s.net) + " WPM is under the 30 WPM minimum — this would disqualify in the real exam regardless of written marks. Accuracy-first drills below are the fix, not faster typing.";
+      q("#rGross").textContent = Math.round(s.gross);
+      q("#rNet").textContent = Math.round(s.net);
+      q("#rMarks").textContent = qual ? mk + " / 25" : "0 (DQ)";
+      q("#rAcc").textContent = s.acc.toFixed(1) + "%";
+      const catNames = { spelling: "Spelling / wrong character", capital: "Capitalisation", punct: "Punctuation", spacing: "Spacing", other: "Other / extra–omitted" };
+      let rows = ""; Object.keys(catNames).forEach(function (k) { rows += "<tr><td>" + catNames[k] + "</td><td><strong>" + (S.errCat[k] || 0) + "</strong></td></tr>"; });
+      rows += "<tr><td><strong>Total errors</strong></td><td><strong>" + s.errs + "</strong></td></tr>";
+      q("#rBreak").innerHTML = rows;
+      const wk = Object.keys(S.errKeys).sort(function (a, b) { return S.errKeys[b] - S.errKeys[a]; }).slice(0, 6)
+        .map(function (k) { return "'" + (k === " " ? "space" : k) + "' ×" + S.errKeys[k]; }).join(", ");
+      const ww = Object.keys(S.errWords).sort(function (a, b) { return S.errWords[b] - S.errWords[a]; }).slice(0, 6)
+        .map(function (k) { return k + " ×" + S.errWords[k]; }).join(", ");
+      q("#rWeak").innerHTML = (wk ? ("Weakest keys: <strong>" + wk + "</strong><br>") : "No key errors — clean run.<br>") + (ww ? ("Words with errors: <strong>" + ww + "</strong>") : "");
+      let next = "Repeat this same text once slowly at 98%+ accuracy before trying anything faster.";
+      if (S.errCat.capital >= 3) next = "Your capitals are leaking marks — do Part 2 → Opposite-Hand Shift drill next, then re-test.";
+      else if (S.errCat.spacing >= 3) next = "Spacing is your leak — do Part 5 → Spacing Traps next. One space after punctuation, always.";
+      else if (S.errCat.punct >= 3) next = "Punctuation errors are full mistakes in HCM — do Part 5 → Punctuation, Numbers, Dates next.";
+      else if (s.accChar >= 98 && s.net < 30) next = "Accuracy is exam-grade. Now build speed with Part 3 n-gram chunks and Part 6 Level 2–3 sentences.";
+      else if (s.acc < 95) next = "Accuracy below 95% is costing you a full marks band. Go back to Part 1 row drills for the row your weakest keys live on, at the 98% gate.";
+      else if (S.isDrill && s.accChar >= 98) next = "Accuracy Gate passed ✅ — this drill is marked complete. Move to the next drill in the part.";
+      q("#rNext").textContent = next;
+      q("#rKeys").textContent = s.pos;
+      q("#rBs").textContent = S.bsCount || 0;
+      q("#rTimeUsed").textContent = fmtTime(Math.round(el)) + " / " + fmtTime(S.durMin * 60);
+      q("#rWordsN").textContent = s.words;
+      const minsF = el / 60;
+      q("#rCalc").innerHTML = "<h3>How your marks were calculated — the HCM way</h3><table><tbody>"
+        + "<tr><td>Keystrokes typed (characters, incl. spaces)</td><td><strong>" + s.pos + "</strong></td></tr>"
+        + "<tr><td>Backspaces used</td><td><strong>" + (S.bsCount || 0) + "</strong></td></tr>"
+        + "<tr><td>Time</td><td><strong>" + minsF.toFixed(2) + " min</strong></td></tr>"
+        + "<tr><td>Gross speed = keystrokes ÷ 5 ÷ minutes</td><td><strong>" + s.pos + " ÷ 5 ÷ " + minsF.toFixed(2) + " = " + Math.round(s.gross) + " WPM</strong></td></tr>"
+        + "<tr><td>Words (keystrokes ÷ 5)</td><td><strong>" + s.words + "</strong></td></tr>"
+        + "<tr><td>Mistakes (words — HCM counts no half mistakes)</td><td><strong>" + s.errs + "</strong></td></tr>"
+        + "<tr><td>Net speed = (words − 10 × mistakes) ÷ minutes</td><td><strong>(" + s.words + " − 10 × " + s.errs + ") ÷ " + minsF.toFixed(2) + " = " + Math.round(s.net) + " WPM</strong></td></tr>"
+        + "<tr><td>Marks</td><td><strong>" + (qual ? mk : 0) + " / 25</strong> — " + hcmBandLabel(s.net) + "</td></tr>"
+        + "</tbody></table>";
+      let mh = "<h3>Word-by-word mistakes (" + mres.total + ")</h3>";
+      if (!mres.rows.length) {
+        mh += "<p class='small'>No word mistakes — every word you reached was typed exactly as printed. 🎉</p>";
+      } else {
+        mh += "<div style='overflow-x:auto'><table><tr><th>Correct word</th><th>You typed</th><th>Times</th></tr>";
+        mres.rows.forEach(function (r) {
+          mh += "<tr><td class='mono'>" + escapeHtml(r.exp) + "</td><td class='mono' style='color:var(--error)'>" + escapeHtml(r.got || "(missed)") + "</td><td>" + r.count + "</td></tr>";
+        });
+        mh += "</table></div><p class='small'>Fix these exact words — tap <strong>Practise my mistakes</strong> below and they become a drill.</p>";
+      }
+      q("#rMistakes").innerHTML = mh;
+      const mbEl = q("#mistakeBtn"); if (mbEl) mbEl.style.display = mres.unique.length ? "" : "none";
+      const cmpEl = q("#rCompare");
+      if (cmpEl) {
+        const alC = alignWordsHcm(S.target || "", typedString());
+        const eSt = [], gSt = [], cCounts = { spelling: 0, capital: 0, punct: 0, spacing: 0, skipped: 0, extra: 0 };
+        alC.pairs.forEach(function (p) {
+          if (p.kind === "ok") { eSt.push({ st: "ok", cat: "ok" }); gSt.push({ st: "ok", cat: "ok" }); }
+          else if (p.kind === "del") { eSt.push({ st: "full", cat: "skipped" }); cCounts.skipped++; }
+          else if (p.kind === "ins") { gSt.push({ st: "full", cat: "extra" }); cCounts.extra++; }
+          else if (p.kind === "spacing") {
+            eSt.push({ st: "full", cat: "spacing" }); if (p.exp.indexOf(" ") >= 0) eSt.push({ st: "full", cat: "spacing" });
+            gSt.push({ st: "full", cat: "spacing" }); if (p.got.indexOf(" ") >= 0) gSt.push({ st: "full", cat: "spacing" });
+            cCounts.spacing++;
+          }
+          else {
+            let cc = classifyPair(p.exp, p.got); if (cc === "ok") cc = "spelling";
+            eSt.push({ st: "full", cat: cc }); gSt.push({ st: "full", cat: cc }); cCounts[cc]++;
+          }
+        });
+        const eToksC = hcmWordTokens(S.target || "").map(function (t) { return t.w; });
+        const gToksC = hcmWordTokens(typedString()).map(function (t) { return t.w; });
+        cmpEl.innerHTML = "<h3>Passage comparison</h3>" + cmpComparisonHtml(eToksC, gToksC, eSt, gSt, cCounts, false);
+      }
+      [["rNetRing", Math.min(100, s.net / 2)], ["rAccRing", s.acc], ["rMarksRing", (qual ? mk : 0) / 25 * 100]].forEach(function (cfg) {
+        const rc2 = document.getElementById(cfg[0]); if (rc2) rc2.setAttribute("data-pct", String(Math.max(0, cfg[1])));
+      });
+      animateRings(rb);
+      if (S.examMode) {
+        const ebF = q("#endTestBtn"); if (ebF) ebF.style.display = "none";
+        q("#rTitle").textContent = "Real Exam Mode result — " + S.currentName;
+      }
+      const prHide = q("#pracResult"); if (prHide) prHide.style.display = "none";
+    } else {
+      rb.className = "resultBox practiceMode";
+      rb.dataset.mode = "practice";
+      q("#rTitle").textContent = "Practice result — " + S.currentName;
+      const pr = q("#pracResult"); if (pr) pr.style.display = "block";
+      const setT = function (id, v) { const n = q("#" + id); if (n) n.textContent = v; };
+      setT("prNet", Math.round(s.net));
+      setT("prAcc", s.acc.toFixed(1) + "%");
+      setT("prTime", fmtTime(Math.round(el)));
+      setT("prErr", s.errs);
+      setT("prWords", s.words);
+      setT("prGross", Math.round(s.gross));
+      setT("prLine", practiceLine(s));
+      const tg = q("#prTarget");
+      if (tg) {
+        if (S.isDrill) { tg.style.display = ""; tg.textContent = s.accChar >= 98 ? "Target 98% — reached 🎯" : "Target 98% — you hit " + s.accChar.toFixed(1) + "%"; }
+        else tg.style.display = "none";
+      }
+      const pbEl = q("#prBest");
+      if (pbEl) pbEl.style.display = (prevBest && Math.round(s.net) > (prevBest.net || 0)) ? "" : "none";
+      const nbEl = q("#prNextBtn");
+      if (nbEl) {
+        const hasNext = !!(S.silo && S.silo.items && S.silo.index < S.silo.items.length - 1);
+        nbEl.textContent = hasNext ? "Next →" : "Finish — back to list";
+      }
+    }
+
+    const nowIso = new Date().toISOString();
+    const entry = { clientId: newClientId(), ts: nowIso, d: new Date().toLocaleString("en-IN"), name: S.currentName, part: (S.currentName || ""), gross: Math.round(s.gross), net: Math.round(s.net), acc: +s.acc.toFixed(1), errs: s.errs, marks: qual ? mk : 0, min: S.durMin, durSec: Math.round(el), chars: s.pos, words: s.words, bs: S.bsCount || 0, examMode: !!S.examMode, errCat: Object.assign({}, S.errCat), weakKeys: Object.assign({}, S.errKeys), weakWords: Object.assign({}, S.errWords), synced: false };
+
+    try {
+      const fx = buildHcmTelemetry(mres, S.target, typedString());
+      if (fx) {
+        if (fx.tel) entry.telemetry = fx.tel;
+        if (fx.feed && fx.feed.length) entry.mistakeDetail = fx.feed.slice(0, 60);
+        if (!S.isDrill) revFeed(fx.feed, "hcm");
+      }
+    } catch (e) { console.warn("Telemetry failed", e); }
+    if (!entry.mistakeDetail && mres.rows.length) entry.mistakeDetail = mres.rows.filter(function (r) { return r.exp !== "(extra)"; }).map(function (r) { return { exp: r.exp, got: r.got, st: "full" }; });
+    window.__lastResult = { name: entry.name, date: entry.d, min: entry.min, durSec: entry.durSec, gross: entry.gross, net: entry.net, acc: entry.acc, errs: entry.errs, marks: entry.marks, band: hcmBandLabel(s.net) };
+    const h = loadHist(); h.unshift(entry); saveHist(h);
+    window.__lastEntryClientId = entry.clientId;
+
+    if (S.currentId === "mistakeDrill" && typeof opts.onMistakeDrillResult === "function") { try { opts.onMistakeDrillResult(mres, s); } catch (e) { console.warn("Mistake-drill progress failed", e); } }
+    if (S.currentId === "revisionStream" && typeof opts.onRevisionStreamResult === "function") { try { opts.onRevisionStreamResult(); } catch (e) { console.warn("Revision stream progress failed", e); } }
+
+    const rc = q("#rCloud");
+    if (appState.user) {
+      if (rc) rc.textContent = "Saving to cloud…";
+      cloud.saveResult(entry).then(function (ok) {
+        if (rc) rc.textContent = ok ? "Saved to cloud ✓ — this result is in your account and in Trends." : "Saved on this device only — cloud save failed, check connection and log in again.";
+      });
+    } else if (rc) { rc.textContent = "Saved on this device only — log in to also save it to your account."; }
+
+    if (S.isDrill && s.accChar >= 98) { const dn = loadDone(); dn[S.currentId] = true; saveDone(dn); }
+    if (s.pos > 0 && S.currentId) {
+      const recentEntry = { d: entry.d, ts: nowIso, gross: Math.round(s.gross), net: Math.round(s.net), acc: +s.acc.toFixed(1), errs: s.errs, marks: (s.net < 30 ? 0 : hcmMarksFor(s.net)), min: S.durMin };
+      try { pushBest(S.currentId, recentEntry); } catch (e) { console.warn("Recent save failed", e); }
+      try { if (appState.user) cloud.saveBest(S.currentId); } catch (e) { console.warn("Cloud best save failed", e); }
+    }
+    updateLessonHistory();
+    const fxEl = q("#rForensics");
+    if (fxEl) fxEl.innerHTML = entry.telemetry ? forensicsHtml(entry.telemetry, { engine: "E3", examId: "hcm", netWpm: s.net, grossWpm: s.gross, acc: s.acc, chars: s.pos, completion: S.target.length ? (s.pos / S.target.length * 100) : 0, wordsTyped: s.words }) : "";
+    try { rb.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+    if (typeof opts.onFinish === "function") opts.onFinish(entry);
+    if (isExamCtx()) {
+      rb.classList.add("motivHold");
+      showMotivation(qual, function () {
+        rb.classList.remove("motivHold");
+        rb.querySelectorAll(".ringFg").forEach(function (c) { c.style.strokeDashoffset = "201.06"; });
+        animateRings(rb);
+      });
+    }
+  }
+
+  /* ---------- lesson history strip (verbatim port) ---------- */
+  let lessonHistoryExpanded = false, lessonHistoryForId = null;
+  function updateLessonHistory() {
+    const wrap = q("#lessonHistory"); if (!wrap) return;
+    const id = S.currentId || "", name = S.currentName || "Exercise";
+    if (lessonHistoryForId !== id) { lessonHistoryExpanded = false; lessonHistoryForId = id; }
+    const map = loadBest(); const arr = Array.isArray(map[id]) ? sortBestArr(map[id]) : [];
+    const st = lessonStatus(id);
+    if (!arr.length) {
+      wrap.innerHTML = "<div class='lhStatic'><span class='lhTitle'>" + escapeHtml(name) + "</span><span class='lhStatus'>Not attempted yet</span></div>";
+      wrap.classList.add("isCollapsed"); wrap.classList.remove("isExpanded");
+      return;
+    }
+    const statusPlain = (st.completed ? "✓ Completed" : "Not completed yet") + (st.passed ? " · Accuracy Gate passed (98%+)" : "") + " · " + arr.length + " recent attempt" + (arr.length > 1 ? "s" : "");
+    let hh = "<button type='button' class='lhToggle' id='lhToggleBtn' aria-expanded='" + (lessonHistoryExpanded ? "true" : "false") + "'>";
+    hh += "<span class='lhTitle'>" + escapeHtml(name) + "</span>";
+    hh += "<span class='lhStatus" + (st.completed ? " done" : "") + "'>" + escapeHtml(statusPlain) + "</span>";
+    hh += "<span class='lhChev' aria-hidden='true'>" + (lessonHistoryExpanded ? "▾" : "▸") + "</span>";
+    hh += "</button>";
+    if (lessonHistoryExpanded) {
+      hh += "<div class='lhBody' id='lhBody'>";
+      hh += "<p style='margin:2px 0 8px'>" + (st.completed ? "<strong style='color:var(--pass)'>✓ Completed</strong>" : "<span style='color:var(--muted)'>Not completed yet</span>") + (st.passed ? " · <span style='color:var(--pass);font-weight:700'>Accuracy Gate passed (98%+)</span>" : "") + " · " + arr.length + " recent attempt" + (arr.length > 1 ? "s" : "") + "</p>";
+      const examHist = isExamCtx();
+      hh += "<div style='overflow-x:auto'><table><tr><th>Date</th><th>Duration</th><th>Gross</th><th>Net WPM</th><th>Accuracy</th><th>Errors</th>" + (examHist ? "<th>Marks</th>" : "") + "</tr>";
+      arr.slice(0, 10).forEach(function (en) {
+        hh += "<tr><td>" + escapeHtml(String(en.d || en.ts || "")) + "</td><td>" + (en.min ? en.min + " min" : "—") + "</td><td>" + (en.gross || 0) + "</td><td><strong>" + (en.net || 0) + "</strong></td><td>" + (+en.acc || 0).toFixed(1) + "%</td><td>" + (en.errs || 0) + "</td>" + (examHist ? "<td>" + ((en.net || 0) >= 30 ? (en.marks || 0) + " / 25" : "DQ") + "</td>" : "") + "</tr>";
+      });
+      hh += "</table></div>";
+      hh += "</div>";
+    }
+    wrap.innerHTML = hh;
+    wrap.classList.toggle("isExpanded", lessonHistoryExpanded);
+    wrap.classList.toggle("isCollapsed", !lessonHistoryExpanded);
+    const tb = wrap.querySelector("#lhToggleBtn");
+    if (tb) tb.addEventListener("click", function () { lessonHistoryExpanded = !lessonHistoryExpanded; updateLessonHistory(); });
+  }
+
+  /* ---------- mode / duration / submit wiring ---------- */
+  function paintSubmitBtn() {
+    const sb = q("#submitBtn"); if (!sb) return;
+    const show = S.started && !S.finished && !S.examMode;
+    sb.style.display = show ? "" : "none";
+    if (show) {
+      const ready = S.target.length > 0 && S.typed.length >= S.target.length;
+      if (isExamCtx()) sb.textContent = ready ? "✓ Submit result" : "Submit";
+      else sb.textContent = ready ? "✓ Finish" : "Finish";
+      sb.classList.toggle("big", ready);
+    }
+  }
+  function setDuration(min) { S.durMin = min; resetTest(); }
+  function setExamMode(on) {
+    const wasExam = !!S.examMode;
+    S.examMode = !!on;
+    const eb = q("#endTestBtn");
+    if (S.examMode) {
+      if (!wasExam) preExamState = { durMin: S.durMin, currentId: S.currentId, currentName: S.currentName, ctx: S.ctx };
+      S.durMin = 10;
+      if (eb) { eb.style.display = ""; eb.disabled = true; }
+      q("#stHud").classList.add("rem");
+      resetTest();
+      setPaperView(!!SETTINGS.examPaper);
+      focusCapture();
+    } else {
+      if (eb) eb.style.display = "none";
+      q("#stHud").classList.remove("rem");
+      const restoreMin = (preExamState && preExamState.durMin) ? preExamState.durMin : (S.durMin === 10 ? 5 : S.durMin);
+      S.durMin = restoreMin;
+      S.ctx = (preExamState && preExamState.ctx) ? preExamState.ctx : "practice";
+      preExamState = null;
+      resetTest();
+      focusCapture();
+    }
+    paintBar();
+  }
+
+  q("#stBack").addEventListener("click", function () { if (typeof opts.onExit === "function") opts.onExit(); });
+  q("#stTitle").textContent = opts.title || "";
+  q("#submitBtn").addEventListener("click", function () { if (S.started && !S.finished) finishTest(); });
+  q("#restartBtn").addEventListener("click", function () { resetTest(); focusCapture(); });
+  q("#endTestBtn").addEventListener("click", function () { if (S.started && !S.finished) finishTest(); });
+  q("#againBtn").addEventListener("click", function () { resetTest(); focusCapture(); });
+  q("#nextBtn").addEventListener("click", function () {
+    const s = S.silo;
+    if (s && s.items && s.items.length) { loadSiloIndex((s.index + 1) % s.items.length); focusCapture(); }
+  });
+  q("#mistakeBtn").addEventListener("click", function () { if (typeof opts.onPractiseMistakes === "function") opts.onPractiseMistakes(); });
+  q("#rcBtn").addEventListener("click", function () { openResultCard(); });
+  q("#prAgainBtn").addEventListener("click", function () { resetTest(); focusCapture(); });
+  q("#prNextBtn").addEventListener("click", function () {
+    const s = S.silo;
+    if (s && s.items && s.index < s.items.length - 1) { loadSiloIndex(s.index + 1); focusCapture(); }
+    else if (typeof opts.onExit === "function") opts.onExit();
+  });
+  q("#prBackBtn").addEventListener("click", function () { if (typeof opts.onExit === "function") opts.onExit(); });
+  q("#paperPrint").addEventListener("click", function () { printPassage(S.currentName, S.target); });
+  q("#paperSheet").addEventListener("scroll", function () { if (!paperProgScroll) paperHold = true; });
+  q("#paperWrap").querySelectorAll("[data-layout]").forEach(function (b) {
+    b.addEventListener("click", function () { SETTINGS.paperLayout = b.getAttribute("data-layout"); persistSettings(); paintPaperLayout(); });
+  });
+
+  /* ---------- boot the stage ---------- */
+  paintBar();
+  if (S.paperView) { q("#paperWrap").style.display = "block"; }
+  if (S.silo && S.silo.items && S.silo.items.length) {
+    const it = S.silo.items[S.silo.index || 0];
+    loadText(it.id, it.name, it.text, it.isDrill);
+    /* Hub launches load with isDrill=false (verbatim startHubTest quirk:
+       the silo items carry isDrill=true for picker loads, the initial
+       load does not) — opts.initialIsDrill overrides when provided. */
+    if (opts.initialIsDrill === false) { S.isDrill = false; }
+  }
+  if (S.paperView) { updatePaperSheet(); paintPaperLayout(); }
+
+  return {
+    destroy: function () { clearInterval(S.timer); zen.destroy(); },
+    _state: S,
+    focus: focusCapture,
+    finishNow: finishTest
+  };
+}
+
+/* =====================================================================
+   EXAM STAGE — verbatim port of the current exams.js engine (E1/E2).
+   opts: { spec, test, custom:bool, durMin (override), backspaceOverride,
+           silo:[tests of this exam] (passage switching), onBack(),
+           onFinish(entry), onPractiseMistakes(), onProgress(),
+           onExamSwitch(examId) } */
+export function mountExamStage(container, opts) {
+  const sp = opts.spec;
+  const durMin = opts.durMin || sp.durationMin;
+  const EX = { spec: sp, test: opts.test, category: sp.categories ? sp.categories[0].id : "", started: false, startT: 0, timer: null, finished: false, caret: 0 };
+  const zen = makeZen();
+
+  function bsEffective() { return opts.backspaceOverride != null ? !!opts.backspaceOverride : !!sp.backspace; }
+
+  container.innerHTML =
+    '<div class="stage-wrap" id="exStageWrap">' +
+      '<div class="stage-top">' +
+        '<button class="pill" type="button" id="exBack">← Back</button>' +
+        '<span class="stage-title" id="exTitle"></span>' +
+        '<span class="badge error" id="exNoBs" style="display:none">No Backspace</span>' +
+        '<span style="flex:1"></span>' +
+        '<span class="pillStat" id="exCand"></span>' +
+        '<span class="pillStat" id="exBsState"></span>' +
+      '</div>' +
+      '<div class="stage-bar" id="exBar"></div>' +
+      morePopHtml() +
+      '<div class="exam-menu-pop" id="exExamMenu" hidden></div>' +
+      '<div class="hud" id="exHud">' +
+        '<div class="hud-cell hud-ring"><svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="27" fill="none" stroke="var(--border)" stroke-width="4" transform="scale(0.72) translate(8.6 8.6)"/><circle id="exRing" cx="22" cy="22" r="27" fill="none" stroke="var(--accent)" stroke-width="4" stroke-dasharray="169.6" stroke-dashoffset="0" transform="rotate(-90 22 22) scale(0.72) translate(8.6 8.6)"/></svg><span class="hud-v" id="exTime">0:00</span><span class="hud-l">Time left</span></div>' +
+        '<div class="hud-cell"><span class="hud-v" id="exHudNet">0</span><span class="hud-l">Net WPM</span></div>' +
+        '<div class="hud-cell"><span class="hud-v" id="exHudPred">—</span><span class="hud-l">' + (sp.engine === "E1" ? "Error % so far" : "Allowance left") + '</span></div>' +
+        '<div class="hud-cell"><span class="hud-v" id="exWords">0</span><span class="hud-l">Words</span></div>' +
+        '<div class="hud-cell"><span class="hud-v" id="exKeys">0</span><span class="hud-l">Keystrokes</span></div>' +
+      '</div>' +
+      '<div class="card" id="exPrePanel">' +
+        '<h2 id="exPreTitle"></h2><p id="exPreInfo" class="sub"></p>' +
+        '<div id="exCatWrap"></div>' +
+        '<button class="btn" type="button" id="exStartBtn" style="margin-top:14px">Start test</button>' +
+      '</div>' +
+      '<div id="exStage" style="display:none">' +
+        '<div class="exPassage" id="exPassage"></div>' +
+        '<div class="exTypedWrap" id="exTypedWrap"><div id="exTyped"></div>' +
+          '<textarea id="exCapture" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type here"></textarea>' +
+        '</div>' +
+        '<div class="stage-actions">' +
+          '<button class="btn" type="button" id="exSubmit">Submit test</button>' +
+          '<button class="btn secondary" type="button" id="exCancel">Cancel</button>' +
+        '</div>' +
+      '</div>' +
+      '<div class="kbSection" id="exKbSection" style="display:none"><h3>Finger keyboard — which finger presses which key</h3><div id="keyboard"></div></div>' +
+      '<div id="exResultBody" style="display:none"></div>' +
+    '</div>';
+
+  const q = function (sel) { return container.querySelector(sel); };
+  const exCaptureEl = q("#exCapture");
+  const morePop = q(".more-pop");
+  const kbSection = q("#exKbSection");
+  wireMorePop(morePop, kbSection, function () { return { name: EX.test.name, text: exFullTarget() }; });
+  if (SETTINGS.kb) { kbSection.style.display = "block"; kbSection.querySelector("#keyboard").innerHTML = fingerKeyboardHtml(); kbSection.dataset.built = "1"; }
+  zen.watchMouse(container);
+
+  /* ---------- command bar ---------- */
+  function paintBar() {
+    const slot = q("#exBar"); if (!slot) return;
+    slot.innerHTML = "";
+    const bar = renderCommandBar({
+      examLabel: sp.short,
+      duration: durMin,
+      backspace: bsEffective(),
+      backspaceLocked: !opts.custom,
+      liveErrors: false,
+      paperView: false,
+      realExamMode: false,
+      onAction: onBarAction
+    });
+    bar.querySelectorAll('[data-act="duration"]').forEach(function (b) { b.disabled = true; b.setAttribute("data-tip", "Fixed by this exam's pattern"); });
+    const er = bar.querySelector('[data-act="errors"]'); if (er) { er.disabled = true; er.setAttribute("data-tip", "Errors are scored at submit on this exam's screen"); }
+    const rm = bar.querySelector('[data-act="realexam"]'); if (rm) { rm.disabled = true; rm.setAttribute("data-tip", "This screen already runs the real exam pattern"); }
+    const pp = bar.querySelector('[data-act="paper"]'); if (pp) { pp.disabled = true; pp.setAttribute("data-tip", "This exam is typed on screen"); }
+    if (!opts.silo) { const ps = bar.querySelector('[data-act="passage"]'); if (ps) ps.disabled = true; }
+    slot.appendChild(bar);
+  }
+  function onBarAction(name) {
+    if (name === "exam") {
+      const menu = q("#exExamMenu");
+      if (!menu.hidden) { menu.hidden = true; return; }
+      menu.innerHTML = ["hcm", "chsl", "cgl", "rrb"].map(function (id) {
+        return '<button type="button" class="pill" data-sw="' + id + '">' + escapeHtml(({ hcm: "Delhi Police HCM", chsl: "SSC CHSL", cgl: "SSC CGL DEST", rrb: "RRB NTPC" })[id]) + '</button>';
+      }).join("");
+      menu.hidden = false;
+      menu.querySelectorAll("[data-sw]").forEach(function (b) {
+        b.addEventListener("click", function () { menu.hidden = true; if (typeof opts.onExamSwitch === "function") opts.onExamSwitch(b.getAttribute("data-sw")); });
+      });
+    }
+    else if (name === "passage") {
+      if (!opts.silo) return;
+      openPassageModal({
+        title: "Choose a passage",
+        groups: [{ label: sp.short + " mocks", items: opts.silo.map(function (t) {
+          return { id: t.id, name: t.name, sub: (t.topic ? t.topic + " · " : "") + wordCountOf(t.text) + " words", diff: t.diff || null, done: false };
+        }) }],
+        onPick: function (item) {
+          const t = opts.silo.find(function (x) { return x.id === item.id; });
+          if (t) openExamTest(t);
+        }
+      });
+    }
+    else if (name === "backspace") {
+      /* locked in official mocks (renderCommandBar disables it); in
+         custom mocks the arena owns the override — it re-mounts with the
+         flipped value so the pre-panel and badge stay truthful. */
+      if (opts.custom && typeof opts.onBackspaceToggle === "function") opts.onBackspaceToggle(!bsEffective());
+    }
+    else if (name === "more") { morePop.hidden = !morePop.hidden; }
+  }
+
+  /* ---------- open / pre-panel (verbatim openExamTest) ---------- */
+  function exFullTarget() {
+    const base = EX.test.text;
+    if (EX.spec.id !== "rrb") return base;
+    const typed = (exCaptureEl.value || "");
+    const reps = Math.max(1, Math.ceil((typed.length + 200) / base.length));
+    let out = ""; for (let k = 0; k < reps; k++) out += (out ? " " : "") + base;
+    return out;
+  }
+  function openExamTest(t) {
+    EX.test = t; EX.category = sp.categories ? sp.categories[0].id : ""; EX.started = false; EX.finished = false; EX.caret = 0;
+    clearInterval(EX.timer);
+    TEL.setTarget(null, "typed");
+    q("#exTitle").textContent = sp.name + " — " + t.name;
+    q("#exCand").textContent = appState.user ? ((appState.accountName || "").trim() || appState.user.email || "Account") : "Practice candidate";
+    q("#exBsState").textContent = "Backspace: " + (bsEffective() ? "Allowed" : "Disabled");
+    q("#exNoBs").style.display = bsEffective() ? "none" : "";
+    q("#exTime").textContent = fmtTime(durMin * 60);
+    const ring = q("#exRing"); if (ring) ring.style.strokeDashoffset = "0";
+    q("#exWords").textContent = "0"; q("#exKeys").textContent = "0";
+    q("#exHudNet").textContent = "0"; q("#exHudPred").textContent = "—";
+    q("#exPreTitle").textContent = t.name + " — before you start";
+    q("#exPreInfo").textContent = sp.durationLabel + " · " + wordCountOf(t.text) + " words · " + fmtNum(t.text.length) + " keystrokes · Backspace " + (bsEffective() ? "allowed" : "DISABLED") + " · " + sp.evaluation + ".";
+    const cw = q("#exCatWrap");
+    if (sp.categories) {
+      cw.innerHTML = "<strong>Your category:</strong> <span class='hint'>the verdict uses this cap.</span><div class='controls' style='margin-top:8px'>" + sp.categories.map(function (c) { return "<button class='pill exCat' data-cat='" + c.id + "' type='button'>" + c.label + " — error ≤ " + c.cap + "%</button>"; }).join("") + "</div>";
+      cw.querySelectorAll(".exCat").forEach(function (b) { b.addEventListener("click", function () { EX.category = b.dataset.cat; paintExCats(); }); });
+      paintExCats();
+    } else cw.innerHTML = "";
+    q("#exPrePanel").style.display = "block";
+    q("#exStage").style.display = "none";
+    q("#exResultBody").style.display = "none";
+    q("#exPassage").textContent = t.text;
+    exCaptureEl.value = "";
+    q("#exTyped").innerHTML = "<span class='ph'>Click here and start typing the passage above…</span>";
+  }
+  function paintExCats() { container.querySelectorAll(".exCat").forEach(function (b) { b.classList.toggle("active", b.dataset.cat === EX.category); }); }
+  function exFocus() { try { exCaptureEl.focus({ preventScroll: true }); } catch (e) { exCaptureEl.focus(); } }
+  function renderExTyped() {
+    const disp = q("#exTyped");
+    if (!disp) return;
+    const v = exCaptureEl.value || "";
+    if (!v) { disp.innerHTML = "<span class='ph'>Start typing…</span>"; return; }
+    if (bsEffective()) {
+      const c = Math.max(0, Math.min(EX.caret || 0, v.length));
+      disp.innerHTML = escapeHtml(v.slice(0, c)) + "<span class='exCaret' aria-hidden='true'></span>" + escapeHtml(v.slice(c));
+    } else {
+      disp.textContent = v;
+    }
+  }
+  function exCaretFromPoint(x, y) {
+    const disp = q("#exTyped");
+    if (!disp || !document.caretRangeFromPoint) return null;
+    const r = document.caretRangeFromPoint(x, y);
+    if (!r || !disp.contains(r.startContainer)) return null;
+    let idx = 0; const node = r.startContainer;
+    if (node === disp) {
+      for (let i = 0; i < r.startOffset && i < disp.childNodes.length; i++) idx += (disp.childNodes[i].textContent || "").length;
+      return idx;
+    }
+    let n = disp.firstChild;
+    while (n && n !== node) { idx += (n.textContent || "").length; n = n.nextSibling; }
+    if (!n) return null;
+    return idx + r.startOffset;
+  }
+
+  q("#exStartBtn").addEventListener("click", function () {
+    q("#exPrePanel").style.display = "none";
+    q("#exStage").style.display = "block";
+    exFocus();
+  });
+  q("#exTypedWrap").addEventListener("click", function (e) {
+    exFocus();
+    if (!bsEffective() || EX.finished) return;
+    const len = (exCaptureEl.value || "").length;
+    let idx = exCaretFromPoint(e.clientX, e.clientY);
+    if (idx == null) idx = len;
+    idx = Math.max(0, Math.min(idx, len));
+    EX.caret = idx;
+    try { exCaptureEl.setSelectionRange(idx, idx); } catch (err) {}
+    renderExTyped();
+  });
+  q("#exBack").addEventListener("click", function () {
+    if (EX.started && !EX.finished) {
+      askConfirm("Leave this test?", "Your attempt will be cancelled and nothing will be saved.", function () { clearInterval(EX.timer); if (typeof opts.onBack === "function") opts.onBack(); }, function () { exFocus(); });
+    } else if (typeof opts.onBack === "function") opts.onBack();
+  });
+  q("#exCancel").addEventListener("click", function () {
+    askConfirm("Cancel this test?", "The attempt will be discarded — no result is saved.", function () { clearInterval(EX.timer); EX.finished = true; if (typeof opts.onBack === "function") opts.onBack(); }, function () { exFocus(); });
+  });
+  q("#exSubmit").addEventListener("click", function () {
+    askConfirm("Submit this test?", "Your result will be calculated from the text now on screen.", function () { finishExamTest(); }, function () { if (EX.started && !EX.finished) exFocus(); });
+  });
+
+  exCaptureEl.addEventListener("keydown", function (e) {
+    if (!bsEffective()) {
+      if (e.key === "Backspace" || e.key === "Delete" || e.key === "ArrowLeft" || e.key === "ArrowRight" || e.key === "ArrowUp" || e.key === "ArrowDown" || e.key === "Home" || e.key === "End" || e.ctrlKey || e.metaKey) { e.preventDefault(); return; }
+    }
+  });
+  exCaptureEl.addEventListener("click", function () { if (!bsEffective()) { const c = exCaptureEl; try { c.setSelectionRange(c.value.length, c.value.length); } catch (e) {} } });
+  exCaptureEl.addEventListener("keyup", function (e) {
+    if (!bsEffective() || EX.finished) return;
+    if (e.key === "ArrowLeft" || e.key === "ArrowRight" || e.key === "ArrowUp" || e.key === "ArrowDown" || e.key === "Home" || e.key === "End") {
+      const cs = exCaptureEl.selectionStart;
+      if (cs != null) { EX.caret = cs; renderExTyped(); }
+    }
+  });
+  exCaptureEl.addEventListener("input", function () {
+    if (EX.finished) return;
+    const v = exCaptureEl.value;
+    TEL.feed(v);
+    if (!EX.started && v.length > 0) startExTimer();
+    if (soundOn()) keyClick();
+    const csE = exCaptureEl.selectionStart;
+    EX.caret = csE != null ? csE : v.length;
+    renderExTyped();
+    q("#exWords").textContent = wordCountOf(v);
+    q("#exKeys").textContent = v.length;
+    const pas = q("#exPassage");
+    const tgt = exFullTarget(); pas.textContent = tgt;
+    const prog = tgt.length ? v.length / tgt.length : 0;
+    pas.scrollTop = Math.max(0, prog * (pas.scrollHeight - pas.clientHeight));
+  });
+  function startExTimer() {
+    EX.started = true; EX.startT = Date.now();
+    zen.enter();
+    const total = durMin * 60;
+    EX.timer = setInterval(function () {
+      const el = (Date.now() - EX.startT) / 1000, left = Math.max(0, total - el);
+      q("#exTime").textContent = fmtTime(left);
+      const ring = q("#exRing"); if (ring) ring.style.strokeDashoffset = String(169.6 * (1 - left / total));
+      updateExHud(el);
+      if (el >= total) finishExamTest();
+    }, 200);
+  }
+  function updateExHud(el) {
+    const v = exCaptureEl.value || "";
+    const W5 = Math.round(v.length / 5);
+    const mins = Math.max(el, 1) / 60;
+    const gross = W5 / mins;
+    if (sp.engine === "E1") {
+      const sc = scoreWords(EX.test.text, v, { countUntypedSkip: true });
+      const weighted = sc.full + 0.5 * sc.half;
+      const errPct = W5 ? (weighted / W5 * 100) : 0;
+      q("#exHudNet").textContent = Math.round(gross);
+      q("#exHudPred").textContent = dispErrPct(errPct).toFixed(1) + "%";
+    } else {
+      const sc2 = scoreWords(exFullTarget(), v, { countUntypedSkip: false });
+      const weighted2 = sc2.full + 0.5 * sc2.half;
+      const allowance = W5 * 0.05;
+      const finalM = Math.max(0, weighted2 - allowance);
+      const net = Math.max(0, (W5 - finalM * 10) / mins);
+      q("#exHudNet").textContent = net.toFixed(1);
+      q("#exHudPred").textContent = Math.max(0, allowance - weighted2).toFixed(1);
+    }
+  }
+
+  /* ---------- finish (verbatim port of finishExamTest) ---------- */
+  function mkEntry(o) {
+    const t = EX.test;
+    return { clientId: newClientId(), ts: new Date().toISOString(), d: new Date().toLocaleString("en-IN"), name: sp.short + " — " + t.name, part: sp.name, gross: o.gross, net: o.net, acc: o.acc, errs: o.errs, marks: 0, min: durMin, durSec: 0, chars: 0, words: 0, bs: 0, examMode: true, examId: sp.id, testId: t.id, category: EX.category || "", engine: sp.engine, full: 0, half: 0, errorPct: o.errorPct, verdict: o.verdict, errCat: { spelling: 0, capital: 0, punct: 0, spacing: 0, other: 0 }, weakKeys: {}, weakWords: {}, synced: false };
+  }
+  function finishExamTest() {
+    if (EX.finished) return; EX.finished = true; clearInterval(EX.timer);
+    zen.exit();
+    const t = EX.test;
+    const typedText = exCaptureEl.value || "";
+    let el = EX.started ? Math.min((Date.now() - EX.startT) / 1000, durMin * 60) : durMin * 60;
+    if (el <= 0) el = durMin * 60;
+    const mins = el / 60;
+    const target = sp.id === "rrb" ? exFullTarget() : t.text;
+    const sc = scoreWords(target, typedText, { countUntypedSkip: sp.engine === "E1" });
+    const W5 = Math.round(typedText.length / 5);
+    const gross = mins > 0 ? W5 / mins : 0;
+    const weighted = sc.full + 0.5 * sc.half;
+    let entry, result;
+    if (sp.engine === "E1") {
+      const errPct = W5 ? (weighted / W5 * 100) : 0;
+      const cat = sp.categories.find(function (c) { return c.id === EX.category; }) || sp.categories[0];
+      const netInd = gross;
+      const qual = errPct <= cat.cap;
+      const reason = qual ? "Error " + dispErrPct(errPct).toFixed(1) + "% is within the " + cat.cap + "% " + cat.label + " limit"
+        : "Error " + dispErrPct(errPct).toFixed(1) + "% exceeds the " + cat.cap + "% " + cat.label + " limit";
+      const acc = W5 ? Math.max(0, (W5 - weighted) / W5 * 100) : 100;
+      entry = mkEntry({ gross: Math.round(gross), net: Math.round(netInd), acc: +acc.toFixed(1), errs: Math.round(weighted), errorPct: +errPct.toFixed(1), verdict: (qual ? "Qualified" : "Not qualified") + " — " + reason });
+      result = { sp: sp, t: t, sc: sc, qual: qual, reason: reason, gross: gross, netInd: netInd, errPct: errPct, acc: acc, el: el, mins: mins, typedText: typedText, target: target, cat: cat, words5: W5 };
+    } else {
+      const allowance = W5 * 0.05;
+      const finalM = Math.max(0, weighted - allowance);
+      const net = mins > 0 ? Math.max(0, (W5 - finalM * 10) / mins) : 0;
+      const qual2 = net >= 30;
+      const reason2 = qual2 ? "Net speed " + net.toFixed(1) + " WPM meets the 30 WPM qualifying standard"
+        : "Net speed " + net.toFixed(1) + " WPM is below the 30 WPM qualifying standard";
+      const acc2 = W5 ? Math.max(0, (W5 - weighted) / W5 * 100) : 100;
+      const errPct2 = W5 ? (weighted / W5 * 100) : 0;
+      entry = mkEntry({ gross: Math.round(gross), net: Math.round(net), acc: +acc2.toFixed(1), errs: Math.round(weighted), errorPct: +errPct2.toFixed(1), verdict: (qual2 ? "Qualified" : "Not qualified") + " — " + reason2 });
+      entry.finalMistakes = +finalM.toFixed(1); entry.allowance = +allowance.toFixed(1);
+      result = { sp: sp, t: t, sc: sc, qual: qual2, reason: reason2, gross: gross, net: net, errPct: errPct2, acc: acc2, el: el, mins: mins, typedText: typedText, target: target, allowance: allowance, finalM: finalM, evaluated: true, words5: W5 };
+    }
+    entry.full = sc.full; entry.half = sc.half; entry.words = W5; entry.chars = typedText.length; entry.durSec = Math.round(el);
+    entry.breakdown = { wrong: sc.wrong, skipped: sc.skipped, extra: sc.extra };
+    (function () {
+      const seen = {}, det = [];
+      sc.detail.forEach(function (d) { if (d.kind === "extra" || !d.exp || d.tail) return; const k = d.exp + "" + d.got; if (seen[k]) return; seen[k] = 1; det.push({ exp: d.exp, got: d.got, st: (d.kind === "half" ? "half" : "full") }); });
+      if (det.length) entry.mistakeDetail = det.slice(0, 60);
+    })();
+    result.entryClientId = entry.clientId;
+    try {
+      const fx = buildExamTelemetry(sp, target, typedText, sc);
+      if (fx) {
+        if (fx.tel) { entry.telemetry = fx.tel; result.tel = entry.telemetry; }
+        revFeed(fx.feed, sp.id);
+      }
+    } catch (e) { console.warn("Telemetry failed", e); }
+    const h = loadHist(); h.unshift(entry); saveHist(h);
+    if (appState.user) cloud.saveResult(entry);
+    if (typeof opts.onFinish === "function") opts.onFinish(entry);
+
+    q("#exStage").style.display = "none";
+    q("#exPrePanel").style.display = "none";
+    const resultEl = q("#exResultBody");
+    resultEl.style.display = "block";
+    renderExamResultInto(resultEl, result, {
+      onBack: function () { if (typeof opts.onBack === "function") opts.onBack(); },
+      onRetake: function () { openExamTest(t); },
+      onPractise: function () { if (typeof opts.onPractiseMistakes === "function") opts.onPractiseMistakes(entry); },
+      onProgress: function () { if (typeof opts.onProgress === "function") opts.onProgress(); }
+    });
+    /* Custom Tests (only) pause on the motivation overlay before the
+       result — hub mocks in this engine go straight to their result. */
+    const isCustomRun = !!(t && typeof t.id === "string" && t.id.indexOf("custom-") === 0);
+    if (isCustomRun) {
+      resultEl.classList.add("motivHold");
+      showMotivation(!!result.qual, function () { resultEl.classList.remove("motivHold"); });
+    }
+  }
+
+  paintBar();
+  openExamTest(EX.test);
+
+  return {
+    destroy: function () { clearInterval(EX.timer); zen.destroy(); },
+    _ex: EX,
+    finishNow: finishExamTest
+  };
+}
+
+/* Stage 3's Training Studio mounts its practice contexts through the same
+   HCM stage (ctx:"practice"); the alias keeps the Stage 1 contract name. */
+export function mountPracticeStage(container, opts) {
+  return mountHcmStage(container, Object.assign({}, opts, { ctx: "practice" }));
+}
