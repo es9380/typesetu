@@ -115,8 +115,80 @@ function mountDemo(root) {
   box.addEventListener("keydown", onKey);
   box.addEventListener("click", function () { box.focus(); });
   root.querySelector("#demoAgain").addEventListener("click", function () { build(); box.focus(); });
+
+  /* ---- autoplay: types the demo by itself until the user takes over.
+     Purely additive: it feeds characters through the same state + paint
+     functions the keyboard path uses (paintChar / paintHud / finish), so
+     scoring and rendering stay identical. Any real pointer/key interaction
+     with the demo stops it permanently for this mount. ---- */
+  const hintEl = root.querySelector(".demo-hint");
+  let auto = true;
+  try { if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) auto = false; } catch (e) { /* keep auto */ }
+  let autoTimer = null, inView = false, pageVisible = !document.hidden, autoHintHidden = false, observer = null;
+
+  function autoActive() { return auto && inView && pageVisible; }
+  function autoDelay() {
+    let d = 140 + Math.random() * 130;                    /* ≈45–65 WPM at 5 chars per word */
+    const prev = typed.length ? target[typed.length - 1] : "";
+    if (prev === " ") d *= 0.6;                           /* spaces flow faster */
+    if (prev === "." || prev === ",") d += 130;           /* natural pause at punctuation */
+    return d;
+  }
+  function autoSchedule() {
+    clearTimeout(autoTimer); autoTimer = null;
+    if (!autoActive()) return;
+    autoTimer = setTimeout(autoStep, finished ? 2500 : (typed.length ? autoDelay() : 650));
+  }
+  function autoStep() {
+    autoTimer = null;
+    if (!autoActive()) return;
+    if (finished) { build(); autoSchedule(); return; }    /* next line via the existing build/pick */
+    if (!autoHintHidden && hintEl) { hintEl.style.opacity = "0"; autoHintHidden = true; }
+    if (!t0) { t0 = Date.now(); tick = setInterval(paintHud, 400); }
+    if (typed.length < target.length) { typed += target[typed.length]; paintChar(typed.length - 1); }
+    if (typed.length >= target.length) { finish(); autoSchedule(); return; }
+    spans.forEach(function (s) { s.classList.remove("cur"); });
+    if (spans[typed.length]) spans[typed.length].classList.add("cur");
+    paintHud();
+    autoSchedule();
+  }
+  function autoTakeover() {
+    if (!auto) return;
+    auto = false;
+    clearTimeout(autoTimer); autoTimer = null;
+    if (observer) { observer.disconnect(); observer = null; }
+    if (autoHintHidden && hintEl) { hintEl.style.opacity = ""; autoHintHidden = false; }
+  }
+  function onAutoKey(e) { if (e.isTrusted === false) return; autoTakeover(); }
+  function onVis() {
+    pageVisible = !document.hidden;
+    if (pageVisible) autoSchedule();
+    else { clearTimeout(autoTimer); autoTimer = null; }
+  }
+  box.addEventListener("pointerdown", autoTakeover);
+  box.addEventListener("keydown", onAutoKey);
+  const againBtn = root.querySelector("#demoAgain");
+  if (againBtn) againBtn.addEventListener("click", autoTakeover);
+  document.addEventListener("visibilitychange", onVis);
+  if (window.IntersectionObserver) {
+    observer = new IntersectionObserver(function (entries) {
+      inView = !!(entries[0] && entries[0].isIntersecting);
+      if (inView) autoSchedule();
+      else { clearTimeout(autoTimer); autoTimer = null; }
+    }, { threshold: 0.25 });
+    observer.observe(box);
+  } else { inView = true; }
+
   build();
-  return function () { clearInterval(tick); box.removeEventListener("keydown", onKey); };
+  autoSchedule();
+  return function () {
+    clearInterval(tick); clearTimeout(autoTimer);
+    if (observer) observer.disconnect();
+    document.removeEventListener("visibilitychange", onVis);
+    box.removeEventListener("keydown", onKey);
+    box.removeEventListener("keydown", onAutoKey);
+    box.removeEventListener("pointerdown", autoTakeover);
+  };
 }
 
 export function mount(container) {
