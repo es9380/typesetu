@@ -30,7 +30,55 @@ const DEMO_LINES = [
   "Every mistake in the examination hall costs marks, so accuracy always comes first.",
   "Keep your eyes on the text, your hands on the home row and your mind on the clock.",
   "Good typists are not born, they are built one calm and careful session at a time.",
-  "The department has issued fresh instructions regarding the disposal of pending files."
+  "The department has issued fresh instructions regarding the disposal of pending files.",
+  "Selection is not luck, it is the reward of daily practice done honestly.",
+  "Every topper was once a beginner who refused to give up.",
+  "Your speed today is better than yesterday, and that is enough.",
+  "Discipline types faster than motivation ever will.",
+  "One mock a day keeps the fear away.",
+  "Nobody is born fast, fingers learn what the mind repeats.",
+  "The merit list is written by those who practised on hard days too.",
+  "Small daily progress is still progress, keep going.",
+  "Dream big, type daily, and trust the process.",
+  "Your future self is watching this practice session with pride.",
+  "Accuracy first, speed follows on its own.",
+  "Slow is smooth, and smooth becomes fast.",
+  "Read one word ahead while your fingers finish the current one.",
+  "Keep your eyes on the passage, never on your fingers.",
+  "A steady rhythm beats short bursts of speed.",
+  "Every error costs ten words in HCM, guard your accuracy.",
+  "Type the word you see, not the word you expect.",
+  "Relax your shoulders, tense fingers make more mistakes.",
+  "Sit straight, feet flat, wrists floating above the keys.",
+  "Home row is home base, return to it after every reach.",
+  "Use the right finger for every key, shortcuts create errors.",
+  "Finish the word cleanly before racing to the next one.",
+  "When you lose rhythm, slow down for five seconds and reset.",
+  "Backspace is a tool, not a habit, aim to need it less.",
+  "Warm up your fingers before a mock, cold starts cost marks.",
+  "Practise your weak keys daily, they decide your real speed.",
+  "Thirty accurate words beat forty with five mistakes.",
+  "Look at the screen, trust your fingers, they know the way.",
+  "Keep a light touch, heavy keystrokes slow you down.",
+  "Breathe normally while typing, tension travels to your hands.",
+  "The exam hall rewards the calm, practise calm daily.",
+  "Consistency for ninety days can change your rank forever.",
+  "Do not compare your day one with someone else's day hundred.",
+  "Hard passages in practice make easy work in the exam.",
+  "Your only competition is the version of you from last week.",
+  "Type like you already belong on that merit list.",
+  "You have got this, {name}, one clean line at a time.",
+  "{name}, your fingers are faster than your doubts.",
+  "One more mock today, {name}? Your future self says yes.",
+  "Accuracy looks good on you, {name}, keep it clean.",
+  "{name}, the merit list has a seat with your name on it.",
+  "Slow down, breathe, and type it right, {name}.",
+  "Every clean word is a promise kept, {name}.",
+  "{name}, champions practise when nobody is watching.",
+  "Trust your fingers, {name}, they have done this a thousand times.",
+  "Five focused minutes now, {name}, beat an hour of distraction.",
+  "Your weak keys are watching, {name}, give them a workout.",
+  "Type it like you mean selection, {name}."
 ];
 
 function timeOfDayGreeting() {
@@ -100,8 +148,23 @@ const NEAR = { q:"wa", w:"qes", e:"wrd", r:"etf", t:"ryg", y:"tuh", u:"yij", i:"
   a:"qsz", s:"awdx", d:"sefc", f:"drgv", g:"fthb", h:"gyjn", j:"hukm", k:"jil", l:"kop",
   z:"asx", x:"zsc", c:"xdv", v:"cfb", b:"vgn", n:"bhm", m:"nj" };
 
+/* The demo's effective line pool, built at mount: the generic lines are
+   always in. The {name} lines join ONLY when a signed-in display name
+   exists (the same source the Home greeting uses), with the placeholder
+   substituted. Logged out there is no name, so those lines are excluded
+   entirely — a raw "{name}" can never reach the screen, and no generic
+   name is ever substituted (no name anywhere when logged out). */
+function buildDemoPool() {
+  let name = "";
+  try { name = (displayNameForUI() || "").trim(); } catch (e) {}
+  const pool = DEMO_LINES.filter(function (s) { return s.indexOf("{name}") < 0; });
+  if (name) DEMO_LINES.forEach(function (s) { if (s.indexOf("{name}") >= 0) pool.push(s.split("{name}").join(name)); });
+  return pool;
+}
+
 function mountDemo(root, hooks) {
   hooks = hooks || {};
+  const LINES = buildDemoPool();
   const box = root.querySelector("#demoBox"); if (!box) return function () {};
   const textEl = root.querySelector("#demoText"), hud = root.querySelector("#demoHud"),
         done = root.querySelector("#demoDone"), tag = root.querySelector("#demoTag");
@@ -120,12 +183,12 @@ function mountDemo(root, hooks) {
   function pickLine() {
     const max = maxChars();
     let pool = [];
-    DEMO_LINES.forEach(function (s, i) { if (s.length <= max && i !== lastLine) pool.push(i); });
+    LINES.forEach(function (s, i) { if (s.length <= max && i !== lastLine) pool.push(i); });
     if (!pool.length) { // nothing fits: take the shortest
-      pool = [DEMO_LINES.reduce(function (m, s, i) { return s.length < DEMO_LINES[m].length ? i : m; }, 0)];
+      pool = [LINES.reduce(function (m, s, i) { return s.length < LINES[m].length ? i : m; }, 0)];
     }
     lastLine = pool[Math.floor(Math.random() * pool.length)];
-    return DEMO_LINES[lastLine];
+    return LINES[lastLine];
   }
   function loadLine() {
     target = pickLine(); typed = ""; t0 = 0; total = 0; wrong = 0; finished = false;
@@ -339,7 +402,9 @@ export function mount(container) {
           '<h3>' + icon("flame") + ' Next best step</h3>' +
           (weak.length
             ? '<p class="muted">Your weakest keys lately: ' + weak.map(function (k) { return '<kbd>' + escapeHtml(k === " " ? "space" : k) + '</kbd>'; }).join(" ") + '</p><a class="btn sm" href="#/studio">Drill them in Training Studio</a>'
-            : '<p class="muted">Take a mock and we will find the keys that cost you the most marks.</p><a class="btn sm" href="#/arena">Take your first mock</a>') +
+            : stats.tests > 0
+              ? '<p class="muted">No weak keys yet — your recent typing is clean.</p><a class="btn sm" href="#/studio">Practise in Training Studio</a>'
+              : '<p class="muted">Take a mock and we will find the keys that cost you the most marks.</p><a class="btn sm" href="#/arena">Take your first mock</a>') +
         '</div>' +
       '</section>' +
 
