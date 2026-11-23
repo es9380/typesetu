@@ -5,7 +5,7 @@
    (~/workspace/typesetu-redesign-tests/golden.json) are the law and the
    Stage 2 driver diffs against them exactly. */
 
-import { specOf } from "../data/exams.js";
+import { specOf } from "../data/examSpecs.js";
 
 /* HCM marks bands — verbatim port of marksFor() from the current core.js. */
 export function hcmMarksFor(net) {
