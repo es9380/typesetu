@@ -3,7 +3,7 @@
    The drawer exists ONLY on mobile. The account slot is owned by
    ProfilePopover.js; Navbar just provides the mount point. */
 
-import { EXAM_SPECS, specOf } from "../data/exams.js";
+import { EXAM_SPECS, specOf } from "../data/examSpecs.js";
 import { appState, on, setActiveExam, setTheme } from "../core/state.js";
 import { icon } from "./icons.js";
 
