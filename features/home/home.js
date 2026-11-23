@@ -10,7 +10,7 @@ import { COUNTS } from "../../data/counts.js";
 import { artHtml, mountHeroArt } from "./heroArt.js";
 import { slabFor } from "../../core/scoringMatrix.js";
 import {
-  dashboardStats, currentStreak, testsToday, getDailyGoal, setDailyGoal, readiness, topWeakKeys
+  dashboardStats, currentStreak, testsToday, getDailyGoal, setDailyGoal, readiness, topWeakKeys, typingTimeByDay
 } from "../../core/stats.js";
 import { appState, on } from "../../core/state.js";
 import { icon } from "../../components/icons.js";
@@ -46,6 +46,33 @@ function ring(pct, label, sub, cls) {
       '<circle class="tr-fg" cx="40" cy="40" r="' + R + '" stroke-dasharray="' + C.toFixed(1) + '" stroke-dashoffset="' + off.toFixed(1) + '" transform="rotate(-90 40 40)"/>' +
     '</svg><span class="tr-label">' + label + '</span></div>' +
     '<div class="tr-sub">' + sub + '</div>';
+}
+
+/* "42 min" under an hour, then "1 h 12 min" (or a clean "1 h"). */
+function fmtTypeTime(sec) {
+  const m = Math.round((+sec || 0) / 60);
+  if (m < 60) return m + " min";
+  const h = Math.floor(m / 60), r = m % 60;
+  return r ? h + " h " + r + " min" : h + " h";
+}
+
+/* Daily typing-time card (v16): today's total across ALL saved sessions
+   (mocks, custom tests, drills, warm-ups, passages, revision) plus a
+   last-7-days bar strip. Read-only over local history. */
+function typingTimeCard() {
+  const days = typingTimeByDay(7);
+  const todaySec = days[days.length - 1].seconds;
+  const maxSec = Math.max.apply(null, days.map(function (d) { return d.seconds; }).concat([1]));
+  const bars = days.map(function (d, i) {
+    const pct = Math.round(d.seconds / maxSec * 100);
+    const h = d.seconds > 0 ? Math.max(10, pct) : 3;
+    return '<span class="tt-col' + (i === days.length - 1 ? " today" : "") + '">' +
+      '<span class="tt-track"><span class="tt-fill" style="height:' + h + '%"></span></span>' +
+      '<i>' + "SMTWTFS"[d.date.getDay()] + '</i></span>';
+  }).join("");
+  return '<div class="tt-main"><span class="tt-big">' + fmtTypeTime(todaySec) + '</span>' +
+    '<span class="tt-sub">' + (todaySec > 0 ? "Typing time today" : "No typing yet today") + '</span></div>' +
+    '<div class="tt-bars" role="img" aria-label="Typing time for the last 7 days">' + bars + '</div>';
 }
 
 function slabHtml(examId) {
@@ -307,6 +334,7 @@ export function mount(container) {
       '<section class="today-strip" aria-label="Today">' +
         '<div class="card today-card">' + readyCard + '</div>' +
         '<div class="card today-card">' + goalCard + '</div>' +
+        '<div class="card today-card today-time">' + typingTimeCard() + '</div>' +
         '<div class="card today-card today-next">' +
           '<h3>' + icon("flame") + ' Next best step</h3>' +
           (weak.length
