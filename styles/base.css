@@ -43,5 +43,5 @@ details p { margin-top: var(--sp-2); color: var(--muted); }
 .skip-link:focus { left: 0; }
 
 @media (prefers-reduced-motion: reduce) {
-  * { animation-duration: 0.001s !important; transition-duration: 0.001s !important; }
+  * { animation-duration: 0.001s !important; animation-iteration-count: 1 !important; transition-duration: 0.001s !important; }
 }
