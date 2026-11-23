@@ -1,0 +1,96 @@
+/* TypeSetu design tokens — centralised CSS Custom Properties.
+   Dark-first (redesign prompt §1): :root carries the DARK theme;
+   [data-theme="light"] overrides with the polished light theme.
+   Never pure #000000. Status accents are shared across themes. */
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* canvas & surfaces */
+  --canvas: #0F1117;
+  --surface: #161B22;
+  --surface-2: #1C232E;
+  --surface-3: #232B38;
+  --border: #262C36;
+  --border-strong: #333D4D;
+
+  /* text */
+  --text: #E6EDF3;
+  --muted: #8B949E;
+  --faint: #6E7B8A;
+
+  /* accents */
+  --accent: #6366F1;          /* indigo — active controls */
+  --accent-2: #22D3EE;        /* cyan — secondary active */
+  --accent-ink: #FFFFFF;
+  --pass: #10B981;            /* emerald — passed / accurate */
+  --target: #F59E0B;          /* amber — targets / in-progress */
+  --error: #F87171;           /* soft red — errors */
+  --pass-soft: rgba(16, 185, 129, 0.13);
+  --target-soft: rgba(245, 158, 11, 0.13);
+  --error-soft: rgba(248, 113, 113, 0.12);
+  --accent-soft: rgba(99, 102, 241, 0.16);
+
+  /* paper (Paper View 2.0) */
+  --paper: #20242E;           /* dark-paper high-contrast slate */
+  --paper-ink: #E8E4D8;
+  --paper-line: rgba(232, 228, 216, 0.55);
+
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.35);
+  --ring: 0 0 0 3px rgba(99, 102, 241, 0.35);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --canvas: #F8FAFC;
+  --surface: #FFFFFF;
+  --surface-2: #F1F5F9;
+  --surface-3: #E8EEF5;
+  --border: #E2E8F0;
+  --border-strong: #CBD5E1;
+
+  --text: #0F172A;
+  --muted: #5B6B7F;
+  --faint: #8494A9;
+
+  --accent: #4F46E5;
+  --accent-2: #0891B2;
+  --accent-ink: #FFFFFF;
+  --pass: #059669;
+  --target: #D97706;
+  --error: #DC2626;
+  --pass-soft: rgba(5, 150, 105, 0.10);
+  --target-soft: rgba(217, 119, 6, 0.10);
+  --error-soft: rgba(220, 38, 38, 0.08);
+  --accent-soft: rgba(79, 70, 229, 0.10);
+
+  --paper: #FCFBF7;           /* soft warm paper */
+  --paper-ink: #1F2937;
+  --paper-line: rgba(31, 41, 55, 0.5);
+
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
+  --shadow-sm: 0 2px 10px rgba(15, 23, 42, 0.07);
+  --ring: 0 0 0 3px rgba(79, 70, 229, 0.28);
+}
+
+:root {
+  /* typography */
+  --font-ui: "Inter", "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-type: "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-serif: Georgia, "Times New Roman", serif;
+
+  /* spacing & shape */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px; --sp-6: 32px; --sp-7: 48px;
+  --radius: 14px;
+  --radius-sm: 9px;
+  --radius-pill: 999px;
+  --header-h: 58px;
+  --maxw: 1180px;
+
+  /* motion — kept subtle; the typing engine never animates on keystrokes */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 160ms;
+}

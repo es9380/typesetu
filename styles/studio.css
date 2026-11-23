@@ -1,0 +1,91 @@
+/* Training Studio — sub-tabs, warm-up set cards, drills mastery grid,
+   theme practice categories, and the Numbers finger-hint panel.
+   (Stage 1 shell; Stage 3 full build.) */
+
+.studio-tabs { display: flex; gap: 4px; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-pill); padding: 4px; width: fit-content; max-width: 100%; flex-wrap: wrap; margin-bottom: var(--sp-4); }
+.studio-tabs button { border: 0; background: none; border-radius: var(--radius-pill); padding: 8px 16px; cursor: pointer; font-weight: 700; color: var(--muted); font-size: 14px; }
+.studio-tabs button.active { background: var(--surface); color: var(--text); box-shadow: var(--shadow-sm); }
+
+/* ---- Warm-Up set cards ---- */
+.wu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--sp-3); }
+.wu-card { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; text-align: left; background: var(--surface); border: 1px solid var(--border); border-top: 4px solid var(--acc, var(--accent)); border-radius: var(--radius); padding: var(--sp-4); cursor: pointer; color: var(--text); font: inherit; box-shadow: var(--shadow-sm); transition: transform .12s ease, border-color .12s ease; }
+.wu-card:hover { transform: translateY(-2px); border-color: var(--acc, var(--accent)); }
+.wu-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.wu-name { font-size: 17px; font-weight: 800; }
+.wu-desc { color: var(--muted); font-size: 13.5px; line-height: 1.45; }
+.wu-strip { display: flex; gap: 4px; width: 100%; margin-top: 4px; }
+.wu-seg { flex: 1; height: 7px; border-radius: 4px; background: var(--surface-3); }
+.wu-seg.on { background: var(--acc, var(--accent)); }
+.wu-meta { color: var(--muted); font-size: 12.5px; font-weight: 600; }
+
+/* ---- Skill Drills: mastery header ---- */
+.mastery-head { margin-bottom: var(--sp-5); }
+.mh-top { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--sp-3); flex-wrap: wrap; }
+.mh-big { font-size: 26px; font-weight: 800; letter-spacing: -.01em; }
+.mh-big span { font-size: 15px; color: var(--muted); font-weight: 700; }
+#continueDrill { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 1px; padding: 10px 18px; }
+.mh-next-name { font-size: 12px; font-weight: 600; opacity: .85; }
+.mh-bar { margin-top: 14px; height: 9px; }
+
+/* ---- Skill Drills: module sections + lesson cards ---- */
+.mod-sec { margin-bottom: var(--sp-5); }
+.mod-head { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.mod-head h3 { margin: 0; font-size: 16.5px; font-weight: 800; }
+.accDot { width: 10px; height: 10px; border-radius: 50%; background: var(--acc, var(--accent)); flex: none; }
+.mod-count { margin-left: auto; color: var(--muted); font-size: 12.5px; font-weight: 700; }
+.mod-bar { height: 6px; margin-bottom: 12px; }
+.lesson-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-3); }
+@media (max-width: 900px) { .lesson-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .lesson-grid { grid-template-columns: 1fr; } }
+.lesson-card { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; cursor: pointer; color: var(--text); font: inherit; box-shadow: var(--shadow-sm); transition: transform .12s ease, border-color .12s ease; min-height: 118px; }
+.lesson-card:hover { transform: translateY(-2px); }
+.lesson-card.st-mastered { background: color-mix(in srgb, var(--pass) 9%, var(--surface)); border-color: color-mix(in srgb, var(--pass) 45%, var(--border)); }
+.lesson-card.st-attempted { background: color-mix(in srgb, var(--target) 8%, var(--surface)); border-color: color-mix(in srgb, var(--target) 40%, var(--border)); }
+.lc-top { display: flex; align-items: center; gap: 7px; width: 100%; }
+.lc-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--dot, var(--muted)); flex: none; }
+.lc-diff { font-size: 11.5px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.lc-check { margin-left: auto; color: var(--pass); font-weight: 800; font-size: 15px; }
+.lc-name { font-size: 15px; font-weight: 800; line-height: 1.3; }
+.lc-desc { font-size: 12.5px; color: var(--muted); line-height: 1.4; }
+.lc-foot { margin-top: auto; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lc-start { font-weight: 800; color: var(--accent); font-size: 13.5px; }
+
+/* ---- Theme Practice ---- */
+.theme-top h2 { display: flex; align-items: center; gap: 8px; }
+.catCard { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; margin-bottom: var(--sp-3); box-shadow: var(--shadow-sm); }
+.catHead { display: flex; align-items: center; gap: 10px; width: 100%; background: none; border: 0; padding: 0; cursor: pointer; color: var(--text); font: inherit; text-align: left; }
+.catHead strong { font-size: 16px; }
+.catCount { color: var(--muted); font-size: 12.5px; font-weight: 600; }
+.catHead .chev { margin-left: auto; color: var(--muted); font-size: 14px; }
+.catDesc { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+.catRows { margin-top: 10px; }
+.bestLine { display: block; font-size: 12px; margin-top: 2px; }
+
+/* ---- Numbers drill: live finger hints (ported panel) ---- */
+#numHint { margin-top: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; box-shadow: var(--shadow-sm); }
+.numHintBar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.numHintInfo { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; min-height: 26px; flex: 1; }
+.numNext { display: inline-flex; align-items: center; gap: 8px; }
+.numNextLabel { font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.numNextKey { font-family: var(--font-type); font-size: 15px; font-weight: 800; background: var(--surface-2); border: 1px solid var(--border); border-bottom-width: 3px; border-radius: 8px; padding: 2px 10px; min-width: 40px; text-align: center; }
+.numFinger { display: inline-flex; align-items: center; gap: 7px; font-weight: 700; font-size: 13.5px; }
+.numFinger .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--muted); flex: none; }
+.numHintMsg { font-size: 13px; font-weight: 700; color: var(--error); }
+#numHintToggle { margin-left: auto; }
+.numKb { display: flex; gap: 5px; margin-top: 12px; }
+.numKb .key { flex: 1; text-align: center; font-family: var(--font-type); font-weight: 700; font-size: 14px; padding: 9px 2px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); position: relative; transition: background .15s, border-color .15s, box-shadow .15s; }
+.numKb .key.space { flex: 2.6; font-size: 11px; letter-spacing: .04em; }
+.numKb .key::after { content: ""; position: absolute; left: 50%; bottom: 3px; transform: translateX(-50%); width: 16px; height: 3px; border-radius: 2px; background: transparent; }
+.numKb .key.fp::after { background: rgba(219,39,119,.75); }
+.numKb .key.fr::after { background: rgba(234,88,12,.8); }
+.numKb .key.fm::after { background: rgba(202,138,4,.85); }
+.numKb .key.fi::after { background: rgba(43,69,200,.75); }
+.numKb .key.next { background: var(--accent); border-color: var(--accent); color: var(--on-accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); }
+.numKb .key.next.fp { background: #db2777; border-color: #db2777; color: #fff; box-shadow: 0 0 0 3px rgba(219,39,119,.3); }
+.numKb .key.next.fr { background: #ea580c; border-color: #ea580c; color: #fff; box-shadow: 0 0 0 3px rgba(234,88,12,.3); }
+.numKb .key.next.fm { background: #ca8a04; border-color: #ca8a04; color: #fff; box-shadow: 0 0 0 3px rgba(202,138,4,.32); }
+.numKb .key.next.fi { background: #2b45c8; border-color: #2b45c8; color: #fff; box-shadow: 0 0 0 3px rgba(43,69,200,.3); }
+.numKb .key.next::after { background: rgba(255,255,255,.75); }
+.numKb .key.wrong { background: var(--error); border-color: var(--error); color: #fff; animation: numShake .3s; }
+.numKb .key.hit { background: var(--pass); border-color: var(--pass); color: #fff; }
+@keyframes numShake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-3px); } 75% { transform: translateX(3px); } }

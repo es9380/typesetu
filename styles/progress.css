@@ -1,0 +1,26 @@
+/* Progress — dashboard tiles, history table, trends charts and the
+   Revision section (tiles, due rows, weak-word bank).
+   (Stage 1 container; Stage 3 full build.) */
+
+.progress-head { margin-bottom: var(--sp-4); }
+.progress-head p { color: var(--muted); max-width: 65ch; }
+
+#historyWrap tr[data-cid] { cursor: pointer; }
+#historyWrap tr[data-cid]:hover td { background: var(--surface-2); }
+
+.trends-tiles { margin-bottom: var(--sp-3); }
+.chartBox { margin-top: var(--sp-4); }
+.chartBox h3 { margin: 0 0 6px; font-size: 14.5px; font-weight: 800; }
+
+/* ---- Revision ---- */
+.rev-section { margin-top: var(--sp-5); }
+.rev-h { display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 800; margin: 0 0 6px; }
+.revTiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-3); margin-bottom: var(--sp-3); }
+@media (max-width: 640px) { .revTiles { grid-template-columns: 1fr; } }
+.revTile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; text-align: center; box-shadow: var(--shadow-sm); }
+.revTile .tv { font-size: 26px; font-weight: 800; display: block; }
+.revTile .tl { color: var(--muted); font-size: 12.5px; font-weight: 600; }
+.revDueRow { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 8px 0; border-top: 1px solid var(--border); }
+.revDueRow:first-of-type { border-top: 0; }
+.revDueRow strong { font-size: 15px; }
+.chip { background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-pill); padding: 3px 10px; font-size: 12px; font-weight: 700; color: var(--muted); }

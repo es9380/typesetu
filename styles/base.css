@@ -1,0 +1,47 @@
+/* Base — reset, typography, generic elements. No feature styles here. */
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 15.5px;
+  line-height: 1.55;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+h1, h2, h3, h4 { line-height: 1.2; margin: 0 0 var(--sp-3); font-weight: 700; letter-spacing: -0.01em; }
+h1 { font-size: clamp(26px, 4.5vw, 40px); }
+h2 { font-size: 21px; }
+h3 { font-size: 16.5px; }
+p { margin: 0 0 var(--sp-3); }
+a { color: var(--accent-2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button { font: inherit; color: inherit; }
+input, select, textarea { font: inherit; color: var(--text); }
+:focus-visible { outline: none; box-shadow: var(--ring); border-radius: var(--radius-sm); }
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+.mono { font-family: var(--font-type); }
+.muted { color: var(--muted); }
+.small { font-size: 13px; }
+.ic { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; vertical-align: -3px; }
+
+main#app { max-width: var(--maxw); margin: 0 auto; padding: calc(var(--header-h) + var(--sp-5)) var(--sp-4) var(--sp-7); min-height: 100vh; }
+.view-enter { animation: viewIn var(--dur) var(--ease); }
+@keyframes viewIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.04em; }
+details { border: 1px solid var(--border); border-radius: var(--radius-sm); padding: var(--sp-3) var(--sp-4); margin-bottom: var(--sp-2); background: var(--surface); }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin-top: var(--sp-2); color: var(--muted); }
+
+.skip-link { position: absolute; left: -9999px; top: 0; background: var(--accent); color: var(--accent-ink); padding: 8px 14px; z-index: 200; border-radius: 0 0 var(--radius-sm) 0; }
+.skip-link:focus { left: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001s !important; transition-duration: 0.001s !important; }
+}
