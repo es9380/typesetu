@@ -117,8 +117,9 @@ ul.tight li { margin-bottom: 4px; }
   text-align: left; word-spacing: normal; letter-spacing: normal;
 }
 .paperSheet .pw { border-radius: 3px; padding: 1px 0; }
-.paperSheet .pw.lineHl { background: var(--target-soft); }
-.paperSheet .pw.curW { font-weight: 700; box-shadow: inset 0 -2px 0 var(--target); }
+/* v16: no tracking styles — the sheet is a static print (no current-word
+   bold, no line highlight classes are ever applied). */
+.paper-font { display: inline-flex; gap: 4px; align-items: center; }
 
 /* Paper View blank typing box: the type box stops showing the passage
    (type-over-words) and shows only the user's typed text, plainly. */
@@ -129,6 +130,9 @@ ul.tight li { margin-bottom: 4px; }
 }
 .typeBox.paperBox .paperTyped { display: block; }
 .typeBox.paperBox .typeText, .typeBox.paperBox .caretEl { display: none; }
+/* v16: in Paper View the typed box GROWS with its content — no height
+   cap, no internal scrollbar; the page scrolls as a whole if needed. */
+.typeBox.paperBox { max-height: none; overflow-y: visible; }
 .paperTyped .ph { color: var(--faint); }
 .ptCaret { display: inline-block; width: 2px; height: 1.05em; background: var(--accent-2); vertical-align: text-bottom; animation: caretBlink 1.1s steps(1) infinite; }
 
