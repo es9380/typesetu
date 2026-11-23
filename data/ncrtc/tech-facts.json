@@ -1,0 +1,613 @@
+{
+ "id": "tech-facts",
+ "category": "technical",
+ "group": "Special — NCRTC Facts",
+ "title": "NCRTC, RRTS & Namo Bharat Facts",
+ "questions": [
+  {
+   "q": "National Capital Region Transport Corporation (NCRTC) is a joint venture of the Government of India and which group of states?",
+   "options": [
+    "Delhi, Punjab, Haryana and UP",
+    "Delhi, Haryana, Rajasthan and Uttar Pradesh",
+    "Delhi, Haryana, Punjab and Rajasthan",
+    "UP, Haryana, Uttarakhand and Delhi"
+   ],
+   "answer": 1,
+   "explain": "National Capital Region Transport Corporation (NCRTC) is a Joint Venture (JV) of Government of India (GoI) with Delhi, Haryana, Rajasthan and UP — the four National Capital Region (NCR) participating states."
+  },
+  {
+   "q": "National Capital Region Transport Corporation (NCRTC) works under which Union Ministry?",
+   "options": [
+    "Ministry of Railways",
+    "Ministry of Road Transport and Highways",
+    "Ministry of Urban Development (standalone)",
+    "Ministry of Housing and Urban Affairs (MoHUA)"
+   ],
+   "answer": 3,
+   "explain": "National Capital Region Transport Corporation (NCRTC) is under Ministry of Housing and Urban Affairs (MoHUA), even though Railways is an equity partner."
+  },
+  {
+   "q": "The Memorandum of Understanding (MoU) for setting up National Capital Region Transport Corporation (NCRTC) was signed on:",
+   "options": [
+    "29 June 2011",
+    "21 August 2013",
+    "20 October 2023",
+    "1 July 2013"
+   ],
+   "answer": 0,
+   "explain": "Memorandum of Understanding (MoU) came first — 29 June 2011, between Government of India (GoI) and the four states. Incorporation came later, in 2013."
+  },
+  {
+   "q": "National Capital Region Transport Corporation (NCRTC) was incorporated on:",
+   "options": [
+    "29 June 2011",
+    "20 October 2023",
+    "21 August 2013",
+    "15 August 2012"
+   ],
+   "answer": 2,
+   "explain": "Incorporation was 21 August 2013; 29 June 2011 was the Memorandum of Understanding (MoU) and 20 Oct 2023 the first service."
+  },
+  {
+   "q": "Under which Act was National Capital Region Transport Corporation (NCRTC) incorporated?",
+   "options": [
+    "Companies Act, 2013",
+    "Railways Act, 1989",
+    "Companies Act, 1956",
+    "Metro Railways Act, 2002"
+   ],
+   "answer": 2,
+   "explain": "The book records incorporation under the Companies Act, 1956."
+  },
+  {
+   "q": "Cabinet approval for National Capital Region Transport Corporation (NCRTC) came in:",
+   "options": [
+    "July 2013",
+    "June 2011",
+    "August 2013",
+    "October 2023"
+   ],
+   "answer": 0,
+   "explain": "Cabinet approval was July 2013, just before incorporation in August 2013."
+  },
+  {
+   "q": "The seed capital of National Capital Region Transport Corporation (NCRTC) was:",
+   "options": [
+    "Rs. 50 crore",
+    "Rs. 500 crore",
+    "Rs. 1,000 crore",
+    "Rs. 100 crore"
+   ],
+   "answer": 3,
+   "explain": "National Capital Region Transport Corporation (NCRTC) started with a seed capital of Rs. 100 crore."
+  },
+  {
+   "q": "Government of India's total equity share in National Capital Region Transport Corporation (NCRTC) is:",
+   "options": [
+    "25%",
+    "50%",
+    "74%",
+    "100%"
+   ],
+   "answer": 1,
+   "explain": "Government of India (GoI) holds 50%; the four states together hold the other 50%."
+  },
+  {
+   "q": "Ministry of Housing and Urban Affairs (MoHUA)'s share within the Government of India equity is:",
+   "options": [
+    "5%",
+    "22.5%",
+    "12.5%",
+    "25%"
+   ],
+   "answer": 1,
+   "explain": "Government of India (GoI)'s 50% = Ministry of Housing and Urban Affairs (MoHUA) 22.5% + Railways 22.5% + NCRPB 5%."
+  },
+  {
+   "q": "Ministry of Railways' share in National Capital Region Transport Corporation (NCRTC) equity is:",
+   "options": [
+    "5%",
+    "12.5%",
+    "50%",
+    "22.5%"
+   ],
+   "answer": 3,
+   "explain": "Railways holds 22.5%, equal to Ministry of Housing and Urban Affairs (MoHUA)'s share."
+  },
+  {
+   "q": "National Capital Region (NCR) Planning Board's share in National Capital Region Transport Corporation (NCRTC) equity is:",
+   "options": [
+    "5%",
+    "12.5%",
+    "22.5%",
+    "2.5%"
+   ],
+   "answer": 0,
+   "explain": "NCRPB holds the smallest Government of India (GoI)-side share — 5%."
+  },
+  {
+   "q": "Each participating state holds what share in National Capital Region Transport Corporation (NCRTC)?",
+   "options": [
+    "5%",
+    "22.5%",
+    "12.5%",
+    "25%"
+   ],
+   "answer": 2,
+   "explain": "4 states x 12.5% = 50%, matching Government of India (GoI)'s 50%."
+  },
+  {
+   "q": "Who is the ex-officio Chairman of National Capital Region Transport Corporation (NCRTC)?",
+   "options": [
+    "Secretary, Ministry of Housing and Urban Affairs (MoHUA)",
+    "Minister of Railways",
+    "Chief Secretary, Delhi",
+    "Secretary, Ministry of Railways"
+   ],
+   "answer": 0,
+   "explain": "The Secretary, Ministry of Housing and Urban Affairs (MoHUA) is the ex-officio Chairman of National Capital Region Transport Corporation (NCRTC)."
+  },
+  {
+   "q": "Who was the first Managing Director of National Capital Region Transport Corporation (NCRTC)?",
+   "options": [
+    "Ashwini Vaishnaw",
+    "E. Sreedharan",
+    "Vinay Kumar Tripathi",
+    "Vinay Kumar Singh"
+   ],
+   "answer": 3,
+   "explain": "Vinay Kumar Singh became the first Managing Director (MD) in July 2016."
+  },
+  {
+   "q": "Vinay Kumar Singh took over as National Capital Region Transport Corporation (NCRTC)'s first Managing Director (MD) in:",
+   "options": [
+    "August 2013",
+    "July 2016",
+    "June 2011",
+    "October 2023"
+   ],
+   "answer": 1,
+   "explain": "The first Managing Director (MD) joined in July 2016, about three years after incorporation."
+  },
+  {
+   "q": "National Capital Region Transport Corporation (NCRTC)'s mandate covers which set of activities for Regional Rapid Transit System (RRTS)?",
+   "options": [
+    "Only design and construction",
+    "Design, develop, implement, finance, operate and maintain",
+    "Only ticketing and fare collection",
+    "Only land acquisition"
+   ],
+   "answer": 1,
+   "explain": "National Capital Region Transport Corporation (NCRTC)'s mandate is full-cycle: design to finance to operations and maintenance of Regional Rapid Transit System (RRTS) across National Capital Region (NCR)."
+  },
+  {
+   "q": "How many corridors are in Regional Rapid Transit System (RRTS) Phase-I?",
+   "options": [
+    "2",
+    "5",
+    "8",
+    "3"
+   ],
+   "answer": 3,
+   "explain": "Phase-I has 3 corridors; 8 were identified in the overall Functional Plan — a favourite trap."
+  },
+  {
+   "q": "How many Regional Rapid Transit System (RRTS) corridors were identified in the National Capital Region (NCR) Functional Plan on Transport-2032?",
+   "options": [
+    "8",
+    "3",
+    "5",
+    "12"
+   ],
+   "answer": 0,
+   "explain": "8 corridors were identified in the plan; only 3 are being built in Phase-I."
+  },
+  {
+   "q": "Which of these IS a Phase-I Regional Rapid Transit System (RRTS) corridor?",
+   "options": [
+    "Delhi-Agra",
+    "Delhi-Jaipur",
+    "Delhi-Panipat-Karnal",
+    "Delhi-Lucknow"
+   ],
+   "answer": 2,
+   "explain": "Phase-I = Delhi-Ghaziabad-Meerut, Delhi-Gurugram-SNB-Alwar and Delhi-Panipat-Karnal."
+  },
+  {
+   "q": "The Delhi-Gurugram corridor in Phase-I goes up to:",
+   "options": [
+    "SNB-Jaipur",
+    "Gurugram-Faridabad",
+    "SNB-Alwar",
+    "Delhi-Sonipat"
+   ],
+   "answer": 2,
+   "explain": "The second Phase-I corridor is Delhi-Gurugram-SNB-Alwar."
+  },
+  {
+   "q": "Which is NOT a Phase-I Regional Rapid Transit System (RRTS) corridor?",
+   "options": [
+    "Delhi-Agra",
+    "Delhi-Ghaziabad-Meerut",
+    "Delhi-Panipat-Karnal",
+    "Delhi-Gurugram-SNB-Alwar"
+   ],
+   "answer": 0,
+   "explain": "Delhi-Agra is not in Phase-I; Meerut, Alwar and Panipat are."
+  },
+  {
+   "q": "The first Regional Rapid Transit System (RRTS) corridor, Delhi-Ghaziabad-Meerut, is how long?",
+   "options": [
+    "17 km",
+    "100 km",
+    "56 km",
+    "82.15 km"
+   ],
+   "answer": 3,
+   "explain": "The full corridor is 82.15 km; 17 km was only the priority section."
+  },
+  {
+   "q": "The Delhi-Meerut corridor runs between:",
+   "options": [
+    "Sahibabad and Duhai Depot",
+    "Sarai Kale Khan (Delhi) and Modipuram (Meerut)",
+    "Anand Vihar and Meerut South",
+    "Sarai Kale Khan and Ghaziabad"
+   ],
+   "answer": 1,
+   "explain": "End to end it is Sarai Kale Khan to Modipuram; Sahibabad-Duhai was the priority stretch."
+  },
+  {
+   "q": "The design speed of Namo Bharat trains is:",
+   "options": [
+    "100 kmph",
+    "180 kmph",
+    "160 kmph",
+    "200 kmph"
+   ],
+   "answer": 1,
+   "explain": "Design speed 180 kmph — never confuse it with operational 160 or average 100."
+  },
+  {
+   "q": "The maximum operational (service) speed of Namo Bharat trains is:",
+   "options": [
+    "100 kmph",
+    "180 kmph",
+    "120 kmph",
+    "160 kmph"
+   ],
+   "answer": 3,
+   "explain": "Operational speed is 160 kmph; 180 is design, 100 is average including stops."
+  },
+  {
+   "q": "The average speed of Namo Bharat services, including stops, is:",
+   "options": [
+    "100 kmph",
+    "160 kmph",
+    "80 kmph",
+    "60 kmph"
+   ],
+   "answer": 0,
+   "explain": "Average speed including station stops is 100 kmph."
+  },
+  {
+   "q": "Delhi to Meerut by Namo Bharat takes:",
+   "options": [
+    "About 90 minutes",
+    "About 2 hours",
+    "Under 60 minutes",
+    "About 45 minutes by road only"
+   ],
+   "answer": 2,
+   "explain": "82.15 km at an average 100 kmph means end-to-end in under 60 minutes."
+  },
+  {
+   "q": "The priority section first opened on the Delhi-Meerut corridor was:",
+   "options": [
+    "25 km, Ghaziabad to Meerut South",
+    "17 km, Sarai Kale Khan to Anand Vihar",
+    "17 km, Sahibabad to Duhai Depot",
+    "10 km, Duhai to Modipuram"
+   ],
+   "answer": 2,
+   "explain": "The 17 km Sahibabad-Duhai Depot section opened first."
+  },
+  {
+   "q": "The priority section of Regional Rapid Transit System (RRTS) was inaugurated on:",
+   "options": [
+    "20 October 2023",
+    "21 August 2013",
+    "29 June 2011",
+    "26 January 2024"
+   ],
+   "answer": 0,
+   "explain": "20 Oct 2023 — the start of India's first Regional Rapid Transit System (RRTS) service."
+  },
+  {
+   "q": "The priority section inauguration is historic because it was:",
+   "options": [
+    "India's first metro service",
+    "India's first bullet train service",
+    "India's first monorail",
+    "India's first Regional Rapid Transit System (RRTS) service"
+   ],
+   "answer": 3,
+   "explain": "Sahibabad-Duhai was the first Regional Rapid Transit System (RRTS) service in India."
+  },
+  {
+   "q": "The track gauge used on Regional Rapid Transit System (RRTS) is:",
+   "options": [
+    "Broad gauge, 1,676 mm",
+    "Standard gauge, 1,435 mm",
+    "Metre gauge, 1,000 mm",
+    "Narrow gauge, 762 mm"
+   ],
+   "answer": 1,
+   "explain": "Regional Rapid Transit System (RRTS) uses standard gauge 1,435 mm — broad gauge is the trap option."
+  },
+  {
+   "q": "Conventional Indian Railways mainly uses which gauge?",
+   "options": [
+    "Standard gauge, 1,435 mm",
+    "Broad gauge, 1,676 mm",
+    "Metre gauge, 1,000 mm",
+    "Narrow gauge, 762 mm"
+   ],
+   "answer": 1,
+   "explain": "Mainline IR is mainly broad gauge 1,676 mm, unlike Regional Rapid Transit System (RRTS)'s 1,435 mm standard gauge."
+  },
+  {
+   "q": "Regional Rapid Transit System (RRTS) electrification is:",
+   "options": [
+    "750 V DC third rail",
+    "1,500 V DC overhead",
+    "Diesel traction",
+    "25 kV 50 Hz AC overhead"
+   ],
+   "answer": 3,
+   "explain": "Regional Rapid Transit System (RRTS) runs on 25 kV 50 Hz AC overhead electrification, like mainline railways."
+  },
+  {
+   "q": "The signalling system of the Namo Bharat corridor is based on:",
+   "options": [
+    "European Train Control System (ETCS) Level 2 with Hybrid Level 3 over Long Term Evolution (LTE) radio",
+    "Absolute block working",
+    "Token block working",
+    "Track circuit with lineside signals only"
+   ],
+   "answer": 0,
+   "explain": "European Train Control System (ETCS) L2/Hybrid L3 over Long Term Evolution (LTE) — the world-first ETCS-on-LTE application."
+  },
+  {
+   "q": "What is claimed as a world-first for Namo Bharat signalling?",
+   "options": [
+    "European Train Control System (ETCS) working without radio",
+    "Driverless freight on ETCS",
+    "ETCS working over Long Term Evolution (LTE) radio",
+    "ETCS on diesel trains"
+   ],
+   "answer": 2,
+   "explain": "Running European Train Control System (ETCS) over Long Term Evolution (LTE) radio is described as a world-first combination."
+  },
+  {
+   "q": "Platform Screen Doors on Regional Rapid Transit System (RRTS) are:",
+   "options": [
+    "Provided only at terminal stations",
+    "Provided only underground",
+    "Provided at every station, integrated with signalling",
+    "Not provided; only platform gates at depots"
+   ],
+   "answer": 2,
+   "explain": "Every Regional Rapid Transit System (RRTS) station has Platform Screen Doors (PSDs), integrated/synchronised with the signalling and train doors."
+  },
+  {
+   "q": "Besides safety, Platform Screen Doors (PSDs) at Regional Rapid Transit System (RRTS) stations also help in:",
+   "options": [
+    "Air-conditioning efficiency",
+    "Fare collection",
+    "Train washing",
+    "Crew rostering"
+   ],
+   "answer": 0,
+   "explain": "Platform Screen Doors (PSDs) give safety plus air-conditioning efficiency by sealing the platform."
+  },
+  {
+   "q": "The Namo Bharat trainset was designed by Alstom at:",
+   "options": [
+    "Savli",
+    "Chennai",
+    "Bengaluru",
+    "Hyderabad"
+   ],
+   "answer": 3,
+   "explain": "Designed by Alstom at Hyderabad; manufactured at Savli — the two places are a classic swap-trap."
+  },
+  {
+   "q": "The Namo Bharat trainset is manufactured at:",
+   "options": [
+    "Hyderabad, Telangana",
+    "Savli, Gujarat",
+    "Sri City, Andhra Pradesh",
+    "Bengaluru, Karnataka"
+   ],
+   "answer": 1,
+   "explain": "Manufacturing is at Savli, Gujarat; design was at Hyderabad."
+  },
+  {
+   "q": "The Namo Bharat trainset operates with:",
+   "options": [
+    "Manual driving only",
+    "Automatic Train Operation (ATO) over European Train Control System (ETCS) Level 2",
+    "ATO over token block",
+    "Steam-era cab signalling"
+   ],
+   "answer": 1,
+   "explain": "The aerodynamic trainset runs with Automatic Train Operation over European Train Control System (ETCS) L2, supervised by the operator."
+  },
+  {
+   "q": "Operations & Maintenance of the Delhi-Meerut corridor is done by:",
+   "options": [
+    "National Capital Region Transport Corporation (NCRTC)'s own station staff union",
+    "Delhi Metro Rail Corporation",
+    "Indian Railways",
+    "DB RRTS Operations India Pvt Ltd"
+   ],
+   "answer": 3,
+   "explain": "Operations and Maintenance (O&M) is with DB RRTS Operations India Pvt Ltd, a Deutsche Bahn subsidiary, under National Capital Region Transport Corporation (NCRTC) ownership."
+  },
+  {
+   "q": "DB RRTS Operations is a subsidiary of:",
+   "options": [
+    "Deutsche Bahn",
+    "Alstom",
+    "Siemens",
+    "Bombardier"
+   ],
+   "answer": 0,
+   "explain": "Deutsche Bahn (DB) = Deutsche Bahn, the German railway group."
+  },
+  {
+   "q": "The Operations and Maintenance (O&M) contract for the Delhi-Meerut corridor is for:",
+   "options": [
+    "5 years",
+    "10 years",
+    "12 years",
+    "30 years"
+   ],
+   "answer": 2,
+   "explain": "DB RRTS Operations holds a 12-year Operations and Maintenance (O&M) contract."
+  },
+  {
+   "q": "Meerut Metro is special because it:",
+   "options": [
+    "Runs on broad gauge",
+    "Is fully underground",
+    "Shares Regional Rapid Transit System (RRTS) infrastructure in Meerut — a first in India",
+    "Is operated by Indian Railways"
+   ],
+   "answer": 2,
+   "explain": "For the first time in India, a local metro and a regional Regional Rapid Transit System (RRTS) share the same corridor infrastructure."
+  },
+  {
+   "q": "Ticketing on Regional Rapid Transit System (RRTS) uses Automatic Fare Collection (AFC) with:",
+   "options": [
+    "National Common Mobility Card (NCMC) 'One Nation One Card', QR and digital payment",
+    "Paper tickets only",
+    "Tokens only",
+    "Cash-only gates"
+   ],
+   "answer": 0,
+   "explain": "Automatic Fare Collection (AFC) supports National Common Mobility Card (NCMC), QR and digital payment — interoperable with metro and buses."
+  },
+  {
+   "q": "NCMC stands for the concept:",
+   "options": [
+    "One City One Card",
+    "National Metro Card Mandate",
+    "Northern Corridor Mobility Card",
+    "One Nation One Card"
+   ],
+   "answer": 3,
+   "explain": "National Common Mobility Card (NCMC) = 'One Nation One Card' for interoperable travel."
+  },
+  {
+   "q": "Earlier, the Regional Rapid Transit System (RRTS) was called:",
+   "options": [
+    "Namo Rail",
+    "RapidX",
+    "RegionalX",
+    "Rapid Rail One"
+   ],
+   "answer": 1,
+   "explain": "The system was earlier branded RapidX; trains/services are now branded Namo Bharat."
+  },
+  {
+   "q": "National Capital Region Transport Corporation (NCRTC) is often cited as an example of:",
+   "options": [
+    "Full centralisation",
+    "Cooperative federalism — Centre 50% + 4 states 50%",
+    "Full privatisation",
+    "Single-state ownership"
+   ],
+   "answer": 1,
+   "explain": "Centre and four states sharing equity equally makes National Capital Region Transport Corporation (NCRTC) a cooperative-federalism example."
+  },
+  {
+   "q": "Compared with a metro, Regional Rapid Transit System (RRTS) station spacing is typically:",
+   "options": [
+    "Closer — about 1 km",
+    "Identical — about 1 km",
+    "Widest of all — 25 km",
+    "Wider — about 5-10 km"
+   ],
+   "answer": 3,
+   "explain": "Regional Rapid Transit System (RRTS) stations are 5-10 km apart typically; metro stations are about 1 km apart."
+  },
+  {
+   "q": "The basic purpose difference between Regional Rapid Transit System (RRTS) and a metro is:",
+   "options": [
+    "RRTS is regional — connecting satellite towns to the capital; metro is intra-city",
+    "RRTS is only for freight; metro is for passengers",
+    "RRTS runs inside one city; metro connects states",
+    "There is no difference"
+   ],
+   "answer": 0,
+   "explain": "Regional Rapid Transit System (RRTS) = regional travel to satellite towns; metro = travel within a city."
+  },
+  {
+   "q": "Where is the corporate headquarters of the National Capital Region Transport Corporation (NCRTC) located?",
+   "options": [
+    "New Delhi",
+    "Meerut",
+    "Ghaziabad",
+    "Jaipur"
+   ],
+   "answer": 0,
+   "explain": "The National Capital Region Transport Corporation (NCRTC) is headquartered in New Delhi — fitting, as it plans and runs regional rail for the National Capital Region (NCR) from the capital."
+  },
+  {
+   "q": "Each Namo Bharat trainset has one special coach designated as:",
+   "options": [
+    "A pantry car",
+    "A premium class coach with wider, reclining seats",
+    "A luggage-only coach",
+    "A second driving cab coach"
+   ],
+   "answer": 1,
+   "explain": "One coach in every Namo Bharat trainset is a premium class coach, offering wider reclining seats and extra legroom at a higher fare."
+  },
+  {
+   "q": "The Sarai Kale Khan Regional Rapid Transit System (RRTS) station is planned as a mega multi-modal hub where passengers can interchange with:",
+   "options": [
+    "Only the airport express",
+    "Delhi Metro, the Hazrat Nizamuddin railway station and the interstate bus terminal",
+    "Only city buses",
+    "A suburban railway terminus only"
+   ],
+   "answer": 1,
+   "explain": "Sarai Kale Khan brings the Regional Rapid Transit System (RRTS), Delhi Metro's Pink Line, Hazrat Nizamuddin railway station and the bus terminal together, so passengers can switch modes within one hub."
+  },
+  {
+   "q": "The Delhi–Ghaziabad–Meerut corridor is co-financed by multilateral development banks, namely the:",
+   "options": [
+    "Asian Development Bank (ADB), Asian Infrastructure Investment Bank (AIIB) and New Development Bank (NDB)",
+    "International Monetary Fund (IMF) only",
+    "World Bank only",
+    "Reserve Bank of India (RBI) directly"
+   ],
+   "answer": 0,
+   "explain": "The Asian Development Bank (ADB), Asian Infrastructure Investment Bank (AIIB) and New Development Bank (NDB) are funding partners for the corridor, along with the Centre and the state governments."
+  },
+  {
+   "q": "The priority section of the Delhi–Meerut corridor, inaugurated on 20 October 2023, was inaugurated by:",
+   "options": [
+    "The Chief Minister of Uttar Pradesh",
+    "The Union Railway Minister",
+    "The Prime Minister of India",
+    "The President of India"
+   ],
+   "answer": 2,
+   "explain": "The Prime Minister inaugurated the Sahibabad–Duhai priority section and flagged off the first Namo Bharat service on 20 October 2023."
+  }
+ ]
+}

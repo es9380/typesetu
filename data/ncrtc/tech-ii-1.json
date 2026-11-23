@@ -1,0 +1,613 @@
+{
+ "id": "tech-ii-1",
+ "category": "technical",
+ "group": "Unit ii — Operational Systems & Interfaces",
+ "title": "Signalling & Train Control Systems (ATP / ATO / ATS, ETCS, CBTC)",
+ "questions": [
+  {
+   "q": "What is the primary purpose of railway signalling?",
+   "options": [
+    "To guarantee safe separation between trains and give authority to move",
+    "To increase ticket sales",
+    "To decide train fares",
+    "To schedule crew rosters"
+   ],
+   "answer": 0,
+   "explain": "Signalling keeps trains safely apart, sets routes and gives the authority to move."
+  },
+  {
+   "q": "The design principle of signalling, under which any failure must result in the most restrictive and safest state, is called:",
+   "options": [
+    "Moving block",
+    "Fail-safe design",
+    "Interlocking",
+    "Regenerative working"
+   ],
+   "answer": 1,
+   "explain": "Fail-safe means a failure pushes the system to its safest state, not the fastest."
+  },
+  {
+   "q": "In fixed block working, the line is divided into blocks and:",
+   "options": [
+    "Trains may follow each other freely in a block",
+    "Block size changes every minute",
+    "Only one train is allowed in a block at a time",
+    "No signals are needed"
+   ],
+   "answer": 2,
+   "explain": "Fixed block = one train per block; that space separation is the safety guarantee."
+  },
+  {
+   "q": "In moving block working, the safe distance between trains is:",
+   "options": [
+    "Fixed at 2 km always",
+    "Decided by the driver by sight",
+    "Taken from the timetable",
+    "Computed continuously from the preceding train's exact position"
+   ],
+   "answer": 3,
+   "explain": "Moving block uses the exact, continuously updated position of the train ahead, giving shorter headway and higher capacity."
+  },
+  {
+   "q": "Moving block working is the basis of which concepts?",
+   "options": [
+    "Absolute block and token working",
+    "Communications-Based Train Control (CBTC) and European Train Control System (ETCS) Level 3 concepts",
+    "Pilot working",
+    "Semaphore signalling"
+   ],
+   "answer": 1,
+   "explain": "Communications-Based Train Control (CBTC) and European Train Control System (ETCS) L3 ideas rest on moving block — continuous position, continuous safe distance."
+  },
+  {
+   "q": "Interlocking in signalling ensures that:",
+   "options": [
+    "All signals always show green together",
+    "Points can move under a moving train",
+    "Two trains can share one route safely",
+    "Points, signals and track occupancy are locked together so conflicting routes can never be set"
+   ],
+   "answer": 3,
+   "explain": "Interlocking locks points, signals and occupancy together so two trains can never be routed into collision."
+  },
+  {
+   "q": "Before a signal or authority can clear over a set of points, what must be proved?",
+   "options": [
+    "The points are correctly set and locked, proved by detection",
+    "The platform is empty",
+    "The driver has sounded the horn",
+    "The train is fully loaded"
+   ],
+   "answer": 0,
+   "explain": "Point detection proves the points are set and locked before any authority is given over them."
+  },
+  {
+   "q": "A track circuit detects train presence in a section by using:",
+   "options": [
+    "Counting passengers",
+    "GPS alone",
+    "The rails electrically",
+    "Driver's report only"
+   ],
+   "answer": 2,
+   "explain": "A track circuit uses the rails themselves as an electrical circuit to detect a train."
+  },
+  {
+   "q": "An axle counter detects train presence by:",
+   "options": [
+    "Counting passengers at gates",
+    "Measuring train weight",
+    "Reading ticket data",
+    "Counting wheels (axles) in and out of a section"
+   ],
+   "answer": 3,
+   "explain": "Equal axles in and out means the section is clear; axle counters are used widely in metros."
+  },
+  {
+   "q": "ATP stands for:",
+   "options": [
+    "Automatic Train Protection",
+    "Automatic Train Performance",
+    "Advanced Track Planning",
+    "Automatic Ticket Processing"
+   ],
+   "answer": 0,
+   "explain": "Protection = the safety layer that enforces speed and movement authority."
+  },
+  {
+   "q": "The job of Automatic Train Protection (ATP) is to:",
+   "options": [
+    "Drive the train between stations",
+    "Manage the timetable at Operations Control Centre (OCC)",
+    "Enforce safety — speed limits, movement authority and braking",
+    "Sell tickets automatically"
+   ],
+   "answer": 2,
+   "explain": "Automatic Train Protection (ATP) supervises speed against the authority and brakes the train automatically on violation."
+  },
+  {
+   "q": "ATO stands for:",
+   "options": [
+    "Automatic Track Occupation",
+    "Automatic Train Operation",
+    "Auxiliary Traction Output",
+    "Automatic Train Observation"
+   ],
+   "answer": 1,
+   "explain": "Operation = driving the train: traction, braking and accurate station stopping."
+  },
+  {
+   "q": "The job of Automatic Train Operation (ATO) is to:",
+   "options": [
+    "Enforce the safety limit",
+    "Prepare the duty roster",
+    "Drive the train — traction, braking and station stops",
+    "Control platform doors only"
+   ],
+   "answer": 2,
+   "explain": "Automatic Train Operation (ATO) drives under the limits set by Automatic Train Protection (ATP); it never overrides protection."
+  },
+  {
+   "q": "Automatic Train Supervision (ATS) stands for:",
+   "options": [
+    "Automatic Traction Supply",
+    "Automatic Train Supervision",
+    "Auxiliary Telecom System",
+    "Automatic Track Section"
+   ],
+   "answer": 1,
+   "explain": "Supervision = managing the service: timetable, regulation and display at Operations Control Centre (OCC)."
+  },
+  {
+   "q": "The job of Automatic Train Supervision (ATS) is to:",
+   "options": [
+    "Apply emergency brakes directly",
+    "Power the Overhead Equipment (OHE)",
+    "Repair faulty points",
+    "Manage the service — timetable, train regulation and display at Operations Control Centre (OCC)"
+   ],
+   "answer": 3,
+   "explain": "Automatic Train Supervision (ATS) is the controllers' decision-support layer for running the service to timetable."
+  },
+  {
+   "q": "Which of the Automatic Train Protection (ATP)/Automatic Train Operation (ATO)/Automatic Train Supervision (ATS) trio is safety-critical and fail-safe?",
+   "options": [
+    "ATP",
+    "ATO",
+    "ATS",
+    "All three equally"
+   ],
+   "answer": 0,
+   "explain": "Automatic Train Protection (ATP) is safety-critical and fail-safe and cannot be overridden casually; Automatic Train Supervision (ATS) is non-vital decision support."
+  },
+  {
+   "q": "If Automatic Train Protection (ATP) fails, what is the effect on the service?",
+   "options": [
+    "The train brakes to a stop — service stops safely",
+    "The driver continues at full speed",
+    "Automatic Train Operation (ATO) takes over safety",
+    "Trains run on sight at line speed"
+   ],
+   "answer": 0,
+   "explain": "Automatic Train Protection (ATP) failure = brakes to stop. Safety first, service second."
+  },
+  {
+   "q": "If Automatic Train Operation (ATO) fails but Automatic Train Protection (ATP) is healthy, the train:",
+   "options": [
+    "Cannot move at all",
+    "Can be driven manually by the driver under ATP protection",
+    "Runs without any speed limit",
+    "Must be evacuated"
+   ],
+   "answer": 1,
+   "explain": "Automatic Train Operation (ATO) only drives; with Automatic Train Protection (ATP) healthy, the driver drives manually under protection."
+  },
+  {
+   "q": "If Automatic Train Supervision (ATS) fails, what happens?",
+   "options": [
+    "All trains brake to a stop",
+    "Automatic Train Protection (ATP) stops working",
+    "Controllers regulate trains manually",
+    "Points unlock automatically"
+   ],
+   "answer": 2,
+   "explain": "Automatic Train Supervision (ATS) is decision support — its failure means manual regulation by controllers, not a safety stop."
+  },
+  {
+   "q": "ETCS stands for:",
+   "options": [
+    "European Traction Control Scheme",
+    "Electronic Train Communication System",
+    "European Track Circuit System",
+    "European Train Control System"
+   ],
+   "answer": 3,
+   "explain": "European Train Control System (ETCS) is the European Train Control System, the mainline/regional standard used on Regional Rapid Transit System (RRTS)."
+  },
+  {
+   "q": "Which signalling system does the Namo Bharat Regional Rapid Transit System (RRTS) use?",
+   "options": [
+    "Communications-Based Train Control (CBTC) over Wi-Fi",
+    "European Train Control System (ETCS) Level 2 with Hybrid Level 3 over Long Term Evolution (LTE)",
+    "Token block working",
+    "Kavach"
+   ],
+   "answer": 1,
+   "explain": "National Capital Region Transport Corporation (NCRTC) uses European Train Control System (ETCS) L2 with Hybrid L3 features over Long Term Evolution (LTE) radio — a world-first combination."
+  },
+  {
+   "q": "Movement Authority (MA) means:",
+   "options": [
+    "Permission to enter the depot",
+    "A driver's duty pass",
+    "Authority to open Platform Screen Doors (PSDs)",
+    "Permission to run to a defined point at a defined speed profile"
+   ],
+   "answer": 3,
+   "explain": "The MA tells the train exactly how far it may go and at what speed profile."
+  },
+  {
+   "q": "In European Train Control System (ETCS), the on-board computer continuously supervises:",
+   "options": [
+    "The train's speed against its Movement Authority, braking automatically on violation",
+    "Passenger load",
+    "Ticket revenue",
+    "Coach temperature only"
+   ],
+   "answer": 0,
+   "explain": "The on-board computer compares actual speed with the MA continuously and brakes on violation."
+  },
+  {
+   "q": "In European Train Control System (ETCS) Level 1, the primary authority still comes from:",
+   "options": [
+    "Continuous radio from the Radio Block Centre (RBC)",
+    "The Operations Control Centre (OCC) telephone",
+    "Lineside signals, with balises giving in-cab updates",
+    "Moving block radio"
+   ],
+   "answer": 2,
+   "explain": "In L1, lineside signals remain primary; Eurobalises give intermittent in-cab updates of aspect and speed."
+  },
+  {
+   "q": "Eurobalises in European Train Control System (ETCS) Level 1 provide:",
+   "options": [
+    "Continuous radio authority",
+    "Power supply to the train",
+    "Passenger announcements",
+    "Intermittent in-cab updates of signal aspect and speed"
+   ],
+   "answer": 3,
+   "explain": "Balises transmit only when the train passes over them — hence 'intermittent' transmission in L1."
+  },
+  {
+   "q": "In European Train Control System (ETCS) Level 2, Movement Authority reaches the train mainly through:",
+   "options": [
+    "Continuous radio from the Radio Block Centre (RBC)",
+    "Lineside colour-light signals",
+    "Hand flags by station staff",
+    "Paper line-clear tickets"
+   ],
+   "answer": 0,
+   "explain": "In L2 the Radio Block Centre (RBC) sends MA by continuous radio — on Regional Rapid Transit System (RRTS), over Long Term Evolution (LTE)."
+  },
+  {
+   "q": "In European Train Control System (ETCS) Level 2, balises are used mainly for:",
+   "options": [
+    "Issuing movement authority",
+    "Replacing the Radio Block Centre (RBC)",
+    "Position reference",
+    "Controlling Platform Screen Doors (PSDs)"
+   ],
+   "answer": 2,
+   "explain": "In L2, balises only fix the train's position; authority comes by radio from the Radio Block Centre (RBC)."
+  },
+  {
+   "q": "In European Train Control System (ETCS) Level 2, lineside signals are:",
+   "options": [
+    "The only authority",
+    "Optional / not the primary means of authority",
+    "Mandatory at every block",
+    "Used instead of radio"
+   ],
+   "answer": 1,
+   "explain": "L2 runs without depending on lineside signals — the cab display is primary."
+  },
+  {
+   "q": "European Train Control System (ETCS) Hybrid Level 3 adds capacity mainly through:",
+   "options": [
+    "Longer trains",
+    "Faster ticket gates",
+    "Train integrity proved on-board, allowing virtual sub-blocks and closer running",
+    "Extra lineside signals"
+   ],
+   "answer": 2,
+   "explain": "Hybrid L3 uses on-board train-integrity proof and virtual sub-blocks so trains can run closer safely."
+  },
+  {
+   "q": "In European Train Control System (ETCS) L2 territory, track vacancy is still proved by:",
+   "options": [
+    "The driver's eyesight",
+    "Track circuits / axle counters",
+    "Passenger reports",
+    "Timetable assumptions"
+   ],
+   "answer": 1,
+   "explain": "In L2, track vacancy is proved by track circuits or axle counters; Hybrid L3 adds integrity-based gains."
+  },
+  {
+   "q": "RBC stands for:",
+   "options": [
+    "Railway Booking Centre",
+    "Remote Brake Controller",
+    "Regional Block Counter",
+    "Radio Block Centre"
+   ],
+   "answer": 3,
+   "explain": "The Radio Block Centre knows each train's position and issues its movement authority by radio."
+  },
+  {
+   "q": "CBTC stands for:",
+   "options": [
+    "Communication Based Train Control",
+    "Centralised Block Train Circuit",
+    "Computer Based Track Control",
+    "Continuous Brake Train Control"
+   ],
+   "answer": 0,
+   "explain": "Communications-Based Train Control (CBTC) is the metro-style system built on continuous communication between train and trackside."
+  },
+  {
+   "q": "Communications-Based Train Control (CBTC) in metros normally uses which radio medium?",
+   "options": [
+    "Wi-Fi based radio (IEEE 802.11) continuous communication",
+    "GSM-R only",
+    "Token instruments",
+    "Optical telegraph"
+   ],
+   "answer": 0,
+   "explain": "Communications-Based Train Control (CBTC) usually uses Wi-Fi-based radio; European Train Control System (ETCS) uses GSM-R/Long Term Evolution (LTE) family radio."
+  },
+  {
+   "q": "European Train Control System (ETCS) on Regional Rapid Transit System (RRTS) uses which radio for train communication?",
+   "options": [
+    "Wi-Fi hotspots",
+    "Long Term Evolution (LTE)",
+    "TETRA only",
+    "Semaphore"
+   ],
+   "answer": 1,
+   "explain": "National Capital Region Transport Corporation (NCRTC)'s European Train Control System (ETCS) runs over Long Term Evolution (LTE) radio, carrying both data and voice."
+  },
+  {
+   "q": "A key strength of Communications-Based Train Control (CBTC) is:",
+   "options": [
+    "Interoperability across countries",
+    "Steam locomotive control",
+    "Very short headways in metro operation",
+    "Token-less freight working"
+   ],
+   "answer": 2,
+   "explain": "Communications-Based Train Control (CBTC)'s continuous communication gives metros very short headways."
+  },
+  {
+   "q": "A key strength of European Train Control System (ETCS) is:",
+   "options": [
+    "Cheapest ticket gates",
+    "Working without any radio",
+    "Use only inside depots",
+    "Interoperability across networks and countries, and suitability for high speed"
+   ],
+   "answer": 3,
+   "explain": "European Train Control System (ETCS) is a cross-border standard designed for interoperable, high-speed mainline/regional running."
+  },
+  {
+   "q": "Communications-Based Train Control (CBTC) and European Train Control System (ETCS) share which common features?",
+   "options": [
+    "Token working and semaphore signals",
+    "Continuous communication, precise train location, moving-block capability and Automatic Train Protection (ATP) supervision",
+    "Diesel traction",
+    "Paper authorities"
+   ],
+   "answer": 1,
+   "explain": "Despite different radio and origin, both share continuous communication, precise location, moving block and Automatic Train Protection (ATP)."
+  },
+  {
+   "q": "SPAD stands for:",
+   "options": [
+    "Speed Above Danger",
+    "Station Platform Alarm Device",
+    "Sudden Power And Drop",
+    "Signal Passed At Danger"
+   ],
+   "answer": 3,
+   "explain": "A Signal Passed At Danger (SPAD) — passing a signal at danger — is a serious safety incident signalling exists to prevent."
+  },
+  {
+   "q": "Safety Integrity Level 4 (SIL-4) in signalling refers to:",
+   "options": [
+    "The highest Safety Integrity Level for signalling functions",
+    "A type of signal lamp",
+    "Level 4 station category",
+    "A radio channel number"
+   ],
+   "answer": 0,
+   "explain": "Safety Integrity Level 4 (SIL-4) is the top safety integrity level demanded of vital signalling functions."
+  },
+  {
+   "q": "Kavach is:",
+   "options": [
+    "The Regional Rapid Transit System (RRTS) signalling system",
+    "A type of Platform Screen Door (PSD)",
+    "Indian Railways' own indigenous Automatic Train Protection (ATP) system",
+    "A fare card"
+   ],
+   "answer": 2,
+   "explain": "Kavach is IR's home-grown Automatic Train Protection (ATP) — same protection idea as European Train Control System (ETCS) ATP, different system."
+  },
+  {
+   "q": "In Absolute Block working, the core principle is:",
+   "options": [
+    "Trains follow each other closely by sight",
+    "Many trains share one block",
+    "No block sections exist",
+    "Only one train in a block section at a time"
+   ],
+   "answer": 3,
+   "explain": "Absolute block is the oldest space-separation idea: one train, one block section."
+  },
+  {
+   "q": "Automatic Block working differs from Absolute Block because:",
+   "options": [
+    "It is track-circuited and signals clear automatically as trains pass",
+    "It uses paper tokens",
+    "It needs no track circuits",
+    "Drivers decide their own spacing"
+   ],
+   "answer": 0,
+   "explain": "Automatic block uses track circuits so signals change automatically with train movement."
+  },
+  {
+   "q": "Delhi Metro's train control is based on:",
+   "options": [
+    "European Train Control System (ETCS) Level 2",
+    "Absolute block",
+    "Communications-Based Train Control (CBTC)",
+    "Pilot working"
+   ],
+   "answer": 2,
+   "explain": "Delhi Metro uses metro-style Communications-Based Train Control (CBTC); Regional Rapid Transit System (RRTS) uses European Train Control System (ETCS) — the favourite examiner comparison."
+  },
+  {
+   "q": "A train approaches a stop indication and the driver fails to react. In an Automatic Train Protection (ATP)-fitted Regional Rapid Transit System (RRTS) train, what happens?",
+   "options": [
+    "Nothing — ATP only advises",
+    "ATP intervenes and brakes the train automatically",
+    "Automatic Train Operation (ATO) accelerates to clear the section",
+    "Automatic Train Supervision (ATS) informs passengers first"
+   ],
+   "answer": 1,
+   "explain": "Automatic Train Protection (ATP) is connected to the brakes: violating the authority means automatic braking, unlike a road signal that only advises."
+  },
+  {
+   "q": "Two trains are accidentally routed towards the same platform line. Which system is designed to make this impossible?",
+   "options": [
+    "Automatic Train Supervision (ATS)",
+    "Automatic Fare Collection (AFC)",
+    "Interlocking",
+    "Passenger Information System (PIS)"
+   ],
+   "answer": 2,
+   "explain": "Interlocking locks points and signals together so conflicting routes can never be set."
+  },
+  {
+   "q": "During peak hours, Operations Control Centre (OCC) wants trains closer together to raise capacity. Which feature mainly enables this safely?",
+   "options": [
+    "Removing Automatic Train Protection (ATP) supervision",
+    "Moving block / Hybrid L3 working",
+    "Switching off track circuits",
+    "Longer station stops"
+   ],
+   "answer": 1,
+   "explain": "Moving-block working computes safe distance continuously, allowing shorter headway without reducing safety."
+  },
+  {
+   "q": "A balise failure is reported in European Train Control System (ETCS) L2 territory. What is the most likely direct effect?",
+   "options": [
+    "All trains lose power supply",
+    "Platform Screen Doors (PSDs) open automatically",
+    "Ticket gates stop working",
+    "Position reference for trains is affected; authority still comes by radio from the Radio Block Centre (RBC)"
+   ],
+   "answer": 3,
+   "explain": "In L2 balises only fix position; the Radio Block Centre (RBC)'s radio authority is a separate function."
+  },
+  {
+   "q": "Why is railway signalling compared to 'a traffic light connected to the brakes'?",
+   "options": [
+    "Because unlike a road signal, a stop indication is enforced by automatic braking through Automatic Train Protection (ATP)",
+    "Because drivers may jump signals freely",
+    "Because signals control road traffic too",
+    "Because trains stop only by driver choice"
+   ],
+   "answer": 0,
+   "explain": "A road signal advises; railway Automatic Train Protection (ATP) enforces — that enforcement is the core difference."
+  },
+  {
+   "q": "Which pairing is correct?",
+   "options": [
+    "Automatic Train Protection (ATP)–Protection, Automatic Train Operation (ATO)–Operation, Automatic Train Supervision (ATS)–Supervision",
+    "ATP–Operation, ATO–Supervision, ATS–Protection",
+    "ATP–Supervision, ATO–Protection, ATS–Operation",
+    "ATP–Ticketing, ATO–Power, ATS–Doors"
+   ],
+   "answer": 0,
+   "explain": "Memorise: Automatic Train Protection (ATP) protects, Automatic Train Operation (ATO) operates (drives), Automatic Train Supervision (ATS) supervises (regulates)."
+  },
+  {
+   "q": "In European Train Control System (ETCS) Level 2 working, the train continuously reports its position to the Radio Block Centre (RBC) mainly so that the RBC can:",
+   "options": [
+    "Bill passengers automatically",
+    "Update the movement authority for that train based on its actual position",
+    "Switch off the traction supply",
+    "Change the timetable for the next day"
+   ],
+   "answer": 1,
+   "explain": "In European Train Control System (ETCS) L2 the train's position reports let the Radio Block Centre (RBC) keep each train's movement authority accurate and safe — this is what allows trains to run closer together safely."
+  },
+  {
+   "q": "'Overlap' in signalling is:",
+   "options": [
+    "The distance two trains share on one platform",
+    "A safety margin of track kept clear beyond a stop signal, in case a train overruns it slightly",
+    "The common portion of two timetables",
+    "The joint between two rails"
+   ],
+   "answer": 1,
+   "explain": "The overlap is spare room beyond the signal: if a driver brakes a little late, the train stops inside the overlap instead of reaching the danger point."
+  },
+  {
+   "q": "'Flank protection' means:",
+   "options": [
+    "Guarding the sides of a station building",
+    "Protecting a set route from conflicting movements that could approach it from the side",
+    "Painting the train's flanks",
+    "Providing security staff on platforms"
+   ],
+   "answer": 1,
+   "explain": "Flank protection locks or guards side routes and trap points so nothing can roll or be driven into the side of a train using the protected route."
+  },
+  {
+   "q": "'Approach locking' of a route ensures that once a train is approaching on a cleared route:",
+   "options": [
+    "The doors lock automatically",
+    "The route cannot be altered at once; it can be released only after the train passes or a safety time delay expires",
+    "The train cannot stop",
+    "The signal turns green permanently"
+   ],
+   "answer": 1,
+   "explain": "Approach locking stops a signaller from changing points in the face of an approaching train that may be unable to stop — a classic accident-prevention feature."
+  },
+  {
+   "q": "A 'calling-on' signal, where provided, authorises a driver to:",
+   "options": [
+    "Call the control room on the radio",
+    "Proceed very cautiously past a stop aspect, typically to enter an occupied line or couple to another train",
+    "Exceed the speed limit",
+    "Ignore all other signals"
+   ],
+   "answer": 1,
+   "explain": "Calling-on is a controlled exception: the driver moves at a speed at which he can stop short of any obstruction, because the line ahead may be occupied."
+  },
+  {
+   "q": "The Driver Machine Interface (DMI) in an ETCS-fitted cab shows the driver mainly:",
+   "options": [
+    "Passenger count and fare collection",
+    "Current speed, permitted speed and the movement authority ahead",
+    "The train's maintenance history",
+    "Advertisements"
+   ],
+   "answer": 1,
+   "explain": "In European Train Control System (ETCS) working, the cab display — the Driver Machine Interface (DMI) — replaces lineside signals with live speed and authority information."
+  }
+ ]
+}

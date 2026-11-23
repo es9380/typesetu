@@ -1,0 +1,503 @@
+{
+ "id": "tech-i-1",
+ "category": "technical",
+ "group": "Unit i — RRTS / High Speed Operations",
+ "title": "Fundamentals of RRTS Operations & Train Operating Procedures",
+ "questions": [
+  {
+   "q": "In Regional Rapid Transit System (RRTS), 'Operations' means:",
+   "options": [
+    "Only the maintenance of trains in the depot",
+    "The safe, punctual, passenger-focused running of trains and stations as one system, to a single plan — the timetable",
+    "Only ticket selling at stations",
+    "Only construction of new lines"
+   ],
+   "answer": 1,
+   "explain": "Operations = trains, tracks, signalling, power, stations, staff and information all moving to the timetable."
+  },
+  {
+   "q": "Regional Rapid Transit System (RRTS) is best described as:",
+   "options": [
+    "An open system shared with freight trains",
+    "A loco-hauled system with level crossings",
+    "A tram system running on roads",
+    "A closed, fully grade-separated, high-frequency Electric Multiple Unit (EMU) system with no level crossings and no mixed freight traffic"
+   ],
+   "answer": 3,
+   "explain": "No level crossings, no freight, fixed trainsets — that is why headways of a few minutes are possible."
+  },
+  {
+   "q": "EMU stands for:",
+   "options": [
+    "Electric Multiple Unit — motorised coaches distributed along the train, with no separate locomotive",
+    "Electric Main Unit — one engine coach only",
+    "Emergency Movement Unit",
+    "External Motor Unit"
+   ],
+   "answer": 0,
+   "explain": "In an Electric Multiple Unit (EMU), traction motors are spread through the coaches, so no separate locomotive is needed."
+  },
+  {
+   "q": "In operations language, a 'rake' or 'trainset' means:",
+   "options": [
+    "A single spare coach in the depot",
+    "The crew roster for one shift",
+    "The fixed formation of coaches that runs as one train",
+    "A type of track tool"
+   ],
+   "answer": 2,
+   "explain": "Regional Rapid Transit System (RRTS) runs fixed trainsets/rakes rather than daily re-formed loco trains."
+  },
+  {
+   "q": "Headway means:",
+   "options": [
+    "The time a train stands at a platform",
+    "The length of a train",
+    "The time interval between two successive trains at a point",
+    "The height of the overhead wire"
+   ],
+   "answer": 2,
+   "explain": "Headway is the gap between trains; dwell is the standing time at a platform — the pair is always asked together."
+  },
+  {
+   "q": "Dwell time means:",
+   "options": [
+    "The time a train stands at a platform for boarding and alighting",
+    "The time between two trains",
+    "The time to reverse at a terminal",
+    "The driver's rest time"
+   ],
+   "answer": 0,
+   "explain": "Dwell = platform standing time for passenger exchange."
+  },
+  {
+   "q": "Turnaround time means:",
+   "options": [
+    "The time a train stands at an intermediate platform",
+    "The depot repair time",
+    "The interval between two trains",
+    "The time taken at a terminal to reverse a train for its return trip"
+   ],
+   "answer": 3,
+   "explain": "Turnaround is the terminal reversal time; minimum turnaround is vital in peak hours."
+  },
+  {
+   "q": "Revenue service means:",
+   "options": [
+    "An empty run from depot to the first station",
+    "Train running that carries passengers as per the timetable",
+    "A train parked in the depot",
+    "A trial run without passengers"
+   ],
+   "answer": 1,
+   "explain": "Revenue service = passenger-carrying service. Empty depot runs are non-revenue movements."
+  },
+  {
+   "q": "Which of these is a NON-revenue movement?",
+   "options": [
+    "A peak-hour passenger trip",
+    "An empty run from the depot to the starting station",
+    "A normal timetabled passenger trip",
+    "A special passenger service"
+   ],
+   "answer": 1,
+   "explain": "Non-revenue = no passengers carried, e.g. depot transfers, empty runs and trials — but full safety rules still apply."
+  },
+  {
+   "q": "Stabling means:",
+   "options": [
+    "Running a train at full speed",
+    "Holding a train at a station",
+    "Washing a train",
+    "Parking a train at a depot or stabling line when not in service"
+   ],
+   "answer": 3,
+   "explain": "Stabled trains are parked, e.g. overnight, until their next duty."
+  },
+  {
+   "q": "Shunting means:",
+   "options": [
+    "Planned movement of trains/coaches within a depot or yard",
+    "Emergency braking on the main line",
+    "Cancelling a trip",
+    "Overtaking another train"
+   ],
+   "answer": 0,
+   "explain": "Shunting is controlled movement inside depot/yard limits, not main-line running."
+  },
+  {
+   "q": "A possession is:",
+   "options": [
+    "Ownership of a train by the operator",
+    "A passenger's reserved seat",
+    "Protected, authorised access to a track area for work, with trains excluded",
+    "A crew member's duty bag"
+   ],
+   "answer": 2,
+   "explain": "Possession gives maintenance protected track access — normally in non-revenue hours."
+  },
+  {
+   "q": "The train operations cycle begins with:",
+   "options": [
+    "Terminal turnaround",
+    "Withdrawal to the depot",
+    "Train preparation in the depot — checks, cleaning, testing brakes, doors and radio",
+    "Passenger boarding"
+   ],
+   "answer": 2,
+   "explain": "Cycle order: preparation → induction → revenue running → turnaround → withdrawal → examination/maintenance handover."
+  },
+  {
+   "q": "After revenue running and terminal turnaround, a train is:",
+   "options": [
+    "Withdrawn to the depot/stabling and handed over for examination and maintenance",
+    "Immediately sent for scrap",
+    "Handed to passengers for cleaning",
+    "Parked on the running line"
+   ],
+   "answer": 0,
+   "explain": "Withdrawal and maintenance handover close the daily operations cycle."
+  },
+  {
+   "q": "'Induction' of a train means:",
+   "options": [
+    "Removing a train from service",
+    "Inducting a new employee",
+    "Charging the train's batteries",
+    "Bringing a prepared train from the depot into revenue service"
+   ],
+   "answer": 3,
+   "explain": "Induction = entering service; withdrawal = leaving service."
+  },
+  {
+   "q": "In Automatic Train Operation (ATO), the Train Operator's main job is to:",
+   "options": [
+    "Drive every movement fully by hand",
+    "Supervise the automatic running, manage doors, and handle degraded/emergency actions",
+    "Collect fares on board",
+    "Repair signalling failures"
+   ],
+   "answer": 1,
+   "explain": "Automatic Train Operation (ATO) drives; the operator supervises, controls doors and takes over when things go wrong."
+  },
+  {
+   "q": "Before taking duty, train crew must be:",
+   "options": [
+    "Only medically fit; route knowledge is optional",
+    "Route-competent, rule-competent and medically fit, with prescribed rest taken",
+    "Only route-competent; rest is optional",
+    "Fresh from any other full shift"
+   ],
+   "answer": 1,
+   "explain": "Competency, medical fitness and rostered rest are all compulsory for train crew."
+  },
+  {
+   "q": "Prescribed rest before duty for train crew is governed by:",
+   "options": [
+    "Passenger demand",
+    "Weather",
+    "Fare stages",
+    "Roster rules"
+   ],
+   "answer": 3,
+   "explain": "Rosters are built so crew get their prescribed rest and stay competency-compliant."
+  },
+  {
+   "q": "The first law of operations is:",
+   "options": [
+    "'No authority = no movement' — every movement needs an authority, a defined route and a safe speed",
+    "'No ticket = no travel'",
+    "'Speed first, safety later'",
+    "'The timetable overrides signals'"
+   ],
+   "answer": 0,
+   "explain": "Authority from signalling and the Operations Control Centre (OCC), a set route and a safe speed must all exist before any movement."
+  },
+  {
+   "q": "A Permanent Speed Restriction (PSR) exists because of:",
+   "options": [
+    "A temporary track defect",
+    "One day's engineering work",
+    "Design features such as curves",
+    "A sick passenger"
+   ],
+   "answer": 2,
+   "explain": "Permanent Speed Restrictions (PSRs) are built into the design; Temporary Speed Restrictions (TSRs) come from temporary conditions."
+  },
+  {
+   "q": "A Temporary Speed Restriction (TSR) is imposed because of:",
+   "options": [
+    "The permanent design of a curve",
+    "The fare chart",
+    "Work or a defect for a limited period, notified to crew and Operations Control Centre (OCC)",
+    "The train's colour scheme"
+   ],
+   "answer": 2,
+   "explain": "Temporary Speed Restrictions (TSRs) are temporary, condition-based, and must be notified to crew and Operations Control Centre (OCC)."
+  },
+  {
+   "q": "Overspeeding by a train is prevented by:",
+   "options": [
+    "Automatic Train Protection (ATP) (Automatic Train Protection)",
+    "Automatic Fare Collection (AFC) gates",
+    "Passenger announcements",
+    "The fare chart"
+   ],
+   "answer": 0,
+   "explain": "Automatic Train Protection (ATP) supervises speed and stops the train from exceeding the safe limit."
+  },
+  {
+   "q": "Punctuality of trains is measured:",
+   "options": [
+    "Only at the depot gate",
+    "Only when passengers complain",
+    "Once a month from ticket sales",
+    "Against the timetable at timing points"
+   ],
+   "answer": 3,
+   "explain": "Right-time running is checked at defined timing points along the route."
+  },
+  {
+   "q": "A small delay can be recovered by:",
+   "options": [
+    "Skipping door checks",
+    "Reduced dwell (within safe limits), timetable recovery margins, and Operations Control Centre (OCC) regulation decisions",
+    "Running above the speed limit",
+    "Closing the Platform Screen Doors (PSDs) early"
+   ],
+   "answer": 1,
+   "explain": "Recovery uses safe tools only — dwell discipline, built-in margins and regulation; never unsafe speed."
+  },
+  {
+   "q": "The Working Timetable is:",
+   "options": [
+    "The crew leave chart",
+    "The master plan of every train — timings, routes, platform allocation and depot in/out movements",
+    "The maintenance log book",
+    "The ticket stock register"
+   ],
+   "answer": 1,
+   "explain": "The working timetable is the day's operational master plan."
+  },
+  {
+   "q": "The Duty Roster tells:",
+   "options": [
+    "Which platform each train uses",
+    "The price of every ticket",
+    "The depot washing schedule",
+    "Who works which train/station shift, with rest and competency compliance"
+   ],
+   "answer": 3,
+   "explain": "Roster = people plan; working timetable = train plan."
+  },
+  {
+   "q": "Notices and circulars issued before duty mainly communicate:",
+   "options": [
+    "Temporary Speed Restrictions (TSRs), engineering work and special instructions for the day, to be briefed before duty",
+    "Monthly salary details",
+    "Passenger complaints of last year",
+    "New fare offers"
+   ],
+   "answer": 0,
+   "explain": "Crews must be briefed on the day's Temporary Speed Restrictions (TSRs), works and special instructions before starting."
+  },
+  {
+   "q": "Before the first train of the day, which readiness items are confirmed?",
+   "options": [
+    "Only the ticket stock",
+    "Only the station lighting",
+    "Trains, signalling, power, Platform Screen Doors (PSDs), radio and Automatic Fare Collection (AFC)/Passenger Information System (PIS)",
+    "Only the crew's uniforms"
+   ],
+   "answer": 2,
+   "explain": "Pre-service readiness covers every system the first train depends on."
+  },
+  {
+   "q": "The three operating states of a train are:",
+   "options": [
+    "Peak, off-peak and night",
+    "Manual, automatic and remote",
+    "Revenue service, non-revenue movement and stabling",
+    "Open, closed and locked"
+   ],
+   "answer": 2,
+   "explain": "A train is either carrying passengers, moving empty, or stabled (parked)."
+  },
+  {
+   "q": "'Roll-out' means:",
+   "options": [
+    "Trains leaving the depot to enter revenue service",
+    "Trains returning to the depot after service",
+    "A derailment",
+    "Train washing in the depot"
+   ],
+   "answer": 0,
+   "explain": "Roll-out = depot to service in the morning; roll-in = back to depot."
+  },
+  {
+   "q": "'Roll-in' means:",
+   "options": [
+    "Trains leaving the depot for service",
+    "Boarding of passengers",
+    "Reversal at a terminal",
+    "Trains returning to the depot after finishing service"
+   ],
+   "answer": 3,
+   "explain": "Roll-in completes the daily cycle before the night maintenance window."
+  },
+  {
+   "q": "Which are the driving modes mentioned for Regional Rapid Transit System (RRTS) trains?",
+   "options": [
+    "Diesel, electric and steam",
+    "Automatic Train Operation (ATO), Automatic Train Protection (ATP)-manual and RM (Restricted Manual), as the system permits",
+    "Local, express and superfast",
+    "Day, night and fog modes"
+   ],
+   "answer": 1,
+   "explain": "Modes range from Automatic Train Operation (ATO) down to Restricted Manual, used as conditions permit."
+  },
+  {
+   "q": "Door interlocking ensures that:",
+   "options": [
+    "Doors open while the train is moving",
+    "A train cannot move with a door open",
+    "Passengers can force doors at speed",
+    "Platform Screen Doors (PSDs) open before the train stops"
+   ],
+   "answer": 1,
+   "explain": "Interlock: doors proved closed and locked before traction is possible."
+  },
+  {
+   "q": "Berthing accuracy at Platform Screen Door (PSD) stations matters because:",
+   "options": [
+    "It impresses passengers",
+    "It saves paint",
+    "It decides the fare",
+    "Train doors must align exactly with the Platform Screen Doors"
+   ],
+   "answer": 3,
+   "explain": "If the train stops off-mark, its doors will not match the Platform Screen Doors (PSDs) and boarding cannot happen normally."
+  },
+  {
+   "q": "If a Train Operator receives an instruction that would clearly endanger safety, he must:",
+   "options": [
+    "Refuse it, protect the train, and report it to Operations Control Centre (OCC)/supervisor",
+    "Obey it silently",
+    "Obey it but drive slowly",
+    "Ignore all future instructions"
+   ],
+   "answer": 0,
+   "explain": "No instruction overrides safety — refuse, protect, report. This is tested in every metro operations paper."
+  },
+  {
+   "q": "Written operating procedures are important mainly because:",
+   "options": [
+    "They increase the train's speed",
+    "They replace the need for training",
+    "They make every crew, on every shift, do the same job the same safe way — memory fails under pressure, a checklist does not",
+    "They are only for auditors"
+   ],
+   "answer": 2,
+   "explain": "Like pilots' checklists, procedures remove dependence on individual memory."
+  },
+  {
+   "q": "A train's trip refers to:",
+   "options": [
+    "The crew's holiday",
+    "A depot shunting movement only",
+    "One scheduled run of a train between its start and end points",
+    "The annual maintenance visit"
+   ],
+   "answer": 2,
+   "explain": "Each scheduled run in the timetable is a trip."
+  },
+  {
+   "q": "A block section is:",
+   "options": [
+    "A defined length of track protected so that train movements within it are controlled by authority/signalling",
+    "A closed station",
+    "A ticket block in the booking office",
+    "A depot parking line only"
+   ],
+   "answer": 0,
+   "explain": "Movements enter a block section only with authority — part of the 'no authority = no movement' rule."
+  },
+  {
+   "q": "Right-time, right-direction working matters because:",
+   "options": [
+    "It is only a slogan for posters",
+    "It decides crew uniforms",
+    "It applies only to freight",
+    "Trains must run to the timetable on their correct line/direction for the planned service to be safe and punctual"
+   ],
+   "answer": 3,
+   "explain": "Correct direction and timing keep the single plan — the timetable — intact for the whole line."
+  },
+  {
+   "q": "Peak-hour working needs:",
+   "options": [
+    "Minimum fleet and long turnarounds",
+    "Maximum fleet deployment and minimum turnaround time",
+    "Only spare trains in the depot",
+    "Longer dwell at every station"
+   ],
+   "answer": 1,
+   "explain": "Peak demand is met by putting the maximum trains out and turning them round fastest."
+  },
+  {
+   "q": "A 'caution order' handed to a train crew before departure mainly tells them about:",
+   "options": [
+    "Their leave roster for the month",
+    "Speed restrictions and special conditions to observe on the run ahead",
+    "The fare chart for the route",
+    "The catering menu on board"
+   ],
+   "answer": 1,
+   "explain": "A caution order is a written warning listing every speed restriction and unusual condition on the trip, so the crew is never surprised by a restriction ahead."
+  },
+  {
+   "q": "'Berthing' a train at a station means:",
+   "options": [
+    "Parking it in the depot for the night",
+    "Bringing it to a stop at the exact marked position on the platform",
+    "Coupling two trains together",
+    "Taking it out of service for washing"
+   ],
+   "answer": 1,
+   "explain": "Berthing is stopping precisely at the platform stopping mark, so the train doors align with the Platform Screen Doors (PSDs) and passengers can board safely."
+  },
+  {
+   "q": "The very first train after the night maintenance block is normally run cautiously because it also serves to:",
+   "options": [
+    "Carry the maximum passengers",
+    "Prove the section is clear of men, material and obstructions before normal service",
+    "Test the ticket gates",
+    "Train new drivers"
+   ],
+   "answer": 1,
+   "explain": "After night work, the first train acts as a proving run — it confirms the track is clear and fit before full-speed passenger service begins."
+  },
+  {
+   "q": "A train's event recorder (its 'black box') is fitted mainly to:",
+   "options": [
+    "Play announcements",
+    "Record speed, braking and other running data for later analysis and investigation",
+    "Sell tickets automatically",
+    "Control the air-conditioning"
+   ],
+   "answer": 1,
+   "explain": "The event recorder logs how the train was driven — speed, brake use, door events — so any incident can be reconstructed factually afterwards."
+  },
+  {
+   "q": "A train is detained at a stop signal for several minutes with no authority to move. The Train Operator should FIRST:",
+   "options": [
+    "Open the doors so passengers can get down",
+    "Inform the Operations Control Centre (OCC), follow its instructions and keep passengers informed",
+    "Reverse the train to the previous station on his own",
+    "Leave the cab and walk to the signal"
+   ],
+   "answer": 1,
+   "explain": "On detention, the operator reports to the Operations Control Centre (OCC) at once and waits for instructions; unauthorised moves or detraining passengers on the track can create a bigger danger."
+  }
+ ]
+}

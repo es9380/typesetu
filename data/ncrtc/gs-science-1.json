@@ -1,0 +1,448 @@
+{
+ "id": "gs-science-1",
+ "category": "gs",
+ "group": "GS — Science",
+ "title": "General Science Test 1 (Physics & Chemistry — most probable)",
+ "questions": [
+  {
+   "q": "The unit of force in the International System of Units (SI) is:",
+   "options": [
+    "Joule",
+    "Watt",
+    "Newton",
+    "Pascal"
+   ],
+   "answer": 2,
+   "explain": "Force is measured in newtons (N); Joule = energy, Watt = power, Pascal = pressure."
+  },
+  {
+   "q": "The unit of energy and work in the International System of Units (SI) is:",
+   "options": [
+    "Joule",
+    "Newton",
+    "Watt",
+    "Ohm"
+   ],
+   "answer": 0,
+   "explain": "Work and energy share the unit Joule; power (rate of doing work) is the Watt."
+  },
+  {
+   "q": "The unit of power in the International System of Units (SI) is:",
+   "options": [
+    "Joule",
+    "Volt",
+    "Ampere",
+    "Watt"
+   ],
+   "answer": 3,
+   "explain": "One watt = one joule per second; the kilowatt-hour (unit of electricity bill) is a unit of energy, not power."
+  },
+  {
+   "q": "The unit of pressure in the International System of Units (SI) is:",
+   "options": [
+    "Newton",
+    "Pascal",
+    "Bar",
+    "Torr"
+   ],
+   "answer": 1,
+   "explain": "Pressure is measured in pascals (N/m²); atmospheric pressure is about 101,325 Pa."
+  },
+  {
+   "q": "The unit of frequency in the International System of Units (SI) is:",
+   "options": [
+    "Hertz",
+    "Decibel",
+    "Ohm",
+    "Tesla"
+   ],
+   "answer": 0,
+   "explain": "Frequency (cycles per second) is Hertz; decibel measures sound intensity level."
+  },
+  {
+   "q": "The unit of electric resistance in the International System of Units (SI) is:",
+   "options": [
+    "Volt",
+    "Ampere",
+    "Watt",
+    "Ohm"
+   ],
+   "answer": 3,
+   "explain": "From Ohm's law V = IR, resistance is measured in ohms."
+  },
+  {
+   "q": "Ohm's law states the relation:",
+   "options": [
+    "V = I/R",
+    "V = IR (voltage = current × resistance)",
+    "P = IV only",
+    "E = mc²"
+   ],
+   "answer": 1,
+   "explain": "Ohm's law links voltage, current and resistance in a conductor at constant temperature."
+  },
+  {
+   "q": "The speed of light in vacuum is:",
+   "options": [
+    "3 × 10⁶ m/s",
+    "343 m/s",
+    "3 × 10⁸ m/s",
+    "1.5 × 10⁸ m/s"
+   ],
+   "answer": 2,
+   "explain": "Light travels at 3 lakh km per second; 343 m/s is the speed of sound in air — the usual distractor."
+  },
+  {
+   "q": "The speed of sound in air at ordinary temperature is about:",
+   "options": [
+    "3 × 10⁸ m/s",
+    "1,500 m/s",
+    "150 m/s",
+    "343 m/s"
+   ],
+   "answer": 3,
+   "explain": "Sound is much slower than light — that is why we see lightning before hearing thunder."
+  },
+  {
+   "q": "Optical fibres, used in communication and endoscopy, work on the principle of:",
+   "options": [
+    "Dispersion",
+    "Total internal reflection",
+    "Interference",
+    "Diffraction"
+   ],
+   "answer": 1,
+   "explain": "Light repeatedly reflects totally inside the fibre and travels without much loss; a mirage is also caused by total internal reflection."
+  },
+  {
+   "q": "The blue colour of the clear sky is due to:",
+   "options": [
+    "Reflection from the oceans",
+    "Dispersion through clouds",
+    "Scattering of sunlight by air molecules",
+    "Absorption of other colours"
+   ],
+   "answer": 2,
+   "explain": "Air molecules scatter blue light the most (Rayleigh scattering), so the sky looks blue."
+  },
+  {
+   "q": "A rainbow is formed due to:",
+   "options": [
+    "Dispersion of sunlight by water droplets",
+    "Total internal reflection only",
+    "Scattering by dust",
+    "Reflection from the ground"
+   ],
+   "answer": 0,
+   "explain": "Raindrops split white sunlight into seven colours by dispersion (with refraction and reflection inside the drop)."
+  },
+  {
+   "q": "Myopia (short-sight) is corrected by using a:",
+   "options": [
+    "Convex lens",
+    "Concave (diverging) lens",
+    "Cylindrical lens",
+    "Plane glass"
+   ],
+   "answer": 1,
+   "explain": "In myopia the image forms before the retina; a concave lens diverges the rays to correct it."
+  },
+  {
+   "q": "Hypermetropia (long-sight) is corrected by using a:",
+   "options": [
+    "Concave lens",
+    "Bifocal-free plane lens",
+    "Convex (converging) lens",
+    "Coloured lens"
+   ],
+   "answer": 2,
+   "explain": "A convex lens converges light so the image falls exactly on the retina."
+  },
+  {
+   "q": "The power of a lens is measured in:",
+   "options": [
+    "Dioptre",
+    "Watt",
+    "Candela",
+    "Lux"
+   ],
+   "answer": 0,
+   "explain": "Power = 1/focal length (in metres); an optician's prescription is written in dioptres."
+  },
+  {
+   "q": "The image formed by a plane mirror is:",
+   "options": [
+    "Real and inverted",
+    "Magnified",
+    "Formed on a screen",
+    "Virtual, erect and laterally inverted"
+   ],
+   "answer": 3,
+   "explain": "A plane mirror gives a same-size virtual image that is left-right reversed (lateral inversion)."
+  },
+  {
+   "q": "At higher altitudes water boils at a lower temperature because:",
+   "options": [
+    "Gravity increases",
+    "Air becomes hotter",
+    "Atmospheric pressure decreases",
+    "Water becomes impure"
+   ],
+   "answer": 2,
+   "explain": "Lower pressure lets water boil below 100°C, so cooking takes longer in the hills — hence the pressure cooker."
+  },
+  {
+   "q": "A pressure cooker cooks food faster because inside it:",
+   "options": [
+    "Higher pressure raises the boiling point of water",
+    "Steam escapes quickly",
+    "Heat is reflected",
+    "Water boils at 80°C"
+   ],
+   "answer": 0,
+   "explain": "Under pressure, water can reach about 120°C, cooking food faster."
+  },
+  {
+   "q": "An electric fuse wire must have:",
+   "options": [
+    "High melting point",
+    "Zero resistance",
+    "Magnetic properties",
+    "Low melting point and high resistance"
+   ],
+   "answer": 3,
+   "explain": "Excess current melts the fuse wire first and breaks the circuit, protecting appliances; it is connected in series."
+  },
+  {
+   "q": "Silver is the best conductor of electricity, but household wiring uses copper mainly because silver is:",
+   "options": [
+    "A poor conductor",
+    "Very costly",
+    "Too brittle",
+    "Radioactive"
+   ],
+   "answer": 1,
+   "explain": "Copper is the practical choice — a good conductor, ductile and much cheaper than silver."
+  },
+  {
+   "q": "Rubber and plastic are used as covering on electric wires because they are:",
+   "options": [
+    "Insulators",
+    "Conductors",
+    "Semiconductors",
+    "Magnets"
+   ],
+   "answer": 0,
+   "explain": "Insulators do not allow current to pass and protect us from shocks."
+  },
+  {
+   "q": "A battery converts:",
+   "options": [
+    "Electrical energy into chemical energy",
+    "Mechanical energy into electrical energy",
+    "Heat energy into electrical energy",
+    "Chemical energy into electrical energy"
+   ],
+   "answer": 3,
+   "explain": "Cells store chemicals that react to produce electric current."
+  },
+  {
+   "q": "An electric generator (dynamo) converts:",
+   "options": [
+    "Electrical energy into mechanical energy",
+    "Mechanical energy into electrical energy",
+    "Chemical energy into heat energy",
+    "Sound energy into electrical energy"
+   ],
+   "answer": 1,
+   "explain": "A generator works on electromagnetic induction; an electric motor does the reverse conversion."
+  },
+  {
+   "q": "An electric motor converts:",
+   "options": [
+    "Mechanical energy into electrical energy",
+    "Electrical energy into chemical energy",
+    "Electrical energy into mechanical energy",
+    "Heat energy into mechanical energy"
+   ],
+   "answer": 2,
+   "explain": "Motors in fans, pumps and trains turn electrical energy into motion."
+  },
+  {
+   "q": "The pH of a neutral solution at 25°C is:",
+   "options": [
+    "0",
+    "1",
+    "14",
+    "7"
+   ],
+   "answer": 3,
+   "explain": "Below 7 is acidic and above 7 is basic (alkaline); pure water is exactly 7."
+  },
+  {
+   "q": "The acid present in the human stomach that helps digestion is:",
+   "options": [
+    "Sulphuric acid",
+    "Hydrochloric acid (HCl)",
+    "Nitric acid",
+    "Acetic acid"
+   ],
+   "answer": 1,
+   "explain": "Stomach HCl kills germs and activates enzymes; excess acidity is treated with mild bases called antacids."
+  },
+  {
+   "q": "Vinegar, used in cooking and pickles, contains:",
+   "options": [
+    "Citric acid",
+    "Lactic acid",
+    "Acetic acid",
+    "Formic acid"
+   ],
+   "answer": 2,
+   "explain": "Vinegar is a dilute solution of acetic acid; lemon has citric acid and curd has lactic acid."
+  },
+  {
+   "q": "The sour taste of lemon and oranges is due to:",
+   "options": [
+    "Citric acid",
+    "Acetic acid",
+    "Tartaric acid",
+    "Oxalic acid"
+   ],
+   "answer": 0,
+   "explain": "Citrus fruits contain citric acid; tamarind contains tartaric acid."
+  },
+  {
+   "q": "The acid that sours milk into curd is:",
+   "options": [
+    "Citric acid",
+    "Lactic acid",
+    "Acetic acid",
+    "Hydrochloric acid"
+   ],
+   "answer": 1,
+   "explain": "Lactobacillus bacteria convert milk sugar into lactic acid, setting the curd."
+  },
+  {
+   "q": "Baking soda, used in cooking and antacids, is chemically:",
+   "options": [
+    "Sodium carbonate (Na₂CO₃)",
+    "Sodium hydroxide (NaOH)",
+    "Sodium hydrogen carbonate (NaHCO₃)",
+    "Calcium carbonate (CaCO₃)"
+   ],
+   "answer": 2,
+   "explain": "NaHCO₃ is baking soda; Na₂CO₃ is washing soda and NaOH is caustic soda — the classic formula trap set."
+  },
+  {
+   "q": "The chemical formula of washing soda is:",
+   "options": [
+    "Na₂CO₃·10H₂O",
+    "NaHCO₃",
+    "NaOH",
+    "CaOCl₂"
+   ],
+   "answer": 0,
+   "explain": "Washing soda is hydrated sodium carbonate; CaOCl₂ is bleaching powder."
+  },
+  {
+   "q": "Caustic soda, used in soap making, is chemically:",
+   "options": [
+    "Sodium carbonate",
+    "Calcium hydroxide",
+    "Potassium hydroxide",
+    "Sodium hydroxide (NaOH)"
+   ],
+   "answer": 3,
+   "explain": "NaOH is a strong alkali called caustic soda; KOH is caustic potash."
+  },
+  {
+   "q": "Bleaching powder, used to disinfect water, has the formula:",
+   "options": [
+    "CaCO₃",
+    "CaSO₄",
+    "CaOCl₂",
+    "Ca(OH)₂"
+   ],
+   "answer": 2,
+   "explain": "Bleaching powder (calcium oxychloride) releases chlorine, which kills germs."
+  },
+  {
+   "q": "The most abundant metal in the Earth's crust is:",
+   "options": [
+    "Aluminium",
+    "Iron",
+    "Copper",
+    "Calcium"
+   ],
+   "answer": 0,
+   "explain": "Oxygen is the most abundant element overall; among metals, aluminium comes first, then iron."
+  },
+  {
+   "q": "The most abundant element in the Earth's crust is:",
+   "options": [
+    "Silicon",
+    "Aluminium",
+    "Iron",
+    "Oxygen"
+   ],
+   "answer": 3,
+   "explain": "Oxygen (about 46%) and silicon (about 28%) together make up most of the crust."
+  },
+  {
+   "q": "Rusting of iron is a chemical change in which iron reacts with:",
+   "options": [
+    "Carbon dioxide only",
+    "Oxygen and moisture to form hydrated iron oxide",
+    "Nitrogen and heat",
+    "Hydrogen only"
+   ],
+   "answer": 1,
+   "explain": "Rust is Fe₂O₃·xH₂O; painting, oiling and galvanisation prevent rusting."
+  },
+  {
+   "q": "Bronze, the alloy used for statues and medals, is a mixture of:",
+   "options": [
+    "Copper and tin",
+    "Copper and zinc",
+    "Iron and chromium",
+    "Lead and tin"
+   ],
+   "answer": 0,
+   "explain": "Brass = copper + zinc; bronze = copper + tin — a standard alloy pair."
+  },
+  {
+   "q": "Brass, used for utensils and musical instruments, is an alloy of:",
+   "options": [
+    "Copper and tin",
+    "Lead and tin",
+    "Iron and nickel",
+    "Copper and zinc"
+   ],
+   "answer": 3,
+   "explain": "Brass is copper-zinc; solder is lead-tin, and stainless steel is iron-chromium-nickel."
+  },
+  {
+   "q": "The main component of Compressed Natural Gas (CNG) (Compressed Natural Gas) is:",
+   "options": [
+    "Butane",
+    "Methane",
+    "Propane",
+    "Ethane"
+   ],
+   "answer": 1,
+   "explain": "Compressed Natural Gas (CNG) is mostly methane; Liquefied Petroleum Gas (LPG) is mainly butane and propane."
+  },
+  {
+   "q": "Hard water, which does not lather easily with soap, contains salts of:",
+   "options": [
+    "Sodium and potassium",
+    "Iron and copper",
+    "Calcium and magnesium",
+    "Zinc and lead"
+   ],
+   "answer": 2,
+   "explain": "Calcium and magnesium bicarbonates/chlorides/sulphates make water hard."
+  }
+ ]
+}

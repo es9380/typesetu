@@ -1,0 +1,448 @@
+{
+ "id": "gs-history-1",
+ "category": "gs",
+ "group": "GS — History",
+ "title": "Indian History Test 1 (Ancient & Medieval — most probable)",
+ "questions": [
+  {
+   "q": "The Great Bath, a famous structure of the Indus Valley Civilisation, was found at:",
+   "options": [
+    "Harappa",
+    "Lothal",
+    "Mohenjo-daro",
+    "Kalibangan"
+   ],
+   "answer": 2,
+   "explain": "The Great Bath was a large water tank at Mohenjo-daro, on the Indus river in present-day Sindh."
+  },
+  {
+   "q": "The city of Harappa was situated on the bank of which river?",
+   "options": [
+    "Ravi",
+    "Indus",
+    "Sutlej",
+    "Chenab"
+   ],
+   "answer": 0,
+   "explain": "Harappa stood on the Ravi; Mohenjo-daro stood on the Indus — this pair is asked again and again."
+  },
+  {
+   "q": "Lothal, the Indus Valley site in Gujarat, is famous for its:",
+   "options": [
+    "Great Bath",
+    "Granary",
+    "Assembly hall",
+    "Dockyard"
+   ],
+   "answer": 3,
+   "explain": "Lothal had an artificial dockyard, showing the Harappans traded by sea."
+  },
+  {
+   "q": "Dholavira, the Harappan city in the Rann of Kutch, is best known for its:",
+   "options": [
+    "Dockyard",
+    "Advanced water management system",
+    "Great Bath",
+    "Seal making only"
+   ],
+   "answer": 1,
+   "explain": "Dholavira's reservoirs and water channels show remarkable water harvesting in a dry region."
+  },
+  {
+   "q": "Which is the oldest of the four Vedas?",
+   "options": [
+    "Rigveda",
+    "Samaveda",
+    "Yajurveda",
+    "Atharvaveda"
+   ],
+   "answer": 0,
+   "explain": "The Rigveda is the earliest Veda; its hymns are the oldest religious texts of India."
+  },
+  {
+   "q": "The national motto 'Satyameva Jayate' is taken from:",
+   "options": [
+    "Rigveda",
+    "Bhagavad Gita",
+    "Ramayana",
+    "Mundaka Upanishad"
+   ],
+   "answer": 3,
+   "explain": "It is taken from the Mundaka Upanishad and appears below the national emblem."
+  },
+  {
+   "q": "Gautam Buddha was born at:",
+   "options": [
+    "Bodh Gaya",
+    "Lumbini",
+    "Sarnath",
+    "Kushinagar"
+   ],
+   "answer": 1,
+   "explain": "Buddha was born at Lumbini (Nepal); Bodh Gaya = enlightenment, Sarnath = first sermon, Kushinagar = death."
+  },
+  {
+   "q": "Buddha attained enlightenment at:",
+   "options": [
+    "Lumbini",
+    "Sarnath",
+    "Bodh Gaya",
+    "Kushinagar"
+   ],
+   "answer": 2,
+   "explain": "Under the Bodhi tree at Bodh Gaya, Bihar, Siddhartha became the Buddha (the Enlightened One)."
+  },
+  {
+   "q": "Buddha gave his first sermon at:",
+   "options": [
+    "Bodh Gaya",
+    "Lumbini",
+    "Kushinagar",
+    "Sarnath"
+   ],
+   "answer": 3,
+   "explain": "At Sarnath near Varanasi he preached the first sermon, called Dharmachakra Pravartana (turning of the wheel of dharma)."
+  },
+  {
+   "q": "Buddha's Mahaparinirvana (death) took place at:",
+   "options": [
+    "Sarnath",
+    "Kushinagar",
+    "Bodh Gaya",
+    "Lumbini"
+   ],
+   "answer": 1,
+   "explain": "Kushinagar in Uttar Pradesh is where Buddha passed away; the four Buddhist sites form a favourite set of four."
+  },
+  {
+   "q": "Mahavira, the Jain teacher who reorganised Jainism, was the:",
+   "options": [
+    "1st Tirthankara",
+    "12th Tirthankara",
+    "24th Tirthankara",
+    "23rd Tirthankara"
+   ],
+   "answer": 2,
+   "explain": "Mahavira was the 24th and last Tirthankara; the first was Rishabhanatha."
+  },
+  {
+   "q": "Who was the first Tirthankara of Jainism?",
+   "options": [
+    "Rishabhanatha",
+    "Parshvanatha",
+    "Mahavira",
+    "Neminatha"
+   ],
+   "answer": 0,
+   "explain": "Rishabhanatha (Adinath) is regarded as the first of the 24 Jain Tirthankaras."
+  },
+  {
+   "q": "The Mauryan Empire was founded by:",
+   "options": [
+    "Ashoka",
+    "Chandragupta Maurya",
+    "Bindusara",
+    "Samudragupta"
+   ],
+   "answer": 1,
+   "explain": "Chandragupta founded the empire around 322 Before Common Era (BCE) with the guidance of Chanakya (Kautilya)."
+  },
+  {
+   "q": "The famous treatise 'Arthashastra' on statecraft was written by:",
+   "options": [
+    "Ashoka",
+    "Kalidasa",
+    "Chanakya (Kautilya)",
+    "Banabhatta"
+   ],
+   "answer": 2,
+   "explain": "Chanakya, Chandragupta Maurya's minister, wrote the Arthashastra on administration and economics."
+  },
+  {
+   "q": "The Kalinga War, which changed Ashoka's life, was fought in about:",
+   "options": [
+    "261 Before Common Era (BCE)",
+    "321 BCE",
+    "185 BCE",
+    "72 Common Era (CE)"
+   ],
+   "answer": 0,
+   "explain": "After the bloodshed of Kalinga (261 Before Common Era (BCE)), Ashoka gave up war and adopted Buddhism and the policy of Dhamma."
+  },
+  {
+   "q": "Most of Ashoka's edicts were written in which language?",
+   "options": [
+    "Sanskrit",
+    "Pali",
+    "Tamil",
+    "Prakrit"
+   ],
+   "answer": 3,
+   "explain": "Ashoka addressed common people in their own language, Prakrit, across most of his empire."
+  },
+  {
+   "q": "Most Ashokan edicts are written in which script?",
+   "options": [
+    "Kharoshthi",
+    "Devanagari",
+    "Brahmi",
+    "Greek"
+   ],
+   "answer": 2,
+   "explain": "Brahmi was the main script; Kharoshthi was used only in the north-west of his empire."
+  },
+  {
+   "q": "Ashoka's Brahmi inscriptions were first deciphered by:",
+   "options": [
+    "James Prinsep",
+    "John Marshall",
+    "William Jones",
+    "Max Muller"
+   ],
+   "answer": 0,
+   "explain": "James Prinsep deciphered Brahmi in 1837, which revealed the identity of King Ashoka."
+  },
+  {
+   "q": "India's national emblem, the Lion Capital, was originally installed at:",
+   "options": [
+    "Pataliputra",
+    "Lumbini",
+    "Taxila",
+    "Sarnath"
+   ],
+   "answer": 3,
+   "explain": "Ashoka erected the Lion Capital pillar at Sarnath; it was adopted as the national emblem on 26 January 1950."
+  },
+  {
+   "q": "The Kushan ruler most associated with patronising Mahayana Buddhism was:",
+   "options": [
+    "Kujula Kadphises",
+    "Kanishka",
+    "Vasudeva",
+    "Huvishka"
+   ],
+   "answer": 1,
+   "explain": "Kanishka convened the Fourth Buddhist Council and spread Mahayana Buddhism to Central Asia."
+  },
+  {
+   "q": "The Gupta period is popularly called the:",
+   "options": [
+    "Golden Age of India",
+    "Iron Age of India",
+    "Dark Age of India",
+    "Bronze Age of India"
+   ],
+   "answer": 0,
+   "explain": "Science, literature and art flourished under the Guptas, so the period is called India's Golden Age."
+  },
+  {
+   "q": "The great astronomer-mathematician Aryabhata belonged to the period of the:",
+   "options": [
+    "Mauryas",
+    "Kushans",
+    "Mughals",
+    "Guptas"
+   ],
+   "answer": 3,
+   "explain": "Aryabhata (5th century Common Era (CE)) wrote the Aryabhatiya during the Gupta age."
+  },
+  {
+   "q": "'Abhijnana Shakuntalam', the famous Sanskrit play, was written by:",
+   "options": [
+    "Bhasa",
+    "Kalidasa",
+    "Vishakhadatta",
+    "Banabhatta"
+   ],
+   "answer": 1,
+   "explain": "Kalidasa, the greatest Sanskrit poet-dramatist, adorned the Gupta court."
+  },
+  {
+   "q": "The Gupta ruler who took the title 'Vikramaditya' was:",
+   "options": [
+    "Samudragupta",
+    "Chandragupta I",
+    "Chandragupta II",
+    "Skandagupta"
+   ],
+   "answer": 2,
+   "explain": "Chandragupta II (Vikramaditya) defeated the Shakas and extended the Gupta empire to the west coast."
+  },
+  {
+   "q": "The Chinese pilgrim Fa-Hien visited India during the reign of:",
+   "options": [
+    "Harshavardhana",
+    "Ashoka",
+    "Kanishka",
+    "Chandragupta II"
+   ],
+   "answer": 3,
+   "explain": "Fa-Hien came in the early 5th century Common Era (CE) and described the prosperous Gupta rule."
+  },
+  {
+   "q": "Which Gupta ruler is called the 'Napoleon of India' by historian V.A. Smith?",
+   "options": [
+    "Chandragupta I",
+    "Samudragupta",
+    "Chandragupta II",
+    "Kumaragupta"
+   ],
+   "answer": 1,
+   "explain": "Samudragupta earned the title for his extensive military conquests across India."
+  },
+  {
+   "q": "The Delhi Sultanate was established in 1206 by:",
+   "options": [
+    "Iltutmish",
+    "Balban",
+    "Qutbuddin Aibak",
+    "Alauddin Khilji"
+   ],
+   "answer": 2,
+   "explain": "Aibak, a former slave-general of Muhammad Ghori, founded the Sultanate and the Slave (Mamluk) dynasty."
+  },
+  {
+   "q": "The construction of the Qutub Minar at Delhi was begun by:",
+   "options": [
+    "Qutbuddin Aibak",
+    "Alauddin Khilji",
+    "Firoz Shah Tughlaq",
+    "Sher Shah"
+   ],
+   "answer": 0,
+   "explain": "Aibak started the Qutub Minar; Iltutmish completed most of it later."
+  },
+  {
+   "q": "Alauddin Khilji is best remembered in exams for his:",
+   "options": [
+    "Token currency experiment",
+    "Market control (price control) reforms",
+    "Capital shifting experiment",
+    "Din-i-Ilahi"
+   ],
+   "answer": 1,
+   "explain": "Alauddin fixed prices of essential goods and controlled markets to maintain a large army cheaply."
+  },
+  {
+   "q": "Muhammad bin Tughlaq shifted his capital from Delhi to:",
+   "options": [
+    "Agra",
+    "Fatehpur Sikri",
+    "Daulatabad",
+    "Lahore"
+   ],
+   "answer": 2,
+   "explain": "His shift of capital to Daulatabad (Devagiri) failed and caused great hardship — a favourite exam experiment."
+  },
+  {
+   "q": "The Tughlaq ruler who introduced token currency was:",
+   "options": [
+    "Muhammad bin Tughlaq",
+    "Ghiyasuddin Tughlaq",
+    "Firoz Shah Tughlaq",
+    "Nasiruddin Tughlaq"
+   ],
+   "answer": 0,
+   "explain": "His brass/copper token coins failed because people forged them freely at home."
+  },
+  {
+   "q": "The first woman ruler of the Delhi Sultanate was:",
+   "options": [
+    "Chand Bibi",
+    "Nur Jahan",
+    "Mumtaz Mahal",
+    "Razia Sultan"
+   ],
+   "answer": 3,
+   "explain": "Razia, daughter of Iltutmish, ruled Delhi from 1236 to 1240 — the Sultanate's only woman ruler."
+  },
+  {
+   "q": "Krishnadevaraya, the greatest ruler of Vijayanagara, belonged to which dynasty?",
+   "options": [
+    "Sangama dynasty",
+    "Saluva dynasty",
+    "Tuluva dynasty",
+    "Aravidu dynasty"
+   ],
+   "answer": 2,
+   "explain": "Krishnadevaraya of the Tuluva dynasty made Vijayanagara the dominant power of South India."
+  },
+  {
+   "q": "The First Battle of Panipat (1526) was fought between Babur and:",
+   "options": [
+    "Ibrahim Lodi",
+    "Rana Sanga",
+    "Sher Shah Suri",
+    "Hemu"
+   ],
+   "answer": 0,
+   "explain": "Babur defeated the Delhi Sultan Ibrahim Lodi and founded the Mughal Empire."
+  },
+  {
+   "q": "Babur's victory at Panipat in 1526 is linked with his use of:",
+   "options": [
+    "Elephants only",
+    "Naval blockade",
+    "Guerrilla warfare",
+    "Artillery and field guns"
+   ],
+   "answer": 3,
+   "explain": "Babur's guns and tulughma tactics outclassed Lodi's much larger army."
+  },
+  {
+   "q": "The Second Battle of Panipat (1556) was fought between Akbar's forces and:",
+   "options": [
+    "Ibrahim Lodi",
+    "Hemu",
+    "Ahmad Shah Abdali",
+    "Rana Pratap"
+   ],
+   "answer": 1,
+   "explain": "Akbar's guardian Bairam Khan defeated Hemu, securing Mughal rule in north India."
+  },
+  {
+   "q": "Which Mughal emperor abolished the jizya tax on non-Muslims?",
+   "options": [
+    "Akbar",
+    "Babur",
+    "Aurangzeb",
+    "Jahangir"
+   ],
+   "answer": 0,
+   "explain": "Akbar abolished jizya as part of his policy of religious tolerance (sulh-i-kul); Aurangzeb later reimposed it."
+  },
+  {
+   "q": "The new religious order 'Din-i-Ilahi' was started by:",
+   "options": [
+    "Humayun",
+    "Shah Jahan",
+    "Dara Shikoh",
+    "Akbar"
+   ],
+   "answer": 3,
+   "explain": "Akbar proclaimed Din-i-Ilahi in 1582, blending elements of several religions."
+  },
+  {
+   "q": "Fatehpur Sikri, the city built as his capital, was founded by:",
+   "options": [
+    "Babur",
+    "Akbar",
+    "Shah Jahan",
+    "Sher Shah"
+   ],
+   "answer": 1,
+   "explain": "Akbar built Fatehpur Sikri near Agra and shifted his capital there for some years."
+  },
+  {
+   "q": "The Mansabdari system of ranking officers was introduced by:",
+   "options": [
+    "Babur",
+    "Aurangzeb",
+    "Akbar",
+    "Shivaji"
+   ],
+   "answer": 2,
+   "explain": "Under Mansabdari, every officer held a rank (mansab) fixing his pay and the troops he maintained."
+  }
+ ]
+}

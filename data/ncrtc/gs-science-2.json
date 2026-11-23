@@ -1,0 +1,448 @@
+{
+ "id": "gs-science-2",
+ "category": "gs",
+ "group": "GS — Science",
+ "title": "General Science Test 2 (Biology & Everyday Science — most probable)",
+ "questions": [
+  {
+   "q": "Which organelle is known as the 'powerhouse of the cell'?",
+   "options": [
+    "Ribosome",
+    "Nucleus",
+    "Mitochondria",
+    "Golgi body"
+   ],
+   "answer": 2,
+   "explain": "Mitochondria produce Adenosine Triphosphate (ATP), the energy currency of the cell, through respiration."
+  },
+  {
+   "q": "Photosynthesis in a plant cell takes place in the:",
+   "options": [
+    "Chloroplast",
+    "Mitochondria",
+    "Nucleus",
+    "Vacuole"
+   ],
+   "answer": 0,
+   "explain": "Chloroplasts contain the green pigment chlorophyll, which traps sunlight for photosynthesis."
+  },
+  {
+   "q": "Protein synthesis in the cell is carried out by the:",
+   "options": [
+    "Lysosome",
+    "Chloroplast",
+    "Golgi body",
+    "Ribosome"
+   ],
+   "answer": 3,
+   "explain": "Ribosomes assemble proteins; lysosomes are the cell's digestive ('suicide') bags."
+  },
+  {
+   "q": "The part of the cell that controls all its activities and contains Deoxyribonucleic Acid (DNA) is the:",
+   "options": [
+    "Cytoplasm",
+    "Nucleus",
+    "Cell wall",
+    "Ribosome"
+   ],
+   "answer": 1,
+   "explain": "The nucleus holds the genetic material (Deoxyribonucleic Acid (DNA)) and acts as the control centre of the cell."
+  },
+  {
+   "q": "Photosynthesis releases which gas into the atmosphere?",
+   "options": [
+    "Oxygen",
+    "Carbon dioxide",
+    "Nitrogen",
+    "Hydrogen"
+   ],
+   "answer": 0,
+   "explain": "Plants take in CO₂ and water and, using sunlight, produce glucose and release oxygen: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂."
+  },
+  {
+   "q": "How many chambers does the human heart have?",
+   "options": [
+    "Two",
+    "Three",
+    "Five",
+    "Four"
+   ],
+   "answer": 3,
+   "explain": "Two upper atria and two lower ventricles — this keeps oxygenated and deoxygenated blood separate."
+  },
+  {
+   "q": "The largest organ of the human body is the:",
+   "options": [
+    "Liver",
+    "Skin",
+    "Heart",
+    "Lung"
+   ],
+   "answer": 1,
+   "explain": "The skin is the largest organ; the liver is the largest internal gland."
+  },
+  {
+   "q": "The longest and strongest bone in the human body is the:",
+   "options": [
+    "Humerus",
+    "Tibia",
+    "Femur (thigh bone)",
+    "Skull"
+   ],
+   "answer": 2,
+   "explain": "The femur bears the body's weight; the smallest bone is the stapes in the ear."
+  },
+  {
+   "q": "An adult human skeleton has how many bones?",
+   "options": [
+    "226",
+    "306",
+    "106",
+    "206"
+   ],
+   "answer": 3,
+   "explain": "Babies are born with about 300 bones; many fuse together, leaving 206 in adults."
+  },
+  {
+   "q": "Which blood group is called the 'universal donor'?",
+   "options": [
+    "AB positive",
+    "O negative",
+    "A negative",
+    "B positive"
+   ],
+   "answer": 1,
+   "explain": "O negative blood has no A, B or Rh antigens, so it can be given to anyone in an emergency."
+  },
+  {
+   "q": "Which blood group is called the 'universal recipient'?",
+   "options": [
+    "O negative",
+    "AB negative",
+    "AB positive",
+    "O positive"
+   ],
+   "answer": 2,
+   "explain": "AB positive people can receive blood of any group because their blood has no anti-A/anti-B antibodies."
+  },
+  {
+   "q": "Haemoglobin, which carries oxygen in the blood, contains the mineral:",
+   "options": [
+    "Iron",
+    "Calcium",
+    "Iodine",
+    "Zinc"
+   ],
+   "answer": 0,
+   "explain": "Iron deficiency lowers haemoglobin and causes anaemia; haemoglobin gives blood its red colour."
+  },
+  {
+   "q": "Which blood cells protect the body by fighting germs and infections?",
+   "options": [
+    "Red blood cells",
+    "White blood cells",
+    "Platelets",
+    "Plasma cells"
+   ],
+   "answer": 1,
+   "explain": "WBCs are the soldiers of the blood; RBCs carry oxygen and platelets help in clotting."
+  },
+  {
+   "q": "Blood clotting, which stops bleeding from a wound, is the function of:",
+   "options": [
+    "Red blood cells",
+    "White blood cells",
+    "Platelets",
+    "Lymph"
+   ],
+   "answer": 2,
+   "explain": "Platelets release substances that form a clot; Vitamin K is also needed for clotting."
+  },
+  {
+   "q": "Insulin, the hormone that controls blood sugar, is secreted by the:",
+   "options": [
+    "Pancreas (beta cells)",
+    "Liver",
+    "Thyroid gland",
+    "Adrenal gland"
+   ],
+   "answer": 0,
+   "explain": "Deficiency of insulin causes diabetes mellitus, in which blood sugar rises."
+  },
+  {
+   "q": "Diabetes mellitus is caused by the deficiency of:",
+   "options": [
+    "Thyroxine",
+    "Adrenaline",
+    "Growth hormone",
+    "Insulin"
+   ],
+   "answer": 3,
+   "explain": "Without enough insulin, glucose cannot enter cells properly and blood sugar stays high."
+  },
+  {
+   "q": "The 'emergency hormone', released during fear, anger or stress, is:",
+   "options": [
+    "Insulin",
+    "Thyroxine",
+    "Adrenaline",
+    "Melatonin"
+   ],
+   "answer": 2,
+   "explain": "Adrenaline from the adrenal glands speeds up heartbeat and prepares the body for 'fight or flight'."
+  },
+  {
+   "q": "The structural and functional unit of the kidney is the:",
+   "options": [
+    "Nephron",
+    "Neuron",
+    "Alveolus",
+    "Villus"
+   ],
+   "answer": 0,
+   "explain": "Each kidney has about a million nephrons that filter blood and form urine."
+  },
+  {
+   "q": "The basic unit of the nervous system is the:",
+   "options": [
+    "Nephron",
+    "Axon only",
+    "Cell body",
+    "Neuron"
+   ],
+   "answer": 3,
+   "explain": "Neurons carry electrical messages; the nephron is the kidney's unit — the pair is a common trap."
+  },
+  {
+   "q": "The largest part of the human brain, responsible for thinking and memory, is the:",
+   "options": [
+    "Cerebellum",
+    "Cerebrum",
+    "Medulla",
+    "Pons"
+   ],
+   "answer": 1,
+   "explain": "The cerebrum is the biggest part; the cerebellum coordinates balance and the medulla controls breathing and heartbeat."
+  },
+  {
+   "q": "Night blindness is caused by the deficiency of:",
+   "options": [
+    "Vitamin A",
+    "Vitamin C",
+    "Vitamin D",
+    "Vitamin K"
+   ],
+   "answer": 0,
+   "explain": "Vitamin A is needed for the retina's light-sensitive pigment; rich sources are carrot, papaya, mango and milk."
+  },
+  {
+   "q": "Scurvy, a disease of bleeding gums, is caused by the deficiency of:",
+   "options": [
+    "Vitamin A",
+    "Vitamin B1",
+    "Vitamin D",
+    "Vitamin C"
+   ],
+   "answer": 3,
+   "explain": "Vitamin C (ascorbic acid) is abundant in citrus fruits like amla, lemon and orange."
+  },
+  {
+   "q": "Rickets, in which children's bones become soft and bend, is caused by the deficiency of:",
+   "options": [
+    "Vitamin A",
+    "Vitamin D",
+    "Vitamin C",
+    "Vitamin B12"
+   ],
+   "answer": 1,
+   "explain": "Vitamin D helps the body absorb calcium; sunlight is its natural source."
+  },
+  {
+   "q": "Beriberi is caused by the deficiency of:",
+   "options": [
+    "Vitamin B12",
+    "Vitamin C",
+    "Vitamin B1 (thiamine)",
+    "Vitamin E"
+   ],
+   "answer": 2,
+   "explain": "Beriberi affects the nerves and muscles; thiamine is found in whole grains and pulses."
+  },
+  {
+   "q": "Which vitamin is essential for the clotting of blood?",
+   "options": [
+    "Vitamin A",
+    "Vitamin C",
+    "Vitamin D",
+    "Vitamin K"
+   ],
+   "answer": 3,
+   "explain": "Vitamin K helps the liver produce clotting factors; newborns are often given a Vitamin K dose."
+  },
+  {
+   "q": "Anaemia (low haemoglobin) is most commonly caused by the deficiency of:",
+   "options": [
+    "Calcium",
+    "Iron",
+    "Iodine",
+    "Vitamin D"
+   ],
+   "answer": 1,
+   "explain": "Iron is needed to make haemoglobin; its deficiency causes weakness and paleness."
+  },
+  {
+   "q": "The mineral most essential for strong bones and teeth is:",
+   "options": [
+    "Iron",
+    "Iodine",
+    "Calcium",
+    "Potassium"
+   ],
+   "answer": 2,
+   "explain": "Calcium with Vitamin D keeps bones strong; milk and ragi are good sources."
+  },
+  {
+   "q": "Goitre, the swelling of the thyroid gland in the neck, is caused by the deficiency of:",
+   "options": [
+    "Iodine",
+    "Iron",
+    "Calcium",
+    "Fluorine"
+   ],
+   "answer": 0,
+   "explain": "Iodised salt prevents goitre; iodine is needed to make the thyroxine hormone."
+  },
+  {
+   "q": "Malaria is caused by a protozoan parasite named:",
+   "options": [
+    "Human Immunodeficiency Virus (HIV)",
+    "Plasmodium",
+    "Salmonella",
+    "Vibrio"
+   ],
+   "answer": 1,
+   "explain": "Plasmodium enters the body through the bite of an infected female Anopheles mosquito."
+  },
+  {
+   "q": "Malaria is spread by the bite of the female:",
+   "options": [
+    "Aedes mosquito",
+    "Culex mosquito",
+    "Anopheles mosquito",
+    "Housefly"
+   ],
+   "answer": 2,
+   "explain": "Anopheles spreads malaria (night biter); Aedes aegypti spreads dengue (day biter) — the pair repeats in exams."
+  },
+  {
+   "q": "Dengue fever is transmitted by the mosquito:",
+   "options": [
+    "Aedes aegypti",
+    "Anopheles",
+    "Culex",
+    "Sandfly"
+   ],
+   "answer": 0,
+   "explain": "Aedes aegypti breeds in clean stored water and bites during the day."
+  },
+  {
+   "q": "Tuberculosis (TB) is caused by a:",
+   "options": [
+    "Virus",
+    "Fungus",
+    "Protozoan",
+    "Bacterium"
+   ],
+   "answer": 3,
+   "explain": "Tuberculosis (TB) is a bacterial disease (Mycobacterium tuberculosis) spread through the air; the Bacillus Calmette-Guerin (BCG) vaccine protects against it."
+  },
+  {
+   "q": "Acquired Immunodeficiency Syndrome (AIDS) is caused by the:",
+   "options": [
+    "Bacterium",
+    "Fungus",
+    "Human Immunodeficiency Virus (HIV) virus",
+    "Plasmodium"
+   ],
+   "answer": 2,
+   "explain": "Human Immunodeficiency Virus (HIV) attacks the immune system; it spreads through infected blood and needles, not by touch or sharing food."
+  },
+  {
+   "q": "Rabies, a fatal disease of the nervous system, is usually transmitted by:",
+   "options": [
+    "Bite of a rabid dog (virus)",
+    "Mosquito bite",
+    "Contaminated water",
+    "Air droplets"
+   ],
+   "answer": 0,
+   "explain": "Rabies is a viral disease; washing the wound and taking the anti-rabies vaccine promptly saves life."
+  },
+  {
+   "q": "Cholera, a severe water-borne disease, is caused by a:",
+   "options": [
+    "Virus",
+    "Protozoan",
+    "Worm",
+    "Bacterium (Vibrio cholerae)"
+   ],
+   "answer": 3,
+   "explain": "Cholera spreads through contaminated water and causes rapid dehydration; Oral Rehydration Solution (ORS) is the life-saving treatment."
+  },
+  {
+   "q": "Typhoid fever is caused by the bacterium:",
+   "options": [
+    "Vibrio cholerae",
+    "Salmonella typhi",
+    "Plasmodium",
+    "Mycobacterium"
+   ],
+   "answer": 1,
+   "explain": "Typhoid spreads through contaminated food and water; the Widal test is used in its diagnosis."
+  },
+  {
+   "q": "Which nutrient provides the maximum energy per gram to the body?",
+   "options": [
+    "Fats",
+    "Proteins",
+    "Carbohydrates",
+    "Vitamins"
+   ],
+   "answer": 0,
+   "explain": "Fats give about 9 kcal per gram, more than double the energy from carbohydrates or proteins (about 4 kcal/g)."
+  },
+  {
+   "q": "Penicillin, the first widely used antibiotic, was discovered by:",
+   "options": [
+    "Louis Pasteur",
+    "Edward Jenner",
+    "Joseph Lister",
+    "Alexander Fleming"
+   ],
+   "answer": 3,
+   "explain": "Fleming noticed in 1928 that a mould (Penicillium) killed bacteria around it."
+  },
+  {
+   "q": "The first vaccine in history, against smallpox, was developed by:",
+   "options": [
+    "Louis Pasteur",
+    "Edward Jenner",
+    "Alexander Fleming",
+    "Jonas Salk"
+   ],
+   "answer": 1,
+   "explain": "Jenner used cowpox material in 1796; smallpox was finally eradicated from the world in 1980."
+  },
+  {
+   "q": "Proteins are called the 'body-building foods' because they are mainly needed for:",
+   "options": [
+    "Instant energy",
+    "Keeping the body warm only",
+    "Growth and repair of body tissues",
+    "Preventing dehydration"
+   ],
+   "answer": 2,
+   "explain": "Proteins build muscles and repair wear and tear; pulses, milk, egg and soyabean are rich sources."
+  }
+ ]
+}

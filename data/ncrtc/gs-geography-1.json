@@ -1,0 +1,448 @@
+{
+ "id": "gs-geography-1",
+ "category": "gs",
+ "group": "GS — Geography",
+ "title": "Geography Test 1 (Indian Geography — most probable)",
+ "questions": [
+  {
+   "q": "India's rank in the world by area (total geographical area) is:",
+   "options": [
+    "5th",
+    "6th",
+    "7th",
+    "8th"
+   ],
+   "answer": 2,
+   "explain": "India covers about 3.28 million sq km and is the seventh largest country in the world."
+  },
+  {
+   "q": "The Tropic of Cancer does NOT pass through which Indian state?",
+   "options": [
+    "Odisha",
+    "Rajasthan",
+    "Chhattisgarh",
+    "Tripura"
+   ],
+   "answer": 0,
+   "explain": "It crosses 8 states — Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram. Odisha is not one of them."
+  },
+  {
+   "q": "The Standard Meridian of India, which fixes Indian Standard Time, is:",
+   "options": [
+    "68.7°E, near Bhuj",
+    "90°E, near Guwahati",
+    "75°E, near Jaipur",
+    "82.5°E, passing near Mirzapur"
+   ],
+   "answer": 3,
+   "explain": "Indian Standard Time (IST) is based on 82.5°E longitude passing near Mirzapur (UP); India follows a single time zone."
+  },
+  {
+   "q": "India shares its longest land border with:",
+   "options": [
+    "China",
+    "Bangladesh",
+    "Pakistan",
+    "Nepal"
+   ],
+   "answer": 1,
+   "explain": "India's longest land border (about 4,096 km) is with Bangladesh; the shortest is with Afghanistan."
+  },
+  {
+   "q": "The Radcliffe Line is the boundary between India and:",
+   "options": [
+    "Pakistan",
+    "China",
+    "Nepal",
+    "Bangladesh"
+   ],
+   "answer": 0,
+   "explain": "The Radcliffe Line (1947) divides India and Pakistan; McMahon Line = India-China, Durand Line = Pakistan-Afghanistan."
+  },
+  {
+   "q": "The McMahon Line separates India from:",
+   "options": [
+    "Nepal",
+    "Bhutan",
+    "Myanmar",
+    "China"
+   ],
+   "answer": 3,
+   "explain": "The McMahon Line is the boundary between India (Arunachal Pradesh) and China."
+  },
+  {
+   "q": "The largest state of India by area is:",
+   "options": [
+    "Madhya Pradesh",
+    "Rajasthan",
+    "Maharashtra",
+    "Uttar Pradesh"
+   ],
+   "answer": 1,
+   "explain": "Rajasthan is the largest state; Madhya Pradesh is second."
+  },
+  {
+   "q": "The smallest state of India by area is:",
+   "options": [
+    "Sikkim",
+    "Tripura",
+    "Goa",
+    "Nagaland"
+   ],
+   "answer": 2,
+   "explain": "Goa is the smallest state by area, though Sikkim has the smallest population."
+  },
+  {
+   "q": "The longest river of India (flowing within the country) is the:",
+   "options": [
+    "Yamuna",
+    "Godavari",
+    "Brahmaputra",
+    "Ganga (about 2,525 km)"
+   ],
+   "answer": 3,
+   "explain": "The Ganga is India's longest river; the Brahmaputra is longer overall but flows mostly outside India."
+  },
+  {
+   "q": "The largest tributary of the Ganga is the:",
+   "options": [
+    "Ghaghra",
+    "Yamuna",
+    "Gandak",
+    "Son"
+   ],
+   "answer": 1,
+   "explain": "The Yamuna joins the Ganga at Prayagraj (Sangam) and is its biggest tributary."
+  },
+  {
+   "q": "The longest river of peninsular India, called 'Dakshin Ganga', is the:",
+   "options": [
+    "Krishna",
+    "Kaveri",
+    "Godavari",
+    "Mahanadi"
+   ],
+   "answer": 2,
+   "explain": "The Godavari (about 1,465 km) rises at Trimbakeshwar, Maharashtra, and is called the Ganga of the South."
+  },
+  {
+   "q": "The Narmada river is known for flowing:",
+   "options": [
+    "Westwards through a rift valley",
+    "Eastwards to the Bay of Bengal",
+    "Southwards to the Indian Ocean",
+    "Northwards to the Ganga plain"
+   ],
+   "answer": 0,
+   "explain": "Narmada and Tapi flow west through a rift valley into the Arabian Sea and form estuaries, not deltas."
+  },
+  {
+   "q": "In Tibet, the Brahmaputra river is known by the name:",
+   "options": [
+    "Siang",
+    "Tsangpo (Yarlung)",
+    "Jamuna",
+    "Meghna"
+   ],
+   "answer": 1,
+   "explain": "It is Tsangpo in Tibet, Siang/Dihang in Arunachal Pradesh, Brahmaputra in Assam and Jamuna in Bangladesh."
+  },
+  {
+   "q": "The Indus Waters Treaty (1960) was signed between India and:",
+   "options": [
+    "China",
+    "Nepal",
+    "Pakistan",
+    "Bangladesh"
+   ],
+   "answer": 2,
+   "explain": "Under the 1960 treaty, the eastern rivers (Ravi, Beas, Sutlej) went mainly to India and the western rivers (Indus, Jhelum, Chenab) mainly to Pakistan."
+  },
+  {
+   "q": "The height of Mount Everest, the world's highest peak, is about:",
+   "options": [
+    "8,848.86 m",
+    "8,586 m",
+    "8,611 m",
+    "8,126 m"
+   ],
+   "answer": 0,
+   "explain": "Everest (Nepal-Tibet border) is 8,848.86 m; K2 is 8,611 m and Kangchenjunga 8,586 m."
+  },
+  {
+   "q": "The highest mountain peak located entirely within India's territory is:",
+   "options": [
+    "Mount Everest",
+    "K2",
+    "Nanda Devi",
+    "Kangchenjunga"
+   ],
+   "answer": 3,
+   "explain": "Kangchenjunga (8,586 m, Sikkim-Nepal border) is India's highest peak; Nanda Devi is the highest entirely inside India."
+  },
+  {
+   "q": "Nathu La, a famous mountain pass on the India-China border, is located in:",
+   "options": [
+    "Uttarakhand",
+    "Arunachal Pradesh",
+    "Sikkim",
+    "Ladakh"
+   ],
+   "answer": 2,
+   "explain": "Nathu La connects Sikkim with Tibet and is a border trade route."
+  },
+  {
+   "q": "Which Indian state has the longest coastline?",
+   "options": [
+    "Gujarat",
+    "Andhra Pradesh",
+    "Tamil Nadu",
+    "Maharashtra"
+   ],
+   "answer": 0,
+   "explain": "Gujarat's highly indented coast (about 1,600 km) is the longest among Indian states."
+  },
+  {
+   "q": "Black soil (regur), found in the Deccan plateau, is best suited for:",
+   "options": [
+    "Tea",
+    "Rice",
+    "Jute",
+    "Cotton"
+   ],
+   "answer": 3,
+   "explain": "Black soil holds moisture well and is ideal for cotton — hence it is also called black cotton soil."
+  },
+  {
+   "q": "The most fertile and most widespread soil of India, covering the northern plains, is:",
+   "options": [
+    "Black soil",
+    "Alluvial soil",
+    "Laterite soil",
+    "Red soil"
+   ],
+   "answer": 1,
+   "explain": "Alluvial soil, deposited by rivers, covers the largest area and supports most of India's farming."
+  },
+  {
+   "q": "Rice, maize, cotton and groundnut, sown with the onset of the monsoon, are examples of:",
+   "options": [
+    "Kharif crops",
+    "Rabi crops",
+    "Zaid crops",
+    "Plantation crops"
+   ],
+   "answer": 0,
+   "explain": "Kharif crops are sown in June-July and harvested in September-October; wheat and mustard are Rabi crops."
+  },
+  {
+   "q": "Wheat, mustard and gram, sown in winter, are examples of:",
+   "options": [
+    "Kharif crops",
+    "Zaid crops",
+    "Cash crops",
+    "Rabi crops"
+   ],
+   "answer": 3,
+   "explain": "Rabi crops are sown in October-November and harvested in spring."
+  },
+  {
+   "q": "About 75% of India's annual rainfall is received from the:",
+   "options": [
+    "North-East monsoon",
+    "South-West monsoon",
+    "Western disturbances",
+    "Cyclones"
+   ],
+   "answer": 1,
+   "explain": "The SW monsoon (June-September) brings roughly three-fourths of India's total rain."
+  },
+  {
+   "q": "The Tamil Nadu coast receives most of its rainfall from the:",
+   "options": [
+    "South-West monsoon",
+    "Western disturbances",
+    "North-East (retreating) monsoon",
+    "Local winds"
+   ],
+   "answer": 2,
+   "explain": "In October-December the retreating NE monsoon picks up moisture from the Bay of Bengal and rains on the Coromandel coast."
+  },
+  {
+   "q": "The Sundarbans, the world's largest mangrove forest, is formed in the delta of:",
+   "options": [
+    "Godavari and Krishna",
+    "Mahanadi and Brahmani",
+    "Kaveri and Vaigai",
+    "Ganga and Brahmaputra"
+   ],
+   "answer": 3,
+   "explain": "The Ganga-Brahmaputra delta (largely in West Bengal and Bangladesh) is the world's largest delta and home to the Sundarbans."
+  },
+  {
+   "q": "Chilika Lake, India's largest coastal lagoon, is located in:",
+   "options": [
+    "Andhra Pradesh",
+    "Odisha",
+    "Kerala",
+    "Tamil Nadu"
+   ],
+   "answer": 1,
+   "explain": "Chilika is a brackish-water lagoon on the Odisha coast, famous for migratory birds."
+  },
+  {
+   "q": "Wular Lake, one of the largest freshwater lakes of Asia, is in:",
+   "options": [
+    "Himachal Pradesh",
+    "Uttarakhand",
+    "Jammu and Kashmir",
+    "Manipur"
+   ],
+   "answer": 2,
+   "explain": "Wular Lake is formed by the Jhelum river in Kashmir."
+  },
+  {
+   "q": "Loktak Lake, famous for its floating islands (phumdis), is located in:",
+   "options": [
+    "Manipur",
+    "Assam",
+    "Nagaland",
+    "Meghalaya"
+   ],
+   "answer": 0,
+   "explain": "Loktak in Manipur hosts Keibul Lamjao, the world's only floating national park."
+  },
+  {
+   "q": "The Thar Desert, also called the Great Indian Desert, lies mainly in:",
+   "options": [
+    "Gujarat",
+    "Rajasthan",
+    "Haryana",
+    "Punjab"
+   ],
+   "answer": 1,
+   "explain": "Most of the Thar spreads over western Rajasthan."
+  },
+  {
+   "q": "Anaimudi, the highest peak of South India, is located in the:",
+   "options": [
+    "Eastern Ghats",
+    "Nilgiri Hills",
+    "Western Ghats (Kerala)",
+    "Satpura Range"
+   ],
+   "answer": 2,
+   "explain": "Anaimudi (2,695 m) in Kerala is the highest point of peninsular India."
+  },
+  {
+   "q": "The Eastern and Western Ghats meet at the:",
+   "options": [
+    "Nilgiri Hills",
+    "Anaimalai Hills",
+    "Cardamom Hills",
+    "Palani Hills"
+   ],
+   "answer": 0,
+   "explain": "The two Ghats join at the Nilgiri Hills, where Doddabetta is a well-known peak."
+  },
+  {
+   "q": "The Kaveri river rises from:",
+   "options": [
+    "Mahabaleshwar, Maharashtra",
+    "Trimbakeshwar, Maharashtra",
+    "Amarkantak, MP",
+    "Brahmagiri hills, Karnataka"
+   ],
+   "answer": 3,
+   "explain": "The Kaveri originates at Talakaveri in the Brahmagiri range of Karnataka and flows to Tamil Nadu."
+  },
+  {
+   "q": "The Krishna river originates near:",
+   "options": [
+    "Trimbakeshwar, Maharashtra",
+    "Amarkantak, MP",
+    "Mahabaleshwar, Maharashtra",
+    "Brahmagiri, Karnataka"
+   ],
+   "answer": 2,
+   "explain": "Krishna rises near Mahabaleshwar in the Western Ghats; Godavari rises at Trimbakeshwar and Narmada at Amarkantak."
+  },
+  {
+   "q": "The Bhakra Nangal Dam, one of India's highest gravity dams, is built on the river:",
+   "options": [
+    "Sutlej",
+    "Beas",
+    "Chenab",
+    "Yamuna"
+   ],
+   "answer": 0,
+   "explain": "Bhakra Dam stands on the Sutlej in Himachal Pradesh; its reservoir is called Gobind Sagar."
+  },
+  {
+   "q": "The Hirakud Dam, among the longest dams in the world, is built across the:",
+   "options": [
+    "Godavari",
+    "Krishna",
+    "Brahmaputra",
+    "Mahanadi"
+   ],
+   "answer": 3,
+   "explain": "Hirakud (Odisha) is built on the Mahanadi river."
+  },
+  {
+   "q": "The Tehri Dam, India's tallest dam, is built on the river:",
+   "options": [
+    "Alaknanda",
+    "Bhagirathi",
+    "Yamuna",
+    "Sutlej"
+   ],
+   "answer": 1,
+   "explain": "Tehri Dam (Uttarakhand) stands on the Bhagirathi, a headstream of the Ganga."
+  },
+  {
+   "q": "Jog Falls, one of India's highest waterfalls, is formed by the river:",
+   "options": [
+    "Sharavathi",
+    "Kaveri",
+    "Krishna",
+    "Mandovi"
+   ],
+   "answer": 0,
+   "explain": "Jog Falls in Karnataka is created by the Sharavathi river dropping about 253 m."
+  },
+  {
+   "q": "Majuli, one of the world's largest river islands, is located in the river:",
+   "options": [
+    "Ganga (Bihar)",
+    "Godavari (Andhra Pradesh)",
+    "Mahanadi (Odisha)",
+    "Brahmaputra (Assam)"
+   ],
+   "answer": 3,
+   "explain": "Majuli island lies in the Brahmaputra in Assam and is a centre of Assamese Vaishnavite culture."
+  },
+  {
+   "q": "The Atal Tunnel, which provides all-weather connectivity to Lahaul, passes under which pass?",
+   "options": [
+    "Zoji La",
+    "Rohtang Pass",
+    "Nathu La",
+    "Shipki La"
+   ],
+   "answer": 1,
+   "explain": "The 9.02 km Atal Tunnel (2020) runs under the Rohtang Pass in Himachal Pradesh."
+  },
+  {
+   "q": "India's latitudinal extent is roughly from:",
+   "options": [
+    "6°4'N to 35°6'N",
+    "10°4'N to 40°6'N",
+    "8°4'N to 37°6'N",
+    "8°4'N to 30°6'N"
+   ],
+   "answer": 2,
+   "explain": "Mainland India stretches from about 8°4'N (near Kanyakumari) to 37°6'N in the north."
+  }
+ ]
+}

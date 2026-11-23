@@ -1,0 +1,448 @@
+{
+ "id": "gs-economics-2",
+ "category": "gs",
+ "group": "GS — Economics",
+ "title": "Economics Test 2 (Banking, Budget & Schemes — most probable)",
+ "questions": [
+  {
+   "q": "The Union Budget is presented in Parliament as the 'Annual Financial Statement' under Article:",
+   "options": [
+    "110",
+    "117",
+    "112",
+    "280"
+   ],
+   "answer": 2,
+   "explain": "Article 112 requires the government to present the Annual Financial Statement — the Budget — before Parliament every year."
+  },
+  {
+   "q": "Fiscal deficit of the government means:",
+   "options": [
+    "Total expenditure minus total receipts excluding borrowings",
+    "Revenue receipts minus revenue expenditure",
+    "Exports minus imports",
+    "Total taxes minus subsidies"
+   ],
+   "answer": 0,
+   "explain": "Fiscal deficit shows the government's total borrowing need for the year, because spending exceeds all non-borrowed income."
+  },
+  {
+   "q": "Revenue deficit means:",
+   "options": [
+    "Capital expenditure exceeds capital receipts",
+    "Exports are less than imports",
+    "Tax collection falls for one month",
+    "Revenue expenditure exceeds revenue receipts"
+   ],
+   "answer": 3,
+   "explain": "A revenue deficit shows the government is borrowing even for day-to-day running expenses."
+  },
+  {
+   "q": "Primary deficit is calculated as fiscal deficit minus:",
+   "options": [
+    "Tax revenue",
+    "Interest payments",
+    "Subsidies",
+    "Defence expenditure"
+   ],
+   "answer": 1,
+   "explain": "Primary deficit = fiscal deficit − interest payments on past loans; it shows the current year's borrowing apart from old interest burden."
+  },
+  {
+   "q": "The Fiscal Responsibility and Budget Management (FRBM) Act was passed mainly to:",
+   "options": [
+    "Keep government deficits and debt under control",
+    "Fix prices of foodgrains",
+    "Nationalise banks",
+    "Introduce the Goods and Services Tax (GST)"
+   ],
+   "answer": 0,
+   "explain": "The Fiscal Responsibility and Budget Management (FRBM) Act, 2003 sets targets so that government borrowing stays within disciplined limits."
+  },
+  {
+   "q": "The Goods and Services Tax (GST) was launched in India on:",
+   "options": [
+    "1 April 2017",
+    "15 August 2017",
+    "1 January 2018",
+    "1 July 2017"
+   ],
+   "answer": 3,
+   "explain": "The Goods and Services Tax (GST) created 'one nation, one tax' by absorbing excise duty, service tax and state Value Added Tax (VAT)."
+  },
+  {
+   "q": "The Goods and Services Tax (GST) was introduced through which Constitutional Amendment?",
+   "options": [
+    "97th Amendment",
+    "101st Amendment",
+    "86th Amendment",
+    "73rd Amendment"
+   ],
+   "answer": 1,
+   "explain": "The 101st Amendment, 2016 gave both the Centre and the States the power to levy the Goods and Services Tax (GST)."
+  },
+  {
+   "q": "The Goods and Services Tax (GST) Council is chaired by the:",
+   "options": [
+    "Prime Minister",
+    "Governor of the Reserve Bank of India (RBI)",
+    "Union Finance Minister",
+    "Chief Economic Adviser"
+   ],
+   "answer": 2,
+   "explain": "The Goods and Services Tax (GST) Council, with finance ministers of all states as members, decides tax rates and rules."
+  },
+  {
+   "q": "The Goods and Services Tax (GST) in India is a:",
+   "options": [
+    "Origin-based tax",
+    "Only a direct tax",
+    "Tax only on imports",
+    "Destination-based tax"
+   ],
+   "answer": 3,
+   "explain": "Under the Goods and Services Tax (GST), tax is collected where goods and services are consumed, not where they are produced."
+  },
+  {
+   "q": "The Goods and Services Tax (GST) Council is set up under Article:",
+   "options": [
+    "280",
+    "279A",
+    "112",
+    "324"
+   ],
+   "answer": 1,
+   "explain": "Article 279A (added by the 101st Amendment) creates the Goods and Services Tax (GST) Council; Article 280 is the Finance Commission."
+  },
+  {
+   "q": "Which of the following is a direct tax?",
+   "options": [
+    "Goods and Services Tax (GST)",
+    "Customs duty",
+    "Income tax",
+    "Excise duty"
+   ],
+   "answer": 2,
+   "explain": "A direct tax is paid by the person on whom it is imposed — income tax and corporation tax; indirect taxes are passed on to buyers."
+  },
+  {
+   "q": "Customs duty is a tax levied on:",
+   "options": [
+    "Goods imported into and exported out of a country",
+    "Income of individuals",
+    "Agricultural land",
+    "Bank deposits"
+   ],
+   "answer": 0,
+   "explain": "Customs duty is an indirect tax charged at the border on trade in goods."
+  },
+  {
+   "q": "The Securities and Exchange Board of India (SEBI) is the regulator of:",
+   "options": [
+    "Banking",
+    "Securities (share) markets",
+    "Insurance",
+    "Pension funds"
+   ],
+   "answer": 1,
+   "explain": "The Securities and Exchange Board of India (SEBI) protects investors in the share market; insurance is regulated by the insurance regulator and banks by the Reserve Bank of India (RBI)."
+  },
+  {
+   "q": "The Securities and Exchange Board of India (SEBI) was given statutory (legal) powers in the year:",
+   "options": [
+    "1988",
+    "2000",
+    "1992",
+    "2013"
+   ],
+   "answer": 2,
+   "explain": "The Securities and Exchange Board of India (SEBI) was set up in 1988 and made a statutory body through an Act in 1992."
+  },
+  {
+   "q": "The headquarters of the Securities and Exchange Board of India (SEBI) is at:",
+   "options": [
+    "Mumbai",
+    "New Delhi",
+    "Kolkata",
+    "Hyderabad"
+   ],
+   "answer": 0,
+   "explain": "The Securities and Exchange Board of India (SEBI) works from Mumbai, India's financial capital."
+  },
+  {
+   "q": "The National Bank for Agriculture and Rural Development (NABARD) was established in the year:",
+   "options": [
+    "1975",
+    "1990",
+    "1969",
+    "1982"
+   ],
+   "answer": 3,
+   "explain": "The National Bank for Agriculture and Rural Development (NABARD) was set up in 1982 to finance agriculture and rural development."
+  },
+  {
+   "q": "The main function of the National Bank for Agriculture and Rural Development (NABARD) is to:",
+   "options": [
+    "Regulate the share market",
+    "Issue currency notes",
+    "Provide and regulate credit for agriculture and rural development",
+    "Collect income tax"
+   ],
+   "answer": 2,
+   "explain": "The National Bank for Agriculture and Rural Development (NABARD) refinances rural banks and supports farm and village industries."
+  },
+  {
+   "q": "The Small Industries Development Bank of India (SIDBI) mainly provides finance to:",
+   "options": [
+    "Micro, small and medium enterprises",
+    "Large steel plants",
+    "Foreign companies",
+    "State governments"
+   ],
+   "answer": 0,
+   "explain": "The Small Industries Development Bank of India (SIDBI), set up in 1990, is the main financial institution for small industries."
+  },
+  {
+   "q": "The Export-Import Bank of India (EXIM Bank) mainly finances:",
+   "options": [
+    "Farm loans",
+    "Home loans",
+    "State budgets",
+    "India's foreign trade (exports and imports)"
+   ],
+   "answer": 3,
+   "explain": "The Export-Import Bank of India (EXIM Bank), set up in 1982, supports Indian exporters and importers with finance."
+  },
+  {
+   "q": "Insurance companies in India are regulated by the:",
+   "options": [
+    "Securities and Exchange Board of India (SEBI)",
+    "Insurance Regulatory and Development Authority of India (IRDAI)",
+    "Reserve Bank of India (RBI)",
+    "National Bank for Agriculture and Rural Development (NABARD)"
+   ],
+   "answer": 1,
+   "explain": "The Insurance Regulatory and Development Authority of India (IRDAI), headquartered at Hyderabad, licenses and supervises insurers."
+  },
+  {
+   "q": "Pension funds in India are regulated by the:",
+   "options": [
+    "Pension Fund Regulatory and Development Authority (PFRDA)",
+    "Insurance Regulatory and Development Authority of India (IRDAI)",
+    "Securities and Exchange Board of India (SEBI)",
+    "Finance Commission"
+   ],
+   "answer": 0,
+   "explain": "The Pension Fund Regulatory and Development Authority (PFRDA) supervises pension schemes such as the National Pension System (NPS)."
+  },
+  {
+   "q": "In 1969, the Government of India nationalised how many major commercial banks?",
+   "options": [
+    "20 banks",
+    "6 banks",
+    "27 banks",
+    "14 banks"
+   ],
+   "answer": 3,
+   "explain": "Fourteen large banks were nationalised in 1969; six more followed in 1980."
+  },
+  {
+   "q": "The largest public sector bank of India is the:",
+   "options": [
+    "Punjab National Bank (PNB)",
+    "State Bank of India (SBI)",
+    "Bank of Baroda",
+    "Canara Bank"
+   ],
+   "answer": 1,
+   "explain": "The State Bank of India (SBI) is India's biggest bank by assets, deposits and branches."
+  },
+  {
+   "q": "The Pradhan Mantri Jan Dhan Yojana (PMJDY), launched in 2014, is a scheme for:",
+   "options": [
+    "Free houses for the poor",
+    "Crop insurance",
+    "Financial inclusion through zero-balance bank accounts",
+    "Free cooking gas connections"
+   ],
+   "answer": 2,
+   "explain": "Under the Pradhan Mantri Jan Dhan Yojana (PMJDY), crores of people opened bank accounts, many with zero balance."
+  },
+  {
+   "q": "The Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY) provides which type of insurance?",
+   "options": [
+    "Accident insurance",
+    "Crop insurance",
+    "Health insurance",
+    "Life insurance"
+   ],
+   "answer": 3,
+   "explain": "The Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY) gives life cover of two lakh rupees; the Suraksha Bima scheme covers accidents."
+  },
+  {
+   "q": "The Pradhan Mantri Suraksha Bima Yojana (PMSBY) provides which type of insurance?",
+   "options": [
+    "Life insurance",
+    "Accident insurance",
+    "Health insurance",
+    "Fire insurance"
+   ],
+   "answer": 1,
+   "explain": "The Pradhan Mantri Suraksha Bima Yojana (PMSBY) gives accident cover at a very small annual premium."
+  },
+  {
+   "q": "The Atal Pension Yojana (APY) is a pension scheme mainly meant for workers of the:",
+   "options": [
+    "Government services",
+    "Armed forces",
+    "Unorganised sector",
+    "Organised private sector only"
+   ],
+   "answer": 2,
+   "explain": "The Atal Pension Yojana (APY) promises a fixed monthly pension after the age of 60 to unorganised-sector workers."
+  },
+  {
+   "q": "Under the Pradhan Mantri MUDRA Yojana (PMMY), loans are given to:",
+   "options": [
+    "Small and micro enterprises",
+    "Large corporations",
+    "Foreign banks",
+    "State governments"
+   ],
+   "answer": 0,
+   "explain": "MUDRA stands for Micro Units Development and Refinance Agency; its loans (Shishu, Kishore, Tarun) support tiny businesses."
+  },
+  {
+   "q": "The Stand Up India scheme provides bank loans mainly to:",
+   "options": [
+    "Big industrial houses",
+    "Scheduled Caste, Scheduled Tribe and women entrepreneurs",
+    "Foreign investors",
+    "Government employees"
+   ],
+   "answer": 1,
+   "explain": "Stand Up India helps Scheduled Caste (SC), Scheduled Tribe (ST) and women borrowers set up new (greenfield) enterprises."
+  },
+  {
+   "q": "Ayushman Bharat — Pradhan Mantri Jan Arogya Yojana (PM-JAY) provides free health treatment cover per family per year of:",
+   "options": [
+    "One lakh rupees",
+    "Two lakh rupees",
+    "Five lakh rupees",
+    "Ten lakh rupees"
+   ],
+   "answer": 2,
+   "explain": "Under the Pradhan Mantri Jan Arogya Yojana (PM-JAY), eligible families get cashless hospitalisation cover of five lakh rupees a year."
+  },
+  {
+   "q": "Under the Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme, eligible farmers receive income support of:",
+   "options": [
+    "Six thousand rupees per year",
+    "Twelve thousand rupees per year",
+    "Two thousand rupees per year",
+    "Twenty-five thousand rupees per year"
+   ],
+   "answer": 0,
+   "explain": "The Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) amount of six thousand rupees is paid in three instalments of two thousand rupees each."
+  },
+  {
+   "q": "The Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA) guarantees wage employment of at least:",
+   "options": [
+    "50 days per year",
+    "180 days per year",
+    "365 days per year",
+    "100 days per year to a rural household"
+   ],
+   "answer": 3,
+   "explain": "The Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA) guarantees 100 days of unskilled manual work to adult members of a rural household."
+  },
+  {
+   "q": "The National Rural Employment Guarantee Act, later renamed after Mahatma Gandhi, was passed in the year:",
+   "options": [
+    "2004",
+    "2006",
+    "2005",
+    "2009"
+   ],
+   "answer": 2,
+   "explain": "The Act was passed in 2005 and work began in 2006 in the first set of districts."
+  },
+  {
+   "q": "The Pradhan Mantri Awas Yojana (PMAY) is a government scheme related to:",
+   "options": [
+    "Housing for all",
+    "Free electricity",
+    "Rural roads",
+    "Drinking water"
+   ],
+   "answer": 0,
+   "explain": "The Pradhan Mantri Awas Yojana (PMAY) helps poor families build or upgrade houses, in both rural (Gramin) and urban areas."
+  },
+  {
+   "q": "The Pradhan Mantri Ujjwala Yojana (PMUY) provides free Liquefied Petroleum Gas (LPG) connections mainly to:",
+   "options": [
+    "Hotel owners",
+    "Transport companies",
+    "Farmers for tractors",
+    "Women of poor households"
+   ],
+   "answer": 3,
+   "explain": "The Pradhan Mantri Ujjwala Yojana (PMUY), launched in 2016 from Ballia, aimed to free poor women from smoky wood-fired stoves."
+  },
+  {
+   "q": "The Swachh Bharat Mission (Clean India Mission) was launched on:",
+   "options": [
+    "15 August 2014",
+    "2 October 2014",
+    "26 January 2015",
+    "2 October 2019"
+   ],
+   "answer": 1,
+   "explain": "Launched on Mahatma Gandhi's birth anniversary in 2014, the Swachh Bharat Mission aimed at a clean India with toilets in every household."
+  },
+  {
+   "q": "The Digital India programme, aimed at making government services available electronically, was launched in the year:",
+   "options": [
+    "2015",
+    "2013",
+    "2017",
+    "2020"
+   ],
+   "answer": 0,
+   "explain": "Digital India (2015) works on digital infrastructure, digital delivery of services and digital literacy."
+  },
+  {
+   "q": "The 'Make in India' initiative, to encourage companies to manufacture in India, was launched in the year:",
+   "options": [
+    "2015",
+    "2016",
+    "2013",
+    "2014"
+   ],
+   "answer": 3,
+   "explain": "Make in India was launched in September 2014 to raise the share of manufacturing in the economy and create jobs."
+  },
+  {
+   "q": "The Pradhan Mantri Fasal Bima Yojana (PMFBY), launched in 2016, is a scheme of:",
+   "options": [
+    "Life insurance for farmers",
+    "Crop insurance for farmers",
+    "Free fertiliser supply",
+    "Farm loan waiver"
+   ],
+   "answer": 1,
+   "explain": "The Pradhan Mantri Fasal Bima Yojana (PMFBY) insures farmers against crop loss from drought, flood, hailstorm and pests."
+  },
+  {
+   "q": "The Beti Bachao Beti Padhao scheme, for the survival, education and empowerment of the girl child, was launched in 2015 from:",
+   "options": [
+    "Jaipur, Rajasthan",
+    "Lucknow, Uttar Pradesh",
+    "Panipat, Haryana",
+    "Patna, Bihar"
+   ],
+   "answer": 2,
+   "explain": "The Beti Bachao Beti Padhao scheme was launched from Panipat, a district chosen because of its poor child sex ratio."
+  }
+ ]
+}

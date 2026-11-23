@@ -1,0 +1,448 @@
+{
+ "id": "gs-polity-2",
+ "category": "gs",
+ "group": "GS — Polity",
+ "title": "Indian Polity Test 2 (Governance, Rights & Bodies — most probable)",
+ "questions": [
+  {
+   "q": "Panchayati Raj institutions got constitutional status through the:",
+   "options": [
+    "74th Amendment, 1992",
+    "52nd Amendment, 1985",
+    "73rd Amendment, 1992",
+    "86th Amendment, 2002"
+   ],
+   "answer": 2,
+   "explain": "The 73rd Amendment covers rural local bodies (Panchayats); the 74th covers urban bodies (Municipalities)."
+  },
+  {
+   "q": "The 74th Amendment Act, 1992 deals with:",
+   "options": [
+    "Urban local bodies (Municipalities)",
+    "Panchayati Raj",
+    "Anti-defection",
+    "Goods and Services Tax (GST)"
+   ],
+   "answer": 0,
+   "explain": "Rural = 73rd, Urban = 74th — the pair is asked every exam cycle."
+  },
+  {
+   "q": "The Gram Sabha in a village consists of:",
+   "options": [
+    "Only the Sarpanch and Panches",
+    "All adults above 25",
+    "Only land-owning farmers",
+    "All registered voters of the village"
+   ],
+   "answer": 3,
+   "explain": "The Gram Sabha is the assembly of all voters of the village and is the foundation of Panchayati Raj."
+  },
+  {
+   "q": "What minimum share of seats is constitutionally reserved for women in Panchayats?",
+   "options": [
+    "One-fourth",
+    "One-third (33%)",
+    "One-half",
+    "One-fifth"
+   ],
+   "answer": 1,
+   "explain": "The Constitution mandates at least one-third reservation for women; many states have raised it to one-half by law."
+  },
+  {
+   "q": "The Anti-Defection Law is contained in the:",
+   "options": [
+    "Tenth Schedule (52nd Amendment)",
+    "Ninth Schedule",
+    "Eleventh Schedule",
+    "Twelfth Schedule"
+   ],
+   "answer": 0,
+   "explain": "Added by the 52nd Amendment, 1985, it disqualifies legislators who defect from their party."
+  },
+  {
+   "q": "The voting age in India was reduced from 21 to 18 years by the:",
+   "options": [
+    "42nd Amendment, 1976",
+    "52nd Amendment, 1985",
+    "73rd Amendment, 1992",
+    "61st Amendment, 1988"
+   ],
+   "answer": 3,
+   "explain": "The 61st Amendment lowered the voting age for Lok Sabha and Assembly elections to 18."
+  },
+  {
+   "q": "The Goods and Services Tax (GST) was introduced by the:",
+   "options": [
+    "97th Amendment, 2011",
+    "101st Amendment, 2016",
+    "86th Amendment, 2002",
+    "44th Amendment, 1978"
+   ],
+   "answer": 1,
+   "explain": "Goods and Services Tax (GST) was rolled out on 1 July 2017 after the 101st Amendment created the GST Council (Article 279A)."
+  },
+  {
+   "q": "The Nari Shakti Vandan Act (women's reservation in legislatures) is the:",
+   "options": [
+    "108th Amendment, 2023",
+    "101st Amendment, 2016",
+    "106th Amendment, 2023",
+    "73rd Amendment, 1992"
+   ],
+   "answer": 2,
+   "explain": "It reserves one-third of seats for women in the Lok Sabha and State Assemblies, to apply after delimitation."
+  },
+  {
+   "q": "National Institution for Transforming India (NITI) Aayog, which replaced the Planning Commission, is a/an:",
+   "options": [
+    "Constitutional body under Article 263",
+    "Statutory body under an Act of Parliament",
+    "Judicial body",
+    "Non-constitutional, executive body"
+   ],
+   "answer": 3,
+   "explain": "National Institution for Transforming India (NITI) Aayog was created by a cabinet resolution (1 Jan 2015) — unlike Union Public Service Commission (UPSC) or the Election Commission, it is not in the Constitution."
+  },
+  {
+   "q": "Who is the Chairperson of National Institution for Transforming India (NITI) Aayog?",
+   "options": [
+    "The Finance Minister",
+    "The Prime Minister",
+    "The Vice-President",
+    "A nominated economist"
+   ],
+   "answer": 1,
+   "explain": "Like the old Planning Commission, National Institution for Transforming India (NITI) Aayog is chaired by the Prime Minister (PM); it has a Vice-Chairperson and a Chief Executive Officer (CEO)."
+  },
+  {
+   "q": "The Chief Election Commissioner can be removed from office:",
+   "options": [
+    "By the President at pleasure",
+    "By a simple majority of Lok Sabha",
+    "In the same manner as a Supreme Court judge",
+    "By the Prime Minister"
+   ],
+   "answer": 2,
+   "explain": "This protection keeps the Election Commission independent of the ruling government."
+  },
+  {
+   "q": "After the 44th Amendment, the Right to Property is a legal right under Article:",
+   "options": [
+    "300A",
+    "31",
+    "19(1)(f)",
+    "363"
+   ],
+   "answer": 0,
+   "explain": "Article 31 and 19(1)(f) were deleted; property became a constitutional/legal right under Article 300A."
+  },
+  {
+   "q": "Fundamental Duties are listed in Article:",
+   "options": [
+    "21A",
+    "51A (Part IV-A)",
+    "32",
+    "51"
+   ],
+   "answer": 1,
+   "explain": "Part IV-A has one Article, 51A, listing the duties — originally 10, now 11 after the 86th Amendment added a duty for parents/guardians."
+  },
+  {
+   "q": "The Directive Principles of State Policy are contained in:",
+   "options": [
+    "Part III of the Constitution",
+    "Part II of the Constitution",
+    "Part IV of the Constitution",
+    "The Preamble"
+   ],
+   "answer": 2,
+   "explain": "DPSPs (Part IV) guide the government but cannot be enforced by courts; Fundamental Rights are in Part III."
+  },
+  {
+   "q": "Fundamental Rights are contained in which Part of the Constitution?",
+   "options": [
+    "Part III",
+    "Part IV",
+    "Part IV-A",
+    "Part II"
+   ],
+   "answer": 0,
+   "explain": "Part III (Articles 12-35) is called the Magna Carta of India."
+  },
+  {
+   "q": "The ideals of Liberty, Equality and Fraternity in the Preamble were inspired by the:",
+   "options": [
+    "American Revolution",
+    "Russian Revolution",
+    "British Glorious Revolution",
+    "French Revolution"
+   ],
+   "answer": 3,
+   "explain": "Justice, in contrast, draws on the Russian Revolution's ideals, and the Preamble's structure on several sources."
+  },
+  {
+   "q": "In the Indian context, 'secular' means the State:",
+   "options": [
+    "Is against all religions",
+    "Follows the majority religion",
+    "Treats all religions equally and has no religion of its own",
+    "Bans religious practice"
+   ],
+   "answer": 2,
+   "explain": "Indian secularism is equal respect for all religions (sarva dharma samabhava), unlike strict separation in the West."
+  },
+  {
+   "q": "National Emergency can be proclaimed by the President under Article:",
+   "options": [
+    "352",
+    "356",
+    "360",
+    "368"
+   ],
+   "answer": 0,
+   "explain": "352 = National Emergency (war, external aggression, armed rebellion); 356 = President's Rule; 360 = Financial Emergency."
+  },
+  {
+   "q": "President's Rule in a State is imposed under Article:",
+   "options": [
+    "352",
+    "360",
+    "365",
+    "356"
+   ],
+   "answer": 3,
+   "explain": "Article 356 applies when a State's constitutional machinery fails; it is the most frequently used emergency provision."
+  },
+  {
+   "q": "Financial Emergency is provided for in Article:",
+   "options": [
+    "352",
+    "360",
+    "356",
+    "354"
+   ],
+   "answer": 1,
+   "explain": "A Financial Emergency under Article 360 has never been proclaimed in India so far."
+  },
+  {
+   "q": "How many times has National Emergency been proclaimed in India?",
+   "options": [
+    "Three times (1962, 1971, 1975)",
+    "Two times",
+    "Four times",
+    "Only once"
+   ],
+   "answer": 0,
+   "explain": "1962 (China war), 1971 (Pakistan war) and 1975 (internal disturbance) — the 1975 one is the most debated."
+  },
+  {
+   "q": "Panchayati Raj in India has a structure of:",
+   "options": [
+    "Two tiers",
+    "Four tiers",
+    "Five tiers",
+    "Three tiers"
+   ],
+   "answer": 3,
+   "explain": "Gram Panchayat (village), Panchayat Samiti (block) and Zila Parishad (district) are the three tiers."
+  },
+  {
+   "q": "The head of a Municipal Corporation is called the:",
+   "options": [
+    "Sarpanch",
+    "Mayor",
+    "Collector",
+    "Commissioner of Police"
+   ],
+   "answer": 1,
+   "explain": "The Mayor is the elected head; the Municipal Commissioner is the chief executive officer appointed by the state government."
+  },
+  {
+   "q": "The Lokpal is a body created to:",
+   "options": [
+    "Conduct elections",
+    "Audit government accounts",
+    "Inquire into corruption complaints against public functionaries",
+    "Protect human rights"
+   ],
+   "answer": 2,
+   "explain": "The Lokpal and Lokayuktas Act, 2013 created the Lokpal at the Centre and Lokayuktas in states."
+  },
+  {
+   "q": "The Right to Information (RTI) Act, which empowers citizens to seek information from public authorities, was passed in:",
+   "options": [
+    "2002",
+    "2009",
+    "2013",
+    "2005"
+   ],
+   "answer": 3,
+   "explain": "The Right to Information (RTI) Act, 2005 replaced the weaker Freedom of Information Act and is a major transparency tool."
+  },
+  {
+   "q": "The National Human Rights Commission (NHRC) was established in:",
+   "options": [
+    "1991",
+    "1993",
+    "1995",
+    "2000"
+   ],
+   "answer": 1,
+   "explain": "The National Human Rights Commission (NHRC) was set up under the Protection of Human Rights Act, 1993."
+  },
+  {
+   "q": "State Legislative Councils (Vidhan Parishad) can be created or abolished under Article:",
+   "options": [
+    "168",
+    "170",
+    "169",
+    "171"
+   ],
+   "answer": 2,
+   "explain": "Parliament can create/abolish a Legislative Council if the State Assembly passes a resolution by special majority."
+  },
+  {
+   "q": "How many States in India presently have a bicameral legislature (with a Legislative Council)?",
+   "options": [
+    "Six",
+    "Five",
+    "Seven",
+    "Eight"
+   ],
+   "answer": 0,
+   "explain": "Andhra Pradesh, Bihar, Karnataka, Maharashtra, Telangana and Uttar Pradesh have Legislative Councils."
+  },
+  {
+   "q": "The Public Accounts Committee of Parliament consists of members from:",
+   "options": [
+    "Lok Sabha only",
+    "Both Lok Sabha (15) and Rajya Sabha (7)",
+    "Rajya Sabha only",
+    "State legislatures"
+   ],
+   "answer": 1,
+   "explain": "Its 22 members examine government spending; by convention its chairman is from the Opposition."
+  },
+  {
+   "q": "The largest committee of Parliament, the Estimates Committee, has members only from the:",
+   "options": [
+    "Rajya Sabha",
+    "Both Houses equally",
+    "Lok Sabha (30 members)",
+    "State Assemblies"
+   ],
+   "answer": 2,
+   "explain": "The Estimates Committee (30 members, all from Lok Sabha) suggests economies in government expenditure."
+  },
+  {
+   "q": "'Zero Hour' in Parliament, a period for raising urgent matters without notice, is:",
+   "options": [
+    "An Indian parliamentary innovation",
+    "Borrowed from Britain",
+    "Mentioned in the Constitution",
+    "Part of Question Hour"
+   ],
+   "answer": 0,
+   "explain": "Zero Hour begins at 12 noon after Question Hour; it is not mentioned in the Rules or the Constitution."
+  },
+  {
+   "q": "A motion of no-confidence against the Council of Ministers can be moved only in the:",
+   "options": [
+    "Rajya Sabha",
+    "Either House",
+    "Joint sitting",
+    "Lok Sabha"
+   ],
+   "answer": 3,
+   "explain": "Since the ministry is collectively responsible to the Lok Sabha, only it can remove the government."
+  },
+  {
+   "q": "The Chief Minister of a State is appointed by the:",
+   "options": [
+    "President",
+    "Prime Minister",
+    "Governor",
+    "Chief Justice of the High Court"
+   ],
+   "answer": 2,
+   "explain": "The Governor appoints the leader of the majority party/coalition as Chief Minister (Article 164)."
+  },
+  {
+   "q": "The highest law officer of a State is the:",
+   "options": [
+    "Advocate General",
+    "Attorney General",
+    "Solicitor General",
+    "Chief Justice"
+   ],
+   "answer": 0,
+   "explain": "The Advocate General advises the State Government (Article 165); the Attorney General is the Union counterpart."
+  },
+  {
+   "q": "The Inter-State Council, which discusses matters of common interest between States, is set up under Article:",
+   "options": [
+    "280",
+    "312",
+    "356",
+    "263"
+   ],
+   "answer": 3,
+   "explain": "Article 263 empowers the President to establish an Inter-State Council; it was first set up in 1990."
+  },
+  {
+   "q": "The oath of office to the Governor of a State is administered by the:",
+   "options": [
+    "President",
+    "Chief Justice of the State High Court",
+    "Chief Minister",
+    "Chief Justice of India"
+   ],
+   "answer": 1,
+   "explain": "The Governor is sworn in by the High Court's Chief Justice (or senior-most judge available)."
+  },
+  {
+   "q": "Which of the following is a constitutional body?",
+   "options": [
+    "Union Public Service Commission (UPSC)",
+    "National Institution for Transforming India (NITI) Aayog",
+    "Central Vigilance Commission",
+    "NITI Aayog's Governing Council"
+   ],
+   "answer": 0,
+   "explain": "Union Public Service Commission (UPSC) is created by Article 315 of the Constitution; National Institution for Transforming India (NITI) Aayog is an executive-resolution body."
+  },
+  {
+   "q": "Question Hour in Parliament is generally the:",
+   "options": [
+    "Last hour of a sitting",
+    "Hour after lunch",
+    "Hour before Zero Hour only",
+    "First hour of a sitting"
+   ],
+   "answer": 3,
+   "explain": "Members ask starred, unstarred and short-notice questions during the first hour."
+  },
+  {
+   "q": "The concept of 'Judicial Review' — courts striking down laws that violate the Constitution — was borrowed from:",
+   "options": [
+    "Britain",
+    "United States of America (USA)",
+    "Ireland",
+    "Canada"
+   ],
+   "answer": 1,
+   "explain": "Judicial review, along with Fundamental Rights and impeachment, came from the American Constitution."
+  },
+  {
+   "q": "The procedure for the election of the President of India was borrowed from:",
+   "options": [
+    "United States of America (USA)",
+    "France",
+    "Ireland",
+    "Australia"
+   ],
+   "answer": 2,
+   "explain": "Ireland also gave India the DPSPs and the nomination of Rajya Sabha members from literature, art, science and social service."
+  }
+ ]
+}

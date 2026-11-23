@@ -1,0 +1,448 @@
+{
+ "id": "tech-i-3",
+ "category": "technical",
+ "group": "Unit i — RRTS / High Speed Operations",
+ "title": "Normal, Degraded & Abnormal Modes + Operations–Maintenance Coordination",
+ "questions": [
+  {
+   "q": "Normal mode of operation means:",
+   "options": [
+    "One system has failed and trains run slower",
+    "All systems healthy, automatic working, full timetable with Automatic Train Operation (ATO)",
+    "An accident has occurred and service is stopped",
+    "Trains run without any timetable"
+   ],
+   "answer": 1,
+   "explain": "Normal = everything works, priority is punctuality plus comfort."
+  },
+  {
+   "q": "In normal mode, the authority for train movement comes from:",
+   "options": [
+    "Verbal orders only",
+    "The Station Controller's diary",
+    "Passengers' requests",
+    "The timetable and the signalling system"
+   ],
+   "answer": 3,
+   "explain": "Normal working runs on timetable + signalling, automatically."
+  },
+  {
+   "q": "Degraded mode of operation means:",
+   "options": [
+    "A partial failure — one system, track or train affected — with trains still running at reduced speed/capacity using fallback procedures",
+    "Everything is healthy and automatic",
+    "Life is at risk and all service stops",
+    "The line is closed for the whole day"
+   ],
+   "answer": 0,
+   "explain": "Degraded = something failed, but service continues safely at a lower level — like a car on a stepney."
+  },
+  {
+   "q": "Abnormal / emergency mode applies when:",
+   "options": [
+    "A train is 2 minutes late",
+    "Automatic Train Operation (ATO) fails on one train",
+    "There is an accident, fire, major failure or external event threatening life",
+    "It starts raining"
+   ],
+   "answer": 2,
+   "explain": "Automatic Train Operation (ATO) failure alone is degraded; danger to life makes it abnormal."
+  },
+  {
+   "q": "In degraded mode, the priority is:",
+   "options": [
+    "Full punctuality at any cost",
+    "Revenue collection",
+    "Safety first, then maximum possible service",
+    "Comfort of passengers"
+   ],
+   "answer": 2,
+   "explain": "Punctuality is sacrificed in degraded mode; safety never is."
+  },
+  {
+   "q": "In abnormal/emergency mode, the only priority is:",
+   "options": [
+    "Life safety",
+    "Restoring the timetable",
+    "Protecting revenue",
+    "Finishing the shift on time"
+   ],
+   "answer": 0,
+   "explain": "In abnormal mode, rescue and evacuation take over; service stops being the priority."
+  },
+  {
+   "q": "In degraded mode, train service in the affected area is:",
+   "options": [
+    "Always stopped for the full day",
+    "Run at higher speed to compensate",
+    "Run without signalling",
+    "Continued at reduced speed/capacity, possibly with single-line working or bus bridging"
+   ],
+   "answer": 3,
+   "explain": "Degraded working keeps a reduced service moving under manual/restricted modes."
+  },
+  {
+   "q": "In abnormal mode, train service in the affected area is:",
+   "options": [
+    "Continued normally",
+    "Stopped or suspended while rescue and evacuation take over",
+    "Continued at full speed",
+    "Continued only for season-ticket holders"
+   ],
+   "answer": 1,
+   "explain": "Abnormal = service stopped/suspended in the affected area; life safety only."
+  },
+  {
+   "q": "Single-line working — one track used for trains in both directions — is an example of:",
+   "options": [
+    "Normal mode",
+    "Degraded mode",
+    "Abnormal mode",
+    "Possession for construction"
+   ],
+   "answer": 1,
+   "explain": "One track both ways means reduced capacity — a classic degraded-mode method."
+  },
+  {
+   "q": "After an Automatic Train Operation (ATO) failure, a train runs manually under Automatic Train Protection (ATP) protection. This is:",
+   "options": [
+    "Normal mode working",
+    "Abnormal mode working",
+    "Stabling",
+    "Degraded mode working"
+   ],
+   "answer": 3,
+   "explain": "Manual driving under Automatic Train Protection (ATP) after Automatic Train Operation (ATO) failure is a listed degraded-mode example."
+  },
+  {
+   "q": "A train develops a fault and runs at a restricted speed to the next station. The mode is:",
+   "options": [
+    "Degraded",
+    "Normal",
+    "Abnormal",
+    "Revenue-free"
+   ],
+   "answer": 0,
+   "explain": "Partial failure with reduced speed = degraded; service continues with human help replacing the failed machine."
+  },
+  {
+   "q": "A fire is reported on a train at a station. The working mode becomes:",
+   "options": [
+    "Degraded — trains keep running slowly past it",
+    "Normal — the timetable continues",
+    "Abnormal / emergency — life safety takes over and service in the area stops",
+    "Off-peak mode"
+   ],
+   "answer": 2,
+   "explain": "Fire is an abnormal event: stop, protect life, evacuate — service is no longer the priority."
+  },
+  {
+   "q": "A car journey analogy: driving on a stepney at 40 kmph after a puncture is like:",
+   "options": [
+    "Normal mode",
+    "Abnormal mode",
+    "Degraded mode",
+    "Stabling"
+   ],
+   "answer": 2,
+   "explain": "Stepney driving = reduced speed with a fallback — exactly degraded mode. An accident needing an ambulance is abnormal."
+  },
+  {
+   "q": "Authority in degraded mode rests on:",
+   "options": [
+    "Operations Control Centre (OCC) instructions plus the degraded-mode rules",
+    "The timetable alone",
+    "Each driver's personal judgement",
+    "Station announcements"
+   ],
+   "answer": 0,
+   "explain": "Degraded working is authorised and directed by Operations Control Centre (OCC) under special rules."
+  },
+  {
+   "q": "Authority in abnormal/emergency mode rests on:",
+   "options": [
+    "The normal timetable",
+    "The depot roster",
+    "Individual station wishes",
+    "Incident command — Operations Control Centre (OCC) / the emergency plan"
+   ],
+   "answer": 3,
+   "explain": "Emergencies run under incident command as per the emergency plan."
+  },
+  {
+   "q": "Why does 'naming the mode correctly' matter in the exam and on duty?",
+   "options": [
+    "Because it changes the fare",
+    "Because the mode decides the speed, the authority and the communication level to be used",
+    "Because it changes crew uniforms",
+    "Because it is only a formality"
+   ],
+   "answer": 1,
+   "explain": "Normal, degraded and abnormal each have different speeds, authorities and communication — a favourite exam point."
+  },
+  {
+   "q": "A passenger is found on the track. This situation is treated as:",
+   "options": [
+    "Degraded — trains may pass slowly",
+    "Abnormal — threat to life; protect the section and stop movements as directed",
+    "Normal — no action needed",
+    "A station cleanliness issue"
+   ],
+   "answer": 1,
+   "explain": "A person on the track is a life-safety event: abnormal mode, movements protected/stopped."
+  },
+  {
+   "q": "Bus bridging is used in degraded/abnormal working to:",
+   "options": [
+    "Replace the Operations Control Centre (OCC)",
+    "Wash trains",
+    "Train new drivers",
+    "Carry passengers by bus past an affected section where trains cannot run normally"
+   ],
+   "answer": 3,
+   "explain": "Bus bridging keeps passengers moving when rail capacity is lost on a section."
+  },
+  {
+   "q": "Operations and Maintenance departments conflict naturally because:",
+   "options": [
+    "Operations needs maximum service hours; Maintenance needs track access to repair and inspect",
+    "Both want the same office",
+    "Maintenance wants to run trains",
+    "Operations wants to cancel all trains"
+   ],
+   "answer": 0,
+   "explain": "Coordination is the daily negotiation so both get their time safely."
+  },
+  {
+   "q": "Maintenance access to the track is normally planned:",
+   "options": [
+    "During peak hours",
+    "Whenever a fitter arrives",
+    "As possessions, usually in non-revenue / night hours",
+    "By stopping any train on request"
+   ],
+   "answer": 2,
+   "explain": "Planned possessions in the night window are the backbone of Ops-Maintenance coordination."
+  },
+  {
+   "q": "Ops-Maintenance coordination is done through:",
+   "options": [
+    "Verbal requests at the platform",
+    "Messages on social media",
+    "Joint planning — work permits, possession calendars, and hand-over/hand-back certification",
+    "The fare chart"
+   ],
+   "answer": 2,
+   "explain": "Permits, calendars and certified hand-back make the sharing of track safe."
+  },
+  {
+   "q": "A work permit system ensures that:",
+   "options": [
+    "No work starts without protection for the workers and the track",
+    "Work can start any time",
+    "Trains are informed afterwards",
+    "Only senior staff need protection"
+   ],
+   "answer": 0,
+   "explain": "No work starts without protection — a core coordination rule."
+  },
+  {
+   "q": "Before train service resumes after maintenance work, what is essential?",
+   "options": [
+    "A verbal 'okay' from any worker",
+    "The first passenger's approval",
+    "Only a station announcement",
+    "Fitness certification at hand-back — no service resumes without it"
+   ],
+   "answer": 3,
+   "explain": "Hand-back with fitness certification is compulsory before the line returns to service."
+  },
+  {
+   "q": "Scenario: Maintenance asks for track access at 6 p.m. in the peak to fix a minor, non-urgent defect. The correct approach is:",
+   "options": [
+    "Stop all peak trains immediately",
+    "Refuse peak access for non-urgent work; plan it in the night possession window",
+    "Allow it without any permit",
+    "Let the fitter work between trains"
+   ],
+   "answer": 1,
+   "explain": "Non-urgent work waits for the planned night possession; peak service and safety both matter."
+  },
+  {
+   "q": "Scenario: A maintenance team finishes work but has not given hand-back fitness certification. Trains should:",
+   "options": [
+    "Resume slowly on the Station Controller's guess",
+    "Not resume until the certified hand-back is received",
+    "Resume only empty trains at full speed",
+    "Resume because the shift is ending"
+   ],
+   "answer": 1,
+   "explain": "No fitness certificate = no service resumption, whatever the time pressure."
+  },
+  {
+   "q": "Scenario: Signalling fails on one section at 8 a.m. Trains can still run there at reduced speed under Operations Control Centre (OCC)-directed restricted working. This is:",
+   "options": [
+    "Normal mode — ignore the failure",
+    "Abnormal mode — evacuate all trains",
+    "The end of service for the day",
+    "Degraded mode — safety first, then maximum possible service"
+   ],
+   "answer": 3,
+   "explain": "Partial failure + reduced working under Operations Control Centre (OCC) = degraded mode."
+  },
+  {
+   "q": "Scenario: A derailment with injuries is reported. The FIRST priority for everyone is:",
+   "options": [
+    "Life safety — rescue, medical help and protecting the site, under incident command",
+    "Restoring the timetable",
+    "Informing the press",
+    "Calculating the delay minutes"
+   ],
+   "answer": 0,
+   "explain": "Derailment with injuries is abnormal mode: life safety only."
+  },
+  {
+   "q": "The night maintenance window exists because:",
+   "options": [
+    "Drivers prefer night work",
+    "Electricity is free at night",
+    "After the last train, the track can be possessed safely for maintenance without affecting service",
+    "Passengers do not travel at night at all"
+   ],
+   "answer": 2,
+   "explain": "Roll-in of the last train opens the window; roll-out ends it — the daily Ops-Maintenance timetable."
+  },
+  {
+   "q": "Hand-over of a section to Maintenance means:",
+   "options": [
+    "Maintenance takes it whenever free",
+    "Trains keep running through the work site",
+    "Operations formally gives the protected section to Maintenance for work, under a permit/possession",
+    "The section is abandoned"
+   ],
+   "answer": 2,
+   "explain": "Hand-over is formal and protected; hand-back returns it with fitness certification."
+  },
+  {
+   "q": "During degraded working, communication between Operations Control Centre (OCC), stations and trains should be:",
+   "options": [
+    "Clear, disciplined and as per the degraded-mode instructions — every instruction logged",
+    "Casual and unrecorded",
+    "Left to each station",
+    "Stopped to avoid confusion"
+   ],
+   "answer": 0,
+   "explain": "Degraded mode raises the communication level; Operations Control Centre (OCC) instructions are logged and recorded."
+  },
+  {
+   "q": "Which combination correctly matches mode with priority?",
+   "options": [
+    "Normal — life safety only; Abnormal — punctuality",
+    "Degraded — revenue first; Normal — safety last",
+    "All modes — punctuality first",
+    "Normal — punctuality + comfort; Degraded — safety + maximum service; Abnormal — life safety only"
+   ],
+   "answer": 3,
+   "explain": "This priority ladder is the master comparison of Unit i — learn it by heart."
+  },
+  {
+   "q": "A track defect is found and a Temporary Speed Restriction is imposed while trains keep running. The line is in:",
+   "options": [
+    "Normal mode",
+    "Degraded mode",
+    "Abnormal mode",
+    "Possession"
+   ],
+   "answer": 1,
+   "explain": "Trains running slower due to a defect = reduced capacity working = degraded."
+  },
+  {
+   "q": "Two departments plan the week's engineering work together in advance. This is an example of:",
+   "options": [
+    "Abnormal mode",
+    "Ops-Maintenance coordination through the possession calendar",
+    "Revenue service",
+    "Regulation"
+   ],
+   "answer": 1,
+   "explain": "Advance joint planning of possessions is coordination in action."
+  },
+  {
+   "q": "In degraded mode, who decides whether to run single-line working or arrange bus bridging?",
+   "options": [
+    "Any passenger",
+    "The train manufacturer",
+    "The ticket vendor",
+    "Operations Control Centre (OCC), as part of regulation and incident management"
+   ],
+   "answer": 3,
+   "explain": "Operations Control Centre (OCC) holds the line picture and authorises degraded working methods."
+  },
+  {
+   "q": "The step-by-step order of Ops-Maintenance coordination for a night work is:",
+   "options": [
+    "Plan the possession → take protection/permit → hand over → do the work → certify fitness → hand back → resume service",
+    "Do the work → inform Operations Control Centre (OCC) later → resume service",
+    "Resume service → certify fitness → plan",
+    "Hand back → plan → protect"
+   ],
+   "answer": 0,
+   "explain": "The order matters: protection before work, certification before service."
+  },
+  {
+   "q": "'Graceful degradation' in operations means that when parts of the system fail, it should:",
+   "options": [
+    "Stop everything at once, whatever has failed",
+    "Lose its functions in a planned order, keeping the safety functions working the longest",
+    "Keep running at full speed until repaired",
+    "Hand control to the passengers"
+   ],
+   "answer": 1,
+   "explain": "A well-designed system sheds comfort and capacity first and protection last — service gets slower, but it never gets unsafe silently."
+  },
+  {
+   "q": "After a degraded-mode incident is fully cleared, normal working should be restored only when:",
+   "options": [
+    "Any station staff member announces it",
+    "The Operations Control Centre (OCC) confirms all systems are proved healthy and formally declares normal working",
+    "The next train driver decides on arrival",
+    "Passengers stop complaining"
+   ],
+   "answer": 1,
+   "explain": "Return to normal is a formal step: the Operations Control Centre (OCC) restores the timetable only after every affected system is tested and certified fit."
+  },
+  {
+   "q": "Scenario: A technician must check a piece of equipment inside a station equipment room during traffic hours. The work needs no track access and does not affect train running. The correct approach is to:",
+   "options": [
+    "Refuse all work during traffic hours, whatever it is",
+    "Allow it under the permit-to-work system with the station's knowledge, since no possession is needed",
+    "Stop all trains while he works",
+    "Let him enter without informing anyone"
+   ],
+   "answer": 1,
+   "explain": "Not every job needs a possession. Off-track work that cannot affect running is controlled by a permit and local supervision, not by stopping the service."
+  },
+  {
+   "q": "Degraded-mode working raises the risk of human error mainly because:",
+   "options": [
+    "Trains become longer",
+    "Staff must do unfamiliar manual tasks under time pressure, so extra checks and supervision are needed",
+    "Passengers travel free",
+    "Signals become brighter"
+   ],
+   "answer": 1,
+   "explain": "Manual working replaces automatic protection with human steps; workload and stress rise, so railways add confirmations, read-backs and supervision in degraded mode."
+  },
+  {
+   "q": "Scenario: In an abnormal situation, a signalling maintainer must urgently enter the track area to repair a failed cable. Even in the emergency, he may enter only:",
+   "options": [
+    "Whenever he finds a gap between trains",
+    "Under a responsible person's control, with the section protected and the Operations Control Centre (OCC) informed",
+    "After informing only his contractor",
+    "By crossing from the nearest platform without telling anyone"
+   ],
+   "answer": 1,
+   "explain": "Urgency never cancels protection. Emergency access is still authorised, protected and communicated — most trackside deaths happen during 'quick' unprotected entries."
+  }
+ ]
+}
