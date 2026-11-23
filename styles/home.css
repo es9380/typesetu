@@ -136,10 +136,10 @@ kbd { font-family: var(--font-type); font-size: 12.5px; background: var(--surfac
 .xb4 { right: 2%; bottom: 14%; --dx: 26px; animation-delay: -10.5s; }
 @keyframes badgeLife {
   0%   { opacity: 0; transform: translate(var(--dx), 14px) scale(.92); }
-  9%   { opacity: 1; transform: none; }
-  45%  { transform: translateY(-9px); }
-  80%  { opacity: 1; transform: translateY(4px); }
-  92%, 100% { opacity: 0; transform: translate(calc(var(--dx) * -.6), -16px) scale(.94); } }
+  7%   { opacity: 1; transform: none; }
+  34%  { transform: translateY(-9px); }
+  55%  { opacity: 1; transform: translateY(4px); }
+  74%, 100% { opacity: 0; transform: translate(calc(var(--dx) * -.6), -16px) scale(.94); } }
 
 /* tiny floating bits (98%, WPM, ✓ …) drifting up behind the keyboard */
 .pf { position: absolute; bottom: 4%; font: 700 12px var(--font-type); color: var(--accent-2); opacity: 0; animation: pfRise 9s linear infinite; }
