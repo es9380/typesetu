@@ -1,0 +1,503 @@
+{
+ "id": "tech-iii-1",
+ "category": "technical",
+ "group": "Unit iii — Safety Regulations & Standards",
+ "title": "Operating Rules & Safe Train Movement",
+ "questions": [
+  {
+   "q": "Metro/Regional Rapid Transit System (RRTS) working is governed by which set of documents?",
+   "options": [
+    "Only the train timetable",
+    "The organisation's Rule Book / General & Subsidiary Rules, Operating Procedures and Safety Manuals",
+    "The station duty roster alone",
+    "Instructions pasted on the notice board"
+   ],
+   "answer": 1,
+   "explain": "In simple words: the Rule Book, G&SR, operating procedures and safety manuals together govern how the railway is run."
+  },
+  {
+   "q": "Independent safety oversight for opening new metro/Regional Rapid Transit System (RRTS) sections is through whom?",
+   "options": [
+    "The station master",
+    "The train operator",
+    "The Commissioner of Metro Railway Safety (CMRS)",
+    "The Operations Control Centre (OCC) duty officer alone"
+   ],
+   "answer": 2,
+   "explain": "New sections are opened only under the approved safety regime, with the Commissioner of Metro Railway Safety (CMRS) giving independent safety oversight."
+  },
+  {
+   "q": "In any conflict, what is the correct golden hierarchy of priorities?",
+   "options": [
+    "Safety of life > safety of property > service and punctuality",
+    "Punctuality > safety of life > property",
+    "Property > life > punctuality",
+    "Punctuality first, safety if time permits"
+   ],
+   "answer": 0,
+   "explain": "Life always comes first, then property, and only then punctuality — this order never changes."
+  },
+  {
+   "q": "A senior officer orders an action you believe is unsafe. What must you do?",
+   "options": [
+    "Obey because the officer is senior",
+    "Do it slowly so it becomes safe",
+    "Ask a passenger to decide",
+    "Refuse the unsafe act and report it through the proper channel"
+   ],
+   "answer": 3,
+   "explain": "No instruction from anyone can authorise an unsafe act; staff must refuse and report it properly."
+  },
+  {
+   "q": "Who may perform safety-critical tasks such as driving, controlling or shunting?",
+   "options": [
+    "Any staff member on duty",
+    "Only the most senior staff, trained or not",
+    "Only trained, examined, medically fit and authorised staff",
+    "Contract staff without examination"
+   ],
+   "answer": 2,
+   "explain": "Safety-critical work needs all four: training, examination, medical fitness and formal authorisation."
+  },
+  {
+   "q": "A staff member's competency for a safety-critical task has lapsed. What is the rule?",
+   "options": [
+    "They must not perform safety-critical duty until competency is renewed",
+    "They may work if a colleague watches",
+    "They may work only at night",
+    "They may work for one more month"
+   ],
+   "answer": 0,
+   "explain": "Lapsed competency means no safety-critical duty — there is no grace period."
+  },
+  {
+   "q": "A train may move only when which conditions are met?",
+   "options": [
+    "The platform is empty",
+    "The driver feels confident",
+    "The previous train has left the depot",
+    "Movement authority exists, the route is proved and locked, and speed is at or below the permitted limit"
+   ],
+   "answer": 3,
+   "explain": "Authority, a proved and locked route, and permitted speed — all three, every time."
+  },
+  {
+   "q": "In degraded working, from where can a movement authority come?",
+   "options": [
+    "From a passenger's request",
+    "From an Operations Control Centre (OCC) instruction, when signalling cannot give a movement authority",
+    "From the station announcer",
+    "It is never needed in degraded working"
+   ],
+   "answer": 1,
+   "explain": "When the signalling system cannot give the authority, Operations Control Centre (OCC) authorises movement under degraded-working rules."
+  },
+  {
+   "q": "What does PSR stand for in train operation?",
+   "options": [
+    "Platform Safety Rule",
+    "Permanent Speed Restriction",
+    "Passenger Service Regulation",
+    "Power Supply Restriction"
+   ],
+   "answer": 1,
+   "explain": "A PSR is a fixed speed limit for a section, built into the normal rules for that location."
+  },
+  {
+   "q": "A caution order mainly informs the operator about what?",
+   "options": [
+    "Salary and leave details",
+    "Canteen timings",
+    "Temporary speed restrictions and special conditions on the route",
+    "The next day's roster"
+   ],
+   "answer": 2,
+   "explain": "Caution orders bridge the gap between the printed timetable and today's real track conditions, including TSRs."
+  },
+  {
+   "q": "An operator notices an unusual sound and a possible track defect. What is the duty?",
+   "options": [
+    "Report it immediately — reporting an abnormality is a duty, not a choice",
+    "Note it and report at the end of the month",
+    "Ignore it if the train is running fine",
+    "Tell only the next operator informally"
+   ],
+   "answer": 0,
+   "explain": "Every abnormality — defect, obstruction, smoke, trespasser — must be reported at once."
+  },
+  {
+   "q": "What is the absolute rule about passing a signal or movement-authority limit at danger?",
+   "options": [
+    "Pass slowly if the track looks clear",
+    "Pass if running late",
+    "Pass after blowing the whistle",
+    "Never pass it; if in doubt, stop"
+   ],
+   "answer": 3,
+   "explain": "Never pass a signal/MA limit at danger. When in doubt, stop — nobody is punished for stopping safely."
+  },
+  {
+   "q": "What are the four checks behind safe train movement, as taught by the highway example?",
+   "options": [
+    "Fuel, lights, horn and mirrors",
+    "Ticket, roster, uniform and radio",
+    "Authority, safe speed, proved route and working brakes",
+    "Weather, crowd, time and distance"
+   ],
+   "answer": 2,
+   "explain": "Like a good road driver: green light (authority), speed limit, clear lane (proved route) and tested brakes."
+  },
+  {
+   "q": "A train has failed in a section. What must happen before any detraining of passengers?",
+   "options": [
+    "Inform Operations Control Centre (OCC), secure the train and protect it as per rules",
+    "Open all doors immediately",
+    "Ask passengers to walk to the next station at once",
+    "Switch off the radio to save battery"
+   ],
+   "answer": 0,
+   "explain": "Protection comes before detraining: inform Operations Control Centre (OCC), secure the train, protect as per rules."
+  },
+  {
+   "q": "How are shunting and depot movements controlled?",
+   "options": [
+    "At normal line speed",
+    "By whichever staff member is free",
+    "Without any communication to save time",
+    "Under separate low-speed rules, with a designated shunter in charge and continuous communication"
+   ],
+   "answer": 3,
+   "explain": "Depot and shunting moves are slow, led by a named shunter, with communication maintained throughout."
+  },
+  {
+   "q": "What is the correct order of actions on finding the line ahead obstructed?",
+   "options": [
+    "Inform Operations Control Centre (OCC), keep moving slowly, then stop",
+    "Stop the train, protect the line, then inform Operations Control Centre (OCC)",
+    "Pass carefully, then note it in the report",
+    "Blow the whistle continuously and proceed"
+   ],
+   "answer": 1,
+   "explain": "Stop — Protect — Inform. Passing 'carefully' past an obstruction is how collisions happen."
+  },
+  {
+   "q": "Classical protection of an obstructed line in an emergency uses what?",
+   "options": [
+    "Headlights only",
+    "Detonators/fog signals and hand danger signals placed at prescribed distances, with information to control",
+    "Whistling only",
+    "A phone call to the depot"
+   ],
+   "answer": 1,
+   "explain": "Audible detonators warn an approaching driver even in fog, backed by hand danger signals."
+  },
+  {
+   "q": "Before a train starts, which test confirms the braking system works through the train?",
+   "options": [
+    "The horn test",
+    "The headlight test",
+    "The brake continuity test",
+    "The door chime test"
+   ],
+   "answer": 2,
+   "explain": "Brake continuity proves the brakes respond along the whole train, not just in the driving cab."
+  },
+  {
+   "q": "A train operator receives an instruction but is unsure whether it is safe. The best action is:",
+   "options": [
+    "Stop, secure the train and seek clarification from Operations Control Centre (OCC)",
+    "Guess and proceed",
+    "Ask a passenger",
+    "Proceed at full speed to clear the section"
+   ],
+   "answer": 0,
+   "explain": "'When in doubt, stop and ask' is the universal safe answer in operations."
+  },
+  {
+   "q": "Scenario: You see a trespasser walking on the track ahead. Your first duty is to:",
+   "options": [
+    "Ignore him as he will move away",
+    "Slow down slightly and continue",
+    "Report it after reaching the destination",
+    "Take action to stop/protect as required and report it to Operations Control Centre (OCC) immediately"
+   ],
+   "answer": 3,
+   "explain": "A trespasser is an abnormality affecting safe movement — protect and report at once, do not just carry on."
+  },
+  {
+   "q": "Scenario: A temporary speed restriction is in force but you are running 10 minutes late. You should:",
+   "options": [
+    "Ignore the restriction to make up time",
+    "Exceed it slightly where the track looks straight",
+    "Obey the restriction exactly; time is never recovered by breaking a restriction",
+    "Follow it only if Operations Control Centre (OCC) reminds you"
+   ],
+   "answer": 2,
+   "explain": "PSR, TSR and caution orders must be obeyed exactly — punctuality never outranks safety."
+  },
+  {
+   "q": "Which of these is a look-out duty connected with safe train movement?",
+   "options": [
+    "Watching the line ahead for obstructions, defects and persons and reporting them",
+    "Watching passenger luggage",
+    "Watching the advertisement boards",
+    "Watching the clock only"
+   ],
+   "answer": 0,
+   "explain": "The operator's eyes are a safety device: defects, obstructions and trespassers must be spotted and reported."
+  },
+  {
+   "q": "Why are safety rules described as 'written in the memory of past accidents'?",
+   "options": [
+    "Because rules are very old",
+    "Because rules are hard to memorise",
+    "Because accidents are celebrated",
+    "Because most rules exist as a result of someone being hurt when the rule was not followed"
+   ],
+   "answer": 3,
+   "explain": "Every rule carries a lesson from a past accident — that is why shortcuts with rules are so dangerous."
+  },
+  {
+   "q": "In degraded working, an Operations Control Centre (OCC) instruction authorising movement must be treated as:",
+   "options": [
+    "A casual suggestion",
+    "A formal movement authority, to be followed exactly within its limits",
+    "Valid for the whole day",
+    "Transferable to any other train"
+   ],
+   "answer": 1,
+   "explain": "An Operations Control Centre (OCC) degraded-working instruction is a real authority with defined limits — follow it exactly, nothing beyond it."
+  },
+  {
+   "q": "Which statement about speed on a section is correct?",
+   "options": [
+    "A train may exceed the limit in automatic mode",
+    "A train must run at or below the permitted speed for that section and that mode of operation",
+    "Speed limits apply only in tunnels",
+    "Speed limits are advisory only"
+   ],
+   "answer": 1,
+   "explain": "The permitted speed depends on both the section and the operating mode, and it is a ceiling, not a target."
+  },
+  {
+   "q": "What does 'route proved and locked' mean for safe movement?",
+   "options": [
+    "The driver has memorised the route",
+    "The route is painted on the platform",
+    "The path is set, verified and locked so no conflicting movement can be given over it",
+    "All signals on the route are green forever"
+   ],
+   "answer": 2,
+   "explain": "Proving and locking guarantees your train's path cannot be taken away or crossed by another movement."
+  },
+  {
+   "q": "Scenario: Smoke is seen coming from the track area ahead. The operator should:",
+   "options": [
+    "Stop as required, protect the train and inform Operations Control Centre (OCC) immediately",
+    "Speed up to pass the smoke quickly",
+    "Open the doors so passengers can see",
+    "Wait until the next station to mention it"
+   ],
+   "answer": 0,
+   "explain": "Smoke is an abnormality — stop/protect and inform Operations Control Centre (OCC) at once; never run into an unknown hazard."
+  },
+  {
+   "q": "Which priority is correct when a service decision conflicts with a safety rule?",
+   "options": [
+    "Service wins during peak hours",
+    "The senior officer present decides freely",
+    "Whichever is cheaper wins",
+    "The safety rule wins, even if the service is delayed or suspended"
+   ],
+   "answer": 3,
+   "explain": "Safety of life sits above property and punctuality — a delay is always acceptable, an unsafe act never is."
+  },
+  {
+   "q": "What must an operator do with a caution order received for the trip?",
+   "options": [
+    "File it without reading",
+    "Follow only the first restriction",
+    "Read it, understand the restrictions and special conditions, and obey them on that trip",
+    "Pass it to a passenger for safekeeping"
+   ],
+   "answer": 2,
+   "explain": "A caution order is useless unread — it carries today's TSRs and special conditions for your exact route."
+  },
+  {
+   "q": "Shunting movements are kept safe mainly by which combination?",
+   "options": [
+    "Low speed, a designated shunter in charge and continuous communication",
+    "High speed to finish quickly",
+    "Hand signals from passengers",
+    "One staff member working alone silently"
+   ],
+   "answer": 0,
+   "explain": "Slow speed plus a named person in charge plus constant communication is the shunting safety formula."
+  },
+  {
+   "q": "If a signal fails and no movement authority can be obtained, the train should:",
+   "options": [
+    "Proceed on the driver's judgement",
+    "Reverse to the previous station on its own",
+    "Follow the train ahead closely",
+    "Remain stopped and act only on Operations Control Centre (OCC) instructions under degraded-working rules"
+   ],
+   "answer": 3,
+   "explain": "No authority means no movement — degraded working starts only with Operations Control Centre (OCC)'s formal instruction."
+  },
+  {
+   "q": "Which of these staff may be given a safety-critical duty?",
+   "options": [
+    "A new recruit on his first day, unsupervised",
+    "A trained, examined, medically fit and authorised staff member whose competency is current",
+    "A staff member whose medical has expired",
+    "A volunteer from the public"
+   ],
+   "answer": 1,
+   "explain": "All four conditions — trained, examined, medically fit, authorised — plus current competency."
+  },
+  {
+   "q": "What is the correct response to an order that conflicts with the Rule Book?",
+   "options": [
+    "Carry it out and complain later",
+    "Do not carry it out; refuse the unsafe act and report through the proper channel",
+    "Carry it out only in writing",
+    "Ask another junior staff to do it"
+   ],
+   "answer": 1,
+   "explain": "The Rule Book cannot be overridden by any individual's order; refusal plus reporting is the protected course."
+  },
+  {
+   "q": "A failed train must be 'secured' before protection. Securing mainly means:",
+   "options": [
+    "Locking the passenger doors only",
+    "Switching off the lights",
+    "Making sure the train cannot move — brakes applied and the train held safely",
+    "Removing the operator from the cab"
+   ],
+   "answer": 2,
+   "explain": "A secured train cannot roll or move unexpectedly while staff protect it and plan the next step."
+  },
+  {
+   "q": "Why must restrictions like PSR and TSR be obeyed 'exactly', not approximately?",
+   "options": [
+    "Because they are calculated for the actual condition of that section of track",
+    "Because Operations Control Centre (OCC) checks the speedometer only",
+    "Because passengers complain otherwise",
+    "Because the timetable says so"
+   ],
+   "answer": 0,
+   "explain": "A restriction reflects a real physical limit — exceeding it even slightly removes the safety margin."
+  },
+  {
+   "q": "Which document would a supervisor check to confirm the operating rules for a task?",
+   "options": [
+    "The canteen menu",
+    "The passenger feedback register",
+    "The advertising contract",
+    "The Rule Book / General & Subsidiary Rules and the relevant Operating Procedures"
+   ],
+   "answer": 3,
+   "explain": "Rules live in the Rule Book/G&SR, operating procedures and safety manuals — not in habit or hearsay."
+  },
+  {
+   "q": "Scenario: Your train is held at a signal showing danger, but the platform behind is crowded and pressure is building. You should:",
+   "options": [
+    "Pass the signal slowly to clear the platform",
+    "Ask passengers to push the train",
+    "Stay stopped until a proper authority is given; crowding never justifies passing danger",
+    "Open doors and let passengers walk along the track"
+   ],
+   "answer": 2,
+   "explain": "A danger signal is absolute. Crowd pressure is managed by station staff and Operations Control Centre (OCC), never by passing danger."
+  },
+  {
+   "q": "The safety regime under which metro railways operate includes which legal framework, as per the book?",
+   "options": [
+    "The Metro Railways (Operation and Maintenance) Act framework",
+    "The Motor Vehicles Act",
+    "The Shops and Establishments Act",
+    "The Factories Act alone"
+   ],
+   "answer": 0,
+   "explain": "Metro/Regional Rapid Transit System (RRTS) working is framed under the Metro Railways (O&M) Act framework and its approved safety regime."
+  },
+  {
+   "q": "Which of the following is part of protecting a failed train?",
+   "options": [
+    "Hiding the failure to avoid paperwork",
+    "Letting the next train find out itself",
+    "Switching off all communication",
+    "Informing Operations Control Centre (OCC) so following movements can be stopped or controlled"
+   ],
+   "answer": 3,
+   "explain": "Protection is practical: Operations Control Centre (OCC) must know at once so no other train is sent into danger."
+  },
+  {
+   "q": "An operator who proceeds unsafely instead of stopping will face what, as per the book's key point?",
+   "options": [
+    "A reward for saving time",
+    "People are punished for proceeding unsafely; no one is punished for stopping safely",
+    "Nothing, if no accident happens",
+    "A small fine only"
+   ],
+   "answer": 1,
+   "explain": "The culture protects the safe stop — the unsafe proceed is what attracts punishment, accident or not."
+  },
+  {
+   "q": "In Absolute Block System working, the basic rule that keeps trains safe is:",
+   "options": [
+    "Two trains may follow each other closely in the same section",
+    "Only one train is allowed in a block section at a time, and the next train enters only after the section is cleared",
+    "Trains run purely on time interval",
+    "The driver proceeds on sight at full speed"
+   ],
+   "answer": 1,
+   "explain": "Absolute Block means one train, one block section. The section must be proved clear and 'line clear' obtained before the next train is allowed in — this separation is the oldest and strongest protection against rear-end and head-on collisions."
+  },
+  {
+   "q": "A written Caution Order is handed to a train driver mainly so that he:",
+   "options": [
+    "Knows his duty roster for the week",
+    "Is informed in writing of speed restrictions and unusual conditions ahead on the route",
+    "Can skip the brake test",
+    "Is excused from obeying signals"
+   ],
+   "answer": 1,
+   "explain": "A Caution Order puts temporary speed restrictions, worksites and unusual conditions in writing before the driver. Verbal information can be forgotten or misheard — the written order travels with the driver and can be re-read."
+  },
+  {
+   "q": "Before a train is allowed to enter a block section, the station ahead must grant 'line clear'. Line clear is granted only after:",
+   "options": [
+    "The previous train has been seen by passengers",
+    "It is confirmed that the block section is free and the line is clear up to the required point",
+    "The driver sounds the horn twice",
+    "The timetable says the train is due"
+   ],
+   "answer": 1,
+   "explain": "Line clear is a formal confirmation, not a formality: the section must actually be free of the previous train and obstructions before the next movement authority is given."
+  },
+  {
+   "q": "During dense fog, the safest combination for train movement is:",
+   "options": [
+    "Normal speed with headlight on full",
+    "Reduced speed as prescribed, fog signals/detonators and fog-safe devices used, and extra vigilance by the crew",
+    "Depend only on the horn",
+    "Cancel every train on the network"
+   ],
+   "answer": 1,
+   "explain": "Fog destroys the driver's main sense — sight. Speed is cut so the train can stop within the visible distance, and fog signals, detonators and fog-safe devices replace the missing visual information."
+  },
+  {
+   "q": "A train parts into two portions while running (train parting). The driver's FIRST duties are to:",
+   "options": [
+    "Speed up to rejoin the portions",
+    "Stop and secure both portions, protect the line as per rules and inform Operations Control Centre (OCC) immediately",
+    "Leave the rear portion and continue to the next station silently",
+    "Ask passengers to push the rear portion"
+   ],
+   "answer": 1,
+   "explain": "A parted train leaves an unprotected portion standing on the line — a collision waiting to happen. Both portions are secured, the line is protected, and Operations Control Centre (OCC) is informed at once so no other train is sent into the section."
+  }
+ ]
+}

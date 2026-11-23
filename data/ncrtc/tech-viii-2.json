@@ -1,0 +1,393 @@
+{
+ "id": "tech-viii-2",
+ "category": "technical",
+ "group": "Unit viii — Adaptability & Situational Awareness",
+ "title": "Simultaneous Issues, Service Disruptions & Unforeseen Situations",
+ "questions": [
+  {
+   "q": "Two incidents occur at the same time at different stations. The in-charge should primarily:",
+   "options": [
+    "Assign an owner to each incident, keep the overall picture himself, and rank actions by risk",
+    "Solve the easier one first",
+    "Wait for senior officers to arrive",
+    "Handle both personally, one by one"
+   ],
+   "answer": 0,
+   "explain": "Parallel ownership plus one overall picture. One pair of hands queuing two emergencies serves neither."
+  },
+  {
+   "q": "Handling simultaneous issues works on the principle of:",
+   "options": [
+    "First come, first served",
+    "Triage — rank by risk to life first, then contain in parallel by delegation",
+    " loudest problem first",
+    "Seniority of the reporter"
+   ],
+   "answer": 1,
+   "explain": "Triage, do not queue. Risk — not arrival order, not noise — sets the sequence."
+  },
+  {
+   "q": "In a bundle of simultaneous problems, the person holding the whole picture should usually be:",
+   "options": [
+    "The maintenance team leader",
+    "The driver of the first failed train",
+    "The Operations Control Centre (OCC) in-charge / Chief Controller",
+    "The station master of the busiest station"
+   ],
+   "answer": 2,
+   "explain": "One mind must see the whole board. That is the Chief Controller's specific job during multi-incident periods."
+  },
+  {
+   "q": "Heavy rain floods low-lying approaches in the same hour as a train failure. The first ranking principle is:",
+   "options": [
+    "Announce delays and wait",
+    "Send all staff to the train",
+    "Fix the train first — it was reported first",
+    "Rank by risk to life: flood safety of passengers and staff before service recovery"
+   ],
+   "answer": 3,
+   "explain": "Simultaneous issues are sorted by the same P1–P4 order as single ones. Life risk outranks recovery work."
+  },
+  {
+   "q": "A hospital emergency ward on a festival night is the real-life model for simultaneous incidents because it uses:",
+   "options": [
+    "No communication with families",
+    "First-come treatment only",
+    "Triage, one doctor per case, one senior watching the whole ward, families informed regularly",
+    "One doctor doing everything"
+   ],
+   "answer": 2,
+   "explain": "Same human logic: rank by risk, an owner per problem, one overall watcher, regular information."
+  },
+  {
+   "q": "During a major disruption, passenger information should be:",
+   "options": [
+    "Given early and updated at promised intervals — even 'no new information, next update in 10 minutes' is useful",
+    "Given only on demand",
+    "Given after the service is restored",
+    "Withheld until full facts are known"
+   ],
+   "answer": 0,
+   "explain": "Silence breeds rumour and crowd pressure. A promised-interval update keeps trust even when the news is 'not yet'."
+  },
+  {
+   "q": "No written procedure exactly fits an unforeseen situation. The operator should:",
+   "options": [
+    "Invent a personal rule and act alone",
+    "Hand the problem to passengers",
+    "Do nothing until a rule is written",
+    "Fall back on first principles — protect, inform, contain, decide with available facts, document"
+   ],
+   "answer": 3,
+   "explain": "The rule book cannot list every event; it lists principles that cover every event. Principles are the procedure for the unlisted case."
+  },
+  {
+   "q": "A disruption is worsening and facts are changing hourly. The operating plan should be:",
+   "options": [
+    "Fixed at the start and defended",
+    "Re-planned openly as facts change, with each change communicated to all points",
+    "Changed silently by each station",
+    "Abandoned"
+   ],
+   "answer": 1,
+   "explain": "A plan is a living tool in a disruption. Open re-planning, communicated once and clearly, keeps everyone on the same railway."
+  },
+  {
+   "q": "After a big match, crowd builds at a station faster than trains can clear it. The adaptable response is:",
+   "options": [
+    "Meter entry at the gates, use holding areas and announcements, and coordinate extra or short-turn trains with Operations Control Centre (OCC)",
+    "Close the station lights",
+    "Let the crowd self-manage",
+    "Open all gates fully and hope"
+   ],
+   "answer": 0,
+   "explain": "Control the crowd at the entry, not at the platform edge. Flow control plus capacity coordination manages a surge."
+  },
+  {
+   "q": "During a long disruption, staff should be positioned mainly:",
+   "options": [
+    "In offices completing reports",
+    "At passenger-facing points — platforms, gates, concourses — where people need help and information",
+    "At the depot",
+    "Wherever they prefer"
+   ],
+   "answer": 1,
+   "explain": "In disruption, visible staff are part of the service. Reports matter later; people need guidance now."
+  },
+  {
+   "q": "A failed train, a signalling fault and a crowd surge arrive together. The correct allocation of the in-charge's own attention is:",
+   "options": [
+    "Writing the incident report first",
+    "Personally repairing the signal fault",
+    "Keeping the overall picture, ensuring each problem has an owner, and sequencing by risk",
+    "Working the crowd gate himself"
+   ],
+   "answer": 2,
+   "explain": "The in-charge who dives into one task abandons the board. Coordination is his task; execution belongs to the owners."
+  },
+  {
+   "q": "Message discipline during simultaneous problems should become:",
+   "options": [
+    "Optional",
+    "Replaced by shouting across the room",
+    "Relaxed, since everyone is busy",
+    "Stricter — simultaneous problems multiply confusion, so clear, single, confirmed messages matter more, not less"
+   ],
+   "answer": 3,
+   "explain": "Crisis is when communication discipline pays most. Confusion is the second incident hiding inside the first."
+  },
+  {
+   "q": "A station faces a medical emergency on a platform while a delayed crowd grows impatient. Correct handling:",
+   "options": [
+    "Close the gates on everyone",
+    "Treat the crowd first — they are more numerous",
+    "Medical case is P1: first aid and ambulance via Operations Control Centre (OCC) immediately; in parallel, a second staff member manages crowd information",
+    "Ask the patient to wait for a quieter time"
+   ],
+   "answer": 2,
+   "explain": "Life first, in parallel. Delegation lets the crowd be managed at the same time — by someone else."
+  },
+  {
+   "q": "An unforeseen object is reported on the track during peak service. First principles demand:",
+   "options": [
+    "Protect first: stop/regulate movements in the affected section, inform Operations Control Centre (OCC), verify and remove only under protection, then restore after certification",
+    "Send a passenger to look",
+    "Ignore it if trains have passed safely once",
+    "Trains continue while it is identified"
+   ],
+   "answer": 0,
+   "explain": "Protect, inform, verify, act under protection, restore after certification. An unidentified track object is treated as a real obstruction until proved otherwise."
+  },
+  {
+   "q": "Two stations report conflicting information about the same disruption. Operations Control Centre (OCC) should:",
+   "options": [
+    "Let each station act on its own report",
+    "Stop all communication",
+    "Believe the senior station",
+    "Reconcile the reports — verify from an independent source and issue one confirmed plan to all"
+   ],
+   "answer": 3,
+   "explain": "Conflicting reports are themselves a risk. One verified picture, one plan, broadcast to all — that ends the confusion."
+  },
+  {
+   "q": "During a service disruption, a bus bridge is arranged between two stations. This is an example of:",
+   "options": [
+    "Giving up on the railway",
+    "Service continuity — keeping people moving by an alternative while the railway is restored",
+    "A punishment for staff",
+    "An abnormal mode declaration"
+   ],
+   "answer": 1,
+   "explain": "Continuity means the journey continues, even if the train cannot. Alternatives are part of operations, not an admission of defeat."
+  },
+  {
+   "q": "A controller must choose which of two simultaneous faults gets the only engineering team first. The deciding factor is:",
+   "options": [
+    "Which fault carries the higher safety risk and network impact",
+    "Which team leader is a friend",
+    "Which station complains loudest",
+    "Which fault is older"
+   ],
+   "answer": 0,
+   "explain": "Scarce resources follow risk and impact. That judgement — documented and communicated — is the supervisor's core skill."
+  },
+  {
+   "q": "Passengers are kept informed during a disruption, but the situation keeps changing. Announcements should:",
+   "options": [
+    "Stop changing to avoid confusion",
+    "Update honestly at the promised intervals, stating what has changed",
+    "Repeat the first announcement",
+    "Promise a fixed restoration time repeatedly"
+   ],
+   "answer": 1,
+   "explain": "Changing facts need changing announcements. Honesty about change maintains credibility; false fixed promises destroy it."
+  },
+  {
+   "q": "An unforeseen power dip affects several systems briefly, then all seems normal. The correct response is:",
+   "options": [
+    "Restart every system randomly",
+    "Assume all is well and forget it",
+    "Treat it as an incident: log it, check affected systems, watch for delayed effects, and report as per procedure",
+    "Blame the power company publicly"
+   ],
+   "answer": 2,
+   "explain": "'Seems normal' is not 'is normal'. Log, verify each system, and watch — unforeseen events often have second acts."
+  },
+  {
+   "q": "In simultaneous incidents, why must each problem have a named owner?",
+   "options": [
+    "To decide punishment later",
+    "Owners are needed only in big incidents",
+    "For the attendance register",
+    "So nothing is assumed to be someone else's job — every problem has one accountable person progressing it"
+   ],
+   "answer": 3,
+   "explain": "Unowned problems are the ones that grow quietly. A named owner per problem is the basic structure of multi-incident control."
+  },
+  {
+   "q": "A disruption coincides with the shift change. The greatest risk at this moment is:",
+   "options": [
+    "New staff enthusiasm",
+    "Uniform change",
+    "Loss of situational awareness through a weak handover — incidents, restrictions and pending actions must transfer completely, in writing and verbally",
+    "Tea break delays"
+   ],
+   "answer": 2,
+   "explain": "Shift change inside a disruption is the classic situational awareness (SA) trap. The handover must be at its most complete exactly when time feels shortest."
+  },
+  {
+   "q": "While handling a disruption, a second, unrelated alarm sounds and proves minor. It should be:",
+   "options": [
+    "Acknowledged, assessed, contained or safely queued with an owner — minor alarms during major incidents still get triaged",
+    "Treated as the new top priority automatically",
+    "Deleted from the log",
+    "Ignored entirely because a bigger incident is running"
+   ],
+   "answer": 0,
+   "explain": "Triage applies to newcomers too: assess, rank, assign. Ignoring alarms wholesale is how a second incident matures unseen."
+  },
+  {
+   "q": "The professional aim during any disruption is best stated as:",
+   "options": [
+    "Stop everything until conditions are perfect",
+    "Avoid all complaints",
+    "Restore the original timetable at any cost",
+    "Safety fully protected, the maximum workable service kept running, passengers informed, and restoration phased and certified"
+   ],
+   "answer": 3,
+   "explain": "That balance — safety absolute, service maximal within it, people informed — is exactly what scenario questions test."
+  },
+  {
+   "q": "A station controller facing three simultaneous problems should first:",
+   "options": [
+    "Start with the one nearest his office",
+    "Take a breath, rank by risk, protect life-safety items, assign/delegate the rest and inform Operations Control Centre (OCC) of the full picture",
+    "Attempt all three personally at once",
+    "Wait for Operations Control Centre (OCC) to notice"
+   ],
+   "answer": 1,
+   "explain": "Rank, protect, delegate, inform. The full picture to Operations Control Centre (OCC) early lets the network help carry the load."
+  },
+  {
+   "q": "Crowd pressure is building because of a disruption, and a passenger argument starts at the gate. Staff priority is:",
+   "options": [
+    "Keep the safety task first — crowd flow and information — while a designated staff member handles the dispute calmly",
+    "Close the station",
+    "Announce that passengers are at fault",
+    "Join the argument to win it"
+   ],
+   "answer": 0,
+   "explain": "Do not let a side-show consume the people doing the safety task. Delegate the dispute, protect the flow."
+  },
+  {
+   "q": "When an unforeseen situation has no exact procedure, decisions should be documented especially carefully because:",
+   "options": [
+    "Paperwork is punishment",
+    "The enquiry will judge the decision by the principles applied and facts available — the record shows both",
+    "Documentation replaces action",
+    "It impresses auditors"
+   ],
+   "answer": 1,
+   "explain": "Acting on principles is defensible when the record shows the facts you had and the principle you followed. Undocumented, it looks like guesswork."
+  },
+  {
+   "q": "A long disruption is ending section by section. Restoration should proceed:",
+   "options": [
+    "Only after midnight",
+    "All sections at once on one announcement",
+    "In phases, each section certified and communicated, with the plan updated for all points at each phase",
+    "Station by station in secret"
+   ],
+   "answer": 2,
+   "explain": "Phased, certified, communicated restoration rebuilds a stable service. A single big-bang restart often re-collapses it."
+  },
+  {
+   "q": "During simultaneous failures, a junior suggests a workable idea the in-charge had missed. The in-charge should:",
+   "options": [
+    "Ignore it to preserve authority",
+    "Ask him to write it for next week",
+    "Reject it — rank decides ideas",
+    "Take it on merit, credit it, and act if it improves safety or service"
+   ],
+   "answer": 3,
+   "explain": "In a crisis, ideas are judged by merit, not by the rank of the mouth they came from. Good in-charges harvest the room."
+  },
+  {
+   "q": "The common thread in every unforeseen-situation answer is:",
+   "options": [
+    "Blame the unusual circumstances",
+    "Wait and watch",
+    "Protect, inform, contain, decide on available facts, and document",
+    "Restore first"
+   ],
+   "answer": 2,
+   "explain": "Protect – Inform – Contain – Decide – Restore – Report. When no rule fits, the principles always do."
+  },
+  {
+   "q": "A disruption plan is working but a new, separate failure occurs in a healthy section. The plan should:",
+   "options": [
+    "Be re-assessed: the new failure gets triaged and owned, and the plan is openly revised and re-communicated",
+    "Be abandoned completely",
+    "Be kept secret from stations",
+    "Continue unchanged — the plan is fixed"
+   ],
+   "answer": 0,
+   "explain": "Adaptability is continuous. New facts enter the same triage, and the revised plan is broadcast like the original."
+  },
+  {
+   "q": "When several incidents occur at different locations at the same time, the first organisational step is to:",
+   "options": [
+    "Let every station handle its own problem independently",
+    "Establish a clear incident command structure — one incident commander at control level who owns the whole picture, prioritises and allocates resources across all sites",
+    "Close the entire network immediately in every case",
+    "Wait for the senior-most officer to arrive from home"
+   ],
+   "answer": 1,
+   "explain": "Simultaneous incidents compete for the same ambulances, staff and track access. Without one commander holding the whole picture, sites fight each other for resources and the worst incident may get the least help."
+  },
+  {
+   "q": "During a long multi-site disruption, stations should send control a standard Situation Report (SITREP) at fixed intervals mainly so that:",
+   "options": [
+    "Control can file paperwork",
+    "Operations Control Centre (OCC) works from one current, comparable picture of every site — crowd, casualties, service state and needs — instead of rumours and stale information",
+    "Stations can prove they are busy",
+    "Passengers can read them"
+   ],
+   "answer": 1,
+   "explain": "In a fast-changing disruption, information expires in minutes. Fixed-interval standard reports keep every decision at Operations Control Centre (OCC) based on the same fresh facts from all sites at once."
+  },
+  {
+   "q": "One section of a line is blocked, but the rest of the line is healthy. 'Short-turning' trains at an intermediate station helps recovery because it:",
+   "options": [
+    "Reduces the number of passengers",
+    "Maintains a regular, even service on the healthy section instead of letting all trains bunch up behind the blockage",
+    "Saves electricity only",
+    "Confuses passengers less than announcements"
+   ],
+   "answer": 1,
+   "explain": "If every train queues behind the blockage, the healthy section gets no service at all and a solid bunch forms. Short-turning keeps a clockwork service running where running is possible, and gives a clean pattern to extend when the blockage clears."
+  },
+  {
+   "q": "After a major disruption clears, forcing every train back to the printed timetable immediately usually fails because:",
+   "options": [
+    "Drivers dislike it",
+    "Trains, crews and passengers are all out of position — a phased recovery that first restores an even headway, then the full timetable, is safer and actually faster",
+    "The timetable is printed wrongly",
+    "Signals cannot be changed"
+   ],
+   "answer": 1,
+   "explain": "Recovery is a second operation of its own. An even, regular service — even if less frequent — is usable and stable; chasing the printed timetable with displaced trains and crews produces bunching, missed connections and fresh confusion."
+  },
+  {
+   "q": "An event occurs for which NO written procedure exists. The adaptable operator falls back on:",
+   "options": [
+    "Doing nothing until a procedure is written",
+    "First principles in order: protect life, stop or protect movements, inform Operations Control Centre (OCC), and apply the generic emergency plan while a specific response is built",
+    "Copying what a neighbouring railway did once",
+    "Asking passengers to vote"
+   ],
+   "answer": 1,
+   "explain": "Procedures cannot cover everything — that is exactly why first principles exist. Life first, then protection of movements, then communication upward: this sequence is safe in every unforeseen situation and buys time to build the specific response."
+  }
+ ]
+}

@@ -1,0 +1,393 @@
+{
+ "id": "tech-v-7",
+ "category": "technical",
+ "group": "Unit v — Emergency & Contingency Management",
+ "title": "Emergency Communication, Escalation & Coordination with Agencies",
+ "questions": [
+  {
+   "q": "During any major emergency, coordination with all outside agencies is done through one single point. That point is the:",
+   "options": [
+    "Operations Control Centre (OCC)",
+    "Station master of the nearest station",
+    "Senior-most train operator on site",
+    "Each department contacting agencies separately"
+   ],
+   "answer": 0,
+   "explain": "One point — the Operations Control Centre (OCC) — prevents confusion. Agencies get one voice, one brief and one plan."
+  },
+  {
+   "q": "The police are called to a railway emergency mainly for:",
+   "options": [
+    "Firefighting and rescue from fire",
+    "Law and order, security, crowd control and investigation",
+    "Medical treatment of casualties",
+    "Repair of signalling equipment"
+   ],
+   "answer": 1,
+   "explain": "Each agency has its subject: Police for law, order, security and investigation; fire and medical services have their own."
+  },
+  {
+   "q": "Fire services are called to an incident mainly for:",
+   "options": [
+    "Maintaining law and order",
+    "Treating patients during transport",
+    "Firefighting and rescue operations",
+    "Arranging buses for stranded passengers"
+   ],
+   "answer": 2,
+   "explain": "The Fire Service fights the fire and rescues; the Operations Control Centre (OCC) gives them access, information and electrical status."
+  },
+  {
+   "q": "Ambulances and medical services are responsible at an incident for:",
+   "options": [
+    "Cordoning the incident area",
+    "Certifying the track fit for trains",
+    "Informing the media about the incident",
+    "Casualty care and transporting the injured to hospital"
+   ],
+   "answer": 3,
+   "explain": "Medical services own casualty care — the railway's job is first aid, quick access and a prepared meeting point."
+  },
+  {
+   "q": "For a very large incident affecting a whole area, which authority joins the coordination?",
+   "options": [
+    "The railway catering contractor",
+    "Disaster management and the district administration",
+    "The nearest shopping mall management",
+    "The train crew association"
+   ],
+   "answer": 1,
+   "explain": "Major events outgrow the railway — disaster management and district administration bring area-wide resources."
+  },
+  {
+   "q": "Neighbouring transport operators are involved in a long disruption mainly to provide:",
+   "options": [
+    "Buses for bridging passengers around the affected section",
+    "Drivers for the trains",
+    "Spare signalling parts",
+    "Security guards for stations"
+   ],
+   "answer": 0,
+   "explain": "Bus bridging is the transport agencies' contribution when trains cannot carry the load."
+  },
+  {
+   "q": "A good first brief to an arriving agency must contain five things. Which set is correct?",
+   "options": [
+    "Train numbers, ticket sales, staff leave position, weather, and the day's delays",
+    "Only the location, nothing else is needed",
+    "The cause of the incident, proved and signed",
+    "Location and access point, the hazard, electrical status, casualties, and exactly what help is needed"
+   ],
+   "answer": 3,
+   "explain": "Location/access, hazard, electrical status, casualties and the help needed — this brief lets an agency start work in minutes."
+  },
+  {
+   "q": "Why is the access point mentioned specially in the brief to agencies?",
+   "options": [
+    "So that passengers can also use that gate",
+    "Because agencies are not allowed inside stations otherwise",
+    "So ambulances and fire tenders come to the one gate from where staff can guide them straight in",
+    "To reserve parking for officials' cars"
+   ],
+   "answer": 2,
+   "explain": "A named access point plus a waiting liaison saves the minutes that unguided searching wastes."
+  },
+  {
+   "q": "A liaison officer's job when an external agency arrives is to:",
+   "options": [
+    "Meet them at the access point, brief them and guide them to the site, staying as their railway contact",
+    "Take over the agency's own command",
+    "Write the press release for the incident",
+    "Count the agency's vehicles"
+   ],
+   "answer": 0,
+   "explain": "The liaison connects two organisations — the agency keeps its own command, the railway keeps the link alive."
+  },
+  {
+   "q": "Emergency escalation has three broad levels. Level 1 is:",
+   "options": [
+    "Corporate headquarters informing the ministry",
+    "The district administration taking over",
+    "The immediate alert by the crew or station staff who first face the incident",
+    "A press conference by senior management"
+   ],
+   "answer": 2,
+   "explain": "Level 1 is the first alert from the spot — everything else builds on how fast and clearly it is given."
+  },
+  {
+   "q": "In the escalation ladder, Level 2 means:",
+   "options": [
+    "The first passenger raising an alarm",
+    "Activation of the control room — the Operations Control Centre (OCC) and duty officers take charge of the response",
+    "Only the station sweeper being informed",
+    "The incident being closed and forgotten"
+   ],
+   "answer": 1,
+   "explain": "Level 2 puts the Operations Control Centre (OCC) and duty officers in command of resources and decisions."
+  },
+  {
+   "q": "Level 3 escalation is reached when:",
+   "options": [
+    "A single train is delayed by five minutes",
+    "One passenger asks for information",
+    "A station makes a routine announcement",
+    "Senior management and district authorities are brought in as the severity grows"
+   ],
+   "answer": 3,
+   "explain": "Level 3 matches the biggest incidents — the organisation's top and the district machinery join in."
+  },
+  {
+   "q": "Why is under-escalation of an emergency dangerous?",
+   "options": [
+    "It saves too much money",
+    "Senior officers feel left out",
+    "Help arrives late and too small — the incident grows faster than the response",
+    "The incident report becomes shorter"
+   ],
+   "answer": 2,
+   "explain": "Escalating late is a classic failure: the response must grow at least as fast as the incident."
+  },
+  {
+   "q": "During escalation, every level should be informed:",
+   "options": [
+    "Only after the lower level finishes its work",
+    "In parallel, not through a slow step-by-step chain",
+    "One level per hour",
+    "Only in writing, after the incident ends"
+   ],
+   "answer": 1,
+   "explain": "Parallel informing means senior help starts moving while local action continues — no waiting in a queue."
+  },
+  {
+   "q": "Safety-critical communication in an emergency must be:",
+   "options": [
+    "Clear, concise and accurate — short messages that say exactly what is needed",
+    "Long and detailed with full background history",
+    "Casual, to keep everyone relaxed",
+    "Given only once, never repeated"
+   ],
+   "answer": 0,
+   "explain": "In an emergency, a short exact message beats a long vague one — clarity is a safety device."
+  },
+  {
+   "q": "A message ordering a train movement during an emergency should be protected by:",
+   "options": [
+    "Speaking very loudly",
+    "Sending it through a passenger",
+    "Saying it only once, quickly",
+    "Read-back — the receiver repeats it and the sender confirms it is correct"
+   ],
+   "answer": 3,
+   "explain": "Read-back catches misheard words before they become wrong movements — vital when normal systems have failed."
+  },
+  {
+   "q": "An operator must pass an emergency message but the main radio channel is crowded. He should:",
+   "options": [
+    "Keep the message short, identify himself and the urgency, and use the laid-down priority for emergency traffic",
+    "Wait until the channel is free after the incident",
+    "Shout over other users continuously",
+    "Use his personal social media instead"
+   ],
+   "answer": 0,
+   "explain": "Emergency traffic has priority, and discipline — identity, urgency, brevity — gets it through a busy channel."
+  },
+  {
+   "q": "Passenger announcements during an emergency, through the Public Address System (PAS), should be:",
+   "options": [
+    "Avoided completely to prevent panic",
+    "Frequent, honest and updated — what happened, what to do, and what happens next",
+    "Given only in technical language",
+    "Made only after the incident is fully over"
+   ],
+   "answer": 1,
+   "explain": "The Public Address System (PAS) is an emergency tool: informed passengers cooperate, silent ones panic."
+  },
+  {
+   "q": "Why should technical jargon be avoided in emergency messages to passengers and outside agencies?",
+   "options": [
+    "Jargon is against the dress code",
+    "Agencies charge extra for jargon",
+    "It can be misunderstood — plain words carry the same meaning to everyone under stress",
+    "Passengers may record the message"
+   ],
+   "answer": 2,
+   "explain": "Under stress, plain language survives and jargon fails — the message must work for the listener, not the speaker."
+  },
+  {
+   "q": "Closed Circuit Television (CCTV) feeds from a station help the Operations Control Centre (OCC) during an emergency by:",
+   "options": [
+    "Recording evidence for ticket disputes only",
+    "Replacing the need for staff at the station",
+    "Entertaining passengers on platform screens",
+    "Giving control a live picture of crowds, smoke and passenger movement to guide decisions"
+   ],
+   "answer": 3,
+   "explain": "Closed Circuit Television (CCTV) is the Operations Control Centre's (OCC) eye at the station — crowd and smoke pictures shape evacuation decisions."
+  },
+  {
+   "q": "A fire brigade officer asks who is in charge of the railway side at the site. The correct answer points to:",
+   "options": [
+    "Whichever railway employee is standing nearest",
+    "The local incident commander (station controller at first, or the officer the Operations Control Centre (OCC) has placed in command)",
+    "The train operator of the last train",
+    "The agency officer himself"
+   ],
+   "answer": 1,
+   "explain": "One named railway commander at site — agencies must know exactly who speaks for the railway."
+  },
+  {
+   "q": "The fire brigade needs to use water near electrical equipment. Before they start, the railway must confirm:",
+   "options": [
+    "The electrical status — whether traction power in that area is isolated",
+    "The number of passengers evacuated",
+    "The colour of the equipment",
+    "The name of the power controller on leave"
+   ],
+   "answer": 0,
+   "explain": "Water plus live equipment is lethal — electrical status is a compulsory part of every fire-service brief."
+  },
+  {
+   "q": "Police need the incident area preserved after a rescue for their investigation. Railway staff should:",
+   "options": [
+    "Clear and wash the area immediately for the next train",
+    "Refuse, as trains are more important",
+    "Cooperate — protect the area as directed, while rescue and safety work always comes first",
+    "Allow passengers back to collect belongings first"
+   ],
+   "answer": 2,
+   "explain": "Life first, then evidence — once people are safe, the area is preserved for investigation as the police direct."
+  },
+  {
+   "q": "Rumours about an incident are spreading among passengers faster than facts. The best counter is:",
+   "options": [
+    "Ordering passengers not to talk",
+    "Denying that anything has happened",
+    "Switching off the announcement system",
+    "Frequent official announcements with honest, updated information"
+   ],
+   "answer": 3,
+   "explain": "Rumours grow in silence — regular truthful updates are the only real control."
+  },
+  {
+   "q": "Who should speak to the media during a major incident?",
+   "options": [
+    "Only the authorised spokesperson, with verified facts",
+    "Any staff member who is asked",
+    "The first passenger interviewed",
+    "The train operator at the site"
+   ],
+   "answer": 0,
+   "explain": "One authorised voice prevents contradictory versions — site staff refer media questions upwards."
+  },
+  {
+   "q": "An ambulance is coming for a patient at a station. The station's preparation includes:",
+   "options": [
+    "Closing all station gates",
+    "Keeping the access route clear and a staff member ready to guide the crew to the patient",
+    "Asking the patient to reach the gate himself",
+    "Switching off station lighting"
+   ],
+   "answer": 1,
+   "explain": "A clear route and a guide turn the ambulance's arrival into treatment within minutes."
+  },
+  {
+   "q": "During a multi-agency response, each agency works best when:",
+   "options": [
+    "All agencies take orders from the youngest officer present",
+    "Every agency does every task together",
+    "Agencies work without informing each other",
+    "Each keeps command of its own subject, coordinated through the Operations Control Centre (OCC) and the site commander"
+   ],
+   "answer": 3,
+   "explain": "Separate expert commands, one coordination point — that is how police, fire, medical and railway efforts add up instead of colliding."
+  },
+  {
+   "q": "The emergency contact list and agency numbers are kept ready mainly because:",
+   "options": [
+    "They are needed for the annual audit only",
+    "Staff must memorise them for examinations",
+    "In an emergency there is no time to search for numbers — they must be at hand, tested and current",
+    "They decorate the control room wall"
+   ],
+   "answer": 2,
+   "explain": "Prepared contacts are part of preparedness — an outdated number is a delay built into the plan."
+  },
+  {
+   "q": "A station reports a minor incident, but casualties keep increasing. Escalation should:",
+   "options": [
+    "Grow with the incident — inform the next levels in parallel and call more help early",
+    "Stay at the original level to avoid paperwork",
+    "Wait until the incident becomes major, then escalate",
+    "Be reduced, as help is already present"
+   ],
+   "answer": 0,
+   "explain": "Escalation follows severity in real time — rising casualties mean rising levels, immediately."
+  },
+  {
+   "q": "Why is every emergency communication logged with time at the Operations Control Centre (OCC)?",
+   "options": [
+    "To check which staff member talks the most",
+    "So decisions, orders and agency calls can be proved, reviewed and learned from afterwards",
+    "For the telephone bill",
+    "Because the log book must be filled daily"
+   ],
+   "answer": 1,
+   "explain": "The timed log is the incident's memory — enquiries and lessons learned are built from it."
+  },
+  {
+   "q": "A message about an evacuation must reach several stations at once. The best method is:",
+   "options": [
+    "Sending one staff member station to station",
+    "Waiting for each station to call and ask",
+    "A group/broadcast message from the Operations Control Centre (OCC), with each station confirming receipt",
+    "Announcing it only at the incident station"
+   ],
+   "answer": 2,
+   "explain": "Broadcast plus confirmation — everyone hears it together, and control knows everyone heard it."
+  },
+  {
+   "q": "During an emergency, a staff member receives an instruction he does not fully understand. He should:",
+   "options": [
+    "Ask for clarification and read back the instruction before acting",
+    "Act on his best guess to save time",
+    "Ignore the instruction",
+    "Pass it to a passenger to interpret"
+   ],
+   "answer": 0,
+   "explain": "An unclear instruction is a hazard — clarification and read-back cost seconds and prevent wrong actions."
+  },
+  {
+   "q": "After a major incident, a joint debrief with the agencies is held mainly to:",
+   "options": [
+    "Decide which agency to blame",
+    "Fix the compensation amount for passengers",
+    "Close the incident file formally only",
+    "Capture what worked and what failed, so coordination improves for the next incident"
+   ],
+   "answer": 3,
+   "explain": "Debriefs convert one incident into better coordination next time — blame is not the product, lessons are."
+  },
+  {
+   "q": "The Operations Control Centre (OCC) informs a hospital-bound ambulance about a patient. The most useful content is:",
+   "options": [
+    "The train's full maintenance history",
+    "Patient's condition as known, what first aid was given, and the exact station and access point for handover",
+    "The names of all other passengers",
+    "The railway's delay statement"
+   ],
+   "answer": 1,
+   "explain": "Condition, first aid given, and where to come — the medical crew plans from exactly these three."
+  },
+  {
+   "q": "Which is the correct overall pattern for emergency communication and escalation?",
+   "options": [
+    "Local staff handle everything alone and inform control at the end",
+    "Escalate slowly, one officer per hour, and keep agencies uninformed until arrival",
+    "Immediate local alert, control-room activation, parallel escalation as severity grows, one coordination point, everything logged",
+    "Wait for senior management before calling any agency"
+   ],
+   "answer": 2,
+   "explain": "Fast first alert, parallel growth, single coordination and a full log — the pattern every emergency answer follows."
+  }
+ ]
+}

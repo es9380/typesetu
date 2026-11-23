@@ -1,0 +1,448 @@
+{
+ "id": "tech-iii-2",
+ "category": "technical",
+ "group": "Unit iii — Safety Regulations & Standards",
+ "title": "Station, Passenger & OCC Safety",
+ "questions": [
+  {
+   "q": "What are the three main killers in a station, as taught in the book?",
+   "options": [
+    "The ticket queue, the stairs and the lights",
+    "The platform edge, the crowd, and fire",
+    "Noise, dust and delays",
+    "Lifts, shops and announcements"
+   ],
+   "answer": 1,
+   "explain": "Station safety thinking starts with these three: platform edge, crowd and fire."
+  },
+  {
+   "q": "Yellow-line discipline at a platform means:",
+   "options": [
+    "Passengers stand on the yellow line for a better view",
+    "Only children follow the yellow line",
+    "Passengers wait behind the yellow line until the train stops and doors open",
+    "The line is purely decorative"
+   ],
+   "answer": 2,
+   "explain": "The yellow line keeps passengers clear of the moving train and the platform edge until it is safe to board."
+  },
+  {
+   "q": "How should a dangerous crowd surge at a station be managed?",
+   "options": [
+    "Regulate entry at gates/concourse level before the platform becomes unsafe",
+    "Push more passengers onto the platform",
+    "Close the exits",
+    "Stop all announcements"
+   ],
+   "answer": 0,
+   "explain": "Crowd control works upstream: hold people at concourse/gates so the platform never reaches a dangerous density."
+  },
+  {
+   "q": "The gap between train and platform is mainly a risk of:",
+   "options": [
+    "Ticket loss",
+    "Mobile network loss",
+    "Extra cleaning work",
+    "Passengers falling or getting trapped between the train and the platform"
+   ],
+   "answer": 3,
+   "explain": "The train–platform gap is a classic interface risk, managed by alignment, announcements and staff vigilance."
+  },
+  {
+   "q": "Door trapping risk is reduced by which features and procedure?",
+   "options": [
+    "Painting doors yellow",
+    "Playing louder chimes",
+    "Obstruction detection, sensitive door edges and the re-open/re-close procedure",
+    "Locking doors permanently"
+   ],
+   "answer": 2,
+   "explain": "If something is trapped, sensitive edges detect it and the operator re-opens and re-closes the doors safely."
+  },
+  {
+   "q": "Platform Screen Door (PSD) discipline at a station means:",
+   "options": [
+    "Platform Screen Doors are kept working and respected as the barrier between passengers and track",
+    "Passengers may lean on PSDs freely",
+    "PSDs can be blocked open for ventilation",
+    "PSDs are only for decoration"
+   ],
+   "answer": 0,
+   "explain": "Platform Screen Doors (PSDs) are a safety barrier — they must function and be treated as the wall between platform and track."
+  },
+  {
+   "q": "On hearing of an escalator emergency, staff should first:",
+   "options": [
+    "Reverse the escalator at full speed",
+    "Ignore it until the crowd clears",
+    "Switch off station lights",
+    "Use the escalator emergency stop and assist passengers as per procedure"
+   ],
+   "answer": 3,
+   "explain": "The emergency stop is there for exactly this moment; then help passengers and follow the station procedure."
+  },
+  {
+   "q": "A passenger is stuck in a lift. Staff should follow:",
+   "options": [
+    "Forcing the doors with any available tool at once",
+    "The lift rescue procedure, keeping the passenger informed and calm",
+    "Asking the passenger to climb out through the roof on their own",
+    "Waiting until the next day"
+   ],
+   "answer": 1,
+   "explain": "Lift rescue is a laid-down procedure — communicate with the trapped passenger and rescue as prescribed."
+  },
+  {
+   "q": "On a fire alarm in a station, the immediate priorities are:",
+   "options": [
+    "Finish the current announcement first",
+    "Respond as per the fire procedure — alert, protect passengers and start evacuation if required",
+    "Lock the station exits",
+    "Hide the alarm from passengers"
+   ],
+   "answer": 1,
+   "explain": "Fire alarm response is procedural: alert control, protect people, evacuate when required — escape routes must be clear."
+  },
+  {
+   "q": "Why must evacuation routes and escape paths be kept clear at all times?",
+   "options": [
+    "For inspection photographs",
+    "So cleaning is easier",
+    "So passengers and staff can escape quickly in a fire or emergency",
+    "They are not important"
+   ],
+   "answer": 2,
+   "explain": "A blocked escape path turns an incident into a tragedy — no storage is allowed in escape routes."
+  },
+  {
+   "q": "Which passengers get priority assistance in stations?",
+   "options": [
+    "Divyangjan, elderly, children and sick passengers",
+    "Only season-ticket holders",
+    "Only passengers with luggage",
+    "Only staff relatives"
+   ],
+   "answer": 0,
+   "explain": "Vulnerable passengers get priority help; staff are trained in first response and wheelchair/evacuation handling."
+  },
+  {
+   "q": "Staff assisting a wheelchair user during an evacuation should be:",
+   "options": [
+    "Any passer-by",
+    "Only the train operator",
+    "Nobody — wheelchair users wait alone",
+    "Trained in wheelchair and evacuation handling for Divyangjan passengers"
+   ],
+   "answer": 3,
+   "explain": "Evacuating a Divyangjan passenger is a trained task, part of station staff's first-response skills."
+  },
+  {
+   "q": "Operations Control Centre (OCC) maintains the 'safety picture'. This means Operations Control Centre (OCC):",
+   "options": [
+    "Only watches Closed-Circuit Television (CCTV) for entertainment",
+    "Only announces train timings",
+    "Holds the overall view of safety across the network and authorises safety-critical actions",
+    "Works only during accidents"
+   ],
+   "answer": 2,
+   "explain": "Operations Control Centre (OCC) authorises degraded working, possessions, isolations and emergency response — it owns the network safety picture."
+  },
+  {
+   "q": "Which of these does Operations Control Centre (OCC) authorise?",
+   "options": [
+    "Degraded working, possessions, power isolations (with power control) and service suspension/resumption",
+    "Staff leave applications",
+    "Canteen purchases",
+    "Advertising displays"
+   ],
+   "answer": 0,
+   "explain": "Anything that changes the safety state of the railway goes through Operations Control Centre (OCC) authorisation."
+  },
+  {
+   "q": "Every safety-critical Operations Control Centre (OCC) instruction must be:",
+   "options": [
+    "Given casually and forgotten",
+    "Sent only by hand signal",
+    "Kept secret from stations",
+    "Logged with time, given in standard format and acknowledged by repeat-back"
+   ],
+   "answer": 3,
+   "explain": "Time-stamped logging, standard format and repeat-back make Operations Control Centre (OCC) instructions traceable and error-proof."
+  },
+  {
+   "q": "Operations Control Centre (OCC) must never issue an instruction that conflicts with an existing protection unless it first:",
+   "options": [
+    "Asks the driver to be careful",
+    "Removes that protection formally",
+    "Writes it on a sticky note",
+    "Ignores the protection"
+   ],
+   "answer": 1,
+   "explain": "Protections are removed formally, in order — never silently overridden by a new instruction."
+  },
+  {
+   "q": "For critical Operations Control Centre (OCC) instructions, which verification practice is used?",
+   "options": [
+    "One person guessing",
+    "Two-person verification before the instruction is executed",
+    "Passenger confirmation",
+    "No verification is needed"
+   ],
+   "answer": 1,
+   "explain": "Two-person verification is a second pair of eyes on the instructions that can put trains and people together."
+  },
+  {
+   "q": "Scenario: The platform is filling fast and the next train is 5 minutes away. Best station action:",
+   "options": [
+    "Let everyone in to avoid complaints",
+    "Open the Platform Screen Doors (PSDs) early",
+    "Regulate entry at the concourse/gates and make announcements, keeping the platform edge safe",
+    "Ask passengers to stand closer to the edge"
+   ],
+   "answer": 2,
+   "explain": "Control the crowd before the platform becomes unsafe — entry regulation is the prescribed tool."
+  },
+  {
+   "q": "Scenario: A passenger's bag strap is trapped in the closed train door. The operator should:",
+   "options": [
+    "Use the re-open/re-close procedure after checking obstruction detection indications",
+    "Depart immediately",
+    "Ask the passenger to pull harder while moving",
+    "Ignore the indication"
+   ],
+   "answer": 0,
+   "explain": "Sensitive edges and obstruction detection exist for this; re-open, clear the obstruction, then close and check again."
+  },
+  {
+   "q": "Scenario: An elderly passenger falls on the platform. Staff should:",
+   "options": [
+    "Leave them until the train arrives",
+    "Only take a photograph for the report",
+    "Ask other passengers to carry them to a train",
+    "Give first response, assist the passenger and inform station control/Operations Control Centre (OCC) as per procedure"
+   ],
+   "answer": 3,
+   "explain": "Station staff are trained in first response — help first, inform control, and record as required."
+  },
+  {
+   "q": "Why is storage of material in escape paths strictly prohibited?",
+   "options": [
+    "It looks untidy",
+    "It blocks advertisements",
+    "It can block evacuation and cost lives during a fire or emergency",
+    "It makes cleaning slower"
+   ],
+   "answer": 2,
+   "explain": "Escape paths are life-safety equipment; storing anything in them defeats the evacuation plan."
+  },
+  {
+   "q": "What is a 'crowd holding area' used for in station safety?",
+   "options": [
+    "Holding passengers in a safe area so platform crowding stays within safe limits",
+    "Selling tickets",
+    "Parking staff vehicles",
+    "Storing cleaning material"
+   ],
+   "answer": 0,
+   "explain": "Holding areas let staff meter the flow of passengers instead of letting the platform overfill."
+  },
+  {
+   "q": "Which is an Operations Control Centre (OCC) safety duty during an emergency?",
+   "options": [
+    "Cooking for the staff",
+    "Selling tickets at the station",
+    "Driving the rescue train personally in all cases",
+    "Authorising and coordinating the emergency response, including service suspension or resumption"
+   ],
+   "answer": 3,
+   "explain": "Operations Control Centre (OCC) coordinates the response and decides suspension/resumption — that coordination is its safety role."
+  },
+  {
+   "q": "Time-stamped logging of Operations Control Centre (OCC) instructions helps mainly because:",
+   "options": [
+    "It makes the log book heavier",
+    "It creates an exact record of who instructed what, and when, for review and investigation",
+    "It replaces the need for repeat-back",
+    "It allows instructions to be given casually"
+   ],
+   "answer": 1,
+   "explain": "The log is the memory of the control room — vital for learning and for any later enquiry."
+  },
+  {
+   "q": "A passenger is found leaning against a Platform Screen Door (PSD), blocking its movement. Staff should:",
+   "options": [
+    "Start the train anyway",
+    "Move the passenger away politely and check the Platform Screen Door (PSD) functions normally",
+    "Remove the PSD from service without informing anyone",
+    "Ignore it as harmless"
+   ],
+   "answer": 1,
+   "explain": "Platform Screen Doors (PSDs) must be free to operate; staff intervene early and verify the door works before relying on it."
+  },
+  {
+   "q": "Which combination makes the train–platform interface safer?",
+   "options": [
+    "Louder music on the platform",
+    "More advertisements",
+    "Platform Screen Door (PSD) discipline, yellow-line discipline and door obstruction detection working together",
+    "Faster door closing"
+   ],
+   "answer": 2,
+   "explain": "Interface safety is layered: screen doors, waiting discipline and sensitive door edges each cover a different failure."
+  },
+  {
+   "q": "In a station fire, why are evacuation routes checked in advance during normal working?",
+   "options": [
+    "Because a route found blocked during a fire is a route that fails when it is needed most",
+    "For exercise only",
+    "To complete a formality",
+    "They are never checked"
+   ],
+   "answer": 0,
+   "explain": "Preparedness means the escape route is proved clear before the emergency, not discovered blocked during it."
+  },
+  {
+   "q": "What should happen before Operations Control Centre (OCC) authorises resumption of normal service after an emergency at a station?",
+   "options": [
+    "A fixed waiting time of one hour in all cases",
+    "The next shift taking over",
+    "Passengers asking for trains",
+    "Confirmation that the emergency is over and the station/section is safe for normal working"
+   ],
+   "answer": 3,
+   "explain": "Resumption is a safety decision by Operations Control Centre (OCC) based on confirmation of safety, not on the clock or on pressure."
+  },
+  {
+   "q": "Which staff action best protects a sick passenger on a platform?",
+   "options": [
+    "Asking them to board any train quickly",
+    "Leaving them on a bench unattended",
+    "First response by trained staff, priority assistance and arranging medical help through control",
+    "Only giving them water and walking away"
+   ],
+   "answer": 2,
+   "explain": "Sick passengers are a priority category — first response plus medical help arranged through control."
+  },
+  {
+   "q": "The Operations Control Centre (OCC) instruction format being 'standard' mainly prevents:",
+   "options": [
+    "Misunderstanding — everyone hears the same structure and can repeat it back exactly",
+    "The need for telephones",
+    "Delays in typing the log",
+    "Passengers hearing announcements"
+   ],
+   "answer": 0,
+   "explain": "Standard format plus repeat-back is how safety-critical communication avoids the telephone-game error."
+  },
+  {
+   "q": "Scenario: Two instructions exist — an old protection for a worksite and a new request to run a train through it. Operations Control Centre (OCC) should:",
+   "options": [
+    "Authorise the train and hope the worksite is clear",
+    "Let the driver decide on arrival",
+    "Cancel the protection verbally later",
+    "Formally remove the protection first, in order, before authorising the train"
+   ],
+   "answer": 3,
+   "explain": "An instruction conflicting with a protection can only follow the formal removal of that protection."
+  },
+  {
+   "q": "Which is correct about escalator safety in stations?",
+   "options": [
+    "Escalators need no emergency provision",
+    "Emergency stops must be known to staff and used immediately in an escalator emergency",
+    "Passengers operate all controls themselves",
+    "Escalators are switched off permanently"
+   ],
+   "answer": 1,
+   "explain": "Staff must know and use the escalator emergency stop without hesitation when someone is in danger."
+  },
+  {
+   "q": "Why do stations regulate entry instead of only controlling the platform?",
+   "options": [
+    "To sell more tickets",
+    "Because once a platform is dangerously full, options are few — prevention at entry is safer",
+    "To keep the concourse busy",
+    "Entry regulation is not done"
+   ],
+   "answer": 1,
+   "explain": "Crowd safety is won at the gate, not at the platform edge."
+  },
+  {
+   "q": "A Divyangjan passenger needs to evacuate from a platform. The correct approach is:",
+   "options": [
+    "The passenger is left until last with no plan",
+    "Other passengers are asked to carry the wheelchair down stairs without guidance",
+    "Trained staff assist using the wheelchair/evacuation handling procedure",
+    "The lift is used during a fire without checking procedure"
+   ],
+   "answer": 2,
+   "explain": "Divyangjan evacuation is planned and performed by trained staff — it is part of station safety, not an afterthought."
+  },
+  {
+   "q": "Operations Control Centre (OCC) logging, standard format and repeat-back together form part of which unit's subject as well?",
+   "options": [
+    "Safety-critical communication and coordination",
+    "Ticketing",
+    "Catering",
+    "Advertising"
+   ],
+   "answer": 0,
+   "explain": "These Operations Control Centre (OCC) practices are the safety-critical communication discipline examined across Units iii and vi."
+  },
+  {
+   "q": "The yellow line painted along a platform edge is provided to:",
+   "options": [
+    "Decorate the platform",
+    "Mark the safe standing distance — passengers must wait behind it, away from the platform edge and moving trains",
+    "Show where luggage should be kept",
+    "Indicate the coach positions only"
+   ],
+   "answer": 1,
+   "explain": "The yellow line is a warning line: behind it, a passenger is clear of the train's dynamic envelope and of the platform-edge gap. Announcements and staff repeatedly pull passengers back behind this line."
+  },
+  {
+   "q": "A passenger's hand is trapped in a closing train door and the train is about to start. The platform staff's immediate action is to:",
+   "options": [
+    "Wave at the driver and hope he notices",
+    "Use the emergency stop facility / alert the train crew at once to prevent departure until the passenger is freed",
+    "Pull the passenger out by force while the train moves",
+    "Wait for the next station staff to act"
+   ],
+   "answer": 1,
+   "explain": "A departing train with a trapped passenger can drag and kill. The emergency stop plunger/facility and an immediate alert to the crew exist exactly for this second-critical situation — departure must be prevented first, everything else after."
+  },
+  {
+   "q": "On a confirmed fire in a station, passengers must be evacuated:",
+   "options": [
+    "By the shortest route even if it passes through smoke",
+    "Along smoke-free, protected escape routes to a safe assembly point, while trains are stopped from entering the affected station",
+    "Only after the fire is fully extinguished",
+    "Through the track area in all cases"
+   ],
+   "answer": 1,
+   "explain": "Smoke, not flame, kills most fire victims. Evacuation uses protected, smoke-free routes to an assembly point, and Operations Control Centre (OCC) stops trains from bringing more passengers into the affected station."
+  },
+  {
+   "q": "An unattended bag is found on a platform. Station staff should:",
+   "options": [
+    "Open it to check the contents",
+    "Not touch it, cordon the area, keep passengers away and inform Operations Control Centre (OCC) / security / police as per procedure",
+    "Throw it onto the track",
+    "Announce the owner's name and wait"
+   ],
+   "answer": 1,
+   "explain": "An unattended bag is treated as a possible security threat until cleared by security agencies. Touching or moving it can trigger a device and destroys evidence — cordon, clear people away and escalate."
+  },
+  {
+   "q": "A passenger has fallen onto the track at a station. Before anyone goes down to rescue him, it must be ensured that:",
+   "options": [
+    "The next train is only a few minutes away",
+    "Train movements are stopped and traction power is isolated through Operations Control Centre (OCC) for that section",
+    "Passengers have finished filming",
+    "The passenger is conscious"
+   ],
+   "answer": 1,
+   "explain": "A rescuer on a live track with live traction power becomes the second casualty. Movements are stopped and power isolated through Operations Control Centre (OCC) first — only then is the rescue attempted under protection."
+  }
+ ]
+}

@@ -1,0 +1,393 @@
+{
+ "id": "tech-ii-2",
+ "category": "technical",
+ "group": "Unit ii — Operational Systems & Interfaces",
+ "title": "Rolling Stock & Train Operating Interfaces",
+ "questions": [
+  {
+   "q": "Rolling stock means:",
+   "options": [
+    "The train itself — its coaches, systems and everything the operator interfaces with",
+    "Only the track vehicles in the depot",
+    "The station building",
+    "The ticket stock"
+   ],
+   "answer": 0,
+   "explain": "Rolling stock is the train; the 'interface' is everything the operator touches or depends on in it."
+  },
+  {
+   "q": "TCMS stands for:",
+   "options": [
+    "Track Circuit Monitoring Scheme",
+    "Train Control & Management System",
+    "Telecom Control Management Service",
+    "Traction Current Measurement System"
+   ],
+   "answer": 1,
+   "explain": "Train Control and Management System (TCMS) is the train's computer network, giving health and fault data to the crew and Operations Control Centre (OCC)."
+  },
+  {
+   "q": "The role of Train Control and Management System (TCMS) is to:",
+   "options": [
+    "Collect fares from passengers",
+    "Control platform screen doors",
+    "Provide the train's health and fault data to the crew and Operations Control Centre (OCC)",
+    "Switch traction power sections"
+   ],
+   "answer": 2,
+   "explain": "Most modern train faults are first 'seen' through Train Control and Management System (TCMS) by Operations Control Centre (OCC), not by looking at the train."
+  },
+  {
+   "q": "Which of these is a train system the operations team interfaces with?",
+   "options": [
+    "Station escalators",
+    "Ticket vending machines",
+    "Building management system",
+    "Traction and braking"
+   ],
+   "answer": 3,
+   "explain": "Operations interfaces with traction/braking, doors, HVAC, lighting, Public Address (PA)/Passenger Information System (PIS), Closed-Circuit Television (CCTV) and fire detection on the train."
+  },
+  {
+   "q": "Regenerative braking means:",
+   "options": [
+    "Brakes are regenerated daily in the depot",
+    "While braking, the traction motors act as generators and feed electrical energy back to the Overhead Equipment (OHE)",
+    "Energy is wasted as heat only",
+    "It works only on diesel trains"
+   ],
+   "answer": 1,
+   "explain": "Regeneration returns braking energy to the supply system instead of wasting it as heat."
+  },
+  {
+   "q": "Key operational data received from the train includes:",
+   "options": [
+    "Passenger ticket details only",
+    "Catering sales",
+    "Coach cleaning schedules",
+    "Fault alarms, brake status, door status, speed and location"
+   ],
+   "answer": 3,
+   "explain": "Fault alarms, brake/door status, speed and location flow from the train to crew and Operations Control Centre (OCC)."
+  },
+  {
+   "q": "In modern trains, most faults are first detected:",
+   "options": [
+    "By Operations Control Centre (OCC)/Train Control and Management System (TCMS) alarms, not by physically looking at the train",
+    "By passengers shouting",
+    "During weekly inspection only",
+    "By station staff watching the platform"
+   ],
+   "answer": 0,
+   "explain": "The train reports itself — Operations Control Centre (OCC) usually sees the fault data before anyone sees the train."
+  },
+  {
+   "q": "The traction interlock ensures that:",
+   "options": [
+    "Doors cannot close at stations",
+    "Power is always available",
+    "The train cannot take power (traction) while a passenger door is detected open",
+    "Brakes release automatically"
+   ],
+   "answer": 2,
+   "explain": "Like a lift refusing to move with open doors, a doubt about doors means no movement — fail-safe."
+  },
+  {
+   "q": "The emergency brake system on a train is designed to be:",
+   "options": [
+    "Operated only by Operations Control Centre (OCC)",
+    "Used only in depots",
+    "Disabled when Automatic Train Operation (ATO) is on",
+    "Fail-safe — loss of air/electrical continuity applies the brakes"
+   ],
+   "answer": 3,
+   "explain": "If the brake continuity is lost, brakes apply automatically — the failure itself creates the safe state."
+  },
+  {
+   "q": "A deadman's vigilance device protects against:",
+   "options": [
+    "Driver incapacitation — it stops the train if the driver stops responding",
+    "Ticketless travel",
+    "Overloading of coaches",
+    "Power theft"
+   ],
+   "answer": 0,
+   "explain": "The operator must acknowledge at intervals; no response means emergency braking."
+  },
+  {
+   "q": "How does the deadman's device know the driver has stopped responding?",
+   "options": [
+    "It reads the driver's pulse",
+    "Operations Control Centre (OCC) watches the cab camera continuously",
+    "The driver must acknowledge/actuate it at intervals; silence triggers emergency brake application",
+    "Passengers press a button"
+   ],
+   "answer": 2,
+   "explain": "Periodic acknowledgement proves vigilance; a missed cycle applies the emergency brake."
+  },
+  {
+   "q": "A defective passenger door on a coach should be dealt with by:",
+   "options": [
+    "Removing the coach immediately at any cost",
+    "Isolating that door as per procedure and continuing under control",
+    "Asking passengers to hold it shut",
+    "Cancelling the train in all cases"
+   ],
+   "answer": 1,
+   "explain": "Door isolation is the standard controlled response — the faulty door is taken out of service, not fought with."
+  },
+  {
+   "q": "Fire detection in coaches is part of which interface?",
+   "options": [
+    "Automatic Fare Collection (AFC) system",
+    "Platform Screen Door (PSD) system",
+    "The train's on-board safety systems interfacing with crew and Operations Control Centre (OCC)",
+    "Supervisory Control and Data Acquisition (SCADA) power control"
+   ],
+   "answer": 2,
+   "explain": "Coach fire detection alerts crew/Operations Control Centre (OCC) so the emergency response can start early."
+  },
+  {
+   "q": "The train operator's cab-to-Operations Control Centre (OCC) radio is:",
+   "options": [
+    "A passenger facility",
+    "Part of the rolling-stock operating interface",
+    "Used only in depots",
+    "A backup ticket channel"
+   ],
+   "answer": 1,
+   "explain": "The cab radio links the operator to Operations Control Centre (OCC) — it is part of how the train is operated, not an extra."
+  },
+  {
+   "q": "The train cab is best compared to:",
+   "options": [
+    "A ticket counter",
+    "A control tower",
+    "A waiting room",
+    "A car's dashboard — displays and warnings that tell the operator the machine's state"
+   ],
+   "answer": 3,
+   "explain": "Speed, door lights and fault warnings in the cab play the same role as a car's dashboard, at railway scale."
+  },
+  {
+   "q": "A warning indication in the cab that a coach has a fault should lead the operator to:",
+   "options": [
+    "Follow the procedure for that fault, e.g. isolate the affected coach/equipment and inform Operations Control Centre (OCC)",
+    "Ignore it until the terminus in all cases",
+    "Stop and evacuate immediately for every alarm",
+    "Switch off Train Control and Management System (TCMS)"
+   ],
+   "answer": 0,
+   "explain": "Alarms have defined procedures — isolate where prescribed, inform Operations Control Centre (OCC), and continue or withdraw as the procedure says."
+  },
+  {
+   "q": "Namo Bharat trainsets are built by:",
+   "options": [
+    "Alstom, at Savli (Gujarat)",
+    "Delhi Metro Rail Corporation (DMRC), at Delhi",
+    "Integral Coach Factory",
+    "BEML, at Bengaluru"
+   ],
+   "answer": 0,
+   "explain": "Namo Bharat trainsets are Alstom-built at Savli, aerodynamic and designed for Regional Rapid Transit System (RRTS) speeds."
+  },
+  {
+   "q": "Namo Bharat trainsets are normally formed of:",
+   "options": [
+    "2 coaches, fixed",
+    "6 coaches, expandable",
+    "12 coaches, fixed",
+    "4 coaches, non-expandable"
+   ],
+   "answer": 1,
+   "explain": "The extract describes 6-coach (expandable) aerodynamic trainsets."
+  },
+  {
+   "q": "The design speed of Namo Bharat trainsets is:",
+   "options": [
+    "100 kmph",
+    "120 kmph",
+    "180 kmph",
+    "160 kmph"
+   ],
+   "answer": 2,
+   "explain": "Design speed 180 kmph; operational maximum is 160 and average about 100 — do not mix them."
+  },
+  {
+   "q": "Which train system keeps passengers comfortable and is an operations interface?",
+   "options": [
+    "Automatic Fare Collection (AFC) gates",
+    "Axle counters",
+    "Eurobalises",
+    "HVAC (heating, ventilation and air-conditioning)"
+   ],
+   "answer": 3,
+   "explain": "HVAC, lighting and Public Address (PA)/Passenger Information System (PIS) inside the train are all systems the operations team interfaces with."
+  },
+  {
+   "q": "Closed-Circuit Television (CCTV) inside the train helps operations by:",
+   "options": [
+    "Counting tickets",
+    "Letting crew/Operations Control Centre (OCC) see passenger-area situations without being physically present",
+    "Driving the train",
+    "Charging the Overhead Equipment (OHE)"
+   ],
+   "answer": 1,
+   "explain": "On-board Closed-Circuit Television (CCTV) feeds situational awareness to crew and Operations Control Centre (OCC) during incidents."
+  },
+  {
+   "q": "If Train Control and Management System (TCMS) shows a brake status fault on one coach before departure, the correct approach is:",
+   "options": [
+    "Depart anyway since one coach does not matter",
+    "Cancel all services on the line",
+    "Ask passengers to check the brakes",
+    "Follow the prescribed fault procedure and inform Operations Control Centre (OCC) before deciding to run"
+   ],
+   "answer": 3,
+   "explain": "Brake status is safety data — the procedure and Operations Control Centre (OCC) decide, not guesswork."
+  },
+  {
+   "q": "A door status indication shows 'open' even after the close command at a station. The train:",
+   "options": [
+    "Cannot take traction power because of the door interlock, until the door is proved closed or isolated",
+    "Departs normally — indications are advisory",
+    "Opens all Platform Screen Doors (PSDs) permanently",
+    "Switches to diesel mode"
+   ],
+   "answer": 0,
+   "explain": "The traction-door interlock blocks movement on a door doubt — check, close or isolate the door first."
+  },
+  {
+   "q": "Public Address (PA)/Passenger Information System (PIS) inside the train is used by operations to:",
+   "options": [
+    "Sell tickets",
+    "Control signalling",
+    "Announce stops, destinations and safety/disruption information to passengers",
+    "Monitor Overhead Equipment (OHE) voltage"
+   ],
+   "answer": 2,
+   "explain": "On-board Public Address (PA)/Passenger Information System (PIS) keeps passengers informed, which is an operational duty during disruptions."
+  },
+  {
+   "q": "Why does Operations Control Centre (OCC) need train location and speed data continuously?",
+   "options": [
+    "Only for preparing statistics",
+    "To calculate fares",
+    "To plan coach cleaning",
+    "To regulate the service, protect separation and respond to incidents"
+   ],
+   "answer": 3,
+   "explain": "Location and speed are core operational data for supervision, regulation and emergency response."
+  },
+  {
+   "q": "The interface between the operator and the train mainly consists of:",
+   "options": [
+    "Cab controls, door controls, brakes, TMS screens and alarms",
+    "Ticket gates and TVMs",
+    "Platform screen doors",
+    "Station BMS"
+   ],
+   "answer": 0,
+   "explain": "Cab controls, door controls, brakes, TMS displays and alarms are what the operator actually works with."
+  },
+  {
+   "q": "If the train's fire detection raises an alarm in a coach, the first information path is:",
+   "options": [
+    "Passengers inform the station by phone",
+    "It appears in the next day's report",
+    "Alarm to the crew (and Operations Control Centre (OCC) via train systems) so the fire procedure can begin",
+    "Only the depot knows"
+   ],
+   "answer": 2,
+   "explain": "On-board detection alerts the crew/Operations Control Centre (OCC) immediately — early warning is its whole purpose."
+  },
+  {
+   "q": "Which statement about regenerative braking is correct?",
+   "options": [
+    "It is used only at depots",
+    "It feeds energy back to the Overhead Equipment (OHE)/supply system while slowing the train",
+    "It replaces the emergency brake",
+    "It works without electric traction"
+   ],
+   "answer": 1,
+   "explain": "During regenerative braking the motors generate, returning energy to the overhead supply."
+  },
+  {
+   "q": "A train reports repeated door faults from the same coach during service. The operationally sound decision is typically:",
+   "options": [
+    "Keep resetting it indefinitely without informing anyone",
+    "Open all doors manually at every station",
+    "Isolate the defective door/coach function as per procedure, inform Operations Control Centre (OCC), and withdraw or attend the train as directed",
+    "Ignore it because doors are not safety items"
+   ],
+   "answer": 2,
+   "explain": "Repeated faults are handled by isolation, Operations Control Centre (OCC) information and a planned withdrawal/attention — not endless resets."
+  },
+  {
+   "q": "The operator notices an unusual cab alarm he cannot identify. Best action?",
+   "options": [
+    "Silence it and continue without telling anyone",
+    "Treat it as a real fault: follow the alarm procedure and contact Operations Control Centre (OCC)",
+    "Ask a passenger",
+    "Wait for the next day's maintenance report"
+   ],
+   "answer": 1,
+   "explain": "Unidentified alarms are treated seriously — procedure plus Operations Control Centre (OCC) communication is the interface working as designed."
+  },
+  {
+   "q": "The pantograph on the train roof interfaces with the Overhead Equipment (OHE) to:",
+   "options": [
+    "Measure the train's speed",
+    "Collect electric current for traction while keeping safe, continuous contact at speed",
+    "Hold the radio antenna",
+    "Support the air-conditioning unit"
+   ],
+   "answer": 1,
+   "explain": "The pantograph presses against the contact wire of the Overhead Equipment (OHE) with controlled pressure — too little causes arcing and power loss, too much damages the wire."
+  },
+  {
+   "q": "Sanders fitted on a train are used to:",
+   "options": [
+    "Clean the windows",
+    "Drop sand on the rail head to improve wheel–rail grip when starting or braking on slippery rails",
+    "Fill the brake blocks",
+    "Mark the platform edge"
+   ],
+   "answer": 1,
+   "explain": "Sand increases adhesion on wet or leaf-contaminated rails, helping the train accelerate and brake without slipping or sliding."
+  },
+  {
+   "q": "Wheel Slide Protection (WSP) during braking works by:",
+   "options": [
+    "Locking all wheels firmly",
+    "Detecting an axle that is sliding and momentarily easing its brake so the wheel keeps rotating",
+    "Applying the parking brake",
+    "Switching off the motors"
+   ],
+   "answer": 1,
+   "explain": "A sliding wheel grinds a flat spot on itself and stops braking well; Wheel Slide Protection (WSP) releases and reapplies that axle's brake rapidly to keep it turning."
+  },
+  {
+   "q": "The train's battery system is an operations interface because, if the main power supply fails, it:",
+   "options": [
+    "Drives the train to the next station by itself",
+    "Keeps emergency lighting, controls and communication alive for a limited time",
+    "Recharges the Overhead Equipment (OHE)",
+    "Opens all doors permanently"
+   ],
+   "answer": 1,
+   "explain": "Batteries are the train's built-in backup — like an Uninterruptible Power Supply (UPS), they keep the most essential systems alive long enough to detrain passengers safely."
+  },
+  {
+   "q": "If a train fails in a section and cannot move at all, it can be rescued by another train mainly because trains are fitted with:",
+   "options": [
+    "Tow ropes in every coach",
+    "Couplers that let a healthy train attach and push or pull the failed train to a station or depot",
+    "Spare engines in the last coach",
+    "Road wheels for highway use"
+   ],
+   "answer": 1,
+   "explain": "Compatible couplers and brake connections let a rescue train move a dead train clear of the running line — the standard way to reopen a blocked section."
+  }
+ ]
+}

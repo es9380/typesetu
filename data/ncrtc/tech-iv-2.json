@@ -1,0 +1,448 @@
+{
+ "id": "tech-iv-2",
+ "category": "technical",
+ "group": "Unit iv — Risk Assessment & Operational Safety",
+ "title": "Risk Mitigation, Safety Barriers & Preventive Measures",
+ "questions": [
+  {
+   "q": "The hierarchy of controls, in order of strength, is:",
+   "options": [
+    "Personal Protective Equipment (PPE) → Administrative → Engineering → Substitution → Elimination",
+    "Elimination → Substitution → Engineering → Administrative → PPE",
+    "Engineering → PPE → Elimination → Administrative → Substitution",
+    "Administrative → Elimination → PPE → Engineering → Substitution"
+   ],
+   "answer": 1,
+   "explain": "Learn this order exactly as examiners ask it: remove it, replace it, engineer it, administer it, and only lastly wear protection against it."
+  },
+  {
+   "q": "The strongest control in the hierarchy is:",
+   "options": [
+    "Personal Protective Equipment (PPE)",
+    "Training",
+    "Elimination of the hazard",
+    "Warning signs"
+   ],
+   "answer": 2,
+   "explain": "No hazard, no risk. Elimination beats every control that merely manages the hazard."
+  },
+  {
+   "q": "The weakest control, used as the last line, is:",
+   "options": [
+    "Personal Protective Equipment (PPE) — helmets, gloves, hi-vis",
+    "Elimination",
+    "Engineering controls",
+    "Substitution"
+   ],
+   "answer": 0,
+   "explain": "Personal Protective Equipment (PPE) depends on the person wearing it correctly every time — that is why it ranks last."
+  },
+  {
+   "q": "Regional Rapid Transit System (RRTS) having no level crossings is an example of:",
+   "options": [
+    "Substitution",
+    "Administrative control",
+    "Personal Protective Equipment (PPE)",
+    "Elimination — the hazard is removed by design"
+   ],
+   "answer": 3,
+   "explain": "Designing out the train–road conflict removes the hazard completely instead of managing it daily."
+  },
+  {
+   "q": "Replacing a risky manual process with an automated one is:",
+   "options": [
+    "Elimination",
+    "Personal Protective Equipment (PPE)",
+    "Substitution",
+    "An administrative control"
+   ],
+   "answer": 2,
+   "explain": "Substitution swaps the dangerous way of working for a safer one."
+  },
+  {
+   "q": "Automatic Train Protection (ATP), interlocking and Platform Screen Doors are examples of:",
+   "options": [
+    "Engineering controls",
+    "Administrative controls",
+    "Personal Protective Equipment (PPE)",
+    "Elimination"
+   ],
+   "answer": 0,
+   "explain": "Engineering controls build safety into the equipment itself — they work even when a human errs."
+  },
+  {
+   "q": "Rules, permits, training, rostering and signage are:",
+   "options": [
+    "Engineering controls",
+    "Physical barriers only",
+    "Elimination",
+    "Administrative controls"
+   ],
+   "answer": 3,
+   "explain": "Administrative controls organise human behaviour — strong, but they depend on people following them."
+  },
+  {
+   "q": "Fire detection systems in a station are which type of control?",
+   "options": [
+    "Administrative control",
+    "Engineering control",
+    "Personal Protective Equipment (PPE)",
+    "Substitution"
+   ],
+   "answer": 1,
+   "explain": "Detection is built into the system — an engineering layer that warns before humans notice."
+  },
+  {
+   "q": "Why is Personal Protective Equipment (PPE) ranked below administrative controls?",
+   "options": [
+    "Because PPE is expensive",
+    "Because it only protects if the individual wears it correctly every single time",
+    "Because PPE is heavy",
+    "Because rules are printed"
+   ],
+   "answer": 1,
+   "explain": "Every higher control protects everyone automatically; Personal Protective Equipment (PPE) protects one person, only when worn right."
+  },
+  {
+   "q": "A safety poster and a warning sign are best classified as:",
+   "options": [
+    "Engineering controls",
+    "Physical barriers",
+    "Administrative controls",
+    "Elimination"
+   ],
+   "answer": 2,
+   "explain": "Signs and posters try to guide behaviour — they do not physically prevent harm."
+  },
+  {
+   "q": "A permit-to-work system is which type of control?",
+   "options": [
+    "Administrative (procedural) control",
+    "Engineering control",
+    "Personal Protective Equipment (PPE)",
+    "Elimination"
+   ],
+   "answer": 0,
+   "explain": "Permit to Work (PTW) organises who may work, where and when — a procedural barrier, vital but paper-based."
+  },
+  {
+   "q": "Defence in depth means:",
+   "options": [
+    "One very strong wall",
+    "Trusting the best operator",
+    "Removing all procedures",
+    "No single barrier is trusted alone — several different layers protect together"
+   ],
+   "answer": 3,
+   "explain": "Design + Automatic Train Protection (ATP) + procedures + competent people + supervision + emergency preparedness: layers, not luck."
+  },
+  {
+   "q": "In the Swiss-cheese model, an accident happens when:",
+   "options": [
+    "One layer has a hole",
+    "A layer is inspected",
+    "The holes in several defensive layers line up at the same moment",
+    "Staff change shifts"
+   ],
+   "answer": 2,
+   "explain": "Each layer has weaknesses; only when they align can the accident pass through all of them."
+  },
+  {
+   "q": "Which is a physical barrier?",
+   "options": [
+    "Platform Screen Doors and track fencing",
+    "Read-back procedure",
+    "Training",
+    "A safety circular"
+   ],
+   "answer": 0,
+   "explain": "Physical barriers physically prevent entry to the danger zone."
+  },
+  {
+   "q": "Which is a functional barrier?",
+   "options": [
+    "Fencing",
+    "A helmet",
+    "A poster",
+    "Automatic Train Protection (ATP) and interlocking"
+   ],
+   "answer": 3,
+   "explain": "Functional barriers work through the system: Automatic Train Protection (ATP) stops the train, interlocking prevents conflicting routes."
+  },
+  {
+   "q": "Which is a procedural barrier?",
+   "options": [
+    "Platform Screen Door (PSD)",
+    "Permit-to-work and read-back communication",
+    "Automatic Train Protection (ATP)",
+    "Hi-vis vest"
+   ],
+   "answer": 1,
+   "explain": "Procedural barriers live in how work is authorised and communicated."
+  },
+  {
+   "q": "Which is a human barrier?",
+   "options": [
+    "Interlocking",
+    "Training and supervision of staff",
+    "Fencing",
+    "Fire detection"
+   ],
+   "answer": 1,
+   "explain": "Competent, supervised people are themselves a layer of defence."
+  },
+  {
+   "q": "Fail-safe design contributes to safety barriers by:",
+   "options": [
+    "Making failures impossible",
+    "Removing the need for staff",
+    "Making the system fall to a safe state when something fails",
+    "Speeding up trains"
+   ],
+   "answer": 2,
+   "explain": "Fail-safe means a failure creates safety, not danger — signals fall to danger, not to green."
+  },
+  {
+   "q": "Scenario: For a hazard, you can either issue helmets or redesign the layout to remove the hazard. The hierarchy says:",
+   "options": [
+    "Redesign to eliminate the hazard — elimination outranks Personal Protective Equipment (PPE)",
+    "Issue helmets; they are cheaper",
+    "Do both equally; order does not matter",
+    "Issue a warning sign instead"
+   ],
+   "answer": 0,
+   "explain": "When a stronger control is reasonably practicable, choosing the weakest one is the wrong answer."
+  },
+  {
+   "q": "Scenario: A manual trackside task is replaced by a remote/automated system. This control is:",
+   "options": [
+    "Personal Protective Equipment (PPE)",
+    "Administrative",
+    "Elimination of staff",
+    "Substitution (supported by engineering)"
+   ],
+   "answer": 3,
+   "explain": "Swapping a risky manual process for an automated one is the book's own substitution example."
+  },
+  {
+   "q": "Closing a level crossing entirely is which control?",
+   "options": [
+    "Engineering",
+    "Administrative",
+    "Elimination",
+    "Substitution"
+   ],
+   "answer": 2,
+   "explain": "The book's elimination example: close the level crossing and the train–road hazard ceases to exist."
+  },
+  {
+   "q": "Which set contains ONLY engineering controls?",
+   "options": [
+    "Automatic Train Protection (ATP), interlocking, Platform Screen Doors (PSDs), fire detection",
+    "Rules, permits, training",
+    "Helmets, gloves, hi-vis",
+    "Posters, signs, rosters"
+   ],
+   "answer": 0,
+   "explain": "Engineering = built into equipment and infrastructure; the others guide people or protect individuals."
+  },
+  {
+   "q": "Why do examiners stress the ORDER of the hierarchy?",
+   "options": [
+    "The order is alphabetical",
+    "The order never matters",
+    "Only Personal Protective Equipment (PPE) order matters",
+    "Because controls must be chosen from the strongest reasonably practicable level, not the most convenient"
+   ],
+   "answer": 3,
+   "explain": "The hierarchy is a choosing rule: start at the top and justify any step down."
+  },
+  {
+   "q": "A barrier that fails silently is dangerous mainly because:",
+   "options": [
+    "It makes noise later",
+    "Other layers may be trusted on the assumption that it is still working",
+    "It costs more",
+    "Silent failures do not exist"
+   ],
+   "answer": 1,
+   "explain": "Defence in depth assumes layers are alive; a silently dead layer leaves a hidden hole in the cheese."
+  },
+  {
+   "q": "What is the role of emergency preparedness in the barrier system?",
+   "options": [
+    "It replaces prevention",
+    "It is the final layer — limiting harm when all preventive barriers have failed",
+    "It is not a barrier",
+    "It is only for paperwork"
+   ],
+   "answer": 1,
+   "explain": "Prevention first, but preparedness catches what prevention misses — that is why it completes the layers."
+  },
+  {
+   "q": "Supervision acts as a barrier by:",
+   "options": [
+    "Doing all the work",
+    "Replacing training",
+    "Catching errors and unsafe acts before they combine with other failures",
+    "Removing procedures"
+   ],
+   "answer": 2,
+   "explain": "A supervisor's verification is a human layer that plugs holes in the procedural layer."
+  },
+  {
+   "q": "Scenario: A station fits Platform Screen Doors (PSDs) (engineering) AND trains staff in crowd control (administrative) AND posts signage. This is:",
+   "options": [
+    "Defence in depth — different barrier types layered together",
+    "Duplication to be avoided",
+    "Only one real control",
+    "Against the hierarchy"
+   ],
+   "answer": 0,
+   "explain": "Layering different control types is exactly the intent — no single barrier is trusted alone."
+  },
+  {
+   "q": "Which control would you choose FIRST for passengers falling from a platform edge?",
+   "options": [
+    "Helmets for passengers",
+    "A poster only",
+    "Nothing — passengers must be careful",
+    "An engineering control such as Platform Screen Doors (PSDs), supported by administrative measures like yellow-line discipline"
+   ],
+   "answer": 3,
+   "explain": "Start high in the hierarchy: physically separate passengers from the edge, then support with rules and markings."
+  },
+  {
+   "q": "Interlocking prevents accidents by:",
+   "options": [
+    "Training drivers better",
+    "Warning passengers",
+    "Making it impossible to set conflicting routes — a functional/engineering barrier",
+    "Recording events"
+   ],
+   "answer": 2,
+   "explain": "Interlocking removes the human possibility of a conflicting route — the system itself refuses."
+  },
+  {
+   "q": "A 'barrier' in operational safety is:",
+   "options": [
+    "Any measure — physical, functional, procedural or human — that prevents a hazard causing harm or limits its effect",
+    "Only a fence",
+    "Only a rule book",
+    "Only Personal Protective Equipment (PPE)"
+   ],
+   "answer": 0,
+   "explain": "Barriers come in four families, and a safe railway stacks all four."
+  },
+  {
+   "q": "Why is 'training' not an engineering control?",
+   "options": [
+    "Training is not a control at all",
+    "Engineering means electricity only",
+    "Training is stronger than engineering",
+    "Because it works through people's behaviour, not through the equipment"
+   ],
+   "answer": 3,
+   "explain": "Training is administrative/human — valuable, but it depends on the person remembering and applying it."
+  },
+  {
+   "q": "Scenario: After fitting Automatic Train Protection (ATP) (engineering), a railway removes all rules and training. Is safety improved overall?",
+   "options": [
+    "Yes — ATP alone is enough",
+    "No — removing layers weakens defence in depth; barriers are added, not traded away",
+    "Yes — rules slow work",
+    "It makes no difference"
+   ],
+   "answer": 1,
+   "explain": "A new barrier strengthens the stack; it is never a licence to strip other layers away."
+  },
+  {
+   "q": "The Swiss-cheese model teaches managers to:",
+   "options": [
+    "Find one perfect layer",
+    "Add and maintain several different layers, and repair holes found in any layer",
+    "Blame the last layer",
+    "Remove layers that have holes"
+   ],
+   "answer": 1,
+   "explain": "Holes are normal; the defence is numbers and variety of layers, plus fixing known holes."
+  },
+  {
+   "q": "Which is the correct strength order among these three?",
+   "options": [
+    "Personal Protective Equipment (PPE) > Engineering > Administrative",
+    "Administrative > Engineering > PPE",
+    "Engineering > Administrative > PPE",
+    "PPE > Administrative > Engineering"
+   ],
+   "answer": 2,
+   "explain": "Built-in protection beats behaviour rules, which beat personal equipment — every time."
+  },
+  {
+   "q": "Preventive measures differ from emergency preparedness in that they:",
+   "options": [
+    "Act before an incident to stop it happening, rather than limiting harm after it starts",
+    "Are less important",
+    "Only involve Personal Protective Equipment (PPE)",
+    "Happen after incidents"
+   ],
+   "answer": 0,
+   "explain": "Prevention and preparedness are both needed, but they work on opposite sides of the incident."
+  },
+  {
+   "q": "Safety barriers such as emergency braking and fire detection are proof-tested at planned intervals mainly because:",
+   "options": [
+    "Testing is a formality for records",
+    "A barrier can fail silently (a dormant failure) and be unavailable on the one day it is demanded — testing reveals the hidden failure in time",
+    "Passengers like to watch tests",
+    "Tests increase the speed of trains"
+   ],
+   "answer": 1,
+   "explain": "Barriers that act only in emergencies spend their lives waiting — and can quietly die while waiting. Proof tests are demands made on purpose, so a dead barrier is found in the depot, not during a real emergency."
+  },
+  {
+   "q": "Which of these is a PASSIVE safety barrier?",
+   "options": [
+    "A sprinkler system that must detect heat and then discharge",
+    "A fire-resistant wall / fire door that simply exists and blocks fire spread without needing to act",
+    "A fire alarm that must sense and sound",
+    "An emergency fan that must start on command"
+   ],
+   "answer": 1,
+   "explain": "Passive barriers work by merely being there — walls, doors, separation distances, fencing. Active barriers must detect, decide and act, so they have more ways to fail and need testing and power."
+  },
+  {
+   "q": "Two safety barriers that both depend on the same power supply or the same single person are weaker than they appear because:",
+   "options": [
+    "They cost more",
+    "They are not truly independent — one common failure can defeat both barriers together (common-cause failure)",
+    "They are hard to paint",
+    "They need more staff"
+   ],
+   "answer": 1,
+   "explain": "Layers only multiply safety when they fail independently. A shared power supply, shared sensor or shared person is a hidden thread joining the holes in the cheese slices — one failure can line them all up."
+  },
+  {
+   "q": "In Safety Integrity Level (SIL) terms, a HIGHER SIL number (for example SIL 4 in signalling) means:",
+   "options": [
+    "The equipment is heavier",
+    "The safety function must fail far less often on demand — it is held to a much stricter reliability target",
+    "The system runs faster",
+    "More staff are needed to operate it"
+   ],
+   "answer": 1,
+   "explain": "Safety Integrity Level (SIL) grades how trustworthy a safety function must be. SIL 4, used for the most critical signalling functions, demands an extremely low probability of failure on demand — because when it is demanded, lives depend on it working."
+  },
+  {
+   "q": "Why is preventive maintenance itself treated as part of the safety-barrier system?",
+   "options": [
+    "It keeps equipment looking new",
+    "Engineered barriers degrade with wear, dust and age — maintenance and inspection are what keep a barrier capable of performing when demanded",
+    "It employs more staff",
+    "It is required for warranty only"
+   ],
+   "answer": 1,
+   "explain": "A barrier on paper is not a barrier in reality. A Platform Screen Door (PSD) sensor blinded by dust or a brake valve overdue for overhaul is a hole already open in the slice — maintenance is what keeps designed protection real."
+  }
+ ]
+}

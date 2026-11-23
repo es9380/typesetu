@@ -1,0 +1,448 @@
+{
+ "id": "tech-vi-1",
+ "category": "technical",
+ "group": "Unit vi — Operational Communication",
+ "title": "OCC–Station–Train Communication & Protocols (Normal & Abnormal)",
+ "questions": [
+  {
+   "q": "The basic communication chain for train operations is:",
+   "options": [
+    "Operations Control Centre (OCC) ↔ Station ↔ Train ↔ Field staff",
+    "Depot ↔ OCC ↔ headquarters only",
+    "Station ↔ police ↔ OCC ↔ train",
+    "Train ↔ passengers ↔ station ↔ Operations Control Centre (OCC)"
+   ],
+   "answer": 0,
+   "explain": "Operations run on one chain — Operations Control Centre (OCC), station, train and field staff — so every message reaches the level that can act on it."
+  },
+  {
+   "q": "Operational radio and telephone conversations are preferably made on channels that are:",
+   "options": [
+    "Private and unrecorded",
+    "Recorded, because recordings are evidence of correct working",
+    "Heard only by the driver",
+    "Switched off during incidents"
+   ],
+   "answer": 1,
+   "explain": "Recorded channels protect everyone: after an incident, the recording shows exactly what was said and ordered."
+  },
+  {
+   "q": "Which call gets priority over all routine radio traffic?",
+   "options": [
+    "A routine departure report",
+    "A defect report for the next day",
+    "An emergency call",
+    "A timetable enquiry"
+   ],
+   "answer": 2,
+   "explain": "Emergency calls override everything. All other users must keep the channel clear until the emergency is handled."
+  },
+  {
+   "q": "The FIRST thing you do when starting any safety-critical message is:",
+   "options": [
+    "Ask the receiver to guess your identity",
+    "End with your name only if asked",
+    "Give the full instruction quickly",
+    "State who you are, your location/designation, and who you are calling"
+   ],
+   "answer": 3,
+   "explain": "Identify first, every time. The receiver must know who is speaking and from where before acting on a message."
+  },
+  {
+   "q": "A good safety-critical message contains:",
+   "options": [
+    "Several instructions packed together",
+    "Slang that regular staff understand",
+    "One instruction per message, in short standard phrases",
+    "Extra background stories to make it interesting"
+   ],
+   "answer": 2,
+   "explain": "One instruction per message, in standard words. Packing many instructions together creates confusion and wrong actions."
+  },
+  {
+   "q": "In the phonetic alphabet, the letter 'M' is spoken as:",
+   "options": [
+    "Mike",
+    "Mango",
+    "Metro",
+    "Monday"
+   ],
+   "answer": 0,
+   "explain": "M = Mike in the NATO phonetic alphabet, used so letters are not confused in poor audio."
+  },
+  {
+   "q": "In the phonetic alphabet, 'S' and 'T' are spoken as:",
+   "options": [
+    "Sony, Tiger",
+    "Salt, Table",
+    "Sugar, Tea",
+    "Sierra, Tango"
+   ],
+   "answer": 3,
+   "explain": "S = Sierra and T = Tango. Standard words remove sound-alike confusion on noisy channels."
+  },
+  {
+   "q": "The phonetic words for 'P' and 'R' are:",
+   "options": [
+    "Peter, Robert",
+    "Papa, Romeo",
+    "Punjab, Railway",
+    "Paul, Roger"
+   ],
+   "answer": 1,
+   "explain": "P = Papa and R = Romeo in the prescribed phonetic alphabet."
+  },
+  {
+   "q": "Critical numbers such as train IDs, speeds and times should be spoken:",
+   "options": [
+    "Digit by digit, where prescribed",
+    "In round figures to save time",
+    "As fast as possible",
+    "Only in writing"
+   ],
+   "answer": 0,
+   "explain": "'One-five' cannot be confused with 'five-zero'. Digit-by-digit speaking protects critical numbers in noise."
+  },
+  {
+   "q": "Times in operational communication are given in:",
+   "options": [
+    "12-hour format with 'morning/evening'",
+    "24-hour format",
+    "Approximate terms like 'soon'",
+    "Local slang"
+   ],
+   "answer": 1,
+   "explain": "24-hour format removes AM/PM confusion — 14:05 can only mean one time of day."
+  },
+  {
+   "q": "Read-back means the receiver:",
+   "options": [
+    "Reads the next instruction in advance",
+    "Reads the message from a notebook",
+    "Repeats the instruction back so the sender can confirm it",
+    "Records the call on his phone"
+   ],
+   "answer": 2,
+   "explain": "Read-back closes the loop: the sender hears his own order repeated and can catch any error before it is acted on."
+  },
+  {
+   "q": "After a correct read-back, the sender must:",
+   "options": [
+    "Repeat the whole message again",
+    "Stay silent",
+    "Change the subject",
+    "Confirm 'correct'"
+   ],
+   "answer": 3,
+   "explain": "The loop is: message → read-back → sender confirms 'correct'. Without confirmation the exchange is incomplete."
+  },
+  {
+   "q": "An instruction that has NOT been acknowledged must be treated as:",
+   "options": [
+    "Received after five minutes",
+    "Optional",
+    "Not received",
+    "Received"
+   ],
+   "answer": 2,
+   "explain": "An unacknowledged instruction is treated as not received. Silence on a radio proves nothing."
+  },
+  {
+   "q": "Closing the loop of an instruction means:",
+   "options": [
+    "Reporting completion back, e.g. 'Task complete, section clear'",
+    "Switching off the radio",
+    "Forgetting the task once started",
+    "Asking someone else to finish it"
+   ],
+   "answer": 0,
+   "explain": "Every instruction ends with a completion report. An open-ended instruction leaves the sender guessing about safety."
+  },
+  {
+   "q": "A driver receives an instruction that seems unsafe. The correct action is:",
+   "options": [
+    "Ask a passenger what to do",
+    "Obey silently to avoid argument",
+    "Refuse rudely and stop work",
+    "Challenge it politely through procedure and ask for clarification"
+   ],
+   "answer": 3,
+   "explain": "Silence is not consent in safety communication. An unclear or unsafe instruction must be challenged through procedure."
+  },
+  {
+   "q": "During normal operations, routine reports (departures, arrivals, defects) are made:",
+   "options": [
+    "Whenever staff feel like it",
+    "At defined points, in standard format",
+    "Only at the end of the shift",
+    "Only if something goes wrong"
+   ],
+   "answer": 1,
+   "explain": "Normal protocol = routine reports at defined points in a standard format, so Operations Control Centre (OCC) always has a predictable picture."
+  },
+  {
+   "q": "When an abnormal situation develops, the communication protocol changes first by:",
+   "options": [
+    "Declaring 'Emergency' upfront and taking emergency priority",
+    "Waiting for the next routine report point",
+    "Speaking faster",
+    "Using longer explanations"
+   ],
+   "answer": 0,
+   "explain": "State 'Emergency' upfront. That one word changes the priority of the call and the attention of everyone listening."
+  },
+  {
+   "q": "The structured emergency brief should contain, in order of usefulness:",
+   "options": [
+    "Blame, opinions and guesses",
+    "What, Where, When, Who/What is involved, Casualties, Action taken, Help needed",
+    "Only the location",
+    "Only the help needed"
+   ],
+   "answer": 1,
+   "explain": "The What–Where–When–Who–Casualties–Action–Help format gives Operations Control Centre (OCC) a complete picture in one short message."
+  },
+  {
+   "q": "After the first emergency message, the site should:",
+   "options": [
+    "Let passengers update Operations Control Centre (OCC)",
+    "Go silent until help arrives",
+    "Send continuous updates until stand-down",
+    "Send one message per hour"
+   ],
+   "answer": 2,
+   "explain": "Emergencies are reported continuously, not once. Operations Control Centre (OCC) plans on fresh information until the emergency is stood down."
+  },
+  {
+   "q": "A station controller gets a garbled message where the train number is unclear. He should:",
+   "options": [
+    "Ignore the message completely",
+    "Guess the most likely train",
+    "Act on the part he heard",
+    "Ask for the message to be repeated and the number read back digit by digit"
+   ],
+   "answer": 3,
+   "explain": "Never act on a guessed number. Ask for repetition — a wrong train number can send help or authority to the wrong train."
+  },
+  {
+   "q": "Operations Control Centre (OCC) instructs a driver: 'Hold at the next station.' The driver repeats a different station name in read-back. Operations Control Centre (OCC) must:",
+   "options": [
+    "Cancel all movements for the day",
+    "Let it pass to save time",
+    "Correct the read-back immediately and get a fresh, correct read-back",
+    "Assume the driver knows better"
+   ],
+   "answer": 2,
+   "explain": "A wrong read-back is exactly what the system exists to catch. Correct it on the radio, not on the track."
+  },
+  {
+   "q": "Two stations try to transmit at the same time during an emergency. Correct channel discipline is:",
+   "options": [
+    "Routine users keep the channel clear for the emergency traffic",
+    "The senior officer's station talks over everyone",
+    "Everyone switches to personal mobiles",
+    "Both keep talking louder"
+   ],
+   "answer": 0,
+   "explain": "In an emergency the channel belongs to the emergency. Routine traffic waits and keeps the channel clear."
+  },
+  {
+   "q": "A train operator must pass a letter-based equipment ID in poor audio conditions. He should use:",
+   "options": [
+    "Only hand signals",
+    "A text message next day",
+    "Similar-sounding local words",
+    "The phonetic alphabet for each letter"
+   ],
+   "answer": 3,
+   "explain": "Phonetic words are designed for poor audio — each letter gets a unique, unmistakable word."
+  },
+  {
+   "q": "Which is an example of clear and concise safety communication?",
+   "options": [
+    "'There is some issue somewhere, do something'",
+    "'Operations Control Centre (OCC), Train 204 at Station X — door fault, holding, request instructions'",
+    "A long story about the shift so far",
+    "'You know what to do'"
+   ],
+   "answer": 1,
+   "explain": "Identity + train + location + problem + request, in one short message. Vague messages waste the minutes that matter."
+  },
+  {
+   "q": "A field staff member completes a protection task but does not report it, assuming Operations Control Centre (OCC) 'will know'. This is wrong because:",
+   "options": [
+    "An unreported task leaves the instruction open and Operations Control Centre (OCC) cannot safely plan the next movement",
+    "OCC can see everything on Closed-Circuit Television (CCTV) anyway",
+    "Reports are only for accidents",
+    "Reporting is optional for seniors"
+   ],
+   "answer": 0,
+   "explain": "Close the loop. Until completion is reported, Operations Control Centre (OCC) must treat the section as not confirmed clear."
+  },
+  {
+   "q": "During degraded working, Operations Control Centre (OCC) gives a verbal authority. The receiver's read-back is correct but the sender does not confirm. The receiver should:",
+   "options": [
+    "Start moving immediately",
+    "Treat the authority as incomplete and seek the sender's confirmation",
+    "Assume confirmation after 10 seconds",
+    "Ask another train to confirm"
+   ],
+   "answer": 1,
+   "explain": "Message, read-back and confirmation are one package. Without the sender's 'correct', the loop is not closed."
+  },
+  {
+   "q": "Passing operational messages through a chain of people by word of mouth is risky mainly because:",
+   "options": [
+    "It is against uniform rules",
+    "It is slow only",
+    "Each retelling can distort the message — the 'telephone game' effect",
+    "It uses too much paper"
+   ],
+   "answer": 2,
+   "explain": "Like the children's telephone game, messages distort at every pass. Direct, confirmed communication prevents that."
+  },
+  {
+   "q": "A station receives an Operations Control Centre (OCC) instruction meant for another station with a similar name. The station should:",
+   "options": [
+    "Forward it by guessing the right station",
+    "Act on it to be helpful",
+    "Stay silent",
+    "Clarify with Operations Control Centre (OCC) immediately that the message may be mis-addressed"
+   ],
+   "answer": 3,
+   "explain": "Similar names are a known trap. Clarify the addressee before anyone acts — acting on another station's instruction can be dangerous."
+  },
+  {
+   "q": "Which habit best protects a controller during a busy, noisy shift?",
+   "options": [
+    "Skipping identification to save seconds",
+    "Giving several instructions in one breath",
+    "Using standard phrases, one instruction per message, with read-back",
+    "Speaking louder instead of clearer"
+   ],
+   "answer": 2,
+   "explain": "Under pressure, standard short phrases with read-back are faster in effect — they prevent the errors that cost real time."
+  },
+  {
+   "q": "An emergency call format/address is prescribed mainly so that:",
+   "options": [
+    "The emergency gets instant attention and priority on the channel",
+    "Only senior staff can speak",
+    "The recording looks neat",
+    "The call sounds formal"
+   ],
+   "answer": 0,
+   "explain": "The prescribed emergency format is a signal everyone recognises instantly — it buys attention in the first second."
+  },
+  {
+   "q": "A driver is told a speed restriction value over a crackling radio. The safest practice is:",
+   "options": [
+    "Round it down himself",
+    "Ask a co-passenger to listen",
+    "Note it from memory",
+    "Have the value spoken digit by digit and read it back"
+   ],
+   "answer": 3,
+   "explain": "Critical values are spoken digit by digit and read back. Memory and guesswork have no place with safety numbers."
+  },
+  {
+   "q": "After an incident is over, why do recordings of operational calls matter?",
+   "options": [
+    "They are used for entertainment in training only",
+    "They are evidence of what was ordered and acknowledged, for the enquiry",
+    "They replace the written report fully",
+    "They are deleted immediately"
+   ],
+   "answer": 1,
+   "explain": "Speak as if the enquiry will listen — because it may. Recordings prove the exact words, times and acknowledgements."
+  },
+  {
+   "q": "In normal running, a train reports a minor defect that does not affect safety. The correct protocol is:",
+   "options": [
+    "Report it at the defined point in standard format and continue as instructed",
+    "Hide it till the depot",
+    "Stop the train wherever it is",
+    "Declare an emergency"
+   ],
+   "answer": 0,
+   "explain": "Not everything is an emergency. Routine defects follow normal protocol — defined points, standard format, Operations Control Centre (OCC) decides the action."
+  },
+  {
+   "q": "The phrase 'silence is not consent' in safety communication means:",
+   "options": [
+    "Staff should talk continuously",
+    "If you do not understand or do not agree, you must speak up — quietness is never taken as agreement",
+    "Juniors cannot speak",
+    "Radios should never be silent"
+   ],
+   "answer": 1,
+   "explain": "In safety work, not objecting is never treated as agreeing. Doubt must be voiced through procedure."
+  },
+  {
+   "q": "A controller must pass the ID 'B7' over the radio. The correct way is:",
+   "options": [
+    "Spell it in the local language",
+    "'B seven' only",
+    "'Bravo seven' — letter in phonetic form, number spoken clearly",
+    "'Baby seven'"
+   ],
+   "answer": 2,
+   "explain": "Letters go phonetic (B = Bravo) and numbers are spoken clearly, so 'B7' cannot be heard as 'D7' or 'P7'."
+  },
+  {
+   "q": "Over the radio you did not understand an instruction. The correct standard phrase to ask for it again is:",
+   "options": [
+    "'Repeat your lifestyle'",
+    "'Say again' — asking the sender to transmit the message once more",
+    "'Come again later'",
+    "You stay silent and guess the meaning"
+   ],
+   "answer": 1,
+   "explain": "Standard phraseology removes guesswork: 'Say again' is the recognised request for retransmission. Guessing a safety instruction is never an option."
+  },
+  {
+   "q": "In radio discipline, the word 'Roger' spoken by a receiver means:",
+   "options": [
+    "I will obey after some time",
+    "I have received and understood your message",
+    "I disagree with the message",
+    "Please send a written copy"
+   ],
+   "answer": 1,
+   "explain": "'Roger' closes the receiving half of the loop: received and understood. Where the instruction also needs action, read-back of the actual content is still the stronger proof."
+  },
+  {
+   "q": "The Operations Control Centre (OCC) needs to give one instruction — a speed restriction — to every train in an area at the same time. The efficient radio method is:",
+   "options": [
+    "Calling each train one by one over the next hour",
+    "A group (all-call) broadcast to all trains in that area, with each train acknowledging in turn",
+    "Putting up a notice at the depot",
+    "Waiting till trains reach their terminals"
+   ],
+   "answer": 1,
+   "explain": "A group call reaches everyone together, and ordered acknowledgements confirm nobody missed it. One-by-one calling leaves early trains uninformed for too long."
+  },
+  {
+   "q": "At shift change, the outgoing controller's communication duty to the incoming controller is:",
+   "options": [
+    "Just saying 'all normal' and leaving",
+    "A proper handover — verbal briefing plus the written log — covering live incidents, restrictions, failed equipment and pending actions",
+    "Leaving a note only if something exploded",
+    "Handing over only the timetable"
+   ],
+   "answer": 1,
+   "explain": "More incidents grow out of poor handovers than out of machines. The incoming controller must start with the same picture the outgoing one ended with — spoken and written."
+  },
+  {
+   "q": "A driver enters a known radio dead zone (a short stretch with no coverage) and must contact the Operations Control Centre (OCC). The correct practice is:",
+   "options": [
+    "Keep shouting into the radio till someone answers",
+    "Use the fixed telephone at the next station or another prescribed channel rather than relying on the dead-zone radio, and inform the Operations Control Centre (OCC) at the first working contact point",
+    "Stop the train in the dead zone and wait",
+    "Send a message through a passenger's phone"
+   ],
+   "answer": 1,
+   "explain": "Dead zones are known in advance, so the procedure is planned: communicate from where communication exists. Unplanned silence is what creates danger."
+  }
+ ]
+}

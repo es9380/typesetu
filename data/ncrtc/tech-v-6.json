@@ -1,0 +1,393 @@
+{
+ "id": "tech-v-6",
+ "category": "technical",
+ "group": "Unit v — Emergency & Contingency Management",
+ "title": "Station / Platform & External Emergencies",
+ "questions": [
+  {
+   "q": "In a station or platform emergency, who commands the incident locally at the start?",
+   "options": [
+    "The first passenger to raise the alarm",
+    "The station controller, until Operations Control Centre (OCC) or an external agency takes over",
+    "The train operator at the platform",
+    "The station's senior-most shopkeeper"
+   ],
+   "answer": 1,
+   "explain": "Local command starts with the station controller — Operations Control Centre (OCC)/agency command replaces it as the response builds."
+  },
+  {
+   "q": "During a platform emergency, trains must be protected by:",
+   "options": [
+    "Stopping them, or skipping them past the affected platform/station",
+    "Speeding them through the platform",
+    "Letting them stop as scheduled regardless",
+    "Reversing them to the depot"
+   ],
+   "answer": 0,
+   "explain": "A train arriving into an emergency adds crowd and danger — it is held away or run through as directed."
+  },
+  {
+   "q": "After an earthquake, trains may resume only after:",
+   "options": [
+    "One hour has passed",
+    "Passengers demand resumption",
+    "Structures and track are inspected, with a speed-restricted inspection run first",
+    "The tremors are no longer felt in the office"
+   ],
+   "answer": 2,
+   "explain": "Earthquakes damage silently — inspection and a restricted trial run come before passengers at speed."
+  },
+  {
+   "q": "Why is the first run after an earthquake kept at restricted speed?",
+   "options": [
+    "Because passengers are frightened of speed",
+    "To save fuel after the incident",
+    "Because the timetable has been cancelled",
+    "To inspect the track and structures from the train and stop safely if damage is found"
+   ],
+   "answer": 3,
+   "explain": "The inspection run is a moving examination — its speed is set by stopping distance, not the timetable."
+  },
+  {
+   "q": "In flooding or waterlogging, trains must stop where:",
+   "options": [
+    "Water threatens the track or electrical equipment",
+    "The platform is slightly wet",
+    "Rain is falling anywhere in the city",
+    "A drain outside the station overflows"
+   ],
+   "answer": 0,
+   "explain": "Water and electrical equipment are a dangerous mix — the threat to track/electrics is the stopping line."
+  },
+  {
+   "q": "A suspicious unattended object is found on a platform. Staff must:",
+   "options": [
+    "Pick it up and take it to the lost-property office",
+    "Not touch it, cordon the area, inform Operations Control Centre (OCC) and follow police direction",
+    "Open it to check whether it is dangerous",
+    "Ask passengers to gather around and identify it"
+   ],
+   "answer": 1,
+   "explain": "Untouched and cordoned is safe; handling a suspect object is how staff become casualties."
+  },
+  {
+   "q": "During a security threat at a station, the controlling authority for the security response is:",
+   "options": [
+    "The station controller alone",
+    "Operations Control Centre (OCC) alone, overruling the police",
+    "The police, with railway staff supporting and following their direction",
+    "The passengers' majority view"
+   ],
+   "answer": 2,
+   "explain": "Security is a police subject — the railway protects trains and people and follows police direction."
+  },
+  {
+   "q": "In extreme heat or a storm, the typical operational precautions include:",
+   "options": [
+    "Temporary speed restrictions, and vigilance for Overhead Equipment (OHE) problems and fallen trees",
+    "Increasing speeds to finish services early",
+    "Cancelling all maintenance for the season",
+    "Opening tunnel doors for ventilation"
+   ],
+   "answer": 0,
+   "explain": "Heat and storm attack the overhead equipment and the trackside — Temporary Speed Restrictions (TSRs) and vigilance are the standard response."
+  },
+  {
+   "q": "A fire breaks out in a shop inside the station concourse. The station response should:",
+   "options": [
+    "Only inform the shopkeeper's company",
+    "Close only the shop and continue everything else silently",
+    "Use the platform as the assembly point regardless",
+    "Raise the alarm, inform Operations Control Centre (OCC), isolate/evacuate the affected area and guide passengers away, calling fire services"
+   ],
+   "answer": 3,
+   "explain": "A concourse fire is a station emergency — alarm, control, evacuation of the area and the fire brigade."
+  },
+  {
+   "q": "A passenger is injured by a falling object on a platform. Along with first aid, staff must:",
+   "options": [
+    "Move the object and clean the platform at once",
+    "Protect the area, inform Operations Control Centre (OCC)/station control and arrange medical help, preserving facts for the report",
+    "Ask the passenger to go home and rest",
+    "Announce his name to trace his family first"
+   ],
+   "answer": 1,
+   "explain": "Care for the person, protect others from the same hazard, and keep the facts for the incident record."
+  },
+  {
+   "q": "A crowd surges dangerously as a popular train arrives. The station controller's immediate tools are:",
+   "options": [
+    "Stop further entry, use announcements, open additional exits/flows and regulate the platform crowd",
+    "Close all exits to hold people in place",
+    "Let the crowd settle by itself",
+    "Cancel the train after it has arrived"
+   ],
+   "answer": 0,
+   "explain": "Crowd control works on inflow and outflow — stop entry, widen exit, inform."
+  },
+  {
+   "q": "A Platform Screen Door (PSD) fails to open with a train standing at the platform. Staff should:",
+   "options": [
+    "Force all doors open with crowbars",
+    "Ask passengers to climb through the driver's cab",
+    "Follow the prescribed Platform Screen Door (PSD) failure procedure and Operations Control Centre (OCC) instructions, detraining passengers by the authorised method",
+    "Cancel the railway for the day"
+   ],
+   "answer": 2,
+   "explain": "Platform Screen Door (PSD) failures have a laid-down procedure — improvised forcing damages equipment and endangers passengers."
+  },
+  {
+   "q": "An external emergency in the city (major accident nearby) floods the station with casualties' relatives and crowds. The station should:",
+   "options": [
+    "Close the station without informing anyone",
+    "Inform Operations Control Centre (OCC), manage the crowd, support agency direction and keep train operations protected",
+    "Stop all trains in the network",
+    "Turn the platform into a treatment ward"
+   ],
+   "answer": 1,
+   "explain": "The station supports the city's response without losing control of its own crowds and trains."
+  },
+  {
+   "q": "A tree falls across the track ahead during a storm. The first operational action is to:",
+   "options": [
+    "Send the next train slowly to push it aside",
+    "Ask passengers to help clear it",
+    "Wait for the morning inspection only",
+    "Stop or protect trains approaching that section and inform Operations Control Centre (OCC)"
+   ],
+   "answer": 3,
+   "explain": "An obstruction is protected first — trains are stopped before anyone plans the clearance."
+  },
+  {
+   "q": "Water begins entering a station from flooded streets. Priorities include:",
+   "options": [
+    "Protecting people and electrical installations, stopping entry of water where possible and informing Operations Control Centre (OCC)",
+    "Keeping ticket sales running at all costs",
+    "Moving all passengers to the lowest floor",
+    "Switching on all electrical equipment to test it"
+   ],
+   "answer": 0,
+   "explain": "Flood response protects life and electrics first — water and power together are the danger."
+  },
+  {
+   "q": "After a storm passes, normal speeds resume when:",
+   "options": [
+    "The rain stops",
+    "The wind drops for ten minutes",
+    "The line has been inspected and certified fit, including Overhead Equipment (OHE) and trackside",
+    "Passengers stop reporting problems"
+   ],
+   "answer": 2,
+   "explain": "Resumption follows inspection and certification, not the weather clearing alone."
+  },
+  {
+   "q": "A bomb-threat call is received for a specific train. The response runs on:",
+   "options": [
+    "Police/security direction, with the train and area handled exactly as the security plan prescribes",
+    "The train operator's personal judgement",
+    "Immediate detrainment wherever the train stands, always",
+    "Announcements asking passengers to search the train"
+   ],
+   "answer": 0,
+   "explain": "Threat calls are security operations — searching and movement follow the police-led plan."
+  },
+  {
+   "q": "During a platform emergency, announcements should avoid:",
+   "options": [
+    "Giving the evacuation route",
+    "Creating panic with alarming, unclear or contradictory messages",
+    "Telling passengers what not to do",
+    "Repeating the message at intervals"
+   ],
+   "answer": 1,
+   "explain": "Calm, clear and consistent information moves crowds; alarm and contradiction freeze or stampede them."
+  },
+  {
+   "q": "A structural problem (cracked beam) is noticed in a station building. The immediate steps are:",
+   "options": [
+    "Paint over the crack and monitor it",
+    "Let passengers use the area as the crack is small",
+    "Announce that the station is closing forever",
+    "Cordon the area below/around it, inform Operations Control Centre (OCC) and arrange engineering inspection, restricting access until certified"
+   ],
+   "answer": 3,
+   "explain": "A cordon plus engineering certification — nobody waits under a suspect structure."
+  },
+  {
+   "q": "An escalator fails suddenly with passengers on it during peak hours. Staff should:",
+   "options": [
+    "Restart it repeatedly until it works",
+    "Blame the passengers standing on it",
+    "Stop/secure it as per procedure, assist any injured, inform control and manage the crowd flow around it",
+    "Close the whole station for the day"
+   ],
+   "answer": 2,
+   "explain": "Secure the machine, care for people, and re-route the crowd — the standard local emergency pattern."
+  },
+  {
+   "q": "Why are trains sometimes ordered to skip a station during that station's emergency?",
+   "options": [
+    "To punish the station staff",
+    "To avoid adding passengers and crowd to a station that is being evacuated or controlled",
+    "Because the train is running late anyway",
+    "To save electricity at that station"
+   ],
+   "answer": 1,
+   "explain": "A stopping train feeds the problem; skipping protects both the train and the station crowd."
+  },
+  {
+   "q": "A major external power-grid failure blacks out a whole area including stations. Station priorities are:",
+   "options": [
+    "Backup power for essential services, passenger safety and information, and regulated train service as systems allow",
+    "Immediate evacuation of every station in all cases",
+    "Running trains at full speed in darkness",
+    "Closing the network without information"
+   ],
+   "answer": 0,
+   "explain": "Essential services on backup, people informed and safe, service matched to what the systems can support."
+  },
+  {
+   "q": "Passengers must be kept off a platform where an emergency is in progress mainly because:",
+   "options": [
+    "The platform is being cleaned",
+    "Tickets cannot be checked there",
+    "An uncontrolled crowd at the incident site endangers both themselves and the responders' work",
+    "The trains are all cancelled permanently"
+   ],
+   "answer": 2,
+   "explain": "The incident site is a workplace for responders — crowds there become second incidents."
+  },
+  {
+   "q": "After an external emergency ends, the lessons and facts are captured through:",
+   "options": [
+    "Word of mouth among staff",
+    "The next day's newspaper",
+    "Passengers' social media posts",
+    "The incident report and debrief, feeding lessons learned into procedures"
+   ],
+   "answer": 3,
+   "explain": "Reporting and debrief turn one emergency into protection against the next."
+  },
+  {
+   "q": "A passenger reports a strong gas smell in a station. Staff should:",
+   "options": [
+    "Light a match to locate the leak",
+    "Raise the alarm, inform Operations Control Centre (OCC), avoid sparks/electrical switching in the area, evacuate as directed and call the appropriate agencies",
+    "Ignore it as a drain smell",
+    "Open all electrical panels to ventilate"
+   ],
+   "answer": 1,
+   "explain": "A gas smell is treated as real until proven otherwise — no ignition sources, evacuate, escalate."
+  },
+  {
+   "q": "During a heat wave, a passenger faints on a platform. This is handled as:",
+   "options": [
+    "A medical emergency — first aid, shade/cool place, inform control and arrange medical help if needed",
+    "A security incident",
+    "A reason to stop all trains",
+    "A passenger's personal problem, not staff's concern"
+   ],
+   "answer": 0,
+   "explain": "A faint is a medical case — the same first aid, information and handover chain applies."
+  },
+  {
+   "q": "The station controller hands over local command when Operations Control Centre (OCC)/agency takes over. A good handover includes:",
+   "options": [
+    "Only the time the incident started",
+    "The list of trains delayed",
+    "Situation, actions already taken, casualties, hazards and what help is on site or coming",
+    "His personal opinion of the cause"
+   ],
+   "answer": 2,
+   "explain": "Continuity of command depends on a complete brief — the new commander starts from facts, not zero."
+  },
+  {
+   "q": "A platform is overcrowded because trains are delayed, though no incident has occurred. The controller should still:",
+   "options": [
+    "Wait until an incident occurs before acting",
+    "Apply crowd management early — stop or meter entry and keep announcements flowing",
+    "Open the platform edge doors to the track",
+    "Ask passengers to stand closer together"
+   ],
+   "answer": 1,
+   "explain": "Crowd risk is managed before it becomes an emergency — early metering prevents the crush."
+  },
+  {
+   "q": "Which external emergency and first response pairing is correct?",
+   "options": [
+    "Earthquake — stop trains and inspect before resuming",
+    "Earthquake — resume at full speed after 10 minutes",
+    "Flood — run trains faster through water",
+    "Security threat — staff open and search suspicious bags"
+   ],
+   "answer": 0,
+   "explain": "Each external threat has a signature first move; for earthquakes it is stop and inspect."
+  },
+  {
+   "q": "A fire alarm activates in an unstaffed station area at night. The response is driven by:",
+   "options": [
+    "Nobody, until morning staff arrive",
+    "Passengers who happen to be present",
+    "The cleaning contractor alone",
+    "Operations Control Centre (OCC)/station control acting on the alarm information, dispatching staff/agencies as the plan prescribes"
+   ],
+   "answer": 3,
+   "explain": "Alarms are monitored centrally — an unstaffed location still gets a planned response."
+  },
+  {
+   "q": "A platform is filling faster than trains can clear it, though no incident has happened yet. The most effective preventive action at the station's control point is:",
+   "options": [
+    "Making louder announcements",
+    "Temporarily stopping or metering passenger entry at the gates so the platform crowd stays within safe limits",
+    "Asking passengers to stand closer together",
+    "Opening more ticket windows"
+   ],
+   "answer": 1,
+   "explain": "Crowd disasters are prevented at the entry, not on the platform. Holding people at concourse or gate level — where there is space — keeps platform density survivable."
+  },
+  {
+   "q": "A thunderstorm with lightning is directly over an open section where staff are working on the Overhead Equipment (OHE). The correct safety action is:",
+   "options": [
+    "Finish the work quickly before rain starts",
+    "Suspend the work, bring staff down and clear of the equipment and track area until the storm passes",
+    "Continue working but avoid touching metal",
+    "Work only on one wire at a time"
+   ],
+   "answer": 1,
+   "explain": "Lightning can strike the Overhead Equipment (OHE) and structures without warning. No maintenance task is worth a life — work stops and staff take shelter till the storm clears."
+  },
+  {
+   "q": "Dense fog covers the open (surface) portion of the line in the early morning. The standard operating precautions are:",
+   "options": [
+    "Normal speeds, since cab signalling does everything",
+    "Restricted speed on the surface portion, greater spacing between trains, and extra care at level crossings and work sites where people rely on sight",
+    "Cancelling all trains till noon",
+    "Asking drivers to use headlights only"
+   ],
+   "answer": 1,
+   "explain": "Fog removes the human eye as a safety layer — for staff on track, at crossings and at the lineside. Speed comes down so that what can be seen can still be stopped for."
+  },
+  {
+   "q": "A train driver reports a trespasser walking on the track in an open section. The Operations Control Centre (OCC) response is:",
+   "options": [
+    "Note it for the evening report",
+    "Caution or stop trains approaching that location, inform the nearest station and security to remove the person, and resume normal speed only after the track is confirmed clear",
+    "Ask the next driver to slow down and shout a warning",
+    "Wait for the person to leave on his own"
+   ],
+   "answer": 1,
+   "explain": "A person on the track is a life-safety emergency in slow motion. Trains are protected at once, security removes the trespasser, and only a confirmed-clear report restores normal running."
+  },
+  {
+   "q": "A hazardous chemical leak is reported from a factory next to a station, with fumes drifting towards it. The station's protective actions are:",
+   "options": [
+    "Keep the station open so people can escape through it",
+    "Close station entries, have trains skip the station, shut or reconfigure ventilation so outside air is not drawn in, and follow the fire and police direction",
+    "Send staff outside to identify the chemical by smell",
+    "Evacuate passengers towards the factory side where buses wait"
+   ],
+   "answer": 1,
+   "explain": "For an external gas threat the station becomes a sealed shelter problem: keep fumes out, keep people in safe air or move them on the clean side, and let the specialist agencies lead."
+  }
+ ]
+}

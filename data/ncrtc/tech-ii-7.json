@@ -1,0 +1,393 @@
+{
+ "id": "tech-ii-7",
+ "category": "technical",
+ "group": "Unit ii — Operational Systems & Interfaces",
+ "title": "Interface: OCC – Stations – Trains – Field Staff",
+ "questions": [
+  {
+   "q": "In the interface map Operations Control Centre (OCC) – Stations – Trains – Field staff, the OCC's role is to:",
+   "options": [
+    "Command and coordinate the whole operation",
+    "Manage one platform",
+    "Drive one train",
+    "Repair track on site"
+   ],
+   "answer": 0,
+   "explain": "Operations Control Centre (OCC) is the coordinating brain; the others execute within their areas."
+  },
+  {
+   "q": "In the interface map, stations are responsible for:",
+   "options": [
+    "Issuing movement authorities for the whole line",
+    "Managing passengers and the local response at their station",
+    "Repairing trains",
+    "Setting the timetable"
+   ],
+   "answer": 1,
+   "explain": "Stations own their passengers and their local ground response."
+  },
+  {
+   "q": "In the interface map, trains (operators) are responsible for:",
+   "options": [
+    "Coordinating the whole network",
+    "Managing station crowds",
+    "Reporting status and executing instructions",
+    "Approving power isolations alone"
+   ],
+   "answer": 2,
+   "explain": "Trains report what is happening on board and carry out Operations Control Centre (OCC)'s instructions."
+  },
+  {
+   "q": "Field/maintenance staff in the interface map are responsible for:",
+   "options": [
+    "Regulating the timetable",
+    "Making platform announcements network-wide",
+    "Driving relief trains only",
+    "Acting on the ground — attending, repairing and reporting ground truth"
+   ],
+   "answer": 3,
+   "explain": "Field staff are Operations Control Centre (OCC)'s hands and eyes on the ground."
+  },
+  {
+   "q": "Every operational interface works on two things. They are:",
+   "options": [
+    "A loud voice and good luck",
+    "A defined communication channel and a defined authority",
+    "A mobile phone and a notebook",
+    "Speed and seniority"
+   ],
+   "answer": 1,
+   "explain": "Who talks through which channel, and who has final authority — define both and the interface works."
+  },
+  {
+   "q": "Most operational failures are said to be:",
+   "options": [
+    "Always caused by passengers",
+    "Always caused by weather",
+    "Purely mechanical",
+    "Interface failures, not equipment failures"
+   ],
+   "answer": 3,
+   "explain": "Machines usually work; it is the handovers between people/systems that fail — hence interface discipline."
+  },
+  {
+   "q": "An 'interface' in simple words is:",
+   "options": [
+    "The point where two people's jobs touch — who informs whom, through which channel, and who has final authority",
+    "A computer screen only",
+    "A type of signal",
+    "A meeting room"
+   ],
+   "answer": 0,
+   "explain": "Interface = the touching point of two jobs, with information flow and authority defined."
+  },
+  {
+   "q": "A train develops a fault mid-section. The correct interface flow is:",
+   "options": [
+    "Driver repairs it silently without telling anyone",
+    "Passengers inform the next station",
+    "Train reports status to Operations Control Centre (OCC) → OCC coordinates → station/field staff respond as directed",
+    "Station staff stop all trains on their own authority"
+   ],
+   "answer": 2,
+   "explain": "Report up, coordinate at Operations Control Centre (OCC), act where directed — that is the interface chain working."
+  },
+  {
+   "q": "A station sees dangerous overcrowding building on a platform. Its interface duty is to:",
+   "options": [
+    "Say nothing — crowds are normal",
+    "Close the line on its own",
+    "Ask trains to skip without informing Operations Control Centre (OCC)",
+    "Inform OCC promptly and manage the crowd locally while OCC regulates trains/information"
+   ],
+   "answer": 3,
+   "explain": "Stations manage locally AND inform Operations Control Centre (OCC) — both halves of the interface duty."
+  },
+  {
+   "q": "Field staff attending a trackside fault must work under:",
+   "options": [
+    "Coordination with Operations Control Centre (OCC), including power isolation and protection arrangements as required",
+    "Their own independent authority",
+    "The station master's verbal guess",
+    "Passenger instructions"
+   ],
+   "answer": 0,
+   "explain": "Ground work touches live railway and power — it happens only inside Operations Control Centre (OCC)'s coordinated plan."
+  },
+  {
+   "q": "Why must a train operator never act on an instruction from an undefined source?",
+   "options": [
+    "All instructions are equal",
+    "Radio messages are optional",
+    "Authority is defined — instructions count only when they come through the proper channel from the proper authority",
+    "Seniority decides everything"
+   ],
+   "answer": 2,
+   "explain": "Defined authority prevents conflicting orders — a core interface rule."
+  },
+  {
+   "q": "Operations Control Centre (OCC) asks a station to hold passengers at the concourse during an incident ahead. The station should:",
+   "options": [
+    "Refuse — stations are independent",
+    "Comply, manage passengers locally with announcements, and keep OCC updated",
+    "Send passengers to the platform anyway",
+    "Close the station without informing OCC"
+   ],
+   "answer": 1,
+   "explain": "Operations Control Centre (OCC) coordinates, stations execute locally and report back — a two-way interface."
+  },
+  {
+   "q": "A field team finishes a repair. To restore normal working, they must:",
+   "options": [
+    "Just walk away — trains will find out",
+    "Inform passengers directly",
+    "Report completion/clearance to Operations Control Centre (OCC), which coordinates restoration of services and power",
+    "Restart trains themselves"
+   ],
+   "answer": 2,
+   "explain": "Restoration is coordinated from Operations Control Centre (OCC) after the ground reports clear — nobody self-restores."
+  },
+  {
+   "q": "Confusion between a station and a train about who should make an announcement during a fault is an example of:",
+   "options": [
+    "An equipment failure",
+    "An interface failure — roles at the touching point were not clear",
+    "A signalling failure",
+    "A fare failure"
+   ],
+   "answer": 1,
+   "explain": "The equipment worked; the hand-over of responsibility did not — a textbook interface failure."
+  },
+  {
+   "q": "Which channel is the defined link between a train operator and Operations Control Centre (OCC)?",
+   "options": [
+    "Personal mobile phone",
+    "Shouting at stations",
+    "Handwritten notes",
+    "The train radio (recorded, identity-linked)"
+   ],
+   "answer": 3,
+   "explain": "The recorded radio with the train's identity is the defined Operations Control Centre (OCC)–train channel."
+  },
+  {
+   "q": "During a power isolation for track work, the interfaces involved are mainly:",
+   "options": [
+    "Power Controller/Operations Control Centre (OCC) ↔ field staff ↔ train controller, keeping trains clear while the section is made safe",
+    "Automatic Fare Collection (AFC) ↔ passengers",
+    "Passenger Information System (PIS) ↔ advertisers",
+    "Station shops ↔ OCC"
+   ],
+   "answer": 0,
+   "explain": "Isolation touches power, trains and ground staff together — Operations Control Centre (OCC) holds the coordination."
+  },
+  {
+   "q": "A station receives two conflicting instructions from two different people. Correct action?",
+   "options": [
+    "Follow the defined authority (Operations Control Centre (OCC)) and seek clarification through the proper channel",
+    "Follow the louder instruction",
+    "Follow the first one blindly",
+    "Do nothing at all"
+   ],
+   "answer": 0,
+   "explain": "Defined authority exists exactly for this moment — escalate to Operations Control Centre (OCC) and clarify."
+  },
+  {
+   "q": "Ground truth — what is actually happening at a site — reaches Operations Control Centre (OCC) mainly through:",
+   "options": [
+    "Automatic Fare Collection (AFC) data alone",
+    "Reports from trains, stations and field staff",
+    "Guesswork",
+    "Newspapers"
+   ],
+   "answer": 1,
+   "explain": "Operations Control Centre (OCC) decides on what its interfaces report; accurate ground reporting is therefore a safety duty."
+  },
+  {
+   "q": "Why does the extract say interface failures dominate over equipment failures in exams?",
+   "options": [
+    "Because equipment never fails",
+    "Because interfaces are not in the syllabus",
+    "Because exam scenarios usually test who informs whom, through which channel, and who decides — not whether a machine works",
+    "Because Operations Control Centre (OCC) does everything itself"
+   ],
+   "answer": 2,
+   "explain": "Scenario questions are interface questions: information, channel, authority."
+  },
+  {
+   "q": "A train operator notices a lineside defect while passing. His interface action is:",
+   "options": [
+    "Stop and repair it himself",
+    "Note it for the monthly report only",
+    "Inform the next train's passengers",
+    "Report it promptly to Operations Control Centre (OCC) with location details so field staff can be directed"
+   ],
+   "answer": 3,
+   "explain": "Report position and nature to Operations Control Centre (OCC) — the system then tasks the right people."
+  },
+  {
+   "q": "Platform Screen Door (PSD) fault at a platform: which interfaces act together?",
+   "options": [
+    "Only the Automatic Fare Collection (AFC) supervisor",
+    "Station staff (isolate/supervise) ↔ Operations Control Centre (OCC) (informed, regulates) ↔ train operator (berthing/door coordination)",
+    "Only the passengers",
+    "Only the depot"
+   ],
+   "answer": 1,
+   "explain": "A Platform Screen Door (PSD) fault touches station, Operations Control Centre (OCC) and train together — a live example of the interface map."
+  },
+  {
+   "q": "If a station's local response and Operations Control Centre (OCC)'s network plan conflict during an emergency, what resolves it?",
+   "options": [
+    "Whoever acts first wins",
+    "The station always overrides OCC",
+    "Trains decide",
+    "The defined authority — OCC coordinates the network response while the station manages its local area within that plan"
+   ],
+   "answer": 3,
+   "explain": "Local management inside a centrally coordinated plan — that division is the interface design."
+  },
+  {
+   "q": "A maintenance team needs a section of track. The request flows:",
+   "options": [
+    "Field/maintenance need → coordinated by Operations Control Centre (OCC) (with power controller/train controller) → protection and isolation arranged → work permitted",
+    "Team walks in when free",
+    "Station announces it",
+    "Drivers are told by passengers"
+   ],
+   "answer": 0,
+   "explain": "Possession-type work is granted through coordination, never self-taken."
+  },
+  {
+   "q": "Which is the best example of a healthy interface?",
+   "options": [
+    "A driver fixes everything silently",
+    "A station hears of an incident from passengers first",
+    "A driver reports a fault on the recorded radio; Operations Control Centre (OCC) acknowledges, tasks the station and field staff, and updates the driver",
+    "Field staff learn of a plan from a notice board"
+   ],
+   "answer": 2,
+   "explain": "Report – acknowledge – task – update: the loop closing is the sign of a working interface."
+  },
+  {
+   "q": "Information about a disruption reaches passengers best when interfaces work in this order:",
+   "options": [
+    "Each station invents its own version",
+    "Passengers inform Operations Control Centre (OCC)",
+    "Rumours fill the gap",
+    "Trains/stations report to OCC → OCC approves one version → stations/trains announce it through Passenger Information System (PIS)/Public Address System (PAS)"
+   ],
+   "answer": 3,
+   "explain": "One verified version flowing outward is why the Operations Control Centre (OCC) sits at the centre of the map."
+  },
+  {
+   "q": "A new operator is unsure whether a task is his, the station's, or Operations Control Centre (OCC)'s. The syllabus answer is to check:",
+   "options": [
+    "The defined interface — whose job touches that point, through which channel, and who holds authority",
+    "Who is senior-most on duty",
+    "Who is nearest",
+    "Who volunteers"
+   ],
+   "answer": 0,
+   "explain": "Interfaces are defined in advance precisely so nobody has to guess during an incident."
+  },
+  {
+   "q": "Why are field staff reports called 'ground truth'?",
+   "options": [
+    "Because they work on the ground floor",
+    "Because Operations Control Centre (OCC) has no information",
+    "Because they describe what is physically true at the site, against which OCC's plan is checked",
+    "Because reports are written on paper"
+   ],
+   "answer": 2,
+   "explain": "Screens show indications; field staff confirm reality — Operations Control Centre (OCC) plans on their truth."
+  },
+  {
+   "q": "During simultaneous problems at two stations, Operations Control Centre (OCC)'s interface role is to:",
+   "options": [
+    "Handle only the nearer one",
+    "Prioritise and coordinate both responses, tasking stations/trains/field staff in order",
+    "Leave stations to cope alone",
+    "Stop the entire network in all cases"
+   ],
+   "answer": 1,
+   "explain": "Coordination and prioritisation across the whole line is exactly what Operations Control Centre (OCC) exists for."
+  },
+  {
+   "q": "Which pairing of role and responsibility is WRONG?",
+   "options": [
+    "Stations — passengers and local response",
+    "Trains — report status and execute",
+    "Operations Control Centre (OCC) — driving each train personally",
+    "Field staff — act on the ground"
+   ],
+   "answer": 2,
+   "explain": "Operations Control Centre (OCC) coordinates; it does not drive trains — operators do."
+  },
+  {
+   "q": "The whole Unit ii interface lesson in one line is:",
+   "options": [
+    "More equipment solves everything",
+    "Equipment rarely fails the railway; undefined channels and unclear authority do — so every interface fixes its channel and its authority in advance",
+    "Interfaces are a minor topic",
+    "Only Operations Control Centre (OCC) needs to communicate"
+   ],
+   "answer": 1,
+   "explain": "Channel + authority, defined before the incident — that is the examinable core of interfaces."
+  },
+  {
+   "q": "Shift handover between outgoing and incoming controllers and station staff is itself an important interface because:",
+   "options": [
+    "It is a formality with no operational content",
+    "Ongoing incidents, isolations, defects and special instructions must pass completely and clearly to the next shift — a poor handover loses the ground truth the previous shift held",
+    "Only attendance is marked at handover",
+    "Trains stop running during handover"
+   ],
+   "answer": 1,
+   "explain": "The railway runs 24×7 but people work in shifts. A disciplined, logged handover is how the Operations Control Centre (OCC) picture survives a change of people."
+  },
+  {
+   "q": "The depot is another interface in daily operations. Bringing trains into service for the first service of the day requires coordination between:",
+   "options": [
+    "Only the train operator alone",
+    "The depot (train preparation and despatch), the Operations Control Centre (OCC) (accepting and regulating the train) and the first station (passenger readiness)",
+    "Only the ticket staff",
+    "Passengers waiting on the platform"
+   ],
+   "answer": 1,
+   "explain": "A train does not simply 'appear' for the first service. Depot despatch, Operations Control Centre (OCC) acceptance and station readiness must meet at the same minute — an interface repeated at every induction and withdrawal."
+  },
+  {
+   "q": "Certain safety-critical authorities — for example, authorising a train to pass a signal at danger — are given as written or formally recorded orders, not casual verbal messages, because:",
+   "options": [
+    "Paper is cheaper than radio",
+    "A written/recorded authority is exact, can be read back and checked, and remains as proof of what was authorised, by whom and when",
+    "Drivers prefer reading while driving",
+    "Verbal orders are banned for all purposes"
+   ],
+   "answer": 1,
+   "explain": "The more safety-critical the instruction, the more formal its interface. Written or recorded authority removes memory and misunderstanding from the most dangerous permissions in operations."
+  },
+  {
+   "q": "Where the Regional Rapid Transit System (RRTS) meets another railway or an adjacent control area, operations must also manage an external interface. Its main need is:",
+   "options": [
+    "Sharing advertising revenue",
+    "Coordinated decisions at the boundary — train movements, power and emergencies on one side affect the other, so the two controls must plan and inform each other",
+    "Using the same uniform for staff",
+    "Exchanging passenger lists daily"
+   ],
+   "answer": 1,
+   "explain": "No control area is an island. At a boundary, the Operations Control Centre (OCC) and the neighbouring control work as one interface, especially during through running and emergencies."
+  },
+  {
+   "q": "During a major incident at a site, one named incident coordinator is appointed on the ground mainly to:",
+   "options": [
+    "Give interviews to the media",
+    "Be the single point of contact between the site and the Operations Control Centre (OCC), so instructions flow through one channel and parallel, conflicting orders are avoided",
+    "Replace the Operations Control Centre (OCC) completely",
+    "Count the passengers at the site"
+   ],
+   "answer": 1,
+   "explain": "Many agencies work at an incident site, but the interface to the Operations Control Centre (OCC) must stay single and clear — one coordinator speaking for the site prevents crossed instructions."
+  }
+ ]
+}

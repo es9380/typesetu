@@ -1,0 +1,283 @@
+{
+ "id": "tech-v-8",
+ "category": "technical",
+ "group": "Unit v — Emergency & Contingency Management",
+ "title": "Restoration of Normal Operations",
+ "questions": [
+  {
+   "q": "Normal service after an incident may resume only when the affected area has been:",
+   "options": [
+    "Inspected and certified safe by the responsible official",
+    "Vacant for one full hour",
+    "Photographed by the station staff",
+    "Announced on the public address system"
+   ],
+   "answer": 0,
+   "explain": "Certification is the gate — resumption without a 'declared fit' is prohibited, however long the delay."
+  },
+  {
+   "q": "The correct restoration sequence after an incident is:",
+   "options": [
+    "Full timetable at once, systems tested later, report first",
+    "Passengers informed, full speed running, inspection next day",
+    "Area certified safe, systems restored and tested, trains repositioned, phased service resumption, passengers informed, report and debrief",
+    "Trains repositioned, area certified afterwards, systems tested last"
+   ],
+   "answer": 2,
+   "explain": "Certify, restore and test, reposition, resume in phases, inform, then report — this order is itself a safety procedure."
+  },
+  {
+   "q": "Which systems are restored and tested before normal running, as part of restoration?",
+   "options": [
+    "Only the ticket vending machines",
+    "Signalling, power, Platform Screen Doors (PSD) and other station systems",
+    "Only the station lighting",
+    "Only the catering equipment"
+   ],
+   "answer": 1,
+   "explain": "Every system the incident touched — signalling, power, Platform Screen Doors (PSD) and station systems — is restored and tested, not assumed."
+  },
+  {
+   "q": "In the restoration flowchart, systems are restored in an order that begins with:",
+   "options": [
+    "Station shops, then power, then signalling",
+    "Signalling before any power is restored in all cases",
+    "Passenger announcements before all systems",
+    "Power, then signalling, communications and station systems"
+   ],
+   "answer": 3,
+   "explain": "Power feeds the rest — the flowchart restores power, signalling, communications and station systems in that order."
+  },
+  {
+   "q": "The first train movements through a restored area are made:",
+   "options": [
+    "At caution or restricted speed",
+    "At maximum line speed to test the repair",
+    "Only with officials on board for a week",
+    "Backwards, to check the track"
+   ],
+   "answer": 0,
+   "explain": "First movements prove the area gently — speed returns only after the proof."
+  },
+  {
+   "q": "Service after an incident usually resumes first as:",
+   "options": [
+    "Double frequency to clear the backlog",
+    "A phased pattern — often reduced frequency first, then the full timetable",
+    "Only premium trains",
+    "Next day's timetable started early"
+   ],
+   "answer": 1,
+   "explain": "Phased resumption is deliberate: a thinner service that actually runs beats a full timetable that collapses again."
+  },
+  {
+   "q": "Why are trains 'repositioned' before the service can be rebuilt?",
+   "options": [
+    "Trains must be washed before running again",
+    "Drivers prefer different trains after an incident",
+    "Repositioning is needed for the incident photograph",
+    "Incidents leave trains in the wrong places — they must be moved to where the timetable needs them"
+   ],
+   "answer": 3,
+   "explain": "A timetable is trains in the right places at the right times — restoration puts them back there."
+  },
+  {
+   "q": "Gaps in the rebuilt service are filled mainly by:",
+   "options": [
+    "Asking passengers to wait until the next day",
+    "Running trains at double speed",
+    "Depot insertions and short-turn trains until the timetable becomes real again",
+    "Cancelling alternate stations"
+   ],
+   "answer": 2,
+   "explain": "Spare trains from the depot and short-turns plug the holes while the pattern rebuilds."
+  },
+  {
+   "q": "During every stage of restoration, passengers must be:",
+   "options": [
+    "Told nothing until the full timetable returns",
+    "Kept informed — what is running, what is not, and what to expect next",
+    "Given only the technical fault details",
+    "Asked to check the next day's newspaper"
+   ],
+   "answer": 1,
+   "explain": "Information runs alongside restoration — passengers plan their journeys from it."
+  },
+  {
+   "q": "After restoration, the incident process is completed by:",
+   "options": [
+    "The incident report, enquiry inputs and lessons learned",
+    "A celebration at the depot",
+    "Deleting the incident log",
+    "Refunding every ticket automatically"
+   ],
+   "answer": 0,
+   "explain": "Report and lessons learned close the loop — today's restoration becomes tomorrow's prevention."
+  },
+  {
+   "q": "Lessons learned from an incident feed into:",
+   "options": [
+    "The staff leave register",
+    "The catering menu revision",
+    "Corrective And Preventive Action (CAPA) — changes that stop the same incident repeating",
+    "Nothing — they are filed and forgotten"
+   ],
+   "answer": 2,
+   "explain": "Corrective And Preventive Action (CAPA) is where a debrief turns into changed procedures, training or equipment."
+  },
+  {
+   "q": "A section was evacuated during an incident. Before trains run through it again, the essential confirmation is:",
+   "options": [
+    "All tickets have been collected",
+    "The evacuation has been announced in the press",
+    "The trains have been cleaned",
+    "All passengers and staff are clear of the track and the area is certified safe"
+   ],
+   "answer": 3,
+   "explain": "Clear-of-people plus certified safe — a section never reopens on assumption."
+  },
+  {
+   "q": "The failed train that caused an incident is still standing in the section. Restoration of the line requires it to be:",
+   "options": [
+    "Left there and timetabled around permanently",
+    "Moved clear to a depot or siding when safe, under Operations Control Centre (OCC) direction",
+    "Pushed into a tunnel cross-passage",
+    "Sold for scrap on the spot"
+   ],
+   "answer": 1,
+   "explain": "The Operations Control Centre (OCC) directs the failed train's removal — the running line must be physically clear."
+  },
+  {
+   "q": "A station that was evacuated reopens to passengers when:",
+   "options": [
+    "The all-clear is given by the authorised command after checks and headcount",
+    "The first train arrives at its platform",
+    "Passengers waiting outside start entering",
+    "The station shutters are repaired"
+   ],
+   "answer": 0,
+   "explain": "Station reopening follows the all-clear — a formal decision after accounting, not crowd pressure."
+  },
+  {
+   "q": "Why is the full timetable NOT restored in one step even when everything is repaired?",
+   "options": [
+    "The timetable office needs a day to print it",
+    "Passengers prefer fewer trains after an incident",
+    "Trains and crews are out of position and the system must prove stable — a phased build-up avoids a second collapse",
+    "Drivers are not allowed to work after incidents"
+   ],
+   "answer": 2,
+   "explain": "Repair fixes machines; phasing fixes positions and proves stability — both are needed."
+  },
+  {
+   "q": "During phased restoration, headway between trains will initially be:",
+   "options": [
+    "Smaller than normal from the first train",
+    "Zero at all stations",
+    "Unchanged from the first minute",
+    "Larger than normal, shrinking as the service builds up"
+   ],
+   "answer": 3,
+   "explain": "Wider gaps at first are the visible sign of a careful restoration."
+  },
+  {
+   "q": "Who declares the affected signalling and power systems 'fit' for normal service?",
+   "options": [
+    "The responsible engineer or controller for each system",
+    "The first train driver to use them",
+    "The station master alone for all systems",
+    "Any technician present at the site"
+   ],
+   "answer": 0,
+   "explain": "Each system has its own fit declaration by its own responsible official — the Operations Control Centre (OCC) acts on those declarations."
+  },
+  {
+   "q": "Passenger information during restoration should include, most importantly:",
+   "options": [
+    "The names of the engineers who repaired the fault",
+    "Which services are running, expected frequency and any alternatives such as bus bridging",
+    "The cost of the damage",
+    "The full technical enquiry report"
+   ],
+   "answer": 1,
+   "explain": "Passengers need usable facts — running services, frequency and alternatives — not engineering detail."
+  },
+  {
+   "q": "A restored power section is brought back into service gradually mainly to:",
+   "options": [
+    "Save money on the electricity bill",
+    "Give passengers time to board slowly",
+    "Avoid a second trip from a sudden full load",
+    "Test each train's horn"
+   ],
+   "answer": 2,
+   "explain": "Gradual loading protects the recovery — a second failure would be worse than a slow first one."
+  },
+  {
+   "q": "After a signalling failure, restoration steps up through:",
+   "options": [
+    "Test movement at caution, then gradually back to normal headway",
+    "Immediate full-speed running",
+    "A week of manual working regardless",
+    "Only empty trains for a month"
+   ],
+   "answer": 0,
+   "explain": "The test movement proves the repair; headway then builds step by step."
+  },
+  {
+   "q": "The Operations Control Centre (OCC) coordinates restoration because:",
+   "options": [
+    "Station staff are not allowed to help",
+    "Only control sees the whole picture — systems, train positions, crews and passenger information together",
+    "Restoration needs no coordination at all",
+    "The depot is closed during incidents"
+   ],
+   "answer": 1,
+   "explain": "The Operations Control Centre (OCC) holds every thread of the recovery — that is why it directs the sequence."
+  },
+  {
+   "q": "An incident ends at night with the service closed. Restoration planning should still:",
+   "options": [
+    "Wait for the morning shift to think about it",
+    "Cancel the next day's services automatically",
+    "Leave trains wherever they stopped",
+    "Certify the area and systems, reposition trains, and have a phased plan ready for the first services"
+   ],
+   "answer": 3,
+   "explain": "Overnight is restoration time — the morning peak should meet a certified railway, not yesterday's wreckage."
+  },
+  {
+   "q": "Which is a sign that restoration has been rushed unsafely?",
+   "options": [
+    "Trains running at normal speed through an area that has not been certified fit",
+    "Passengers being informed at each stage",
+    "A reduced-frequency service starting first",
+    "A test train running at caution"
+   ],
+   "answer": 0,
+   "explain": "Speed before certification is the classic rushed-restoration trap — the gate exists to stop exactly this."
+  },
+  {
+   "q": "Post-incident, staff involved in the incident are important to the debrief because:",
+   "options": [
+    "They must be punished before restoration",
+    "Their leave must be cancelled",
+    "Their first-hand account builds the report, the enquiry inputs and the lessons learned",
+    "They alone decide the compensation"
+   ],
+   "answer": 2,
+   "explain": "The people who were there hold the facts — the debrief collects them while memory is fresh."
+  },
+  {
+   "q": "Restoration is truly complete when:",
+   "options": [
+    "The first train moves again",
+    "The full timetable is running reliably, passengers are informed, and the report with lessons learned is completed",
+    "The incident leaves the news",
+    "The failed equipment is thrown away"
+   ],
+   "answer": 1,
+   "explain": "Movement is only the middle of restoration — reliability, information and learning complete it."
+  }
+ ]
+}

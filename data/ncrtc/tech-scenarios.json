@@ -1,0 +1,558 @@
+{
+ "id": "tech-scenarios",
+ "category": "technical",
+ "group": "Mixed — Integrated Scenarios",
+ "title": "Integrated Scenarios (Mixed Units)",
+ "questions": [
+  {
+   "q": "Case: At 08:40 peak hour, a train stalls between two stations; the driver reports a traction fault and restart attempts fail. What is the FIRST correct action chain?",
+   "options": [
+    "The train is secured, the Operations Control Centre (OCC) is informed, and following trains are stopped or regulated to protect the section",
+    "Let the following train push it without authority",
+    "Wait silently for the fault to clear itself",
+    "Detrain passengers onto the track at once"
+   ],
+   "answer": 0,
+   "explain": "Protect first: secure the train, inform the Operations Control Centre (OCC), and protect the section. Rescue or transfer decisions come only after protection, under the Operations Control Centre (OCC)'s authority."
+  },
+  {
+   "q": "Case: A stalled train cannot be restarted even after the authorised troubleshooting window. The next step, as directed by the Operations Control Centre (OCC), is:",
+   "options": [
+    "Passengers walk along the track to the next station on their own",
+    "Send a rescue train or transfer passengers strictly as per procedure, under OCC authority",
+    "The driver abandons the train",
+    "Following trains are allowed to pass the section normally"
+   ],
+   "answer": 1,
+   "explain": "A rescue train or a controlled passenger transfer is an Operations Control Centre (OCC)-authorised operation. Nothing moves and nobody detrains without that authority and protection."
+  },
+  {
+   "q": "Case: While one direction is blocked by a failed train, the other direction is healthy. The best service decision is:",
+   "options": [
+    "Cancel all trains till midnight",
+    "Stop the entire line in both directions",
+    "Continue services in the unaffected direction and, if needed, run a reduced or single-line service around the failure with passengers informed",
+    "Run extra trains through the blocked section"
+   ],
+   "answer": 2,
+   "explain": "Continuity: protect the failed section, but keep the healthy railway running. Passengers are informed through the Public Address System (PAS) and Passenger Information System (PIS) with alternatives."
+  },
+  {
+   "q": "Case: The failed train is finally cleared to the depot. Restoration of normal service should be:",
+   "options": [
+    "Delayed by a day for safety",
+    "Left to each station to decide",
+    "Instant, at full frequency, on the driver's word",
+    "Phased — normalisation step by step after the section is confirmed clear, with the incident logged"
+   ],
+   "answer": 3,
+   "explain": "Restore in phases after certification that the section is clear. The Operations Control Centre (OCC) then logs the incident for analysis — restoration without confirmation invites a second incident."
+  },
+  {
+   "q": "Case: Which option in a peak-hour train failure case should ALWAYS be rejected?",
+   "options": [
+    "Informing passengers with alternatives",
+    "Regulating following trains",
+    "Detraining passengers immediately onto the track without protection and authority",
+    "Sending a rescue train under OCC orders"
+   ],
+   "answer": 2,
+   "explain": "Unprotected detrainment onto a live track is the classic wrong answer. In the Operations Control Centre (OCC) pattern, protection and authority always come before any evacuation."
+  },
+  {
+   "q": "Case: One Platform Screen Door (PSD) panel at a busy station fails to close. The first actions are:",
+   "options": [
+    "Hold trains or extend dwell safely, send station staff to the spot, and inform the Operations Control Centre (OCC)",
+    "Ask passengers to hold the panel shut",
+    "Close the station for the day",
+    "Dispatch trains normally — one panel does not matter"
+   ],
+   "answer": 0,
+   "explain": "An unclosed Platform Screen Door (PSD) panel is an unprotected opening to the track. Trains are held, staff attend the spot, and the Operations Control Centre (OCC) declares degraded station working."
+  },
+  {
+   "q": "Case: A Platform Screen Door (PSD) panel is isolated as per procedure and a staff member is posted at it. The correct service decision is:",
+   "options": [
+    "Use the isolated door anyway at low speed",
+    "Let passengers operate the door",
+    "Stop all trains at that station forever",
+    "Continue service with controlled dispatch, the isolated door not used, maintenance called and the fault logged"
+   ],
+   "answer": 3,
+   "explain": "Degraded but safe: isolate the faulty Platform Screen Door (PSD), post staff, control dispatch, call maintenance and log it. Service continues inside the safe envelope."
+  },
+  {
+   "q": "Case: Which action in a Platform Screen Door (PSD) fault must be rejected?",
+   "options": [
+    "Informing the Operations Control Centre (OCC)",
+    "Dispatching a train with an unprotected open panel",
+    "Isolating the panel as per procedure",
+    "Posting staff at the faulty panel"
+   ],
+   "answer": 1,
+   "explain": "Never dispatch past an unprotected opening. The Platform Screen Door (PSD) system is integrated with signalling precisely so a train cannot be sent into that risk."
+  },
+  {
+   "q": "Case: A big match ends near a station in 30 minutes and a huge crowd is expected. The best preparation is:",
+   "options": [
+    "Anticipate from event information: regulate entry at the gates before platforms overload, post extra staff, and have the Operations Control Centre (OCC) plan additional or strengthened services",
+    "Open every gate and barrier fully",
+    "Switch off the fare gates",
+    "Wait for the crowd and react"
+   ],
+   "answer": 0,
+   "explain": "Crowds are controlled at the entry, not at the platform edge. Anticipation — using event information early — is projection, Level 3 of situational awareness, applied by the Operations Control Centre (OCC) and station together."
+  },
+  {
+   "q": "Case: During a crowd surge, exits and entries at a station should be managed by:",
+   "options": [
+    "Letting both flows mix freely on the stairs",
+    "Keeping flows separated and one-way where needed, with announcements guiding passengers",
+    "Closing all exits",
+    "Allowing entry till the platform is full"
+   ],
+   "answer": 1,
+   "explain": "Mixed flows jam and crush. Separated, guided, one-way movement — directed by announcements from the Public Address System (PAS) — keeps a surge safe."
+  },
+  {
+   "q": "Case: A passenger falls sick in a moving train. A co-passenger alerts the crew. The correct chain is:",
+   "options": [
+    "Ask other passengers to treat the patient till the last station",
+    "Stop the train immediately in the section and detrain the patient",
+    "The driver informs the Operations Control Centre (OCC); first aid or an ambulance is arranged at the nominated next station; the train proceeds there and the passenger is handed over",
+    "Wait till the train reaches the depot"
+   ],
+   "answer": 2,
+   "explain": "A moving train with a medical case goes to the nominated station, not a stop in the section. The Operations Control Centre (OCC) arranges help at that station so handover takes only a brief detention."
+  },
+  {
+   "q": "Case: After handing over a sick passenger at a station, the train crew must:",
+   "options": [
+    "Terminate the train there",
+    "Refuse further passengers",
+    "Detrain all passengers for checking",
+    "Resume service with only a brief detention, and file the incident report with times and actions"
+   ],
+   "answer": 3,
+   "explain": "Care, hand over, document, move on. The report — with times from the Operations Control Centre (OCC) log — closes the loop."
+  },
+  {
+   "q": "Case: Total signalling failure occurs in one section at night. The immediate response is:",
+   "options": [
+    "Passengers are told nothing",
+    "Trains keep running on the drivers' judgement",
+    "Movements are stopped and protected; the Operations Control Centre (OCC) authorises the prescribed restricted working only if the rules permit, otherwise services are suspended",
+    "Drivers use headlights to signal each other"
+   ],
+   "answer": 2,
+   "explain": "No signalling, no normal movement. The Operations Control Centre (OCC) permits only rule-based restricted working — and if the rules do not permit it, the section stays suspended."
+  },
+  {
+   "q": "Case: Engineers say the signalling fault is repaired. Before normal service resumes, the section needs:",
+   "options": [
+    "Testing and certification; the first train runs at restricted or inspection speed as directed, and full service follows only after certification",
+    "A verbal assurance from a passenger",
+    "No checks at night",
+    "One train to 'try it out' at full speed"
+   ],
+   "answer": 0,
+   "explain": "Restoration is earned by testing and certification, never claimed. A restricted-speed first run under Operations Control Centre (OCC) direction proves the section before passengers rely on it."
+  },
+  {
+   "q": "Case: A fire is reported inside a moving train that can still move safely. The standard principle is:",
+   "options": [
+    "Open all doors while moving",
+    "Use water on any electrical fire",
+    "Stop wherever it is, even in a tunnel section",
+    "If the train can move, take it to the next station where evacuation and firefighting are far safer; inform the Operations Control Centre (OCC) immediately"
+   ],
+   "answer": 3,
+   "explain": "A station is the safest place to evacuate and fight a fire. The Operations Control Centre (OCC) prepares the station while the train moves there — and water is never used on electrical fires."
+  },
+  {
+   "q": "Case: Smoke is seen coming from a train standing at a platform. The priority order is:",
+   "options": [
+    "Finish the dwell and depart",
+    "Protect the section and stop movements, inform the Operations Control Centre (OCC), evacuate passengers away from the smoke, then fight the fire with the correct extinguisher",
+    "Complete the incident report first",
+    "Board more passengers quickly"
+   ],
+   "answer": 1,
+   "explain": "Protect – Inform – Act: stop movements, alert the Operations Control Centre (OCC), evacuate away from smoke, then tackle the fire. Paperwork is last."
+  },
+  {
+   "q": "Case: A train must be evacuated on the track in a section. Evacuation may begin only after:",
+   "options": [
+    "The train is stopped, traction power is confirmed isolated as required, and the Operations Control Centre (OCC) authorises the evacuation",
+    "The driver alone decides without informing anyone",
+    "The media arrives",
+    "Passengers demand it loudly"
+   ],
+   "answer": 0,
+   "explain": "Track evacuation needs three locks: train stopped, power confirmed safe, and Operations Control Centre (OCC) authority. Missing any one of them, evacuation waits."
+  },
+  {
+   "q": "Case: During an evacuation, a passenger refuses to leave the train. Staff should:",
+   "options": [
+    "Leave him and close the doors",
+    "Use calm, firm communication, explain the danger, assist him out, and inform the Operations Control Centre (OCC) — the train is confirmed empty before any movement",
+    "Drag him by force as the first step",
+    "Restart the train to persuade him"
+   ],
+   "answer": 1,
+   "explain": "Evacuation ends with a confirmed-empty train. The Operations Control Centre (OCC) is kept informed; persuasion and assistance come before any force."
+  },
+  {
+   "q": "Case: A signalling failure and a traction power failure occur together in the same section during peak hours. The in-charge's approach is:",
+   "options": [
+    "Wait for both to self-repair",
+    "Handle whichever was reported first, alone",
+    "Triage: protect the section, assign an owner to each failure, keep the overall picture at the Operations Control Centre (OCC), and run a reduced service on healthy sections",
+    "Cancel the whole day's service"
+   ],
+   "answer": 2,
+   "explain": "Combined failures are handled in parallel with owners per problem and one overall picture at the Operations Control Centre (OCC). Safety first, then the maximum service the healthy railway can carry."
+  },
+  {
+   "q": "Case: While a failed train is being rescued, a crowd surge begins at the nearest station. The best combined response is:",
+   "options": [
+    "Ignore the crowd till the rescue ends",
+    "Stop the rescue to manage the crowd",
+    "Pull all station staff to the rescue",
+    "Keep the rescue under its owner, put separate staff on entry metering and announcements at the station, and keep the Operations Control Centre (OCC) coordinating both"
+   ],
+   "answer": 3,
+   "explain": "Simultaneous problems get parallel owners. The Operations Control Centre (OCC) holds the whole picture so neither problem starves the other of attention."
+  },
+  {
+   "q": "Case: Heavy rain floods a station approach while trains run normally. The adaptable plan is:",
+   "options": [
+    "Tell passengers to wade carefully",
+    "No change — trains are unaffected",
+    "Warn stations and passengers early, control entry from flooded approaches, watch for water near equipment, and be ready to regulate or restrict as conditions develop",
+    "Close the whole line immediately"
+   ],
+   "answer": 2,
+   "explain": "Adapt early: the flood is a changing condition. The Operations Control Centre (OCC) projects its effects — entry control, equipment watch, readiness to restrict — before it becomes an incident."
+  },
+  {
+   "q": "Case: A passenger is injured by a sudden crowd push at a fare gate during a disruption. First actions:",
+   "options": [
+    "First aid at once, inform the Operations Control Centre (OCC) for medical help, control the crowd flow at the gates, and document the incident",
+    "Continue boarding to clear the crowd faster",
+    "Blame the passenger in the announcement",
+    "Announce that passengers should be careful"
+   ],
+   "answer": 0,
+   "explain": "Life first (first aid and medical help via the Operations Control Centre (OCC)), then crowd control at the source — the gates — then documentation."
+  },
+  {
+   "q": "Case: A train's door fault has now occurred for the third time today, each time 'fixed' by a reset. The supervisor's correct decision is:",
+   "options": [
+    "Blame today's driver",
+    "Ignore it till the depot visit next week",
+    "Reset it a fourth time",
+    "Treat recurrence as a system problem: withdraw or restrict the train as per procedure, inform the Operations Control Centre (OCC), and have the fault analysed instead of repeatedly reset"
+   ],
+   "answer": 3,
+   "explain": "Recurrence is data, not bad luck. The Operations Control Centre (OCC) must see the pattern; analysis and a proper fix replace endless resets."
+  },
+  {
+   "q": "Case: An alarm in the Operations Control Centre (OCC) indicates a possible track obstruction, but the next train's driver reports the section looks clear. The correct approach is:",
+   "options": [
+    "Cancel the alarm as false at once",
+    "Treat the alarm as real until verified: regulate or stop movements as per procedure and verify from an independent source before normal running",
+    "Let trains run at full speed since the driver saw nothing",
+    "Wait for a second alarm"
+   ],
+   "answer": 1,
+   "explain": "Alarms are real until verified false. One visual report does not cancel an alarm — independent verification under Operations Control Centre (OCC) procedure does."
+  },
+  {
+   "q": "Case: A station loses its telecom link with the Operations Control Centre (OCC) during normal running. The station should:",
+   "options": [
+    "Use the prescribed alternative communication, restrict actions to what is safely permitted without the link, and inform through any working channel",
+    "Use a staff member's personal phone while trains keep moving on verbal guesses",
+    "Wait silently till the link returns",
+    "Continue all movements on assumption"
+   ],
+   "answer": 0,
+   "explain": "No communication, no new authority. Alternative channels and restricted, procedure-based working keep the station safe until the Operations Control Centre (OCC) link is restored."
+  },
+  {
+   "q": "Case: Mid-incident, the Operations Control Centre (OCC) changes the plan because new facts arrive. A station questions the change. The correct professional behaviour is:",
+   "options": [
+    "Stations keep the old plan",
+    "The change is communicated to all points with its reason, stations acknowledge and follow the new plan, and the change is logged",
+    "Each station chooses its preferred plan",
+    "The change is kept secret"
+   ],
+   "answer": 1,
+   "explain": "Decisions are loops: new facts, new decision, openly communicated and recorded. The Operations Control Centre (OCC) plan is one plan for the whole line."
+  },
+  {
+   "q": "Case: A delayed evening service risks missing the last-train connection at an interchange station. The best decision is:",
+   "options": [
+    "Tell passengers to run across the station",
+    "Let the connection fail silently",
+    "The Operations Control Centre (OCC) weighs safety and the number of affected passengers, holds the connection briefly if safely possible, and announces the position honestly either way",
+    "Delay all trains indefinitely"
+   ],
+   "answer": 2,
+   "explain": "Protect connections where safely possible — that is service continuity. Where it is not possible, the Operations Control Centre (OCC) ensures early, honest information and alternatives."
+  },
+  {
+   "q": "Case: After a major disruption ends, passengers complain they were told nothing for 40 minutes. The lesson for the Operations Control Centre (OCC) and stations is:",
+   "options": [
+    "Announce only after restoration",
+    "Give technical fault details in announcements",
+    "Complaints are routine — ignore",
+    "Passenger information must be early and updated at promised intervals during disruption, even if the update is 'no change yet'"
+   ],
+   "answer": 3,
+   "explain": "Silence is the failure passengers remember. Early, repeated, honest updates — coordinated by the Operations Control Centre (OCC) — are part of the operation, not an extra."
+  },
+  {
+   "q": "Case: A train operator notices an unusual smell in the cab and a minor fault indication together. He should:",
+   "options": [
+    "Mention it at the next shift handover only",
+    "Continue to the terminus to avoid delay",
+    "Report both facts to the Operations Control Centre (OCC) at once and follow instructions — two weak signals together can be one developing failure",
+    "Open the cab windows and continue"
+   ],
+   "answer": 2,
+   "explain": "Weak signals combine. Reporting early lets the Operations Control Centre (OCC) project what the pair of signs may become."
+  },
+  {
+   "q": "Case: A platform is overcrowding because two successive trains were cancelled. The station's best immediate actions are:",
+   "options": [
+    "Meter entry, use holding areas, make clear announcements, and ask the Operations Control Centre (OCC) for the earliest extra or short-turn service",
+    "Close the station without information",
+    "Let passengers crowd the platform edge",
+    "Open all gates to clear the concourse onto the platform"
+   ],
+   "answer": 0,
+   "explain": "Control inflow, inform honestly, and coordinate capacity with the Operations Control Centre (OCC). Platform-edge crowding is the danger being prevented."
+  },
+  {
+   "q": "Case: An engineering possession near a running line is planned for the night. The safety chain requires:",
+   "options": [
+    "Verbal permission from any staff member",
+    "Work first, paperwork later",
+    "Staff start work when the line 'looks quiet'",
+    "Possession taken only after protection and isolation as per procedure, work under a permit, and hand-back only on the person-in-charge's certification"
+   ],
+   "answer": 3,
+   "explain": "Isolate – protect – permit – certify. The Operations Control Centre (OCC) returns the section to traffic only on proper hand-back certification."
+  },
+  {
+   "q": "Case: A near-miss occurs: a train passes a worksite where protection was incomplete, but nobody is hurt. The correct response is:",
+   "options": [
+    "Relief — no harm, no action",
+    "Report and record it like an incident, inform the Operations Control Centre (OCC), and analyse why protection failed before the next possession",
+    "Quietly warn the staff involved",
+    "Delete the record to protect the team"
+   ],
+   "answer": 1,
+   "explain": "A near-miss is an accident with luck added. Reported and analysed through the Operations Control Centre (OCC), it prevents the version that does not miss."
+  },
+  {
+   "q": "Case: Overhead Equipment (OHE) work is needed on a section. Until isolation and earthing are confirmed, the wire must be treated as:",
+   "options": [
+    "Live — the Overhead Equipment (OHE) is live until proved isolated and earthed",
+    "Safe at night",
+    "Safe if staff wear gloves",
+    "Safe because trains are stopped"
+   ],
+   "answer": 0,
+   "explain": "The standing rule: Overhead Equipment (OHE) is live until proved isolated AND earthed. The Operations Control Centre (OCC) record of isolation is what staff trust — never assumption."
+  },
+  {
+   "q": "Case: A driver is asked by a well-meaning supervisor at site to move a train 'just a few metres' without Operations Control Centre (OCC) authority, to clear a crossing. He should:",
+   "options": [
+    "Comply — the supervisor is senior",
+    "Refuse politely and seek OCC authority: no movement without the controlling authority, whoever asks",
+    "Move slowly — slow movement is safe",
+    "Ask passengers to push"
+   ],
+   "answer": 1,
+   "explain": "Authority protects everyone, including the supervisor asking. The Operations Control Centre (OCC) controls movements; rank at the site does not replace it."
+  },
+  {
+   "q": "Case: During degraded working after a signalling failure, a station suggests running trains closer together to 'catch up' lost time. The correct reply is:",
+   "options": [
+    "Let drivers judge gaps themselves",
+    "Agree — time must be recovered",
+    "Refuse: in degraded working, spacing and restrictions are the safety margin; recovery comes from regulation, never from shrinking safety gaps",
+    "Agree only in peak hours"
+   ],
+   "answer": 2,
+   "explain": "Safety is never the trade. The Operations Control Centre (OCC) recovers time by regulation and planning, not by compressing the margins that keep trains apart."
+  },
+  {
+   "q": "Case: A passenger pulls the emergency alarm chain/handle in a train for a non-emergency reason, stopping the train in a section. The crew should:",
+   "options": [
+    "Fine the passenger on the spot and continue",
+    "Detrain all passengers",
+    "Reset and move without informing anyone",
+    "Inform the Operations Control Centre (OCC), attend and verify the cause, reset as per procedure, and move only when authorised and safe"
+   ],
+   "answer": 3,
+   "explain": "Every alarm stop is verified and reported. The Operations Control Centre (OCC) must know the train's state before it moves again."
+  },
+  {
+   "q": "Case: Two trains are stabled for the night and a storm is forecast with flooding risk. Projection by the Operations Control Centre (OCC) should lead to:",
+   "options": [
+    "Moving all trains to one flooded yard",
+    "No action until morning",
+    "Pre-positioning and precautions in advance: secure the stabled trains, warn night staff, plan for possible restrictions, and brief the incoming shift fully",
+    "Cancelling tomorrow's service tonight"
+   ],
+   "answer": 2,
+   "explain": "Level 3 situational awareness at the Operations Control Centre (OCC): act on the forecast before the water arrives, and hand the picture over completely at shift change."
+  },
+  {
+   "q": "Case: At shift handover during an ongoing disruption, the outgoing controller is in a hurry. The handover must still include:",
+   "options": [
+    "State of every train, defects, restrictions, the live incident position and pending actions — verbally and in writing",
+    "Personal notes only",
+    "Nothing — the new shift can read the screens",
+    "Only 'one train failed'"
+   ],
+   "answer": 0,
+   "explain": "A disruption is exactly when handover must be most complete. The incoming Operations Control Centre (OCC) shift inherits the picture, not just the screens."
+  },
+  {
+   "q": "Case: A station reports a suspicious unattended bag on a platform. The correct chain is:",
+   "options": [
+    "Announce the owner's name",
+    "Move it to the lost-property office",
+    "A staff member opens it to check",
+    "Do not touch it: clear and cordon the area, inform the Operations Control Centre (OCC) and security/police through laid-down channels, and regulate services as directed"
+   ],
+   "answer": 3,
+   "explain": "Unattended suspicious objects are never handled by staff. Cordon, inform the Operations Control Centre (OCC), let security agencies deal with it, and follow their directions for services."
+  },
+  {
+   "q": "Case: A lift full of passengers is stuck between floors at a station during a power dip. Priorities are:",
+   "options": [
+    "Wait for power and say nothing",
+    "Reassure the trapped passengers continuously through the lift phone/intercom, inform the Operations Control Centre (OCC), and get the authorised rescue/maintenance team — no untrained forced opening",
+    "Ask passengers to force the doors",
+    "Use the lift shaft to climb down"
+   ],
+   "answer": 1,
+   "explain": "Communication first for trapped passengers, rescue only by authorised people. The Operations Control Centre (OCC) coordinates help and any service impact."
+  },
+  {
+   "q": "Case: A train develops a brake-related fault indication en route. The driver's correct course is:",
+   "options": [
+    "Inform the Operations Control Centre (OCC), follow the prescribed troubleshooting, and accept restriction or withdrawal of the train as directed",
+    "Ignore it if the train still moves",
+    "Ask passengers to shift coaches",
+    "Continue at full speed to the terminus"
+   ],
+   "answer": 0,
+   "explain": "Brakes are a core safety system. The Operations Control Centre (OCC) decides restriction or withdrawal on the reported facts — the driver never quietly carries a brake fault."
+  },
+  {
+   "q": "Case: After restoration from a long signalling failure, the first trains should run:",
+   "options": [
+    "At full line speed to clear the backlog",
+    "At the restricted or inspection speed directed, with headways re-built gradually until the service is certified normal",
+    "Only empty, all day",
+    "Without informing passengers"
+   ],
+   "answer": 1,
+   "explain": "Phased restoration: restricted running first, headway rebuilt step by step. The Operations Control Centre (OCC) certifies normal working; it is not assumed."
+  },
+  {
+   "q": "Case: A supervisor must brief his team before a predicted difficult evening peak (rain plus a big event). The most useful briefing covers:",
+   "options": [
+    "Staff leave plans",
+    "Only the timetable",
+    "Expected conditions, likely failure and crowd points, who owns what if things go wrong, and how the team will communicate — building shared situational awareness before the peak",
+    "Yesterday's mistakes in detail"
+   ],
+   "answer": 2,
+   "explain": "Briefings build one shared picture before the event. When the peak hits, the Operations Control Centre (OCC) plan is already in every head."
+  },
+  {
+   "q": "Case: During an incident, a well-wisher suggests informing the media before informing passengers. The correct order is:",
+   "options": [
+    "Both by personal social media posts",
+    "Nobody should be informed",
+    "Media first — they will inform passengers",
+    "Passengers and affected staff first through official channels; media handling is through authorised management channels"
+   ],
+   "answer": 3,
+   "explain": "The people affected come first. The Operations Control Centre (OCC) and stations inform passengers directly; outside communication follows authorised channels."
+  },
+  {
+   "q": "Case: A wrong announcement about a cancelled train was made at one station, confusing passengers. The correction should be:",
+   "options": [
+    "Blamed on the equipment in the next announcement",
+    "Left alone to avoid admitting error",
+    "Corrected openly and immediately on the Public Address System (PAS), with the right information and an apology for the confusion, and the Operations Control Centre (OCC) informed",
+    "Made quietly to a few passengers"
+   ],
+   "answer": 2,
+   "explain": "Open correction restores trust and safety — passengers acting on wrong information can crowd the wrong platform. The Operations Control Centre (OCC) keeps one consistent message across stations."
+  },
+  {
+   "q": "Case: A train is held at a station for 20 minutes with doors closed in hot weather and passengers are getting restless. The crew and station should:",
+   "options": [
+    "Keep passengers informed at intervals, manage ventilation/doors as per procedure, offer water/first aid if needed, and keep the Operations Control Centre (OCC) updated",
+    "Open all doors onto the track side",
+    "Ask passengers to wait outside the station",
+    "Say nothing until departure"
+   ],
+   "answer": 0,
+   "explain": "Care during a hold is an operational duty: information, comfort within procedure, and the Operations Control Centre (OCC) informed so the hold itself gets resolved faster."
+  },
+  {
+   "q": "Case: An external emergency — a road accident blocking the station approach — coincides with the evening peak. The station and Operations Control Centre (OCC) should:",
+   "options": [
+    "Close the station without information",
+    "Stop all trains",
+    "Treat it as not a railway problem",
+    "Coordinate with police and local agencies, guide passengers to alternative entrances/transport, and adjust crowd control for the changed flows"
+   ],
+   "answer": 3,
+   "explain": "External emergencies affect operations through passenger flow. Coordination with agencies and honest guidance — led by the Operations Control Centre (OCC) — is the adaptable response."
+  },
+  {
+   "q": "Case: Reviewing the day's disruption, the team finds protection was good but passenger information failed and documentation was late. The complete corrective and preventive response is:",
+   "options": [
+    "Punish the announcer",
+    "Corrective And Preventive Action (CAPA): fix today's gaps in the report honestly marked, and prevent recurrence — e.g. a disruption announcement checklist, a standby announcer roster, and a documentation drill for all shifts",
+    "Forget it since trains ran safely",
+    "Only improve announcements"
+   ],
+   "answer": 1,
+   "explain": "Corrective And Preventive Action (CAPA) completes the incident: honest records of what failed, plus system changes — checklist, roster, drills — so information and documentation do not fail next time. The Operations Control Centre (OCC) tracks these actions till verified done."
+  },
+  {
+   "q": "Case: In every integrated scenario, the option that is almost always correct is the one that:",
+   "options": [
+    "Informs the Operations Control Centre (OCC) early, protects before acting, keeps passengers informed, and restores only after certification",
+    "Avoids all paperwork",
+    "Waits for instructions without acting",
+    "Restores service fastest"
+   ],
+   "answer": 0,
+   "explain": "The four-mark pattern: early information to the Operations Control Centre (OCC), protection before action, passengers informed, restoration after certification. Pick the option with all four."
+  },
+  {
+   "q": "Case: A train fails at a station platform in peak hour and cannot move; the platform is filling up and the following trains are bunching behind it. The best combined plan is:",
+   "options": [
+    "Keep passengers boarding the failed train",
+    "Protect the section, detrain the failed train's passengers safely at the platform, regulate or short-turn following trains under Operations Control Centre (OCC) direction, control entry at the gates, and clear the failed train as directed",
+    "Close the gates without any announcement",
+    "Let following trains enter the occupied platform slowly"
+   ],
+   "answer": 1,
+   "explain": "All threads together: protection, safe detrainment at a platform (the easiest evacuation), regulation by the Operations Control Centre (OCC), crowd control at entry, and honest announcements. No single-thread answer is complete."
+  }
+ ]
+}

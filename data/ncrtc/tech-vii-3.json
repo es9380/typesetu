@@ -1,0 +1,338 @@
+{
+ "id": "tech-vii-3",
+ "category": "technical",
+ "group": "Unit vii — Analytical & Decision-Making Skills",
+ "title": "Corrective & Preventive Actions",
+ "questions": [
+  {
+   "q": "Corrective action means action that:",
+   "options": [
+    "Fixes the problem that has occurred — this incident, this fault",
+    "Punishes the staff involved",
+    "Improves the timetable",
+    "Prevents an incident that has not happened"
+   ],
+   "answer": 0,
+   "explain": "Corrective = fix this one. The door that failed is repaired or replaced — the incident in hand is closed."
+  },
+  {
+   "q": "Preventive action means action that:",
+   "options": [
+    "Fixes today's fault",
+    "Stops the problem happening again or happening elsewhere — e.g. redesigning a sensor or changing a check",
+    "Writes the report",
+    "Transfers the staff"
+   ],
+   "answer": 1,
+   "explain": "Preventive = stop the next one. It looks beyond this incident to every place the same weakness exists."
+  },
+  {
+   "q": "The abbreviation CAPA, used for the pair of post-incident actions, stands for:",
+   "options": [
+    "Control And Passenger Announcement",
+    "Central Action Plan Authority",
+    "Corrective And Preventive Action",
+    "Complete Accident Prevention Act"
+   ],
+   "answer": 2,
+   "explain": "Corrective And Preventive Action (CAPA) pairs the two duties after any failure: correct what happened, prevent its return."
+  },
+  {
+   "q": "Repairing the failed coach door is an example of:",
+   "options": [
+    "Disciplinary action",
+    "No action",
+    "Preventive action",
+    "Corrective action"
+   ],
+   "answer": 3,
+   "explain": "The repair fixes the problem that occurred — that is corrective action."
+  },
+  {
+   "q": "After one door sensor fails, the fleet-wide check of all similar sensors is:",
+   "options": [
+    "A timetable change",
+    "Corrective action",
+    "Preventive action — the same weakness is hunted everywhere before it fails elsewhere",
+    "Wasted effort"
+   ],
+   "answer": 2,
+   "explain": "One failure is a warning for the whole fleet. Checking all similar sensors prevents the next failure."
+  },
+  {
+   "q": "A complete post-incident answer names:",
+   "options": [
+    "Both corrective and preventive actions",
+    "Only who was punished",
+    "Only the compensation paid",
+    "Only the corrective action"
+   ],
+   "answer": 0,
+   "explain": "Exams love this pair: a complete answer always names both — fix it, and stop it recurring."
+  },
+  {
+   "q": "An incident's root cause is found to be an unclear checklist. The strongest preventive action is:",
+   "options": [
+    "Punishing the operator who used it",
+    "Filing the report and forgetting it",
+    "Telling staff to be careful",
+    "Rewriting the checklist step clearly and briefing all shifts on the change"
+   ],
+   "answer": 3,
+   "explain": "'Be careful' fixes nothing. Changing the system — the checklist itself — protects every future operator."
+  },
+  {
+   "q": "Why is punishment generally NOT counted as a preventive action?",
+   "options": [
+    "Punishment is illegal",
+    "It does not remove the system weakness, so the same incident can happen to the next person",
+    "It takes too long",
+    "It is too expensive"
+   ],
+   "answer": 1,
+   "explain": "If the weakness stays, the incident returns with a different name attached. Prevention removes the weakness."
+  },
+  {
+   "q": "A signal relay fails once and is replaced. A preventive follow-up would be:",
+   "options": [
+    "Checking the age/condition of similar relays and planning their replacement before failure",
+    "Blaming the relay supplier in the report only",
+    "Increasing train speed",
+    "Nothing further"
+   ],
+   "answer": 0,
+   "explain": "Replacement corrects; a fleet/age check of similar relays prevents the repeat performance elsewhere."
+  },
+  {
+   "q": "Corrective and preventive actions should be tracked until:",
+   "options": [
+    "The next shift",
+    "They are actually completed and verified — an action written but not done prevents nothing",
+    "The report is printed",
+    "The enquiry ends"
+   ],
+   "answer": 1,
+   "explain": "Corrective And Preventive Action (CAPA) lives or dies on follow-through. Actions are tracked, completed and verified, not just listed."
+  },
+  {
+   "q": "After a near-miss, the most valuable preventive step is:",
+   "options": [
+    "Waiting for a real incident to learn from",
+    "Forgetting it since no harm occurred",
+    "Analysing why it nearly happened and removing that weakness before it produces a real incident",
+    "Warning the staff involved only"
+   ],
+   "answer": 2,
+   "explain": "A near-miss is a free lesson — the same incident with luck added. Analyse it like an accident, minus the damage."
+  },
+  {
+   "q": "A driver reports an alarm tone that is easily confused with another alarm. The preventive action is:",
+   "options": [
+    "Removing the alarm",
+    "Ignoring the report",
+    "Asking drivers to listen harder",
+    "Making the alarm tones distinctive and updating the training accordingly"
+   ],
+   "answer": 3,
+   "explain": "The report exposed a system weakness. Fixing the tone protects a hundred future drivers."
+  },
+  {
+   "q": "A station's escalator has broken down 4 times in 2 months, each time repaired the same day. What is still missing?",
+   "options": [
+    "A new station",
+    "Corrective action only",
+    "A preventive action — finding and removing the root cause so the repeated failure stops",
+    "More passengers"
+   ],
+   "answer": 2,
+   "explain": "Repeated repair is corrective action each time. When the same fault keeps returning, preventive action is missing — analyse the root cause and remove it."
+  },
+  {
+   "q": "Preventive action is mainly aimed at:",
+   "options": [
+    "All similar equipment, locations and situations where the same cause exists",
+    "The enquiry members",
+    "The passengers affected",
+    "This train only"
+   ],
+   "answer": 0,
+   "explain": "Prevention thinks in classes: wherever this cause could bite again, not only where it already has."
+  },
+  {
+   "q": "After corrective action, how do we know the fix worked?",
+   "options": [
+    "The staff feel confident",
+    "A week passes quietly",
+    "The report says so",
+    "By testing/verification — the equipment or process is checked in service before the action is closed"
+   ],
+   "answer": 3,
+   "explain": "Verify the fix in service. Closing an action on paper alone is how 'fixed' faults return."
+  },
+  {
+   "q": "A station's evacuation drill reveals a confusing exit sign. Corrective and preventive actions are:",
+   "options": [
+    "Corrective: none needed; Preventive: none",
+    "Corrective: correct that sign now; Preventive: audit signage at all stations and fix the pattern",
+    "Corrective: punish the drill team; Preventive: cancel drills",
+    "Corrective: ignore; Preventive: more drills only"
+   ],
+   "answer": 1,
+   "explain": "Fix the one sign (corrective), then hunt the same weakness at every station (preventive). Drills exist to find exactly this."
+  },
+  {
+   "q": "The final step of the Corrective And Preventive Action (CAPA) cycle is:",
+   "options": [
+    "Reviewing whether the actions actually prevented recurrence, and sharing the lesson",
+    "Transferring the staff",
+    "Closing the file unread",
+    "Writing the first report"
+   ],
+   "answer": 0,
+   "explain": "Review closes the loop: did it work, and who else needs the lesson? Learning unshared is learning wasted."
+  },
+  {
+   "q": "An action plan lists 'staff to be more vigilant' as the only preventive action. This is weak because:",
+   "options": [
+    "Vigilance is not needed",
+    "It changes no system, equipment or procedure — the same conditions will defeat the next person's vigilance too",
+    "It is too short",
+    "Vigilance cannot be spelled"
+   ],
+   "answer": 1,
+   "explain": "Real prevention changes the machine, the method or the environment — not just exhorts the human."
+  },
+  {
+   "q": "Lessons learned from an incident should be:",
+   "options": [
+    "Filed without reading",
+    "Kept by the enquiry team only",
+    "Shared with all relevant staff and stations, since the same weakness may exist anywhere",
+    "Announced to passengers"
+   ],
+   "answer": 2,
+   "explain": "A lesson learned in one station and kept there protects one station. Shared, it protects the whole railway."
+  },
+  {
+   "q": "If the same fault recurs after a 'completed' corrective action, the correct conclusion is:",
+   "options": [
+    "Faults always recur",
+    "The equipment is cursed",
+    "The staff are careless",
+    "The corrective action did not remove the real cause — re-analyse, probably to root-cause level"
+   ],
+   "answer": 3,
+   "explain": "Recurrence after correction is evidence the cause was mis-identified. Go back to analysis — 5 Whys, fishbone — not to blame."
+  },
+  {
+   "q": "A preventive action with the widest protection is one that:",
+   "options": [
+    "Depends on one expert remembering",
+    "Applies to one shift",
+    "Changes a design, procedure or training used by everyone",
+    "Is kept secret"
+   ],
+   "answer": 2,
+   "explain": "System-wide changes protect every shift, including the tired one at 3 a.m. Memory-based 'fixes' protect nobody reliably."
+  },
+  {
+   "q": "During a live incident, the controller's focus is on containment. Corrective And Preventive Action (CAPA) belongs mainly to which phase?",
+   "options": [
+    "P4 — after: restore, record, analyse and act so it does not recur",
+    "Before the incident",
+    "Never",
+    "P1 — protection"
+   ],
+   "answer": 0,
+   "explain": "Corrective And Preventive Action (CAPA) is P4 work — after safety and restoration. But it must actually happen, not be forgotten once service resumes."
+  },
+  {
+   "q": "Which is a preventive action after a passenger slips on a wet platform at one station?",
+   "options": [
+    "Compensating the passenger only",
+    "A warning to passengers to walk carefully only",
+    "Mopping that platform once",
+    "Anti-slip treatment and a wet-weather platform inspection routine at all stations"
+   ],
+   "answer": 3,
+   "explain": "Mopping once is housekeeping; a system routine for all stations in wet weather is prevention."
+  },
+  {
+   "q": "Why do examiners pair corrective and preventive action in one question?",
+   "options": [
+    "To make questions longer",
+    "Because fixing only the visible fault leaves the railway exactly as vulnerable as before — both halves complete the professional response",
+    "To test spelling",
+    "They are the same thing"
+   ],
+   "answer": 1,
+   "explain": "One half repairs the past, the other protects the future. A supervisor is expected to deliver both."
+  },
+  {
+   "q": "A completed Corrective And Preventive Action (CAPA) should result in:",
+   "options": [
+    "A measurable change — equipment, procedure, training or checks — that makes the incident less likely everywhere",
+    "A longer report next time",
+    "More staff on duty permanently",
+    "Only a closed file"
+   ],
+   "answer": 0,
+   "explain": "If nothing in the system changed, nothing was prevented. Corrective And Preventive Action (CAPA) ends in change, not in paper."
+  },
+  {
+   "q": "In the hierarchy of controls, which kind of preventive action is generally the STRONGEST?",
+   "options": [
+    "A warning poster near the hazard",
+    "An engineering change that removes or guards the hazard itself (for example an interlock that makes the wrong action impossible)",
+    "Asking staff to be careful",
+    "Issuing personal protective equipment"
+   ],
+   "answer": 1,
+   "explain": "Controls are strongest when they do not depend on human memory: eliminate or engineer the hazard first, then procedures, and warnings or protective equipment last."
+  },
+  {
+   "q": "Every action in a Corrective And Preventive Action (CAPA) plan must carry two things, without which actions quietly die:",
+   "options": [
+    "A file number and a stamp",
+    "A named owner (one responsible person) and a target completion date",
+    "A senior officer's signature and a seal",
+    "A budget code and a colour"
+   ],
+   "answer": 1,
+   "explain": "'The department will do it, sometime' means nobody will. One name and one date turn an intention into a commitment that can be tracked and chased."
+  },
+  {
+   "q": "A permanent preventive fix (replacing a faulty relay type across the fleet) will take three months. For those three months, the correct supporting measure is:",
+   "options": [
+    "Nothing — wait for the fix",
+    "An interim containment measure that controls the risk meanwhile — for example extra checks or a speed restriction at affected locations",
+    "Closing the line for three months",
+    "Hiding the fault from the records"
+   ],
+   "answer": 1,
+   "explain": "Interim containment bridges the gap between finding a risk and finishing its cure. The permanent action removes the cause; the interim action keeps people safe till then."
+  },
+  {
+   "q": "A preventive action was completed two months ago. The step that proves it actually worked is:",
+   "options": [
+    "Filing the completion certificate",
+    "A scheduled effectiveness review — checking the incident and fault data after a set period to confirm the problem has really stopped or reduced",
+    "Asking the staff if they feel safer",
+    "Closing the file permanently"
+   ],
+   "answer": 1,
+   "explain": "Completion is not the same as success. The effectiveness review compares before-and-after data; if the failures continue, the action is reopened, not celebrated."
+  },
+  {
+   "q": "Corrective And Preventive Action (CAPA) should be raised not only after accidents. Which set lists other proper triggers?",
+   "options": [
+    "Only when a minister visits",
+    "Near-misses, safety audit findings, inspection defects and drill weaknesses",
+    "Only staff birthdays",
+    "Only when newspapers report a problem"
+   ],
+   "answer": 1,
+   "explain": "Accidents are the costliest teachers. Audits, inspections, drills and near-misses offer the same lessons at a fraction of the price — a mature system raises Corrective And Preventive Action (CAPA) from all of them."
+  }
+ ]
+}
