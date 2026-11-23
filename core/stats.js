@@ -54,3 +54,43 @@ export function trendsSummary() {
     streak: currentStreak()
   };
 }
+
+/* ---------- v13 additions (read-only over existing history) ---------- */
+
+function sameDay(a, b) { return a.toDateString() === b.toDateString(); }
+
+/* Tests completed today (any mode). */
+export function testsToday(now = new Date()) {
+  return loadHist().filter(function (x) {
+    const d = new Date(x.ts || x.d); return !isNaN(d) && sameDay(d, now);
+  }).length;
+}
+
+/* Daily goal lives under its OWN new key — it never touches existing data. */
+const LS_GOAL = "ts_daily_goal_v1";
+export function getDailyGoal() {
+  try { const n = parseInt(localStorage.getItem(LS_GOAL), 10); return n >= 1 && n <= 10 ? n : 2; } catch (e) { return 2; }
+}
+export function setDailyGoal(n) { try { localStorage.setItem(LS_GOAL, String(n)); } catch (e) {} }
+
+/* Readiness estimate for one exam: average of the last 5 attempts of that
+   exam vs its target WPM, discounted when accuracy is under 95%.
+   Returns null until the person has at least one attempt for that exam. */
+export function readiness(examId, targetWPM) {
+  const mine = loadHist().filter(function (x) { return x.examId === examId && typeof x.net === "number"; }).slice(0, 5);
+  if (!mine.length || !targetWPM) return null;
+  const avgNet = mine.reduce(function (a, x) { return a + x.net; }, 0) / mine.length;
+  const avgAcc = mine.reduce(function (a, x) { return a + (x.acc || 0); }, 0) / mine.length;
+  const speed = Math.min(1, Math.max(0, avgNet / targetWPM));
+  const accF = Math.min(1, Math.max(0, avgAcc / 95));
+  return { pct: Math.round(speed * accF * 100), avgNet: Math.round(avgNet * 10) / 10, avgAcc: Math.round(avgAcc * 10) / 10, n: mine.length };
+}
+
+/* Most frequent weak keys across the last 20 results. */
+export function topWeakKeys(limit = 3) {
+  const tally = {};
+  loadHist().slice(0, 20).forEach(function (x) {
+    if (x.weakKeys) Object.keys(x.weakKeys).forEach(function (k) { tally[k] = (tally[k] || 0) + x.weakKeys[k]; });
+  });
+  return Object.keys(tally).sort(function (a, b) { return tally[b] - tally[a]; }).slice(0, limit);
+}

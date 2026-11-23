@@ -1,8 +1,8 @@
 /* core/examEngine.js — the typing stages (Stage 2).
    Two mounts, both behaviour-identical ports of the current live engines:
      mountHcmStage  — the main screen engine (core.js): HCM hub mocks,
-                      HCM Custom Tests, Real Exam Mode, and (Stage 3)
-                      practice contexts on the same code path.
+                      HCM Custom Tests, and (Stage 3) practice contexts
+                      on the same code path.
      mountExamStage — the exam engine (exams.js): CHSL / CGL (E1) and
                       RRB (E2), hub mocks + custom mocks.
    Scoring comes from core/scoringMatrix.js (verbatim math); telemetry
@@ -29,6 +29,7 @@ import { renderCommandBar } from "../components/FloatingCommandBar.js";
 import { openPassageModal } from "../components/PassageModal.js";
 import { showMotivation } from "../components/MotivationOverlay.js";
 import { fingerKeyboardHtml } from "../components/FingerKeyboard.js";
+import { celebrateIfBest } from "../components/celebrate.js";
 import { escapeHtml } from "../components/ProfilePopover.js";
 import { icon } from "../components/icons.js";
 import { downloadFile } from "../services/backup.js";
@@ -76,26 +77,50 @@ function askConfirm(title, text, onYes, onNo) {
   newNo.addEventListener("click", function () { box.classList.remove("open"); if (onNo) onNo(); });
 }
 
-/* Zen Focus Mode (prompt §4): first keystroke fades the chrome; mouse
-   move, Esc or finish restores it. */
+/* Zen Focus Mode v2.
+   - enter(): arms Zen for the running test and hides the chrome.
+   - Every real keystroke while armed re-hides the chrome, so Zen works again
+     after the mouse revealed it (v1 only ever entered once, at timer start).
+   - Only DELIBERATE mouse movement (>= 36px travelled) reveals the chrome;
+     tiny jitters and layout-scroll mousemove events are ignored.
+   - Esc reveals the chrome; the next keystroke hides it again.
+   - exit(): disarms completely (test finished / view destroyed). */
 function makeZen() {
-  let on = false;
-  function enter() { if (!on) { on = true; document.body.classList.add("zen"); } }
-  function exit() { if (on) { on = false; document.body.classList.remove("zen"); } }
-  function onKey(e) { if (e.key === "Escape") exit(); }
-  function onMove() { exit(); }
-  document.addEventListener("keydown", onKey);
+  let armed = false, shown = false, travelled = 0, lastX = null, lastY = null;
+  const IGNORE = { Shift: 1, Control: 1, Alt: 1, Meta: 1, CapsLock: 1, Tab: 1, Escape: 1 };
+  function hide() { if (!shown) return; shown = false; document.body.classList.add("zen"); }
+  function reveal() { if (shown) return; shown = true; travelled = 0; document.body.classList.remove("zen"); }
+  function enter() { armed = true; shown = true; hide(); }
+  function exit() { armed = false; shown = true; travelled = 0; lastX = lastY = null; document.body.classList.remove("zen"); }
+  function onKey(e) {
+    if (!armed) return;
+    if (e.key === "Escape") { reveal(); return; }
+    if (IGNORE[e.key] || e.ctrlKey || e.metaKey || e.altKey) return;
+    travelled = 0; lastX = lastY = null;
+    hide();
+  }
+  function onMove(e) {
+    if (!armed || shown) return;
+    if (lastX == null) { lastX = e.clientX; lastY = e.clientY; return; }
+    travelled += Math.abs(e.clientX - lastX) + Math.abs(e.clientY - lastY);
+    lastX = e.clientX; lastY = e.clientY;
+    if (travelled >= 36) reveal();
+  }
+  document.addEventListener("keydown", onKey, true);
   return {
     enter: enter, exit: exit,
     watchMouse: function (el) { el.addEventListener("mousemove", onMove); },
-    destroy: function () { document.removeEventListener("keydown", onKey); exit(); }
+    destroy: function () { document.removeEventListener("keydown", onKey, true); exit(); }
   };
 }
 
 /* ⚙ More popover — Finger Keyboard, Sound, Download/Print passage.
-   NO auto-submit option anywhere (sid's standing rule). */
+   NO auto-submit option anywhere (sid's standing rule).
+   Close paths: the ✕ button, any click outside the popover (the More
+   button itself is left to the command bar's toggle), and Esc. */
 function morePopHtml() {
   return '<div class="more-pop" hidden>' +
+    '<div class="more-head"><span>More options</span><button type="button" class="more-x" data-more="close" aria-label="Close">✕</button></div>' +
     '<button type="button" data-more="kb">' + icon("keyboard") + '<span>Finger Keyboard</span><span class="more-state" data-ms="kb"></span></button>' +
     '<button type="button" data-more="sound">' + icon("eye") + '<span>Sound</span><span class="more-state" data-ms="sound"></span></button>' +
     '<button type="button" data-more="download">' + icon("download") + '<span>Download passage</span></button>' +
@@ -107,10 +132,21 @@ function wireMorePop(pop, kbSection, getPassage) {
     const kb = pop.querySelector('[data-ms="kb"]'); if (kb) kb.textContent = SETTINGS.kb ? "On" : "Off";
     const sn = pop.querySelector('[data-ms="sound"]'); if (sn) sn.textContent = soundOn() ? "On" : "Off";
   }
+  function close() { pop.hidden = true; }
+  function onDocClick(e) {
+    if (pop.hidden) return;
+    if (pop.contains(e.target)) return;
+    if (e.target.closest && e.target.closest('[data-act="more"]')) return;
+    close();
+  }
+  function onDocKey(e) { if (e.key === "Escape") close(); }
+  document.addEventListener("click", onDocClick);
+  document.addEventListener("keydown", onDocKey);
   paint();
   pop.addEventListener("click", function (e) {
     const b = e.target.closest("[data-more]"); if (!b) return;
     const act = b.getAttribute("data-more");
+    if (act === "close") { close(); return; }
     if (act === "kb") {
       SETTINGS.kb = !SETTINGS.kb; persistSettings();
       if (kbSection) { kbSection.style.display = SETTINGS.kb ? "block" : "none"; if (SETTINGS.kb && !kbSection.dataset.built) { kbSection.querySelector("#keyboard").innerHTML = fingerKeyboardHtml(); kbSection.dataset.built = "1"; } }
@@ -119,7 +155,14 @@ function wireMorePop(pop, kbSection, getPassage) {
     else if (act === "print") { const p2 = getPassage(); printPassage(p2.name, p2.text); }
     paint();
   });
-  return { paint: paint };
+  return {
+    paint: paint,
+    close: close,
+    destroy: function () {
+      document.removeEventListener("click", onDocClick);
+      document.removeEventListener("keydown", onDocKey);
+    }
+  };
 }
 
 /* =====================================================================
@@ -134,13 +177,12 @@ export function mountHcmStage(container, opts) {
     target: "", base: "", typed: [], caret: 0, started: false, startT: 0,
     durMin: opts.durMin || 5, timer: null, finished: false,
     errCat: { spelling: 0, capital: 0, punct: 0, spacing: 0, other: 0 }, errKeys: {}, errWords: {},
-    currentId: "", currentName: "", isDrill: false, examMode: false,
+    currentId: "", currentName: "", isDrill: false,
     paperView: !!opts.paperView, bsCount: 0, lastMistakes: [],
     ctx: opts.ctx === "exam" ? "exam" : "practice",
     silo: opts.silo || null, capSec: (opts.silo && opts.silo.capSec) || 0,
     bsAllowed: true
   };
-  let preExamState = null;
   let paperHold = false, paperProgScroll = false;
   let spanCache = [], spanText = [];
   const zen = makeZen();
@@ -151,7 +193,6 @@ export function mountHcmStage(container, opts) {
         '<button class="pill" type="button" id="stBack">← Back</button>' +
         '<span class="stage-title" id="stTitle"></span>' +
         '<span style="flex:1"></span>' +
-        '<button class="btn secondary sm" type="button" id="endTestBtn" style="display:none">End Test</button>' +
       '</div>' +
       '<div class="stage-bar" id="stBar"></div>' +
       morePopHtml() +
@@ -173,7 +214,7 @@ export function mountHcmStage(container, opts) {
           '</span></div>' +
         '<div class="paperSheet" id="paperSheet"><div id="paperSheetText"></div></div>' +
       '</div>' +
-      '<div class="typeBox" id="typeBox"><div class="typeText" id="typeText"></div><div class="caretEl" id="caretEl"></div>' +
+      '<div class="typeBox" id="typeBox"><div class="typeText" id="typeText"></div><div class="caretEl" id="caretEl"></div><div class="paperTyped" id="paperTyped"></div>' +
         '<textarea id="capture" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type here"></textarea>' +
       '</div>' +
       '</div>' +
@@ -195,13 +236,13 @@ export function mountHcmStage(container, opts) {
   if (SETTINGS.kb) { kbSection.style.display = "block"; kbSection.querySelector("#keyboard").innerHTML = fingerKeyboardHtml(); kbSection.dataset.built = "1"; }
   zen.watchMouse(container);
 
-  function isExamCtx() { return !!(S.examMode || S.ctx === "exam"); }
+  function isExamCtx() { return S.ctx === "exam"; }
   function highlightOn() {
     if (typeof SETTINGS.highlight === "boolean") return SETTINGS.highlight;
-    if (S.examMode || S.paperView) return false;
+    if (S.paperView) return false;
     return true;
   }
-  function bsLocked() { return S.examMode || opts.mode !== "custom"; }
+  function bsLocked() { return opts.mode !== "custom"; }
   function bsEffective() { return bsLocked() ? true : S.bsAllowed; }
 
   /* ---------- command bar ---------- */
@@ -215,12 +256,8 @@ export function mountHcmStage(container, opts) {
       backspaceLocked: bsLocked(),
       liveErrors: highlightOn(),
       paperView: S.paperView,
-      realExamMode: S.examMode,
       onAction: onBarAction
     });
-    if (S.examMode) {
-      bar.querySelectorAll('[data-act="duration"],[data-act="passage"],[data-act="exam"]').forEach(function (b) { b.disabled = true; });
-    }
     slot.appendChild(bar);
   }
   function onBarAction(name, value) {
@@ -235,12 +272,11 @@ export function mountHcmStage(container, opts) {
         b.addEventListener("click", function () { menu.hidden = true; if (typeof opts.onExamSwitch === "function") opts.onExamSwitch(b.getAttribute("data-sw")); });
       });
     }
-    else if (name === "duration") { if (!S.examMode) { setDuration(+value); paintBar(); focusCapture(); } }
-    else if (name === "passage") { if (!S.examMode) openPicker(); }
+    else if (name === "duration") { setDuration(+value); paintBar(); focusCapture(); }
+    else if (name === "passage") { openPicker(); }
     else if (name === "paper") { setPaperView(!S.paperView); paintBar(); focusCapture(); }
     else if (name === "backspace") { if (!bsLocked()) { S.bsAllowed = !S.bsAllowed; paintBar(); focusCapture(); } }
     else if (name === "errors") { SETTINGS.highlight = !highlightOn(); persistSettings(); renderText(); paintBar(); focusCapture(); }
-    else if (name === "realexam") { setExamMode(!S.examMode); paintBar(); }
     else if (name === "more") { morePop.hidden = !morePop.hidden; more.paint(); }
   }
   function openPicker() {
@@ -265,7 +301,7 @@ export function mountHcmStage(container, opts) {
   function buildTarget(base) {
     const t = base || "";
     if (!isExamCtx()) return t;
-    if (S.examMode || S.currentId === "sim10") return t;
+    if (S.currentId === "sim10") return t;
     const need = S.durMin * 50;
     const words = t.split(/\s+/).filter(Boolean);
     if (words.length <= need) return t;
@@ -280,7 +316,7 @@ export function mountHcmStage(container, opts) {
     const shown = wordCountOf(S.target);
     if (!isExamCtx()) {
       sl.textContent = "Loaded: " + (S.currentName || "") + " · " + shown + " words · practice" + (S.capSec ? " · up to " + Math.round(S.capSec / 60) + " min" : "");
-    } else if (S.examMode || S.currentId === "sim10") {
+    } else if (S.currentId === "sim10") {
       sl.textContent = "Loaded: " + (S.currentName || "Exam passage") + " · " + shown + " words · 10 min";
     } else {
       sl.textContent = "Loaded: " + (S.currentName || "") + " · " + shown + " words · " + S.durMin + " min";
@@ -315,10 +351,6 @@ export function mountHcmStage(container, opts) {
     q("#modeHint").textContent = "";
     if (S.paperView) updatePaperSheet();
     if (S.paperView) { paperHold = false; const psh = q("#paperSheet"); if (psh) psh.scrollTop = 0; }
-    if (S.examMode) {
-      q("#modeHint").textContent = "Real exam mode · " + S.currentName + " · 10 min · stats hidden until the end";
-      const ebx = q("#endTestBtn"); if (ebx) { ebx.style.display = ""; ebx.disabled = true; }
-    }
     updateSizeLine();
     paintSubmitBtn();
     updateLessonHistory();
@@ -351,8 +383,8 @@ export function mountHcmStage(container, opts) {
       else if (i === pos) { cls += " cur"; }
       if (spanCache[i] !== cls) { spanCache[i] = cls; typeText.children[i].className = cls; }
     }
-    scrollCursorIntoView(cpos);
-    positionCaret(cpos);
+    if (S.paperView) { renderPaperTyped(); }
+    else { scrollCursorIntoView(cpos); positionCaret(cpos); }
     syncPaperScroll();
     paintPaperLine();
   }
@@ -435,6 +467,26 @@ export function mountHcmStage(container, opts) {
     try { capture.focus({ preventScroll: true }); } catch (e) { capture.focus(); }
   }
 
+  /* Paper View typing box: in Paper View the sheet carries the passage
+     (read-only; paintPaperLine's highlight tracks the current word/line)
+     and this box — inside the type box, in place of the type-over-words
+     text — shows ONLY what the user has typed, as plain text with a
+     caret. The input path (the capture textarea) is untouched. */
+  function renderPaperTyped() {
+    const el = q("#paperTyped"); if (!el) return;
+    const v = typedString();
+    if (!v) { el.innerHTML = '<span class="ph">Start typing — your text appears here…</span>'; return; }
+    const c = Math.max(0, Math.min(S.caret || 0, v.length));
+    el.innerHTML = escapeHtml(v.slice(0, c)) + '<span class="ptCaret" aria-hidden="true"></span>' + escapeHtml(v.slice(c));
+    const ct = el.querySelector(".ptCaret");
+    if (ct) {
+      const top = ct.offsetTop;
+      if (top < typeBox.scrollTop + 8 || top > typeBox.scrollTop + typeBox.clientHeight - 48) {
+        typeBox.scrollTop = Math.max(0, top - 48);
+      }
+    }
+  }
+
   /* ---------- Paper View 2.0 ---------- */
   function updatePaperSheet() {
     const el = q("#paperSheetText"); if (!el) return;
@@ -450,7 +502,7 @@ export function mountHcmStage(container, opts) {
     wi = Math.max(0, Math.min(wi, spans.length - 1));
     const top = spans[wi].offsetTop;
     for (let i = 0; i < spans.length; i++) {
-      spans[i].classList.toggle("lineHl", !S.examMode && spans[i].offsetTop === top);
+      spans[i].classList.toggle("lineHl", spans[i].offsetTop === top);
       spans[i].classList.toggle("curW", i === wi);
     }
   }
@@ -463,7 +515,7 @@ export function mountHcmStage(container, opts) {
   function setPaperView(on) {
     S.paperView = !!on;
     const wrap = q("#paperWrap"); if (wrap) wrap.style.display = S.paperView ? "block" : "none";
-    if (S.examMode) { SETTINGS.examPaper = !!on; persistSettings(); }
+    typeBox.classList.toggle("paperBox", S.paperView);
     renderText();
     if (S.paperView) {
       updatePaperSheet();
@@ -503,7 +555,6 @@ export function mountHcmStage(container, opts) {
     S.started = true; S.startT = Date.now();
     zen.enter();
     paintSubmitBtn();
-    const eb0 = q("#endTestBtn"); if (eb0 && S.examMode) eb0.disabled = false;
     S.timer = setInterval(function () {
       const el = (Date.now() - S.startT) / 1000, total = S.durMin * 60;
       if (!isExamCtx()) {
@@ -558,13 +609,11 @@ export function mountHcmStage(container, opts) {
     });
     const mhEl = q("#modeHint");
     if (S.typed.length >= S.target.length) {
-      if (mhEl) mhEl.textContent = S.examMode
-        ? "Text complete — timer still running. You can still correct anything; press End Test when ready."
-        : isExamCtx()
-          ? "Text complete — timer still running. You can still correct anything; press Submit when ready."
-          : "Text complete — that's the whole text. You can still correct anything; press Finish to see your result.";
+      if (mhEl) mhEl.textContent = isExamCtx()
+        ? "Text complete — timer still running. You can still correct anything; press Submit when ready."
+        : "Text complete — that's the whole text. You can still correct anything; press Finish to see your result.";
     } else if (mhEl && mhEl.textContent.indexOf("Text complete") === 0) {
-      mhEl.textContent = S.examMode ? "Real exam mode · " + S.currentName + " · " + S.durMin + " min · stats hidden until the end" : "";
+      mhEl.textContent = "";
     }
     paintSubmitBtn();
   });
@@ -828,10 +877,6 @@ export function mountHcmStage(container, opts) {
         const rc2 = document.getElementById(cfg[0]); if (rc2) rc2.setAttribute("data-pct", String(Math.max(0, cfg[1])));
       });
       animateRings(rb);
-      if (S.examMode) {
-        const ebF = q("#endTestBtn"); if (ebF) ebF.style.display = "none";
-        q("#rTitle").textContent = "Real Exam Mode result — " + S.currentName;
-      }
       const prHide = q("#pracResult"); if (prHide) prHide.style.display = "none";
     } else {
       rb.className = "resultBox practiceMode";
@@ -853,6 +898,7 @@ export function mountHcmStage(container, opts) {
       }
       const pbEl = q("#prBest");
       if (pbEl) pbEl.style.display = (prevBest && Math.round(s.net) > (prevBest.net || 0)) ? "" : "none";
+      if (pbEl && pbEl.style.display === "" && !S.isDrill) { try { celebrateIfBest(Math.round(s.net), loadHist(), null); } catch (e) {} }
       const nbEl = q("#prNextBtn");
       if (nbEl) {
         const hasNext = !!(S.silo && S.silo.items && S.silo.index < S.silo.items.length - 1);
@@ -861,7 +907,7 @@ export function mountHcmStage(container, opts) {
     }
 
     const nowIso = new Date().toISOString();
-    const entry = { clientId: newClientId(), ts: nowIso, d: new Date().toLocaleString("en-IN"), name: S.currentName, part: (S.currentName || ""), gross: Math.round(s.gross), net: Math.round(s.net), acc: +s.acc.toFixed(1), errs: s.errs, marks: qual ? mk : 0, min: S.durMin, durSec: Math.round(el), chars: s.pos, words: s.words, bs: S.bsCount || 0, examMode: !!S.examMode, errCat: Object.assign({}, S.errCat), weakKeys: Object.assign({}, S.errKeys), weakWords: Object.assign({}, S.errWords), synced: false };
+    const entry = { clientId: newClientId(), ts: nowIso, d: new Date().toLocaleString("en-IN"), name: S.currentName, part: (S.currentName || ""), gross: Math.round(s.gross), net: Math.round(s.net), acc: +s.acc.toFixed(1), errs: s.errs, marks: qual ? mk : 0, min: S.durMin, durSec: Math.round(el), chars: s.pos, words: s.words, bs: S.bsCount || 0, examMode: false, errCat: Object.assign({}, S.errCat), weakKeys: Object.assign({}, S.errKeys), weakWords: Object.assign({}, S.errWords), synced: false };
 
     try {
       const fx = buildHcmTelemetry(mres, S.target, typedString());
@@ -948,7 +994,7 @@ export function mountHcmStage(container, opts) {
   /* ---------- mode / duration / submit wiring ---------- */
   function paintSubmitBtn() {
     const sb = q("#submitBtn"); if (!sb) return;
-    const show = S.started && !S.finished && !S.examMode;
+    const show = S.started && !S.finished;
     sb.style.display = show ? "" : "none";
     if (show) {
       const ready = S.target.length > 0 && S.typed.length >= S.target.length;
@@ -958,36 +1004,11 @@ export function mountHcmStage(container, opts) {
     }
   }
   function setDuration(min) { S.durMin = min; resetTest(); }
-  function setExamMode(on) {
-    const wasExam = !!S.examMode;
-    S.examMode = !!on;
-    const eb = q("#endTestBtn");
-    if (S.examMode) {
-      if (!wasExam) preExamState = { durMin: S.durMin, currentId: S.currentId, currentName: S.currentName, ctx: S.ctx };
-      S.durMin = 10;
-      if (eb) { eb.style.display = ""; eb.disabled = true; }
-      q("#stHud").classList.add("rem");
-      resetTest();
-      setPaperView(!!SETTINGS.examPaper);
-      focusCapture();
-    } else {
-      if (eb) eb.style.display = "none";
-      q("#stHud").classList.remove("rem");
-      const restoreMin = (preExamState && preExamState.durMin) ? preExamState.durMin : (S.durMin === 10 ? 5 : S.durMin);
-      S.durMin = restoreMin;
-      S.ctx = (preExamState && preExamState.ctx) ? preExamState.ctx : "practice";
-      preExamState = null;
-      resetTest();
-      focusCapture();
-    }
-    paintBar();
-  }
 
   q("#stBack").addEventListener("click", function () { if (typeof opts.onExit === "function") opts.onExit(); });
   q("#stTitle").textContent = opts.title || "";
   q("#submitBtn").addEventListener("click", function () { if (S.started && !S.finished) finishTest(); });
   q("#restartBtn").addEventListener("click", function () { resetTest(); focusCapture(); });
-  q("#endTestBtn").addEventListener("click", function () { if (S.started && !S.finished) finishTest(); });
   q("#againBtn").addEventListener("click", function () { resetTest(); focusCapture(); });
   q("#nextBtn").addEventListener("click", function () {
     const s = S.silo;
@@ -1010,7 +1031,7 @@ export function mountHcmStage(container, opts) {
 
   /* ---------- boot the stage ---------- */
   paintBar();
-  if (S.paperView) { q("#paperWrap").style.display = "block"; }
+  if (S.paperView) { q("#paperWrap").style.display = "block"; typeBox.classList.add("paperBox"); }
   if (S.silo && S.silo.items && S.silo.items.length) {
     const it = S.silo.items[S.silo.index || 0];
     loadText(it.id, it.name, it.text, it.isDrill);
@@ -1022,7 +1043,7 @@ export function mountHcmStage(container, opts) {
   if (S.paperView) { updatePaperSheet(); paintPaperLayout(); }
 
   return {
-    destroy: function () { clearInterval(S.timer); zen.destroy(); },
+    destroy: function () { clearInterval(S.timer); zen.destroy(); more.destroy(); },
     _state: S,
     focus: focusCapture,
     finishNow: finishTest
@@ -1041,7 +1062,14 @@ export function mountExamStage(container, opts) {
   const EX = { spec: sp, test: opts.test, category: sp.categories ? sp.categories[0].id : "", started: false, startT: 0, timer: null, finished: false, caret: 0 };
   const zen = makeZen();
 
-  function bsEffective() { return opts.backspaceOverride != null ? !!opts.backspaceOverride : !!sp.backspace; }
+  /* Backspace rule: the base value is the arena's custom override when
+     given, else the exam's official rule (sp.backspace). In Official
+     Mocks the command-bar toggle flips a session-only override (bsUser);
+     openExamTest resets it, so a retake/restart always starts from the
+     exam default again. Every input guard reads bsEffective() live. */
+  let bsUser = null;
+  function bsDefault() { return opts.backspaceOverride != null ? !!opts.backspaceOverride : !!sp.backspace; }
+  function bsEffective() { return bsUser != null ? bsUser : bsDefault(); }
 
   container.innerHTML =
     '<div class="stage-wrap" id="exStageWrap">' +
@@ -1086,7 +1114,7 @@ export function mountExamStage(container, opts) {
   const exCaptureEl = q("#exCapture");
   const morePop = q(".more-pop");
   const kbSection = q("#exKbSection");
-  wireMorePop(morePop, kbSection, function () { return { name: EX.test.name, text: exFullTarget() }; });
+  const more = wireMorePop(morePop, kbSection, function () { return { name: EX.test.name, text: exFullTarget() }; });
   if (SETTINGS.kb) { kbSection.style.display = "block"; kbSection.querySelector("#keyboard").innerHTML = fingerKeyboardHtml(); kbSection.dataset.built = "1"; }
   zen.watchMouse(container);
 
@@ -1098,15 +1126,13 @@ export function mountExamStage(container, opts) {
       examLabel: sp.short,
       duration: durMin,
       backspace: bsEffective(),
-      backspaceLocked: !opts.custom,
+      backspaceLocked: false,
       liveErrors: false,
       paperView: false,
-      realExamMode: false,
       onAction: onBarAction
     });
     bar.querySelectorAll('[data-act="duration"]').forEach(function (b) { b.disabled = true; b.setAttribute("data-tip", "Fixed by this exam's pattern"); });
     const er = bar.querySelector('[data-act="errors"]'); if (er) { er.disabled = true; er.setAttribute("data-tip", "Errors are scored at submit on this exam's screen"); }
-    const rm = bar.querySelector('[data-act="realexam"]'); if (rm) { rm.disabled = true; rm.setAttribute("data-tip", "This screen already runs the real exam pattern"); }
     const pp = bar.querySelector('[data-act="paper"]'); if (pp) { pp.disabled = true; pp.setAttribute("data-tip", "This exam is typed on screen"); }
     if (!opts.silo) { const ps = bar.querySelector('[data-act="passage"]'); if (ps) ps.disabled = true; }
     slot.appendChild(bar);
@@ -1137,10 +1163,13 @@ export function mountExamStage(container, opts) {
       });
     }
     else if (name === "backspace") {
-      /* locked in official mocks (renderCommandBar disables it); in
-         custom mocks the arena owns the override — it re-mounts with the
-         flipped value so the pre-panel and badge stay truthful. */
-      if (opts.custom && typeof opts.onBackspaceToggle === "function") opts.onBackspaceToggle(!bsEffective());
+      /* Custom mocks: the arena owns the override — it re-mounts with
+         the flipped value so the pre-panel and badge stay truthful.
+         Official mocks: flip the session-only override; the input-level
+         guards (exCapture keydown/click) read bsEffective() live, and
+         the badge/pill/pre-panel are repainted to match. */
+      if (opts.custom) { if (typeof opts.onBackspaceToggle === "function") opts.onBackspaceToggle(!bsEffective()); }
+      else { bsUser = !bsEffective(); paintBar(); paintBsChrome(); exFocus(); }
     }
     else if (name === "more") { morePop.hidden = !morePop.hidden; }
   }
@@ -1154,8 +1183,15 @@ export function mountExamStage(container, opts) {
     let out = ""; for (let k = 0; k < reps; k++) out += (out ? " " : "") + base;
     return out;
   }
+  function paintBsChrome() {
+    q("#exBsState").textContent = "Backspace: " + (bsEffective() ? "Allowed" : "Disabled");
+    q("#exNoBs").style.display = bsEffective() ? "none" : "";
+    const pi = q("#exPreInfo");
+    if (pi && EX.test) pi.textContent = sp.durationLabel + " · " + wordCountOf(EX.test.text) + " words · " + fmtNum(EX.test.text.length) + " keystrokes · Backspace " + (bsEffective() ? "allowed" : "DISABLED") + " · " + sp.evaluation + ".";
+  }
   function openExamTest(t) {
     EX.test = t; EX.category = sp.categories ? sp.categories[0].id : ""; EX.started = false; EX.finished = false; EX.caret = 0;
+    bsUser = null; /* (re)opening a test restarts the backspace rule at the exam default */
     clearInterval(EX.timer);
     TEL.setTarget(null, "typed");
     q("#exTitle").textContent = sp.name + " — " + t.name;
@@ -1180,6 +1216,7 @@ export function mountExamStage(container, opts) {
     q("#exPassage").textContent = t.text;
     exCaptureEl.value = "";
     q("#exTyped").innerHTML = "<span class='ph'>Click here and start typing the passage above…</span>";
+    paintBar(); /* the reset above may have changed the backspace state the bar shows */
   }
   function paintExCats() { container.querySelectorAll(".exCat").forEach(function (b) { b.classList.toggle("active", b.dataset.cat === EX.category); }); }
   function exFocus() { try { exCaptureEl.focus({ preventScroll: true }); } catch (e) { exCaptureEl.focus(); } }
@@ -1359,6 +1396,7 @@ export function mountExamStage(container, opts) {
         revFeed(fx.feed, sp.id);
       }
     } catch (e) { console.warn("Telemetry failed", e); }
+    try { if (entry.verdict == null || !/not qualified|DQ/i.test(String(entry.verdict))) celebrateIfBest(entry.net, loadHist(), sp.id); } catch (e) {}
     const h = loadHist(); h.unshift(entry); saveHist(h);
     if (appState.user) cloud.saveResult(entry);
     if (typeof opts.onFinish === "function") opts.onFinish(entry);
@@ -1386,7 +1424,7 @@ export function mountExamStage(container, opts) {
   openExamTest(EX.test);
 
   return {
-    destroy: function () { clearInterval(EX.timer); zen.destroy(); },
+    destroy: function () { clearInterval(EX.timer); zen.destroy(); more.destroy(); },
     _ex: EX,
     finishNow: finishExamTest
   };
