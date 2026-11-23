@@ -45,6 +45,7 @@ function parseHash() {
   return { route: route, param: param, auth: null };
 }
 
+const SKELETON = '<div aria-hidden="true"><div class="skel skel-hero"></div><div class="skel skel-line" style="width:70%"></div><div class="skel skel-line" style="width:55%"></div><div class="skel skel-box"></div><div class="skel-row"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div></div>';
 const appEl = document.getElementById("app");
 let current = null;   // { route, destroy }
 let navToken = 0;
@@ -54,11 +55,13 @@ async function render() {
   const token = ++navToken;
   if (current && current.destroy) { try { current.destroy(); } catch (e) {} }
   current = null;
-  appEl.innerHTML = "";
   appEl.classList.remove("view-enter");
+  /* skeleton while the route module downloads (cleared before mount) */
+  appEl.innerHTML = SKELETON;
   try {
     const mod = await ROUTES[route]();
     if (token !== navToken) return;               // a newer navigation won
+    appEl.innerHTML = "";
     const mount = mod.mount || mod.default;
     const inst = mount(appEl, { param: param, route: route });
     current = { route: route, destroy: inst && inst.destroy };
