@@ -184,6 +184,7 @@ export function mountHcmStage(container, opts) {
     bsAllowed: true
   };
   let paperHold = false, paperProgScroll = false;
+  let bsUser = null; /* session-only backspace override for Official mocks (v16) */
   let spanCache = [], spanText = [];
   const zen = makeZen();
 
@@ -210,6 +211,12 @@ export function mountHcmStage(container, opts) {
           '<span class="paper-tools">' +
             '<button class="pill" type="button" data-layout="top">Top / Bottom</button>' +
             '<button class="pill" type="button" data-layout="side">Side by Side</button>' +
+            '<span class="paper-font" role="group" aria-label="Paper text size">' +
+              '<button class="pill" type="button" data-pfont="0">S</button>' +
+              '<button class="pill" type="button" data-pfont="1">M</button>' +
+              '<button class="pill" type="button" data-pfont="2">L</button>' +
+              '<button class="pill" type="button" data-pfont="3">XL</button>' +
+            '</span>' +
             '<button class="pill" type="button" id="paperPrint" aria-label="Print passage">' + icon("printer") + '</button>' +
           '</span></div>' +
         '<div class="paperSheet" id="paperSheet"><div id="paperSheetText"></div></div>' +
@@ -242,8 +249,18 @@ export function mountHcmStage(container, opts) {
     if (S.paperView) return false;
     return true;
   }
-  function bsLocked() { return opts.mode !== "custom"; }
-  function bsEffective() { return bsLocked() ? true : S.bsAllowed; }
+  /* Backspace rule: Custom Tests keep their free S.bsAllowed toggle.
+     Official HCM mocks default to the exam rule (allowed) and the
+     command-bar toggle flips the session-only bsUser override — the same
+     mechanism the exam stage uses; resetTest() restores the default.
+     Practice mounts (Studio) keep the toggle locked, exactly as before.
+     Every input guard reads bsEffective() live. */
+  function bsLocked() { return opts.mode !== "custom" && opts.mode !== "official"; }
+  function bsEffective() {
+    if (opts.mode === "custom") return S.bsAllowed;
+    if (opts.mode === "official") return bsUser != null ? bsUser : true;
+    return true;
+  }
 
   /* ---------- command bar ---------- */
   function paintBar() {
@@ -275,7 +292,10 @@ export function mountHcmStage(container, opts) {
     else if (name === "duration") { setDuration(+value); paintBar(); focusCapture(); }
     else if (name === "passage") { openPicker(); }
     else if (name === "paper") { setPaperView(!S.paperView); paintBar(); focusCapture(); }
-    else if (name === "backspace") { if (!bsLocked()) { S.bsAllowed = !S.bsAllowed; paintBar(); focusCapture(); } }
+    else if (name === "backspace") {
+      if (opts.mode === "custom") { S.bsAllowed = !S.bsAllowed; paintBar(); focusCapture(); }
+      else if (opts.mode === "official") { bsUser = !bsEffective(); paintBar(); focusCapture(); }
+    }
     else if (name === "errors") { SETTINGS.highlight = !highlightOn(); persistSettings(); renderText(); paintBar(); focusCapture(); }
     else if (name === "more") { morePop.hidden = !morePop.hidden; more.paint(); }
   }
@@ -338,6 +358,7 @@ export function mountHcmStage(container, opts) {
     S.typed = []; S.caret = 0; S.started = false; S.finished = false;
     S.errCat = { spelling: 0, capital: 0, punct: 0, spacing: 0, other: 0 }; S.errKeys = {}; S.errWords = {};
     S.bsCount = 0; S.lastMistakes = [];
+    if (bsUser != null) { bsUser = null; paintBar(); } /* (re)starting a test restores the backspace exam default */
     capture.value = "";
     const rb = q("#resultBox"); if (rb) rb.style.display = "none";
     const prR = q("#pracResult"); if (prR) prR.style.display = "none";
@@ -453,38 +474,26 @@ export function mountHcmStage(container, opts) {
     }
   }
   function syncPaperScroll() {
-    if (!S.paperView) return;
-    const sh = q("#paperSheet"); if (!sh) return;
-    const max = sh.scrollHeight - sh.clientHeight; if (max <= 0) return;
-    const prog = S.target.length ? S.typed.length / S.target.length : 0;
-    const target = Math.round(prog * max);
-    if (paperHold) { if (Math.abs(sh.scrollTop - target) <= 48) paperHold = false; else return; }
-    if (Math.abs(sh.scrollTop - target) < 2) return;
-    paperProgScroll = true; sh.scrollTop = target;
-    requestAnimationFrame(function () { paperProgScroll = false; });
+    /* v16: the paper sheet is a faithful static print — it never scrolls
+       itself to follow typing (the user scrolls it by hand if needed). */
   }
   function focusCapture() {
     try { capture.focus({ preventScroll: true }); } catch (e) { capture.focus(); }
   }
 
   /* Paper View typing box: in Paper View the sheet carries the passage
-     (read-only; paintPaperLine's highlight tracks the current word/line)
-     and this box — inside the type box, in place of the type-over-words
-     text — shows ONLY what the user has typed, as plain text with a
-     caret. The input path (the capture textarea) is untouched. */
+     (read-only and fully static — no tracking of any kind, v16) and this
+     box — inside the type box, in place of the type-over-words text —
+     shows ONLY what the user has typed, as plain text with a caret.
+     The box GROWS with its content (CSS .typeBox.paperBox has no height
+     cap); nothing scrolls it while typing. The input path (the capture
+     textarea) is untouched. */
   function renderPaperTyped() {
     const el = q("#paperTyped"); if (!el) return;
     const v = typedString();
     if (!v) { el.innerHTML = '<span class="ph">Start typing — your text appears here…</span>'; return; }
     const c = Math.max(0, Math.min(S.caret || 0, v.length));
     el.innerHTML = escapeHtml(v.slice(0, c)) + '<span class="ptCaret" aria-hidden="true"></span>' + escapeHtml(v.slice(c));
-    const ct = el.querySelector(".ptCaret");
-    if (ct) {
-      const top = ct.offsetTop;
-      if (top < typeBox.scrollTop + 8 || top > typeBox.scrollTop + typeBox.clientHeight - 48) {
-        typeBox.scrollTop = Math.max(0, top - 48);
-      }
-    }
   }
 
   /* ---------- Paper View 2.0 ---------- */
@@ -494,17 +503,10 @@ export function mountHcmStage(container, opts) {
     paintPaperLine();
   }
   function paintPaperLine() {
-    if (!S.paperView) return;
-    const el = q("#paperSheetText"); if (!el || !el.children.length) return;
-    const spans = el.children;
-    const typedStr = typedString();
-    let wi = typedStr ? typedStr.split(" ").length - 1 : 0;
-    wi = Math.max(0, Math.min(wi, spans.length - 1));
-    const top = spans[wi].offsetTop;
-    for (let i = 0; i < spans.length; i++) {
-      spans[i].classList.toggle("lineHl", spans[i].offsetTop === top);
-      spans[i].classList.toggle("curW", i === wi);
-    }
+    /* v16: REMOVED — the paper sheet carries NO tracking at all (no bold
+       current word, no current-line highlight). The sheet is a static
+       print; progress shows only in the typed box. Kept as a no-op
+       because renderText()/updatePaperSheet() still call it. */
   }
   function paintPaperLayout() {
     const wrap = q("#paperWrap"); if (!wrap) return;
@@ -520,10 +522,34 @@ export function mountHcmStage(container, opts) {
     if (S.paperView) {
       updatePaperSheet();
       paintPaperLayout();
+      applyPaperFont();
       paperHold = false;
       const sh = q("#paperSheet"); if (sh) sh.scrollTop = 0;
       renderText();
     }
+  }
+
+  /* Paper text size (v16): a 4-step control in the Paper View tools.
+     Scales the sheet text and the typed-box text together (they are a
+     pair). The choice persists under its OWN key, ts_paper_font_v1
+     (step index 0–3); the default step (1 → 19px) matches the size
+     Paper View has always rendered at. */
+  const PAPER_FONT_KEY = "ts_paper_font_v1";
+  const PAPER_FONT_SIZES = [17, 19, 21, 23];
+  function paperFontStep() {
+    let n = NaN;
+    try { n = parseInt(localStorage.getItem(PAPER_FONT_KEY), 10); } catch (e) {}
+    return (n >= 0 && n < PAPER_FONT_SIZES.length) ? n : 1;
+  }
+  function applyPaperFont() {
+    const step = paperFontStep(), px = PAPER_FONT_SIZES[step];
+    const sh = q("#paperSheetText"); if (sh) sh.style.fontSize = px + "px";
+    const pt = q("#paperTyped");
+    if (pt) { pt.style.fontSize = px + "px"; pt.style.minHeight = (px * 1.9 * 3) + "px"; }
+    const wrap = q("#paperWrap");
+    if (wrap) wrap.querySelectorAll("[data-pfont]").forEach(function (b) {
+      b.classList.toggle("active", +b.getAttribute("data-pfont") === step);
+    });
   }
 
   /* ---------- stats (verbatim) ---------- */
@@ -604,7 +630,7 @@ export function mountHcmStage(container, opts) {
     renderText(); updateStats(S.started ? (Date.now() - S.startT) / 1000 : 0);
     requestAnimationFrame(function () {
       if (window.scrollY !== wy || window.scrollX !== wx) window.scrollTo(wx, wy);
-      scrollCursorIntoView(S.caret);
+      if (!S.paperView) scrollCursorIntoView(S.caret); /* Paper View never scroll-chases (v16) */
       pendingWinY = null; pendingWinX = null;
     });
     const mhEl = q("#modeHint");
@@ -1028,6 +1054,13 @@ export function mountHcmStage(container, opts) {
   q("#paperWrap").querySelectorAll("[data-layout]").forEach(function (b) {
     b.addEventListener("click", function () { SETTINGS.paperLayout = b.getAttribute("data-layout"); persistSettings(); paintPaperLayout(); });
   });
+  q("#paperWrap").querySelectorAll("[data-pfont]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      try { localStorage.setItem(PAPER_FONT_KEY, b.getAttribute("data-pfont")); } catch (e) {}
+      applyPaperFont(); focusCapture();
+    });
+  });
+  applyPaperFont();
 
   /* ---------- boot the stage ---------- */
   paintBar();

@@ -66,6 +66,32 @@ export function testsToday(now = new Date()) {
   }).length;
 }
 
+/* Total typing time per day (v16, read-only): sums EVERY history entry's
+   duration — durSec (actual elapsed seconds) when present, else min×60,
+   the same fallback trendsSummary() uses — keyed by the entry's local
+   calendar day. Covers mocks, custom tests, drills, warm-ups, practice
+   passages and revision alike, since all of them land in this history.
+   Returns the last `days` days, oldest first, today last:
+   [{ date: Date (local midnight), seconds }]. */
+export function typingTimeByDay(days = 7, now = new Date()) {
+  const per = {};
+  loadHist().forEach(function (x) {
+    const d = new Date(x.ts || x.d);
+    if (isNaN(d)) return;
+    const sec = x.durSec ? +x.durSec : (x.min ? +x.min * 60 : 0);
+    if (!sec || isNaN(sec)) return;
+    const k = d.toDateString();
+    per[k] = (per[k] || 0) + sec;
+  });
+  const out = [];
+  const cur = new Date(now); cur.setHours(0, 0, 0, 0);
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date(cur); d.setDate(d.getDate() - i);
+    out.push({ date: d, seconds: per[d.toDateString()] || 0 });
+  }
+  return out;
+}
+
 /* Daily goal lives under its OWN new key — it never touches existing data. */
 const LS_GOAL = "ts_daily_goal_v1";
 export function getDailyGoal() {
