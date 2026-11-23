@@ -1,0 +1,14 @@
+{
+  "name": "TypeSetu — Typing Practice for Government Exams",
+  "short_name": "TypeSetu",
+  "description": "Free typing test practice for Delhi Police HCM, SSC CHSL, SSC CGL DEST and RRB NTPC.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0F1117",
+  "theme_color": "#0F1117",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
