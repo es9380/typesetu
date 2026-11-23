@@ -103,7 +103,12 @@ export function setDailyGoal(n) { try { localStorage.setItem(LS_GOAL, String(n))
    exam vs its target WPM, discounted when accuracy is under 95%.
    Returns null until the person has at least one attempt for that exam. */
 export function readiness(examId, targetWPM) {
-  const mine = loadHist().filter(function (x) { return x.examId === examId && typeof x.net === "number"; }).slice(0, 5);
+  /* HCM-stage entries predate the examId field and carry none — for HCM
+     they count as HCM attempts; every other exam matches strictly. */
+  const mine = loadHist().filter(function (x) {
+    const examMatch = examId === "hcm" ? (x.examId === "hcm" || x.examId == null) : (x.examId === examId);
+    return examMatch && typeof x.net === "number";
+  }).slice(0, 5);
   if (!mine.length || !targetWPM) return null;
   const avgNet = mine.reduce(function (a, x) { return a + x.net; }, 0) / mine.length;
   const avgAcc = mine.reduce(function (a, x) { return a + (x.acc || 0); }, 0) / mine.length;

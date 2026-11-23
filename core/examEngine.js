@@ -404,7 +404,7 @@ export function mountHcmStage(container, opts) {
       else if (i === pos) { cls += " cur"; }
       if (spanCache[i] !== cls) { spanCache[i] = cls; typeText.children[i].className = cls; }
     }
-    if (S.paperView) { renderPaperTyped(); }
+    if (S.paperView) { renderPaperTyped(); scrollPaperTyped(); }
     else { scrollCursorIntoView(cpos); positionCaret(cpos); }
     syncPaperScroll();
     paintPaperLine();
@@ -473,21 +473,88 @@ export function mountHcmStage(container, opts) {
       el.style.animation = "";
     }
   }
+  /* ---------- Paper View auto-scroll (v17) ----------
+     Both Paper View panes are FIXED-height internal scrollers (CSS).
+     On every render, each pane scrolls ONLY when the line that matters
+     has left its comfortable visible zone, and then only by the minimum
+     amount — no per-keystroke chasing, no snapping the caret to the
+     top. The sheet stays a plain static print (no bold, no highlight —
+     v16's "remove tracing all" stands); its word spans serve purely as
+     invisible position anchors for measuring where the caret's line is. */
+  function paperLineH(el, ratio) {
+    let lh = 0, fs = 0;
+    try {
+      const cs = window.getComputedStyle(el);
+      lh = parseFloat(cs.lineHeight) || 0;
+      fs = parseFloat(cs.fontSize) || 0;
+    } catch (e) {}
+    if (!(lh > 0)) lh = (fs > 0 ? fs : 19) * ratio;
+    return lh;
+  }
+  function offsetTopWithin(node, container) {
+    let y = 0, n = node;
+    while (n && n !== container) { y += (n.offsetTop || 0); n = n.offsetParent; }
+    return y;
+  }
+  function paperWordIndex() {
+    /* index of the sheet word span the caret currently sits in */
+    const pos = Math.max(0, Math.min(S.caret || 0, S.target.length));
+    let idx = 0;
+    for (let i = 0; i < pos; i++) if (S.target[i] === " ") idx++;
+    return idx;
+  }
   function syncPaperScroll() {
-    /* v16: the paper sheet is a faithful static print — it never scrolls
-       itself to follow typing (the user scrolls it by hand if needed). */
+    /* Sheet: follow the current word's line with the same minimal rule —
+       move only when that line is outside the visible zone, then land it
+       ~2 lines below the sheet's top edge (line in view + lookahead). */
+    if (!S.paperView) return;
+    const sheet = q("#paperSheet"), st = q("#paperSheetText");
+    if (!sheet || !st) return;
+    const spans = st.children;
+    if (!spans.length) return;
+    const anchor = spans[Math.min(paperWordIndex(), spans.length - 1)];
+    if (!anchor) return;
+    const lh = paperLineH(st, 1.85);
+    const lineTop = offsetTopWithin(anchor, sheet);
+    const lineBottom = lineTop + lh;
+    const viewTop = sheet.scrollTop, viewBottom = viewTop + sheet.clientHeight;
+    if (lineTop >= viewTop && lineBottom <= viewBottom) return;
+    let desired = lineTop - 2 * lh;
+    const max = Math.max(0, sheet.scrollHeight - sheet.clientHeight);
+    if (desired > max) desired = max;
+    if (desired < 0) desired = 0;
+    if (desired !== sheet.scrollTop) sheet.scrollTop = desired;
+  }
+  function scrollPaperTyped() {
+    /* Typed box: keep the caret's line in view with nearest semantics —
+       if it slips below the bottom, scroll just enough to rest it one
+       line above the bottom edge; if it rises above the top (backspacing
+       up), just enough to rest it one line below the top edge. */
+    const pt = q("#paperTyped"); if (!pt) return;
+    const caret = pt.querySelector(".ptCaret"); if (!caret) return;
+    const lh = paperLineH(pt, 1.9);
+    const lineTop = offsetTopWithin(caret, typeBox);
+    const lineBottom = lineTop + lh;
+    const viewTop = typeBox.scrollTop, viewBottom = viewTop + typeBox.clientHeight;
+    let desired = viewTop;
+    if (lineBottom > viewBottom) desired = lineBottom + lh - typeBox.clientHeight;
+    else if (lineTop < viewTop) desired = lineTop - lh;
+    const max = Math.max(0, typeBox.scrollHeight - typeBox.clientHeight);
+    if (desired > max) desired = max;
+    if (desired < 0) desired = 0;
+    if (desired !== typeBox.scrollTop) typeBox.scrollTop = desired;
   }
   function focusCapture() {
     try { capture.focus({ preventScroll: true }); } catch (e) { capture.focus(); }
   }
 
   /* Paper View typing box: in Paper View the sheet carries the passage
-     (read-only and fully static — no tracking of any kind, v16) and this
-     box — inside the type box, in place of the type-over-words text —
-     shows ONLY what the user has typed, as plain text with a caret.
-     The box GROWS with its content (CSS .typeBox.paperBox has no height
-     cap); nothing scrolls it while typing. The input path (the capture
-     textarea) is untouched. */
+     (read-only and plain — no tracking of any kind, v16) and this box —
+     inside the type box, in place of the type-over-words text — shows
+     ONLY what the user has typed, as plain text with a caret. The box is
+     a fixed-height pane (CSS .typeBox.paperBox); scrollPaperTyped()
+     keeps the caret line in view with minimal movement (v17). The input
+     path (the capture textarea) is untouched. */
   function renderPaperTyped() {
     const el = q("#paperTyped"); if (!el) return;
     const v = typedString();
@@ -630,7 +697,7 @@ export function mountHcmStage(container, opts) {
     renderText(); updateStats(S.started ? (Date.now() - S.startT) / 1000 : 0);
     requestAnimationFrame(function () {
       if (window.scrollY !== wy || window.scrollX !== wx) window.scrollTo(wx, wy);
-      if (!S.paperView) scrollCursorIntoView(S.caret); /* Paper View never scroll-chases (v16) */
+      if (!S.paperView) scrollCursorIntoView(S.caret); /* Paper View scrolls on the renderText path instead (v17) */
       pendingWinY = null; pendingWinX = null;
     });
     const mhEl = q("#modeHint");
@@ -1052,12 +1119,12 @@ export function mountHcmStage(container, opts) {
   q("#paperPrint").addEventListener("click", function () { printPassage(S.currentName, S.target); });
   q("#paperSheet").addEventListener("scroll", function () { if (!paperProgScroll) paperHold = true; });
   q("#paperWrap").querySelectorAll("[data-layout]").forEach(function (b) {
-    b.addEventListener("click", function () { SETTINGS.paperLayout = b.getAttribute("data-layout"); persistSettings(); paintPaperLayout(); });
+    b.addEventListener("click", function () { SETTINGS.paperLayout = b.getAttribute("data-layout"); persistSettings(); paintPaperLayout(); renderText(); });
   });
   q("#paperWrap").querySelectorAll("[data-pfont]").forEach(function (b) {
     b.addEventListener("click", function () {
       try { localStorage.setItem(PAPER_FONT_KEY, b.getAttribute("data-pfont")); } catch (e) {}
-      applyPaperFont(); focusCapture();
+      applyPaperFont(); renderText(); focusCapture();
     });
   });
   applyPaperFont();
