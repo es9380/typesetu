@@ -5,6 +5,7 @@
    days with ≥1 history entry, counting back from today. */
 
 import { loadHist, loadDone } from "./storage.js";
+import { specOf } from "../data/examSpecs.js";
 
 /* Mirrors renderDashboard(): tests taken, best net, average accuracy,
    gate-passed count over total typeable texts. */
@@ -103,17 +104,43 @@ export function setDailyGoal(n) { try { localStorage.setItem(LS_GOAL, String(n))
    exam vs its target WPM, discounted when accuracy is under 95%.
    Returns null until the person has at least one attempt for that exam. */
 export function readiness(examId, targetWPM) {
-  /* HCM-stage entries predate the examId field and carry none — for HCM
-     they count as HCM attempts; every other exam matches strictly. */
+  /* HCM-stage entries predate the examId field: locally they carry
+     none, and after a Firestore round-trip they carry examId: ""
+     (firebaseService re-maps with `x.examId || ""`). Both shapes are
+     HCM attempts — falsy or "hcm" counts. Every other exam matches
+     strictly: their entries always carry a real id, so "" can never
+     leak into them. */
   const mine = loadHist().filter(function (x) {
-    const examMatch = examId === "hcm" ? (x.examId === "hcm" || x.examId == null) : (x.examId === examId);
+    const examMatch = examId === "hcm" ? (!x.examId || x.examId === "hcm") : (x.examId === examId);
     return examMatch && typeof x.net === "number";
   }).slice(0, 5);
-  if (!mine.length || !targetWPM) return null;
+  if (!mine.length) return null;
   const avgNet = mine.reduce(function (a, x) { return a + x.net; }, 0) / mine.length;
   const avgAcc = mine.reduce(function (a, x) { return a + (x.acc || 0); }, 0) / mine.length;
-  const speed = Math.min(1, Math.max(0, avgNet / targetWPM));
   const accF = Math.min(1, Math.max(0, avgAcc / 95));
+  if (!targetWPM) {
+    /* Zero-target exams (CGL DEST: targetWPM is literally 0 — there is
+       no speed bar; the standard is finishing inside the error cap).
+       Readiness must still exist once attempts do, so derive it from
+       the attempts themselves: accuracy against the same 95% benchmark
+       used above, times the headroom the average error% leaves under
+       the exam's UR error cap (from its spec categories; CGL UR = 20%).
+       Attempts carrying no error% fall back to accuracy alone. */
+    const withErr = mine.filter(function (x) { return typeof x.errorPct === "number"; });
+    let pct;
+    if (withErr.length) {
+      const sp = specOf(examId);
+      const ur = sp && sp.categories ? sp.categories.find(function (c) { return c.id === "UR"; }) : null;
+      const cap = ur && ur.cap > 0 ? ur.cap : 20;
+      const avgErr = withErr.reduce(function (a, x) { return a + x.errorPct; }, 0) / withErr.length;
+      const errF = Math.min(1, Math.max(0, 1 - avgErr / cap));
+      pct = Math.round(accF * errF * 100);
+    } else {
+      pct = Math.round(accF * 100);
+    }
+    return { pct: pct, avgNet: Math.round(avgNet * 10) / 10, avgAcc: Math.round(avgAcc * 10) / 10, n: mine.length };
+  }
+  const speed = Math.min(1, Math.max(0, avgNet / targetWPM));
   return { pct: Math.round(speed * accF * 100), avgNet: Math.round(avgNet * 10) / 10, avgAcc: Math.round(avgAcc * 10) / 10, n: mine.length };
 }
 

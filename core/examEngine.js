@@ -473,7 +473,7 @@ export function mountHcmStage(container, opts) {
       el.style.animation = "";
     }
   }
-  /* ---------- Paper View auto-scroll (v17) ----------
+  /* ---------- Paper View auto-scroll (v17; measurement + top guard v18) ----------
      Both Paper View panes are FIXED-height internal scrollers (CSS).
      On every render, each pane scrolls ONLY when the line that matters
      has left its comfortable visible zone, and then only by the minimum
@@ -491,10 +491,14 @@ export function mountHcmStage(container, opts) {
     if (!(lh > 0)) lh = (fs > 0 ? fs : 19) * ratio;
     return lh;
   }
-  function offsetTopWithin(node, container) {
-    let y = 0, n = node;
-    while (n && n !== container) { y += (n.offsetTop || 0); n = n.offsetParent; }
-    return y;
+  function paperLineTop(el, pane) {
+    /* Position of el's first line inside pane's scrollable content,
+       measured with getBoundingClientRect — the same technique as the
+       proven scrollCursorIntoView. (v17 walked offsetTop/offsetParent;
+       the rect form is immune to offsetParent-chain surprises — a
+       transformed or repositioned ancestor can never skew it.) */
+    const pRect = pane.getBoundingClientRect(), eRect = el.getBoundingClientRect();
+    return eRect.top - pRect.top - (pane.clientTop || 0) + pane.scrollTop;
   }
   function paperWordIndex() {
     /* index of the sheet word span the caret currently sits in */
@@ -505,8 +509,15 @@ export function mountHcmStage(container, opts) {
   }
   function syncPaperScroll() {
     /* Sheet: follow the current word's line with the same minimal rule —
-       move only when that line is outside the visible zone, then land it
-       ~2 lines below the sheet's top edge (line in view + lookahead). */
+       move only when that line leaves the comfortable zone, then land it
+       ~2 lines below the sheet's top edge (line in view + lookahead).
+       v18: the comfortable zone now also keeps the line at least one
+       line clear of the pane's TOP edge. A line riding the very top is
+       the first thing lost when the pane sits near the viewport top on
+       a short screen (the v17 live-check failure: the sheet had in fact
+       scrolled, but the current line sat in the pane's top sliver,
+       which the browser viewport had clipped away). The measurement is
+       rect-based now (paperLineTop) instead of the offsetParent walk. */
     if (!S.paperView) return;
     const sheet = q("#paperSheet"), st = q("#paperSheetText");
     if (!sheet || !st) return;
@@ -515,10 +526,10 @@ export function mountHcmStage(container, opts) {
     const anchor = spans[Math.min(paperWordIndex(), spans.length - 1)];
     if (!anchor) return;
     const lh = paperLineH(st, 1.85);
-    const lineTop = offsetTopWithin(anchor, sheet);
+    const lineTop = paperLineTop(anchor, sheet);
     const lineBottom = lineTop + lh;
     const viewTop = sheet.scrollTop, viewBottom = viewTop + sheet.clientHeight;
-    if (lineTop >= viewTop && lineBottom <= viewBottom) return;
+    if (lineTop >= viewTop + lh && lineBottom <= viewBottom) return;
     let desired = lineTop - 2 * lh;
     const max = Math.max(0, sheet.scrollHeight - sheet.clientHeight);
     if (desired > max) desired = max;
@@ -533,7 +544,7 @@ export function mountHcmStage(container, opts) {
     const pt = q("#paperTyped"); if (!pt) return;
     const caret = pt.querySelector(".ptCaret"); if (!caret) return;
     const lh = paperLineH(pt, 1.9);
-    const lineTop = offsetTopWithin(caret, typeBox);
+    const lineTop = paperLineTop(caret, typeBox);
     const lineBottom = lineTop + lh;
     const viewTop = typeBox.scrollTop, viewBottom = viewTop + typeBox.clientHeight;
     let desired = viewTop;
@@ -581,6 +592,40 @@ export function mountHcmStage(container, opts) {
     const area = q("#typeArea"); if (area) area.classList.toggle("side", side);
     wrap.querySelectorAll("[data-layout]").forEach(function (b) { b.classList.toggle("active", (b.getAttribute("data-layout") === "side") === side); });
   }
+  function scrollStageIntoView() {
+    /* v18: ONE page scroll, only on entering Paper View (setPaperView's
+       sole caller is the Paper toggle) — land the stage with the HUD
+       just under the sticky site header, so HUD + sheet + typed box are
+       on screen together with no manual arranging. Never per keystroke;
+       leaving Paper View adjusts nothing. */
+    const hud = q("#stHud") || q("#hcmStage"); if (!hud) return;
+    const hdr = document.querySelector(".site-header");
+    const hh = hdr ? hdr.getBoundingClientRect().height : 0;
+    const y = hud.getBoundingClientRect().top + window.scrollY - hh - 6;
+    if (!(y > 0)) return;
+    /* Instant scroll, then a short settle loop of verify-and-correct
+       passes on widening delays, re-measuring live rects each time
+       (never the captured numbers): async stage content (the passage
+       module finishing its load) can shift the HUD for a moment after
+       entering, and the passes nudge only while it sits off the mark.
+       Every pass stays strictly inside this toggle-only path — never
+       per keystroke. */
+    window.scrollTo(0, y);
+    const correct = function () {
+      if (!S.paperView || !hud.isConnected) return; /* toggled off / stage gone */
+      /* Bottom clamp: on tall viewports the document may not be tall
+         enough to scroll the HUD all the way to the mark — once the
+         page is at its scroll limit the HUD is as high as it can go
+         (and fully visible), so further nudges are futile. */
+      const maxY = document.documentElement.scrollHeight - window.innerHeight;
+      if (window.scrollY >= maxY - 1) return;
+      const hNow = hdr ? hdr.getBoundingClientRect().height : 0;
+      const off = hud.getBoundingClientRect().top - (hNow + 6);
+      if (Math.abs(off) > 4) window.scrollTo(0, window.scrollY + off);
+    };
+    requestAnimationFrame(correct);
+    [200, 600, 1200, 2000].forEach(function (ms) { setTimeout(correct, ms); });
+  }
   function setPaperView(on) {
     S.paperView = !!on;
     const wrap = q("#paperWrap"); if (wrap) wrap.style.display = S.paperView ? "block" : "none";
@@ -593,6 +638,7 @@ export function mountHcmStage(container, opts) {
       paperHold = false;
       const sh = q("#paperSheet"); if (sh) sh.scrollTop = 0;
       renderText();
+      requestAnimationFrame(scrollStageIntoView);
     }
   }
 
