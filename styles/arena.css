@@ -114,7 +114,7 @@ ul.tight li { margin-bottom: 4px; }
   background: var(--paper); color: var(--paper-ink); border-radius: 6px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
-  padding: 30px 34px; height: 300px; overflow-y: auto;
+  padding: 30px 34px; height: 240px; overflow-y: auto;
   font-family: var(--font-serif); font-size: 18.5px; line-height: 1.85;
   text-align: left; word-spacing: normal; letter-spacing: normal;
 }
@@ -133,9 +133,17 @@ ul.tight li { margin-bottom: 4px; }
 .typeBox.paperBox .paperTyped { display: block; }
 .typeBox.paperBox .typeText, .typeBox.paperBox .caretEl { display: none; }
 /* v17: in Paper View the typed box is a FIXED-height pane — the exact
-   same height as the paper sheet (300px) — with its own internal
-   scrollbar; it never grows, in either layout. */
-.typeBox.paperBox { height: 300px; max-height: none; overflow-y: auto; }
+   same height as the paper sheet — with its own internal scrollbar; it
+   never grows, in either layout.
+   v18 heights, fitted so HUD + both panes share a laptop viewport:
+   Top/Bottom stacks the panes, so both are 240px (HUD-to-sheet chrome
+   ≈150px + 240 + gap + 240 lands inside a ~700px viewport once the
+   stage is aligned under the 58px sticky header); Side by Side keeps
+   300px — the panes sit next to each other, so only one pane height
+   counts against the viewport. Equal within each layout, always. */
+.typeBox.paperBox { height: 240px; max-height: none; overflow-y: auto; }
+.type-area.side .paperSheet { height: 300px; }
+.type-area.side .typeBox.paperBox { height: 300px; }
 
 /* v17 Side by Side: the sheet and the typed box are equal columns whose
    tops and bottoms align exactly. The paper head (title + tools) lifts
@@ -154,6 +162,8 @@ ul.tight li { margin-bottom: 4px; }
   .type-area.side { grid-template-columns: 1fr; margin-top: 0; }
   .type-area.side .paper-wrap { margin-bottom: var(--sp-3); }
   .type-area.side .paper-head { position: static; margin-bottom: var(--sp-2); }
+  /* stacked = Top/Bottom geometry, so the stacked panes take its 240px */
+  .type-area.side .paperSheet, .type-area.side .typeBox.paperBox { height: 240px; }
 }
 .paperTyped .ph { color: var(--faint); }
 .ptCaret { display: inline-block; width: 2px; height: 1.05em; background: var(--accent-2); vertical-align: text-bottom; animation: caretBlink 1.1s steps(1) infinite; }
