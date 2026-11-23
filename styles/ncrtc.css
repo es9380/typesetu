@@ -1,0 +1,134 @@
+/* NCRTC MCQ Mocks — ISOLATED stylesheet for features/ncrtcMcq only.
+   Landing (test list + best scores from ncrtcBestV1), the runner with its
+   fixed bottom bar (Submit anchored, large Previous/Next, secondary
+   actions separated), the confirm modal and the review screen.
+   Deleting features/ncrtcMcq + this file + the route removes the section. */
+
+/* ---- landing ---- */
+.ncrtc-head { margin-bottom: var(--sp-4); }
+.ncrtc-head p { color: var(--muted); max-width: 65ch; }
+.ncCatHead { font-size: 19px; margin: var(--sp-6) 0 var(--sp-2); }
+.ncrtc-group { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--faint); font-weight: 700; margin: var(--sp-5) 0 var(--sp-2); }
+.ncrtc-row {
+  display: flex; align-items: center; gap: var(--sp-3); width: 100%; text-align: left;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 11px 14px; margin-bottom: 6px; color: var(--text);
+}
+.ncrtc-row:hover { border-color: var(--border-strong); }
+.ncrtc-row .nr-main { flex: 1; min-width: 0; }
+.ncrtc-row .nr-title { font-weight: 600; display: block; }
+.ncrtc-row .nr-sub { font-size: 12.5px; color: var(--muted); }
+.ncPdfBtn { text-decoration: none; white-space: nowrap; }
+
+/* ---- runner layout ---- */
+#ncRunner { padding-bottom: 104px; } /* room for the fixed bottom bar */
+.ncWrap { display: grid; grid-template-columns: minmax(0, 1fr) 272px; gap: var(--sp-4); align-items: start; }
+.ncMeta { font-size: 15px; }
+.ncProgress { color: var(--muted); font-size: 13.5px; margin: 4px 0 0; }
+.ncQText { font-size: 17.5px; font-weight: 600; line-height: 1.55; margin: var(--sp-4) 0; }
+.ncOpts { display: flex; flex-direction: column; gap: var(--sp-2); }
+.ncOpt {
+  display: flex; align-items: flex-start; gap: var(--sp-3); text-align: left; width: 100%;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 12px 14px; color: var(--text); font-size: 15px; line-height: 1.5; cursor: pointer;
+}
+.ncOpt:hover { border-color: var(--border-strong); }
+.ncOpt.sel { border-color: var(--accent); background: var(--accent-soft); }
+.ncOptKey {
+  flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 24px; height: 24px; border-radius: 50%; font-size: 12.5px; font-weight: 700;
+  background: var(--surface-3); color: var(--text); margin-top: 1px;
+}
+.ncOpt.sel .ncOptKey { background: var(--accent); color: var(--accent-ink); }
+
+/* ---- palette ---- */
+.ncPalCard strong { display: block; margin-bottom: var(--sp-3); }
+.ncPalette { display: grid; grid-template-columns: repeat(auto-fill, minmax(36px, 1fr)); gap: 6px; }
+.ncPalBtn {
+  height: 36px; border-radius: var(--radius-sm); cursor: pointer; font-weight: 600; font-size: 13.5px;
+  background: var(--surface-2); border: 1px solid var(--border); color: var(--muted);
+}
+.ncPalBtn:hover { color: var(--text); border-color: var(--border-strong); }
+.ncPalBtn.done { background: var(--accent-soft); border-color: var(--accent); color: var(--text); }
+.ncPalBtn.marked { border-color: var(--target); box-shadow: inset 0 0 0 1px var(--target); }
+.ncPalBtn.marked::after { content: ""; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--target); margin: 2px auto 0; }
+.ncPalBtn.now { outline: 2px solid var(--text); outline-offset: 1px; color: var(--text); }
+.ncPalSummary { color: var(--muted); font-size: 13px; margin-top: var(--sp-3); }
+.ncLegend { display: flex; flex-wrap: wrap; gap: var(--sp-3); color: var(--muted); font-size: 12.5px; margin-top: var(--sp-2); }
+.ncLegend span { display: inline-flex; align-items: center; gap: 6px; }
+.ncDot { width: 11px; height: 11px; border-radius: 3px; background: var(--surface-3); border: 1px solid var(--border); display: inline-block; }
+.ncDot.done { background: var(--accent-soft); border-color: var(--accent); }
+.ncDot.marked { background: var(--target-soft); border-color: var(--target); }
+
+/* ---- fixed bottom bar ---- */
+.ncBottomBar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 80;
+  background: var(--surface); border-top: 1px solid var(--border-strong);
+  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.28);
+}
+.ncBarIn {
+  max-width: var(--maxw); margin: 0 auto; padding: 10px var(--sp-4);
+  display: flex; align-items: center; gap: var(--sp-4);
+}
+.ncBarNav { display: flex; gap: var(--sp-2); }
+.ncNavBtn { padding: 13px 26px; font-size: 16px; border-radius: var(--radius-sm); }
+.ncNavBtn[disabled] { opacity: 0.45; cursor: not-allowed; filter: none; }
+.ncBarSecondary {
+  display: flex; gap: var(--sp-2); align-items: center;
+  border-left: 1px solid var(--border); padding-left: var(--sp-4); margin-left: var(--sp-1);
+}
+.ncBarSecondary .pill[disabled] { opacity: 0.45; cursor: not-allowed; }
+.ncSubmitBtn {
+  margin-left: auto; padding: 13px 30px; font-size: 16px; border-radius: var(--radius-sm);
+  background: var(--pass); color: #fff;
+}
+
+/* ---- confirm modal ---- */
+.ncModalOv {
+  position: fixed; inset: 0; z-index: 150; background: rgba(3, 6, 12, 0.6);
+  display: flex; align-items: center; justify-content: center; padding: var(--sp-3);
+}
+.ncModal { max-width: 440px; width: 100%; box-shadow: var(--shadow); }
+.ncModal p { font-size: 15.5px; line-height: 1.55; margin: 0 0 var(--sp-4); }
+.ncModalBtns { display: flex; gap: var(--sp-2); justify-content: flex-end; align-items: center; }
+
+/* ---- result / review ---- */
+.ncScoreCard { text-align: center; margin-bottom: var(--sp-5); }
+.ncScoreCard h2 { margin-top: 0; }
+.ncScoreBig { font-size: 44px; font-weight: 800; line-height: 1.1; }
+.ncScorePct { color: var(--muted); font-size: 15px; margin-top: var(--sp-1); }
+.ncResultBtns { display: flex; gap: var(--sp-2); justify-content: center; margin-top: var(--sp-4); }
+.ncReview { margin-bottom: var(--sp-3); border-left: 4px solid var(--border-strong); }
+.ncReview.ok { border-left-color: var(--pass); }
+.ncReview.bad { border-left-color: var(--error); }
+.ncReview.skip { border-left-color: var(--target); }
+.ncReviewHead { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--sp-3); margin-bottom: var(--sp-3); }
+.ncReviewHead strong { line-height: 1.5; }
+.ncTag { flex: none; font-size: 12px; font-weight: 700; border-radius: var(--radius-pill); padding: 3px 10px; }
+.ncTag.ok { background: var(--pass-soft); color: var(--pass); }
+.ncTag.bad { background: var(--error-soft); color: var(--error); }
+.ncTag.skip { background: var(--target-soft); color: var(--target); }
+.ncReviewOpts { display: flex; flex-direction: column; gap: 6px; }
+.ncROpt {
+  display: flex; align-items: flex-start; gap: var(--sp-3);
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 9px 12px; font-size: 14.5px; line-height: 1.5;
+}
+.ncROpt.correct { border-color: var(--pass); background: var(--pass-soft); }
+.ncROpt.yourWrong { border-color: var(--error); background: var(--error-soft); }
+.ncMark { font-weight: 700; font-size: 13px; white-space: nowrap; }
+.ncROpt.correct .ncMark { color: var(--pass); }
+.ncROpt.yourWrong .ncMark { color: var(--error); }
+.ncExplain { color: var(--muted); font-size: 14px; line-height: 1.6; margin: var(--sp-3) 0 0; }
+.ncExplain strong { color: var(--text); }
+
+/* ---- responsive ---- */
+@media (max-width: 860px) {
+  .ncWrap { grid-template-columns: minmax(0, 1fr); }
+  .ncBarIn { flex-wrap: wrap; gap: var(--sp-2); }
+  .ncBarSecondary { border-left: none; padding-left: 0; margin-left: 0; }
+  .ncSubmitBtn { margin-left: auto; }
+  .ncNavBtn { padding: 12px 18px; }
+  #ncRunner { padding-bottom: 150px; }
+  .ncrtc-row { flex-wrap: wrap; }
+}
