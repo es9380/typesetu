@@ -52,6 +52,29 @@ function printPassage(name, text) {
   setTimeout(function () { document.body.classList.remove("printing-passage"); }, 300);
 }
 
+/* Text size (v16 as Paper View's own pills; v21 hoisted to module level
+   and moved into the shared command bar): ONE 4-step control on the
+   stage toolbar, visible in every stage context, scaling ALL typing
+   surfaces together — the screen-view passage (#typeText), the paper
+   sheet and the paper typed box (HCM stage), the passage + typed
+   display (EX stage). The choice persists under the EXISTING key
+   ts_paper_font_v1 (step index 0–3) so a size chosen before v21
+   carries over untouched; the default step (1 → 19px) matches the
+   size the surfaces have always rendered at. All surfaces use
+   unitless line-heights, so line height scales proportionally and
+   the scroll-follow maths (which measures line height from the DOM)
+   keeps working at every size. */
+const PAPER_FONT_KEY = "ts_paper_font_v1";
+const PAPER_FONT_SIZES = [17, 19, 21, 23];
+function paperFontStep() {
+  let n = NaN;
+  try { n = parseInt(localStorage.getItem(PAPER_FONT_KEY), 10); } catch (e) {}
+  return (n >= 0 && n < PAPER_FONT_SIZES.length) ? n : 1;
+}
+function setPaperFontStep(n) {
+  try { localStorage.setItem(PAPER_FONT_KEY, String(n)); } catch (e) {}
+}
+
 /* askConfirm — verbatim port of the current exams.js confirm modal. */
 function ensureConfirmBox() {
   let box = document.getElementById("confirmBox");
@@ -210,12 +233,6 @@ export function mountHcmStage(container, opts) {
       '<div class="paper-wrap" id="paperWrap" style="display:none">' +
         '<div class="paper-head"><span class="paper-title">Paper View</span>' +
           '<span class="paper-tools">' +
-            '<span class="paper-font" role="group" aria-label="Paper text size">' +
-              '<button class="pill" type="button" data-pfont="0">S</button>' +
-              '<button class="pill" type="button" data-pfont="1">M</button>' +
-              '<button class="pill" type="button" data-pfont="2">L</button>' +
-              '<button class="pill" type="button" data-pfont="3">XL</button>' +
-            '</span>' +
             '<button class="pill" type="button" id="paperPrint" aria-label="Print passage">' + icon("printer") + '</button>' +
           '</span></div>' +
         '<div class="paperSheet" id="paperSheet"><div id="paperSheetText"></div></div>' +
@@ -272,6 +289,7 @@ export function mountHcmStage(container, opts) {
       backspaceLocked: bsLocked(),
       liveErrors: highlightOn(),
       paperView: S.paperView,
+      fontStep: paperFontStep(),
       onAction: onBarAction
     });
     slot.appendChild(bar);
@@ -296,6 +314,14 @@ export function mountHcmStage(container, opts) {
       else if (opts.mode === "official") { bsUser = !bsEffective(); paintBar(); focusCapture(); }
     }
     else if (name === "errors") { SETTINGS.highlight = !highlightOn(); persistSettings(); renderText(); paintBar(); focusCapture(); }
+    else if (name === "pfont") {
+      /* v21: text size from the stage toolbar — persist under the
+         existing key, apply to all surfaces, repaint the bar's active
+         pill, and re-render so the follow functions re-run at the new
+         line height and the caret line lands back in view. Typed text
+         and caret are untouched (the size is presentation-only). */
+      setPaperFontStep(+value); applyPaperFont(); paintBar(); renderText(); focusCapture();
+    }
     else if (name === "more") { morePop.hidden = !morePop.hidden; more.paint(); }
   }
   function openPicker() {
@@ -679,27 +705,17 @@ export function mountHcmStage(container, opts) {
     }
   }
 
-  /* Paper text size (v16): a 4-step control in the Paper View tools.
-     Scales the sheet text and the typed-box text together (they are a
-     pair). The choice persists under its OWN key, ts_paper_font_v1
-     (step index 0–3); the default step (1 → 19px) matches the size
-     Paper View has always rendered at. */
-  const PAPER_FONT_KEY = "ts_paper_font_v1";
-  const PAPER_FONT_SIZES = [17, 19, 21, 23];
-  function paperFontStep() {
-    let n = NaN;
-    try { n = parseInt(localStorage.getItem(PAPER_FONT_KEY), 10); } catch (e) {}
-    return (n >= 0 && n < PAPER_FONT_SIZES.length) ? n : 1;
-  }
+  /* Text size application (constants + step reader are module-level,
+     above): the current step applied to every typing surface of this
+     stage — the screen-view passage text, the paper sheet and the
+     paper typed box. The command bar paints the pills' active state
+     itself from the same step (paintBar passes fontStep). */
   function applyPaperFont() {
     const step = paperFontStep(), px = PAPER_FONT_SIZES[step];
+    const tt = q("#typeText"); if (tt) tt.style.fontSize = px + "px";
     const sh = q("#paperSheetText"); if (sh) sh.style.fontSize = px + "px";
     const pt = q("#paperTyped");
     if (pt) { pt.style.fontSize = px + "px"; pt.style.minHeight = (px * 1.9 * 3) + "px"; }
-    const wrap = q("#paperWrap");
-    if (wrap) wrap.querySelectorAll("[data-pfont]").forEach(function (b) {
-      b.classList.toggle("active", +b.getAttribute("data-pfont") === step);
-    });
   }
 
   /* ---------- stats (verbatim) ---------- */
@@ -844,6 +860,81 @@ export function mountHcmStage(container, opts) {
     const nc = (aLeft > lastSpan.offsetLeft + lastSpan.offsetWidth) ? best + 1 : best;
     return Math.max(0, Math.min(nc, S.typed.length));
   }
+  /* v21: line navigation in Paper View. hcmLineCaret reads the
+     screen-view .ch spans, which are display:none in Paper View (all
+     offsets 0), so Up/Down/Home/End were broken there (Home -> 0,
+     End -> end of text, Up/Down no-ops). #paperTyped holds the typed
+     text as plain text nodes, so measure lines from per-character
+     Range rects instead: characters on one visual line share a rect
+     top, lines sit ~one line-height apart. Only the caret's own line
+     and the target line are ever scanned. Mirrors hcmLineCaret's
+     contract: returns a caret index in [0, S.typed.length]; home/end
+     go to the current line's edges; up/down pick the character on the
+     adjacent line nearest the caret's horizontal position. */
+  function paperLineCaret(dir) {
+    const total = S.typed.length;
+    if (!total) return 0;
+    const pt = q("#paperTyped");
+    if (!pt) return hcmLineCaret(dir);
+    const c = Math.max(0, Math.min(S.caret, total));
+    const walker = document.createTreeWalker(pt, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    let n, acc = 0;
+    while ((n = walker.nextNode())) {
+      if (!n.nodeValue) continue;
+      nodes.push({ node: n, start: acc, len: n.nodeValue.length });
+      acc += n.nodeValue.length;
+    }
+    if (!nodes.length) return c;
+    const range = document.createRange();
+    function rectOf(idx) {
+      idx = Math.max(0, Math.min(idx, total - 1));
+      let it = nodes[nodes.length - 1];
+      for (const cand of nodes) { if (idx < cand.start + cand.len) { it = cand; break; } }
+      const off = Math.min(idx - it.start, Math.max(0, it.len - 1));
+      range.setStart(it.node, off);
+      range.setEnd(it.node, Math.min(off + 1, it.len));
+      const r = range.getBoundingClientRect();
+      return { top: r.top, left: r.left, right: r.right };
+    }
+    const anchorIdx = Math.min(c, total - 1);
+    const a = rectOf(anchorIdx);
+    const anchorLeft = c < total ? a.left : a.right;
+    const sameLine = (idx) => Math.abs(rectOf(idx).top - a.top) < 2;
+    if (dir === "home" || dir === "end") {
+      let first = anchorIdx, last = anchorIdx;
+      while (first > 0 && sameLine(first - 1)) first--;
+      while (last < total - 1 && sameLine(last + 1)) last++;
+      return dir === "home" ? first : Math.min(last + 1, total);
+    }
+    if (dir === "down") {
+      let i = anchorIdx;
+      while (i < total - 1 && sameLine(i + 1)) i++;
+      if (i >= total - 1) return c;
+      const targetTop = rectOf(i + 1).top;
+      let best = i + 1, bestD = Infinity, j = i + 1, lastRect = null;
+      while (j < total && Math.abs(rectOf(j).top - targetTop) < 2) {
+        const r = rectOf(j); lastRect = r;
+        const d = Math.abs(r.left - anchorLeft);
+        if (d < bestD) { bestD = d; best = j; }
+        j++;
+      }
+      if (lastRect && Math.abs(lastRect.right - anchorLeft) < bestD) best = j;
+      return Math.max(0, Math.min(best, total));
+    }
+    /* up */
+    let i = anchorIdx;
+    while (i > 0 && sameLine(i - 1)) i--;
+    if (i <= 0) return c;
+    const targetTop = rectOf(i - 1).top;
+    let best = i - 1, bestD = Infinity, j = i - 1;
+    while (j >= 0 && Math.abs(rectOf(j).top - targetTop) < 2) {
+      const d = Math.abs(rectOf(j).left - anchorLeft);
+      if (d < bestD) { bestD = d; best = j; }
+      j--;
+    }
+    return Math.max(0, Math.min(best, total));
+  }
   capture.addEventListener("keydown", function (e) {
     pendingWinY = window.scrollY; pendingWinX = window.scrollX;
     if (e.key === "Backspace" && !bsEffective()) { e.preventDefault(); return; }
@@ -851,16 +942,60 @@ export function mountHcmStage(container, opts) {
     if (S.finished) return;
     if (e.key === "ArrowUp" || e.key === "ArrowDown" || e.key === "Home" || e.key === "End") {
       e.preventDefault();
-      setHcmCaret(hcmLineCaret(e.key === "ArrowUp" ? "up" : e.key === "ArrowDown" ? "down" : e.key === "Home" ? "home" : "end"));
+      const dir = e.key === "ArrowUp" ? "up" : e.key === "ArrowDown" ? "down" : e.key === "Home" ? "home" : "end";
+      setHcmCaret(S.paperView ? paperLineCaret(dir) : hcmLineCaret(dir));
     }
   });
   capture.addEventListener("keyup", function (e) {
     if (e.key === "ArrowLeft" || e.key === "ArrowRight") syncHcmCaret();
   });
   capture.addEventListener("select", function () { syncHcmCaret(); });
+  /* v21: Paper View click-to-place-caret. #paperTyped renders the typed
+     text as plain text around a zero-width .ptCaret span — there are no
+     .ch spans for the click handler below to land on, so every Paper
+     View click used to fall through to caret-at-end and the user could
+     not click back into their typed text to fix a mistake (the
+     free-cursor editing the screen view has always had). Resolve the
+     click point to a character index in the typed string the same way
+     the EX stage does (exCaretFromPoint): caretRangeFromPoint gives a
+     (node, offset); walk #paperTyped's text nodes in document order to
+     make it a global index. The .ptCaret span carries no text, so it
+     contributes nothing; the placeholder span exists only when nothing
+     is typed yet, and setHcmCaret clamps the result to the typed
+     length either way. Returns null when the point resolves to no
+     text position inside #paperTyped (box padding, empty area). */
+  function paperCaretFromPoint(x, y) {
+    const pt = q("#paperTyped");
+    if (!pt || !document.caretRangeFromPoint) return null;
+    const r = document.caretRangeFromPoint(x, y);
+    if (!r || !pt.contains(r.startContainer)) return null;
+    const node = r.startContainer;
+    if (node === pt) {
+      let idx = 0;
+      for (let i = 0; i < r.startOffset && i < pt.childNodes.length; i++) idx += (pt.childNodes[i].textContent || "").length;
+      return idx;
+    }
+    if (node.nodeType !== 3) return null;
+    let idx = 0;
+    const walker = document.createTreeWalker(pt, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode())) {
+      if (n === node) return idx + r.startOffset;
+      idx += n.length;
+    }
+    return null;
+  }
   typeBox.addEventListener("click", function (e) {
     focusCapture(); typeBox.classList.add("focused");
     if (S.finished) return;
+    if (S.paperView) {
+      /* v21: place the caret where the user clicked in the typed text
+         (see paperCaretFromPoint). A click that resolves to no text
+         position keeps the old behaviour: caret at the end. */
+      const pIdx = paperCaretFromPoint(e.clientX, e.clientY);
+      setHcmCaret(pIdx == null ? S.typed.length : pIdx);
+      return;
+    }
     const span = (e.target && e.target.classList && e.target.classList.contains("ch")) ? e.target : null;
     if (span) {
       const idx = Array.prototype.indexOf.call(typeText.children, span);
@@ -1219,12 +1354,8 @@ export function mountHcmStage(container, opts) {
     if (performance.now() - lastPaperInputAt > 400) return;
     scrollPaperTyped();
   });
-  q("#paperWrap").querySelectorAll("[data-pfont]").forEach(function (b) {
-    b.addEventListener("click", function () {
-      try { localStorage.setItem(PAPER_FONT_KEY, b.getAttribute("data-pfont")); } catch (e) {}
-      applyPaperFont(); renderText(); focusCapture();
-    });
-  });
+  /* v21: the text-size pills moved to the command bar (onBarAction
+     "pfont"); the paper head keeps only the print button. */
   applyPaperFont();
 
   /* ---------- boot the stage ---------- */
@@ -1327,6 +1458,7 @@ export function mountExamStage(container, opts) {
       backspaceLocked: false,
       liveErrors: false,
       paperView: false,
+      fontStep: paperFontStep(),
       onAction: onBarAction
     });
     bar.querySelectorAll('[data-act="duration"]').forEach(function (b) { b.disabled = true; b.setAttribute("data-tip", "Fixed by this exam's pattern"); });
@@ -1335,8 +1467,18 @@ export function mountExamStage(container, opts) {
     if (!opts.silo) { const ps = bar.querySelector('[data-act="passage"]'); if (ps) ps.disabled = true; }
     slot.appendChild(bar);
   }
-  function onBarAction(name) {
-    if (name === "exam") {
+  /* v21: text size on this stage's surfaces — the passage and the
+     typed display — from the same shared step (module-level reader). */
+  function applyExTypeFont() {
+    const px = PAPER_FONT_SIZES[paperFontStep()];
+    const pg = q("#exPassage"); if (pg) pg.style.fontSize = px + "px";
+    const td = q("#exTyped"); if (td) td.style.fontSize = px + "px";
+  }
+  function onBarAction(name, value) {
+    if (name === "pfont") {
+      setPaperFontStep(+value); applyExTypeFont(); paintBar(); exFocus();
+    }
+    else if (name === "exam") {
       const menu = q("#exExamMenu");
       if (!menu.hidden) { menu.hidden = true; return; }
       menu.innerHTML = ["hcm", "chsl", "cgl", "rrb"].map(function (id) {
@@ -1619,6 +1761,7 @@ export function mountExamStage(container, opts) {
   }
 
   paintBar();
+  applyExTypeFont();
   openExamTest(EX.test);
 
   return {
