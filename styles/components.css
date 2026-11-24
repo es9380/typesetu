@@ -90,7 +90,12 @@
 
 /* ---- modal (auth + passage picker) ---- */
 .modal-backdrop {
-  position: fixed; inset: 0; z-index: 99; background: rgba(3, 6, 12, 0.6);
+  /* v24: z-index raised 99 -> 195. The timer pill (z 130, a body-level
+     fixed element) otherwise rendered ON TOP of a modal opened mid-test
+     (sign-in, passage picker — both use this backdrop). 195 keeps
+     modals above the pill and the NCRTC overlay (150), still below the
+     motivation overlay (200) and the confirm box (210). */
+  position: fixed; inset: 0; z-index: 195; background: rgba(3, 6, 12, 0.6);
   display: none; align-items: flex-start; justify-content: center; padding: 7vh var(--sp-3) var(--sp-3);
 }
 .modal-backdrop.open { display: flex; }
