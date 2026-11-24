@@ -18,6 +18,7 @@ const ROUTES = {
   studio: function () { return import("./features/trainingStudio/studio.js"); },
   progress: function () { return import("./features/progress/progress.js"); },
   ncrtc: function () { return import("./features/ncrtcMcq/ncrtc.js"); },
+  vocab: function () { return import("./features/vocabMcq/vocab.js"); },
   guide: function () { return import("./features/guide/guide.js"); }
 };
 /* Legacy hash aliases — the doorway pages and old bookmarks point at
@@ -26,7 +27,7 @@ const ALIASES = {
   "": "home", home: "home", hubs: "arena", hub: "arena",
   drills: "studio", warmup: "studio", practice: "studio", test: "studio",
   customtests: "arena", revision: "progress", progress: "progress",
-  arena: "arena", studio: "studio", ncrtc: "ncrtc", guide: "guide"
+  arena: "arena", studio: "studio", ncrtc: "ncrtc", vocab: "vocab", guide: "guide"
 };
 
 function parseHash() {
