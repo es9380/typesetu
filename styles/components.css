@@ -135,6 +135,12 @@
 .command-bar .cb-durs { display: inline-flex; gap: 2px; }
 .command-bar .cb-durs button { border: 0; background: none; cursor: pointer; border-radius: var(--radius-pill); padding: 6px 9px; font-size: 13px; font-weight: 700; color: var(--muted); }
 .command-bar .cb-durs button.active { background: var(--accent); color: var(--accent-ink); }
+/* v21: text-size group — same look as the duration group, but never
+   hidden in practice stages (the size control must stay visible
+   everywhere typing happens, drills and warm-ups included). */
+.command-bar .cb-fonts { display: inline-flex; gap: 2px; }
+.command-bar .cb-fonts button { border: 0; background: none; cursor: pointer; border-radius: var(--radius-pill); padding: 6px 9px; font-size: 13px; font-weight: 700; color: var(--muted); }
+.command-bar .cb-fonts button.active { background: var(--accent); color: var(--accent-ink); }
 
 /* tooltip micro-labels (declutter rule: hints live here, not in paragraphs) */
 [data-tip] { position: relative; }
