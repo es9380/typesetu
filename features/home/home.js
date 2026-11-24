@@ -104,9 +104,18 @@ function fmtTypeTime(sec) {
   return r ? h + " h " + r + " min" : h + " h";
 }
 
-/* Daily typing-time card (v16): today's total across ALL saved sessions
-   (mocks, custom tests, drills, warm-ups, passages, revision) plus a
-   last-7-days bar strip. Read-only over local history. */
+/* "Mon 17 Nov" — the label a past day gets on the typing-time card. */
+function ttDayLabel(d) {
+  return d.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+}
+
+/* Daily typing-time card (v16; interactive bars v20): today's total
+   across ALL saved sessions (mocks, custom tests, drills, warm-ups,
+   passages, revision) plus a last-7-days bar strip. Read-only over
+   local history. The headline shows TODAY by default; hovering or
+   tapping a day's bar peeks at that day's total + date label, and the
+   card returns to today on its own ~4.5 s later (wired in mount —
+   see wireTimeCard). */
 function typingTimeCard() {
   const days = typingTimeByDay(7);
   const todaySec = days[days.length - 1].seconds;
@@ -114,13 +123,15 @@ function typingTimeCard() {
   const bars = days.map(function (d, i) {
     const pct = Math.round(d.seconds / maxSec * 100);
     const h = d.seconds > 0 ? Math.max(10, pct) : 3;
-    return '<span class="tt-col' + (i === days.length - 1 ? " today" : "") + '">' +
+    const last = i === days.length - 1;
+    return '<span class="tt-col' + (last ? " today sel" : "") + '" tabindex="0" role="button" data-tt="' + i + '"' +
+      ' aria-label="' + (last ? "Today" : ttDayLabel(d.date)) + " — " + fmtTypeTime(d.seconds) + ' of typing">' +
       '<span class="tt-track"><span class="tt-fill" style="height:' + h + '%"></span></span>' +
       '<i>' + "SMTWTFS"[d.date.getDay()] + '</i></span>';
   }).join("");
   return '<div class="tt-main"><span class="tt-big">' + fmtTypeTime(todaySec) + '</span>' +
     '<span class="tt-sub">' + (todaySec > 0 ? "Typing time today" : "No typing yet today") + '</span></div>' +
-    '<div class="tt-bars" role="img" aria-label="Typing time for the last 7 days">' + bars + '</div>';
+    '<div class="tt-bars" role="group" aria-label="Typing time for the last 7 days — hover or tap a day to see its total">' + bars + '</div>';
 }
 
 function slabHtml(examId) {
@@ -344,9 +355,11 @@ function mountDemo(root, hooks) {
 export function mount(container) {
   const unsubs = [];
   let stopDemo = function () {}, art = { hit: function () {}, destroy: function () {} };
+  let ttRevert = 0; // typing-time card: pending return-to-today timer
 
   function render() {
     stopDemo(); art.destroy();
+    clearTimeout(ttRevert); ttRevert = 0;
     const sp = specOf(appState.activeExam);
     const stats = dashboardStats(COUNTS.texts);
     const streak = currentStreak();
@@ -442,8 +455,63 @@ export function mount(container) {
       const opts = [1, 2, 3, 5, 8], i = opts.indexOf(getDailyGoal());
       setDailyGoal(opts[(i + 1) % opts.length]); render();
     });
+    wireTimeCard();
   }
+
+  /* Typing-time card (v20): each day bar is a picker. Hover, tap or
+     keyboard-focus selects the day — the headline swaps to that day's
+     total + date label and the bar takes the accent marking (today's
+     un-marks). Every selection (re)starts a ~4.5 s timer that returns
+     the card to the today default (the peeked bar is hover-muted after
+     a revert while the pointer stays in the strip — see `spent` below);
+     render() always rebuilds the card in the today state, so a peeked
+     day can never go stale across navigation. */
+  function wireTimeCard() {
+    const card = container.querySelector(".today-time");
+    if (!card) return;
+    const big = card.querySelector(".tt-big"), sub = card.querySelector(".tt-sub");
+    const cols = Array.prototype.slice.call(card.querySelectorAll(".tt-col"));
+    if (!big || !sub || !cols.length) return;
+    const days = typingTimeByDay(7);
+    const last = days.length - 1;
+    /* `spent`: after an auto-revert, the bar that was peeked is
+       hover-muted while the pointer remains anywhere in the bar
+       strip. Without this, the revert's own headline change reflows
+       the strip, the browser re-fires mouseenter on the bar still
+       sitting under the cursor, and the peek instantly re-selects
+       itself — the card could never return to today while the mouse
+       rests on the bar (proven in the v20 browser test: revert and
+       re-select chasing each other every 4.5 s, with spurious
+       per-bar leave/enter pairs from the reflow but never a leave of
+       the strip itself — hence the strip is the mute's unit, not the
+       bar). Entering another bar, leaving the strip, a deliberate
+       click or keyboard focus all re-arm selection. */
+    let inStrip = false, spent = -1;
+    const barsEl = card.querySelector(".tt-bars");
+    if (barsEl) {
+      barsEl.addEventListener("mouseenter", function () { inStrip = true; });
+      barsEl.addEventListener("mouseleave", function () { inStrip = false; spent = -1; });
+    }
+    function select(i) {
+      cols.forEach(function (c, j) { c.classList.toggle("sel", j === i); });
+      big.textContent = fmtTypeTime(days[i].seconds);
+      sub.textContent = i === last
+        ? (days[i].seconds > 0 ? "Typing time today" : "No typing yet today")
+        : ttDayLabel(days[i].date);
+      clearTimeout(ttRevert); ttRevert = 0;
+      if (i !== last) ttRevert = setTimeout(function () {
+        spent = inStrip ? i : -1;
+        select(last);
+      }, 4500);
+    }
+    cols.forEach(function (c, i) {
+      c.addEventListener("mouseenter", function () { if (i !== spent) { spent = -1; select(i); } });
+      c.addEventListener("click", function () { spent = -1; select(i); });
+      c.addEventListener("focus", function () { spent = -1; select(i); });
+    });
+  }
+
   render();
   unsubs.push(on("exam", render), on("auth", render), on("data", render));
-  return { destroy: function () { stopDemo(); art.destroy(); unsubs.forEach(function (u) { u(); }); } };
+  return { destroy: function () { clearTimeout(ttRevert); stopDemo(); art.destroy(); unsubs.forEach(function (u) { u(); }); } };
 }
