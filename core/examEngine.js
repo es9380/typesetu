@@ -507,16 +507,18 @@ export function mountHcmStage(container, opts) {
     return idx;
   }
   function syncPaperScroll() {
-    /* Sheet: follow the current word's line with the same minimal rule —
-       move only when that line leaves the comfortable zone, then land it
-       ~2 lines below the sheet's top edge (line in view + lookahead).
-       v18: the comfortable zone now also keeps the line at least one
-       line clear of the pane's TOP edge. A line riding the very top is
-       the first thing lost when the pane sits near the viewport top on
-       a short screen (the v17 live-check failure: the sheet had in fact
-       scrolled, but the current line sat in the pane's top sliver,
-       which the browser viewport had clipped away). The measurement is
-       rect-based now (paperLineTop) instead of the offsetParent walk. */
+    /* Sheet: follow the current word's line with the SAME minimal /
+       nearest rule the typed box uses (v20) — move only when that line
+       leaves the visible zone, and then only just enough to rest it one
+       line inside the edge it crossed. As typing advances line by line
+       the sheet therefore creeps up exactly one line at a time. (v19
+       landed the line ~2 lines below the sheet's TOP edge instead,
+       which refilled the whole pane in one jump each time the line
+       crossed the bottom — the whole-screen jump the user reported.)
+       The measurement is rect-based (paperLineTop); the end-of-passage
+       case is the clamp: desired tops out at scrollHeight −
+       clientHeight, where the sheet's bottom padding leaves the final
+       line fully inside the pane, never clipped by its bottom edge. */
     if (!S.paperView) return;
     const sheet = q("#paperSheet"), st = q("#paperSheetText");
     if (!sheet || !st) return;
@@ -528,8 +530,18 @@ export function mountHcmStage(container, opts) {
     const lineTop = paperLineTop(anchor, sheet);
     const lineBottom = lineTop + lh;
     const viewTop = sheet.scrollTop, viewBottom = viewTop + sheet.clientHeight;
-    if (lineTop >= viewTop + lh && lineBottom <= viewBottom) return;
-    let desired = lineTop - 2 * lh;
+    let desired = viewTop;
+    /* The triggers carry a 1px tolerance: the rest position parks the
+       line exactly one line inside the edge, so the NEXT line crossing
+       lands the line's far edge exactly ON the boundary — and rect
+       measurement quantises that to a hair UNDER the boundary, so a
+       plain > / >= comparison skips that crossing and then moves two
+       lines on the one after (measured in the v20 browser test:
+       alternating 1-line and 2-line steps). The boundary case IS a
+       crossing; 1px is far above the rounding error and far below a
+       line height, so it can never fire early in practice. */
+    if (lineBottom >= viewBottom - 1) desired = lineBottom + lh - sheet.clientHeight;
+    else if (lineTop <= viewTop + 1) desired = lineTop - lh;
     const max = Math.max(0, sheet.scrollHeight - sheet.clientHeight);
     if (desired > max) desired = max;
     if (desired < 0) desired = 0;
