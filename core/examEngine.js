@@ -137,6 +137,48 @@ function makeZen() {
   };
 }
 
+/* ---------- sticky timer pill (v23) ----------
+   Exam stages (official mocks + custom tests, both engines) show ONE
+   mid-test display: the time left, in a pill pinned near the top of
+   the viewport. Net WPM / predicted marks / accuracy are result-screen
+   numbers now — they are no longer painted during the test (they are
+   still computed exactly as before, at submit). The pill is painted
+   from the same remaining-time value the old HUD strip used — each
+   stage's own interval tick — never from a second clock. It lives on
+   document.body so no stage ancestor can disturb its fixed position,
+   and Zen never dims it (Zen only fades the header, footer, command
+   bar and stage-top). pointer-events:none — it can never eat a click.
+   Placement: the site header is itself fixed and 58px tall, so the
+   pill pins immediately beneath it (header + 8px) rather than on top
+   of the brand/tabs — the same always-visible top spot in every
+   state, Zen or not, with nothing ever hidden behind it. */
+function makeTimerPill() {
+  const el = document.createElement("div");
+  el.className = "timer-pill";
+  el.setAttribute("role", "timer");
+  el.setAttribute("aria-label", "Time left");
+  el.innerHTML = '<span class="tp-label">Time left</span><span class="tp-time">0:00</span><span class="tp-track"><i></i></span>';
+  el.hidden = true;
+  document.body.appendChild(el);
+  const timeEl = el.querySelector(".tp-time");
+  const fillEl = el.querySelector(".tp-track i");
+  return {
+    el: el,
+    /* left/total in seconds (floats ok — fmtTime clamps + ceils, the
+       same value the old HUD time cell received). The track DRAINS:
+       full width at entry, empty at 0:00. Final 60s: danger colour,
+       no blinking. */
+    paint: function (left, total) {
+      timeEl.textContent = fmtTime(left);
+      fillEl.style.width = (total > 0 ? Math.max(0, Math.min(100, left / total * 100)) : 0) + "%";
+      el.classList.toggle("danger", left <= 60);
+      el.hidden = false;
+    },
+    hide: function () { el.hidden = true; },
+    destroy: function () { if (el.parentNode) el.parentNode.removeChild(el); }
+  };
+}
+
 /* ⚙ More popover — Finger Keyboard, Sound, Download/Print passage.
    NO auto-submit option anywhere (sid's standing rule).
    Close paths: the ✕ button, any click outside the popover (the More
@@ -213,7 +255,7 @@ export function mountHcmStage(container, opts) {
   const zen = makeZen();
 
   container.innerHTML =
-    '<div class="stage-wrap" id="hcmStage">' +
+    '<div class="stage-wrap' + (isExamCtx() ? " exam-live" : "") + '" id="hcmStage">' +
       '<div class="stage-top">' +
         '<button class="pill" type="button" id="stBack">← Back</button>' +
         '<span class="stage-title" id="stTitle"></span>' +
@@ -222,12 +264,19 @@ export function mountHcmStage(container, opts) {
       '<div class="stage-bar" id="stBar"></div>' +
       morePopHtml() +
       '<div class="exam-menu-pop" id="stExamMenu" hidden></div>' +
+      /* v23: exam mounts render NO HUD strip and NO progress bar —
+         the sticky timer pill (created below, exam mounts only) is
+         the only mid-test display, and the type area aligns directly
+         under the command bar. The strip carried no controls (every
+         control lives in the command bar), so nothing is re-homed.
+         Practice mounts keep the strip + bar exactly as before. */
+      (isExamCtx() ? "" :
       '<div class="hud" id="stHud">' +
         '<div class="hud-cell"><span class="hud-v" id="sTime">0:00</span><span class="hud-l" id="sTimeLabel">Time left</span></div>' +
         '<div class="hud-cell hud-net"><span class="hud-v" id="sNet">0</span><span class="hud-l">Net WPM</span></div>' +
         '<div class="hud-cell hud-marks"><span class="hud-v" id="sMarks">—</span><span class="hud-l">Predicted marks</span></div>' +
       '</div>' +
-      '<div class="prog"><i id="progBar"></i></div>' +
+      '<div class="prog"><i id="progBar"></i></div>') +
       '<p class="size-line small" id="sizeLine"></p>' +
       '<div class="type-area" id="typeArea">' +
       '<div class="paper-wrap" id="paperWrap" style="display:none">' +
@@ -258,6 +307,10 @@ export function mountHcmStage(container, opts) {
   const more = wireMorePop(morePop, kbSection, function () { return { name: S.currentName, text: S.target }; });
   if (SETTINGS.kb) { kbSection.style.display = "block"; kbSection.querySelector("#keyboard").innerHTML = fingerKeyboardHtml(); kbSection.dataset.built = "1"; }
   zen.watchMouse(container);
+  /* v23: the sticky timer pill exists only on exam mounts (official
+     mocks + custom tests). Practice mounts never create one. */
+  const pill = isExamCtx() ? makeTimerPill() : null;
+  function paintPill(left, total) { if (pill) pill.paint(left, total); }
 
   function isExamCtx() { return S.ctx === "exam"; }
   function highlightOn() {
@@ -390,10 +443,12 @@ export function mountHcmStage(container, opts) {
     typeBox.scrollTop = 0;
     renderText(); updateStats(0);
     typeBox.scrollTop = 0;
-    const t0 = isExamCtx() ? fmtTime(S.durMin * 60) : fmtTime(0);
-    q("#sTime").textContent = t0;
-    const lbl = q("#sTimeLabel"); if (lbl) lbl.textContent = isExamCtx() ? "Time left" : "Time";
-    q("#progBar").style.width = "0%";
+    if (isExamCtx()) { paintPill(S.durMin * 60, S.durMin * 60); }
+    else {
+      q("#sTime").textContent = fmtTime(0);
+      const lbl = q("#sTimeLabel"); if (lbl) lbl.textContent = "Time";
+      q("#progBar").style.width = "0%";
+    }
     q("#modeHint").textContent = "";
     if (S.paperView) updatePaperSheet();
     if (S.paperView) { paperHold = false; const psh = q("#paperSheet"); if (psh) psh.scrollTop = 0; }
@@ -649,30 +704,38 @@ export function mountHcmStage(container, opts) {
        sole caller is the Paper toggle) — land the stage with the HUD
        just under the sticky site header, so HUD + sheet + typed box are
        on screen together with no manual arranging. Never per keystroke;
-       leaving Paper View adjusts nothing. */
-    const hud = q("#stHud") || q("#hcmStage"); if (!hud) return;
+       leaving Paper View adjusts nothing.
+       v23: on exam mounts the HUD strip no longer exists — the anchor
+       becomes the type area, and the landing mark moves down by the
+       sticky timer pill (header + pill + a gap), so the sheet's first
+       line never sits under the pill. Practice mounts keep the v18
+       HUD anchoring byte-for-byte. */
+    const anchor = pill ? (q("#typeArea") || q("#hcmStage")) : (q("#stHud") || q("#hcmStage")); if (!anchor) return;
     const hdr = document.querySelector(".site-header");
-    const hh = hdr ? hdr.getBoundingClientRect().height : 0;
-    const y = hud.getBoundingClientRect().top + window.scrollY - hh - 6;
+    const clearance = function () {
+      const hh = hdr ? hdr.getBoundingClientRect().height : 0;
+      if (!pill) return hh + 6;
+      return hh + 8 + (pill.el.getBoundingClientRect().height || 0) + 8;
+    };
+    const y = anchor.getBoundingClientRect().top + window.scrollY - clearance();
     if (!(y > 0)) return;
     /* Instant scroll, then a short settle loop of verify-and-correct
        passes on widening delays, re-measuring live rects each time
        (never the captured numbers): async stage content (the passage
-       module finishing its load) can shift the HUD for a moment after
+       module finishing its load) can shift the stage for a moment after
        entering, and the passes nudge only while it sits off the mark.
        Every pass stays strictly inside this toggle-only path — never
        per keystroke. */
     window.scrollTo(0, y);
     const correct = function () {
-      if (!S.paperView || !hud.isConnected) return; /* toggled off / stage gone */
+      if (!S.paperView || !anchor.isConnected) return; /* toggled off / stage gone */
       /* Bottom clamp: on tall viewports the document may not be tall
-         enough to scroll the HUD all the way to the mark — once the
-         page is at its scroll limit the HUD is as high as it can go
+         enough to scroll the anchor all the way to the mark — once the
+         page is at its scroll limit the anchor is as high as it can go
          (and fully visible), so further nudges are futile. */
       const maxY = document.documentElement.scrollHeight - window.innerHeight;
       if (window.scrollY >= maxY - 1) return;
-      const hNow = hdr ? hdr.getBoundingClientRect().height : 0;
-      const off = hud.getBoundingClientRect().top - (hNow + 6);
+      const off = anchor.getBoundingClientRect().top - clearance();
       if (Math.abs(off) > 4) window.scrollTo(0, window.scrollY + off);
     };
     requestAnimationFrame(correct);
@@ -723,10 +786,17 @@ export function mountHcmStage(container, opts) {
   }
   function updateStats(el) {
     const s = stats(el || (S.started ? (Date.now() - S.startT) / 1000 : 0));
-    q("#sNet").textContent = Math.round(s.net);
+    /* v23: on exam mounts the Net WPM / Predicted marks cells no
+       longer exist — the stats are still computed exactly as before
+       (finishTest recomputes them for the result screen regardless);
+       only the mid-test painting is skipped when the cells are
+       absent. Practice mounts paint them exactly as before. */
+    const sn = q("#sNet"); if (sn) sn.textContent = Math.round(s.net);
     const m = q("#sMarks");
-    if (!S.started || s.pos < 10) { m.textContent = "—"; }
-    else { const mk = hcmMarksFor(s.net); m.textContent = s.net < 30 ? "0 · DQ" : mk + " / 25"; }
+    if (m) {
+      if (!S.started || s.pos < 10) { m.textContent = "—"; }
+      else { const mk = hcmMarksFor(s.net); m.textContent = s.net < 30 ? "0 · DQ" : mk + " / 25"; }
+    }
     if (!isExamCtx()) {
       const pb2 = q("#progBar");
       if (pb2) pb2.style.width = (S.target.length ? Math.min(100, s.pos / S.target.length * 100) : 0) + "%";
@@ -745,8 +815,7 @@ export function mountHcmStage(container, opts) {
         if (S.capSec && el >= S.capSec) finishTest();
         return;
       }
-      q("#sTime").textContent = fmtTime(total - el);
-      q("#progBar").style.width = Math.min(100, el / total * 100) + "%";
+      paintPill(total - el, total);
       updateStats(el);
       if (el >= total) finishTest();
     }, 200);
@@ -1084,6 +1153,7 @@ export function mountHcmStage(container, opts) {
     if (S.finished) return; S.finished = true;
     zen.exit();
     clearInterval(S.timer);
+    if (pill) pill.hide(); /* v23: the result screen replaces the pill */
     const sbF = q("#submitBtn"); if (sbF) sbF.style.display = "none";
     let el;
     if (isExamCtx()) {
@@ -1361,7 +1431,7 @@ export function mountHcmStage(container, opts) {
   if (S.paperView) { updatePaperSheet(); paintPaperLayout(); }
 
   return {
-    destroy: function () { clearInterval(S.timer); zen.destroy(); more.destroy(); },
+    destroy: function () { clearInterval(S.timer); zen.destroy(); more.destroy(); if (pill) pill.destroy(); },
     _state: S,
     focus: focusCapture,
     finishNow: finishTest
@@ -1390,7 +1460,7 @@ export function mountExamStage(container, opts) {
   function bsEffective() { return bsUser != null ? bsUser : bsDefault(); }
 
   container.innerHTML =
-    '<div class="stage-wrap" id="exStageWrap">' +
+    '<div class="stage-wrap exam-live" id="exStageWrap">' +
       '<div class="stage-top">' +
         '<button class="pill" type="button" id="exBack">← Back</button>' +
         '<span class="stage-title" id="exTitle"></span>' +
@@ -1402,13 +1472,13 @@ export function mountExamStage(container, opts) {
       '<div class="stage-bar" id="exBar"></div>' +
       morePopHtml() +
       '<div class="exam-menu-pop" id="exExamMenu" hidden></div>' +
-      '<div class="hud" id="exHud">' +
-        '<div class="hud-cell hud-ring"><svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="27" fill="none" stroke="var(--border)" stroke-width="4" transform="scale(0.72) translate(8.6 8.6)"/><circle id="exRing" cx="22" cy="22" r="27" fill="none" stroke="var(--accent)" stroke-width="4" stroke-dasharray="169.6" stroke-dashoffset="0" transform="rotate(-90 22 22) scale(0.72) translate(8.6 8.6)"/></svg><span class="hud-v" id="exTime">0:00</span><span class="hud-l">Time left</span></div>' +
-        '<div class="hud-cell"><span class="hud-v" id="exHudNet">0</span><span class="hud-l">Net WPM</span></div>' +
-        '<div class="hud-cell"><span class="hud-v" id="exHudPred">—</span><span class="hud-l">' + (sp.engine === "E1" ? "Error % so far" : "Allowance left") + '</span></div>' +
-        '<div class="hud-cell"><span class="hud-v" id="exWords">0</span><span class="hud-l">Words</span></div>' +
-        '<div class="hud-cell"><span class="hud-v" id="exKeys">0</span><span class="hud-l">Keystrokes</span></div>' +
-      '</div>' +
+      /* v23: NO HUD strip on this stage either — the ring + Time left,
+         Net WPM, Error %/Allowance, Words and Keystrokes cells are all
+         gone; the sticky timer pill (created below) is the only
+         mid-test display, painted from the same tick value. The strip
+         carried no controls (all controls live in the command bar and
+         the stage-top row), so nothing is re-homed. Scoring at submit
+         is untouched — finishExamTest recomputes everything itself. */
       '<div class="card" id="exPrePanel">' +
         '<h2 id="exPreTitle"></h2><p id="exPreInfo" class="sub"></p>' +
         '<div id="exCatWrap"></div>' +
@@ -1435,6 +1505,9 @@ export function mountExamStage(container, opts) {
   const more = wireMorePop(morePop, kbSection, function () { return { name: EX.test.name, text: exFullTarget() }; });
   if (SETTINGS.kb) { kbSection.style.display = "block"; kbSection.querySelector("#keyboard").innerHTML = fingerKeyboardHtml(); kbSection.dataset.built = "1"; }
   zen.watchMouse(container);
+  /* v23: this stage is always an exam stage — it always gets the
+     sticky timer pill. */
+  const pill = makeTimerPill();
 
   /* ---------- command bar ---------- */
   function paintBar() {
@@ -1527,10 +1600,7 @@ export function mountExamStage(container, opts) {
     q("#exCand").textContent = appState.user ? ((appState.accountName || "").trim() || appState.user.email || "Account") : "Practice candidate";
     q("#exBsState").textContent = "Backspace: " + (bsEffective() ? "Allowed" : "Disabled");
     q("#exNoBs").style.display = bsEffective() ? "none" : "";
-    q("#exTime").textContent = fmtTime(durMin * 60);
-    const ring = q("#exRing"); if (ring) ring.style.strokeDashoffset = "0";
-    q("#exWords").textContent = "0"; q("#exKeys").textContent = "0";
-    q("#exHudNet").textContent = "0"; q("#exHudPred").textContent = "—";
+    pill.paint(durMin * 60, durMin * 60); /* v23: full duration on the sticky pill from stage entry (pre-panel included) */
     q("#exPreTitle").textContent = t.name + " — before you start";
     q("#exPreInfo").textContent = sp.durationLabel + " · " + wordCountOf(t.text) + " words · " + fmtNum(t.text.length) + " keystrokes · Backspace " + (bsEffective() ? "allowed" : "DISABLED") + " · " + sp.evaluation + ".";
     const cw = q("#exCatWrap");
@@ -1627,8 +1697,6 @@ export function mountExamStage(container, opts) {
     const csE = exCaptureEl.selectionStart;
     EX.caret = csE != null ? csE : v.length;
     renderExTyped();
-    q("#exWords").textContent = wordCountOf(v);
-    q("#exKeys").textContent = v.length;
     const pas = q("#exPassage");
     const tgt = exFullTarget(); pas.textContent = tgt;
     const prog = tgt.length ? v.length / tgt.length : 0;
@@ -1640,33 +1708,14 @@ export function mountExamStage(container, opts) {
     const total = durMin * 60;
     EX.timer = setInterval(function () {
       const el = (Date.now() - EX.startT) / 1000, left = Math.max(0, total - el);
-      q("#exTime").textContent = fmtTime(left);
-      const ring = q("#exRing"); if (ring) ring.style.strokeDashoffset = String(169.6 * (1 - left / total));
-      updateExHud(el);
+      pill.paint(left, total);
       if (el >= total) finishExamTest();
     }, 200);
   }
-  function updateExHud(el) {
-    const v = exCaptureEl.value || "";
-    const W5 = Math.round(v.length / 5);
-    const mins = Math.max(el, 1) / 60;
-    const gross = W5 / mins;
-    if (sp.engine === "E1") {
-      const sc = scoreWords(EX.test.text, v, { countUntypedSkip: true });
-      const weighted = sc.full + 0.5 * sc.half;
-      const errPct = W5 ? (weighted / W5 * 100) : 0;
-      q("#exHudNet").textContent = Math.round(gross);
-      q("#exHudPred").textContent = dispErrPct(errPct).toFixed(1) + "%";
-    } else {
-      const sc2 = scoreWords(exFullTarget(), v, { countUntypedSkip: false });
-      const weighted2 = sc2.full + 0.5 * sc2.half;
-      const allowance = W5 * 0.05;
-      const finalM = Math.max(0, weighted2 - allowance);
-      const net = Math.max(0, (W5 - finalM * 10) / mins);
-      q("#exHudNet").textContent = net.toFixed(1);
-      q("#exHudPred").textContent = Math.max(0, allowance - weighted2).toFixed(1);
-    }
-  }
+  /* v23: the old updateExHud() is deleted, not just unwired — it only
+     ever painted the removed mid-test stat cells (Net WPM, Error % /
+     Allowance). Nothing stored or consumed its values; the result is
+     computed from scratch in finishExamTest, unchanged. */
 
   /* ---------- finish (verbatim port of finishExamTest) ---------- */
   function mkEntry(o) {
@@ -1676,6 +1725,7 @@ export function mountExamStage(container, opts) {
   function finishExamTest() {
     if (EX.finished) return; EX.finished = true; clearInterval(EX.timer);
     zen.exit();
+    pill.hide(); /* v23: the result screen replaces the pill */
     const t = EX.test;
     const typedText = exCaptureEl.value || "";
     let el = EX.started ? Math.min((Date.now() - EX.startT) / 1000, durMin * 60) : durMin * 60;
@@ -1754,7 +1804,7 @@ export function mountExamStage(container, opts) {
   openExamTest(EX.test);
 
   return {
-    destroy: function () { clearInterval(EX.timer); zen.destroy(); more.destroy(); },
+    destroy: function () { clearInterval(EX.timer); zen.destroy(); more.destroy(); pill.destroy(); },
     _ex: EX,
     finishNow: finishExamTest
   };
