@@ -1,8 +1,13 @@
 /* NCRTC MCQ Mocks — ISOLATED stylesheet for features/ncrtcMcq only.
-   Landing (test list + best scores from ncrtcBestV1), the runner with its
-   fixed bottom bar (Submit anchored, large Previous/Next, secondary
-   actions separated), the confirm modal and the review screen.
+   Landing (test list + best scores from ncrtcBestV1), the runner (v26:
+   restyled to match the Vocab runner — action row directly below the
+   question box, SSC-style palette, Submit/Quit in the palette card, no
+   fixed bottom bar), the confirm modal and the review screen.
    Deleting features/ncrtcMcq + this file + the route removes the section. */
+
+/* Marked-for-review purple (SSC palette) — no token exists for it. */
+:root { --nc-mark: #A78BFA; --nc-mark-soft: rgba(167, 139, 250, 0.16); }
+[data-theme="light"] { --nc-mark: #7C3AED; --nc-mark-soft: rgba(124, 58, 237, 0.12); }
 
 /* ---- landing ---- */
 .ncrtc-head { margin-bottom: var(--sp-4); }
@@ -21,7 +26,6 @@
 .ncPdfBtn { text-decoration: none; white-space: nowrap; }
 
 /* ---- runner layout ---- */
-#ncRunner { padding-bottom: 104px; } /* room for the fixed bottom bar */
 .ncWrap { display: grid; grid-template-columns: minmax(0, 1fr) 272px; gap: var(--sp-4); align-items: start; }
 .ncMeta { font-size: 15px; }
 .ncProgress { color: var(--muted); font-size: 13.5px; margin: 4px 0 0; }
@@ -41,47 +45,49 @@
 }
 .ncOpt.sel .ncOptKey { background: var(--accent); color: var(--accent-ink); }
 
-/* ---- palette ---- */
+/* ---- action row: directly below the question + options box ---- */
+.ncActions {
+  display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center;
+  margin-top: var(--sp-4); padding-top: var(--sp-4); border-top: 2px solid var(--border-strong);
+}
+.ncActBtn { padding: 12px 22px; font-size: 15.5px; border-radius: var(--radius-sm); }
+.ncActBtn[disabled] { opacity: 0.45; cursor: not-allowed; filter: none; }
+.ncActPill { padding: 11px 18px; font-size: 14.5px; font-weight: 700; border: 1px solid var(--border-strong); }
+.ncActPill[disabled] { opacity: 0.45; cursor: not-allowed; }
+.ncActPill.active { background: var(--nc-mark-soft); border-color: var(--nc-mark); color: var(--nc-mark); }
+
+/* ---- palette (SSC states) ---- */
 .ncPalCard strong { display: block; margin-bottom: var(--sp-3); }
 .ncPalette { display: grid; grid-template-columns: repeat(auto-fill, minmax(36px, 1fr)); gap: 6px; }
 .ncPalBtn {
   height: 36px; border-radius: var(--radius-sm); cursor: pointer; font-weight: 600; font-size: 13.5px;
   background: var(--surface-2); border: 1px solid var(--border); color: var(--muted);
+  position: relative;
 }
 .ncPalBtn:hover { color: var(--text); border-color: var(--border-strong); }
-.ncPalBtn.done { background: var(--accent-soft); border-color: var(--accent); color: var(--text); }
-.ncPalBtn.marked { border-color: var(--target); box-shadow: inset 0 0 0 1px var(--target); }
-.ncPalBtn.marked::after { content: ""; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--target); margin: 2px auto 0; }
-.ncPalBtn.now { outline: 2px solid var(--text); outline-offset: 1px; color: var(--text); }
+.ncPalBtn.done { background: var(--pass); border-color: var(--pass); color: #fff; }
+.ncPalBtn.seen { background: var(--error); border-color: var(--error); color: #fff; }
+.ncPalBtn.marked { background: var(--nc-mark); border-color: var(--nc-mark); color: #fff; }
+.ncPalBtn.ansMarked { background: var(--nc-mark); border-color: var(--nc-mark); color: #fff; }
+.ncPalBtn.ansMarked::after {
+  content: ""; position: absolute; right: 4px; bottom: 4px;
+  width: 8px; height: 8px; border-radius: 50%; background: var(--pass);
+  box-shadow: 0 0 0 1.5px #fff;
+}
+.ncPalBtn.now { outline: 2px solid var(--text); outline-offset: 1px; }
 .ncPalSummary { color: var(--muted); font-size: 13px; margin-top: var(--sp-3); }
 .ncLegend { display: flex; flex-wrap: wrap; gap: var(--sp-3); color: var(--muted); font-size: 12.5px; margin-top: var(--sp-2); }
 .ncLegend span { display: inline-flex; align-items: center; gap: 6px; }
 .ncDot { width: 11px; height: 11px; border-radius: 3px; background: var(--surface-3); border: 1px solid var(--border); display: inline-block; }
-.ncDot.done { background: var(--accent-soft); border-color: var(--accent); }
-.ncDot.marked { background: var(--target-soft); border-color: var(--target); }
-
-/* ---- fixed bottom bar ---- */
-.ncBottomBar {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 80;
-  background: var(--surface); border-top: 1px solid var(--border-strong);
-  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.28);
-}
-.ncBarIn {
-  max-width: var(--maxw); margin: 0 auto; padding: 10px var(--sp-4);
-  display: flex; align-items: center; gap: var(--sp-4);
-}
-.ncBarNav { display: flex; gap: var(--sp-2); }
-.ncNavBtn { padding: 13px 26px; font-size: 16px; border-radius: var(--radius-sm); }
-.ncNavBtn[disabled] { opacity: 0.45; cursor: not-allowed; filter: none; }
-.ncBarSecondary {
-  display: flex; gap: var(--sp-2); align-items: center;
-  border-left: 1px solid var(--border); padding-left: var(--sp-4); margin-left: var(--sp-1);
-}
-.ncBarSecondary .pill[disabled] { opacity: 0.45; cursor: not-allowed; }
+.ncDot.done { background: var(--pass); border-color: var(--pass); }
+.ncDot.seen { background: var(--error); border-color: var(--error); }
+.ncDot.marked { background: var(--nc-mark); border-color: var(--nc-mark); }
+.ncDot.ansMarked { background: var(--nc-mark); border-color: var(--nc-mark); box-shadow: inset -3px -3px 0 0 var(--pass); }
 .ncSubmitBtn {
-  margin-left: auto; padding: 13px 30px; font-size: 16px; border-radius: var(--radius-sm);
-  background: var(--pass); color: #fff;
+  width: 100%; margin-top: var(--sp-4); padding: 13px 30px; font-size: 16px;
+  border-radius: var(--radius-sm); background: var(--pass); color: #fff;
 }
+.ncQuitBtn { width: 100%; margin-top: var(--sp-2); padding: 10px; }
 
 /* ---- confirm modal ---- */
 .ncModalOv {
@@ -125,10 +131,6 @@
 /* ---- responsive ---- */
 @media (max-width: 860px) {
   .ncWrap { grid-template-columns: minmax(0, 1fr); }
-  .ncBarIn { flex-wrap: wrap; gap: var(--sp-2); }
-  .ncBarSecondary { border-left: none; padding-left: 0; margin-left: 0; }
-  .ncSubmitBtn { margin-left: auto; }
-  .ncNavBtn { padding: 12px 18px; }
-  #ncRunner { padding-bottom: 150px; }
   .ncrtc-row { flex-wrap: wrap; }
+  .ncActBtn { padding: 12px 16px; }
 }
