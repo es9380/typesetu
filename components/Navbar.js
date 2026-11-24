@@ -12,7 +12,8 @@ export const TABS = [
   { route: "arena", label: "Exam Arena", icon: "arena" },
   { route: "studio", label: "Training Studio", icon: "keyboard" },
   { route: "progress", label: "Progress", icon: "chart" },
-  { route: "ncrtc", label: "NCRTC Mocks", icon: "file" }
+  { route: "ncrtc", label: "NCRTC Mocks", icon: "file" },
+  { route: "vocab", label: "Vocab", icon: "file" }
 ];
 
 export function routeHash(route) { return "#/" + (route === "home" ? "" : route); }
@@ -25,6 +26,7 @@ function currentTab() {
   if (seg === "studio" || seg === "drills" || seg === "warmup" || seg === "practice" || seg === "test") return "studio";
   if (seg === "progress" || seg === "revision") return "progress";
   if (seg === "ncrtc") return "ncrtc";
+  if (seg === "vocab") return "vocab";
   return "";
 }
 
