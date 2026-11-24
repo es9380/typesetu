@@ -498,14 +498,18 @@ export function mountHcmStage(container, opts) {
       el.style.animation = "";
     }
   }
-  /* ---------- Paper View auto-scroll (v17; measurement + top guard v18) ----------
-     Both Paper View panes are FIXED-height internal scrollers (CSS).
-     On every render, each pane scrolls ONLY when the line that matters
-     has left its comfortable visible zone, and then only by the minimum
-     amount — no per-keystroke chasing, no snapping the caret to the
-     top. The sheet stays a plain static print (no bold, no highlight —
-     v16's "remove tracing all" stands); its word spans serve purely as
-     invisible position anchors for measuring where the caret's line is. */
+  /* ---------- Paper View auto-scroll ----------
+     Both Paper View panes are FIXED-height internal scrollers (CSS),
+     but they follow different rules. The TYPED BOX keeps the v17/v19
+     nearest rule (scrollPaperTyped below): on every render it scrolls
+     ONLY when the caret's line has left its comfortable visible zone,
+     and then only by the minimum amount — no per-keystroke chasing, no
+     snapping the caret to the top. The SHEET follows the pre-redesign
+     PROPORTIONAL rule (syncPaperScroll below, restored in v22): its
+     scroll position is the typed fraction of the passage times its
+     total scrollable distance, so it glides a few px per word and
+     never jumps a line. The sheet stays a plain static print (no bold,
+     no highlight — v16's "remove tracing all" stands). */
   function paperLineH(el, ratio) {
     let lh = 0, fs = 0;
     try {
@@ -525,53 +529,38 @@ export function mountHcmStage(container, opts) {
     const pRect = pane.getBoundingClientRect(), eRect = el.getBoundingClientRect();
     return eRect.top - pRect.top - (pane.clientTop || 0) + pane.scrollTop;
   }
-  function paperWordIndex() {
-    /* index of the sheet word span the caret currently sits in */
-    const pos = Math.max(0, Math.min(S.caret || 0, S.target.length));
-    let idx = 0;
-    for (let i = 0; i < pos; i++) if (S.target[i] === " ") idx++;
-    return idx;
-  }
   function syncPaperScroll() {
-    /* Sheet: follow the current word's line with the SAME minimal /
-       nearest rule the typed box uses (v20) — move only when that line
-       leaves the visible zone, and then only just enough to rest it one
-       line inside the edge it crossed. As typing advances line by line
-       the sheet therefore creeps up exactly one line at a time. (v19
-       landed the line ~2 lines below the sheet's TOP edge instead,
-       which refilled the whole pane in one jump each time the line
-       crossed the bottom — the whole-screen jump the user reported.)
-       The measurement is rect-based (paperLineTop); the end-of-passage
-       case is the clamp: desired tops out at scrollHeight −
-       clientHeight, where the sheet's bottom padding leaves the final
-       line fully inside the pane, never clipped by its bottom edge. */
+    /* Sheet: the PRE-REDESIGN proportional rule, restored in v22 (a
+       faithful port of the old single-file site's syncPaperScroll).
+       The sheet's scroll position is the typed fraction of the passage
+       (typed chars / target chars) times the sheet's total scrollable
+       distance (scrollHeight − clientHeight). The sheet therefore
+       glides a few px per word and NEVER jumps a line; the current
+       line drifts slowly down the pane as you type; at 100% the sheet
+       sits at max scroll, where its bottom padding leaves the final
+       line fully inside the pane, never clipped. (v20's minimal /
+       nearest line-step rule — sit still, then jump exactly one line
+       in a single frame each time the caret line crossed the pane
+       edge — is what the user experienced as blink-jumps that made
+       him lose his line; it replaced this rule in the redesign and
+       is now reverted.)
+       Manual-scroll hold: the sheet's scroll listener (wired with the
+       stage's listeners) sets paperHold on any scroll that was NOT
+       programmatic — paperProgScroll marks our own sets and is cleared
+       on the next animation frame. While paperHold is set, sync leaves
+       the sheet exactly where the user put it until the proportional
+       target comes back within 48px of it, which clears the hold and
+       resumes the glide. The <2px deadband keeps the glide in ~2px
+       micro-steps instead of re-setting on every keystroke. */
     if (!S.paperView) return;
-    const sheet = q("#paperSheet"), st = q("#paperSheetText");
-    if (!sheet || !st) return;
-    const spans = st.children;
-    if (!spans.length) return;
-    const anchor = spans[Math.min(paperWordIndex(), spans.length - 1)];
-    if (!anchor) return;
-    const lh = paperLineH(st, 1.85);
-    const lineTop = paperLineTop(anchor, sheet);
-    const lineBottom = lineTop + lh;
-    const viewTop = sheet.scrollTop, viewBottom = viewTop + sheet.clientHeight;
-    let desired = viewTop;
-    /* The triggers carry a 1px tolerance: the rest position parks the
-       line exactly one line inside the edge, so the NEXT line crossing
-       lands the line's far edge exactly ON the boundary — and rect
-       measurement quantises that to a hair UNDER the boundary, so a
-       plain > / >= comparison skips that crossing and then moves two
-       lines on the one after (measured in the v20 browser test:
-       alternating 1-line and 2-line steps). The boundary case IS a
-       crossing; 1px is far above the rounding error and far below a
-       line height, so it can never fire early in practice. */
-    if (lineBottom >= viewBottom - 1) desired = lineBottom + lh - sheet.clientHeight;
-    else if (lineTop <= viewTop + 1) desired = lineTop - lh;
-    const max = Math.max(0, sheet.scrollHeight - sheet.clientHeight);
-    if (desired > max) desired = max;
-    if (desired < 0) desired = 0;
-    if (desired !== sheet.scrollTop) sheet.scrollTop = desired;
+    const sh = q("#paperSheet"); if (!sh) return;
+    const max = sh.scrollHeight - sh.clientHeight; if (max <= 0) return;
+    const prog = S.target.length ? S.typed.length / S.target.length : 0;
+    const target = Math.round(prog * max);
+    if (paperHold) { if (Math.abs(sh.scrollTop - target) <= 48) paperHold = false; else return; }
+    if (Math.abs(sh.scrollTop - target) < 2) return;
+    paperProgScroll = true; sh.scrollTop = target;
+    requestAnimationFrame(function () { paperProgScroll = false; });
   }
   function scrollPaperTyped() {
     /* Typed box: keep the caret's line in view with nearest semantics —
