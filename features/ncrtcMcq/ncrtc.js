@@ -12,17 +12,25 @@
    explanations, same best-score storage — ncrtcBestV1, written only when
    the score improves (or ties with >= total) via core/storage.js.
 
-   Prompt §6 runner layout: a fixed BOTTOM BAR — Submit Test anchored at
-   the end of the bar, Previous / Next as LARGE high-contrast buttons,
-   physically separated from the secondary actions (Mark for Review,
-   Clear Response, Quit). Left/right arrow keys navigate too.
+   v26 runner layout (presentation restyle at sid's request — the
+   runner now LOOKS like the Vocab runner, whose design he prefers):
+   the action row (Previous · Next · Mark for Review · Clear Response)
+   sits DIRECTLY BELOW the question + options box inside the question
+   card — no fixed bottom bar; Submit / Quit live in the palette card;
+   the palette carries the SSC states (answered = green, visited-not-
+   answered = red, marked = purple, answered + marked = purple with a
+   green dot, not visited = neutral) with the same legend. Left/right
+   arrow keys navigate too. PRESENTATION ONLY: test data, durations,
+   scoring (count correct, NO negative marking), the result screen and
+   ncrtcBestV1 semantics are exactly as before.
 
    ADDITIONS vs the current engine (prompt-directed, flagged in the
    Stage 4 report — NOT preservations):
    - Mark for Review: the current engine has no such control (Stage 0
      finding). Here it is a VISUAL-ONLY flag: it recolours the palette
      cell and nothing else — it never touches answers, scoring, the
-     golden outputs, or ncrtcBestV1.
+     golden outputs, or ncrtcBestV1. (A `visited` set likewise exists
+     only to paint the palette's "seen, not answered" state.)
    - Clear Response: sets the current answer back to unattempted —
      exactly equivalent to never having answered (a skip); scoring and
      stored state are unaffected.
@@ -58,7 +66,7 @@ function pdfHref(pdf) { return DATA_BASE + String(pdf).split("/").pop(); }
 
 export function mount(container) {
   let destroyed = false;
-  let cur = null;        /* {test, data, answers:[], marked:Set, idx, submitted, score} */
+  let cur = null;        /* {test, data, answers:[], marked:Set, visited:Set, idx, submitted, score} */
   let loadToken = 0;
   let modalState = null; /* {ov, resolve} while the confirm modal is open */
 
@@ -76,30 +84,26 @@ export function mount(container) {
           '<p class="ncProgress" id="ncProgress"></p>' +
           '<div class="ncQText" id="ncQText"></div>' +
           '<div class="ncOpts" id="ncOpts"></div>' +
+          '<div class="ncActions">' +
+            '<button class="btn ncActBtn" type="button" id="ncPrevBtn">← Previous</button>' +
+            '<button class="btn ncActBtn" type="button" id="ncNextBtn">Next →</button>' +
+            '<button class="pill ncActPill" type="button" id="ncMarkBtn" aria-pressed="false">Mark for Review</button>' +
+            '<button class="pill ncActPill" type="button" id="ncClearBtn">Clear Response</button>' +
+          '</div>' +
         '</div>' +
         '<div class="card ncPalCard">' +
           '<strong>Question palette</strong>' +
           '<div class="ncPalette" id="ncPalette"></div>' +
           '<div class="ncPalSummary" id="ncPalSummary"></div>' +
           '<div class="ncLegend">' +
-            '<span><span class="ncDot done"></span>Attempted</span>' +
-            '<span><span class="ncDot"></span>Not attempted</span>' +
+            '<span><span class="ncDot done"></span>Answered</span>' +
+            '<span><span class="ncDot seen"></span>Seen, not answered</span>' +
             '<span><span class="ncDot marked"></span>Marked for review</span>' +
-          '</div>' +
-        '</div>' +
-      '</div>' +
-      '<div class="ncBottomBar">' +
-        '<div class="ncBarIn">' +
-          '<div class="ncBarNav">' +
-            '<button class="btn ncNavBtn" type="button" id="ncPrevBtn">← Previous</button>' +
-            '<button class="btn ncNavBtn" type="button" id="ncNextBtn">Next →</button>' +
-          '</div>' +
-          '<div class="ncBarSecondary">' +
-            '<button class="pill" type="button" id="ncMarkBtn" aria-pressed="false">Mark for Review</button>' +
-            '<button class="pill" type="button" id="ncClearBtn">Clear Response</button>' +
-            '<button class="pill" type="button" id="ncQuitBtn">Quit</button>' +
+            '<span><span class="ncDot ansMarked"></span>Answered + marked</span>' +
+            '<span><span class="ncDot"></span>Not visited</span>' +
           '</div>' +
           '<button class="btn ncSubmitBtn" type="button" id="ncSubmitBtn">Submit Test</button>' +
+          '<button class="pill ncQuitBtn" type="button" id="ncQuitBtn">Quit</button>' +
         '</div>' +
       '</div>' +
     '</div>' +
@@ -161,7 +165,7 @@ export function mount(container) {
       cur = {
         test: meta, data: data,
         answers: new Array(data.questions.length).fill(null),
-        marked: new Set(), idx: 0, submitted: false, score: 0
+        marked: new Set(), visited: new Set([0]), idx: 0, submitted: false, score: 0
       };
       body.style.display = "none";
       result.style.display = "none";
@@ -173,9 +177,19 @@ export function mount(container) {
     });
   }
 
+  function palState(pi) {
+    const answered = cur.answers[pi] !== null, marked = cur.marked.has(pi);
+    if (answered && marked) return " ansMarked";
+    if (answered) return " done";
+    if (marked) return " marked";
+    if (cur.visited.has(pi)) return " seen";
+    return "";
+  }
+
   function renderQuestion() {
     if (!cur || destroyed) return;
     const qs = cur.data.questions, i = cur.idx, q = qs[i];
+    cur.visited.add(i);
     el("ncTestTitle").textContent = cur.test.title;
     el("ncProgress").textContent = "Question " + (i + 1) + " of " + qs.length +
       " · Attempted " + cur.answers.filter(function (a) { return a !== null; }).length;
@@ -202,15 +216,16 @@ export function mount(container) {
     qs.forEach(function (_, pi) {
       const p = document.createElement("button");
       p.type = "button";
-      p.className = "ncPalBtn" + (cur.answers[pi] !== null ? " done" : "") +
-        (cur.marked.has(pi) ? " marked" : "") + (pi === i ? " now" : "");
+      p.className = "ncPalBtn" + palState(pi) + (pi === i ? " now" : "");
       p.textContent = pi + 1;
       p.setAttribute("aria-label", "Go to question " + (pi + 1));
       p.addEventListener("click", function () { cur.idx = pi; renderQuestion(); });
       pal.appendChild(p);
     });
     const un = cur.answers.filter(function (a) { return a === null; }).length;
-    el("ncPalSummary").textContent = "Attempted " + (qs.length - un) + " · Left " + un;
+    const mk = cur.marked.size;
+    el("ncPalSummary").textContent = "Attempted " + (qs.length - un) + " · Left " + un +
+      (mk ? " · Marked " + mk : "");
   }
 
   function goPrev() { if (cur && cur.idx > 0) { cur.idx--; renderQuestion(); } }
@@ -226,11 +241,15 @@ export function mount(container) {
         '<button class="pill" type="button" data-nc="cancel">Cancel</button></div></div>';
       document.body.appendChild(ov);
       modalState = { ov: ov, resolve: resolve };
+      /* Only the explicit buttons act: a click on the overlay/backdrop or
+         the card itself is ignored, never a cancel — otherwise the second
+         click of a hurried double-click on Submit/Quit lands on the overlay
+         and silently dismisses this confirm (same safety as the Vocab
+         runner's v25 fix). */
       ov.addEventListener("click", function (e) {
         const b = e.target.closest ? e.target.closest("[data-nc]") : null;
-        if (!b && e.target !== ov) return;
-        const ok = b ? b.getAttribute("data-nc") === "ok" : false;
-        closeModal(ok);
+        if (!b) return;
+        closeModal(b.getAttribute("data-nc") === "ok");
       });
     });
   }
