@@ -2,7 +2,12 @@
    (prompt §4). SHELL-GRADE in Stage 1: a controlled component that renders
    the bar and reports actions; Stage 2 wires it to the typing engine.
    Layout: [Exam Selector ▾] | [1m·2m·5m·10m·15m] | [Passage Picker ▾] |
-   [Paper View] | [Backspace: ON/OFF] | [Live Errors: ON/OFF] | [⚙ More].
+   [Paper View] | [Text Size S·M·L·XL] | [Backspace: ON/OFF] |
+   [Live Errors: ON/OFF] | [⚙ More].
+   v21: the text-size group lives HERE, in the stage's own toolbar, so
+   it is visible in every stage context (mocks in both views, drills,
+   warm-ups, revision, custom tests) with no menu to open — it replaced
+   the pills that used to sit inside the Paper View head only.
    Resolutions baked in: auto-submit is NOT offered (sid's rule — manual
    submit stays); the Backspace toggle is disabled/locked only where the
    stage's rules fix it, with the state still visible. */
@@ -13,7 +18,7 @@ import { escapeHtml } from "./ProfilePopover.js";
 export const COMMAND_DURATIONS = [1, 2, 5, 10, 15];
 
 /* opts: { examLabel, duration, backspace, backspaceLocked, liveErrors,
-          paperView, onAction(name, value) } */
+          paperView, fontStep (0–3, active text-size step), onAction(name, value) } */
 export function renderCommandBar(opts) {
   opts = opts || {};
   const bar = document.createElement("div");
@@ -32,6 +37,12 @@ export function renderCommandBar(opts) {
     '<span class="cb-sep"></span>' +
     '<button class="cb-btn" type="button" data-act="passage">' + icon("book") + 'Passage' + icon("chevD") + '</button>' +
     '<button class="cb-btn' + (opts.paperView ? " on" : "") + '" type="button" data-act="paper" aria-pressed="' + !!opts.paperView + '">' + icon("file") + 'Paper View</button>' +
+    '<span class="cb-sep"></span>' +
+    '<span class="cb-fonts" role="group" aria-label="Text size">' +
+      ["S", "M", "L", "XL"].map(function (label, i) {
+        return '<button type="button" data-act="pfont" data-v="' + i + '" class="' + (opts.fontStep === i ? "active" : "") + '" aria-pressed="' + (opts.fontStep === i) + '" aria-label="Text size ' + label + '">' + label + '</button>';
+      }).join("") +
+    '</span>' +
     '<button class="cb-btn' + (opts.backspace ? " on" : "") + '" type="button" data-act="backspace" aria-pressed="' + !!opts.backspace + '"' + (bsLocked ? ' disabled data-tip="Fixed by this exam\'s official rule"' : "") + '>⌫ Backspace: ' + (opts.backspace ? "ON" : "OFF") + '</button>' +
     '<button class="cb-btn' + (opts.liveErrors ? " on" : "") + '" type="button" data-act="errors" aria-pressed="' + !!opts.liveErrors + '">' + icon("eye") + 'Live Errors: ' + (opts.liveErrors ? "ON" : "OFF") + '</button>' +
     '<span class="cb-sep"></span>' +
