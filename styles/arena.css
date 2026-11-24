@@ -73,6 +73,40 @@ ul.tight li { margin-bottom: 4px; }
 .hud-l { font-size: 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
 .hud-ring { align-items: center; }
 .hud-ring svg { flex: none; }
+
+/* ---- sticky timer pill (v23) ----
+   The ONLY mid-test display on exam stages (official mocks + custom
+   tests): "TIME LEFT" + the remaining time, pinned to the top of the
+   viewport so it can be seen whatever the user does — page scrolled,
+   Zen Focus dimmed, Paper View aligned. It sits immediately under
+   the fixed site header (also fixed, 58px) instead of over the
+   brand/tabs. Painted by JS from the stage's existing tick (text +
+   drain width); no second clock, no per-keystroke work. The slim
+   track along the pill's bottom edge DRAINS with elapsed time. In
+   the final 60 seconds the digits (and the track) take the danger
+   colour — steady, never blinking. Zen never touches it: it is not
+   the header, footer, command bar or stage-top, and its z-index
+   sits above all stage chrome (modals/overlays still cover it). */
+.timer-pill {
+  position: fixed; top: calc(var(--header-h) + 8px); left: 50%; transform: translateX(-50%);
+  z-index: 130; display: flex; align-items: baseline; justify-content: center; gap: 10px;
+  min-width: 172px; padding: 8px 20px 11px; overflow: hidden;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-pill);
+  box-shadow: var(--shadow); pointer-events: none;
+}
+.timer-pill[hidden] { display: none; }
+.timer-pill .tp-label { font-size: 10.5px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.timer-pill .tp-time { font-size: 23px; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; color: var(--text); }
+.timer-pill .tp-track { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--surface-3); }
+.timer-pill .tp-track i { display: block; height: 100%; background: var(--accent); transition: width .2s linear; }
+.timer-pill.danger .tp-time { color: var(--error); }
+.timer-pill.danger .tp-track i { background: var(--error); }
+/* Exam stage wraps carry a top margin so the stage's first row
+   starts below the pill's band at rest; the wrap's inner geometry
+   (command bar, More popover offsets) is unchanged. Paper View's
+   entry alignment additionally lands the type area below the pill
+   (see scrollStageIntoView in core/examEngine.js). */
+.stage-wrap.exam-live { margin-top: 52px; }
 .prog { height: 5px; background: var(--surface-3); border-radius: 99px; overflow: hidden; margin-bottom: var(--sp-2); }
 .prog i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .25s linear; }
 .size-line { color: var(--faint); margin: 0 0 var(--sp-2); }
