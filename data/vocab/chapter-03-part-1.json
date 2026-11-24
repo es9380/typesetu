@@ -1,0 +1,713 @@
+{
+ "id": "chapter-03-part-1",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 3 — Syn & Ant (Part 1)",
+ "durationMins": 39,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Servile",
+   "options": [
+    "lasting for only a short time; temporary",
+    "raised one’s spirits; gave confidence",
+    "part of the whole; incomplete",
+    "too eager to praise or obey someone"
+   ],
+   "answer": 3,
+   "explain": "\"Servile\" means: too eager to praise or obey someone"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Servile",
+   "options": [
+    "Derision",
+    "Adage",
+    "Submissive",
+    "Optimistic"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Servile\" is \"Submissive\". \"Servile\" means: too eager to praise or obey someone"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Servile",
+   "options": [
+    "Wax",
+    "Dominant",
+    "Compelled",
+    "Sporadically"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Servile\" is \"Dominant\". \"Servile\" means: too eager to praise or obey someone"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Optimistic",
+   "options": [
+    "very careful and with great attention to every detail",
+    "hoping for believing that good things will happen in the future`",
+    "showing or having an insensitive and cruel disregard for others",
+    "behave in a way that belittles or degrades (someone)"
+   ],
+   "answer": 1,
+   "explain": "\"Optimistic\" means: hoping for believing that good things will happen in the future`"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Optimistic",
+   "options": [
+    "Sophisticated",
+    "Trivial",
+    "Hopeful",
+    "Nefarious"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Optimistic\" is \"Hopeful\". \"Optimistic\" means: hoping for believing that good things will happen in the future`"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Optimistic",
+   "options": [
+    "Indolent",
+    "Pessimistic",
+    "Encouraged",
+    "Delegate (verb)"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Optimistic\" is \"Pessimistic\". \"Optimistic\" means: hoping for believing that good things will happen in the future`"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Adage",
+   "options": [
+    "a wise saying or proverb",
+    "very evil and wicked",
+    "clear and easy to understand",
+    "to become less strong"
+   ],
+   "answer": 0,
+   "explain": "\"Adage\" means: a wise saying or proverb"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Adage",
+   "options": [
+    "Callous",
+    "Proverb",
+    "Preposterous",
+    "Sophisticated"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Adage\" is \"Proverb\". \"Adage\" means: a wise saying or proverb"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Compelled",
+   "options": [
+    "to increase in size, numbers, strength, prosperity, or intensity",
+    "having to do something, because you are forced to or feel it is necessary",
+    "very careful and with great attention to every detail",
+    "hoping for believing that good things will happen in the future`"
+   ],
+   "answer": 1,
+   "explain": "\"Compelled\" means: having to do something, because you are forced to or feel it is necessary"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Compelled",
+   "options": [
+    "Gullible",
+    "Callous",
+    "Forced",
+    "Sophisticated"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Compelled\" is \"Forced\". \"Compelled\" means: having to do something, because you are forced to or feel it is necessary"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Compelled",
+   "options": [
+    "Hinder",
+    "Voluntary",
+    "Curtail",
+    "Indolent"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Compelled\" is \"Voluntary\". \"Compelled\" means: having to do something, because you are forced to or feel it is necessary"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Callous",
+   "options": [
+    "showing or having an insensitive and cruel disregard for others",
+    "having to do something, because you are forced to or feel it is necessary",
+    "behave in a way that belittles or degrades (someone)",
+    "having or showing the ability to use language clearly and effectively"
+   ],
+   "answer": 0,
+   "explain": "\"Callous\" means: showing or having an insensitive and cruel disregard for others"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Callous",
+   "options": [
+    "Adage",
+    "Abandoned",
+    "Insensitive",
+    "Disgrace"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Callous\" is \"Insensitive\". \"Callous\" means: showing or having an insensitive and cruel disregard for others"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Callous",
+   "options": [
+    "Gullible",
+    "Curtail",
+    "Abate",
+    "Sensitive"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Callous\" is \"Sensitive\". \"Callous\" means: showing or having an insensitive and cruel disregard for others"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Curtail",
+   "options": [
+    "slow-moving and lacking in energy",
+    "planned or done in secret:",
+    "easily seen or understood",
+    "- to reduce or limit something"
+   ],
+   "answer": 3,
+   "explain": "\"Curtail\" means: - to reduce or limit something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Curtail",
+   "options": [
+    "Plight",
+    "Reduce",
+    "Abandoned",
+    "Blooming"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Curtail\" is \"Reduce\". \"Curtail\" means: - to reduce or limit something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Curtail",
+   "options": [
+    "Extend",
+    "Derision",
+    "Scattered",
+    "Homicidal"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Curtail\" is \"Extend\". \"Curtail\" means: - to reduce or limit something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Staunch",
+   "options": [
+    "believing and trusting people too easily, and therefore easily tricked",
+    "a person who is not loyal to his/her country, friends, etc",
+    "always loyal in supporting a person, organization, or set of beliefs or opinions",
+    "having or showing the ability to use language clearly and effectively"
+   ],
+   "answer": 2,
+   "explain": "\"Staunch\" means: always loyal in supporting a person, organization, or set of beliefs or opinions"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Staunch",
+   "options": [
+    "Loyal",
+    "Preposterous",
+    "Lucid",
+    "Disgrace"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Staunch\" is \"Loyal\". \"Staunch\" means: always loyal in supporting a person, organization, or set of beliefs or opinions"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Staunch",
+   "options": [
+    "Abate",
+    "Disloyal",
+    "Wax",
+    "Traitor"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Staunch\" is \"Disloyal\". \"Staunch\" means: always loyal in supporting a person, organization, or set of beliefs or opinions"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Wicked",
+   "options": [
+    "to mock at someone",
+    "clear and easy to understand",
+    "- to reduce or limit something",
+    "morally wrong and bad"
+   ],
+   "answer": 3,
+   "explain": "\"Wicked\" means: morally wrong and bad"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Wicked",
+   "options": [
+    "Staunch",
+    "Callous",
+    "Wax",
+    "Evil"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Wicked\" is \"Evil\". \"Wicked\" means: morally wrong and bad"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Wicked",
+   "options": [
+    "Abandoned",
+    "Innate",
+    "Virtuous",
+    "Evident"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Wicked\" is \"Virtuous\". \"Wicked\" means: morally wrong and bad"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Derision",
+   "options": [
+    "to mock at someone",
+    "having little value or importance",
+    "easily seen or understood",
+    "spread over a large area"
+   ],
+   "answer": 0,
+   "explain": "\"Derision\" means: to mock at someone"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Derision",
+   "options": [
+    "Trivial",
+    "Patriot",
+    "Mockery",
+    "Filthy"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Derision\" is \"Mockery\". \"Derision\" means: to mock at someone"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Derision",
+   "options": [
+    "Respect",
+    "Abandoned",
+    "Wax",
+    "Abate"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Derision\" is \"Respect\". \"Derision\" means: to mock at someone"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Redeem",
+   "options": [
+    "an unpleasant condition, especially a serious, sad, or difficult one:",
+    "to buy back something, or to exchange something for money or for goods or services",
+    "having or showing the ability to use language clearly and effectively",
+    "believing and trusting people too easily, and therefore easily tricked"
+   ],
+   "answer": 1,
+   "explain": "\"Redeem\" means: to buy back something, or to exchange something for money or for goods or services"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Redeem",
+   "options": [
+    "Gullible",
+    "Derision",
+    "Recover",
+    "Sluggish"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Redeem\" is \"Recover\". \"Redeem\" means: to buy back something, or to exchange something for money or for goods or services"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Gullible",
+   "options": [
+    "a quality or ability which you are born with, or which is present naturally",
+    "very careful and with great attention to every detail",
+    "believing and trusting people too easily, and therefore easily tricked",
+    "to buy back something, or to exchange something for money or for goods or services"
+   ],
+   "answer": 2,
+   "explain": "\"Gullible\" means: believing and trusting people too easily, and therefore easily tricked"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Gullible",
+   "options": [
+    "Patriot",
+    "Credulous",
+    "Staunch",
+    "Indolent"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Gullible\" is \"Credulous\". \"Gullible\" means: believing and trusting people too easily, and therefore easily tricked"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Gullible",
+   "options": [
+    "Suspicious",
+    "Curtail",
+    "Obtuse",
+    "Abate"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Gullible\" is \"Suspicious\". \"Gullible\" means: believing and trusting people too easily, and therefore easily tricked"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Lucid",
+   "options": [
+    "very evil and wicked",
+    "a wise saying or proverb",
+    "planned or done in secret:",
+    "clear and easy to understand"
+   ],
+   "answer": 3,
+   "explain": "\"Lucid\" means: clear and easy to understand"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Lucid",
+   "options": [
+    "Compelled",
+    "Obtuse",
+    "Transient",
+    "Clear"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Lucid\" is \"Clear\". \"Lucid\" means: clear and easy to understand"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Lucid",
+   "options": [
+    "Confusing",
+    "Traitor",
+    "Notion",
+    "Derision"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Lucid\" is \"Confusing\". \"Lucid\" means: clear and easy to understand"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Patriot",
+   "options": [
+    "having or showing the ability to use language clearly and effectively",
+    "believing and trusting people too easily, and therefore easily tricked",
+    "to buy back something, or to exchange something for money or for goods or services",
+    "a person who loves their country and, if necessary, will fight for it"
+   ],
+   "answer": 3,
+   "explain": "\"Patriot\" means: a person who loves their country and, if necessary, will fight for it"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Patriot",
+   "options": [
+    "Preposterous",
+    "Hinder",
+    "Partial",
+    "Nationalist"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Patriot\" is \"Nationalist\". \"Patriot\" means: a person who loves their country and, if necessary, will fight for it"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Patriot",
+   "options": [
+    "Preposterous",
+    "Traitor",
+    "Obtuse",
+    "Homicidal"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Patriot\" is \"Traitor\". \"Patriot\" means: a person who loves their country and, if necessary, will fight for it"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Traitor",
+   "options": [
+    "a person who is not loyal to his/her country, friends, etc",
+    "to hold back or to make difficult to accomplish",
+    "believing and trusting people too easily, and therefore easily tricked",
+    "showing or having an insensitive and cruel disregard for others"
+   ],
+   "answer": 0,
+   "explain": "\"Traitor\" means: a person who is not loyal to his/her country, friends, etc"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Traitor",
+   "options": [
+    "Staunch",
+    "Evident",
+    "Betrayer",
+    "Recluse"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Traitor\" is \"Betrayer\". \"Traitor\" means: a person who is not loyal to his/her country, friends, etc"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Traitor",
+   "options": [
+    "Abate",
+    "Patriot",
+    "Preposterous",
+    "Innate"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Traitor\" is \"Patriot\". \"Traitor\" means: a person who is not loyal to his/her country, friends, etc"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Indolent",
+   "options": [
+    "lasting for only a short time; temporary",
+    "too eager to praise or obey someone",
+    "wanting to avoid activity or exertion; lazy",
+    "contrary to nature, reason, or common sense"
+   ],
+   "answer": 2,
+   "explain": "\"Indolent\" means: wanting to avoid activity or exertion; lazy"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Indolent",
+   "options": [
+    "Staunch",
+    "Scattered",
+    "Lazy",
+    "Wax"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Indolent\" is \"Lazy\". \"Indolent\" means: wanting to avoid activity or exertion; lazy"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Indolent",
+   "options": [
+    "Disgrace",
+    "Clandestine",
+    "Obtuse",
+    "Industrious"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Indolent\" is \"Industrious\". \"Indolent\" means: wanting to avoid activity or exertion; lazy"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Wax",
+   "options": [
+    "a person who lives alone and avoids other people; a hermit",
+    "to increase in size, numbers, strength, prosperity, or intensity",
+    "a quality or ability which you are born with, or which is present naturally",
+    "hoping for believing that good things will happen in the future`"
+   ],
+   "answer": 1,
+   "explain": "\"Wax\" means: to increase in size, numbers, strength, prosperity, or intensity"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Wax",
+   "options": [
+    "Filthy",
+    "Gullible",
+    "Redeem",
+    "Increase"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Wax\" is \"Increase\". \"Wax\" means: to increase in size, numbers, strength, prosperity, or intensity"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Wax",
+   "options": [
+    "Wane",
+    "Homicidal",
+    "Trivial",
+    "Derision"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Wax\" is \"Wane\". \"Wax\" means: to increase in size, numbers, strength, prosperity, or intensity"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Obtuse",
+   "options": [
+    "something that you have in your mind; an idea",
+    "characterized by or likely to commit murder",
+    "slow to or not wanting to understand something",
+    "to hold back or to make difficult to accomplish"
+   ],
+   "answer": 2,
+   "explain": "\"Obtuse\" means: slow to or not wanting to understand something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Obtuse",
+   "options": [
+    "Delegate (verb)",
+    "Traitor",
+    "Abate",
+    "Dull"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Obtuse\" is \"Dull\". \"Obtuse\" means: slow to or not wanting to understand something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Obtuse",
+   "options": [
+    "Sharp",
+    "Abate",
+    "Triumph",
+    "Adage"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Obtuse\" is \"Sharp\". \"Obtuse\" means: slow to or not wanting to understand something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Notion",
+   "options": [
+    "something that you have in your mind; an idea",
+    "behave in a way that belittles or degrades (someone)",
+    "to hold back or to make difficult to accomplish",
+    "the situation in which two things become different"
+   ],
+   "answer": 0,
+   "explain": "\"Notion\" means: something that you have in your mind; an idea"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Notion",
+   "options": [
+    "Recluse",
+    "Idea",
+    "Transient",
+    "Homicidal"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Notion\" is \"Idea\". \"Notion\" means: something that you have in your mind; an idea"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Triumph",
+   "options": [
+    "too eager to praise or obey someone",
+    "to give tasks or responsibilities to others",
+    "to have a very great success or victory",
+    "lasting for only a short time; temporary"
+   ],
+   "answer": 2,
+   "explain": "\"Triumph\" means: to have a very great success or victory"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Triumph",
+   "options": [
+    "Nefarious",
+    "Meticulous",
+    "Traitor",
+    "Victory"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Triumph\" is \"Victory\". \"Triumph\" means: to have a very great success or victory"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Triumph",
+   "options": [
+    "Lucid",
+    "Plight",
+    "Defeat",
+    "Wax"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Triumph\" is \"Defeat\". \"Triumph\" means: to have a very great success or victory"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Scattered",
+   "options": [
+    "clear and easy to understand",
+    "spread over a large area",
+    "appealing in an intellectual way",
+    "to mock at someone"
+   ],
+   "answer": 1,
+   "explain": "\"Scattered\" means: spread over a large area"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Scattered",
+   "options": [
+    "Wax",
+    "Clandestine",
+    "Optimistic",
+    "Dispersed"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Scattered\" is \"Dispersed\". \"Scattered\" means: spread over a large area"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Scattered",
+   "options": [
+    "Gathered",
+    "Servile",
+    "Filthy",
+    "Sluggish"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Scattered\" is \"Gathered\". \"Scattered\" means: spread over a large area"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Sophisticated",
+   "options": [
+    "extremely or unpleasantly dirty",
+    "growing into a beautiful or final phase",
+    "appealing in an intellectual way",
+    "a wise saying or proverb"
+   ],
+   "answer": 2,
+   "explain": "\"Sophisticated\" means: appealing in an intellectual way"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Sophisticated",
+   "options": [
+    "Lucid",
+    "Transient",
+    "Eloquent",
+    "Refined"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Sophisticated\" is \"Refined\". \"Sophisticated\" means: appealing in an intellectual way"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Sophisticated",
+   "options": [
+    "Naive",
+    "Evident",
+    "Staunch",
+    "Indolent"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Sophisticated\" is \"Naive\". \"Sophisticated\" means: appealing in an intellectual way"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Filthy",
+   "options": [
+    "clear and easy to understand",
+    "extremely or unpleasantly dirty",
+    "too eager to praise or obey someone",
+    "growing into a beautiful or final phase"
+   ],
+   "answer": 1,
+   "explain": "\"Filthy\" means: extremely or unpleasantly dirty"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Filthy",
+   "options": [
+    "Traitor",
+    "Obtuse",
+    "Recluse",
+    "Dirty"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Filthy\" is \"Dirty\". \"Filthy\" means: extremely or unpleasantly dirty"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Filthy",
+   "options": [
+    "Clean",
+    "Nefarious",
+    "Optimistic",
+    "Sophisticated"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Filthy\" is \"Clean\". \"Filthy\" means: extremely or unpleasantly dirty"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Eloquent",
+   "options": [
+    "having or showing the ability to use language clearly and effectively",
+    "an unpleasant condition, especially a serious, sad, or difficult one:",
+    "a person who lives alone and avoids other people; a hermit",
+    "to increase in size, numbers, strength, prosperity, or intensity"
+   ],
+   "answer": 0,
+   "explain": "\"Eloquent\" means: having or showing the ability to use language clearly and effectively"
+  }
+ ]
+}

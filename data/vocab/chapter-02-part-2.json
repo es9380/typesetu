@@ -1,0 +1,702 @@
+{
+ "id": "chapter-02-part-2",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 2 — Syn & Ant (Part 2)",
+ "durationMins": 38,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Tedious",
+   "options": [
+    "an action that breaks a law or rule",
+    "With no energy or power, Weak",
+    "Boring and rather frustrating",
+    "not liking other people"
+   ],
+   "answer": 2,
+   "explain": "\"Tedious\" means: Boring and rather frustrating"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Tedious",
+   "options": [
+    "Fragile",
+    "Boring",
+    "Zealous",
+    "Committed"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Tedious\" is \"Boring\". \"Tedious\" means: Boring and rather frustrating"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Tedious",
+   "options": [
+    "Glorify",
+    "Exciting",
+    "Utilitarian",
+    "Cheered"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Tedious\" is \"Exciting\". \"Tedious\" means: Boring and rather frustrating"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Benevolent",
+   "options": [
+    "having or showing reason and good judgment in making decisions",
+    "Giving money or help to people or organizations that need it",
+    "too proud of appearance , abilities or achievements etc",
+    "Impossible, or very difficult to believe,Extremely good"
+   ],
+   "answer": 1,
+   "explain": "\"Benevolent\" means: Giving money or help to people or organizations that need it"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Benevolent",
+   "options": [
+    "Generous",
+    "Predicament",
+    "Cheered",
+    "Diligent"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Benevolent\" is \"Generous\". \"Benevolent\" means: Giving money or help to people or organizations that need it"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Benevolent",
+   "options": [
+    "Malevolent",
+    "Immerse",
+    "Predators",
+    "Predicament"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Benevolent\" is \"Malevolent\". \"Benevolent\" means: Giving money or help to people or organizations that need it"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Incredible",
+   "options": [
+    "Having very strong feelings against somebody/something",
+    "an animal that hunts, kills, and eats other animals",
+    "- to make somebody very interested and wanting to know more",
+    "Impossible, or very difficult to believe,Extremely good"
+   ],
+   "answer": 3,
+   "explain": "\"Incredible\" means: Impossible, or very difficult to believe,Extremely good"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Incredible",
+   "options": [
+    "Fragile",
+    "Unbelievable",
+    "Audacity",
+    "Fierce"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Incredible\" is \"Unbelievable\". \"Incredible\" means: Impossible, or very difficult to believe,Extremely good"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Incredible",
+   "options": [
+    "Benevolent",
+    "Predators",
+    "Believable",
+    "Connote"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Incredible\" is \"Believable\". \"Incredible\" means: Impossible, or very difficult to believe,Extremely good"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Vendetta",
+   "options": [
+    "in a serious and determined way, often without humour",
+    "Impossible, or very difficult to believe,Extremely good",
+    "A long and violent argument between people or families",
+    "Giving money or help to people or organizations that need it"
+   ],
+   "answer": 2,
+   "explain": "\"Vendetta\" means: A long and violent argument between people or families"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Vendetta",
+   "options": [
+    "Feud",
+    "Spurious",
+    "Tedious",
+    "Consequence"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Vendetta\" is \"Feud\". \"Vendetta\" means: A long and violent argument between people or families"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Vendetta",
+   "options": [
+    "Credible",
+    "Adamant",
+    "Harmony",
+    "Sever"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Vendetta\" is \"Harmony\". \"Vendetta\" means: A long and violent argument between people or families"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Adamant",
+   "options": [
+    "Designed to be useful rather than decorative",
+    "Giving all your attention to something",
+    "able to continue over a period of time",
+    "Determined in character, action, or ideas"
+   ],
+   "answer": 3,
+   "explain": "\"Adamant\" means: Determined in character, action, or ideas"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Adamant",
+   "options": [
+    "Determined",
+    "Misanthropic",
+    "Extinct",
+    "Sustainable"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Adamant\" is \"Determined\". \"Adamant\" means: Determined in character, action, or ideas"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Adamant",
+   "options": [
+    "Predators",
+    "Yielding",
+    "Predicament",
+    "Inevitable"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Adamant\" is \"Yielding\". \"Adamant\" means: Determined in character, action, or ideas"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Treacherous",
+   "options": [
+    "Impossible, or very difficult to believe,Extremely good",
+    "Able to be easily physically or Mentally hurt, Influenced, or Attacked",
+    "A person who deceives someone who trusts them, or has no loyalty",
+    "- to make somebody very interested and wanting to know more"
+   ],
+   "answer": 2,
+   "explain": "\"Treacherous\" means: A person who deceives someone who trusts them, or has no loyalty"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Treacherous",
+   "options": [
+    "Fierce",
+    "Consent",
+    "Fragile",
+    "Disloyal"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Treacherous\" is \"Disloyal\". \"Treacherous\" means: A person who deceives someone who trusts them, or has no loyalty"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Treacherous",
+   "options": [
+    "Faithful",
+    "Extinct",
+    "Absorbed",
+    "Cheered"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Treacherous\" is \"Faithful\". \"Treacherous\" means: A person who deceives someone who trusts them, or has no loyalty"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Sever",
+   "options": [
+    "able to continue over a period of time",
+    "Someone who is cautious avoids risks",
+    "not forming a straight line, or having many bends:",
+    "To break or separate, especially by cutting"
+   ],
+   "answer": 3,
+   "explain": "\"Sever\" means: To break or separate, especially by cutting"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Sever",
+   "options": [
+    "Intriguing",
+    "Detach",
+    "Exuberance",
+    "Judicious"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Sever\" is \"Detach\". \"Sever\" means: To break or separate, especially by cutting"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Sever",
+   "options": [
+    "Fragile",
+    "Fierce",
+    "Delight",
+    "Unite"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Sever\" is \"Unite\". \"Sever\" means: To break or separate, especially by cutting"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Apathy",
+   "options": [
+    "To put something or someone completely under the surface of a liquid",
+    "Based on false reasoning or information, and therefore not to be trusted",
+    "A feeling of listlessness and dissatisfaction arising from a lack of occupation or Excitement.",
+    "A result of a particular action or situation, often one that is bad or not convenient"
+   ],
+   "answer": 2,
+   "explain": "\"Apathy\" means: A feeling of listlessness and dissatisfaction arising from a lack of occupation or Excitement."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Apathy",
+   "options": [
+    "Devastating",
+    "Comprehensive",
+    "Indifference",
+    "Sustainable"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Apathy\" is \"Indifference\". \"Apathy\" means: A feeling of listlessness and dissatisfaction arising from a lack of occupation or Excitement."
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Apathy",
+   "options": [
+    "Zealous",
+    "Treacherous",
+    "Inevitable",
+    "Enthusiasm"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Apathy\" is \"Enthusiasm\". \"Apathy\" means: A feeling of listlessness and dissatisfaction arising from a lack of occupation or Excitement."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Diligent",
+   "options": [
+    "To give up under pressure; surrender.",
+    "Careful and using a lot of effort",
+    "able to continue over a period of time",
+    "With no energy or power, Weak"
+   ],
+   "answer": 1,
+   "explain": "\"Diligent\" means: Careful and using a lot of effort"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Diligent",
+   "options": [
+    "Predators",
+    "Mortal",
+    "Devastating",
+    "Industrious"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Diligent\" is \"Industrious\". \"Diligent\" means: Careful and using a lot of effort"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Diligent",
+   "options": [
+    "Hostile",
+    "Sustainable",
+    "Lazy",
+    "Intriguing"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Diligent\" is \"Lazy\". \"Diligent\" means: Careful and using a lot of effort"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Temerity",
+   "options": [
+    "The situation in which people are made to feel they have no value",
+    "the quality of feeling energetic, or the behaviour of someone who feels this way",
+    "Extremely confident behavior that shows a lack of respect and is considered rude",
+    "A person who deceives someone who trusts them, or has no loyalty"
+   ],
+   "answer": 2,
+   "explain": "\"Temerity\" means: Extremely confident behavior that shows a lack of respect and is considered rude"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Temerity",
+   "options": [
+    "Earnestly",
+    "Vain",
+    "Credible",
+    "Audacity"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Temerity\" is \"Audacity\". \"Temerity\" means: Extremely confident behavior that shows a lack of respect and is considered rude"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Temerity",
+   "options": [
+    "Yield",
+    "Fierce",
+    "Timidity",
+    "Jargon"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Temerity\" is \"Timidity\". \"Temerity\" means: Extremely confident behavior that shows a lack of respect and is considered rude"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Vulnerable",
+   "options": [
+    "Able to be easily physically or Mentally hurt, Influenced, or Attacked",
+    "the quality of feeling energetic, or the behaviour of someone who feels this way",
+    "Giving money or help to people or organizations that need it",
+    "A person who deceives someone who trusts them, or has no loyalty"
+   ],
+   "answer": 0,
+   "explain": "\"Vulnerable\" means: Able to be easily physically or Mentally hurt, Influenced, or Attacked"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Vulnerable",
+   "options": [
+    "Defenceless",
+    "Connote",
+    "Immerse",
+    "Feeble"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Vulnerable\" is \"Defenceless\". \"Vulnerable\" means: Able to be easily physically or Mentally hurt, Influenced, or Attacked"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Vulnerable",
+   "options": [
+    "Abound",
+    "Predicament",
+    "Feeble",
+    "Protected"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Vulnerable\" is \"Protected\". \"Vulnerable\" means: Able to be easily physically or Mentally hurt, Influenced, or Attacked"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Immerse",
+   "options": [
+    "To put something or someone completely under the surface of a liquid",
+    "loyal and willing to give your time and energy to something that you believe in",
+    "Able to be easily physically or Mentally hurt, Influenced, or Attacked",
+    "Extremely confident behavior that shows a lack of respect and is considered rude"
+   ],
+   "answer": 0,
+   "explain": "\"Immerse\" means: To put something or someone completely under the surface of a liquid"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Immerse",
+   "options": [
+    "Exuberance",
+    "Submerge",
+    "Peruse",
+    "Inevitable"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Immerse\" is \"Submerge\". \"Immerse\" means: To put something or someone completely under the surface of a liquid"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Immerse",
+   "options": [
+    "Emerge",
+    "Vain",
+    "Peruse",
+    "Delight"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Immerse\" is \"Emerge\". \"Immerse\" means: To put something or someone completely under the surface of a liquid"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Resplendent",
+   "options": [
+    "able to continue over a period of time",
+    "not large in size or amount, or not expensive",
+    "Having a very bright or beautiful appearance",
+    "Using or containing more words than necessary"
+   ],
+   "answer": 2,
+   "explain": "\"Resplendent\" means: Having a very bright or beautiful appearance"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Resplendent",
+   "options": [
+    "Dazzling",
+    "Vendetta",
+    "Verbose",
+    "Cautious"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Resplendent\" is \"Dazzling\". \"Resplendent\" means: Having a very bright or beautiful appearance"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Resplendent",
+   "options": [
+    "Cheered",
+    "Adamant",
+    "Mortal",
+    "Dull"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Resplendent\" is \"Dull\". \"Resplendent\" means: Having a very bright or beautiful appearance"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Delight",
+   "options": [
+    "To agree to something",
+    "The pleasures of something",
+    "Careful and using a lot of effort",
+    "With no energy or power, Weak"
+   ],
+   "answer": 1,
+   "explain": "\"Delight\" means: The pleasures of something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Delight",
+   "options": [
+    "Pleasure",
+    "Treacherous",
+    "Modest",
+    "Spurious"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Delight\" is \"Pleasure\". \"Delight\" means: The pleasures of something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Delight",
+   "options": [
+    "Displeasure",
+    "Cheered",
+    "Comprehensive",
+    "Resplendent"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Delight\" is \"Displeasure\". \"Delight\" means: The pleasures of something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Absorbed",
+   "options": [
+    "Careful and using a lot of effort",
+    "Giving all your attention to something",
+    "Having a very bright or beautiful appearance",
+    "To break or separate, especially by cutting"
+   ],
+   "answer": 1,
+   "explain": "\"Absorbed\" means: Giving all your attention to something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Absorbed",
+   "options": [
+    "Peruse",
+    "Engrossed",
+    "Interlinked",
+    "Misanthropic"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Absorbed\" is \"Engrossed\". \"Absorbed\" means: Giving all your attention to something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Absorbed",
+   "options": [
+    "Distracted",
+    "Sustainable",
+    "Vain",
+    "Sever"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Absorbed\" is \"Distracted\". \"Absorbed\" means: Giving all your attention to something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Genial",
+   "options": [
+    "Not producing a desired result",
+    "Boring and rather frustrating",
+    "Extremely nice and happy",
+    "able to be believed or trusted"
+   ],
+   "answer": 2,
+   "explain": "\"Genial\" means: Extremely nice and happy"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Genial",
+   "options": [
+    "Glorify",
+    "Vulnerable",
+    "Cheerful",
+    "Exuberance"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Genial\" is \"Cheerful\". \"Genial\" means: Extremely nice and happy"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Genial",
+   "options": [
+    "Gloomy",
+    "Apathy",
+    "Enervate",
+    "Cautious"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Genial\" is \"Gloomy\". \"Genial\" means: Extremely nice and happy"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Jargon",
+   "options": [
+    "Able to be easily physically or Mentally hurt, Influenced, or Attacked",
+    "joined or connected together, with the parts that are joined often having an effect on each other",
+    "A person who deceives someone who trusts them, or has no loyalty",
+    "special words and phrases that are used by particular groups of people, especially in their work"
+   ],
+   "answer": 3,
+   "explain": "\"Jargon\" means: special words and phrases that are used by particular groups of people, especially in their work"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Jargon",
+   "options": [
+    "Resplendent",
+    "Earnestly",
+    "Cheered",
+    "Terminology"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Jargon\" is \"Terminology\". \"Jargon\" means: special words and phrases that are used by particular groups of people, especially in their work"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fierce",
+   "options": [
+    "causing a lot of damage or destruction",
+    "physically violent and frightening",
+    "Certain to happen; Unavoidable",
+    "Careful and using a lot of effort"
+   ],
+   "answer": 1,
+   "explain": "\"Fierce\" means: physically violent and frightening"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Fierce",
+   "options": [
+    "Peruse",
+    "Cautious",
+    "Misanthropic",
+    "Violent"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Fierce\" is \"Violent\". \"Fierce\" means: physically violent and frightening"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Fierce",
+   "options": [
+    "Credible",
+    "Gentle",
+    "Yield",
+    "Sustainable"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Fierce\" is \"Gentle\". \"Fierce\" means: physically violent and frightening"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Misanthropic",
+   "options": [
+    "those who will die",
+    "calm, kind, or soft",
+    "not liking other people",
+    "To agree to something"
+   ],
+   "answer": 2,
+   "explain": "\"Misanthropic\" means: not liking other people"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Misanthropic",
+   "options": [
+    "Antisocial",
+    "Utilitarian",
+    "Committed",
+    "Delight"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Misanthropic\" is \"Antisocial\". \"Misanthropic\" means: not liking other people"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Misanthropic",
+   "options": [
+    "Zealous",
+    "Sociable",
+    "Unbiased",
+    "Abound"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Misanthropic\" is \"Sociable\". \"Misanthropic\" means: not liking other people"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Cheered",
+   "options": [
+    "to give a loud shout of approval or encouragement:",
+    "A long and violent argument between people or families",
+    "Having a very bright or beautiful appearance",
+    "Impossible, or very difficult to believe,Extremely good"
+   ],
+   "answer": 0,
+   "explain": "\"Cheered\" means: to give a loud shout of approval or encouragement:"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Cheered",
+   "options": [
+    "Predicament",
+    "Applauded",
+    "Peruse",
+    "Absorbed"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Cheered\" is \"Applauded\". \"Cheered\" means: to give a loud shout of approval or encouragement:"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Cheered",
+   "options": [
+    "Consequence",
+    "Intriguing",
+    "Predicament",
+    "Booed"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Cheered\" is \"Booed\". \"Cheered\" means: to give a loud shout of approval or encouragement:"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Mitigation",
+   "options": [
+    "Based on false reasoning or information, and therefore not to be trusted",
+    "courage or confidence of a kind that other people find shocking or rude",
+    "the act of reducing how harmful, unpleasant, or bad something is",
+    "Able to be easily physically or Mentally hurt, Influenced, or Attacked"
+   ],
+   "answer": 2,
+   "explain": "\"Mitigation\" means: the act of reducing how harmful, unpleasant, or bad something is"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Mitigation",
+   "options": [
+    "Degradation",
+    "Alleviation",
+    "Treacherous",
+    "Utilitarian"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Mitigation\" is \"Alleviation\". \"Mitigation\" means: the act of reducing how harmful, unpleasant, or bad something is"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Mitigation",
+   "options": [
+    "Jargon",
+    "Mortal",
+    "Immerse",
+    "Aggravation"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Mitigation\" is \"Aggravation\". \"Mitigation\" means: the act of reducing how harmful, unpleasant, or bad something is"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Transgression",
+   "options": [
+    "to praise something or someone very much",
+    "With no energy or power, Weak",
+    "an action that breaks a law or rule",
+    "Using great energy and Enthusiasm"
+   ],
+   "answer": 2,
+   "explain": "\"Transgression\" means: an action that breaks a law or rule"
+  }
+ ]
+}

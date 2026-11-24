@@ -1,0 +1,713 @@
+{
+ "id": "chapter-01",
+ "category": "idioms",
+ "group": "Idioms",
+ "title": "Chapter 1 — Idioms",
+ "durationMins": 39,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Lily-livered",
+   "options": [
+    "To face risk",
+    "to miss an opportunity",
+    "Enmity/angry feeling",
+    "weak and cowardly"
+   ],
+   "answer": 3,
+   "explain": "\"Lily-livered\" means: weak and cowardly"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: To kick the bucket",
+   "options": [
+    "to die",
+    "To be uncertain",
+    "stop working",
+    "Very rare"
+   ],
+   "answer": 0,
+   "explain": "\"To kick the bucket\" means: to die"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Miss the boat",
+   "options": [
+    "To be uncertain",
+    "Get reprimanded / be punished",
+    "raining very heavily",
+    "to miss an opportunity"
+   ],
+   "answer": 3,
+   "explain": "\"Miss the boat\" means: to miss an opportunity"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: To bell the cat",
+   "options": [
+    "stop working",
+    "Enmity/angry feeling",
+    "To face risk",
+    "To dominate"
+   ],
+   "answer": 2,
+   "explain": "\"To bell the cat\" means: To face risk"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: A storm in a teacup",
+   "options": [
+    "the ability to look at something from a very high place so that you see a large area below you",
+    "To deal with a difficult situation in a very direct or confident way",
+    "A situation in which people are very angry or upset about something that is not important.",
+    "to do something too soon, especially without thinking carefully about it:"
+   ],
+   "answer": 2,
+   "explain": "\"A storm in a teacup\" means: A situation in which people are very angry or upset about something that is not important."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Sharp practice",
+   "options": [
+    "If you are not alert, you are likely to miss opportunities",
+    "there is always some truth behind a rumour or bad thing",
+    "the ability to speak with eloquence and fluency",
+    "Crafty or deceitful dealings, especially in business."
+   ],
+   "answer": 3,
+   "explain": "\"Sharp practice\" means: Crafty or deceitful dealings, especially in business."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Rule to roost",
+   "options": [
+    "stop working",
+    "In trouble",
+    "To dominate",
+    "Very rare"
+   ],
+   "answer": 2,
+   "explain": "\"Rule to roost\" means: To dominate"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Keep someone at arm's length",
+   "options": [
+    "to say what you think about something very directly:",
+    "to not allow someone to become too friendly with you.",
+    "Just barely/ by a very narrow margin; only just.",
+    "there is always some truth behind a rumour or bad thing"
+   ],
+   "answer": 1,
+   "explain": "\"Keep someone at arm's length\" means: to not allow someone to become too friendly with you."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: To tie someone (up) in knots",
+   "options": [
+    "To do something that you do not want to do because you have no other option.",
+    "to do everything that someone asks you to and treat them in a special way",
+    "to understand that something is likely to be untrue or incorrect.",
+    "to confuse someone and make them unable to explain something clearly"
+   ],
+   "answer": 3,
+   "explain": "\"To tie someone (up) in knots\" means: to confuse someone and make them unable to explain something clearly"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Scrape the barrel",
+   "options": [
+    "to confuse someone and make them unable to explain something clearly",
+    "To do something that you do not want to do because you have no other option.",
+    "To deal with a difficult situation in a very direct or confident way",
+    "to get into trouble because of failing to do what is required by (the law, a rule, etc."
+   ],
+   "answer": 1,
+   "explain": "\"Scrape the barrel\" means: To do something that you do not want to do because you have no other option."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: A dime a dozen",
+   "options": [
+    "To make trouble, cause a commotion",
+    "Very common and of no particular value",
+    "Get reprimanded / be punished",
+    "most importantly; more than anything else."
+   ],
+   "answer": 1,
+   "explain": "\"A dime a dozen\" means: Very common and of no particular value"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Beat about the bush",
+   "options": [
+    "Viewed with suspicion, distrust, or disapproval.",
+    "most importantly; more than anything else.",
+    "Just barely/ by a very narrow margin; only just.",
+    "To avoid getting to the point of an issue."
+   ],
+   "answer": 3,
+   "explain": "\"Beat about the bush\" means: To avoid getting to the point of an issue."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: To prime the pump",
+   "options": [
+    "To do something that you do not want to do because you have no other option.",
+    "To criticize someone's opinions or ideas and stop people believing them or being excited about them",
+    "stimulate the growth or success of something by doing something, usually, supplying it with money.",
+    "true personality./ the kind of person someone really is rather than what the person seems to be:"
+   ],
+   "answer": 2,
+   "explain": "\"To prime the pump\" means: stimulate the growth or success of something by doing something, usually, supplying it with money."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Back against the wall",
+   "options": [
+    "to say what you think about something very directly:",
+    "Be in a difficult situation from where escape is difficult",
+    "start the day in a bad mood, which continues all day long.",
+    "to encounter with someone that proves more powerful or troublesome"
+   ],
+   "answer": 1,
+   "explain": "\"Back against the wall\" means: Be in a difficult situation from where escape is difficult"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: To walk on the air",
+   "options": [
+    "To be in a dangerous risky position",
+    "Get reprimanded / be punished",
+    "a problem that is difficult to solve",
+    "to feel extremely excited or happy"
+   ],
+   "answer": 3,
+   "explain": "\"To walk on the air\" means: to feel extremely excited or happy"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Bad iron",
+   "options": [
+    "raining very heavily",
+    "To be uncertain",
+    "Bad luck",
+    "In trouble"
+   ],
+   "answer": 2,
+   "explain": "\"Bad iron\" means: Bad luck"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: By the skin of your teeth",
+   "options": [
+    "shift the responsibility for something to someone else",
+    "Just barely/ by a very narrow margin; only just.",
+    "Crafty or deceitful dealings, especially in business.",
+    "to say what you think about something very directly:"
+   ],
+   "answer": 1,
+   "explain": "\"By the skin of your teeth\" means: Just barely/ by a very narrow margin; only just."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Through thick and thin",
+   "options": [
+    "the ability to speak with eloquence and fluency",
+    "under all circumstances, no matter how difficult.",
+    "to say what you think about something very directly:",
+    "to not allow someone to become too friendly with you."
+   ],
+   "answer": 1,
+   "explain": "\"Through thick and thin\" means: under all circumstances, no matter how difficult."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Blessing in disguise",
+   "options": [
+    "to be quick to understand and react to things./ be alert to new ideas, methods, and trends.",
+    "A situation in which people are very angry or upset about something that is not important.",
+    "to do something too soon, especially without thinking carefully about it:",
+    "Something that seems bad or unlucky at first but causes something good to happen later"
+   ],
+   "answer": 3,
+   "explain": "\"Blessing in disguise\" means: Something that seems bad or unlucky at first but causes something good to happen later"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: To be in two minds",
+   "options": [
+    "To be uncertain",
+    "To dominate",
+    "In trouble",
+    "weak and cowardly"
+   ],
+   "answer": 0,
+   "explain": "\"To be in two minds\" means: To be uncertain"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Fall foul of",
+   "options": [
+    "to get into trouble because of failing to do what is required by (the law, a rule, etc.",
+    "to do everything that someone asks you to and treat them in a special way",
+    "stimulate the growth or success of something by doing something, usually, supplying it with money.",
+    "To do something that you do not want to do because you have no other option."
+   ],
+   "answer": 0,
+   "explain": "\"Fall foul of\" means: to get into trouble because of failing to do what is required by (the law, a rule, etc."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Gift of the gab",
+   "options": [
+    "shift the responsibility for something to someone else",
+    "most importantly; more than anything else.",
+    "there is always some truth behind a rumour or bad thing",
+    "the ability to speak with eloquence and fluency"
+   ],
+   "answer": 3,
+   "explain": "\"Gift of the gab\" means: the ability to speak with eloquence and fluency"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Get into a scrape",
+   "options": [
+    "Involved in a problem",
+    "raining very heavily",
+    "To face risk",
+    "To become worse"
+   ],
+   "answer": 0,
+   "explain": "\"Get into a scrape\" means: Involved in a problem"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: A bolt from the blue",
+   "options": [
+    "In trouble, in a serious predicament.",
+    "completely obsolete/ Totally or assuredly dead",
+    "A complete surprise /an unexpected disaster.",
+    "the ability to speak with eloquence and fluency"
+   ],
+   "answer": 2,
+   "explain": "\"A bolt from the blue\" means: A complete surprise /an unexpected disaster."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Blow something out of proportion",
+   "options": [
+    "Be in a difficult situation from where escape is difficult",
+    "to treat a particular event or problem far too seriously:",
+    "Just barely/ by a very narrow margin; only just.",
+    "start the day in a bad mood, which continues all day long."
+   ],
+   "answer": 1,
+   "explain": "\"Blow something out of proportion\" means: to treat a particular event or problem far too seriously:"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: To go to the dogs",
+   "options": [
+    "To dominate",
+    "To be uncertain",
+    "To become worse",
+    "stop working"
+   ],
+   "answer": 2,
+   "explain": "\"To go to the dogs\" means: To become worse"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Up the creek",
+   "options": [
+    "To avoid getting to the point of an issue.",
+    "Disagreeing with each other's ideas",
+    "a problem that is difficult to solve",
+    "In trouble, in a serious predicament."
+   ],
+   "answer": 3,
+   "explain": "\"Up the creek\" means: In trouble, in a serious predicament."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Back to the drawing board",
+   "options": [
+    "to plan it all over again",
+    "Get reprimanded / be punished",
+    "To become worse",
+    "to miss an opportunity"
+   ],
+   "answer": 0,
+   "explain": "\"Back to the drawing board\" means: to plan it all over again"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Jumped the gun",
+   "options": [
+    "to understand that something is likely to be untrue or incorrect.",
+    "If you are not alert, you are likely to miss opportunities",
+    "Something that seems bad or unlucky at first but causes something good to happen later",
+    "to do something too soon, especially without thinking carefully about it:"
+   ],
+   "answer": 3,
+   "explain": "\"Jumped the gun\" means: to do something too soon, especially without thinking carefully about it:"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Be on the ball",
+   "options": [
+    "to decide what to do when you know what is happening, rather than planning in advance",
+    "A situation in which people are very angry or upset about something that is not important.",
+    "to be quick to understand and react to things./ be alert to new ideas, methods, and trends.",
+    "to do everything that someone asks you to and treat them in a special way"
+   ],
+   "answer": 2,
+   "explain": "\"Be on the ball\" means: to be quick to understand and react to things./ be alert to new ideas, methods, and trends."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Stir up a hornets' nest",
+   "options": [
+    "completely obsolete/ Totally or assuredly dead",
+    "To be in a dangerous risky position",
+    "to plan it all over again",
+    "To make trouble, cause a commotion"
+   ],
+   "answer": 3,
+   "explain": "\"Stir up a hornets' nest\" means: To make trouble, cause a commotion"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Face the music",
+   "options": [
+    "a problem that is difficult to solve",
+    "Get reprimanded / be punished",
+    "to miss an opportunity",
+    "The worst possible situation"
+   ],
+   "answer": 1,
+   "explain": "\"Face the music\" means: Get reprimanded / be punished"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: To rain cats and dogs",
+   "options": [
+    "raining very heavily",
+    "to plan it all over again",
+    "In perfect order",
+    "stop working"
+   ],
+   "answer": 0,
+   "explain": "\"To rain cats and dogs\" means: raining very heavily"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: To take a bull by the horns",
+   "options": [
+    "To do something that you do not want to do because you have no other option.",
+    "to do something too soon, especially without thinking carefully about it:",
+    "to understand that something is likely to be untrue or incorrect.",
+    "To deal with a difficult situation in a very direct or confident way"
+   ],
+   "answer": 3,
+   "explain": "\"To take a bull by the horns\" means: To deal with a difficult situation in a very direct or confident way"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Call it a day",
+   "options": [
+    "stop working",
+    "To dominate",
+    "To become worse",
+    "to die"
+   ],
+   "answer": 0,
+   "explain": "\"Call it a day\" means: stop working"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Once in a blue moon",
+   "options": [
+    "To face risk",
+    "To become worse",
+    "Very rare",
+    "In trouble"
+   ],
+   "answer": 2,
+   "explain": "\"Once in a blue moon\" means: Very rare"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Under the cloud",
+   "options": [
+    "to say what you think about something very directly:",
+    "Viewed with suspicion, distrust, or disapproval.",
+    "there is always some truth behind a rumour or bad thing",
+    "A complete surprise /an unexpected disaster."
+   ],
+   "answer": 1,
+   "explain": "\"Under the cloud\" means: Viewed with suspicion, distrust, or disapproval."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: A perfect storm",
+   "options": [
+    "To be in a dangerous risky position",
+    "The worst possible situation",
+    "To make trouble, cause a commotion",
+    "In trouble, in a serious predicament."
+   ],
+   "answer": 1,
+   "explain": "\"A perfect storm\" means: The worst possible situation"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Bad blood",
+   "options": [
+    "Involved in a problem",
+    "In perfect order",
+    "Enmity/angry feeling",
+    "Unexpectedly"
+   ],
+   "answer": 2,
+   "explain": "\"Bad blood\" means: Enmity/angry feeling"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: As dead as a doornail",
+   "options": [
+    "most importantly; more than anything else.",
+    "Very common and of no particular value",
+    "completely obsolete/ Totally or assuredly dead",
+    "to think slowly and carefully about something:"
+   ],
+   "answer": 2,
+   "explain": "\"As dead as a doornail\" means: completely obsolete/ Totally or assuredly dead"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Catch a tarter",
+   "options": [
+    "to encounter with someone that proves more powerful or troublesome",
+    "Be in a difficult situation from where escape is difficult",
+    "to do everything that someone asks you to and treat them in a special way",
+    "start the day in a bad mood, which continues all day long."
+   ],
+   "answer": 0,
+   "explain": "\"Catch a tarter\" means: to encounter with someone that proves more powerful or troublesome"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Cut corners",
+   "options": [
+    "to do something in the easiest, cheapest, or fastest way",
+    "there is always some truth behind a rumour or bad thing",
+    "to say what you think about something very directly:",
+    "shift the responsibility for something to someone else"
+   ],
+   "answer": 0,
+   "explain": "\"Cut corners\" means: to do something in the easiest, cheapest, or fastest way"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Hit the jackpot",
+   "options": [
+    "to win the largest prize in a competition or game./ to achieve great success",
+    "to be quick to understand and react to things./ be alert to new ideas, methods, and trends.",
+    "Something that seems bad or unlucky at first but causes something good to happen later",
+    "to understand that something is likely to be untrue or incorrect."
+   ],
+   "answer": 0,
+   "explain": "\"Hit the jackpot\" means: to win the largest prize in a competition or game./ to achieve great success"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: True colours",
+   "options": [
+    "true personality./ the kind of person someone really is rather than what the person seems to be:",
+    "A situation in which people are very angry or upset about something that is not important.",
+    "stimulate the growth or success of something by doing something, usually, supplying it with money.",
+    "to win the largest prize in a competition or game./ to achieve great success"
+   ],
+   "answer": 0,
+   "explain": "\"True colours\" means: true personality./ the kind of person someone really is rather than what the person seems to be:"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Bird`s eye view",
+   "options": [
+    "the ability to look at something from a very high place so that you see a large area below you",
+    "to do something too soon, especially without thinking carefully about it:",
+    "true personality./ the kind of person someone really is rather than what the person seems to be:",
+    "Something that seems bad or unlucky at first but causes something good to happen later"
+   ],
+   "answer": 0,
+   "explain": "\"Bird`s eye view\" means: the ability to look at something from a very high place so that you see a large area below you"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Take something with a grain of salt",
+   "options": [
+    "to understand that something is likely to be untrue or incorrect.",
+    "start the day in a bad mood, which continues all day long.",
+    "to treat a particular event or problem far too seriously:",
+    "to encounter with someone that proves more powerful or troublesome"
+   ],
+   "answer": 0,
+   "explain": "\"Take something with a grain of salt\" means: to understand that something is likely to be untrue or incorrect."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Get up on the wrong side of the bed",
+   "options": [
+    "start the day in a bad mood, which continues all day long.",
+    "to do something in the easiest, cheapest, or fastest way",
+    "If you are not alert, you are likely to miss opportunities",
+    "to not allow someone to become too friendly with you."
+   ],
+   "answer": 0,
+   "explain": "\"Get up on the wrong side of the bed\" means: start the day in a bad mood, which continues all day long."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Speak one’s mind",
+   "options": [
+    "to treat a particular event or problem far too seriously:",
+    "to say what you think about something very directly:",
+    "the ability to speak with eloquence and fluency",
+    "start the day in a bad mood, which continues all day long."
+   ],
+   "answer": 1,
+   "explain": "\"Speak one’s mind\" means: to say what you think about something very directly:"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Pass the buck",
+   "options": [
+    "shift the responsibility for something to someone else",
+    "there is always some truth behind a rumour or bad thing",
+    "the ability to speak with eloquence and fluency",
+    "to treat a particular event or problem far too seriously:"
+   ],
+   "answer": 0,
+   "explain": "\"Pass the buck\" means: shift the responsibility for something to someone else"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Chew the cud",
+   "options": [
+    "In trouble, in a serious predicament.",
+    "to think slowly and carefully about something:",
+    "A complete surprise /an unexpected disaster.",
+    "the ability to speak with eloquence and fluency"
+   ],
+   "answer": 1,
+   "explain": "\"Chew the cud\" means: to think slowly and carefully about something:"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Apple pie order",
+   "options": [
+    "to miss an opportunity",
+    "To dominate",
+    "In perfect order",
+    "Unexpectedly"
+   ],
+   "answer": 2,
+   "explain": "\"Apple pie order\" means: In perfect order"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Pipe dream",
+   "options": [
+    "to treat a particular event or problem far too seriously:",
+    "there is always some truth behind a rumour or bad thing",
+    "an idea or plan that is impossible or very unlikely to happen",
+    "to encounter with someone that proves more powerful or troublesome"
+   ],
+   "answer": 2,
+   "explain": "\"Pipe dream\" means: an idea or plan that is impossible or very unlikely to happen"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: At cross purposes",
+   "options": [
+    "to feel extremely excited or happy",
+    "Very common and of no particular value",
+    "To be in a dangerous risky position",
+    "Disagreeing with each other's ideas"
+   ],
+   "answer": 3,
+   "explain": "\"At cross purposes\" means: Disagreeing with each other's ideas"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Play/Do something by the ear",
+   "options": [
+    "To do something that you do not want to do because you have no other option.",
+    "to decide what to do when you know what is happening, rather than planning in advance",
+    "to confuse someone and make them unable to explain something clearly",
+    "to do something too soon, especially without thinking carefully about it:"
+   ],
+   "answer": 1,
+   "explain": "\"Play/Do something by the ear\" means: to decide what to do when you know what is happening, rather than planning in advance"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: You snooze, you lose",
+   "options": [
+    "to say what you think about something very directly:",
+    "to encounter with someone that proves more powerful or troublesome",
+    "to not allow someone to become too friendly with you.",
+    "If you are not alert, you are likely to miss opportunities"
+   ],
+   "answer": 3,
+   "explain": "\"You snooze, you lose\" means: If you are not alert, you are likely to miss opportunities"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Out of the blue",
+   "options": [
+    "Very rare",
+    "Unexpectedly",
+    "weak and cowardly",
+    "In perfect order"
+   ],
+   "answer": 1,
+   "explain": "\"Out of the blue\" means: Unexpectedly"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Tread/Skate on thin ice",
+   "options": [
+    "to plan it all over again",
+    "to feel extremely excited or happy",
+    "Very common and of no particular value",
+    "To be in a dangerous risky position"
+   ],
+   "answer": 3,
+   "explain": "\"Tread/Skate on thin ice\" means: To be in a dangerous risky position"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: No smoke without fire/where there's smoke there's fire",
+   "options": [
+    "Be in a difficult situation from where escape is difficult",
+    "there is always some truth behind a rumour or bad thing",
+    "under all circumstances, no matter how difficult.",
+    "shift the responsibility for something to someone else"
+   ],
+   "answer": 1,
+   "explain": "\"No smoke without fire/where there's smoke there's fire\" means: there is always some truth behind a rumour or bad thing"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: In a soup",
+   "options": [
+    "To dominate",
+    "Enmity/angry feeling",
+    "In trouble",
+    "Unexpectedly"
+   ],
+   "answer": 2,
+   "explain": "\"In a soup\" means: In trouble"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Familiarity breeds contempt",
+   "options": [
+    "Something that seems bad or unlucky at first but causes something good to happen later",
+    "true personality./ the kind of person someone really is rather than what the person seems to be:",
+    "used to say that if you know someone very well you stop respecting them because you have seen all of their bad qualities",
+    "to do something too soon, especially without thinking carefully about it:"
+   ],
+   "answer": 2,
+   "explain": "\"Familiarity breeds contempt\" means: used to say that if you know someone very well you stop respecting them because you have seen all of their bad qualities"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: To throw/pour cold water on",
+   "options": [
+    "to confuse someone and make them unable to explain something clearly",
+    "To criticize someone's opinions or ideas and stop people believing them or being excited about them",
+    "A situation in which people are very angry or upset about something that is not important.",
+    "To do something that you do not want to do because you have no other option."
+   ],
+   "answer": 1,
+   "explain": "\"To throw/pour cold water on\" means: To criticize someone's opinions or ideas and stop people believing them or being excited about them"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: First and foremost",
+   "options": [
+    "most importantly; more than anything else.",
+    "a problem that is difficult to solve",
+    "A complete surprise /an unexpected disaster.",
+    "To avoid getting to the point of an issue."
+   ],
+   "answer": 0,
+   "explain": "\"First and foremost\" means: most importantly; more than anything else."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: A hard nut to crack",
+   "options": [
+    "to think slowly and carefully about something:",
+    "To make trouble, cause a commotion",
+    "Get reprimanded / be punished",
+    "a problem that is difficult to solve"
+   ],
+   "answer": 3,
+   "explain": "\"A hard nut to crack\" means: a problem that is difficult to solve"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given idiom/phrase: Dance attendance",
+   "options": [
+    "to get into trouble because of failing to do what is required by (the law, a rule, etc.",
+    "start the day in a bad mood, which continues all day long.",
+    "to do everything that someone asks you to and treat them in a special way",
+    "an idea or plan that is impossible or very unlikely to happen"
+   ],
+   "answer": 2,
+   "explain": "\"Dance attendance\" means: to do everything that someone asks you to and treat them in a special way"
+  }
+ ]
+}

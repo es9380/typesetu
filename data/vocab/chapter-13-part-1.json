@@ -1,0 +1,515 @@
+{
+ "id": "chapter-13-part-1",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 13 — Syn & Ant (Part 1)",
+ "durationMins": 28,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Resentment",
+   "options": [
+    "To plan to do something bad or illegal with a group of people",
+    "A feeling of anger or unhappiness about something that you think is unfair.",
+    "Being careful about what one says or does to avoid embarrassing or upsetting others.",
+    "To make a substance impure by adding something else to it"
+   ],
+   "answer": 1,
+   "explain": "\"Resentment\" means: A feeling of anger or unhappiness about something that you think is unfair."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Resentment",
+   "options": [
+    "Itemize",
+    "Erroneous",
+    "Exhaling",
+    "Bitterness"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Resentment\" is \"Bitterness\". \"Resentment\" means: A feeling of anger or unhappiness about something that you think is unfair."
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Resentment",
+   "options": [
+    "Worn",
+    "Eager",
+    "Rotate",
+    "Contentment"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Resentment\" is \"Contentment\". \"Resentment\" means: A feeling of anger or unhappiness about something that you think is unfair."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Pompous",
+   "options": [
+    "Showing that you think you are more important than other people especially by using long and formal words.",
+    "showing or having an insensitive and cruel disregard for others",
+    "A feeling of anger or unhappiness about something that you think is unfair.",
+    "The act or an instance of going back to an earlier and lower level especially of intelligence or behavior."
+   ],
+   "answer": 0,
+   "explain": "\"Pompous\" means: Showing that you think you are more important than other people especially by using long and formal words."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Pompous",
+   "options": [
+    "Callous",
+    "Arrogant",
+    "Asphyxiation",
+    "Pervasive"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Pompous\" is \"Arrogant\". \"Pompous\" means: Showing that you think you are more important than other people especially by using long and formal words."
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Pompous",
+   "options": [
+    "Enchanting",
+    "Destitute",
+    "Antiquated",
+    "Humble"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Pompous\" is \"Humble\". \"Pompous\" means: Showing that you think you are more important than other people especially by using long and formal words."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Keen",
+   "options": [
+    "Able to do something skillfully",
+    "Having or showing profound knowledge",
+    "Existing in all parts of a place or thing",
+    "Wanting to do something very much"
+   ],
+   "answer": 3,
+   "explain": "\"Keen\" means: Wanting to do something very much"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Keen",
+   "options": [
+    "Abominable",
+    "Competent",
+    "Eager",
+    "Bizarre"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Keen\" is \"Eager\". \"Keen\" means: Wanting to do something very much"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Keen",
+   "options": [
+    "Conspicuous",
+    "Reluctant",
+    "Retrogression",
+    "Compel"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Keen\" is \"Reluctant\". \"Keen\" means: Wanting to do something very much"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Heckle",
+   "options": [
+    "Charming and attractive in a seductive way",
+    "A fabricated replication of something meant to appear like the real thing",
+    "To mentally grasp the meaning or reason behind something",
+    "To interrupt discussion by asking difficult questions or rude comments"
+   ],
+   "answer": 3,
+   "explain": "\"Heckle\" means: To interrupt discussion by asking difficult questions or rude comments"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Heckle",
+   "options": [
+    "Deride",
+    "Scrutiny",
+    "Interrupt",
+    "Retrogression"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Heckle\" is \"Interrupt\". \"Heckle\" means: To interrupt discussion by asking difficult questions or rude comments"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Compel",
+   "options": [
+    "To force someone to do something",
+    "Having or showing profound knowledge",
+    "The state of being honoured",
+    "Not correct, based on wrong Information"
+   ],
+   "answer": 0,
+   "explain": "\"Compel\" means: To force someone to do something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Compel",
+   "options": [
+    "Antiquated",
+    "Force",
+    "Ponder",
+    "Adulterated"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Compel\" is \"Force\". \"Compel\" means: To force someone to do something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Deride",
+   "options": [
+    "Showing that you think you are more important than other people especially by using long and formal words.",
+    "To interrupt discussion by asking difficult questions or rude comments",
+    "The act or an instance of going back to an earlier and lower level especially of intelligence or behavior.",
+    "To laught at someone in a way that shows you think they are stupid or of no value."
+   ],
+   "answer": 3,
+   "explain": "\"Deride\" means: To laught at someone in a way that shows you think they are stupid or of no value."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Deride",
+   "options": [
+    "Diminutive",
+    "Compel",
+    "Mock",
+    "Callous"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Deride\" is \"Mock\". \"Deride\" means: To laught at someone in a way that shows you think they are stupid or of no value."
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Deride",
+   "options": [
+    "Praise",
+    "Competent",
+    "Pompous",
+    "Efface"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Deride\" is \"Praise\". \"Deride\" means: To laught at someone in a way that shows you think they are stupid or of no value."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Colossal",
+   "options": [
+    "As in disgusting",
+    "that you must do",
+    "Extremely Large",
+    "Relaxed; Peaceful"
+   ],
+   "answer": 2,
+   "explain": "\"Colossal\" means: Extremely Large"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Colossal",
+   "options": [
+    "Enormous",
+    "Deteriorate",
+    "Retrogression",
+    "Erudite"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Colossal\" is \"Enormous\". \"Colossal\" means: Extremely Large"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Colossal",
+   "options": [
+    "Retrogression",
+    "Tiny",
+    "Keen",
+    "Makeshift"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Colossal\" is \"Tiny\". \"Colossal\" means: Extremely Large"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Exaltation",
+   "options": [
+    "A feeling or state of extreme happiness.",
+    "Wanting to do something very much",
+    "Existing in all parts of a place or thing",
+    "To lessen in value or ability"
+   ],
+   "answer": 0,
+   "explain": "\"Exaltation\" means: A feeling or state of extreme happiness."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Exaltation",
+   "options": [
+    "Frivolous",
+    "Assuagement",
+    "Elation",
+    "Abominable"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Exaltation\" is \"Elation\". \"Exaltation\" means: A feeling or state of extreme happiness."
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Exaltation",
+   "options": [
+    "Retrogression",
+    "Depression",
+    "Callous",
+    "Erudite"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Exaltation\" is \"Depression\". \"Exaltation\" means: A feeling or state of extreme happiness."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Rotate",
+   "options": [
+    "To move something in a circle",
+    "Bold and without shame",
+    "continuing forever, never-ending",
+    "Having or showing profound knowledge"
+   ],
+   "answer": 0,
+   "explain": "\"Rotate\" means: To move something in a circle"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Rotate",
+   "options": [
+    "Antiquated",
+    "Revolve",
+    "Dignity",
+    "Deteriorate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Rotate\" is \"Revolve\". \"Rotate\" means: To move something in a circle"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Scrutiny",
+   "options": [
+    "Careful and detailed examination of something in order to get information about it.",
+    "To cause someone to be unable to breathe usually resulting into death.",
+    "The act or an instance of going back to an earlier and lower level especially of intelligence or behavior.",
+    "To plan to do something bad or illegal with a group of people"
+   ],
+   "answer": 0,
+   "explain": "\"Scrutiny\" means: Careful and detailed examination of something in order to get information about it."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Scrutiny",
+   "options": [
+    "Retrogression",
+    "Examination",
+    "Specify",
+    "Antiquated"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Scrutiny\" is \"Examination\". \"Scrutiny\" means: Careful and detailed examination of something in order to get information about it."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Competent",
+   "options": [
+    "Captivating or charming",
+    "Able to do something skillfully",
+    "Make less severe or painful",
+    "To produce a detailed list of something"
+   ],
+   "answer": 1,
+   "explain": "\"Competent\" means: Able to do something skillfully"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Competent",
+   "options": [
+    "Capable",
+    "Brazen",
+    "Exaltation",
+    "Asphyxiation"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Competent\" is \"Capable\". \"Competent\" means: Able to do something skillfully"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Competent",
+   "options": [
+    "Exhaling",
+    "Frivolous",
+    "Incompetent",
+    "Itemize"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Competent\" is \"Incompetent\". \"Competent\" means: Able to do something skillfully"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Perpetual",
+   "options": [
+    "To move something in a circle",
+    "To produce a detailed list of something",
+    "continuing forever, never-ending",
+    "A feeling or state of extreme happiness."
+   ],
+   "answer": 2,
+   "explain": "\"Perpetual\" means: continuing forever, never-ending"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Perpetual",
+   "options": [
+    "Compel",
+    "Forgery",
+    "Everlasting",
+    "Antiquated"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Perpetual\" is \"Everlasting\". \"Perpetual\" means: continuing forever, never-ending"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Perpetual",
+   "options": [
+    "Temporary",
+    "Bizarre",
+    "Deride",
+    "Antiquated"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Perpetual\" is \"Temporary\". \"Perpetual\" means: continuing forever, never-ending"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Pervasive",
+   "options": [
+    "Existing in all parts of a place or thing",
+    "To force someone to do something",
+    "lacking money or material possessions",
+    "A feeling or state of extreme happiness."
+   ],
+   "answer": 0,
+   "explain": "\"Pervasive\" means: Existing in all parts of a place or thing"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Pervasive",
+   "options": [
+    "Mitigate",
+    "Retrogression",
+    "Brazen",
+    "Widespread"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Pervasive\" is \"Widespread\". \"Pervasive\" means: Existing in all parts of a place or thing"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Pervasive",
+   "options": [
+    "Ponder",
+    "Colossal",
+    "Limited",
+    "Obligatory"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Pervasive\" is \"Limited\". \"Pervasive\" means: Existing in all parts of a place or thing"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Asphyxiation",
+   "options": [
+    "Careful and detailed examination of something in order to get information about it.",
+    "Being careful about what one says or does to avoid embarrassing or upsetting others.",
+    "A feeling of anger or unhappiness about something that you think is unfair.",
+    "To cause someone to be unable to breathe usually resulting into death."
+   ],
+   "answer": 3,
+   "explain": "\"Asphyxiation\" means: To cause someone to be unable to breathe usually resulting into death."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Asphyxiation",
+   "options": [
+    "Brazen",
+    "Suffocation",
+    "Abominable",
+    "Worn"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Asphyxiation\" is \"Suffocation\". \"Asphyxiation\" means: To cause someone to be unable to breathe usually resulting into death."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Bizarre",
+   "options": [
+    "that you must do",
+    "Very strange",
+    "Of no real worth",
+    "Easy to see or notice"
+   ],
+   "answer": 1,
+   "explain": "\"Bizarre\" means: Very strange"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Bizarre",
+   "options": [
+    "Keen",
+    "Mitigate",
+    "Asphyxiation",
+    "Strange"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Bizarre\" is \"Strange\". \"Bizarre\" means: Very strange"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Bizarre",
+   "options": [
+    "Pervasive",
+    "Tranquil",
+    "Eager",
+    "Ordinary"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Bizarre\" is \"Ordinary\". \"Bizarre\" means: Very strange"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Tranquil",
+   "options": [
+    "Relaxed; Peaceful",
+    "To emit air",
+    "that you must do",
+    "Of no real worth"
+   ],
+   "answer": 0,
+   "explain": "\"Tranquil\" means: Relaxed; Peaceful"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Tranquil",
+   "options": [
+    "Bewitching",
+    "Perilous",
+    "Peaceful",
+    "Mitigate"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Tranquil\" is \"Peaceful\". \"Tranquil\" means: Relaxed; Peaceful"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Tranquil",
+   "options": [
+    "Disturbed",
+    "Dignity",
+    "Heckle",
+    "Forgery"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Tranquil\" is \"Disturbed\". \"Tranquil\" means: Relaxed; Peaceful"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Discreet",
+   "options": [
+    "Showing that you think you are more important than other people especially by using long and formal words.",
+    "To make a substance impure by adding something else to it",
+    "Being careful about what one says or does to avoid embarrassing or upsetting others.",
+    "To laught at someone in a way that shows you think they are stupid or of no value."
+   ],
+   "answer": 2,
+   "explain": "\"Discreet\" means: Being careful about what one says or does to avoid embarrassing or upsetting others."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Discreet",
+   "options": [
+    "Deride",
+    "Tactful",
+    "Forgery",
+    "Tranquil"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Discreet\" is \"Tactful\". \"Discreet\" means: Being careful about what one says or does to avoid embarrassing or upsetting others."
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Discreet",
+   "options": [
+    "Asphyxiation",
+    "Destitute",
+    "Enchanting",
+    "Indiscreet"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Discreet\" is \"Indiscreet\". \"Discreet\" means: Being careful about what one says or does to avoid embarrassing or upsetting others."
+  }
+ ]
+}

@@ -1,0 +1,680 @@
+{
+ "id": "chapter-10-part-2",
+ "category": "root_words",
+ "group": "Root Words",
+ "title": "Chapter 10 — Root Word-04 (Part 2)",
+ "durationMins": 37,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Monarch",
+   "options": [
+    "belief",
+    "Going back.",
+    "a ruler.",
+    "Reborn"
+   ],
+   "answer": 2,
+   "explain": "\"Monarch\" means: a ruler."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Monarchy",
+   "options": [
+    "A species/ a kind/ a type.",
+    "A government of one ruler",
+    "one who believes all Gods.",
+    "to sing/to give/ utterance"
+   ],
+   "answer": 1,
+   "explain": "\"Monarchy\" means: A government of one ruler"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Monochord",
+   "options": [
+    "An instrument of one string.",
+    "to absorb ideas or knowledge.",
+    "Head of family tribe or race.",
+    "one who traces genealogies."
+   ],
+   "answer": 0,
+   "explain": "\"Monochord\" means: An instrument of one string."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Monody",
+   "options": [
+    "Relating to the voice, oral.",
+    "related to genes or heredity.",
+    "A funeral song by one voice.",
+    "A strong or invincible fort."
+   ],
+   "answer": 2,
+   "explain": "\"Monody\" means: A funeral song by one voice."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Monogamy",
+   "options": [
+    "war-mindedness.",
+    "Rule by all.",
+    "belief in god.",
+    "one marriage."
+   ],
+   "answer": 3,
+   "explain": "\"Monogamy\" means: one marriage."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Monodrama",
+   "options": [
+    "Belonging to by birth.",
+    "Divide into two parts.",
+    "A play with one actor.",
+    "very eager to fight."
+   ],
+   "answer": 2,
+   "explain": "\"Monodrama\" means: A play with one actor."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Monocracy",
+   "options": [
+    "Not inclined to believe.",
+    "Government by one ruler.",
+    "A human sound, a word.",
+    "- Relating to all people."
+   ],
+   "answer": 1,
+   "explain": "\"Monocracy\" means: Government by one ruler."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Monochromatic",
+   "options": [
+    "equal day and night.",
+    "having two lenses.",
+    "written upon tomb.",
+    "of one colour only."
+   ],
+   "answer": 3,
+   "explain": "\"Monochromatic\" means: of one colour only."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Monotone",
+   "options": [
+    "- two sides.",
+    "sameness.",
+    "Inborn",
+    "Origin"
+   ],
+   "answer": 1,
+   "explain": "\"Monotone\" means: sameness."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Bifocals",
+   "options": [
+    "having two lenses.",
+    "Strong area/field.",
+    "stock, category.",
+    "- having two legs."
+   ],
+   "answer": 0,
+   "explain": "\"Bifocals\" means: having two lenses."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Bifurcate",
+   "options": [
+    "Belonging to by birth.",
+    "a maker of vocabularies.",
+    "Divide into two parts.",
+    "Tending to fight/war"
+   ],
+   "answer": 2,
+   "explain": "\"Bifurcate\" means: Divide into two parts."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Biannual",
+   "options": [
+    "to praise by saying nice words.",
+    "to walk at night while sleeping.",
+    "related to genes or heredity.",
+    "occurring one time in two years."
+   ],
+   "answer": 3,
+   "explain": "\"Biannual\" means: occurring one time in two years."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Biped",
+   "options": [
+    "very eager to fight.",
+    "Official statement.",
+    "having two lenses.",
+    "- having two legs."
+   ],
+   "answer": 3,
+   "explain": "\"Biped\" means: - having two legs."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Bicentennial",
+   "options": [
+    "Official statement.",
+    "equal day and night.",
+    "to move backward.",
+    "two hundred years."
+   ],
+   "answer": 3,
+   "explain": "\"Bicentennial\" means: two hundred years."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Bipartisan",
+   "options": [
+    "Origin from all cells.",
+    "for both the parties.",
+    "Belonging to by birth.",
+    "which causes laughter."
+   ],
+   "answer": 1,
+   "explain": "\"Bipartisan\" means: for both the parties."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Binoculars",
+   "options": [
+    "shining at night",
+    "equal day and night.",
+    "stock, category.",
+    "having two lenses."
+   ],
+   "answer": 3,
+   "explain": "\"Binoculars\" means: having two lenses."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Bilateral",
+   "options": [
+    "- two sides.",
+    "having eyes.",
+    "upon layer.",
+    "to move ahead."
+   ],
+   "answer": 0,
+   "explain": "\"Bilateral\" means: - two sides."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Allotheism",
+   "options": [
+    "occurring one time in two years.",
+    "to praise by saying nice words.",
+    "a quotation at the head of a chapter.",
+    "The worship of other or strange gods."
+   ],
+   "answer": 3,
+   "explain": "\"Allotheism\" means: The worship of other or strange gods."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Antitheism",
+   "options": [
+    "Head of family tribe or race.",
+    "The belief that there is no god.",
+    "to praise by saying nice words.",
+    "occurring one time in two years."
+   ],
+   "answer": 1,
+   "explain": "\"Antitheism\" means: The belief that there is no god."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Antitheist",
+   "options": [
+    "a person who is opposed to belief in the existence of god.",
+    "an enclosure which is considered to be very strong.",
+    "rule by all means universal rule.",
+    "The worship of other or strange gods."
+   ],
+   "answer": 0,
+   "explain": "\"Antitheist\" means: a person who is opposed to belief in the existence of god."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Apotheosis",
+   "options": [
+    "a quotation at the head of a chapter.",
+    "A collection of words and phrases.",
+    "The transportation of a human being into a god.",
+    "glasses that increase the range of two eyes."
+   ],
+   "answer": 2,
+   "explain": "\"Apotheosis\" means: The transportation of a human being into a god."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Theology",
+   "options": [
+    "growing stage.",
+    "cause of war.",
+    "Study of god.",
+    "goddess of war."
+   ],
+   "answer": 2,
+   "explain": "\"Theology\" means: Study of god."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Theologian",
+   "options": [
+    "one who studies god.",
+    "to cite for support.",
+    "measurement of around.",
+    "of one colour only."
+   ],
+   "answer": 0,
+   "explain": "\"Theologian\" means: one who studies god."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Atheologian",
+   "options": [
+    "to walk at night while sleeping.",
+    "one who is opposed to the study of god.",
+    "The custom of having one husband at a time.",
+    "related to equal day and night."
+   ],
+   "answer": 1,
+   "explain": "\"Atheologian\" means: one who is opposed to the study of god."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Theism",
+   "options": [
+    "Inborn, innate.",
+    "cause of war.",
+    "drink alcohol.",
+    "belief in god."
+   ],
+   "answer": 3,
+   "explain": "\"Theism\" means: belief in god."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Theist",
+   "options": [
+    "Government by one ruler.",
+    "powerful in fight or war.",
+    "Not inclined to believe.",
+    "one who believes in god."
+   ],
+   "answer": 3,
+   "explain": "\"Theist\" means: one who believes in god."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Atheist",
+   "options": [
+    "related to genes or heredity.",
+    "offspring, descendants children.",
+    "A collection of words and phrases.",
+    "One who does not believe in God."
+   ],
+   "answer": 3,
+   "explain": "\"Atheist\" means: One who does not believe in God."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Monotheist",
+   "options": [
+    "Talking in a roundabout way.",
+    "One who believes in one God.",
+    "the state of being drunkard.",
+    "Head of family tribe or race."
+   ],
+   "answer": 1,
+   "explain": "\"Monotheist\" means: One who believes in one God."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Natal",
+   "options": [
+    "very eager to fight.",
+    "to move backward.",
+    "shining at night",
+    "Relating to birth."
+   ],
+   "answer": 3,
+   "explain": "\"Natal\" means: Relating to birth."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Native",
+   "options": [
+    "Belonging to by birth.",
+    "very eager to fight.",
+    "which causes laughter.",
+    "A play with one actor."
+   ],
+   "answer": 0,
+   "explain": "\"Native\" means: Belonging to by birth."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Nativity",
+   "options": [
+    "Relating to the voice, oral.",
+    "The process of being born.",
+    "causing mocking laughter.",
+    "the state of being drunkard."
+   ],
+   "answer": 1,
+   "explain": "\"Nativity\" means: The process of being born."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Nativism",
+   "options": [
+    "The worship of other or strange gods.",
+    "A collection of words and phrases.",
+    "A policy of favouring the native person same place.",
+    "to give citizenship to the foreign born."
+   ],
+   "answer": 2,
+   "explain": "\"Nativism\" means: A policy of favouring the native person same place."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Naturalise",
+   "options": [
+    "glasses that increase the range of two eyes.",
+    "to give citizenship to the foreign born.",
+    "The belief that there is no god.",
+    "a person who regularly drinks a specified drink."
+   ],
+   "answer": 1,
+   "explain": "\"Naturalise\" means: to give citizenship to the foreign born."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Innate",
+   "options": [
+    "upon layer.",
+    "Drinker",
+    "Inborn",
+    "Reborn"
+   ],
+   "answer": 2,
+   "explain": "\"Innate\" means: Inborn"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Renascent",
+   "options": [
+    "sameness.",
+    "Reborn",
+    "Drinker",
+    "belief"
+   ],
+   "answer": 1,
+   "explain": "\"Renascent\" means: Reborn"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Nascent",
+   "options": [
+    "related to eye.",
+    "noisy shouting.",
+    "one marriage.",
+    "growing stage."
+   ],
+   "answer": 3,
+   "explain": "\"Nascent\" means: growing stage."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Exclaim",
+   "options": [
+    "To say in an enthusiastic way.",
+    "to praise by saying nice words.",
+    "related to equal day and night.",
+    "offspring, descendants children."
+   ],
+   "answer": 0,
+   "explain": "\"Exclaim\" means: To say in an enthusiastic way."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Clamour",
+   "options": [
+    "shining at night",
+    "Active at night.",
+    "noisy shouting.",
+    "- to make mock."
+   ],
+   "answer": 2,
+   "explain": "\"Clamour\" means: noisy shouting."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Proclamation",
+   "options": [
+    "Strong area/field.",
+    "A lens for one eye.",
+    "to cite for support.",
+    "Official statement."
+   ],
+   "answer": 3,
+   "explain": "\"Proclamation\" means: Official statement."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Proclaim",
+   "options": [
+    "the state of being drunkard.",
+    "to say in an official way.",
+    "powerful in fight or war.",
+    "A government of one ruler"
+   ],
+   "answer": 1,
+   "explain": "\"Proclaim\" means: to say in an official way."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Reclamation",
+   "options": [
+    "shining at night",
+    "to claim again.",
+    "Universal wisdom",
+    "noisy shouting."
+   ],
+   "answer": 1,
+   "explain": "\"Reclamation\" means: to claim again."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Acclaim",
+   "options": [
+    "to praise by saying nice words.",
+    "rule by all means universal rule.",
+    "One who does not believe in God.",
+    "relqted to universal harmony."
+   ],
+   "answer": 0,
+   "explain": "\"Acclaim\" means: to praise by saying nice words."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fort",
+   "options": [
+    "an enclosure which is considered to be very strong.",
+    "a person who regularly drinks a specified drink.",
+    "A policy of favouring the native person same place.",
+    "The transportation of a human being into a god."
+   ],
+   "answer": 0,
+   "explain": "\"Fort\" means: an enclosure which is considered to be very strong."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fortress",
+   "options": [
+    "belonging to a race or kind.",
+    "A species/ a kind/ a type.",
+    "relqted to universal harmony.",
+    "A strong or invincible fort."
+   ],
+   "answer": 3,
+   "explain": "\"Fortress\" means: A strong or invincible fort."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fortify",
+   "options": [
+    "a maker of vocabularies.",
+    "to strengthen the area.",
+    "which causes laughter.",
+    "Government by one ruler."
+   ],
+   "answer": 1,
+   "explain": "\"Fortify\" means: to strengthen the area."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Forte",
+   "options": [
+    "Strong area/field.",
+    "- having two legs.",
+    "two hundred years.",
+    "A lens for one eye."
+   ],
+   "answer": 0,
+   "explain": "\"Forte\" means: Strong area/field."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fortitude",
+   "options": [
+    "courage in pain.",
+    "Can be believed.",
+    "a cure for all.",
+    "stock, category."
+   ],
+   "answer": 0,
+   "explain": "\"Fortitude\" means: courage in pain."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Gradual",
+   "options": [
+    "- two sides.",
+    "growing stage.",
+    "slowly move.",
+    "Rule by all."
+   ],
+   "answer": 2,
+   "explain": "\"Gradual\" means: slowly move."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Progress",
+   "options": [
+    "growing stage.",
+    "one marriage.",
+    "to move ahead.",
+    "belief in god."
+   ],
+   "answer": 2,
+   "explain": "\"Progress\" means: to move ahead."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Retrogress",
+   "options": [
+    "to move backward.",
+    "two hundred years.",
+    "A set of belief.",
+    "stock, category."
+   ],
+   "answer": 0,
+   "explain": "\"Retrogress\" means: to move backward."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Regress",
+   "options": [
+    "Going back.",
+    "one marriage.",
+    "Laughable",
+    "Mockingly"
+   ],
+   "answer": 0,
+   "explain": "\"Regress\" means: Going back."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Transgress",
+   "options": [
+    "- Relating to all people.",
+    "One who mock at another.",
+    "go beyond the limits of.",
+    "Government by one ruler."
+   ],
+   "answer": 2,
+   "explain": "\"Transgress\" means: go beyond the limits of."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Creed",
+   "options": [
+    "- to make mock.",
+    "noisy shouting.",
+    "A set of belief.",
+    "courage in pain."
+   ],
+   "answer": 2,
+   "explain": "\"Creed\" means: A set of belief."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Creditable",
+   "options": [
+    "related to eye.",
+    "Universal wisdom",
+    "Can be believed.",
+    "Active at night."
+   ],
+   "answer": 2,
+   "explain": "\"Creditable\" means: Can be believed."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Creditably",
+   "options": [
+    "A policy of favouring the native person same place.",
+    "glasses that increase the range of two eyes.",
+    "The transportation of a human being into a god.",
+    "In such a manner that something is believed."
+   ],
+   "answer": 3,
+   "explain": "\"Creditably\" means: In such a manner that something is believed."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Discreditable",
+   "options": [
+    "A play with one actor.",
+    "Not worthy of belief.",
+    "Belonging to by birth.",
+    "equal day and night."
+   ],
+   "answer": 1,
+   "explain": "\"Discreditable\" means: Not worthy of belief."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Credulous",
+   "options": [
+    "relqted to universal harmony.",
+    "belonging to a race or kind.",
+    "Inclined to believe readily.",
+    "Relating to the voice, oral."
+   ],
+   "answer": 2,
+   "explain": "\"Credulous\" means: Inclined to believe readily."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Incredulous",
+   "options": [
+    "One who mock at another.",
+    "Not inclined to believe.",
+    "- Relating to all people.",
+    "one who believes in god."
+   ],
+   "answer": 1,
+   "explain": "\"Incredulous\" means: Not inclined to believe."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Incredulously",
+   "options": [
+    "Distrustingly",
+    "Study of god.",
+    "having eyes.",
+    "drink alcohol."
+   ],
+   "answer": 0,
+   "explain": "\"Incredulously\" means: Distrustingly"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Credulously",
+   "options": [
+    "Trustingly",
+    "Mockingly",
+    "upon layer.",
+    "sameness."
+   ],
+   "answer": 0,
+   "explain": "\"Credulously\" means: Trustingly"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Credence",
+   "options": [
+    "belief",
+    "Origin",
+    "upon layer.",
+    "Rule by all."
+   ],
+   "answer": 0,
+   "explain": "\"Credence\" means: belief"
+  }
+ ]
+}

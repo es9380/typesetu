@@ -1,0 +1,504 @@
+{
+ "id": "chapter-13-part-3",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 13 — Syn & Ant (Part 3)",
+ "durationMins": 27,
+ "questions": [
+  {
+   "q": "Select the most appropriate synonym of the given word: Conspire",
+   "options": [
+    "Competent",
+    "Brazen",
+    "Plot",
+    "Antiquated"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Conspire\" is \"Plot\". \"Conspire\" means: To plan to do something bad or illegal with a group of people"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Erudite",
+   "options": [
+    "To produce a detailed list of something",
+    "Having or showing profound knowledge",
+    "Existing in all parts of a place or thing",
+    "continuing forever, never-ending"
+   ],
+   "answer": 1,
+   "explain": "\"Erudite\" means: Having or showing profound knowledge"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Erudite",
+   "options": [
+    "Perilous",
+    "Scrutiny",
+    "Scholarly",
+    "Antiquated"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Erudite\" is \"Scholarly\". \"Erudite\" means: Having or showing profound knowledge"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Erudite",
+   "options": [
+    "Pervasive",
+    "Enchanting",
+    "Ignorant",
+    "Makeshift"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Erudite\" is \"Ignorant\". \"Erudite\" means: Having or showing profound knowledge"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Bewitching",
+   "options": [
+    "To force someone to do something",
+    "Wanting to do something very much",
+    "To think about something carefully or for a long time",
+    "Charming and attractive in a seductive way"
+   ],
+   "answer": 3,
+   "explain": "\"Bewitching\" means: Charming and attractive in a seductive way"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Bewitching",
+   "options": [
+    "Assuagement",
+    "Conspire",
+    "Frivolous",
+    "Charming"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Bewitching\" is \"Charming\". \"Bewitching\" means: Charming and attractive in a seductive way"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Bewitching",
+   "options": [
+    "Bizarre",
+    "Repulsive",
+    "Makeshift",
+    "Brazen"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Bewitching\" is \"Repulsive\". \"Bewitching\" means: Charming and attractive in a seductive way"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Efface",
+   "options": [
+    "Damaged from too much use",
+    "Extremely Large",
+    "Bold and without shame",
+    "To wipeout something"
+   ],
+   "answer": 3,
+   "explain": "\"Efface\" means: To wipeout something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Efface",
+   "options": [
+    "Tranquil",
+    "Bizarre",
+    "Erase",
+    "Makeshift"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Efface\" is \"Erase\". \"Efface\" means: To wipeout something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Comprehend",
+   "options": [
+    "Existing in all parts of a place or thing",
+    "To mentally grasp the meaning or reason behind something",
+    "To produce a detailed list of something",
+    "To make a substance impure by adding something else to it"
+   ],
+   "answer": 1,
+   "explain": "\"Comprehend\" means: To mentally grasp the meaning or reason behind something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Comprehend",
+   "options": [
+    "Compel",
+    "Makeshift",
+    "Colossal",
+    "Understand"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Comprehend\" is \"Understand\". \"Comprehend\" means: To mentally grasp the meaning or reason behind something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Comprehend",
+   "options": [
+    "Pervasive",
+    "Misunderstand",
+    "Keen",
+    "Assuagement"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Comprehend\" is \"Misunderstand\". \"Comprehend\" means: To mentally grasp the meaning or reason behind something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Itemize",
+   "options": [
+    "To produce a detailed list of something",
+    "Able to do something skillfully",
+    "Strongly wanting to do or have something.",
+    "To move something in a circle"
+   ],
+   "answer": 0,
+   "explain": "\"Itemize\" means: To produce a detailed list of something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Itemize",
+   "options": [
+    "List",
+    "Makeshift",
+    "Colossal",
+    "Erudite"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Itemize\" is \"List\". \"Itemize\" means: To produce a detailed list of something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Assuagement",
+   "options": [
+    "Extremely Large",
+    "that you must do",
+    "Bold and without shame",
+    "To ease, To lessen"
+   ],
+   "answer": 3,
+   "explain": "\"Assuagement\" means: To ease, To lessen"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Assuagement",
+   "options": [
+    "Relief",
+    "Obligatory",
+    "Pervasive",
+    "Colossal"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Assuagement\" is \"Relief\". \"Assuagement\" means: To ease, To lessen"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Dignity",
+   "options": [
+    "Captivating or charming",
+    "Easy to see or notice",
+    "The state of being honoured",
+    "To move something in a circle"
+   ],
+   "answer": 2,
+   "explain": "\"Dignity\" means: The state of being honoured"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Dignity",
+   "options": [
+    "Honour",
+    "Itemize",
+    "Exaltation",
+    "Tranquil"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Dignity\" is \"Honour\". \"Dignity\" means: The state of being honoured"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Dignity",
+   "options": [
+    "Bizarre",
+    "Conspire",
+    "Competent",
+    "Dishonour"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Dignity\" is \"Dishonour\". \"Dignity\" means: The state of being honoured"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Perilous",
+   "options": [
+    "Full of danger",
+    "that you must do",
+    "As in disgusting",
+    "No longer existing"
+   ],
+   "answer": 0,
+   "explain": "\"Perilous\" means: Full of danger"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Perilous",
+   "options": [
+    "Adulterated",
+    "Compel",
+    "Dangerous",
+    "Worn"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Perilous\" is \"Dangerous\". \"Perilous\" means: Full of danger"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Perilous",
+   "options": [
+    "Safe",
+    "Keen",
+    "Brazen",
+    "Tranquil"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Perilous\" is \"Safe\". \"Perilous\" means: Full of danger"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Ponder",
+   "options": [
+    "To make a substance impure by adding something else to it",
+    "To think about something carefully or for a long time",
+    "To state something clearly and accurately",
+    "Charming and attractive in a seductive way"
+   ],
+   "answer": 1,
+   "explain": "\"Ponder\" means: To think about something carefully or for a long time"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Ponder",
+   "options": [
+    "Erudite",
+    "Bewitching",
+    "Erroneous",
+    "Contemplate"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Ponder\" is \"Contemplate\". \"Ponder\" means: To think about something carefully or for a long time"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Mitigate",
+   "options": [
+    "A temporary substitute",
+    "Make less severe or painful",
+    "To wipeout something",
+    "Able to do something skillfully"
+   ],
+   "answer": 1,
+   "explain": "\"Mitigate\" means: Make less severe or painful"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Mitigate",
+   "options": [
+    "Alleviate",
+    "Deteriorate",
+    "Specify",
+    "Bizarre"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Mitigate\" is \"Alleviate\". \"Mitigate\" means: Make less severe or painful"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Mitigate",
+   "options": [
+    "Aggravate",
+    "Itemize",
+    "Ponder",
+    "Conspicuous"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Mitigate\" is \"Aggravate\". \"Mitigate\" means: Make less severe or painful"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Erroneous",
+   "options": [
+    "Strongly wanting to do or have something.",
+    "Charming and attractive in a seductive way",
+    "To lessen in value or ability",
+    "Not correct, based on wrong Information"
+   ],
+   "answer": 3,
+   "explain": "\"Erroneous\" means: Not correct, based on wrong Information"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Erroneous",
+   "options": [
+    "Exaltation",
+    "Incorrect",
+    "Specify",
+    "Itemize"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Erroneous\" is \"Incorrect\". \"Erroneous\" means: Not correct, based on wrong Information"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Erroneous",
+   "options": [
+    "Conspicuous",
+    "Pompous",
+    "Correct",
+    "Bewitching"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Erroneous\" is \"Correct\". \"Erroneous\" means: Not correct, based on wrong Information"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Abominable",
+   "options": [
+    "Bold and without shame",
+    "Of no real worth",
+    "As in disgusting",
+    "Very strange"
+   ],
+   "answer": 2,
+   "explain": "\"Abominable\" means: As in disgusting"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Abominable",
+   "options": [
+    "Detestable",
+    "Makeshift",
+    "Compel",
+    "Erroneous"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Abominable\" is \"Detestable\". \"Abominable\" means: As in disgusting"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Abominable",
+   "options": [
+    "Comprehend",
+    "Admirable",
+    "Worn",
+    "Resentment"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Abominable\" is \"Admirable\". \"Abominable\" means: As in disgusting"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Makeshift",
+   "options": [
+    "Make less severe or painful",
+    "Relaxed; Peaceful",
+    "A temporary substitute",
+    "Of no real worth"
+   ],
+   "answer": 2,
+   "explain": "\"Makeshift\" means: A temporary substitute"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Makeshift",
+   "options": [
+    "Improvised",
+    "Callous",
+    "Pompous",
+    "Heckle"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Makeshift\" is \"Improvised\". \"Makeshift\" means: A temporary substitute"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Makeshift",
+   "options": [
+    "Conspire",
+    "Bizarre",
+    "Antiquated",
+    "Permanent"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Makeshift\" is \"Permanent\". \"Makeshift\" means: A temporary substitute"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Eager",
+   "options": [
+    "To force someone to do something",
+    "Strongly wanting to do or have something.",
+    "Charming and attractive in a seductive way",
+    "Existing in all parts of a place or thing"
+   ],
+   "answer": 1,
+   "explain": "\"Eager\" means: Strongly wanting to do or have something."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Eager",
+   "options": [
+    "Compel",
+    "Keen",
+    "Perilous",
+    "Tranquil"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Eager\" is \"Keen\". \"Eager\" means: Strongly wanting to do or have something."
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Eager",
+   "options": [
+    "Exhaling",
+    "Dignity",
+    "Antiquated",
+    "Indifferent"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Eager\" is \"Indifferent\". \"Eager\" means: Strongly wanting to do or have something."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Destitute",
+   "options": [
+    "lacking money or material possessions",
+    "Wanting to do something very much",
+    "To move something in a circle",
+    "Existing in all parts of a place or thing"
+   ],
+   "answer": 0,
+   "explain": "\"Destitute\" means: lacking money or material possessions"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Destitute",
+   "options": [
+    "Assuagement",
+    "Deteriorate",
+    "Penniless",
+    "Exhaling"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Destitute\" is \"Penniless\". \"Destitute\" means: lacking money or material possessions"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Destitute",
+   "options": [
+    "Resentment",
+    "Asphyxiation",
+    "Comprehend",
+    "Wealthy"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Destitute\" is \"Wealthy\". \"Destitute\" means: lacking money or material possessions"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Forgery",
+   "options": [
+    "To cause someone to be unable to breathe usually resulting into death.",
+    "Charming and attractive in a seductive way",
+    "A fabricated replication of something meant to appear like the real thing",
+    "Careful and detailed examination of something in order to get information about it."
+   ],
+   "answer": 2,
+   "explain": "\"Forgery\" means: A fabricated replication of something meant to appear like the real thing"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Forgery",
+   "options": [
+    "Counterfeit",
+    "Makeshift",
+    "Perpetual",
+    "Scrutiny"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Forgery\" is \"Counterfeit\". \"Forgery\" means: A fabricated replication of something meant to appear like the real thing"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Forgery",
+   "options": [
+    "Diminutive",
+    "Original",
+    "Conspicuous",
+    "Ponder"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Forgery\" is \"Original\". \"Forgery\" means: A fabricated replication of something meant to appear like the real thing"
+  }
+ ]
+}

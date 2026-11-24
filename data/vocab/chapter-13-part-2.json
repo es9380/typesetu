@@ -1,0 +1,515 @@
+{
+ "id": "chapter-13-part-2",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 13 — Syn & Ant (Part 2)",
+ "durationMins": 28,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Void",
+   "options": [
+    "Not legal",
+    "To ease, To lessen",
+    "No longer existing",
+    "As in disgusting"
+   ],
+   "answer": 0,
+   "explain": "\"Void\" means: Not legal"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Void",
+   "options": [
+    "Erroneous",
+    "Retrogression",
+    "Invalid",
+    "Destitute"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Void\" is \"Invalid\". \"Void\" means: Not legal"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Void",
+   "options": [
+    "Valid",
+    "Assuagement",
+    "Comprehend",
+    "Scrutiny"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Void\" is \"Valid\". \"Void\" means: Not legal"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Obligatory",
+   "options": [
+    "that you must do",
+    "Very strange",
+    "Easy to see or notice",
+    "A temporary substitute"
+   ],
+   "answer": 0,
+   "explain": "\"Obligatory\" means: that you must do"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Obligatory",
+   "options": [
+    "Bewitching",
+    "Compulsory",
+    "Heckle",
+    "Deride"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Obligatory\" is \"Compulsory\". \"Obligatory\" means: that you must do"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Obligatory",
+   "options": [
+    "Eager",
+    "Ponder",
+    "Callous",
+    "Optional"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Obligatory\" is \"Optional\". \"Obligatory\" means: that you must do"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Exhaling",
+   "options": [
+    "To emit air",
+    "Full of danger",
+    "To ease, To lessen",
+    "No longer existing"
+   ],
+   "answer": 0,
+   "explain": "\"Exhaling\" means: To emit air"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Diminutive",
+   "options": [
+    "As in disgusting",
+    "To ease, To lessen",
+    "Extremely Large",
+    "Very small"
+   ],
+   "answer": 3,
+   "explain": "\"Diminutive\" means: Very small"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Diminutive",
+   "options": [
+    "Compel",
+    "Resentment",
+    "Tiny",
+    "Scrutiny"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Diminutive\" is \"Tiny\". \"Diminutive\" means: Very small"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Diminutive",
+   "options": [
+    "Huge",
+    "Void",
+    "Makeshift",
+    "Discreet"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Diminutive\" is \"Huge\". \"Diminutive\" means: Very small"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Brazen",
+   "options": [
+    "Bold and without shame",
+    "From the past, old fashioned",
+    "A temporary substitute",
+    "The state of being honoured"
+   ],
+   "answer": 0,
+   "explain": "\"Brazen\" means: Bold and without shame"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Brazen",
+   "options": [
+    "Perpetual",
+    "Shameless",
+    "Tranquil",
+    "Antiquated"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Brazen\" is \"Shameless\". \"Brazen\" means: Bold and without shame"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Brazen",
+   "options": [
+    "Modest",
+    "Antiquated",
+    "Defunct",
+    "Destitute"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Brazen\" is \"Modest\". \"Brazen\" means: Bold and without shame"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Defunct",
+   "options": [
+    "Of no real worth",
+    "Easy to see or notice",
+    "No longer existing",
+    "Captivating or charming"
+   ],
+   "answer": 2,
+   "explain": "\"Defunct\" means: No longer existing"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Defunct",
+   "options": [
+    "Makeshift",
+    "Exaltation",
+    "Dignity",
+    "Extinct"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Defunct\" is \"Extinct\". \"Defunct\" means: No longer existing"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Defunct",
+   "options": [
+    "Pervasive",
+    "Competent",
+    "Erroneous",
+    "Active"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Defunct\" is \"Active\". \"Defunct\" means: No longer existing"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Conspicuous",
+   "options": [
+    "Easy to see or notice",
+    "Of no real worth",
+    "No longer existing",
+    "Relaxed; Peaceful"
+   ],
+   "answer": 0,
+   "explain": "\"Conspicuous\" means: Easy to see or notice"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Conspicuous",
+   "options": [
+    "Compel",
+    "Noticeable",
+    "Brazen",
+    "Abominable"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Conspicuous\" is \"Noticeable\". \"Conspicuous\" means: Easy to see or notice"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Conspicuous",
+   "options": [
+    "Bewitching",
+    "Erroneous",
+    "Inconspicuous",
+    "Competent"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Conspicuous\" is \"Inconspicuous\". \"Conspicuous\" means: Easy to see or notice"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Antiquated",
+   "options": [
+    "The state of being honoured",
+    "From the past, old fashioned",
+    "Wanting to do something very much",
+    "continuing forever, never-ending"
+   ],
+   "answer": 1,
+   "explain": "\"Antiquated\" means: From the past, old fashioned"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Antiquated",
+   "options": [
+    "Adulterated",
+    "Defunct",
+    "Perpetual",
+    "Outdated"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Antiquated\" is \"Outdated\". \"Antiquated\" means: From the past, old fashioned"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Antiquated",
+   "options": [
+    "Discreet",
+    "Modern",
+    "Efface",
+    "Scrutiny"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Antiquated\" is \"Modern\". \"Antiquated\" means: From the past, old fashioned"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Adulterated",
+   "options": [
+    "To mentally grasp the meaning or reason behind something",
+    "Strongly wanting to do or have something.",
+    "To make a substance impure by adding something else to it",
+    "A fabricated replication of something meant to appear like the real thing"
+   ],
+   "answer": 2,
+   "explain": "\"Adulterated\" means: To make a substance impure by adding something else to it"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Adulterated",
+   "options": [
+    "Diminutive",
+    "Contaminate",
+    "Eager",
+    "Callous"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Adulterated\" is \"Contaminate\". \"Adulterated\" means: To make a substance impure by adding something else to it"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Adulterated",
+   "options": [
+    "Void",
+    "Purify",
+    "Colossal",
+    "Erroneous"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Adulterated\" is \"Purify\". \"Adulterated\" means: To make a substance impure by adding something else to it"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Worn",
+   "options": [
+    "Damaged from too much use",
+    "To wipeout something",
+    "To move something in a circle",
+    "Captivating or charming"
+   ],
+   "answer": 0,
+   "explain": "\"Worn\" means: Damaged from too much use"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Worn",
+   "options": [
+    "Tranquil",
+    "Resentment",
+    "Efface",
+    "Shabby"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Worn\" is \"Shabby\". \"Worn\" means: Damaged from too much use"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Worn",
+   "options": [
+    "Resentment",
+    "New",
+    "Perpetual",
+    "Exaltation"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Worn\" is \"New\". \"Worn\" means: Damaged from too much use"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Deteriorate",
+   "options": [
+    "Having or showing profound knowledge",
+    "To lessen in value or ability",
+    "To move something in a circle",
+    "Damaged from too much use"
+   ],
+   "answer": 1,
+   "explain": "\"Deteriorate\" means: To lessen in value or ability"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Deteriorate",
+   "options": [
+    "Enchanting",
+    "Exhaling",
+    "Bizarre",
+    "Worsen"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Deteriorate\" is \"Worsen\". \"Deteriorate\" means: To lessen in value or ability"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Deteriorate",
+   "options": [
+    "Keen",
+    "Mitigate",
+    "Improve",
+    "Eager"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Deteriorate\" is \"Improve\". \"Deteriorate\" means: To lessen in value or ability"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Enchanting",
+   "options": [
+    "Damaged from too much use",
+    "Easy to see or notice",
+    "No longer existing",
+    "Captivating or charming"
+   ],
+   "answer": 3,
+   "explain": "\"Enchanting\" means: Captivating or charming"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Enchanting",
+   "options": [
+    "Resentment",
+    "Pompous",
+    "Captivating",
+    "Tranquil"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Enchanting\" is \"Captivating\". \"Enchanting\" means: Captivating or charming"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Enchanting",
+   "options": [
+    "Void",
+    "Exhaling",
+    "Repulsive",
+    "Efface"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Enchanting\" is \"Repulsive\". \"Enchanting\" means: Captivating or charming"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Callous",
+   "options": [
+    "Careful and detailed examination of something in order to get information about it.",
+    "showing or having an insensitive and cruel disregard for others",
+    "To plan to do something bad or illegal with a group of people",
+    "A feeling of anger or unhappiness about something that you think is unfair."
+   ],
+   "answer": 1,
+   "explain": "\"Callous\" means: showing or having an insensitive and cruel disregard for others"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Callous",
+   "options": [
+    "Forgery",
+    "Rotate",
+    "Enchanting",
+    "Insensitive"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Callous\" is \"Insensitive\". \"Callous\" means: showing or having an insensitive and cruel disregard for others"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Callous",
+   "options": [
+    "Sensitive",
+    "Exhaling",
+    "Pervasive",
+    "Specify"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Callous\" is \"Sensitive\". \"Callous\" means: showing or having an insensitive and cruel disregard for others"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Retrogression",
+   "options": [
+    "To think about something carefully or for a long time",
+    "The act or an instance of going back to an earlier and lower level especially of intelligence or behavior.",
+    "To plan to do something bad or illegal with a group of people",
+    "A feeling of anger or unhappiness about something that you think is unfair."
+   ],
+   "answer": 1,
+   "explain": "\"Retrogression\" means: The act or an instance of going back to an earlier and lower level especially of intelligence or behavior."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Retrogression",
+   "options": [
+    "Ponder",
+    "Competent",
+    "Regression",
+    "Tranquil"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Retrogression\" is \"Regression\". \"Retrogression\" means: The act or an instance of going back to an earlier and lower level especially of intelligence or behavior."
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Retrogression",
+   "options": [
+    "Frivolous",
+    "Defunct",
+    "Perilous",
+    "Progression"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Retrogression\" is \"Progression\". \"Retrogression\" means: The act or an instance of going back to an earlier and lower level especially of intelligence or behavior."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Specify",
+   "options": [
+    "To state something clearly and accurately",
+    "Having or showing profound knowledge",
+    "To move something in a circle",
+    "A feeling or state of extreme happiness."
+   ],
+   "answer": 0,
+   "explain": "\"Specify\" means: To state something clearly and accurately"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Specify",
+   "options": [
+    "State",
+    "Discreet",
+    "Tranquil",
+    "Compel"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Specify\" is \"State\". \"Specify\" means: To state something clearly and accurately"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Frivolous",
+   "options": [
+    "To wipeout something",
+    "Very small",
+    "A temporary substitute",
+    "Of no real worth"
+   ],
+   "answer": 3,
+   "explain": "\"Frivolous\" means: Of no real worth"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Frivolous",
+   "options": [
+    "Pervasive",
+    "Forgery",
+    "Trivial",
+    "Bizarre"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Frivolous\" is \"Trivial\". \"Frivolous\" means: Of no real worth"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Frivolous",
+   "options": [
+    "Asphyxiation",
+    "Obligatory",
+    "Serious",
+    "Tranquil"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Frivolous\" is \"Serious\". \"Frivolous\" means: Of no real worth"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Conspire",
+   "options": [
+    "To laught at someone in a way that shows you think they are stupid or of no value.",
+    "To plan to do something bad or illegal with a group of people",
+    "To mentally grasp the meaning or reason behind something",
+    "To interrupt discussion by asking difficult questions or rude comments"
+   ],
+   "answer": 1,
+   "explain": "\"Conspire\" means: To plan to do something bad or illegal with a group of people"
+  }
+ ]
+}
