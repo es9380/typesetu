@@ -1,0 +1,614 @@
+{
+ "id": "chapter-33-part-2",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 33 — Syn & Ant (Part 2)",
+ "durationMins": 33,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Knack",
+   "options": [
+    "wicked or evil",
+    "Feeling extremely sad",
+    "A natural ability",
+    "out of place"
+   ],
+   "answer": 2,
+   "explain": "\"Knack\" means: A natural ability"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Knack",
+   "options": [
+    "Elucidate",
+    "Frighten",
+    "Talent",
+    "Enigmatic"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Knack\" is \"Talent\". \"Knack\" means: A natural ability"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Anomalous",
+   "options": [
+    "the lowest point of anything",
+    "An extremely evil person",
+    "very sad and without hope",
+    "Different from the normal"
+   ],
+   "answer": 3,
+   "explain": "\"Anomalous\" means: Different from the normal"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Anomalous",
+   "options": [
+    "Abnormal",
+    "Celestial",
+    "Relentless",
+    "Reprove"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Anomalous\" is \"Abnormal\". \"Anomalous\" means: Different from the normal"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Anomalous",
+   "options": [
+    "Famish",
+    "Normal",
+    "Wallow",
+    "Elucidate"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Anomalous\" is \"Normal\". \"Anomalous\" means: Different from the normal"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Celestial",
+   "options": [
+    "to make clear or easy to understand",
+    "associated with a spiritual paradise",
+    "a severe reprimand or criticism",
+    "Capable of making an individual feel well"
+   ],
+   "answer": 1,
+   "explain": "\"Celestial\" means: associated with a spiritual paradise"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Celestial",
+   "options": [
+    "Vain",
+    "Sinister",
+    "Heavenly",
+    "Famish"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Celestial\" is \"Heavenly\". \"Celestial\" means: associated with a spiritual paradise"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Celestial",
+   "options": [
+    "Elucidate",
+    "Sorcery",
+    "Anomalous",
+    "Earthly"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Celestial\" is \"Earthly\". \"Celestial\" means: associated with a spiritual paradise"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fiend",
+   "options": [
+    "A severe food shortage",
+    "Feeling extremely sad",
+    "An extremely evil person",
+    "Never-ceasing; Unyielding"
+   ],
+   "answer": 2,
+   "explain": "\"Fiend\" means: An extremely evil person"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Fiend",
+   "options": [
+    "Famine",
+    "Demon",
+    "Knack",
+    "Forthright"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Fiend\" is \"Demon\". \"Fiend\" means: An extremely evil person"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Fiend",
+   "options": [
+    "Pellucid",
+    "Annex",
+    "Vain",
+    "Angel"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Fiend\" is \"Angel\". \"Fiend\" means: An extremely evil person"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Delinquency",
+   "options": [
+    "Lacking interest or significance",
+    "failure to pay a debt that is owed",
+    "to make clear or easy to understand",
+    "To indulge in one’s emotions"
+   ],
+   "answer": 1,
+   "explain": "\"Delinquency\" means: failure to pay a debt that is owed"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Delinquency",
+   "options": [
+    "Famine",
+    "Enigmatic",
+    "Default",
+    "Decimate"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Delinquency\" is \"Default\". \"Delinquency\" means: failure to pay a debt that is owed"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Relentless",
+   "options": [
+    "Never-ceasing; Unyielding",
+    "very well-defined in meaning",
+    "To indulge in one’s emotions",
+    "An extremely evil person"
+   ],
+   "answer": 0,
+   "explain": "\"Relentless\" means: Never-ceasing; Unyielding"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Relentless",
+   "options": [
+    "Buddy",
+    "Thrifty",
+    "Sinister",
+    "Unyielding"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Relentless\" is \"Unyielding\". \"Relentless\" means: Never-ceasing; Unyielding"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Relentless",
+   "options": [
+    "Celestial",
+    "Famine",
+    "Yielding",
+    "Bogus"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Relentless\" is \"Yielding\". \"Relentless\" means: Never-ceasing; Unyielding"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Vain",
+   "options": [
+    "A natural ability",
+    "Direct and honest",
+    "To strongly disapprove",
+    "without success"
+   ],
+   "answer": 3,
+   "explain": "\"Vain\" means: without success"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Vain",
+   "options": [
+    "Thrifty",
+    "Sorcery",
+    "Futile",
+    "Oblate"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Vain\" is \"Futile\". \"Vain\" means: without success"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Vain",
+   "options": [
+    "Fiend",
+    "Frighten",
+    "Objurgation",
+    "Successful"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Vain\" is \"Successful\". \"Vain\" means: without success"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Forthright",
+   "options": [
+    "Different from the normal",
+    "very sad and without hope",
+    "out of place",
+    "Direct and honest"
+   ],
+   "answer": 3,
+   "explain": "\"Forthright\" means: Direct and honest"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Forthright",
+   "options": [
+    "Frank",
+    "Vain",
+    "Thrifty",
+    "Annex"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Forthright\" is \"Frank\". \"Forthright\" means: Direct and honest"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Forthright",
+   "options": [
+    "Evasive",
+    "Soar",
+    "Elucidate",
+    "Celestial"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Forthright\" is \"Evasive\". \"Forthright\" means: Direct and honest"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Objurgation",
+   "options": [
+    "a severe reprimand or criticism",
+    "To indulge in one’s emotions",
+    "Different from the normal",
+    "Having a misleading appearance"
+   ],
+   "answer": 0,
+   "explain": "\"Objurgation\" means: a severe reprimand or criticism"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Objurgation",
+   "options": [
+    "Sorcery",
+    "Sensation",
+    "Elucidate",
+    "Rebuke"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Objurgation\" is \"Rebuke\". \"Objurgation\" means: a severe reprimand or criticism"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Objurgation",
+   "options": [
+    "Decimate",
+    "Praise",
+    "Delinquency",
+    "Incongruous"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Objurgation\" is \"Praise\". \"Objurgation\" means: a severe reprimand or criticism"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Obfuscate",
+   "options": [
+    "To destroy or greatly decrease in size or number",
+    "To deliberately make something confusing",
+    "associated with a spiritual paradise",
+    "A feeling picked up by one of the five senses"
+   ],
+   "answer": 1,
+   "explain": "\"Obfuscate\" means: To deliberately make something confusing"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Obfuscate",
+   "options": [
+    "Confuse",
+    "Decimate",
+    "Famish",
+    "Objurgation"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Obfuscate\" is \"Confuse\". \"Obfuscate\" means: To deliberately make something confusing"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Obfuscate",
+   "options": [
+    "Clarify",
+    "Anomalous",
+    "Reprove",
+    "Vain"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Obfuscate\" is \"Clarify\". \"Obfuscate\" means: To deliberately make something confusing"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Robust",
+   "options": [
+    "strong and healthy",
+    "An extremely evil person",
+    "without success",
+    "Different from the normal"
+   ],
+   "answer": 0,
+   "explain": "\"Robust\" means: strong and healthy"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Robust",
+   "options": [
+    "Sturdy",
+    "Delinquency",
+    "Thrifty",
+    "Anomalous"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Robust\" is \"Sturdy\". \"Robust\" means: strong and healthy"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Robust",
+   "options": [
+    "Despondent",
+    "Weak",
+    "Frighten",
+    "Celestial"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Robust\" is \"Weak\". \"Robust\" means: strong and healthy"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Pellucid",
+   "options": [
+    "to scare or make afraid",
+    "To encourage or promote something",
+    "very well-defined in meaning",
+    "An extremely evil person"
+   ],
+   "answer": 2,
+   "explain": "\"Pellucid\" means: very well-defined in meaning"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Pellucid",
+   "options": [
+    "Lucid",
+    "Sorcery",
+    "Anomalous",
+    "Foster"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Pellucid\" is \"Lucid\". \"Pellucid\" means: very well-defined in meaning"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Pellucid",
+   "options": [
+    "Foster",
+    "Obscure",
+    "Cealment",
+    "Decimate"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Pellucid\" is \"Obscure\". \"Pellucid\" means: very well-defined in meaning"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Famish",
+   "options": [
+    "Careful with spending money",
+    "very sad and without hope",
+    "The action of hiding something",
+    "to make someone extremely hungry"
+   ],
+   "answer": 3,
+   "explain": "\"Famish\" means: to make someone extremely hungry"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Famish",
+   "options": [
+    "Frighten",
+    "Starve",
+    "Oblate",
+    "Sorcery"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Famish\" is \"Starve\". \"Famish\" means: to make someone extremely hungry"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Reprove",
+   "options": [
+    "Different from the normal",
+    "To indulge in one’s emotions",
+    "To strongly disapprove",
+    "strong and healthy"
+   ],
+   "answer": 2,
+   "explain": "\"Reprove\" means: To strongly disapprove"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Reprove",
+   "options": [
+    "Objurgation",
+    "Rebuke",
+    "Robust",
+    "Frighten"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Reprove\" is \"Rebuke\". \"Reprove\" means: To strongly disapprove"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Reprove",
+   "options": [
+    "Sinister",
+    "Depressed",
+    "Approve",
+    "Fiend"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Reprove\" is \"Approve\". \"Reprove\" means: To strongly disapprove"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Sinister",
+   "options": [
+    "A severe food shortage",
+    "wicked or evil",
+    "A natural ability",
+    "strong and healthy"
+   ],
+   "answer": 1,
+   "explain": "\"Sinister\" means: wicked or evil"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Sinister",
+   "options": [
+    "Sensation",
+    "Evil",
+    "Anomalous",
+    "Frighten"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Sinister\" is \"Evil\". \"Sinister\" means: wicked or evil"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Sinister",
+   "options": [
+    "Restorative",
+    "Wallow",
+    "Benevolent",
+    "Despondent"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Sinister\" is \"Benevolent\". \"Sinister\" means: wicked or evil"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Incongruous",
+   "options": [
+    "A friend",
+    "out of place",
+    "away from the correct",
+    "without success"
+   ],
+   "answer": 1,
+   "explain": "\"Incongruous\" means: out of place"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Incongruous",
+   "options": [
+    "Inappropriate",
+    "Cealment",
+    "Depressed",
+    "Sensation"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Incongruous\" is \"Inappropriate\". \"Incongruous\" means: out of place"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Incongruous",
+   "options": [
+    "Anomalous",
+    "Objurgation",
+    "Appropriate",
+    "Delinquency"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Incongruous\" is \"Appropriate\". \"Incongruous\" means: out of place"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Annex",
+   "options": [
+    "to make clear or easy to understand",
+    "Capable of making an individual feel well",
+    "A feeling picked up by one of the five senses",
+    "an addition to something (generally a building)"
+   ],
+   "answer": 3,
+   "explain": "\"Annex\" means: an addition to something (generally a building)"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Annex",
+   "options": [
+    "Extension",
+    "Relentless",
+    "Objurgation",
+    "Fiend"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Annex\" is \"Extension\". \"Annex\" means: an addition to something (generally a building)"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Elucidate",
+   "options": [
+    "to make clear or easy to understand",
+    "Lacking interest or significance",
+    "very well-defined in meaning",
+    "the lowest point of anything"
+   ],
+   "answer": 0,
+   "explain": "\"Elucidate\" means: to make clear or easy to understand"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Elucidate",
+   "options": [
+    "Clarify",
+    "Craven",
+    "Famine",
+    "Forthright"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Elucidate\" is \"Clarify\". \"Elucidate\" means: to make clear or easy to understand"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Elucidate",
+   "options": [
+    "Depressed",
+    "Nadir",
+    "Incongruous",
+    "Obscure"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Elucidate\" is \"Obscure\". \"Elucidate\" means: to make clear or easy to understand"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Sorcery",
+   "options": [
+    "A person dedicated to religious work or the religious life",
+    "to make clear or easy to understand",
+    "the utilization of magical abilities acquired from evil souls",
+    "a supplementary component that improves capability"
+   ],
+   "answer": 2,
+   "explain": "\"Sorcery\" means: the utilization of magical abilities acquired from evil souls"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Sorcery",
+   "options": [
+    "Amiss",
+    "Craven",
+    "Witchcraft",
+    "Frighten"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Sorcery\" is \"Witchcraft\". \"Sorcery\" means: the utilization of magical abilities acquired from evil souls"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Frighten",
+   "options": [
+    "To strongly disapprove",
+    "To indulge in one’s emotions",
+    "Never-ceasing; Unyielding",
+    "to scare or make afraid"
+   ],
+   "answer": 3,
+   "explain": "\"Frighten\" means: to scare or make afraid"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Frighten",
+   "options": [
+    "Restorative",
+    "Scare",
+    "Sensation",
+    "Famish"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Frighten\" is \"Scare\". \"Frighten\" means: to scare or make afraid"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Frighten",
+   "options": [
+    "Objurgation",
+    "Famine",
+    "Craven",
+    "Reassure"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Frighten\" is \"Reassure\". \"Frighten\" means: to scare or make afraid"
+  }
+ ]
+}

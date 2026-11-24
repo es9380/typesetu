@@ -1,0 +1,592 @@
+{
+ "id": "chapter-48-part-2",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 48 — Syn & Ant (Part 2)",
+ "durationMins": 32,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Sedentary",
+   "options": [
+    "to find a way of avoiding a difficulty or a rule",
+    "the act of locking someone into a prison",
+    "A lifestyle characterized by little physical activity",
+    "to force something out such as liquid and air; eliminate"
+   ],
+   "answer": 2,
+   "explain": "\"Sedentary\" means: A lifestyle characterized by little physical activity"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Sedentary",
+   "options": [
+    "Inactive",
+    "Expel",
+    "Incite",
+    "Circumvent"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Sedentary\" is \"Inactive\". \"Sedentary\" means: A lifestyle characterized by little physical activity"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Sedentary",
+   "options": [
+    "Corollary",
+    "Active",
+    "Mundane",
+    "Quintessential"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Sedentary\" is \"Active\". \"Sedentary\" means: A lifestyle characterized by little physical activity"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Imprisonment",
+   "options": [
+    "the act of locking someone into a prison",
+    "to frighten or surprise an individual",
+    "exceptionally violent and cruel",
+    "to make something stronger or energetic"
+   ],
+   "answer": 0,
+   "explain": "\"Imprisonment\" means: the act of locking someone into a prison"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Imprisonment",
+   "options": [
+    "Intuitive",
+    "Reconnoitre",
+    "Laconic",
+    "Confinement"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Imprisonment\" is \"Confinement\". \"Imprisonment\" means: the act of locking someone into a prison"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Imprisonment",
+   "options": [
+    "Enervate",
+    "Coalesce",
+    "Freedom",
+    "Disseminate"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Imprisonment\" is \"Freedom\". \"Imprisonment\" means: the act of locking someone into a prison"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Expel",
+   "options": [
+    "unexpected and complicated results or consequesces",
+    "to force something out such as liquid and air; eliminate",
+    "being able to sense or understand things with little or no information",
+    "having little width in proportion to the length or height"
+   ],
+   "answer": 1,
+   "explain": "\"Expel\" means: to force something out such as liquid and air; eliminate"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Expel",
+   "options": [
+    "Eject",
+    "Prosecute",
+    "Smirk",
+    "Shambles"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Expel\" is \"Eject\". \"Expel\" means: to force something out such as liquid and air; eliminate"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Expel",
+   "options": [
+    "Corollary",
+    "Admit",
+    "Ameliorate",
+    "Purview"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Expel\" is \"Admit\". \"Expel\" means: to force something out such as liquid and air; eliminate"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Mundane",
+   "options": [
+    "to act as an obstacle",
+    "area of authority or control",
+    "to satisfy someone fully",
+    "not interesting or exciting"
+   ],
+   "answer": 3,
+   "explain": "\"Mundane\" means: not interesting or exciting"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Mundane",
+   "options": [
+    "Overture",
+    "Disseminate",
+    "Dull",
+    "Intuitive"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Mundane\" is \"Dull\". \"Mundane\" means: not interesting or exciting"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Mundane",
+   "options": [
+    "Outset",
+    "Sedentary",
+    "Exciting",
+    "Satiate"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Mundane\" is \"Exciting\". \"Mundane\" means: not interesting or exciting"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Ameliorate",
+   "options": [
+    "to provoke somebody to do something illegal or bad",
+    "to make something better or more manageable",
+    "to take back/cancel a contract, law or proposal etc",
+    "unexpected and complicated results or consequesces"
+   ],
+   "answer": 1,
+   "explain": "\"Ameliorate\" means: to make something better or more manageable"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Ameliorate",
+   "options": [
+    "Improve",
+    "Overture",
+    "Shambles",
+    "Stymie"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Ameliorate\" is \"Improve\". \"Ameliorate\" means: to make something better or more manageable"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Ameliorate",
+   "options": [
+    "Outset",
+    "Mundane",
+    "Rescind",
+    "Worsen"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Ameliorate\" is \"Worsen\". \"Ameliorate\" means: to make something better or more manageable"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Ramification",
+   "options": [
+    "a natural consequence, or a result that naturally follows",
+    "unexpected and complicated results or consequesces",
+    "to force something out such as liquid and air; eliminate",
+    "having little width in proportion to the length or height"
+   ],
+   "answer": 1,
+   "explain": "\"Ramification\" means: unexpected and complicated results or consequesces"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Ramification",
+   "options": [
+    "Sedentary",
+    "Satirize",
+    "Excruciating",
+    "Consequence"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Ramification\" is \"Consequence\". \"Ramification\" means: unexpected and complicated results or consequesces"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Daunting",
+   "options": [
+    "a task that appears challenging",
+    "cleverly make fun of something",
+    "a small patch of color or light",
+    "to frighten or surprise an individual"
+   ],
+   "answer": 0,
+   "explain": "\"Daunting\" means: a task that appears challenging"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Daunting",
+   "options": [
+    "Intimidating",
+    "Smirk",
+    "Reconnoitre",
+    "Sedentary"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Daunting\" is \"Intimidating\". \"Daunting\" means: a task that appears challenging"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Daunting",
+   "options": [
+    "Reconnoitre",
+    "Disseminate",
+    "Revitalize",
+    "Encouraging"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Daunting\" is \"Encouraging\". \"Daunting\" means: a task that appears challenging"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Corollary",
+   "options": [
+    "to hold trial against someone charged with a crime",
+    "to make something better or more manageable",
+    "using very few words to express what you mean",
+    "a natural consequence, or a result that naturally follows"
+   ],
+   "answer": 3,
+   "explain": "\"Corollary\" means: a natural consequence, or a result that naturally follows"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Corollary",
+   "options": [
+    "Ameliorate",
+    "Reconnoitre",
+    "Result",
+    "Shambles"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Corollary\" is \"Result\". \"Corollary\" means: a natural consequence, or a result that naturally follows"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Charlatan",
+   "options": [
+    "a person who falsely pretends to know or be something in order to deceive people",
+    "a piece of music played at the beginning of an opera or musical play",
+    "to find a way of avoiding a difficulty or a rule",
+    "being able to sense or understand things with little or no information"
+   ],
+   "answer": 0,
+   "explain": "\"Charlatan\" means: a person who falsely pretends to know or be something in order to deceive people"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Charlatan",
+   "options": [
+    "Sedentary",
+    "Impostor",
+    "Touting",
+    "Incite"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Charlatan\" is \"Impostor\". \"Charlatan\" means: a person who falsely pretends to know or be something in order to deceive people"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Coalesce",
+   "options": [
+    "to come together to form one larger group",
+    "to make something better or more manageable",
+    "to find a way of avoiding a difficulty or a rule",
+    "the act of locking someone into a prison"
+   ],
+   "answer": 0,
+   "explain": "\"Coalesce\" means: to come together to form one larger group"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Coalesce",
+   "options": [
+    "Smirk",
+    "Circumvent",
+    "Unite",
+    "Laconic"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Coalesce\" is \"Unite\". \"Coalesce\" means: to come together to form one larger group"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Coalesce",
+   "options": [
+    "Separate",
+    "Rescind",
+    "Incite",
+    "Startle"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Coalesce\" is \"Separate\". \"Coalesce\" means: to come together to form one larger group"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Circumvent",
+   "options": [
+    "to find a way of avoiding a difficulty or a rule",
+    "having little width in proportion to the length or height",
+    "to use or spend time, effort, or money",
+    "a natural consequence, or a result that naturally follows"
+   ],
+   "answer": 0,
+   "explain": "\"Circumvent\" means: to find a way of avoiding a difficulty or a rule"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Circumvent",
+   "options": [
+    "Revitalize",
+    "Rescind",
+    "Bypass",
+    "Imprisonment"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Circumvent\" is \"Bypass\". \"Circumvent\" means: to find a way of avoiding a difficulty or a rule"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Circumvent",
+   "options": [
+    "Ramification",
+    "Smirk",
+    "Slender",
+    "Confront"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Circumvent\" is \"Confront\". \"Circumvent\" means: to find a way of avoiding a difficulty or a rule"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Contrition",
+   "options": [
+    "a piece of music played at the beginning of an opera or musical play",
+    "unexpected and complicated results or consequesces",
+    "using very few words to express what you mean",
+    "the feeling of being very sorry for something bad that you have done"
+   ],
+   "answer": 3,
+   "explain": "\"Contrition\" means: the feeling of being very sorry for something bad that you have done"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Contrition",
+   "options": [
+    "Mundane",
+    "Corollary",
+    "Startle",
+    "Repentance"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Contrition\" is \"Repentance\". \"Contrition\" means: the feeling of being very sorry for something bad that you have done"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Enervate",
+   "options": [
+    "a perfect example of something",
+    "to make somebody feel weak and tired",
+    "a small patch of color or light",
+    "extremely uncomfortable or painful"
+   ],
+   "answer": 1,
+   "explain": "\"Enervate\" means: to make somebody feel weak and tired"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Enervate",
+   "options": [
+    "Intuitive",
+    "Repentance",
+    "Weaken",
+    "Shambles"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Enervate\" is \"Weaken\". \"Enervate\" means: to make somebody feel weak and tired"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Enervate",
+   "options": [
+    "Purview",
+    "Strengthen",
+    "Repentance",
+    "Quintessential"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Enervate\" is \"Strengthen\". \"Enervate\" means: to make somebody feel weak and tired"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Repentance",
+   "options": [
+    "a small patch of color or light",
+    "The act of promoting something",
+    "a state of disorder or chaos",
+    "feeling of regret"
+   ],
+   "answer": 3,
+   "explain": "\"Repentance\" means: feeling of regret"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Repentance",
+   "options": [
+    "Expel",
+    "Imprisonment",
+    "Mundane",
+    "Regret"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Repentance\" is \"Regret\". \"Repentance\" means: feeling of regret"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Purview",
+   "options": [
+    "exceptionally violent and cruel",
+    "cleverly make fun of something",
+    "area of authority or control",
+    "to satisfy someone fully"
+   ],
+   "answer": 2,
+   "explain": "\"Purview\" means: area of authority or control"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Purview",
+   "options": [
+    "Outset",
+    "Scope",
+    "Smirk",
+    "Coalesce"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Purview\" is \"Scope\". \"Purview\" means: area of authority or control"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Revitalize",
+   "options": [
+    "to make something stronger or energetic",
+    "a small patch of color or light",
+    "the act of locking someone into a prison",
+    "to make somebody feel weak and tired"
+   ],
+   "answer": 0,
+   "explain": "\"Revitalize\" means: to make something stronger or energetic"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Revitalize",
+   "options": [
+    "Repentance",
+    "Sanguinity",
+    "Renew",
+    "Sedentary"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Revitalize\" is \"Renew\". \"Revitalize\" means: to make something stronger or energetic"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Revitalize",
+   "options": [
+    "Uninhabited",
+    "Daunting",
+    "Exhaust",
+    "Fleck"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Revitalize\" is \"Exhaust\". \"Revitalize\" means: to make something stronger or energetic"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Shambles",
+   "options": [
+    "to scatter or spread widely",
+    "a state of disorder or chaos",
+    "not interesting or exciting",
+    "exceptionally violent and cruel"
+   ],
+   "answer": 1,
+   "explain": "\"Shambles\" means: a state of disorder or chaos"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Shambles",
+   "options": [
+    "Quintessential",
+    "Chaos",
+    "Laconic",
+    "Satiate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Shambles\" is \"Chaos\". \"Shambles\" means: a state of disorder or chaos"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Shambles",
+   "options": [
+    "Startle",
+    "Ramification",
+    "Order",
+    "Incite"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Shambles\" is \"Order\". \"Shambles\" means: a state of disorder or chaos"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Smirk",
+   "options": [
+    "a kind of smile that one gives when acting in a smug or conceited way",
+    "having little width in proportion to the length or height",
+    "to find a way of avoiding a difficulty or a rule",
+    "the feeling of being very sorry for something bad that you have done"
+   ],
+   "answer": 0,
+   "explain": "\"Smirk\" means: a kind of smile that one gives when acting in a smug or conceited way"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Smirk",
+   "options": [
+    "Grin",
+    "Daunting",
+    "Fleck",
+    "Satirize"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Smirk\" is \"Grin\". \"Smirk\" means: a kind of smile that one gives when acting in a smug or conceited way"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Intuitive",
+   "options": [
+    "being able to sense or understand things with little or no information",
+    "unexpected and complicated results or consequesces",
+    "to find a way of avoiding a difficulty or a rule",
+    "to take back/cancel a contract, law or proposal etc"
+   ],
+   "answer": 0,
+   "explain": "\"Intuitive\" means: being able to sense or understand things with little or no information"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Intuitive",
+   "options": [
+    "Outset",
+    "Stymie",
+    "Instinctive",
+    "Sedentary"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Intuitive\" is \"Instinctive\". \"Intuitive\" means: being able to sense or understand things with little or no information"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Intuitive",
+   "options": [
+    "Rescind",
+    "Reasoned",
+    "Startle",
+    "Uninhabited"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Intuitive\" is \"Reasoned\". \"Intuitive\" means: being able to sense or understand things with little or no information"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Outset",
+   "options": [
+    "exceptionally violent and cruel",
+    "cleverly make fun of something",
+    "extremely uncomfortable or painful",
+    "from the beginning of something"
+   ],
+   "answer": 3,
+   "explain": "\"Outset\" means: from the beginning of something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Outset",
+   "options": [
+    "Satirize",
+    "Imprisonment",
+    "Daunting",
+    "Beginning"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Outset\" is \"Beginning\". \"Outset\" means: from the beginning of something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Outset",
+   "options": [
+    "Prosecute",
+    "End",
+    "Rescind",
+    "Coalesce"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Outset\" is \"End\". \"Outset\" means: from the beginning of something"
+  }
+ ]
+}

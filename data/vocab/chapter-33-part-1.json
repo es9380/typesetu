@@ -1,0 +1,614 @@
+{
+ "id": "chapter-33-part-1",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 33 — Syn & Ant (Part 1)",
+ "durationMins": 33,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Faddish",
+   "options": [
+    "Trending currently but not likely to be popular for a long period of time",
+    "A feeling picked up by one of the five senses",
+    "to make clear or easy to understand",
+    "the utilization of magical abilities acquired from evil souls"
+   ],
+   "answer": 0,
+   "explain": "\"Faddish\" means: Trending currently but not likely to be popular for a long period of time"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Faddish",
+   "options": [
+    "Decimate",
+    "Reprove",
+    "Trendy",
+    "Famish"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Faddish\" is \"Trendy\". \"Faddish\" means: Trending currently but not likely to be popular for a long period of time"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Thrifty",
+   "options": [
+    "a severe reprimand or criticism",
+    "To indulge in one’s emotions",
+    "Careful with spending money",
+    "to make someone extremely hungry"
+   ],
+   "answer": 2,
+   "explain": "\"Thrifty\" means: Careful with spending money"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Thrifty",
+   "options": [
+    "Frugal",
+    "Soar",
+    "Sensation",
+    "Delinquency"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Thrifty\" is \"Frugal\". \"Thrifty\" means: Careful with spending money"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Thrifty",
+   "options": [
+    "Extravagant",
+    "Enigmatic",
+    "Robust",
+    "Faddish"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Thrifty\" is \"Extravagant\". \"Thrifty\" means: Careful with spending money"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Depressed",
+   "options": [
+    "An extremely evil person",
+    "Feeling extremely sad",
+    "Never-ceasing; Unyielding",
+    "away from the correct"
+   ],
+   "answer": 1,
+   "explain": "\"Depressed\" means: Feeling extremely sad"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Depressed",
+   "options": [
+    "Dejected",
+    "Frighten",
+    "Jejune",
+    "Amiss"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Depressed\" is \"Dejected\". \"Depressed\" means: Feeling extremely sad"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Depressed",
+   "options": [
+    "Elated",
+    "Accessory",
+    "Elucidate",
+    "Anomalous"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Depressed\" is \"Elated\". \"Depressed\" means: Feeling extremely sad"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Craven",
+   "options": [
+    "A coward",
+    "to scare or make afraid",
+    "To rise high",
+    "Feeling extremely sad"
+   ],
+   "answer": 0,
+   "explain": "\"Craven\" means: A coward"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Craven",
+   "options": [
+    "Cowardly",
+    "Incongruous",
+    "Sensation",
+    "Accessory"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Craven\" is \"Cowardly\". \"Craven\" means: A coward"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Craven",
+   "options": [
+    "Objurgation",
+    "Fiend",
+    "Amiss",
+    "Brave"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Craven\" is \"Brave\". \"Craven\" means: A coward"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Buddy",
+   "options": [
+    "out of place",
+    "without success",
+    "Direct and honest",
+    "A friend"
+   ],
+   "answer": 3,
+   "explain": "\"Buddy\" means: A friend"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Buddy",
+   "options": [
+    "Friend",
+    "Robust",
+    "Oblate",
+    "Enigmatic"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Buddy\" is \"Friend\". \"Buddy\" means: A friend"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Buddy",
+   "options": [
+    "Decimate",
+    "Stranger",
+    "Pellucid",
+    "Nadir"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Buddy\" is \"Stranger\". \"Buddy\" means: A friend"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Jejune",
+   "options": [
+    "To encourage or promote something",
+    "the lowest point of anything",
+    "Lacking interest or significance",
+    "The action of hiding something"
+   ],
+   "answer": 2,
+   "explain": "\"Jejune\" means: Lacking interest or significance"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Jejune",
+   "options": [
+    "Cealment",
+    "Anomalous",
+    "Dull",
+    "Objurgation"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Jejune\" is \"Dull\". \"Jejune\" means: Lacking interest or significance"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Jejune",
+   "options": [
+    "Faddish",
+    "Famish",
+    "Interesting",
+    "Despondent"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Jejune\" is \"Interesting\". \"Jejune\" means: Lacking interest or significance"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Famine",
+   "options": [
+    "A severe food shortage",
+    "Feeling extremely sad",
+    "the lowest point of anything",
+    "very sad and without hope"
+   ],
+   "answer": 0,
+   "explain": "\"Famine\" means: A severe food shortage"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Famine",
+   "options": [
+    "Reprove",
+    "Starvation",
+    "Objurgation",
+    "Despondent"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Famine\" is \"Starvation\". \"Famine\" means: A severe food shortage"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Famine",
+   "options": [
+    "Thrifty",
+    "Restorative",
+    "Robust",
+    "Plenty"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Famine\" is \"Plenty\". \"Famine\" means: A severe food shortage"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Wallow",
+   "options": [
+    "associated with a spiritual paradise",
+    "to make clear or easy to understand",
+    "To destroy or greatly decrease in size or number",
+    "to roll about or lie in water, snow, mud, dust, or the like, as for refreshment"
+   ],
+   "answer": 3,
+   "explain": "\"Wallow\" means: to roll about or lie in water, snow, mud, dust, or the like, as for refreshment"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Wallow",
+   "options": [
+    "Despondent",
+    "Roll",
+    "Jejune",
+    "Craven"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Wallow\" is \"Roll\". \"Wallow\" means: to roll about or lie in water, snow, mud, dust, or the like, as for refreshment"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Wallow",
+   "options": [
+    "Having a misleading appearance",
+    "the lowest point of anything",
+    "To indulge in one’s emotions",
+    "Different from the normal"
+   ],
+   "answer": 2,
+   "explain": "\"Wallow\" means: To indulge in one’s emotions"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Wallow",
+   "options": [
+    "Amiss",
+    "Reprove",
+    "Bogus",
+    "Indulge"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Wallow\" is \"Indulge\". \"Wallow\" means: To indulge in one’s emotions"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Cealment",
+   "options": [
+    "failure to pay a debt that is owed",
+    "to make someone extremely hungry",
+    "The action of hiding something",
+    "Having a misleading appearance"
+   ],
+   "answer": 2,
+   "explain": "\"Cealment\" means: The action of hiding something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Bogus",
+   "options": [
+    "Different from the normal",
+    "Lacking interest or significance",
+    "to make someone extremely hungry",
+    "Having a misleading appearance"
+   ],
+   "answer": 3,
+   "explain": "\"Bogus\" means: Having a misleading appearance"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Bogus",
+   "options": [
+    "Sinister",
+    "Fake",
+    "Buddy",
+    "Accessory"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Bogus\" is \"Fake\". \"Bogus\" means: Having a misleading appearance"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Bogus",
+   "options": [
+    "Incongruous",
+    "Genuine",
+    "Buddy",
+    "Despondent"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Bogus\" is \"Genuine\". \"Bogus\" means: Having a misleading appearance"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Soar",
+   "options": [
+    "A coward",
+    "strong and healthy",
+    "away from the correct",
+    "To rise high"
+   ],
+   "answer": 3,
+   "explain": "\"Soar\" means: To rise high"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Soar",
+   "options": [
+    "Reprove",
+    "Celestial",
+    "Restorative",
+    "Rise"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Soar\" is \"Rise\". \"Soar\" means: To rise high"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Soar",
+   "options": [
+    "Buddy",
+    "Delinquency",
+    "Plunge",
+    "Foster"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Soar\" is \"Plunge\". \"Soar\" means: To rise high"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Restorative",
+   "options": [
+    "Capable of making an individual feel well",
+    "To deliberately make something confusing",
+    "Lacking interest or significance",
+    "To destroy or greatly decrease in size or number"
+   ],
+   "answer": 0,
+   "explain": "\"Restorative\" means: Capable of making an individual feel well"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Restorative",
+   "options": [
+    "Faddish",
+    "Reprove",
+    "Vain",
+    "Healing"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Restorative\" is \"Healing\". \"Restorative\" means: Capable of making an individual feel well"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Sensation",
+   "options": [
+    "a severe reprimand or criticism",
+    "A feeling picked up by one of the five senses",
+    "Full of mystery and difficult to understand",
+    "a supplementary component that improves capability"
+   ],
+   "answer": 1,
+   "explain": "\"Sensation\" means: A feeling picked up by one of the five senses"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Sensation",
+   "options": [
+    "Incongruous",
+    "Feeling",
+    "Wallow",
+    "Decimate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Sensation\" is \"Feeling\". \"Sensation\" means: A feeling picked up by one of the five senses"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Decimate",
+   "options": [
+    "To destroy or greatly decrease in size or number",
+    "failure to pay a debt that is owed",
+    "A feeling picked up by one of the five senses",
+    "the utilization of magical abilities acquired from evil souls"
+   ],
+   "answer": 0,
+   "explain": "\"Decimate\" means: To destroy or greatly decrease in size or number"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Decimate",
+   "options": [
+    "Foster",
+    "Jejune",
+    "Enigmatic",
+    "Devastate"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Decimate\" is \"Devastate\". \"Decimate\" means: To destroy or greatly decrease in size or number"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Oblate",
+   "options": [
+    "to make clear or easy to understand",
+    "A person dedicated to religious work or the religious life",
+    "Trending currently but not likely to be popular for a long period of time",
+    "the utilization of magical abilities acquired from evil souls"
+   ],
+   "answer": 1,
+   "explain": "\"Oblate\" means: A person dedicated to religious work or the religious life"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Enigmatic",
+   "options": [
+    "a severe reprimand or criticism",
+    "Lacking interest or significance",
+    "Full of mystery and difficult to understand",
+    "The action of hiding something"
+   ],
+   "answer": 2,
+   "explain": "\"Enigmatic\" means: Full of mystery and difficult to understand"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Enigmatic",
+   "options": [
+    "Forthright",
+    "Fiend",
+    "Frighten",
+    "Mysterious"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Enigmatic\" is \"Mysterious\". \"Enigmatic\" means: Full of mystery and difficult to understand"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Enigmatic",
+   "options": [
+    "Relentless",
+    "Faddish",
+    "Clear",
+    "Jejune"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Enigmatic\" is \"Clear\". \"Enigmatic\" means: Full of mystery and difficult to understand"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Foster",
+   "options": [
+    "To encourage or promote something",
+    "To deliberately make something confusing",
+    "To indulge in one’s emotions",
+    "Capable of making an individual feel well"
+   ],
+   "answer": 0,
+   "explain": "\"Foster\" means: To encourage or promote something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Foster",
+   "options": [
+    "Bogus",
+    "Anomalous",
+    "Nadir",
+    "Nurture"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Foster\" is \"Nurture\". \"Foster\" means: To encourage or promote something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Foster",
+   "options": [
+    "Suppress",
+    "Despondent",
+    "Bogus",
+    "Wallow"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Foster\" is \"Suppress\". \"Foster\" means: To encourage or promote something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Accessory",
+   "options": [
+    "To deliberately make something confusing",
+    "a supplementary component that improves capability",
+    "To encourage or promote something",
+    "to make clear or easy to understand"
+   ],
+   "answer": 1,
+   "explain": "\"Accessory\" means: a supplementary component that improves capability"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Accessory",
+   "options": [
+    "Jejune",
+    "Attachment",
+    "Relentless",
+    "Sinister"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Accessory\" is \"Attachment\". \"Accessory\" means: a supplementary component that improves capability"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Despondent",
+   "options": [
+    "The action of hiding something",
+    "very well-defined in meaning",
+    "very sad and without hope",
+    "A severe food shortage"
+   ],
+   "answer": 2,
+   "explain": "\"Despondent\" means: very sad and without hope"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Despondent",
+   "options": [
+    "Accessory",
+    "Pellucid",
+    "Hopeless",
+    "Soar"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Despondent\" is \"Hopeless\". \"Despondent\" means: very sad and without hope"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Despondent",
+   "options": [
+    "Reprove",
+    "Hopeful",
+    "Famine",
+    "Nadir"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Despondent\" is \"Hopeful\". \"Despondent\" means: very sad and without hope"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Amiss",
+   "options": [
+    "A natural ability",
+    "away from the correct",
+    "very sad and without hope",
+    "An extremely evil person"
+   ],
+   "answer": 1,
+   "explain": "\"Amiss\" means: away from the correct"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Amiss",
+   "options": [
+    "Restorative",
+    "Wrong",
+    "Oblate",
+    "Decimate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Amiss\" is \"Wrong\". \"Amiss\" means: away from the correct"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Amiss",
+   "options": [
+    "Delinquency",
+    "Anomalous",
+    "Right",
+    "Robust"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Amiss\" is \"Right\". \"Amiss\" means: away from the correct"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Nadir",
+   "options": [
+    "the lowest point of anything",
+    "To indulge in one’s emotions",
+    "Having a misleading appearance",
+    "An extremely evil person"
+   ],
+   "answer": 0,
+   "explain": "\"Nadir\" means: the lowest point of anything"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Nadir",
+   "options": [
+    "Anomalous",
+    "Incongruous",
+    "Lowest point",
+    "Elucidate"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Nadir\" is \"Lowest point\". \"Nadir\" means: the lowest point of anything"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Nadir",
+   "options": [
+    "Enigmatic",
+    "Restorative",
+    "Relentless",
+    "Zenith"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Nadir\" is \"Zenith\". \"Nadir\" means: the lowest point of anything"
+  }
+ ]
+}

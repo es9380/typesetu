@@ -1,0 +1,625 @@
+{
+ "id": "chapter-35-part-2",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 35 — Syn & Ant (Part 2)",
+ "durationMins": 34,
+ "questions": [
+  {
+   "q": "Select the most appropriate antonym of the given word: Devious",
+   "options": [
+    "Emulate",
+    "Abduct",
+    "Crouch",
+    "Honest"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Devious\" is \"Honest\". \"Devious\" means: characterized by deceit"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Reassure",
+   "options": [
+    "To say or do something to remove fear or doubt",
+    "Not affected by alcohol or illegal drugs",
+    "Distrustful of human nature and motives",
+    "to divide into sharply opposing factions"
+   ],
+   "answer": 0,
+   "explain": "\"Reassure\" means: To say or do something to remove fear or doubt"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Reassure",
+   "options": [
+    "Sane",
+    "Obstruct",
+    "Tardy",
+    "Comfort"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Reassure\" is \"Comfort\". \"Reassure\" means: To say or do something to remove fear or doubt"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Reassure",
+   "options": [
+    "Spry",
+    "Pestilential",
+    "Alarm",
+    "Recondite"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Reassure\" is \"Alarm\". \"Reassure\" means: To say or do something to remove fear or doubt"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Sober",
+   "options": [
+    "a group of things placed in a pile",
+    "Not affected by alcohol or illegal drugs",
+    "forceful and definite in expression",
+    "To take out moisture; to dry out"
+   ],
+   "answer": 1,
+   "explain": "\"Sober\" means: Not affected by alcohol or illegal drugs"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Sober",
+   "options": [
+    "Consummate",
+    "Temperate",
+    "Abstinence",
+    "Heap"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Sober\" is \"Temperate\". \"Sober\" means: Not affected by alcohol or illegal drugs"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Sober",
+   "options": [
+    "Drunk",
+    "Asperity",
+    "Igneous",
+    "Spry"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Sober\" is \"Drunk\". \"Sober\" means: Not affected by alcohol or illegal drugs"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Benediction",
+   "options": [
+    "to divide into sharply opposing factions",
+    "a brief prayer asking for a blessing or help",
+    "forceful and definite in expression",
+    "not understood or known by many people"
+   ],
+   "answer": 1,
+   "explain": "\"Benediction\" means: a brief prayer asking for a blessing or help"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Benediction",
+   "options": [
+    "Asperity",
+    "Spry",
+    "Annoy",
+    "Blessing"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Benediction\" is \"Blessing\". \"Benediction\" means: a brief prayer asking for a blessing or help"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Benediction",
+   "options": [
+    "Obstruct",
+    "Curse",
+    "Polarize",
+    "Cupidity"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Benediction\" is \"Curse\". \"Benediction\" means: a brief prayer asking for a blessing or help"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Pestilential",
+   "options": [
+    "one who is extremely passionate about something, often a religion or cause",
+    "The act of not taking part in something",
+    "a brief prayer asking for a blessing or help",
+    "Capable of producing a devastating and contagious disease"
+   ],
+   "answer": 3,
+   "explain": "\"Pestilential\" means: Capable of producing a devastating and contagious disease"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Pestilential",
+   "options": [
+    "Infectious",
+    "Heap",
+    "Inchoate",
+    "Scanty"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Pestilential\" is \"Infectious\". \"Pestilential\" means: Capable of producing a devastating and contagious disease"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Heap",
+   "options": [
+    "a group of things placed in a pile",
+    "Marked by care and persistent effort",
+    "The act of not taking part in something",
+    "an object that acts as a shield"
+   ],
+   "answer": 0,
+   "explain": "\"Heap\" means: a group of things placed in a pile"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Heap",
+   "options": [
+    "Adroit",
+    "Reassure",
+    "Pile",
+    "Crouch"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Heap\" is \"Pile\". \"Heap\" means: a group of things placed in a pile"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Emphatic",
+   "options": [
+    "The act of not taking part in something",
+    "Casual and conversational language",
+    "forceful and definite in expression",
+    "To take out moisture; to dry out"
+   ],
+   "answer": 2,
+   "explain": "\"Emphatic\" means: forceful and definite in expression"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Emphatic",
+   "options": [
+    "Asperity",
+    "Sober",
+    "Scanty",
+    "Forceful"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Emphatic\" is \"Forceful\". \"Emphatic\" means: forceful and definite in expression"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Emphatic",
+   "options": [
+    "Spry",
+    "Amnesty",
+    "Hesitant",
+    "Emulate"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Emphatic\" is \"Hesitant\". \"Emphatic\" means: forceful and definite in expression"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Emulate",
+   "options": [
+    "To take out moisture; to dry out",
+    "Less than what is needed",
+    "To irritate or bother someone",
+    "To copy the action of others"
+   ],
+   "answer": 3,
+   "explain": "\"Emulate\" means: To copy the action of others"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Emulate",
+   "options": [
+    "Colloquial",
+    "Amnesty",
+    "Cynical",
+    "Imitate"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Emulate\" is \"Imitate\". \"Emulate\" means: To copy the action of others"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Scanty",
+   "options": [
+    "characterized by deceit",
+    "solidified from lava or magma",
+    "Less than what is needed",
+    "Something authentic in nature"
+   ],
+   "answer": 2,
+   "explain": "\"Scanty\" means: Less than what is needed"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Scanty",
+   "options": [
+    "Meagre",
+    "Recondite",
+    "Cynical",
+    "Inchoate"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Scanty\" is \"Meagre\". \"Scanty\" means: Less than what is needed"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Scanty",
+   "options": [
+    "Abundant",
+    "Pliable",
+    "Heap",
+    "Annoy"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Scanty\" is \"Abundant\". \"Scanty\" means: Less than what is needed"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Asperity",
+   "options": [
+    "forceful and definite in expression",
+    "characterized by deceit",
+    "Casual and conversational language",
+    "Harsh Manner or tone of voice"
+   ],
+   "answer": 3,
+   "explain": "\"Asperity\" means: Harsh Manner or tone of voice"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Asperity",
+   "options": [
+    "Inchoate",
+    "Pliable",
+    "Harshness",
+    "Colloquial"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Asperity\" is \"Harshness\". \"Asperity\" means: Harsh Manner or tone of voice"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Asperity",
+   "options": [
+    "Abduct",
+    "Mildness",
+    "Stupendous",
+    "Amnesty"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Asperity\" is \"Mildness\". \"Asperity\" means: Harsh Manner or tone of voice"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Spry",
+   "options": [
+    "Full of energy",
+    "Astandard of perfection",
+    "Clever or skillful",
+    "characterized by deceit"
+   ],
+   "answer": 0,
+   "explain": "\"Spry\" means: Full of energy"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Spry",
+   "options": [
+    "Polarize",
+    "Cupidity",
+    "Energetic",
+    "Pestilential"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Spry\" is \"Energetic\". \"Spry\" means: Full of energy"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Spry",
+   "options": [
+    "Scanty",
+    "Sluggish",
+    "Pliable",
+    "Reassure"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Spry\" is \"Sluggish\". \"Spry\" means: Full of energy"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Deplete",
+   "options": [
+    "To exhaust the supply",
+    "Public shame or disgrace",
+    "Clever or skillful",
+    "complete or total"
+   ],
+   "answer": 0,
+   "explain": "\"Deplete\" means: To exhaust the supply"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Deplete",
+   "options": [
+    "Cynical",
+    "Exhaust",
+    "Devious",
+    "Consummate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Deplete\" is \"Exhaust\". \"Deplete\" means: To exhaust the supply"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Deplete",
+   "options": [
+    "Absolute",
+    "Benediction",
+    "Inchoate",
+    "Replenish"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Deplete\" is \"Replenish\". \"Deplete\" means: To exhaust the supply"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Annoy",
+   "options": [
+    "To irritate or bother someone",
+    "Public shame or disgrace",
+    "Astandard of perfection",
+    "a group of things placed in a pile"
+   ],
+   "answer": 0,
+   "explain": "\"Annoy\" means: To irritate or bother someone"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Annoy",
+   "options": [
+    "Cynical",
+    "Amnesty",
+    "Irritate",
+    "Abstinence"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Annoy\" is \"Irritate\". \"Annoy\" means: To irritate or bother someone"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Annoy",
+   "options": [
+    "Amnesty",
+    "Obstruct",
+    "Absolute",
+    "Please"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Annoy\" is \"Please\". \"Annoy\" means: To irritate or bother someone"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Assiduous",
+   "options": [
+    "to grab an individual by trickery or force",
+    "Something authentic in nature",
+    "Marked by care and persistent effort",
+    "Casual and conversational language"
+   ],
+   "answer": 2,
+   "explain": "\"Assiduous\" means: Marked by care and persistent effort"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Assiduous",
+   "options": [
+    "Reassure",
+    "Abduct",
+    "Adroit",
+    "Diligent"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Assiduous\" is \"Diligent\". \"Assiduous\" means: Marked by care and persistent effort"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Assiduous",
+   "options": [
+    "Legit",
+    "Negligent",
+    "Inchoate",
+    "Stupendous"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Assiduous\" is \"Negligent\". \"Assiduous\" means: Marked by care and persistent effort"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Stupendous",
+   "options": [
+    "Amazingly large",
+    "Full of energy",
+    "Extremely skilled",
+    "easily bent or formed"
+   ],
+   "answer": 0,
+   "explain": "\"Stupendous\" means: Amazingly large"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Stupendous",
+   "options": [
+    "Cynical",
+    "Enormous",
+    "Tardy",
+    "Asperity"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Stupendous\" is \"Enormous\". \"Stupendous\" means: Amazingly large"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Stupendous",
+   "options": [
+    "Bulwark",
+    "Amalgamate",
+    "Recondite",
+    "Tiny"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Stupendous\" is \"Tiny\". \"Stupendous\" means: Amazingly large"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Obstruct",
+   "options": [
+    "Prevent the progress",
+    "characterized by deceit",
+    "Astandard of perfection",
+    "excessive desire"
+   ],
+   "answer": 0,
+   "explain": "\"Obstruct\" means: Prevent the progress"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Obstruct",
+   "options": [
+    "Emulate",
+    "Block",
+    "Inchoate",
+    "Tardy"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Obstruct\" is \"Block\". \"Obstruct\" means: Prevent the progress"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Obstruct",
+   "options": [
+    "Clear",
+    "Heap",
+    "Emphatic",
+    "Ideal"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Obstruct\" is \"Clear\". \"Obstruct\" means: Prevent the progress"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Consummate",
+   "options": [
+    "To join or combine",
+    "Extremely skilled",
+    "Mentally healthy",
+    "excessive desire"
+   ],
+   "answer": 1,
+   "explain": "\"Consummate\" means: Extremely skilled"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Consummate",
+   "options": [
+    "Polarize",
+    "Asperity",
+    "Supreme",
+    "Pliable"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Consummate\" is \"Supreme\". \"Consummate\" means: Extremely skilled"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Colloquial",
+   "options": [
+    "solidified from lava or magma",
+    "Beginning to develop or form",
+    "Casual and conversational language",
+    "Marked by care and persistent effort"
+   ],
+   "answer": 2,
+   "explain": "\"Colloquial\" means: Casual and conversational language"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Colloquial",
+   "options": [
+    "Conversational",
+    "Consummate",
+    "Scanty",
+    "Benediction"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Colloquial\" is \"Conversational\". \"Colloquial\" means: Casual and conversational language"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Colloquial",
+   "options": [
+    "Babble",
+    "Formal",
+    "Igneous",
+    "Asperity"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Colloquial\" is \"Formal\". \"Colloquial\" means: Casual and conversational language"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Crouch",
+   "options": [
+    "Marked by care and persistent effort",
+    "Distrustful of human nature and motives",
+    "The act of bending low with the limbs close to the body",
+    "to chatter about something in a typically foolish or excitable way"
+   ],
+   "answer": 2,
+   "explain": "\"Crouch\" means: The act of bending low with the limbs close to the body"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Crouch",
+   "options": [
+    "Recondite",
+    "Babble",
+    "Squat",
+    "Amnesty"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Crouch\" is \"Squat\". \"Crouch\" means: The act of bending low with the limbs close to the body"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Crouch",
+   "options": [
+    "Stand",
+    "Amnesty",
+    "Stupendous",
+    "Emphatic"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Crouch\" is \"Stand\". \"Crouch\" means: The act of bending low with the limbs close to the body"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Adroit",
+   "options": [
+    "Prevent the progress",
+    "complete or total",
+    "Clever or skillful",
+    "Amazingly large"
+   ],
+   "answer": 2,
+   "explain": "\"Adroit\" means: Clever or skillful"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Adroit",
+   "options": [
+    "Babble",
+    "Reassure",
+    "Consummate",
+    "Skillful"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Adroit\" is \"Skillful\". \"Adroit\" means: Clever or skillful"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Adroit",
+   "options": [
+    "Cupidity",
+    "Clumsy",
+    "Crouch",
+    "Fanatic"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Adroit\" is \"Clumsy\". \"Adroit\" means: Clever or skillful"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Cupidity",
+   "options": [
+    "Public shame or disgrace",
+    "Prevent the progress",
+    "Amazingly large",
+    "excessive desire"
+   ],
+   "answer": 3,
+   "explain": "\"Cupidity\" means: excessive desire"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Cupidity",
+   "options": [
+    "Spry",
+    "Greed",
+    "Adroit",
+    "Benediction"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Cupidity\" is \"Greed\". \"Cupidity\" means: excessive desire"
+  }
+ ]
+}

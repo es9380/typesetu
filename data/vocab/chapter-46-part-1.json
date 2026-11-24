@@ -1,0 +1,614 @@
+{
+ "id": "chapter-46-part-1",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 46 — Syn & Ant (Part 1)",
+ "durationMins": 33,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Fiction",
+   "options": [
+    "confident , elegant and charming man",
+    "something that is imaginary or not real",
+    "to start the fire or burning something",
+    "to pull or twist something away violently"
+   ],
+   "answer": 1,
+   "explain": "\"Fiction\" means: something that is imaginary or not real"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Fiction",
+   "options": [
+    "Fasten",
+    "Paltry",
+    "Mammoth",
+    "Fantasy"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Fiction\" is \"Fantasy\". \"Fiction\" means: something that is imaginary or not real"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Fiction",
+   "options": [
+    "Fact",
+    "Haggle",
+    "Paltry",
+    "Flabbergasted"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Fiction\" is \"Fact\". \"Fiction\" means: something that is imaginary or not real"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Covet",
+   "options": [
+    "an extremely large number of things",
+    "Land suitable for growing crops",
+    "to greatly desire something you lack",
+    "to add something to a piece of writing"
+   ],
+   "answer": 2,
+   "explain": "\"Covet\" means: to greatly desire something you lack"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Covet",
+   "options": [
+    "Usurp",
+    "Lofty",
+    "Suave",
+    "Desire"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Covet\" is \"Desire\". \"Covet\" means: to greatly desire something you lack"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Shove",
+   "options": [
+    "to roughly push",
+    "to quarrel about minor matters",
+    "a lack of something needed",
+    "Land suitable for growing crops"
+   ],
+   "answer": 0,
+   "explain": "\"Shove\" means: to roughly push"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Shove",
+   "options": [
+    "Lofty",
+    "Quibble",
+    "Despise",
+    "Push"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Shove\" is \"Push\". \"Shove\" means: to roughly push"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Shove",
+   "options": [
+    "Ignite",
+    "Deficiency",
+    "Depredation",
+    "Pull"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Shove\" is \"Pull\". \"Shove\" means: to roughly push"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Lofty",
+   "options": [
+    "to quarrel about minor matters",
+    "Land suitable for growing crops",
+    "great and worthy of praise",
+    "very aggressive or violent"
+   ],
+   "answer": 2,
+   "explain": "\"Lofty\" means: great and worthy of praise"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Lofty",
+   "options": [
+    "Noble",
+    "Suave",
+    "Covet",
+    "Mammoth"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Lofty\" is \"Noble\". \"Lofty\" means: great and worthy of praise"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Lofty",
+   "options": [
+    "Ubiquitous",
+    "Base",
+    "Mammoth",
+    "Suave"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Lofty\" is \"Base\". \"Lofty\" means: great and worthy of praise"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Tumult",
+   "options": [
+    "to gather or collect something",
+    "confusion or disorder",
+    "morally very bad",
+    "extremely surprised and amazed"
+   ],
+   "answer": 1,
+   "explain": "\"Tumult\" means: confusion or disorder"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Tumult",
+   "options": [
+    "Uproar",
+    "Crabby",
+    "Gaudy",
+    "Abysmal"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Tumult\" is \"Uproar\". \"Tumult\" means: confusion or disorder"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Tumult",
+   "options": [
+    "Wrench",
+    "Calm",
+    "Chaste",
+    "Paltry"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Tumult\" is \"Calm\". \"Tumult\" means: confusion or disorder"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Despise",
+   "options": [
+    "too small to be considered as important or useful",
+    "not showing sexual feelings, pure in thought",
+    "extremely bad or of a very low standard",
+    "to dislike and have no respect for somebody"
+   ],
+   "answer": 3,
+   "explain": "\"Despise\" means: to dislike and have no respect for somebody"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Despise",
+   "options": [
+    "Detest",
+    "Nugatory",
+    "Suave",
+    "Abysmal"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Despise\" is \"Detest\". \"Despise\" means: to dislike and have no respect for somebody"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Despise",
+   "options": [
+    "Menace",
+    "Admire",
+    "Quibble",
+    "Ignite"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Despise\" is \"Admire\". \"Despise\" means: to dislike and have no respect for somebody"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fasten",
+   "options": [
+    "to join together or to attach",
+    "extremely surprised and amazed",
+    "great and worthy of praise",
+    "to quarrel about minor matters"
+   ],
+   "answer": 0,
+   "explain": "\"Fasten\" means: to join together or to attach"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Fasten",
+   "options": [
+    "Interpolate",
+    "Flabbergasted",
+    "Shove",
+    "Attach"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Fasten\" is \"Attach\". \"Fasten\" means: to join together or to attach"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Fasten",
+   "options": [
+    "Quibble",
+    "Arable",
+    "Chaste",
+    "Detach"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Fasten\" is \"Detach\". \"Fasten\" means: to join together or to attach"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Wrench",
+   "options": [
+    "to pull or twist something away violently",
+    "to add something to a piece of writing",
+    "to take a position or power illegally by force",
+    "not showing sexual feelings, pure in thought"
+   ],
+   "answer": 0,
+   "explain": "\"Wrench\" means: to pull or twist something away violently"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Wrench",
+   "options": [
+    "Probity",
+    "Interpolate",
+    "Twist",
+    "Covet"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Wrench\" is \"Twist\". \"Wrench\" means: to pull or twist something away violently"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Gaudy",
+   "options": [
+    "attacked violently or repeatedly and injured",
+    "to show clearly that you have a feeling or quality",
+    "too brightly coloured in a way that looks cheap and of low-quality",
+    "not showing sexual feelings, pure in thought"
+   ],
+   "answer": 2,
+   "explain": "\"Gaudy\" means: too brightly coloured in a way that looks cheap and of low-quality"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Gaudy",
+   "options": [
+    "Usurp",
+    "Flashy",
+    "Shove",
+    "Ferocious"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Gaudy\" is \"Flashy\". \"Gaudy\" means: too brightly coloured in a way that looks cheap and of low-quality"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Gaudy",
+   "options": [
+    "Despise",
+    "Tasteful",
+    "Nugatory",
+    "Heinous"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Gaudy\" is \"Tasteful\". \"Gaudy\" means: too brightly coloured in a way that looks cheap and of low-quality"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Flabbergasted",
+   "options": [
+    "to quarrel about minor matters",
+    "extremely surprised and amazed",
+    "to return to a healthy condition",
+    "Land suitable for growing crops"
+   ],
+   "answer": 1,
+   "explain": "\"Flabbergasted\" means: extremely surprised and amazed"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Flabbergasted",
+   "options": [
+    "Crabby",
+    "Astonished",
+    "Quibble",
+    "Ignite"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Flabbergasted\" is \"Astonished\". \"Flabbergasted\" means: extremely surprised and amazed"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Ubiquitous",
+   "options": [
+    "attacked violently or repeatedly and injured",
+    "extremely bad or of a very low standard",
+    "seeming to be everywhere or in several places at the same time; very common",
+    "to take a position or power illegally by force"
+   ],
+   "answer": 2,
+   "explain": "\"Ubiquitous\" means: seeming to be everywhere or in several places at the same time; very common"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Ubiquitous",
+   "options": [
+    "Menace",
+    "Everywhere",
+    "Interpolate",
+    "Ignite"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Ubiquitous\" is \"Everywhere\". \"Ubiquitous\" means: seeming to be everywhere or in several places at the same time; very common"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Ubiquitous",
+   "options": [
+    "Doltish",
+    "Flabbergasted",
+    "Occult",
+    "Rare"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Ubiquitous\" is \"Rare\". \"Ubiquitous\" means: seeming to be everywhere or in several places at the same time; very common"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Chaste",
+   "options": [
+    "to add something to a piece of writing",
+    "something that is imaginary or not real",
+    "too small to be considered as important or useful",
+    "not showing sexual feelings, pure in thought"
+   ],
+   "answer": 3,
+   "explain": "\"Chaste\" means: not showing sexual feelings, pure in thought"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Chaste",
+   "options": [
+    "Pure",
+    "Vanity",
+    "Muster",
+    "Despise"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Chaste\" is \"Pure\". \"Chaste\" means: not showing sexual feelings, pure in thought"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Chaste",
+   "options": [
+    "Quibble",
+    "Impure",
+    "Multitude",
+    "Depredation"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Chaste\" is \"Impure\". \"Chaste\" means: not showing sexual feelings, pure in thought"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Prevaricate",
+   "options": [
+    "to avoid giving a direct answer to a question in order to hide the truth",
+    "too small to be considered as important or useful",
+    "extremely bad or of a very low standard",
+    "excessive pride in or admiration of one's own abilities, appearance or achievements"
+   ],
+   "answer": 0,
+   "explain": "\"Prevaricate\" means: to avoid giving a direct answer to a question in order to hide the truth"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Prevaricate",
+   "options": [
+    "Ubiquitous",
+    "Occult",
+    "Multitude",
+    "Equivocate"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Prevaricate\" is \"Equivocate\". \"Prevaricate\" means: to avoid giving a direct answer to a question in order to hide the truth"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Suave",
+   "options": [
+    "to add something to a piece of writing",
+    "to greatly desire something you lack",
+    "confident , elegant and charming man",
+    "to return to a healthy condition"
+   ],
+   "answer": 2,
+   "explain": "\"Suave\" means: confident , elegant and charming man"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Suave",
+   "options": [
+    "Quibble",
+    "Gaudy",
+    "Charming",
+    "Tumult"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Suave\" is \"Charming\". \"Suave\" means: confident , elegant and charming man"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Suave",
+   "options": [
+    "Tumult",
+    "Occult",
+    "Quibble",
+    "Awkward"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Suave\" is \"Awkward\". \"Suave\" means: confident , elegant and charming man"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Deficiency",
+   "options": [
+    "a lack of something needed",
+    "extremely surprised and amazed",
+    "to join together or to attach",
+    "great and worthy of praise"
+   ],
+   "answer": 0,
+   "explain": "\"Deficiency\" means: a lack of something needed"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Deficiency",
+   "options": [
+    "Prevaricate",
+    "Quibble",
+    "Paltry",
+    "Shortage"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Deficiency\" is \"Shortage\". \"Deficiency\" means: a lack of something needed"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Deficiency",
+   "options": [
+    "Despise",
+    "Arable",
+    "Multitude",
+    "Sufficiency"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Deficiency\" is \"Sufficiency\". \"Deficiency\" means: a lack of something needed"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Quibble",
+   "options": [
+    "at dying stage /no longer effective",
+    "bargain / negotiate to reach a deal",
+    "to quarrel about minor matters",
+    "extremely surprised and amazed"
+   ],
+   "answer": 2,
+   "explain": "\"Quibble\" means: to quarrel about minor matters"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Quibble",
+   "options": [
+    "Argue",
+    "Probity",
+    "Doltish",
+    "Revive"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Quibble\" is \"Argue\". \"Quibble\" means: to quarrel about minor matters"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Muster",
+   "options": [
+    "very aggressive or violent",
+    "confident , elegant and charming man",
+    "to gather or collect something",
+    "a lack of something needed"
+   ],
+   "answer": 2,
+   "explain": "\"Muster\" means: to gather or collect something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Muster",
+   "options": [
+    "Revive",
+    "Gather",
+    "Deficiency",
+    "Doltish"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Muster\" is \"Gather\". \"Muster\" means: to gather or collect something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Muster",
+   "options": [
+    "Disperse",
+    "Menace",
+    "Heinous",
+    "Ignite"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Muster\" is \"Disperse\". \"Muster\" means: to gather or collect something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Revive",
+   "options": [
+    "great and worthy of praise",
+    "confident , elegant and charming man",
+    "to return to a healthy condition",
+    "Useless /Having no purpose or value"
+   ],
+   "answer": 2,
+   "explain": "\"Revive\" means: to return to a healthy condition"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Revive",
+   "options": [
+    "Gaudy",
+    "Arable",
+    "Restore",
+    "Ubiquitous"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Revive\" is \"Restore\". \"Revive\" means: to return to a healthy condition"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Revive",
+   "options": [
+    "Ferocious",
+    "Wrench",
+    "Kill",
+    "Deficiency"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Revive\" is \"Kill\". \"Revive\" means: to return to a healthy condition"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Depredation",
+   "options": [
+    "a lack of something needed",
+    "damage or destruction",
+    "very stupid or foolish",
+    "to quarrel about minor matters"
+   ],
+   "answer": 1,
+   "explain": "\"Depredation\" means: damage or destruction"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Depredation",
+   "options": [
+    "Destruction",
+    "Vanity",
+    "Occult",
+    "Quibble"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Depredation\" is \"Destruction\". \"Depredation\" means: damage or destruction"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Menace",
+   "options": [
+    "attacked violently or repeatedly and injured",
+    "an individual or situation that causes problems/damage",
+    "to show clearly that you have a feeling or quality",
+    "relating to magical or supernatural abilities"
+   ],
+   "answer": 1,
+   "explain": "\"Menace\" means: an individual or situation that causes problems/damage"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Menace",
+   "options": [
+    "Interpolate",
+    "Depredation",
+    "Threat",
+    "Wrench"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Menace\" is \"Threat\". \"Menace\" means: an individual or situation that causes problems/damage"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Vanity",
+   "options": [
+    "excessive pride in or admiration of one's own abilities, appearance or achievements",
+    "too brightly coloured in a way that looks cheap and of low-quality",
+    "not showing sexual feelings, pure in thought",
+    "too small to be considered as important or useful"
+   ],
+   "answer": 0,
+   "explain": "\"Vanity\" means: excessive pride in or admiration of one's own abilities, appearance or achievements"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Vanity",
+   "options": [
+    "Evince",
+    "Abysmal",
+    "Pride",
+    "Doltish"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Vanity\" is \"Pride\". \"Vanity\" means: excessive pride in or admiration of one's own abilities, appearance or achievements"
+  }
+ ]
+}

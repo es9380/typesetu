@@ -1,0 +1,548 @@
+{
+ "id": "chapter-47",
+ "category": "ows",
+ "group": "One Word Substitution",
+ "title": "Chapter 47 — OWS",
+ "durationMins": 30,
+ "questions": [
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a large number of people or animals, often moving or doing something as a group",
+   "options": [
+    "Valetudinarian",
+    "Mortality",
+    "Drove",
+    "Infinite"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Drove\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a group of three novels, plays, etc. that form a set",
+   "options": [
+    "Trilogy",
+    "Invader",
+    "Siesta",
+    "Eclipse"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Trilogy\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: the quality or state of being self-governing",
+   "options": [
+    "Namesake",
+    "Prophet",
+    "Ancestors",
+    "Autonomy"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Autonomy\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: A person who is trained to travel in a spacecraft",
+   "options": [
+    "Stellar",
+    "Disrupt",
+    "Astronaut",
+    "Mutiny"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Astronaut\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a person who listens to someone's private conversation without them knowing:",
+   "options": [
+    "Rhetoric",
+    "Eavesdropper",
+    "Honorary",
+    "Medley"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Eavesdropper\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: A place in a large institution, for the care of those who are ill",
+   "options": [
+    "Cacophony",
+    "Cynic",
+    "Rhetoric",
+    "Infirmary"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Infirmary\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: One who studies the occult meanings of numbers and their supposed influence on human life",
+   "options": [
+    "Siesta",
+    "Patrol",
+    "Arbitrator",
+    "Numerologist"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Numerologist\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: an amount that is so endless it’s impossible to calculate",
+   "options": [
+    "Turncoat",
+    "Medley",
+    "Infinite",
+    "Honorary"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Infinite\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: something that is to your advantage but happened by chance:",
+   "options": [
+    "Fortuitous",
+    "Bouquet",
+    "Ecology",
+    "Stellar"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Fortuitous\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: interrupt (an event, activity, or process) by causing a disturbance or problem.",
+   "options": [
+    "Disrupt",
+    "Rapture",
+    "Agony",
+    "Bouquet"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Disrupt\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: The act or habit of talking in one's sleep",
+   "options": [
+    "Outdo",
+    "Trilogy",
+    "Somniloquy",
+    "Eclipse"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Somniloquy\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a creative arrangement of flowers",
+   "options": [
+    "Notorious",
+    "Bouquet",
+    "Infirmary",
+    "Astronaut"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Bouquet\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: A person appointed by two parties to solve a dispute",
+   "options": [
+    "Notorious",
+    "Disrupt",
+    "Arbitrator",
+    "Solstice"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Arbitrator\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: The state of being subject to death",
+   "options": [
+    "Infirmary",
+    "Agony",
+    "Mortality",
+    "Impromptu"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Mortality\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a collection of songs or other musical items performed as a continuous piece",
+   "options": [
+    "Rhetoric",
+    "Medley",
+    "Arbitrator",
+    "Mutiny"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Medley\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: A secret or disguised way of writing",
+   "options": [
+    "Jaywalk",
+    "Medley",
+    "Cypher/Cipher",
+    "Agony"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Cypher/Cipher\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: an unpleasant mixture of loud sounds",
+   "options": [
+    "Agony",
+    "Notorious",
+    "Winnow",
+    "Cacophony"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Cacophony\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a group of young birds all born at the same time:",
+   "options": [
+    "Brood",
+    "Winnow",
+    "Bouquet",
+    "Prophet"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Brood\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: A short rest or sleep taken after lunch",
+   "options": [
+    "Creche",
+    "Honorary",
+    "Siesta",
+    "Mutiny"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Siesta\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a big corporation composed of several small firms that operate as a single business",
+   "options": [
+    "Arbitrator",
+    "Conglomerate",
+    "Outdo",
+    "Rapture"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Conglomerate\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: A person who presents a radio/television programme",
+   "options": [
+    "Prophet",
+    "Anchor",
+    "Creche",
+    "Souvenir"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Anchor\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: to go with someone or something as a companion or guard",
+   "options": [
+    "Arbitrator",
+    "Rhetoric",
+    "Escort",
+    "Autonomy"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Escort\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: The art of effective or persuasive speaking or writing",
+   "options": [
+    "Rhetoric",
+    "Souvenir",
+    "Fortuitous",
+    "Eavesdropper"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Rhetoric\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: A nursery where children of working parents are cared for while their parents are at work",
+   "options": [
+    "Creche",
+    "Conglomerate",
+    "Numerologist",
+    "Eclipse"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Creche\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: soldiers on duty in a large group:",
+   "options": [
+    "Patrol",
+    "Arbitrator",
+    "Ancestors",
+    "Troop"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Troop\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a person who speaks for God, or someone who can predict what will happen in the future",
+   "options": [
+    "Arbitrator",
+    "Mutiny",
+    "Prophet",
+    "Invader"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Prophet\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: an organized revolt against those in power",
+   "options": [
+    "Mutiny",
+    "Infinite",
+    "Valetudinarian",
+    "Numerologist"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Mutiny\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a person who believes that humans are only motivated by selfishness and their own interests",
+   "options": [
+    "Cynic",
+    "Somniloquy",
+    "Escort",
+    "Autonomy"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Cynic\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: Be more successful than someone",
+   "options": [
+    "Notorious",
+    "Turncoat",
+    "Winnow",
+    "Outdo"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Outdo\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: extreme mental or physical suffering",
+   "options": [
+    "Agony",
+    "Brood",
+    "Somniloquy",
+    "Creche"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Agony\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a mood of great joy or love",
+   "options": [
+    "Rapture",
+    "Mortality",
+    "Solstice",
+    "Outdo"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Rapture\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a traitor who sides with the conflicting side",
+   "options": [
+    "Turncoat",
+    "Souvenir",
+    "Disrupt",
+    "Cacophony"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Turncoat\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: an army or country that uses force to enter and take control of another country:",
+   "options": [
+    "Stellar",
+    "Invader",
+    "Ecology",
+    "Troop"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Invader\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a person having the same name as another.",
+   "options": [
+    "Namesake",
+    "Brood",
+    "Somniloquy",
+    "Drove"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Namesake\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a person related to you who lived a long time ago",
+   "options": [
+    "Solstice",
+    "Ancestors",
+    "Impromptu",
+    "Cypher/Cipher"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Ancestors\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: study of environment",
+   "options": [
+    "Infinite",
+    "Ecology",
+    "Drove",
+    "Somniloquy"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Ecology\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a person who is unduly anxious about his/her health",
+   "options": [
+    "Brood",
+    "Mortality",
+    "Disrupt",
+    "Valetudinarian"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Valetudinarian\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: A large bedroom for a number of people in a school or institution.",
+   "options": [
+    "Infinite",
+    "Dormitory",
+    "Namesake",
+    "Ecology"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Dormitory\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: when the light of the Sun or Moon is blocked",
+   "options": [
+    "Arbitrator",
+    "Cypher/Cipher",
+    "Turncoat",
+    "Eclipse"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Eclipse\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: pertaining to the stars",
+   "options": [
+    "Freelance",
+    "Eavesdropper",
+    "Invader",
+    "Stellar"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Stellar\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: the time when the sun is furthest north or south of Earth's equator",
+   "options": [
+    "Dormitory",
+    "Solstice",
+    "Creche",
+    "Valetudinarian"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Solstice\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: a person of Evil reputation",
+   "options": [
+    "Namesake",
+    "Winnow",
+    "Bouquet",
+    "Notorious"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Notorious\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: to go around an area to keep a watch",
+   "options": [
+    "Somniloquy",
+    "Patrol",
+    "Mutiny",
+    "Brood"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Patrol\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: one who hold a post without salary,",
+   "options": [
+    "Cynic",
+    "Honorary",
+    "Numerologist",
+    "Astronaut"
+   ],
+   "answer": 1,
+   "explain": "The one-word substitution for the given definition is \"Honorary\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: working for different companies at different times, as opposed to being employed by one company",
+   "options": [
+    "Freelance",
+    "Honorary",
+    "Cypher/Cipher",
+    "Mutiny"
+   ],
+   "answer": 0,
+   "explain": "The one-word substitution for the given definition is \"Freelance\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: an item of sentimental value, to remember an event or location",
+   "options": [
+    "Honorary",
+    "Rhetoric",
+    "Souvenir",
+    "Prophet"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Souvenir\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: done or said without earlier planning or preparation:",
+   "options": [
+    "Valetudinarian",
+    "Anchor",
+    "Impromptu",
+    "Namesake"
+   ],
+   "answer": 2,
+   "explain": "The one-word substitution for the given definition is \"Impromptu\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: to cross streets on foot carelessly",
+   "options": [
+    "Dormitory",
+    "Numerologist",
+    "Freelance",
+    "Jaywalk"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Jaywalk\"."
+  },
+  {
+   "q": "Select the most appropriate one-word substitution for the given definition: to separate Husk from the green",
+   "options": [
+    "Astronaut",
+    "Mutiny",
+    "Siesta",
+    "Winnow"
+   ],
+   "answer": 3,
+   "explain": "The one-word substitution for the given definition is \"Winnow\"."
+  }
+ ]
+}

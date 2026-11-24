@@ -1,0 +1,592 @@
+{
+ "id": "chapter-48-part-1",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 48 — Syn & Ant (Part 1)",
+ "durationMins": 32,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Satirize",
+   "options": [
+    "not interesting or exciting",
+    "to satisfy someone fully",
+    "cleverly make fun of something",
+    "exceptionally violent and cruel"
+   ],
+   "answer": 2,
+   "explain": "\"Satirize\" means: cleverly make fun of something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Satirize",
+   "options": [
+    "Fleck",
+    "Mock",
+    "Purview",
+    "Contrition"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Satirize\" is \"Mock\". \"Satirize\" means: cleverly make fun of something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Sanguinity",
+   "options": [
+    "cheerfully optimistic",
+    "area of authority or control",
+    "having no people living there",
+    "a task that appears challenging"
+   ],
+   "answer": 0,
+   "explain": "\"Sanguinity\" means: cheerfully optimistic"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Sanguinity",
+   "options": [
+    "Smirk",
+    "Optimism",
+    "Uninhabited",
+    "Charlatan"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Sanguinity\" is \"Optimism\". \"Sanguinity\" means: cheerfully optimistic"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Sanguinity",
+   "options": [
+    "Charlatan",
+    "Uninhabited",
+    "Pessimism",
+    "Repentance"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Sanguinity\" is \"Pessimism\". \"Sanguinity\" means: cheerfully optimistic"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Expend",
+   "options": [
+    "a small patch of color or light",
+    "to use or spend time, effort, or money",
+    "extremely uncomfortable or painful",
+    "a task that appears challenging"
+   ],
+   "answer": 1,
+   "explain": "\"Expend\" means: to use or spend time, effort, or money"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Expend",
+   "options": [
+    "Excruciating",
+    "Expel",
+    "Mundane",
+    "Spend"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Expend\" is \"Spend\". \"Expend\" means: to use or spend time, effort, or money"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Expend",
+   "options": [
+    "Contrition",
+    "Save",
+    "Revitalize",
+    "Repentance"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Expend\" is \"Save\". \"Expend\" means: to use or spend time, effort, or money"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Uninhabited",
+   "options": [
+    "to scatter or spread widely",
+    "a small patch of color or light",
+    "having no people living there",
+    "not interesting or exciting"
+   ],
+   "answer": 2,
+   "explain": "\"Uninhabited\" means: having no people living there"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Uninhabited",
+   "options": [
+    "Touting",
+    "Deserted",
+    "Revitalize",
+    "Repentance"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Uninhabited\" is \"Deserted\". \"Uninhabited\" means: having no people living there"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Uninhabited",
+   "options": [
+    "Satirize",
+    "Startle",
+    "Inhabited",
+    "Satiate"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Uninhabited\" is \"Inhabited\". \"Uninhabited\" means: having no people living there"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Disseminate",
+   "options": [
+    "to satisfy someone fully",
+    "exceptionally violent and cruel",
+    "to scatter or spread widely",
+    "from the beginning of something"
+   ],
+   "answer": 2,
+   "explain": "\"Disseminate\" means: to scatter or spread widely"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Disseminate",
+   "options": [
+    "Corollary",
+    "Spread",
+    "Overture",
+    "Rescind"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Disseminate\" is \"Spread\". \"Disseminate\" means: to scatter or spread widely"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Disseminate",
+   "options": [
+    "Quintessential",
+    "Reconnoitre",
+    "Charlatan",
+    "Gather"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Disseminate\" is \"Gather\". \"Disseminate\" means: to scatter or spread widely"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Startle",
+   "options": [
+    "to frighten or surprise an individual",
+    "to come together to form one larger group",
+    "a perfect example of something",
+    "The act of promoting something"
+   ],
+   "answer": 0,
+   "explain": "\"Startle\" means: to frighten or surprise an individual"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Startle",
+   "options": [
+    "Laconic",
+    "Smirk",
+    "Corollary",
+    "Frighten"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Startle\" is \"Frighten\". \"Startle\" means: to frighten or surprise an individual"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Startle",
+   "options": [
+    "Overture",
+    "Expend",
+    "Mundane",
+    "Calm"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Startle\" is \"Calm\". \"Startle\" means: to frighten or surprise an individual"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Stymie",
+   "options": [
+    "having no people living there",
+    "cleverly make fun of something",
+    "cheerfully optimistic",
+    "to act as an obstacle"
+   ],
+   "answer": 3,
+   "explain": "\"Stymie\" means: to act as an obstacle"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Stymie",
+   "options": [
+    "Hinder",
+    "Corollary",
+    "Rescind",
+    "Repentance"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Stymie\" is \"Hinder\". \"Stymie\" means: to act as an obstacle"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Stymie",
+   "options": [
+    "Uninhabited",
+    "Slender",
+    "Assist",
+    "Enervate"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Stymie\" is \"Assist\". \"Stymie\" means: to act as an obstacle"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Reconnoitre",
+   "options": [
+    "(of soldiers or military aircraft) to get information about an area or the size and position of enemy forces",
+    "a kind of smile that one gives when acting in a smug or conceited way",
+    "being able to sense or understand things with little or no information",
+    "to take back/cancel a contract, law or proposal etc"
+   ],
+   "answer": 0,
+   "explain": "\"Reconnoitre\" means: (of soldiers or military aircraft) to get information about an area or the size and position of enemy forces"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Reconnoitre",
+   "options": [
+    "Survey",
+    "Circumvent",
+    "Overture",
+    "Mundane"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Reconnoitre\" is \"Survey\". \"Reconnoitre\" means: (of soldiers or military aircraft) to get information about an area or the size and position of enemy forces"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Rescind",
+   "options": [
+    "to hold trial against someone charged with a crime",
+    "to take back/cancel a contract, law or proposal etc",
+    "to provoke somebody to do something illegal or bad",
+    "the act of locking someone into a prison"
+   ],
+   "answer": 1,
+   "explain": "\"Rescind\" means: to take back/cancel a contract, law or proposal etc"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Rescind",
+   "options": [
+    "Cancel",
+    "Excruciating",
+    "Quintessential",
+    "Incite"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Rescind\" is \"Cancel\". \"Rescind\" means: to take back/cancel a contract, law or proposal etc"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Rescind",
+   "options": [
+    "Excruciating",
+    "Daunting",
+    "Enforce",
+    "Corollary"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Rescind\" is \"Enforce\". \"Rescind\" means: to take back/cancel a contract, law or proposal etc"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Touting",
+   "options": [
+    "a small patch of color or light",
+    "The act of promoting something",
+    "from the beginning of something",
+    "a state of disorder or chaos"
+   ],
+   "answer": 1,
+   "explain": "\"Touting\" means: The act of promoting something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Touting",
+   "options": [
+    "Charlatan",
+    "Shambles",
+    "Promoting",
+    "Incite"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Touting\" is \"Promoting\". \"Touting\" means: The act of promoting something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Overture",
+   "options": [
+    "using very few words to express what you mean",
+    "a piece of music played at the beginning of an opera or musical play",
+    "a person who falsely pretends to know or be something in order to deceive people",
+    "the feeling of being very sorry for something bad that you have done"
+   ],
+   "answer": 1,
+   "explain": "\"Overture\" means: a piece of music played at the beginning of an opera or musical play"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Overture",
+   "options": [
+    "Prelude",
+    "Charlatan",
+    "Quintessential",
+    "Ameliorate"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Overture\" is \"Prelude\". \"Overture\" means: a piece of music played at the beginning of an opera or musical play"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Prosecute",
+   "options": [
+    "a natural consequence, or a result that naturally follows",
+    "to provoke somebody to do something illegal or bad",
+    "to hold trial against someone charged with a crime",
+    "using very few words to express what you mean"
+   ],
+   "answer": 2,
+   "explain": "\"Prosecute\" means: to hold trial against someone charged with a crime"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Prosecute",
+   "options": [
+    "Corollary",
+    "Rescind",
+    "Charge",
+    "Slender"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Prosecute\" is \"Charge\". \"Prosecute\" means: to hold trial against someone charged with a crime"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Prosecute",
+   "options": [
+    "Defend",
+    "Overture",
+    "Enervate",
+    "Touting"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Prosecute\" is \"Defend\". \"Prosecute\" means: to hold trial against someone charged with a crime"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Incite",
+   "options": [
+    "to provoke somebody to do something illegal or bad",
+    "to make something better or more manageable",
+    "to hold trial against someone charged with a crime",
+    "the act of locking someone into a prison"
+   ],
+   "answer": 0,
+   "explain": "\"Incite\" means: to provoke somebody to do something illegal or bad"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Incite",
+   "options": [
+    "Provoke",
+    "Expel",
+    "Mundane",
+    "Charlatan"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Incite\" is \"Provoke\". \"Incite\" means: to provoke somebody to do something illegal or bad"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Incite",
+   "options": [
+    "Satirize",
+    "Revitalize",
+    "Rescind",
+    "Suppress"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Incite\" is \"Suppress\". \"Incite\" means: to provoke somebody to do something illegal or bad"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fleck",
+   "options": [
+    "extremely uncomfortable or painful",
+    "to scatter or spread widely",
+    "a small patch of color or light",
+    "having no people living there"
+   ],
+   "answer": 2,
+   "explain": "\"Fleck\" means: a small patch of color or light"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Fleck",
+   "options": [
+    "Startle",
+    "Bestial",
+    "Revitalize",
+    "Speck"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Fleck\" is \"Speck\". \"Fleck\" means: a small patch of color or light"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Excruciating",
+   "options": [
+    "extremely uncomfortable or painful",
+    "to make something stronger or energetic",
+    "to make somebody feel weak and tired",
+    "from the beginning of something"
+   ],
+   "answer": 0,
+   "explain": "\"Excruciating\" means: extremely uncomfortable or painful"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Excruciating",
+   "options": [
+    "Overture",
+    "Agonizing",
+    "Sedentary",
+    "Slender"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Excruciating\" is \"Agonizing\". \"Excruciating\" means: extremely uncomfortable or painful"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Excruciating",
+   "options": [
+    "Satirize",
+    "Touting",
+    "Coalesce",
+    "Pleasant"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Excruciating\" is \"Pleasant\". \"Excruciating\" means: extremely uncomfortable or painful"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Laconic",
+   "options": [
+    "to find a way of avoiding a difficulty or a rule",
+    "to make somebody feel weak and tired",
+    "A lifestyle characterized by little physical activity",
+    "using very few words to express what you mean"
+   ],
+   "answer": 3,
+   "explain": "\"Laconic\" means: using very few words to express what you mean"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Laconic",
+   "options": [
+    "Reconnoitre",
+    "Sedentary",
+    "Mundane",
+    "Brief"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Laconic\" is \"Brief\". \"Laconic\" means: using very few words to express what you mean"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Laconic",
+   "options": [
+    "Bestial",
+    "Sedentary",
+    "Imprisonment",
+    "Verbose"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Laconic\" is \"Verbose\". \"Laconic\" means: using very few words to express what you mean"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Quintessential",
+   "options": [
+    "to scatter or spread widely",
+    "from the beginning of something",
+    "a perfect example of something",
+    "a task that appears challenging"
+   ],
+   "answer": 2,
+   "explain": "\"Quintessential\" means: a perfect example of something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Quintessential",
+   "options": [
+    "Disseminate",
+    "Repentance",
+    "Laconic",
+    "Ideal"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Quintessential\" is \"Ideal\". \"Quintessential\" means: a perfect example of something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Slender",
+   "options": [
+    "having little width in proportion to the length or height",
+    "using very few words to express what you mean",
+    "unexpected and complicated results or consequesces",
+    "a piece of music played at the beginning of an opera or musical play"
+   ],
+   "answer": 0,
+   "explain": "\"Slender\" means: having little width in proportion to the length or height"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Slender",
+   "options": [
+    "Slim",
+    "Contrition",
+    "Repentance",
+    "Disseminate"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Slender\" is \"Slim\". \"Slender\" means: having little width in proportion to the length or height"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Slender",
+   "options": [
+    "Charlatan",
+    "Fat",
+    "Rescind",
+    "Reconnoitre"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Slender\" is \"Fat\". \"Slender\" means: having little width in proportion to the length or height"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Bestial",
+   "options": [
+    "having no people living there",
+    "exceptionally violent and cruel",
+    "area of authority or control",
+    "a state of disorder or chaos"
+   ],
+   "answer": 1,
+   "explain": "\"Bestial\" means: exceptionally violent and cruel"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Bestial",
+   "options": [
+    "Daunting",
+    "Brutal",
+    "Sedentary",
+    "Disseminate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Bestial\" is \"Brutal\". \"Bestial\" means: exceptionally violent and cruel"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Bestial",
+   "options": [
+    "Humane",
+    "Laconic",
+    "Reconnoitre",
+    "Satiate"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Bestial\" is \"Humane\". \"Bestial\" means: exceptionally violent and cruel"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Satiate",
+   "options": [
+    "feeling of regret",
+    "The act of promoting something",
+    "having no people living there",
+    "to satisfy someone fully"
+   ],
+   "answer": 3,
+   "explain": "\"Satiate\" means: to satisfy someone fully"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Satiate",
+   "options": [
+    "Rescind",
+    "Intuitive",
+    "Satisfy",
+    "Charlatan"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Satiate\" is \"Satisfy\". \"Satiate\" means: to satisfy someone fully"
+  }
+ ]
+}
