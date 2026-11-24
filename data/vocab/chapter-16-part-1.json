@@ -1,0 +1,647 @@
+{
+ "id": "chapter-16-part-1",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 16 — Syn & Ant (Part 1)",
+ "durationMins": 35,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Dulcet",
+   "options": [
+    "To push something away",
+    "Highly injurious or destructive",
+    "Sounding sweet and pleasant",
+    "Affected by uncontrolled emotions"
+   ],
+   "answer": 2,
+   "explain": "\"Dulcet\" means: Sounding sweet and pleasant"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Dulcet",
+   "options": [
+    "Witty",
+    "Melodious",
+    "Noble",
+    "Empowered"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Dulcet\" is \"Melodious\". \"Dulcet\" means: Sounding sweet and pleasant"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Dulcet",
+   "options": [
+    "Witty",
+    "Facilitate",
+    "Harsh",
+    "Convoluted"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Dulcet\" is \"Harsh\". \"Dulcet\" means: Sounding sweet and pleasant"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Pernicious",
+   "options": [
+    "Not good and likely to cause problems",
+    "To look at something for a long time",
+    "Pain and difficulty that causes it",
+    "Highly injurious or destructive"
+   ],
+   "answer": 3,
+   "explain": "\"Pernicious\" means: Highly injurious or destructive"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Pernicious",
+   "options": [
+    "Redeem",
+    "Destructive",
+    "Fixation",
+    "Puritanical"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Pernicious\" is \"Destructive\". \"Pernicious\" means: Highly injurious or destructive"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Pernicious",
+   "options": [
+    "Turmoil",
+    "Affliction",
+    "Beneficial",
+    "Guile"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Pernicious\" is \"Beneficial\". \"Pernicious\" means: Highly injurious or destructive"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Suspicious",
+   "options": [
+    "Something pulled out or saved because of its value",
+    "Feeling that somebody has done something wrong",
+    "Unreasonable; that you cannot take seriously",
+    "The use of dishonest mean to trick someone"
+   ],
+   "answer": 1,
+   "explain": "\"Suspicious\" means: Feeling that somebody has done something wrong"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Suspicious",
+   "options": [
+    "Overt",
+    "Affliction",
+    "Harmony",
+    "Doubtful"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Suspicious\" is \"Doubtful\". \"Suspicious\" means: Feeling that somebody has done something wrong"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Suspicious",
+   "options": [
+    "Turmoil",
+    "Salvage",
+    "Subdued",
+    "Trusting"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Suspicious\" is \"Trusting\". \"Suspicious\" means: Feeling that somebody has done something wrong"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Subdued",
+   "options": [
+    "Sounding sweet and pleasant",
+    "Held down",
+    "A state of confusion or disorder",
+    "Happening very quickly"
+   ],
+   "answer": 1,
+   "explain": "\"Subdued\" means: Held down"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Subdued",
+   "options": [
+    "Captivate",
+    "Ludicrous",
+    "Suppressed",
+    "Suspicious"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Subdued\" is \"Suppressed\". \"Subdued\" means: Held down"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Witty",
+   "options": [
+    "A state of confusion or disorder",
+    "Acting with confidence",
+    "Happening very quickly",
+    "Funny and clever"
+   ],
+   "answer": 3,
+   "explain": "\"Witty\" means: Funny and clever"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Witty",
+   "options": [
+    "Humorous",
+    "Benign",
+    "Dulcet",
+    "Interminable"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Witty\" is \"Humorous\". \"Witty\" means: Funny and clever"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Witty",
+   "options": [
+    "Elusive",
+    "Ambivalent",
+    "Affliction",
+    "Dull"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Witty\" is \"Dull\". \"Witty\" means: Funny and clever"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Unfavourable",
+   "options": [
+    "Having no significant effect; harmless",
+    "Pleasant, friendly and easy to talk to",
+    "Not good and likely to cause problems",
+    "To make something occur or less difficult"
+   ],
+   "answer": 2,
+   "explain": "\"Unfavourable\" means: Not good and likely to cause problems"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Unfavourable",
+   "options": [
+    "Lunacy",
+    "Convoluted",
+    "Adverse",
+    "Pernicious"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Unfavourable\" is \"Adverse\". \"Unfavourable\" means: Not good and likely to cause problems"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Unfavourable",
+   "options": [
+    "Favourable",
+    "Contemplate",
+    "Repel",
+    "Sundry"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Unfavourable\" is \"Favourable\". \"Unfavourable\" means: Not good and likely to cause problems"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Overt",
+   "options": [
+    "A group of unrelated things",
+    "Funny and clever",
+    "Done in an open way",
+    "Without mistake or faults"
+   ],
+   "answer": 2,
+   "explain": "\"Overt\" means: Done in an open way"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Overt",
+   "options": [
+    "Facilitate",
+    "Empowered",
+    "Contemplate",
+    "Open"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Overt\" is \"Open\". \"Overt\" means: Done in an open way"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Overt",
+   "options": [
+    "Affliction",
+    "Stare",
+    "Covert",
+    "Impeccable"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Overt\" is \"Covert\". \"Overt\" means: Done in an open way"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Viability",
+   "options": [
+    "Lasting a very long time and therefore boring",
+    "Feeling that somebody has done something wrong",
+    "The fact that something can be done and be successful",
+    "Something pulled out or saved because of its value"
+   ],
+   "answer": 2,
+   "explain": "\"Viability\" means: The fact that something can be done and be successful"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Viability",
+   "options": [
+    "Feasibility",
+    "Subdued",
+    "Empowered",
+    "Demonstrate"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Viability\" is \"Feasibility\". \"Viability\" means: The fact that something can be done and be successful"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Stare",
+   "options": [
+    "Pain and difficulty that causes it",
+    "Affected by uncontrolled emotions",
+    "To look at something for a long time",
+    "to catch and hold someone’s attention"
+   ],
+   "answer": 2,
+   "explain": "\"Stare\" means: To look at something for a long time"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Stare",
+   "options": [
+    "Gaze",
+    "Affliction",
+    "Contemplate",
+    "Witty"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Stare\" is \"Gaze\". \"Stare\" means: To look at something for a long time"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Stare",
+   "options": [
+    "Fixation",
+    "Guile",
+    "Facilitate",
+    "Glance"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Stare\" is \"Glance\". \"Stare\" means: To look at something for a long time"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Impeccable",
+   "options": [
+    "Without mistake or faults",
+    "A state of confusion or disorder",
+    "Acting with confidence",
+    "Highly injurious or destructive"
+   ],
+   "answer": 0,
+   "explain": "\"Impeccable\" means: Without mistake or faults"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Impeccable",
+   "options": [
+    "Puritanical",
+    "Faultless",
+    "Salvage",
+    "Elusive"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Impeccable\" is \"Faultless\". \"Impeccable\" means: Without mistake or faults"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Impeccable",
+   "options": [
+    "Flawed",
+    "Repel",
+    "Overt",
+    "Suspicious"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Impeccable\" is \"Flawed\". \"Impeccable\" means: Without mistake or faults"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Contemplate",
+   "options": [
+    "Held down",
+    "to consider something",
+    "A state of confusion or disorder",
+    "Strong and determined"
+   ],
+   "answer": 1,
+   "explain": "\"Contemplate\" means: to consider something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Contemplate",
+   "options": [
+    "Redeem",
+    "Consider",
+    "Salvage",
+    "Verbose"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Contemplate\" is \"Consider\". \"Contemplate\" means: to consider something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Puritanical",
+   "options": [
+    "Practicing very strict moral or religious behavior",
+    "A state of peaceful existence and agreemen",
+    "Unreasonable; that you cannot take seriously",
+    "Something pulled out or saved because of its value"
+   ],
+   "answer": 0,
+   "explain": "\"Puritanical\" means: Practicing very strict moral or religious behavior"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Puritanical",
+   "options": [
+    "Strict",
+    "Lunacy",
+    "Facilitate",
+    "Affable"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Puritanical\" is \"Strict\". \"Puritanical\" means: Practicing very strict moral or religious behavior"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Puritanical",
+   "options": [
+    "Permissive",
+    "Jovial",
+    "Suspicious",
+    "Pacify"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Puritanical\" is \"Permissive\". \"Puritanical\" means: Practicing very strict moral or religious behavior"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Harmony",
+   "options": [
+    "A state of peaceful existence and agreemen",
+    "Having no significant effect; harmless",
+    "The use of dishonest mean to trick someone",
+    "To make something occur or less difficult"
+   ],
+   "answer": 0,
+   "explain": "\"Harmony\" means: A state of peaceful existence and agreemen"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Harmony",
+   "options": [
+    "Lunacy",
+    "Contemplate",
+    "Ambivalent",
+    "Agreement"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Harmony\" is \"Agreement\". \"Harmony\" means: A state of peaceful existence and agreemen"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Harmony",
+   "options": [
+    "Affliction",
+    "Convoluted",
+    "Viability",
+    "Discord"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Harmony\" is \"Discord\". \"Harmony\" means: A state of peaceful existence and agreemen"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Confess",
+   "options": [
+    "To admit something that you feel ashamed about",
+    "Lasting a very long time and therefore boring",
+    "To make somebody who is angry become calm",
+    "Something pulled out or saved because of its value"
+   ],
+   "answer": 0,
+   "explain": "\"Confess\" means: To admit something that you feel ashamed about"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Confess",
+   "options": [
+    "Affliction",
+    "Admit",
+    "Fixation",
+    "Resolute"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Confess\" is \"Admit\". \"Confess\" means: To admit something that you feel ashamed about"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Confess",
+   "options": [
+    "Pernicious",
+    "Impeccable",
+    "Deny",
+    "Noble"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Confess\" is \"Deny\". \"Confess\" means: To admit something that you feel ashamed about"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Affliction",
+   "options": [
+    "Affected by uncontrolled emotions",
+    "Pain and difficulty that causes it",
+    "Pleasant, friendly and easy to talk to",
+    "Using or containing too many words"
+   ],
+   "answer": 1,
+   "explain": "\"Affliction\" means: Pain and difficulty that causes it"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Affliction",
+   "options": [
+    "Puritanical",
+    "Suffering",
+    "Demonstrate",
+    "Benign"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Affliction\" is \"Suffering\". \"Affliction\" means: Pain and difficulty that causes it"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Affliction",
+   "options": [
+    "Ludicrous",
+    "Puritanical",
+    "Guile",
+    "Comfort"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Affliction\" is \"Comfort\". \"Affliction\" means: Pain and difficulty that causes it"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Repel",
+   "options": [
+    "To recover something mortgaged",
+    "To push something away",
+    "Funny and clever",
+    "A state of confusion or disorder"
+   ],
+   "answer": 1,
+   "explain": "\"Repel\" means: To push something away"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Repel",
+   "options": [
+    "Subdued",
+    "Repulse",
+    "Dulcet",
+    "Puritanical"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Repel\" is \"Repulse\". \"Repel\" means: To push something away"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Repel",
+   "options": [
+    "Attract",
+    "Stare",
+    "Redeem",
+    "Demonstrate"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Repel\" is \"Attract\". \"Repel\" means: To push something away"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Ludicrous",
+   "options": [
+    "To prove something by showing examples",
+    "Unreasonable; that you cannot take seriously",
+    "Something pulled out or saved because of its value",
+    "Extremely complex and difficult to follow"
+   ],
+   "answer": 1,
+   "explain": "\"Ludicrous\" means: Unreasonable; that you cannot take seriously"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Ludicrous",
+   "options": [
+    "Absurd",
+    "Affliction",
+    "Unfavourable",
+    "Harmony"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Ludicrous\" is \"Absurd\". \"Ludicrous\" means: Unreasonable; that you cannot take seriously"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Ludicrous",
+   "options": [
+    "Impeccable",
+    "Reasonable",
+    "Elusive",
+    "Contemplate"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Ludicrous\" is \"Reasonable\". \"Ludicrous\" means: Unreasonable; that you cannot take seriously"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Benign",
+   "options": [
+    "Behaviour that is stupid and crazy",
+    "Extremely complex and difficult to follow",
+    "Having no significant effect; harmless",
+    "To prove something by showing examples"
+   ],
+   "answer": 2,
+   "explain": "\"Benign\" means: Having no significant effect; harmless"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Benign",
+   "options": [
+    "Harmless",
+    "Harmony",
+    "Pacify",
+    "Repel"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Benign\" is \"Harmless\". \"Benign\" means: Having no significant effect; harmless"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Benign",
+   "options": [
+    "Affliction",
+    "Dulcet",
+    "Confess",
+    "Harmful"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Benign\" is \"Harmful\". \"Benign\" means: Having no significant effect; harmless"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fixation",
+   "options": [
+    "The use of dishonest mean to trick someone",
+    "Having both positive and negative feeling about something",
+    "Lasting a very long time and therefore boring",
+    "The activity of fastening something firmly in position"
+   ],
+   "answer": 3,
+   "explain": "\"Fixation\" means: The activity of fastening something firmly in position"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Demonstrate",
+   "options": [
+    "To look at something for a long time",
+    "Having no significant effect; harmless",
+    "To prove something by showing examples",
+    "Using or containing too many words"
+   ],
+   "answer": 2,
+   "explain": "\"Demonstrate\" means: To prove something by showing examples"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Demonstrate",
+   "options": [
+    "Redeem",
+    "Raciness",
+    "Unfavourable",
+    "Prove"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Demonstrate\" is \"Prove\". \"Demonstrate\" means: To prove something by showing examples"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Hysterical",
+   "options": [
+    "Pleasant, friendly and easy to talk to",
+    "to catch and hold someone’s attention",
+    "Behaviour that is stupid and crazy",
+    "Affected by uncontrolled emotions"
+   ],
+   "answer": 3,
+   "explain": "\"Hysterical\" means: Affected by uncontrolled emotions"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Hysterical",
+   "options": [
+    "Pacify",
+    "Frenzied",
+    "Sundry",
+    "Unfavourable"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Hysterical\" is \"Frenzied\". \"Hysterical\" means: Affected by uncontrolled emotions"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Hysterical",
+   "options": [
+    "Composed",
+    "Convoluted",
+    "Lunacy",
+    "Subdued"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Hysterical\" is \"Composed\". \"Hysterical\" means: Affected by uncontrolled emotions"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Rapid",
+   "options": [
+    "Very cheerful and friendly",
+    "to consider something",
+    "Happening very quickly",
+    "Acting with confidence"
+   ],
+   "answer": 2,
+   "explain": "\"Rapid\" means: Happening very quickly"
+  }
+ ]
+}

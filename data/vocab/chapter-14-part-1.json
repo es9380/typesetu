@@ -1,0 +1,537 @@
+{
+ "id": "chapter-14-part-1",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 14 — Syn & Ant (Part 1)",
+ "durationMins": 29,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Indispensable",
+   "options": [
+    "Difficult, unpleasant situation",
+    "Always active or changing",
+    "As in necessary, Too important",
+    "Very ugly or unpleasant"
+   ],
+   "answer": 2,
+   "explain": "\"Indispensable\" means: As in necessary, Too important"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Indispensable",
+   "options": [
+    "Dynamic",
+    "Catastrophe",
+    "Repercussion",
+    "Essential"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Indispensable\" is \"Essential\". \"Indispensable\" means: As in necessary, Too important"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Indispensable",
+   "options": [
+    "Timid",
+    "Predicament",
+    "Prolific",
+    "Dispensable"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Indispensable\" is \"Dispensable\". \"Indispensable\" means: As in necessary, Too important"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Transient",
+   "options": [
+    "Very ugly or unpleasant",
+    "In a state of panic, worry, frenzy or rush",
+    "Great intensity of feeling or belief",
+    "Continuing for only a short time"
+   ],
+   "answer": 3,
+   "explain": "\"Transient\" means: Continuing for only a short time"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Transient",
+   "options": [
+    "Compassionate",
+    "Bleak",
+    "Temporary",
+    "Adjourn"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Transient\" is \"Temporary\". \"Transient\" means: Continuing for only a short time"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Transient",
+   "options": [
+    "Flung",
+    "Indispensable",
+    "Permanent",
+    "Precise"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Transient\" is \"Permanent\". \"Transient\" means: Continuing for only a short time"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Prolific",
+   "options": [
+    "Highly productive",
+    "Devoid of enthusiasm or life",
+    "A plan or suggestion",
+    "In a quick manner"
+   ],
+   "answer": 0,
+   "explain": "\"Prolific\" means: Highly productive"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Prolific",
+   "options": [
+    "Demarcation",
+    "Productive",
+    "Flung",
+    "Transient"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Prolific\" is \"Productive\". \"Prolific\" means: Highly productive"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Prolific",
+   "options": [
+    "Unproductive",
+    "Implies",
+    "Tolerance",
+    "Elaborate"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Prolific\" is \"Unproductive\". \"Prolific\" means: Highly productive"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Conceit",
+   "options": [
+    "To make you want something that you cannot have",
+    "A person who is perfect example of a particular good quality.",
+    "The fact of being too proud of yourself and what you do",
+    "To be slow to speak or act because you feel nervous"
+   ],
+   "answer": 2,
+   "explain": "\"Conceit\" means: The fact of being too proud of yourself and what you do"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Conceit",
+   "options": [
+    "Corpulent",
+    "Dynamic",
+    "Vanity",
+    "Predicament"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Conceit\" is \"Vanity\". \"Conceit\" means: The fact of being too proud of yourself and what you do"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Conceit",
+   "options": [
+    "Precise",
+    "Humility",
+    "Timid",
+    "Paragon"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Conceit\" is \"Humility\". \"Conceit\" means: The fact of being too proud of yourself and what you do"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Tolerance",
+   "options": [
+    "The quality of being willing to accept or capacity to endure pain.",
+    "To succeed in finding meaning of something that is difficult to understand.",
+    "To throw or push something with force especially because you are angry",
+    "In a state of panic, worry, frenzy or rush"
+   ],
+   "answer": 0,
+   "explain": "\"Tolerance\" means: The quality of being willing to accept or capacity to endure pain."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Tolerance",
+   "options": [
+    "Promptly",
+    "Conceit",
+    "Flung",
+    "Endurance"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Tolerance\" is \"Endurance\". \"Tolerance\" means: The quality of being willing to accept or capacity to endure pain."
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Tolerance",
+   "options": [
+    "Intolerance",
+    "Fervour",
+    "Detest",
+    "Frantic"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Tolerance\" is \"Intolerance\". \"Tolerance\" means: The quality of being willing to accept or capacity to endure pain."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Precise",
+   "options": [
+    "Devoid of enthusiasm or life",
+    "A dividing line",
+    "Very ugly or unpleasant",
+    "Clear and accurate"
+   ],
+   "answer": 3,
+   "explain": "\"Precise\" means: Clear and accurate"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Precise",
+   "options": [
+    "Predicament",
+    "Accurate",
+    "Conceit",
+    "Elaborate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Precise\" is \"Accurate\". \"Precise\" means: Clear and accurate"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Precise",
+   "options": [
+    "Repercussion",
+    "Vague",
+    "Timid",
+    "Demarcation"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Precise\" is \"Vague\". \"Precise\" means: Clear and accurate"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Compassionate",
+   "options": [
+    "To interfere in an incident for a specific purpose",
+    "The quality of being willing to accept or capacity to endure pain.",
+    "Displaying concern or understanding towards other people",
+    "An indirect and usually a bad action or result"
+   ],
+   "answer": 2,
+   "explain": "\"Compassionate\" means: Displaying concern or understanding towards other people"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Compassionate",
+   "options": [
+    "Sympathetic",
+    "Adjourn",
+    "Precise",
+    "Promptly"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Compassionate\" is \"Sympathetic\". \"Compassionate\" means: Displaying concern or understanding towards other people"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Compassionate",
+   "options": [
+    "Cruel",
+    "Prolific",
+    "Catastrophe",
+    "Elaborate"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Compassionate\" is \"Cruel\". \"Compassionate\" means: Displaying concern or understanding towards other people"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Predicament",
+   "options": [
+    "Difficult, unpleasant situation",
+    "To suspend or conclude an event",
+    "Lacking in courage or confidence",
+    "As in necessary, Too important"
+   ],
+   "answer": 0,
+   "explain": "\"Predicament\" means: Difficult, unpleasant situation"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Predicament",
+   "options": [
+    "Dynamic",
+    "Detest",
+    "Quell",
+    "Dilemma"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Predicament\" is \"Dilemma\". \"Predicament\" means: Difficult, unpleasant situation"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Promptly",
+   "options": [
+    "In a quick manner",
+    "Extremely beautiful",
+    "The key element of something",
+    "Greatly surprised"
+   ],
+   "answer": 0,
+   "explain": "\"Promptly\" means: In a quick manner"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Promptly",
+   "options": [
+    "Immediately",
+    "Fervour",
+    "Intervene",
+    "Tolerance"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Promptly\" is \"Immediately\". \"Promptly\" means: In a quick manner"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Promptly",
+   "options": [
+    "Implies",
+    "Slowly",
+    "Repercussion",
+    "Intervene"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Promptly\" is \"Slowly\". \"Promptly\" means: In a quick manner"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Flung",
+   "options": [
+    "To throw or push something with force especially because you are angry",
+    "A person who is perfect example of a particular good quality.",
+    "In a state of panic, worry, frenzy or rush",
+    "Suggest that something is true that you feel without saying it directly"
+   ],
+   "answer": 0,
+   "explain": "\"Flung\" means: To throw or push something with force especially because you are angry"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Flung",
+   "options": [
+    "Timid",
+    "Indispensable",
+    "Implies",
+    "Hurled"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Flung\" is \"Hurled\". \"Flung\" means: To throw or push something with force especially because you are angry"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Decipher",
+   "options": [
+    "To make somebody who is anxious, upset, feel calmer",
+    "To succeed in finding meaning of something that is difficult to understand.",
+    "Suggest that something is true that you feel without saying it directly",
+    "The act of delaying something that must be done"
+   ],
+   "answer": 1,
+   "explain": "\"Decipher\" means: To succeed in finding meaning of something that is difficult to understand."
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Decipher",
+   "options": [
+    "Corpulent",
+    "Demarcation",
+    "Decode",
+    "Hideous"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Decipher\" is \"Decode\". \"Decipher\" means: To succeed in finding meaning of something that is difficult to understand."
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Adjourn",
+   "options": [
+    "To suspend or conclude an event",
+    "In a state of panic, worry, frenzy or rush",
+    "Very ugly or unpleasant",
+    "Difficult, unpleasant situation"
+   ],
+   "answer": 0,
+   "explain": "\"Adjourn\" means: To suspend or conclude an event"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Adjourn",
+   "options": [
+    "Timid",
+    "Ravishing",
+    "Hideous",
+    "Postpone"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Adjourn\" is \"Postpone\". \"Adjourn\" means: To suspend or conclude an event"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Hesitate",
+   "options": [
+    "A person who is perfect example of a particular good quality.",
+    "The act of delaying something that must be done",
+    "To be slow to speak or act because you feel nervous",
+    "In a state of panic, worry, frenzy or rush"
+   ],
+   "answer": 2,
+   "explain": "\"Hesitate\" means: To be slow to speak or act because you feel nervous"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Hesitate",
+   "options": [
+    "Frantic",
+    "Paragon",
+    "Waver",
+    "Demarcation"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Hesitate\" is \"Waver\". \"Hesitate\" means: To be slow to speak or act because you feel nervous"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Catastrophe",
+   "options": [
+    "Very ugly or unpleasant",
+    "A disaster of huge proportions",
+    "Devoid of enthusiasm or life",
+    "The key element of something"
+   ],
+   "answer": 1,
+   "explain": "\"Catastrophe\" means: A disaster of huge proportions"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Catastrophe",
+   "options": [
+    "Implies",
+    "Indispensable",
+    "Repercussion",
+    "Disaster"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Catastrophe\" is \"Disaster\". \"Catastrophe\" means: A disaster of huge proportions"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Demarcation",
+   "options": [
+    "A dividing line",
+    "Devoid of enthusiasm or life",
+    "To calm or reduce",
+    "To hate something very much"
+   ],
+   "answer": 0,
+   "explain": "\"Demarcation\" means: A dividing line"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Demarcation",
+   "options": [
+    "Counterfeit",
+    "Boundary",
+    "Proposal",
+    "Precise"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Demarcation\" is \"Boundary\". \"Demarcation\" means: A dividing line"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Tantalise",
+   "options": [
+    "In a state of panic, worry, frenzy or rush",
+    "The fact of being too proud of yourself and what you do",
+    "Great intensity of feeling or belief",
+    "To make you want something that you cannot have"
+   ],
+   "answer": 3,
+   "explain": "\"Tantalise\" means: To make you want something that you cannot have"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Tantalise",
+   "options": [
+    "Tolerance",
+    "Ravishing",
+    "Tempt",
+    "Adjourn"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Tantalise\" is \"Tempt\". \"Tantalise\" means: To make you want something that you cannot have"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Corpulent",
+   "options": [
+    "As in necessary, Too important",
+    "Having a large bulky body",
+    "The key element of something",
+    "Extremely beautiful"
+   ],
+   "answer": 1,
+   "explain": "\"Corpulent\" means: Having a large bulky body"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Corpulent",
+   "options": [
+    "Bleak",
+    "Conceit",
+    "Essence",
+    "Obese"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Corpulent\" is \"Obese\". \"Corpulent\" means: Having a large bulky body"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Corpulent",
+   "options": [
+    "Feasibility",
+    "Thin",
+    "Conceit",
+    "Detest"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Corpulent\" is \"Thin\". \"Corpulent\" means: Having a large bulky body"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Dynamic",
+   "options": [
+    "Devoid of enthusiasm or life",
+    "Difficult, unpleasant situation",
+    "Always active or changing",
+    "Extremely beautiful"
+   ],
+   "answer": 2,
+   "explain": "\"Dynamic\" means: Always active or changing"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Dynamic",
+   "options": [
+    "Quell",
+    "Repercussion",
+    "Energetic",
+    "Bleak"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Dynamic\" is \"Energetic\". \"Dynamic\" means: Always active or changing"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Dynamic",
+   "options": [
+    "Procrastination",
+    "Hideous",
+    "Decipher",
+    "Static"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Dynamic\" is \"Static\". \"Dynamic\" means: Always active or changing"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Frantic",
+   "options": [
+    "To make you want something that you cannot have",
+    "In a state of panic, worry, frenzy or rush",
+    "The act of delaying something that must be done",
+    "To interfere in an incident for a specific purpose"
+   ],
+   "answer": 1,
+   "explain": "\"Frantic\" means: In a state of panic, worry, frenzy or rush"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Frantic",
+   "options": [
+    "Proposal",
+    "Frenzied",
+    "Promptly",
+    "Quell"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Frantic\" is \"Frenzied\". \"Frantic\" means: In a state of panic, worry, frenzy or rush"
+  }
+ ]
+}

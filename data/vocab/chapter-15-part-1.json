@@ -1,0 +1,636 @@
+{
+ "id": "chapter-15-part-1",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 15 — Syn & Ant (Part 1)",
+ "durationMins": 35,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Meagre",
+   "options": [
+    "Small in quantity and poor in quality",
+    "Not moving or not intended to be moved",
+    "Being an essential or basic part of something",
+    "Showing great attention to detail"
+   ],
+   "answer": 0,
+   "explain": "\"Meagre\" means: Small in quantity and poor in quality"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Meagre",
+   "options": [
+    "Scanty",
+    "Stationary",
+    "Fundamental",
+    "Commitment"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Meagre\" is \"Scanty\". \"Meagre\" means: Small in quantity and poor in quality"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Meagre",
+   "options": [
+    "Prejudice",
+    "Stationary",
+    "Abundant",
+    "Meticulous"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Meagre\" is \"Abundant\". \"Meagre\" means: Small in quantity and poor in quality"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Commitment",
+   "options": [
+    "To get used to a new place or situation",
+    "Not moving or not intended to be moved",
+    "To obey a rule, to meet a particular standard",
+    "A promise to do something or behave in a particular way"
+   ],
+   "answer": 3,
+   "explain": "\"Commitment\" means: A promise to do something or behave in a particular way"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Commitment",
+   "options": [
+    "Chivalrous",
+    "Acclimatise",
+    "Pledge",
+    "Apprehension"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Commitment\" is \"Pledge\". \"Commitment\" means: A promise to do something or behave in a particular way"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fundamental",
+   "options": [
+    "Worry or fear that something unpleasant may happen",
+    "Being an essential or basic part of something",
+    "To get used to a new place or situation",
+    "Small in quantity and poor in quality"
+   ],
+   "answer": 1,
+   "explain": "\"Fundamental\" means: Being an essential or basic part of something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Fundamental",
+   "options": [
+    "Intimidating",
+    "Inept",
+    "Basic",
+    "Fierce"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Fundamental\" is \"Basic\". \"Fundamental\" means: Being an essential or basic part of something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Fundamental",
+   "options": [
+    "Extract",
+    "Copious",
+    "Superficial",
+    "Imminent"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Fundamental\" is \"Superficial\". \"Fundamental\" means: Being an essential or basic part of something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Scarcity",
+   "options": [
+    "Not disturbed or excited easily",
+    "Very strong and intense",
+    "A lack of something needed",
+    "Inclined to make happy or content"
+   ],
+   "answer": 2,
+   "explain": "\"Scarcity\" means: A lack of something needed"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Scarcity",
+   "options": [
+    "Apprehension",
+    "Shortage",
+    "Liable",
+    "Sumptuous"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Scarcity\" is \"Shortage\". \"Scarcity\" means: A lack of something needed"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Scarcity",
+   "options": [
+    "Accommodating",
+    "Extract",
+    "Benign",
+    "Abundance"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Scarcity\" is \"Abundance\". \"Scarcity\" means: A lack of something needed"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Severe",
+   "options": [
+    "A lack of something needed",
+    "Not active or growing now",
+    "Very strong and intense",
+    "Acting or done with no skill"
+   ],
+   "answer": 2,
+   "explain": "\"Severe\" means: Very strong and intense"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Severe",
+   "options": [
+    "Comply",
+    "Despicable",
+    "Intense",
+    "Debilitating"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Severe\" is \"Intense\". \"Severe\" means: Very strong and intense"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Severe",
+   "options": [
+    "Ecstasy",
+    "Abrogate",
+    "Chivalrous",
+    "Mild"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Severe\" is \"Mild\". \"Severe\" means: Very strong and intense"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Blandness",
+   "options": [
+    "Acting or done with no skill",
+    "Lack of strong emotions",
+    "Not disturbed or excited easily",
+    "A lack of something needed"
+   ],
+   "answer": 1,
+   "explain": "\"Blandness\" means: Lack of strong emotions"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Blandness",
+   "options": [
+    "Dullness",
+    "Meticulous",
+    "Intensive",
+    "Acclimatise"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Blandness\" is \"Dullness\". \"Blandness\" means: Lack of strong emotions"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Penury",
+   "options": [
+    "Using great energy or effort",
+    "The state of being poor",
+    "Acting or done with no skill",
+    "Not active or growing now"
+   ],
+   "answer": 1,
+   "explain": "\"Penury\" means: The state of being poor"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Penury",
+   "options": [
+    "Fundamental",
+    "Poverty",
+    "Fame",
+    "Accommodating"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Penury\" is \"Poverty\". \"Penury\" means: The state of being poor"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Penury",
+   "options": [
+    "Wealth",
+    "Grave",
+    "Adopted",
+    "Meagre"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Penury\" is \"Wealth\". \"Penury\" means: The state of being poor"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Stationary",
+   "options": [
+    "Not moving or not intended to be moved",
+    "Inclined to make happy or content",
+    "To obey a rule, to meet a particular standard",
+    "causing others to be afraid or timid"
+   ],
+   "answer": 0,
+   "explain": "\"Stationary\" means: Not moving or not intended to be moved"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Stationary",
+   "options": [
+    "Motionless",
+    "Debilitating",
+    "Serendipity",
+    "Meticulous"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Stationary\" is \"Motionless\". \"Stationary\" means: Not moving or not intended to be moved"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Stationary",
+   "options": [
+    "Intimidating",
+    "Moving",
+    "Acclimatise",
+    "Imperturbable"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Stationary\" is \"Moving\". \"Stationary\" means: Not moving or not intended to be moved"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Sumptuous",
+   "options": [
+    "A lack of something needed",
+    "Acting or done with no skill",
+    "Of the best quality",
+    "Not active or growing now"
+   ],
+   "answer": 2,
+   "explain": "\"Sumptuous\" means: Of the best quality"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Sumptuous",
+   "options": [
+    "Luxurious",
+    "Dormant",
+    "Commitment",
+    "Prejudice"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Sumptuous\" is \"Luxurious\". \"Sumptuous\" means: Of the best quality"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Sumptuous",
+   "options": [
+    "Poor",
+    "Intensive",
+    "Blandness",
+    "Benign"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Sumptuous\" is \"Poor\". \"Sumptuous\" means: Of the best quality"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Comply",
+   "options": [
+    "Not moving or not intended to be moved",
+    "To obey a rule, to meet a particular standard",
+    "To prevent somebody from easily doing",
+    "Being an essential or basic part of something"
+   ],
+   "answer": 1,
+   "explain": "\"Comply\" means: To obey a rule, to meet a particular standard"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Comply",
+   "options": [
+    "Benign",
+    "Blandness",
+    "Obey",
+    "Intensive"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Comply\" is \"Obey\". \"Comply\" means: To obey a rule, to meet a particular standard"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Comply",
+   "options": [
+    "Despicable",
+    "Adopted",
+    "Liable",
+    "Disobey"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Comply\" is \"Disobey\". \"Comply\" means: To obey a rule, to meet a particular standard"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Barren",
+   "options": [
+    "A promise to do something or behave in a particular way",
+    "Being an essential or basic part of something",
+    "Legally responsible for paying the cost of something",
+    "Not fertile; Land which is not good enough for plants to grow]"
+   ],
+   "answer": 3,
+   "explain": "\"Barren\" means: Not fertile; Land which is not good enough for plants to grow]"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Barren",
+   "options": [
+    "Abrogate",
+    "Fundamental",
+    "Inept",
+    "Infertile"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Barren\" is \"Infertile\". \"Barren\" means: Not fertile; Land which is not good enough for plants to grow]"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Barren",
+   "options": [
+    "Fertile",
+    "Fierce",
+    "Benign",
+    "Despicable"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Barren\" is \"Fertile\". \"Barren\" means: Not fertile; Land which is not good enough for plants to grow]"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Serendipity",
+   "options": [
+    "The fact of something pleasant happening by chance",
+    "To obey a rule, to meet a particular standard",
+    "To get used to a new place or situation",
+    "To pull or take out something forcibly"
+   ],
+   "answer": 0,
+   "explain": "\"Serendipity\" means: The fact of something pleasant happening by chance"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Grave",
+   "options": [
+    "Making someone very weak",
+    "Of the best quality",
+    "Very serious and important",
+    "Using great energy or effort"
+   ],
+   "answer": 2,
+   "explain": "\"Grave\" means: Very serious and important"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Grave",
+   "options": [
+    "Meagre",
+    "Copious",
+    "Adopted",
+    "Serious"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Grave\" is \"Serious\". \"Grave\" means: Very serious and important"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Grave",
+   "options": [
+    "Copious",
+    "Trivial",
+    "Sumptuous",
+    "Inept"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Grave\" is \"Trivial\". \"Grave\" means: Very serious and important"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Debilitating",
+   "options": [
+    "A belief that is incorrect",
+    "Not disturbed or excited easily",
+    "Making someone very weak",
+    "Acting or done with no skill"
+   ],
+   "answer": 2,
+   "explain": "\"Debilitating\" means: Making someone very weak"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Debilitating",
+   "options": [
+    "Blandness",
+    "Weakening",
+    "Apprehension",
+    "Hamper"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Debilitating\" is \"Weakening\". \"Debilitating\" means: Making someone very weak"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Debilitating",
+   "options": [
+    "Strengthening",
+    "Adopted",
+    "Chivalrous",
+    "Meagre"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Debilitating\" is \"Strengthening\". \"Debilitating\" means: Making someone very weak"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Acclimatise",
+   "options": [
+    "To get used to a new place or situation",
+    "causing others to be afraid or timid",
+    "Small in quantity and poor in quality",
+    "Inclined to make happy or content"
+   ],
+   "answer": 0,
+   "explain": "\"Acclimatise\" means: To get used to a new place or situation"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Acclimatise",
+   "options": [
+    "Meticulous",
+    "Resilient",
+    "Dormant",
+    "Adapt"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Acclimatise\" is \"Adapt\". \"Acclimatise\" means: To get used to a new place or situation"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Accommodating",
+   "options": [
+    "To get used to a new place or situation",
+    "Using great energy or effort",
+    "Inclined to make happy or content",
+    "Very serious and important"
+   ],
+   "answer": 2,
+   "explain": "\"Accommodating\" means: Inclined to make happy or content"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Accommodating",
+   "options": [
+    "Chivalrous",
+    "Commitment",
+    "Hamper",
+    "Obliging"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Accommodating\" is \"Obliging\". \"Accommodating\" means: Inclined to make happy or content"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Accommodating",
+   "options": [
+    "Dormant",
+    "Unhelpful",
+    "Scarcity",
+    "Despicable"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Accommodating\" is \"Unhelpful\". \"Accommodating\" means: Inclined to make happy or content"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Liberal",
+   "options": [
+    "To obey a rule, to meet a particular standard",
+    "Willing to consider new things and ideas",
+    "To pull or take out something forcibly",
+    "Showing great attention to detail"
+   ],
+   "answer": 1,
+   "explain": "\"Liberal\" means: Willing to consider new things and ideas"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Liberal",
+   "options": [
+    "Comply",
+    "Open-minded",
+    "Adopted",
+    "Penury"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Liberal\" is \"Open-minded\". \"Liberal\" means: Willing to consider new things and ideas"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Liberal",
+   "options": [
+    "Sumptuous",
+    "Conservative",
+    "Intensive",
+    "Fame"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Liberal\" is \"Conservative\". \"Liberal\" means: Willing to consider new things and ideas"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fame",
+   "options": [
+    "Not moving or not intended to be moved",
+    "Worry or fear that something unpleasant may happen",
+    "Not fertile; Land which is not good enough for plants to grow]",
+    "The state of being known or talked about by many people"
+   ],
+   "answer": 3,
+   "explain": "\"Fame\" means: The state of being known or talked about by many people"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Fame",
+   "options": [
+    "Debilitating",
+    "Renown",
+    "Meticulous",
+    "Accommodating"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Fame\" is \"Renown\". \"Fame\" means: The state of being known or talked about by many people"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Fame",
+   "options": [
+    "Chivalrous",
+    "Fierce",
+    "Penury",
+    "Obscurity"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Fame\" is \"Obscurity\". \"Fame\" means: The state of being known or talked about by many people"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Imminent",
+   "options": [
+    "Likely to occur at any moment",
+    "causing others to be afraid or timid",
+    "Not active or growing now",
+    "Very serious and important"
+   ],
+   "answer": 0,
+   "explain": "\"Imminent\" means: Likely to occur at any moment"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Imminent",
+   "options": [
+    "Sumptuous",
+    "Hamper",
+    "Approaching",
+    "Commitment"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Imminent\" is \"Approaching\". \"Imminent\" means: Likely to occur at any moment"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Imminent",
+   "options": [
+    "Fierce",
+    "Ecstasy",
+    "Scarcity",
+    "Distant"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Imminent\" is \"Distant\". \"Imminent\" means: Likely to occur at any moment"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Copious",
+   "options": [
+    "In large amounts",
+    "The state of being poor",
+    "Using great energy or effort",
+    "Very strong and intense"
+   ],
+   "answer": 0,
+   "explain": "\"Copious\" means: In large amounts"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Copious",
+   "options": [
+    "Abundant",
+    "Fierce",
+    "Fundamental",
+    "Acclimatise"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Copious\" is \"Abundant\". \"Copious\" means: In large amounts"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Copious",
+   "options": [
+    "Sumptuous",
+    "Adopted",
+    "Meagre",
+    "Scarce"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Copious\" is \"Scarce\". \"Copious\" means: In large amounts"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Apprehension",
+   "options": [
+    "To get used to a new place or situation",
+    "Angry or aggressive in a way that is frightening",
+    "Legally responsible for paying the cost of something",
+    "Worry or fear that something unpleasant may happen"
+   ],
+   "answer": 3,
+   "explain": "\"Apprehension\" means: Worry or fear that something unpleasant may happen"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Apprehension",
+   "options": [
+    "Accommodating",
+    "Meticulous",
+    "Anxiety",
+    "Serendipity"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Apprehension\" is \"Anxiety\". \"Apprehension\" means: Worry or fear that something unpleasant may happen"
+  }
+ ]
+}

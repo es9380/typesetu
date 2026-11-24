@@ -1,0 +1,636 @@
+{
+ "id": "chapter-23-part-2",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 23 — Syn & Ant (Part 2)",
+ "durationMins": 35,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Strangle",
+   "options": [
+    "kill someone pressing on throat /stop progess of something",
+    "To fall down suddenly due to pressure",
+    "Regard for others without regard for oneself",
+    "To cancel or postpone a bad situation"
+   ],
+   "answer": 0,
+   "explain": "\"Strangle\" means: kill someone pressing on throat /stop progess of something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Strangle",
+   "options": [
+    "Nominal",
+    "Loophole",
+    "Throttle",
+    "Impede"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Strangle\" is \"Throttle\". \"Strangle\" means: kill someone pressing on throat /stop progess of something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Inundate",
+   "options": [
+    "Coming at short intervals",
+    "Overwhelm with things",
+    "Not able to be seen through",
+    "Timid by nature"
+   ],
+   "answer": 1,
+   "explain": "\"Inundate\" means: Overwhelm with things"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Inundate",
+   "options": [
+    "Grandeur",
+    "Collapse",
+    "Baffle",
+    "Flood"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Inundate\" is \"Flood\". \"Inundate\" means: Overwhelm with things"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Reprieve",
+   "options": [
+    "To cancel or postpone a bad situation",
+    "To fall down suddenly due to pressure",
+    "Too improbable to admit of belief",
+    "Prone to sudden or unpredictable changes"
+   ],
+   "answer": 0,
+   "explain": "\"Reprieve\" means: To cancel or postpone a bad situation"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Reprieve",
+   "options": [
+    "Frequent",
+    "Opaque",
+    "Imbecile",
+    "Pardon"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Reprieve\" is \"Pardon\". \"Reprieve\" means: To cancel or postpone a bad situation"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Amend",
+   "options": [
+    "Without concern for others",
+    "Shine light upon",
+    "Incredibly small",
+    "To make better"
+   ],
+   "answer": 3,
+   "explain": "\"Amend\" means: To make better"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Amend",
+   "options": [
+    "Waver",
+    "Instill",
+    "Improve",
+    "Furious"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Amend\" is \"Improve\". \"Amend\" means: To make better"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Amend",
+   "options": [
+    "Wrathful",
+    "Decadent",
+    "Worsen",
+    "Baffle"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Amend\" is \"Worsen\". \"Amend\" means: To make better"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Impede",
+   "options": [
+    "Slow the progress of something",
+    "To be bubbly and energetic",
+    "The coming or arrival of something",
+    "Treat with contemptuous disregard"
+   ],
+   "answer": 0,
+   "explain": "\"Impede\" means: Slow the progress of something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Impede",
+   "options": [
+    "Hinder",
+    "Aged",
+    "Amend",
+    "Wrathful"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Impede\" is \"Hinder\". \"Impede\" means: Slow the progress of something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Impede",
+   "options": [
+    "Mercy",
+    "Opaque",
+    "Collapse",
+    "Assist"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Impede\" is \"Assist\". \"Impede\" means: Slow the progress of something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Vivacious",
+   "options": [
+    "To be bubbly and energetic",
+    "Too improbable to admit of belief",
+    "Not able to be seen through",
+    "Overwhelm with things"
+   ],
+   "answer": 0,
+   "explain": "\"Vivacious\" means: To be bubbly and energetic"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Vivacious",
+   "options": [
+    "Lively",
+    "Reprieve",
+    "Nominal",
+    "Opaque"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Vivacious\" is \"Lively\". \"Vivacious\" means: To be bubbly and energetic"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Vivacious",
+   "options": [
+    "Amend",
+    "Lethargy",
+    "Dull",
+    "Strangle"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Vivacious\" is \"Dull\". \"Vivacious\" means: To be bubbly and energetic"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Mercy",
+   "options": [
+    "To make an individual extremely happy",
+    "forgiveness shown towards someone instead of punishment",
+    "Prone to sudden or unpredictable changes",
+    "Regard for others without regard for oneself"
+   ],
+   "answer": 1,
+   "explain": "\"Mercy\" means: forgiveness shown towards someone instead of punishment"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Mercy",
+   "options": [
+    "Consensus",
+    "Opaque",
+    "Forgiveness",
+    "Nominal"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Mercy\" is \"Forgiveness\". \"Mercy\" means: forgiveness shown towards someone instead of punishment"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Mercy",
+   "options": [
+    "Cruelty",
+    "Frequent",
+    "Frenzy",
+    "Instill"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Mercy\" is \"Cruelty\". \"Mercy\" means: forgiveness shown towards someone instead of punishment"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Tyranny",
+   "options": [
+    "Not able to be seen through",
+    "Existing in something as a permanent",
+    "The coming or arrival of something",
+    "Excessively cruel use of power"
+   ],
+   "answer": 3,
+   "explain": "\"Tyranny\" means: Excessively cruel use of power"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Tyranny",
+   "options": [
+    "Aged",
+    "Imbecile",
+    "Abundance",
+    "Oppression"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Tyranny\" is \"Oppression\". \"Tyranny\" means: Excessively cruel use of power"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Wrathful",
+   "options": [
+    "Very angry and irate",
+    "Overwhelm with things",
+    "To be bubbly and energetic",
+    "A small seed or grain"
+   ],
+   "answer": 0,
+   "explain": "\"Wrathful\" means: Very angry and irate"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Wrathful",
+   "options": [
+    "Furious",
+    "Kernel",
+    "Marvellous",
+    "Loophole"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Wrathful\" is \"Furious\". \"Wrathful\" means: Very angry and irate"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Wrathful",
+   "options": [
+    "Pleased",
+    "Marvellous",
+    "Instill",
+    "Frenzy"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Wrathful\" is \"Pleased\". \"Wrathful\" means: Very angry and irate"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Aged",
+   "options": [
+    "Grew older",
+    "Realize beforehand",
+    "Overwhelm with things",
+    "A large quantity"
+   ],
+   "answer": 0,
+   "explain": "\"Aged\" means: Grew older"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Aged",
+   "options": [
+    "Reprieve",
+    "Inundate",
+    "Timorous",
+    "Old"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Aged\" is \"Old\". \"Aged\" means: Grew older"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Aged",
+   "options": [
+    "Imbecile",
+    "Young",
+    "Decadent",
+    "Consensus"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Aged\" is \"Young\". \"Aged\" means: Grew older"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Consensus",
+   "options": [
+    "General agreement about something",
+    "Treat with contemptuous disregard",
+    "To fall down suddenly due to pressure",
+    "Not able to be seen through"
+   ],
+   "answer": 0,
+   "explain": "\"Consensus\" means: General agreement about something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Consensus",
+   "options": [
+    "Reprieve",
+    "Agreement",
+    "Furious",
+    "Illuminate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Consensus\" is \"Agreement\". \"Consensus\" means: General agreement about something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Consensus",
+   "options": [
+    "Altruist",
+    "Nominal",
+    "Opaque",
+    "Disagreement"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Consensus\" is \"Disagreement\". \"Consensus\" means: General agreement about something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Baffle",
+   "options": [
+    "Coming at short intervals",
+    "Very angry and irate",
+    "To bewilder or confuse",
+    "Timid by nature"
+   ],
+   "answer": 2,
+   "explain": "\"Baffle\" means: To bewilder or confuse"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Baffle",
+   "options": [
+    "Confuse",
+    "Wrathful",
+    "Impede",
+    "Composite"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Baffle\" is \"Confuse\". \"Baffle\" means: To bewilder or confuse"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Baffle",
+   "options": [
+    "Retaliate",
+    "Kernel",
+    "Enlighten",
+    "Tyranny"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Baffle\" is \"Enlighten\". \"Baffle\" means: To bewilder or confuse"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fatigue",
+   "options": [
+    "Coming at short intervals",
+    "Slow the progress of something",
+    "Temporary loss of strength",
+    "To bewilder or confuse"
+   ],
+   "answer": 2,
+   "explain": "\"Fatigue\" means: Temporary loss of strength"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Fatigue",
+   "options": [
+    "Exhaustion",
+    "Kernel",
+    "Composite",
+    "Consensus"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Fatigue\" is \"Exhaustion\". \"Fatigue\" means: Temporary loss of strength"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Fatigue",
+   "options": [
+    "Reprieve",
+    "Inherent",
+    "Wrathful",
+    "Energy"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Fatigue\" is \"Energy\". \"Fatigue\" means: Temporary loss of strength"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Inherent",
+   "options": [
+    "Showing an unusual lack of energy",
+    "To respond to an attack in some way",
+    "Existing in something as a permanent",
+    "Excessively cruel use of power"
+   ],
+   "answer": 2,
+   "explain": "\"Inherent\" means: Existing in something as a permanent"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Inherent",
+   "options": [
+    "Wrathful",
+    "Intrinsic",
+    "Imbecile",
+    "Vivacious"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Inherent\" is \"Intrinsic\". \"Inherent\" means: Existing in something as a permanent"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Inherent",
+   "options": [
+    "Collapse",
+    "Baffle",
+    "Extrinsic",
+    "Composite"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Inherent\" is \"Extrinsic\". \"Inherent\" means: Existing in something as a permanent"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Anticipate",
+   "options": [
+    "Extremely angry",
+    "Coming at short intervals",
+    "To make better",
+    "Realize beforehand"
+   ],
+   "answer": 3,
+   "explain": "\"Anticipate\" means: Realize beforehand"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Anticipate",
+   "options": [
+    "Frequent",
+    "Expect",
+    "Vivacious",
+    "Nominal"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Anticipate\" is \"Expect\". \"Anticipate\" means: Realize beforehand"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Illuminate",
+   "options": [
+    "Without concern for others",
+    "Shine light upon",
+    "Overwhelm with things",
+    "To be uncertain"
+   ],
+   "answer": 1,
+   "explain": "\"Illuminate\" means: Shine light upon"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Illuminate",
+   "options": [
+    "Inherent",
+    "Imbecile",
+    "Marvellous",
+    "Brighten"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Illuminate\" is \"Brighten\". \"Illuminate\" means: Shine light upon"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Illuminate",
+   "options": [
+    "Mercy",
+    "Darken",
+    "Fatigue",
+    "Waver"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Illuminate\" is \"Darken\". \"Illuminate\" means: Shine light upon"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Flout",
+   "options": [
+    "To cancel or postpone a bad situation",
+    "Treat with contemptuous disregard",
+    "General agreement about something",
+    "Excessively cruel use of power"
+   ],
+   "answer": 1,
+   "explain": "\"Flout\" means: Treat with contemptuous disregard"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Flout",
+   "options": [
+    "Grandeur",
+    "Defy",
+    "Tyranny",
+    "Loophole"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Flout\" is \"Defy\". \"Flout\" means: Treat with contemptuous disregard"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Flout",
+   "options": [
+    "Inherent",
+    "Wrathful",
+    "Obey",
+    "Ruthless"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Flout\" is \"Obey\". \"Flout\" means: Treat with contemptuous disregard"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Retaliate",
+   "options": [
+    "General agreement about something",
+    "Existing in something as a permanent",
+    "To respond to an attack in some way",
+    "Comprised of various elements"
+   ],
+   "answer": 2,
+   "explain": "\"Retaliate\" means: To respond to an attack in some way"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Retaliate",
+   "options": [
+    "Collapse",
+    "Strangle",
+    "Altruist",
+    "Revenge"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Retaliate\" is \"Revenge\". \"Retaliate\" means: To respond to an attack in some way"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Retaliate",
+   "options": [
+    "Mercurial",
+    "Forgive",
+    "Fatigue",
+    "Lethargy"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Retaliate\" is \"Forgive\". \"Retaliate\" means: To respond to an attack in some way"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Instill",
+   "options": [
+    "To fall down suddenly due to pressure",
+    "To make an individual extremely happy",
+    "To slowly cause a person to develop a feeling",
+    "To cancel or postpone a bad situation"
+   ],
+   "answer": 2,
+   "explain": "\"Instill\" means: To slowly cause a person to develop a feeling"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Instill",
+   "options": [
+    "Waver",
+    "Inculcate",
+    "Abundance",
+    "Timorous"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Instill\" is \"Inculcate\". \"Instill\" means: To slowly cause a person to develop a feeling"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Waver",
+   "options": [
+    "Coming at short intervals",
+    "To be uncertain",
+    "To make better",
+    "Extremely angry"
+   ],
+   "answer": 1,
+   "explain": "\"Waver\" means: To be uncertain"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Waver",
+   "options": [
+    "Opaque",
+    "Abundance",
+    "Decadent",
+    "Hesitate"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Waver\" is \"Hesitate\". \"Waver\" means: To be uncertain"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Waver",
+   "options": [
+    "Reprieve",
+    "Decadent",
+    "Lethargy",
+    "Decide"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Waver\" is \"Decide\". \"Waver\" means: To be uncertain"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Exhilarate",
+   "options": [
+    "Wildly excited or out-of-control behavior",
+    "To make an individual extremely happy",
+    "Too improbable to admit of belief",
+    "To cancel or postpone a bad situation"
+   ],
+   "answer": 1,
+   "explain": "\"Exhilarate\" means: To make an individual extremely happy"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Exhilarate",
+   "options": [
+    "Ruthless",
+    "Illuminate",
+    "Thrill",
+    "Strangle"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Exhilarate\" is \"Thrill\". \"Exhilarate\" means: To make an individual extremely happy"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Exhilarate",
+   "options": [
+    "Depress",
+    "Instill",
+    "Aged",
+    "Vivacious"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Exhilarate\" is \"Depress\". \"Exhilarate\" means: To make an individual extremely happy"
+  }
+ ]
+}

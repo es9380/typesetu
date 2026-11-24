@@ -1,0 +1,647 @@
+{
+ "id": "chapter-16-part-2",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 16 — Syn & Ant (Part 2)",
+ "durationMins": 35,
+ "questions": [
+  {
+   "q": "Select the most appropriate synonym of the given word: Rapid",
+   "options": [
+    "Verbose",
+    "Swift",
+    "Repel",
+    "Demonstrate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Rapid\" is \"Swift\". \"Rapid\" means: Happening very quickly"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Rapid",
+   "options": [
+    "Slow",
+    "Facilitate",
+    "Affliction",
+    "Fixation"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Rapid\" is \"Slow\". \"Rapid\" means: Happening very quickly"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Turmoil",
+   "options": [
+    "Pain and difficulty that causes it",
+    "Sounding sweet and pleasant",
+    "Having a distictive quality or taste",
+    "A state of confusion or disorder"
+   ],
+   "answer": 3,
+   "explain": "\"Turmoil\" means: A state of confusion or disorder"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Turmoil",
+   "options": [
+    "Empowered",
+    "Lunacy",
+    "Confess",
+    "Disorder"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Turmoil\" is \"Disorder\". \"Turmoil\" means: A state of confusion or disorder"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Turmoil",
+   "options": [
+    "Demonstrate",
+    "Verbose",
+    "Order",
+    "Ambivalent"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Turmoil\" is \"Order\". \"Turmoil\" means: A state of confusion or disorder"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Facilitate",
+   "options": [
+    "Displaying exceptional character traits",
+    "To make something occur or less difficult",
+    "To look at something for a long time",
+    "A state of peaceful existence and agreemen"
+   ],
+   "answer": 1,
+   "explain": "\"Facilitate\" means: To make something occur or less difficult"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Facilitate",
+   "options": [
+    "Ease",
+    "Sundry",
+    "Affliction",
+    "Benign"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Facilitate\" is \"Ease\". \"Facilitate\" means: To make something occur or less difficult"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Facilitate",
+   "options": [
+    "Contemplate",
+    "Benign",
+    "Hinder",
+    "Pernicious"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Facilitate\" is \"Hinder\". \"Facilitate\" means: To make something occur or less difficult"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Resolute",
+   "options": [
+    "Strong and determined",
+    "Very cheerful and friendly",
+    "To push something away",
+    "Sounding sweet and pleasant"
+   ],
+   "answer": 0,
+   "explain": "\"Resolute\" means: Strong and determined"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Resolute",
+   "options": [
+    "Overt",
+    "Suspicious",
+    "Determined",
+    "Harmony"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Resolute\" is \"Determined\". \"Resolute\" means: Strong and determined"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Resolute",
+   "options": [
+    "Affliction",
+    "Interminable",
+    "Irresolute",
+    "Impeccable"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Resolute\" is \"Irresolute\". \"Resolute\" means: Strong and determined"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Captivate",
+   "options": [
+    "to catch and hold someone’s attention",
+    "Pleasant, friendly and easy to talk to",
+    "To make somebody who is angry become calm",
+    "Having no significant effect; harmless"
+   ],
+   "answer": 0,
+   "explain": "\"Captivate\" means: to catch and hold someone’s attention"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Captivate",
+   "options": [
+    "Raciness",
+    "Puritanical",
+    "Noble",
+    "Fascinate"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Captivate\" is \"Fascinate\". \"Captivate\" means: to catch and hold someone’s attention"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Captivate",
+   "options": [
+    "Bore",
+    "Hysterical",
+    "Jovial",
+    "Ludicrous"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Captivate\" is \"Bore\". \"Captivate\" means: to catch and hold someone’s attention"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Empowered",
+   "options": [
+    "Affected by uncontrolled emotions",
+    "Sounding sweet and pleasant",
+    "Acting with confidence",
+    "Highly injurious or destructive"
+   ],
+   "answer": 2,
+   "explain": "\"Empowered\" means: Acting with confidence"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Empowered",
+   "options": [
+    "Raciness",
+    "Hysterical",
+    "Confident",
+    "Harmony"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Empowered\" is \"Confident\". \"Empowered\" means: Acting with confidence"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Jovial",
+   "options": [
+    "A state of confusion or disorder",
+    "Very cheerful and friendly",
+    "Done in an open way",
+    "Sounding sweet and pleasant"
+   ],
+   "answer": 1,
+   "explain": "\"Jovial\" means: Very cheerful and friendly"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Jovial",
+   "options": [
+    "Salvage",
+    "Allegation",
+    "Cheerful",
+    "Contemplate"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Jovial\" is \"Cheerful\". \"Jovial\" means: Very cheerful and friendly"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Jovial",
+   "options": [
+    "Gloomy",
+    "Ludicrous",
+    "Lunacy",
+    "Overt"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Jovial\" is \"Gloomy\". \"Jovial\" means: Very cheerful and friendly"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Lunacy",
+   "options": [
+    "Pain and difficulty that causes it",
+    "To recover something mortgaged",
+    "Pleasant, friendly and easy to talk to",
+    "Behaviour that is stupid and crazy"
+   ],
+   "answer": 3,
+   "explain": "\"Lunacy\" means: Behaviour that is stupid and crazy"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Lunacy",
+   "options": [
+    "Confess",
+    "Turmoil",
+    "Madness",
+    "Affliction"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Lunacy\" is \"Madness\". \"Lunacy\" means: Behaviour that is stupid and crazy"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Lunacy",
+   "options": [
+    "Sanity",
+    "Affable",
+    "Pernicious",
+    "Confess"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Lunacy\" is \"Sanity\". \"Lunacy\" means: Behaviour that is stupid and crazy"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Salvage",
+   "options": [
+    "Extremely complex and difficult to follow",
+    "Displaying exceptional character traits",
+    "Unreasonable; that you cannot take seriously",
+    "Something pulled out or saved because of its value"
+   ],
+   "answer": 3,
+   "explain": "\"Salvage\" means: Something pulled out or saved because of its value"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Salvage",
+   "options": [
+    "Interminable",
+    "Rescue",
+    "Empowered",
+    "Raciness"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Salvage\" is \"Rescue\". \"Salvage\" means: Something pulled out or saved because of its value"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Allegation",
+   "options": [
+    "a claim or a statement saying someone has done something illegal or wrong",
+    "Having both positive and negative feeling about something",
+    "The activity of fastening something firmly in position",
+    "To make something occur or less difficult"
+   ],
+   "answer": 0,
+   "explain": "\"Allegation\" means: a claim or a statement saying someone has done something illegal or wrong"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Allegation",
+   "options": [
+    "Impeccable",
+    "Overt",
+    "Sundry",
+    "Accusation"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Allegation\" is \"Accusation\". \"Allegation\" means: a claim or a statement saying someone has done something illegal or wrong"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Affable",
+   "options": [
+    "Behaviour that is stupid and crazy",
+    "Pleasant, friendly and easy to talk to",
+    "To make somebody who is angry become calm",
+    "Using or containing too many words"
+   ],
+   "answer": 1,
+   "explain": "\"Affable\" means: Pleasant, friendly and easy to talk to"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Affable",
+   "options": [
+    "Ludicrous",
+    "Friendly",
+    "Puritanical",
+    "Convoluted"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Affable\" is \"Friendly\". \"Affable\" means: Pleasant, friendly and easy to talk to"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Affable",
+   "options": [
+    "Pacify",
+    "Elusive",
+    "Raciness",
+    "Unfriendly"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Affable\" is \"Unfriendly\". \"Affable\" means: Pleasant, friendly and easy to talk to"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Interminable",
+   "options": [
+    "To make something occur or less difficult",
+    "Lasting a very long time and therefore boring",
+    "Having no significant effect; harmless",
+    "Displaying exceptional character traits"
+   ],
+   "answer": 1,
+   "explain": "\"Interminable\" means: Lasting a very long time and therefore boring"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Interminable",
+   "options": [
+    "Demonstrate",
+    "Facilitate",
+    "Overt",
+    "Endless"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Interminable\" is \"Endless\". \"Interminable\" means: Lasting a very long time and therefore boring"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Interminable",
+   "options": [
+    "Witty",
+    "Contemplate",
+    "Brief",
+    "Overt"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Interminable\" is \"Brief\". \"Interminable\" means: Lasting a very long time and therefore boring"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Pacify",
+   "options": [
+    "To make something occur or less difficult",
+    "Displaying exceptional character traits",
+    "To make somebody who is angry become calm",
+    "A state of peaceful existence and agreemen"
+   ],
+   "answer": 2,
+   "explain": "\"Pacify\" means: To make somebody who is angry become calm"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Pacify",
+   "options": [
+    "Sundry",
+    "Calm",
+    "Convoluted",
+    "Confess"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Pacify\" is \"Calm\". \"Pacify\" means: To make somebody who is angry become calm"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Pacify",
+   "options": [
+    "Elusive",
+    "Jovial",
+    "Subdued",
+    "Provoke"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Pacify\" is \"Provoke\". \"Pacify\" means: To make somebody who is angry become calm"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Sundry",
+   "options": [
+    "Happening very quickly",
+    "Pain and difficulty that causes it",
+    "Highly injurious or destructive",
+    "A group of unrelated things"
+   ],
+   "answer": 3,
+   "explain": "\"Sundry\" means: A group of unrelated things"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Sundry",
+   "options": [
+    "Empowered",
+    "Raciness",
+    "Interminable",
+    "Various"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Sundry\" is \"Various\". \"Sundry\" means: A group of unrelated things"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Ambivalent",
+   "options": [
+    "Having both positive and negative feeling about something",
+    "A state of peaceful existence and agreemen",
+    "The fact that something can be done and be successful",
+    "The activity of fastening something firmly in position"
+   ],
+   "answer": 0,
+   "explain": "\"Ambivalent\" means: Having both positive and negative feeling about something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Ambivalent",
+   "options": [
+    "Verbose",
+    "Uncertain",
+    "Subdued",
+    "Convoluted"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Ambivalent\" is \"Uncertain\". \"Ambivalent\" means: Having both positive and negative feeling about something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Ambivalent",
+   "options": [
+    "Decided",
+    "Noble",
+    "Dulcet",
+    "Captivate"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Ambivalent\" is \"Decided\". \"Ambivalent\" means: Having both positive and negative feeling about something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Verbose",
+   "options": [
+    "Using or containing too many words",
+    "Not good and likely to cause problems",
+    "A state of confusion or disorder",
+    "Difficult to find, define, achieve"
+   ],
+   "answer": 0,
+   "explain": "\"Verbose\" means: Using or containing too many words"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Verbose",
+   "options": [
+    "Noble",
+    "Overt",
+    "Puritanical",
+    "Wordy"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Verbose\" is \"Wordy\". \"Verbose\" means: Using or containing too many words"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Verbose",
+   "options": [
+    "Redeem",
+    "Concise",
+    "Overt",
+    "Pacify"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Verbose\" is \"Concise\". \"Verbose\" means: Using or containing too many words"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Raciness",
+   "options": [
+    "Affected by uncontrolled emotions",
+    "Having a distictive quality or taste",
+    "Highly injurious or destructive",
+    "Not good and likely to cause problems"
+   ],
+   "answer": 1,
+   "explain": "\"Raciness\" means: Having a distictive quality or taste"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Elusive",
+   "options": [
+    "Affected by uncontrolled emotions",
+    "Difficult to find, define, achieve",
+    "To prove something by showing examples",
+    "To look at something for a long time"
+   ],
+   "answer": 1,
+   "explain": "\"Elusive\" means: Difficult to find, define, achieve"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Elusive",
+   "options": [
+    "Redeem",
+    "Contemplate",
+    "Confess",
+    "Evasive"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Elusive\" is \"Evasive\". \"Elusive\" means: Difficult to find, define, achieve"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Elusive",
+   "options": [
+    "Jovial",
+    "Accessible",
+    "Overt",
+    "Repel"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Elusive\" is \"Accessible\". \"Elusive\" means: Difficult to find, define, achieve"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Convoluted",
+   "options": [
+    "To make something occur or less difficult",
+    "To prove something by showing examples",
+    "Extremely complex and difficult to follow",
+    "A state of peaceful existence and agreemen"
+   ],
+   "answer": 2,
+   "explain": "\"Convoluted\" means: Extremely complex and difficult to follow"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Convoluted",
+   "options": [
+    "Fixation",
+    "Affable",
+    "Complex",
+    "Ludicrous"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Convoluted\" is \"Complex\". \"Convoluted\" means: Extremely complex and difficult to follow"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Convoluted",
+   "options": [
+    "Resolute",
+    "Fixation",
+    "Simple",
+    "Guile"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Convoluted\" is \"Simple\". \"Convoluted\" means: Extremely complex and difficult to follow"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Guile",
+   "options": [
+    "Unreasonable; that you cannot take seriously",
+    "Having no significant effect; harmless",
+    "The use of dishonest mean to trick someone",
+    "A state of peaceful existence and agreemen"
+   ],
+   "answer": 2,
+   "explain": "\"Guile\" means: The use of dishonest mean to trick someone"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Guile",
+   "options": [
+    "Ambivalent",
+    "Lunacy",
+    "Repel",
+    "Cunning"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Guile\" is \"Cunning\". \"Guile\" means: The use of dishonest mean to trick someone"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Guile",
+   "options": [
+    "Captivate",
+    "Honesty",
+    "Subdued",
+    "Puritanical"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Guile\" is \"Honesty\". \"Guile\" means: The use of dishonest mean to trick someone"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Redeem",
+   "options": [
+    "Highly injurious or destructive",
+    "To recover something mortgaged",
+    "Without mistake or faults",
+    "Behaviour that is stupid and crazy"
+   ],
+   "answer": 1,
+   "explain": "\"Redeem\" means: To recover something mortgaged"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Redeem",
+   "options": [
+    "Recover",
+    "Confess",
+    "Noble",
+    "Ambivalent"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Redeem\" is \"Recover\". \"Redeem\" means: To recover something mortgaged"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Noble",
+   "options": [
+    "Displaying exceptional character traits",
+    "The use of dishonest mean to trick someone",
+    "Pain and difficulty that causes it",
+    "To look at something for a long time"
+   ],
+   "answer": 0,
+   "explain": "\"Noble\" means: Displaying exceptional character traits"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Noble",
+   "options": [
+    "Honourable",
+    "Stare",
+    "Sundry",
+    "Impeccable"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Noble\" is \"Honourable\". \"Noble\" means: Displaying exceptional character traits"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Noble",
+   "options": [
+    "Ignoble",
+    "Suspicious",
+    "Viability",
+    "Lunacy"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Noble\" is \"Ignoble\". \"Noble\" means: Displaying exceptional character traits"
+  }
+ ]
+}

@@ -1,0 +1,680 @@
+{
+ "id": "chapter-21-part-1",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 21 — Syn & Ant (Part 1)",
+ "durationMins": 37,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Damp",
+   "options": [
+    "To sweep over something",
+    "Slightly wet",
+    "Not easily upset or excited",
+    "Desire to cause pain"
+   ],
+   "answer": 1,
+   "explain": "\"Damp\" means: Slightly wet"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Damp",
+   "options": [
+    "Unequivocal",
+    "Dreadful",
+    "Decline",
+    "Moist"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Damp\" is \"Moist\". \"Damp\" means: Slightly wet"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Damp",
+   "options": [
+    "Dry",
+    "Justifiable",
+    "Site",
+    "Placid"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Damp\" is \"Dry\". \"Damp\" means: Slightly wet"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Negligent",
+   "options": [
+    "The greatest or topmost position",
+    "Characterized by lack of concern",
+    "The act of approaching or entering",
+    "A person or thing that obstructs"
+   ],
+   "answer": 1,
+   "explain": "\"Negligent\" means: Characterized by lack of concern"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Negligent",
+   "options": [
+    "Careless",
+    "Engulf",
+    "Decline",
+    "Disclose"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Negligent\" is \"Careless\". \"Negligent\" means: Characterized by lack of concern"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Negligent",
+   "options": [
+    "Attentive",
+    "Freight",
+    "Apex",
+    "Evolve"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Negligent\" is \"Attentive\". \"Negligent\" means: Characterized by lack of concern"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Discordant",
+   "options": [
+    "Morally correct or acceptable",
+    "Quality of mercy or forgiveness",
+    "Extremely terrible or awful",
+    "Harsh or unpleasant in sound"
+   ],
+   "answer": 3,
+   "explain": "\"Discordant\" means: Harsh or unpleasant in sound"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Discordant",
+   "options": [
+    "Spontaneous",
+    "Apex",
+    "Hindrance",
+    "Harsh"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Discordant\" is \"Harsh\". \"Discordant\" means: Harsh or unpleasant in sound"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Discordant",
+   "options": [
+    "Hindrance",
+    "Decline",
+    "Harmonious",
+    "Negligent"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Discordant\" is \"Harmonious\". \"Discordant\" means: Harsh or unpleasant in sound"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Placid",
+   "options": [
+    "Not easily upset or excited",
+    "Morally correct or acceptable",
+    "Quality of mercy or forgiveness",
+    "To sweep over something"
+   ],
+   "answer": 0,
+   "explain": "\"Placid\" means: Not easily upset or excited"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Placid",
+   "options": [
+    "Malice",
+    "Calm",
+    "Denounce",
+    "Sluggish"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Placid\" is \"Calm\". \"Placid\" means: Not easily upset or excited"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Placid",
+   "options": [
+    "Sluggish",
+    "Negligent",
+    "Excitable",
+    "Dreadful"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Placid\" is \"Excitable\". \"Placid\" means: Not easily upset or excited"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Leniency",
+   "options": [
+    "A person or thing that obstructs",
+    "Characterized by lack of concern",
+    "To criticize harshly and publicly",
+    "Quality of mercy or forgiveness"
+   ],
+   "answer": 3,
+   "explain": "\"Leniency\" means: Quality of mercy or forgiveness"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Leniency",
+   "options": [
+    "Mercy",
+    "Contempt",
+    "Placid",
+    "Beneficent"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Leniency\" is \"Mercy\". \"Leniency\" means: Quality of mercy or forgiveness"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Leniency",
+   "options": [
+    "Haphazard",
+    "Demolish",
+    "Severity",
+    "Contempt"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Leniency\" is \"Severity\". \"Leniency\" means: Quality of mercy or forgiveness"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Denounce",
+   "options": [
+    "A person or thing that obstructs",
+    "Quality of mercy or forgiveness",
+    "To criticize harshly and publicly",
+    "To regard with contempt or disgust"
+   ],
+   "answer": 2,
+   "explain": "\"Denounce\" means: To criticize harshly and publicly"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Denounce",
+   "options": [
+    "Penchant",
+    "Freight",
+    "Apex",
+    "Condemn"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Denounce\" is \"Condemn\". \"Denounce\" means: To criticize harshly and publicly"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Denounce",
+   "options": [
+    "Praise",
+    "Demolish",
+    "Negligent",
+    "Stingy"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Denounce\" is \"Praise\". \"Denounce\" means: To criticize harshly and publicly"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Asset",
+   "options": [
+    "conform to or follow rules exactly",
+    "A useful or valuable thing or quality",
+    "Characterized by vulgarity or cursing",
+    "said or done without having been planned"
+   ],
+   "answer": 1,
+   "explain": "\"Asset\" means: A useful or valuable thing or quality"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Asset",
+   "options": [
+    "Inquisitive",
+    "Sluggish",
+    "Advantage",
+    "Freight"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Asset\" is \"Advantage\". \"Asset\" means: A useful or valuable thing or quality"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Asset",
+   "options": [
+    "Discordant",
+    "Ethical",
+    "Liability",
+    "Penchant"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Asset\" is \"Liability\". \"Asset\" means: A useful or valuable thing or quality"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Rejoinder",
+   "options": [
+    "A clever or sharp response",
+    "Quality of mercy or forgiveness",
+    "very slow and relaxed",
+    "The feeling of intense dislike"
+   ],
+   "answer": 0,
+   "explain": "\"Rejoinder\" means: A clever or sharp response"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Rejoinder",
+   "options": [
+    "Sluggish",
+    "Discordant",
+    "Retort",
+    "Stingy"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Rejoinder\" is \"Retort\". \"Rejoinder\" means: A clever or sharp response"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Apathy",
+   "options": [
+    "Being in a wild or disordered statew",
+    "To regard with contempt or disgust",
+    "said or done without having been planned",
+    "A feeling of having no interest in or enthusiasm about anything"
+   ],
+   "answer": 3,
+   "explain": "\"Apathy\" means: A feeling of having no interest in or enthusiasm about anything"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Apathy",
+   "options": [
+    "Leniency",
+    "Indifference",
+    "Redemption",
+    "Damp"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Apathy\" is \"Indifference\". \"Apathy\" means: A feeling of having no interest in or enthusiasm about anything"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Apathy",
+   "options": [
+    "Enthusiasm",
+    "Access",
+    "Placid",
+    "Denounce"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Apathy\" is \"Enthusiasm\". \"Apathy\" means: A feeling of having no interest in or enthusiasm about anything"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Beneficent",
+   "options": [
+    "Quality of mercy or forgiveness",
+    "To regard with contempt or disgust",
+    "Generous in assistance to the poor",
+    "A person or thing that obstructs"
+   ],
+   "answer": 2,
+   "explain": "\"Beneficent\" means: Generous in assistance to the poor"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Beneficent",
+   "options": [
+    "Freight",
+    "Charitable",
+    "Contempt",
+    "Rejoinder"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Beneficent\" is \"Charitable\". \"Beneficent\" means: Generous in assistance to the poor"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Beneficent",
+   "options": [
+    "Stingy",
+    "Freight",
+    "Authentic",
+    "Evolve"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Beneficent\" is \"Stingy\". \"Beneficent\" means: Generous in assistance to the poor"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Contempt",
+   "options": [
+    "The feeling of intense dislike",
+    "To make someone free from guilt",
+    "Marked by great carelessness",
+    "Quality of mercy or forgiveness"
+   ],
+   "answer": 0,
+   "explain": "\"Contempt\" means: The feeling of intense dislike"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Contempt",
+   "options": [
+    "Disdain",
+    "Absolve",
+    "Penchant",
+    "Inquisitive"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Contempt\" is \"Disdain\". \"Contempt\" means: The feeling of intense dislike"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Contempt",
+   "options": [
+    "Abhor",
+    "Apex",
+    "Admiration",
+    "Site"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Contempt\" is \"Admiration\". \"Contempt\" means: The feeling of intense dislike"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Hindrance",
+   "options": [
+    "Slow-moving and lacking in energy",
+    "A person or thing that obstructs",
+    "Characterized by lack of concern",
+    "conform to or follow rules exactly"
+   ],
+   "answer": 1,
+   "explain": "\"Hindrance\" means: A person or thing that obstructs"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Hindrance",
+   "options": [
+    "Unequivocal",
+    "Negligent",
+    "Beneficent",
+    "Obstacle"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Hindrance\" is \"Obstacle\". \"Hindrance\" means: A person or thing that obstructs"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Hindrance",
+   "options": [
+    "Placid",
+    "Freight",
+    "Authentic",
+    "Help"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Hindrance\" is \"Help\". \"Hindrance\" means: A person or thing that obstructs"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Demolish",
+   "options": [
+    "Undergo development",
+    "To destroy something",
+    "Well founded; rightful",
+    "A clever or sharp response"
+   ],
+   "answer": 1,
+   "explain": "\"Demolish\" means: To destroy something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Demolish",
+   "options": [
+    "Denounce",
+    "Adhere",
+    "Justifiable",
+    "Destroy"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Demolish\" is \"Destroy\". \"Demolish\" means: To destroy something"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Demolish",
+   "options": [
+    "Build",
+    "Sluggish",
+    "Denounce",
+    "Access"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Demolish\" is \"Build\". \"Demolish\" means: To destroy something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Transparent",
+   "options": [
+    "Slow-moving and lacking in energy",
+    "Characterized by lack of concern",
+    "High sounding but with little meaning",
+    "Able to be seen through with clarity"
+   ],
+   "answer": 3,
+   "explain": "\"Transparent\" means: Able to be seen through with clarity"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Transparent",
+   "options": [
+    "Negligent",
+    "Clear",
+    "Sluggish",
+    "Bombastic"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Transparent\" is \"Clear\". \"Transparent\" means: Able to be seen through with clarity"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Transparent",
+   "options": [
+    "Unequivocal",
+    "Dreadful",
+    "Bombastic",
+    "Opaque"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Transparent\" is \"Opaque\". \"Transparent\" means: Able to be seen through with clarity"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Abhor",
+   "options": [
+    "The greatest or topmost position",
+    "To regard with contempt or disgust",
+    "A person or thing that obstructs",
+    "Slow-moving and lacking in energy"
+   ],
+   "answer": 1,
+   "explain": "\"Abhor\" means: To regard with contempt or disgust"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Abhor",
+   "options": [
+    "Leniency",
+    "Languid",
+    "Detest",
+    "Turbulent"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Abhor\" is \"Detest\". \"Abhor\" means: To regard with contempt or disgust"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Abhor",
+   "options": [
+    "Redemption",
+    "Transparent",
+    "Love",
+    "Malice"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Abhor\" is \"Love\". \"Abhor\" means: To regard with contempt or disgust"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Apex",
+   "options": [
+    "The greatest or topmost position",
+    "Morally correct or acceptable",
+    "The feeling of intense dislike",
+    "Characterized by lack of concern"
+   ],
+   "answer": 0,
+   "explain": "\"Apex\" means: The greatest or topmost position"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Apex",
+   "options": [
+    "Damp",
+    "Summit",
+    "Congestion",
+    "Negligent"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Apex\" is \"Summit\". \"Apex\" means: The greatest or topmost position"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Apex",
+   "options": [
+    "Authentic",
+    "Placid",
+    "Decline",
+    "Base"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Apex\" is \"Base\". \"Apex\" means: The greatest or topmost position"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Bombastic",
+   "options": [
+    "High sounding but with little meaning",
+    "Characterized by lack of concern",
+    "The greatest or topmost position",
+    "To regard with contempt or disgust"
+   ],
+   "answer": 0,
+   "explain": "\"Bombastic\" means: High sounding but with little meaning"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Bombastic",
+   "options": [
+    "Freight",
+    "Contempt",
+    "Hindrance",
+    "Pompous"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Bombastic\" is \"Pompous\". \"Bombastic\" means: High sounding but with little meaning"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Bombastic",
+   "options": [
+    "Redemption",
+    "Plain",
+    "Apathy",
+    "Access"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Bombastic\" is \"Plain\". \"Bombastic\" means: High sounding but with little meaning"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Inquisitive",
+   "options": [
+    "A strong liking",
+    "To sweep over something",
+    "Eager for knowledge",
+    "Well founded; rightful"
+   ],
+   "answer": 2,
+   "explain": "\"Inquisitive\" means: Eager for knowledge"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Inquisitive",
+   "options": [
+    "Engulf",
+    "Curious",
+    "Justifiable",
+    "Beneficent"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Inquisitive\" is \"Curious\". \"Inquisitive\" means: Eager for knowledge"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Inquisitive",
+   "options": [
+    "Indifferent",
+    "Ethical",
+    "Apex",
+    "Transparent"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Inquisitive\" is \"Indifferent\". \"Inquisitive\" means: Eager for knowledge"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Languid",
+   "options": [
+    "Undergo development",
+    "Harsh or unpleasant in sound",
+    "Eager for knowledge",
+    "very slow and relaxed"
+   ],
+   "answer": 3,
+   "explain": "\"Languid\" means: very slow and relaxed"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Languid",
+   "options": [
+    "Evolve",
+    "Inquisitive",
+    "Stingy",
+    "Sluggish"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Languid\" is \"Sluggish\". \"Languid\" means: very slow and relaxed"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Languid",
+   "options": [
+    "Inquisitive",
+    "Energetic",
+    "Dreadful",
+    "Congestion"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Languid\" is \"Energetic\". \"Languid\" means: very slow and relaxed"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Malice",
+   "options": [
+    "To sweep over something",
+    "A clever or sharp response",
+    "Desire to cause pain",
+    "Undergo development"
+   ],
+   "answer": 2,
+   "explain": "\"Malice\" means: Desire to cause pain"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Malice",
+   "options": [
+    "Abhor",
+    "Spite",
+    "Contempt",
+    "Stingy"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Malice\" is \"Spite\". \"Malice\" means: Desire to cause pain"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Malice",
+   "options": [
+    "Decline",
+    "Damp",
+    "Kindness",
+    "Apathy"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Malice\" is \"Kindness\". \"Malice\" means: Desire to cause pain"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Authentic",
+   "options": [
+    "Which is not copied; Genuine",
+    "A clever or sharp response",
+    "Clearly defined or formulated",
+    "Goods carried by large vehicle"
+   ],
+   "answer": 0,
+   "explain": "\"Authentic\" means: Which is not copied; Genuine"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Authentic",
+   "options": [
+    "Redemption",
+    "Discordant",
+    "Genuine",
+    "Unequivocal"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Authentic\" is \"Genuine\". \"Authentic\" means: Which is not copied; Genuine"
+  }
+ ]
+}

@@ -1,0 +1,647 @@
+{
+ "id": "chapter-25-part-1",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 25 — Syn & Ant (Part 1)",
+ "durationMins": 35,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Humble",
+   "options": [
+    "Lasting forever",
+    "Responsible for wrongdoing",
+    "Marked by modesty",
+    "- At risk of loss or harm"
+   ],
+   "answer": 2,
+   "explain": "\"Humble\" means: Marked by modesty"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Humble",
+   "options": [
+    "Jeopardy",
+    "Modest",
+    "Repulsive",
+    "Deny"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Humble\" is \"Modest\". \"Humble\" means: Marked by modesty"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Humble",
+   "options": [
+    "Hazard",
+    "Immoral",
+    "Arrogant",
+    "Anxiety"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Humble\" is \"Arrogant\". \"Humble\" means: Marked by modesty"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Onerous",
+   "options": [
+    "According to what is or has been claimed",
+    "Changing one’s mind frequently",
+    "Simple for the mind to accept and believe",
+    "Involving great effort and difficulty"
+   ],
+   "answer": 3,
+   "explain": "\"Onerous\" means: Involving great effort and difficulty"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Onerous",
+   "options": [
+    "Ancient",
+    "Entrench",
+    "Burdensome",
+    "Advisable"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Onerous\" is \"Burdensome\". \"Onerous\" means: Involving great effort and difficulty"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Onerous",
+   "options": [
+    "Easy",
+    "Vigilant",
+    "Purportedly",
+    "Anxiety"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Onerous\" is \"Easy\". \"Onerous\" means: Involving great effort and difficulty"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Dispatch",
+   "options": [
+    "Being in the earliest stages of development",
+    "An uncomfortable feeling of worry or nervousness",
+    "Protected from something unpleasant",
+    "To quickly send off an individual or thing"
+   ],
+   "answer": 3,
+   "explain": "\"Dispatch\" means: To quickly send off an individual or thing"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Dispatch",
+   "options": [
+    "Send",
+    "Onerous",
+    "Appropriate",
+    "Deny"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Dispatch\" is \"Send\". \"Dispatch\" means: To quickly send off an individual or thing"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Exemplary",
+   "options": [
+    "something so good that it is an example for others to follow",
+    "According to what is or has been claimed",
+    "A state of long-standing mutual hostility",
+    "Watchful, especially for danger or disorder"
+   ],
+   "answer": 0,
+   "explain": "\"Exemplary\" means: something so good that it is an example for others to follow"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Exemplary",
+   "options": [
+    "Interdiction",
+    "Anxiety",
+    "Rudimentary",
+    "Commendable"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Exemplary\" is \"Commendable\". \"Exemplary\" means: something so good that it is an example for others to follow"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Ancient",
+   "options": [
+    "A state of long-standing mutual hostility",
+    "According to what is or has been claimed",
+    "Referring to something that is extremely old or something that happened long ago",
+    "Relaxed and calm in a way that shows you do not care or are not worried about anything"
+   ],
+   "answer": 2,
+   "explain": "\"Ancient\" means: Referring to something that is extremely old or something that happened long ago"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Ancient",
+   "options": [
+    "Fickle",
+    "Disregard",
+    "Antique",
+    "Humble"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Ancient\" is \"Antique\". \"Ancient\" means: Referring to something that is extremely old or something that happened long ago"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Ancient",
+   "options": [
+    "Rudimentary",
+    "Modern",
+    "Nonchalant",
+    "Anxiety"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Ancient\" is \"Modern\". \"Ancient\" means: Referring to something that is extremely old or something that happened long ago"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Dissent",
+   "options": [
+    "To differ in opinion",
+    "To put an end to something",
+    "Responsible for wrongdoing",
+    "Marked by modesty"
+   ],
+   "answer": 0,
+   "explain": "\"Dissent\" means: To differ in opinion"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Dissent",
+   "options": [
+    "Repulsive",
+    "Disagreement",
+    "Disregard",
+    "Entrench"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Dissent\" is \"Disagreement\". \"Dissent\" means: To differ in opinion"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Dissent",
+   "options": [
+    "Agreement",
+    "Consolidate",
+    "Exemplary",
+    "Cease"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Dissent\" is \"Agreement\". \"Dissent\" means: To differ in opinion"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Valor",
+   "options": [
+    "Changing one’s mind frequently",
+    "Courage in the presence of danger",
+    "Possessing the ability to repel",
+    "not adhering to ethical principles"
+   ],
+   "answer": 1,
+   "explain": "\"Valor\" means: Courage in the presence of danger"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Valor",
+   "options": [
+    "Penniless",
+    "Nonchalant",
+    "Established",
+    "Bravery"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Valor\" is \"Bravery\". \"Valor\" means: Courage in the presence of danger"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Valor",
+   "options": [
+    "Ravage",
+    "Cowardice",
+    "Nonchalant",
+    "Consolidate"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Valor\" is \"Cowardice\". \"Valor\" means: Courage in the presence of danger"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Guilty",
+   "options": [
+    "Refuse to accept or believe",
+    "Responsible for wrongdoing",
+    "To put an end to something",
+    "Occupy a trench or secured area"
+   ],
+   "answer": 1,
+   "explain": "\"Guilty\" means: Responsible for wrongdoing"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Guilty",
+   "options": [
+    "Anxiety",
+    "Cogent",
+    "Established",
+    "Culpable"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Guilty\" is \"Culpable\". \"Guilty\" means: Responsible for wrongdoing"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Guilty",
+   "options": [
+    "Everlasting",
+    "Immoral",
+    "Vigilant",
+    "Innocent"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Guilty\" is \"Innocent\". \"Guilty\" means: Responsible for wrongdoing"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Established",
+   "options": [
+    "Brought about or set up",
+    "Worthy of being recommended",
+    "Feeling great passion",
+    "A source of danger"
+   ],
+   "answer": 0,
+   "explain": "\"Established\" means: Brought about or set up"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Established",
+   "options": [
+    "Consolidate",
+    "Vigilant",
+    "Founded",
+    "Dishearten"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Established\" is \"Founded\". \"Established\" means: Brought about or set up"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Immoral",
+   "options": [
+    "Involving great effort and difficulty",
+    "not adhering to ethical principles",
+    "Courage in the presence of danger",
+    "To ignore or dismiss something"
+   ],
+   "answer": 1,
+   "explain": "\"Immoral\" means: not adhering to ethical principles"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Immoral",
+   "options": [
+    "Onerous",
+    "Feud",
+    "Unethical",
+    "Established"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Immoral\" is \"Unethical\". \"Immoral\" means: not adhering to ethical principles"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Immoral",
+   "options": [
+    "Moral",
+    "Repulsive",
+    "Disregard",
+    "Onerous"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Immoral\" is \"Moral\". \"Immoral\" means: not adhering to ethical principles"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Condone",
+   "options": [
+    "To destroy",
+    "- At risk of loss or harm",
+    "- Be lenient with",
+    "Brought about or set up"
+   ],
+   "answer": 2,
+   "explain": "\"Condone\" means: - Be lenient with"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Condone",
+   "options": [
+    "Ravage",
+    "Advisable",
+    "Overlook",
+    "Exemplary"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Condone\" is \"Overlook\". \"Condone\" means: - Be lenient with"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Condone",
+   "options": [
+    "Deny",
+    "Advisable",
+    "Condemn",
+    "Guilty"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Condone\" is \"Condemn\". \"Condone\" means: - Be lenient with"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Cogent",
+   "options": [
+    "Watchful, especially for danger or disorder",
+    "Simple for the mind to accept and believe",
+    "To quickly send off an individual or thing",
+    "According to what is or has been claimed"
+   ],
+   "answer": 1,
+   "explain": "\"Cogent\" means: Simple for the mind to accept and believe"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Cogent",
+   "options": [
+    "Convincing",
+    "Influence",
+    "Ardent",
+    "Disregard"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Cogent\" is \"Convincing\". \"Cogent\" means: Simple for the mind to accept and believe"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Cogent",
+   "options": [
+    "Dissent",
+    "Unconvincing",
+    "Influence",
+    "Nonchalant"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Cogent\" is \"Unconvincing\". \"Cogent\" means: Simple for the mind to accept and believe"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Advisable",
+   "options": [
+    "To decrease, reduce in size",
+    "Worthy of being recommended",
+    "- At risk of loss or harm",
+    "Courage in the presence of danger"
+   ],
+   "answer": 1,
+   "explain": "\"Advisable\" means: Worthy of being recommended"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Advisable",
+   "options": [
+    "Interdiction",
+    "Recommended",
+    "Condone",
+    "Guilty"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Advisable\" is \"Recommended\". \"Advisable\" means: Worthy of being recommended"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Advisable",
+   "options": [
+    "Feud",
+    "Fickle",
+    "Consolidate",
+    "Inadvisable"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Advisable\" is \"Inadvisable\". \"Advisable\" means: Worthy of being recommended"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Interdiction",
+   "options": [
+    "A state of long-standing mutual hostility",
+    "An official order stopping a person from doing a task",
+    "not adhering to ethical principles",
+    "To quickly send off an individual or thing"
+   ],
+   "answer": 1,
+   "explain": "\"Interdiction\" means: An official order stopping a person from doing a task"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Interdiction",
+   "options": [
+    "Penniless",
+    "Exemplary",
+    "Cogent",
+    "Prohibition"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Interdiction\" is \"Prohibition\". \"Interdiction\" means: An official order stopping a person from doing a task"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Interdiction",
+   "options": [
+    "Irresolute",
+    "Dwindle",
+    "Purportedly",
+    "Permission"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Interdiction\" is \"Permission\". \"Interdiction\" means: An official order stopping a person from doing a task"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Nonchalant",
+   "options": [
+    "Relaxed and calm in a way that shows you do not care or are not worried about anything",
+    "Protected from something unpleasant",
+    "To quickly send off an individual or thing",
+    "Being in the earliest stages of development"
+   ],
+   "answer": 0,
+   "explain": "\"Nonchalant\" means: Relaxed and calm in a way that shows you do not care or are not worried about anything"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Nonchalant",
+   "options": [
+    "Adversity",
+    "Appropriate",
+    "Interdiction",
+    "Unconcerned"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Nonchalant\" is \"Unconcerned\". \"Nonchalant\" means: Relaxed and calm in a way that shows you do not care or are not worried about anything"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Nonchalant",
+   "options": [
+    "Anxious",
+    "Onerous",
+    "Dwindle",
+    "Irresolute"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Nonchalant\" is \"Anxious\". \"Nonchalant\" means: Relaxed and calm in a way that shows you do not care or are not worried about anything"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Penniless",
+   "options": [
+    "- At risk of loss or harm",
+    "To put an end to something",
+    "Without any money",
+    "- Be lenient with"
+   ],
+   "answer": 2,
+   "explain": "\"Penniless\" means: Without any money"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Penniless",
+   "options": [
+    "Destitute",
+    "Feud",
+    "Interdiction",
+    "Entrench"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Penniless\" is \"Destitute\". \"Penniless\" means: Without any money"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Penniless",
+   "options": [
+    "Wealthy",
+    "Immune",
+    "Ardent",
+    "Immoral"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Penniless\" is \"Wealthy\". \"Penniless\" means: Without any money"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Deny",
+   "options": [
+    "- At risk of loss or harm",
+    "To ignore or dismiss something",
+    "Take away the enthusiasm of",
+    "Refuse to accept or believe"
+   ],
+   "answer": 3,
+   "explain": "\"Deny\" means: Refuse to accept or believe"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Deny",
+   "options": [
+    "Jeopardy",
+    "Refuse",
+    "Vigilant",
+    "Ardent"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Deny\" is \"Refuse\". \"Deny\" means: Refuse to accept or believe"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Deny",
+   "options": [
+    "Dwindle",
+    "Immoral",
+    "Admit",
+    "Consolidate"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Deny\" is \"Admit\". \"Deny\" means: Refuse to accept or believe"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Immune",
+   "options": [
+    "According to what is or has been claimed",
+    "not adhering to ethical principles",
+    "To quickly send off an individual or thing",
+    "Protected from something unpleasant"
+   ],
+   "answer": 3,
+   "explain": "\"Immune\" means: Protected from something unpleasant"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Immune",
+   "options": [
+    "Protected",
+    "Valor",
+    "Cogent",
+    "Interdiction"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Immune\" is \"Protected\". \"Immune\" means: Protected from something unpleasant"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Immune",
+   "options": [
+    "Advisable",
+    "Susceptible",
+    "Cogent",
+    "Nonchalant"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Immune\" is \"Susceptible\". \"Immune\" means: Protected from something unpleasant"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Bulk",
+   "options": [
+    "not certain about something",
+    "Possessing the ability to repel",
+    "- At risk of loss or harm",
+    "The larger part of something"
+   ],
+   "answer": 3,
+   "explain": "\"Bulk\" means: The larger part of something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Bulk",
+   "options": [
+    "Rudimentary",
+    "Interdiction",
+    "Majority",
+    "Humble"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Bulk\" is \"Majority\". \"Bulk\" means: The larger part of something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Influence",
+   "options": [
+    "Power to change, affect, control or manipulate someone or something",
+    "According to what is or has been claimed",
+    "An official order stopping a person from doing a task",
+    "An uncomfortable feeling of worry or nervousness"
+   ],
+   "answer": 0,
+   "explain": "\"Influence\" means: Power to change, affect, control or manipulate someone or something"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Influence",
+   "options": [
+    "Immune",
+    "Dwindle",
+    "Impact",
+    "Ardent"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Influence\" is \"Impact\". \"Influence\" means: Power to change, affect, control or manipulate someone or something"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Fickle",
+   "options": [
+    "Changing one’s mind frequently",
+    "Worthy of being recommended",
+    "Take away the enthusiasm of",
+    "Occupy a trench or secured area"
+   ],
+   "answer": 0,
+   "explain": "\"Fickle\" means: Changing one’s mind frequently"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Fickle",
+   "options": [
+    "Nonchalant",
+    "Established",
+    "Valor",
+    "Changeable"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Fickle\" is \"Changeable\". \"Fickle\" means: Changing one’s mind frequently"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Fickle",
+   "options": [
+    "Penniless",
+    "Steadfast",
+    "Entrench",
+    "Dishearten"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Fickle\" is \"Steadfast\". \"Fickle\" means: Changing one’s mind frequently"
+  }
+ ]
+}

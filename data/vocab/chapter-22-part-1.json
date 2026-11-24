@@ -1,0 +1,658 @@
+{
+ "id": "chapter-22-part-1",
+ "category": "syn_ant",
+ "group": "Synonyms & Antonyms",
+ "title": "Chapter 22 — Syn & Ant (Part 1)",
+ "durationMins": 36,
+ "questions": [
+  {
+   "q": "Select the most appropriate meaning of the given word: Behold",
+   "options": [
+    "Open and genuine",
+    "See with attention",
+    "To make something known",
+    "Of the greatest intensity"
+   ],
+   "answer": 1,
+   "explain": "\"Behold\" means: See with attention"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Behold",
+   "options": [
+    "Ingredients",
+    "Observe",
+    "Prolong",
+    "Elevate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Behold\" is \"Observe\". \"Behold\" means: See with attention"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Aggravate",
+   "options": [
+    "Filled with dejection",
+    "To make worse",
+    "Sufficient for the purpose",
+    "See with attention"
+   ],
+   "answer": 1,
+   "explain": "\"Aggravate\" means: To make worse"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Aggravate",
+   "options": [
+    "Worsen",
+    "Sincere",
+    "Factual",
+    "Rehabilitate"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Aggravate\" is \"Worsen\". \"Aggravate\" means: To make worse"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Aggravate",
+   "options": [
+    "Improve",
+    "Elevate",
+    "Deface",
+    "Reminiscence"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Aggravate\" is \"Improve\". \"Aggravate\" means: To make worse"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Prolong",
+   "options": [
+    "Raise in rank or condition",
+    "Of the greatest intensity",
+    "Most important element",
+    "Lengthen in time"
+   ],
+   "answer": 3,
+   "explain": "\"Prolong\" means: Lengthen in time"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Prolong",
+   "options": [
+    "Zenith",
+    "Principal",
+    "Extend",
+    "Desolate"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Prolong\" is \"Extend\". \"Prolong\" means: Lengthen in time"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Prolong",
+   "options": [
+    "Aggravate",
+    "Glorious",
+    "Shorten",
+    "Contentment"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Prolong\" is \"Shorten\". \"Prolong\" means: Lengthen in time"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Cruise",
+   "options": [
+    "An ocean trip taken for pleasure",
+    "The act of making a noisy disturbance",
+    "To damage or disfigure something",
+    "A person who is financially well off"
+   ],
+   "answer": 0,
+   "explain": "\"Cruise\" means: An ocean trip taken for pleasure"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Cruise",
+   "options": [
+    "Glorious",
+    "Intricate",
+    "Voyage",
+    "Behold"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Cruise\" is \"Voyage\". \"Cruise\" means: An ocean trip taken for pleasure"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Factual",
+   "options": [
+    "To copy or simulate the function of something else",
+    "Having the quality or characteristic of being true",
+    "Having a strong need for moisture",
+    "In a state of sulky dissatisfaction"
+   ],
+   "answer": 1,
+   "explain": "\"Factual\" means: Having the quality or characteristic of being true"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Factual",
+   "options": [
+    "Anguish",
+    "Profound",
+    "Desolate",
+    "True"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Factual\" is \"True\". \"Factual\" means: Having the quality or characteristic of being true"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Factual",
+   "options": [
+    "Desolate",
+    "Humility",
+    "False",
+    "Parched"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Factual\" is \"False\". \"Factual\" means: Having the quality or characteristic of being true"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Reminiscence",
+   "options": [
+    "The act of making a noisy disturbance",
+    "Capable of being comprehended",
+    "A retelling of a past experience",
+    "To damage or disfigure something"
+   ],
+   "answer": 2,
+   "explain": "\"Reminiscence\" means: A retelling of a past experience"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Reminiscence",
+   "options": [
+    "Recollection",
+    "Commotion",
+    "Behold",
+    "Rehabilitate"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Reminiscence\" is \"Recollection\". \"Reminiscence\" means: A retelling of a past experience"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Rehabilitate",
+   "options": [
+    "To bring back to a healthy or useful state",
+    "The act of making a noisy disturbance",
+    "Specific about rules or what is required",
+    "To copy or simulate the function of something else"
+   ],
+   "answer": 0,
+   "explain": "\"Rehabilitate\" means: To bring back to a healthy or useful state"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Rehabilitate",
+   "options": [
+    "Desolate",
+    "Partition",
+    "Vagrant",
+    "Restore"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Rehabilitate\" is \"Restore\". \"Rehabilitate\" means: To bring back to a healthy or useful state"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Harrowing",
+   "options": [
+    "Highly involved or complex",
+    "Raise in rank or condition",
+    "Capable of being comprehended",
+    "Producing pain or discomfort"
+   ],
+   "answer": 3,
+   "explain": "\"Harrowing\" means: Producing pain or discomfort"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Harrowing",
+   "options": [
+    "Desolate",
+    "Explicit",
+    "Distressing",
+    "Contentment"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Harrowing\" is \"Distressing\". \"Harrowing\" means: Producing pain or discomfort"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Harrowing",
+   "options": [
+    "Pleasant",
+    "Zenith",
+    "Profound",
+    "Affluent"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Harrowing\" is \"Pleasant\". \"Harrowing\" means: Producing pain or discomfort"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Diabolical",
+   "options": [
+    "Characterized by grandeur",
+    "very evil",
+    "Empty; without life",
+    "Open and genuine"
+   ],
+   "answer": 1,
+   "explain": "\"Diabolical\" means: very evil"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Diabolical",
+   "options": [
+    "Cruise",
+    "Commotion",
+    "Principal",
+    "Devilish"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Diabolical\" is \"Devilish\". \"Diabolical\" means: very evil"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Diabolical",
+   "options": [
+    "Angelic",
+    "Glorious",
+    "Contentment",
+    "Gloomy"
+   ],
+   "answer": 0,
+   "explain": "An antonym of \"Diabolical\" is \"Angelic\". \"Diabolical\" means: very evil"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Vagrant",
+   "options": [
+    "Determined by chance or impulse or whim rather than by necessity or reason",
+    "The strongest or most successful period of time",
+    "Characterized by or causing or expressing sadness",
+    "An individual who lacks regular work and moves around frequently"
+   ],
+   "answer": 3,
+   "explain": "\"Vagrant\" means: An individual who lacks regular work and moves around frequently"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Vagrant",
+   "options": [
+    "Wanderer",
+    "Intelligible",
+    "Gloomy",
+    "Prolong"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Vagrant\" is \"Wanderer\". \"Vagrant\" means: An individual who lacks regular work and moves around frequently"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Desolate",
+   "options": [
+    "To make worse",
+    "Empty; without life",
+    "Characterized by grandeur",
+    "Most important element"
+   ],
+   "answer": 1,
+   "explain": "\"Desolate\" means: Empty; without life"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Desolate",
+   "options": [
+    "Principal",
+    "Barren",
+    "Contentment",
+    "Rehabilitate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Desolate\" is \"Barren\". \"Desolate\" means: Empty; without life"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Desolate",
+   "options": [
+    "Reminiscence",
+    "Prolong",
+    "Populated",
+    "Rehabilitate"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Desolate\" is \"Populated\". \"Desolate\" means: Empty; without life"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Imitate",
+   "options": [
+    "Having the quality or characteristic of being true",
+    "Any substance used to create a particular dish",
+    "To copy or simulate the function of something else",
+    "A feeling of being happy and satisfied"
+   ],
+   "answer": 2,
+   "explain": "\"Imitate\" means: To copy or simulate the function of something else"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Imitate",
+   "options": [
+    "Copy",
+    "Ingredients",
+    "Glorious",
+    "Behold"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Imitate\" is \"Copy\". \"Imitate\" means: To copy or simulate the function of something else"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Imitate",
+   "options": [
+    "Adequate",
+    "Explicit",
+    "Acquisitive",
+    "Originate"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Imitate\" is \"Originate\". \"Imitate\" means: To copy or simulate the function of something else"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Ingredients",
+   "options": [
+    "Disposed to venture or take risks",
+    "The strongest or most successful period of time",
+    "Any substance used to create a particular dish",
+    "Having the quality or characteristic of being true"
+   ],
+   "answer": 2,
+   "explain": "\"Ingredients\" means: Any substance used to create a particular dish"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Ingredients",
+   "options": [
+    "Components",
+    "Zenith",
+    "Principal",
+    "Factual"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Ingredients\" is \"Components\". \"Ingredients\" means: Any substance used to create a particular dish"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Elevate",
+   "options": [
+    "Raise in rank or condition",
+    "A moral and praiseworthy trait",
+    "Characterized by grandeur",
+    "Of the greatest intensity"
+   ],
+   "answer": 0,
+   "explain": "\"Elevate\" means: Raise in rank or condition"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Elevate",
+   "options": [
+    "Behold",
+    "Desolate",
+    "Disgruntled",
+    "Raise"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Elevate\" is \"Raise\". \"Elevate\" means: Raise in rank or condition"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Elevate",
+   "options": [
+    "Sincere",
+    "Lower",
+    "Adequate",
+    "Vagrant"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Elevate\" is \"Lower\". \"Elevate\" means: Raise in rank or condition"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Explicit",
+   "options": [
+    "To fill something up with air or gas",
+    "In a state of sulky dissatisfaction",
+    "A feeling of being happy and satisfied",
+    "Specific about rules or what is required"
+   ],
+   "answer": 3,
+   "explain": "\"Explicit\" means: Specific about rules or what is required"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Explicit",
+   "options": [
+    "Aggravate",
+    "Partition",
+    "Principal",
+    "Clear"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Explicit\" is \"Clear\". \"Explicit\" means: Specific about rules or what is required"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Explicit",
+   "options": [
+    "Principal",
+    "Behold",
+    "Vague",
+    "Intricate"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Explicit\" is \"Vague\". \"Explicit\" means: Specific about rules or what is required"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Commotion",
+   "options": [
+    "A feeling of being happy and satisfied",
+    "The act of making a noisy disturbance",
+    "A person who is financially well off",
+    "Specific about rules or what is required"
+   ],
+   "answer": 1,
+   "explain": "\"Commotion\" means: The act of making a noisy disturbance"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Commotion",
+   "options": [
+    "Cruise",
+    "Disturbance",
+    "Gloomy",
+    "Humility"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Commotion\" is \"Disturbance\". \"Commotion\" means: The act of making a noisy disturbance"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Commotion",
+   "options": [
+    "Rehabilitate",
+    "Elevate",
+    "Calm",
+    "Virtue"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Commotion\" is \"Calm\". \"Commotion\" means: The act of making a noisy disturbance"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Affluent",
+   "options": [
+    "Disposed to venture or take risks",
+    "A divider that breaks up an area",
+    "A person who is financially well off",
+    "An ocean trip taken for pleasure"
+   ],
+   "answer": 2,
+   "explain": "\"Affluent\" means: A person who is financially well off"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Affluent",
+   "options": [
+    "Whimsical",
+    "Lavish",
+    "Wealthy",
+    "Inflate"
+   ],
+   "answer": 2,
+   "explain": "A synonym of \"Affluent\" is \"Wealthy\". \"Affluent\" means: A person who is financially well off"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Affluent",
+   "options": [
+    "Intricate",
+    "Poor",
+    "Diabolical",
+    "Humility"
+   ],
+   "answer": 1,
+   "explain": "An antonym of \"Affluent\" is \"Poor\". \"Affluent\" means: A person who is financially well off"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Whimsical",
+   "options": [
+    "Determined by chance or impulse or whim rather than by necessity or reason",
+    "Any substance used to create a particular dish",
+    "The act of making a noisy disturbance",
+    "To fill something up with air or gas"
+   ],
+   "answer": 0,
+   "explain": "\"Whimsical\" means: Determined by chance or impulse or whim rather than by necessity or reason"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Whimsical",
+   "options": [
+    "Deface",
+    "Profound",
+    "Rehabilitate",
+    "Capricious"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Whimsical\" is \"Capricious\". \"Whimsical\" means: Determined by chance or impulse or whim rather than by necessity or reason"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Whimsical",
+   "options": [
+    "Factual",
+    "Explicit",
+    "Intelligible",
+    "Sensible"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Whimsical\" is \"Sensible\". \"Whimsical\" means: Determined by chance or impulse or whim rather than by necessity or reason"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Profound",
+   "options": [
+    "Of the greatest intensity",
+    "Sufficient for the purpose",
+    "Highly involved or complex",
+    "To make something known"
+   ],
+   "answer": 0,
+   "explain": "\"Profound\" means: Of the greatest intensity"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Profound",
+   "options": [
+    "Parched",
+    "Deep",
+    "Audacious",
+    "Rehabilitate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Profound\" is \"Deep\". \"Profound\" means: Of the greatest intensity"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Profound",
+   "options": [
+    "Zenith",
+    "Prolong",
+    "Humility",
+    "Superficial"
+   ],
+   "answer": 3,
+   "explain": "An antonym of \"Profound\" is \"Superficial\". \"Profound\" means: Of the greatest intensity"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Melancholic",
+   "options": [
+    "A person who is financially well off",
+    "Characterized by or causing or expressing sadness",
+    "Specific about rules or what is required",
+    "Eager and capable of making acquisitions"
+   ],
+   "answer": 1,
+   "explain": "\"Melancholic\" means: Characterized by or causing or expressing sadness"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Melancholic",
+   "options": [
+    "Sad",
+    "Parched",
+    "Harrowing",
+    "Lavish"
+   ],
+   "answer": 0,
+   "explain": "A synonym of \"Melancholic\" is \"Sad\". \"Melancholic\" means: Characterized by or causing or expressing sadness"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Melancholic",
+   "options": [
+    "Rehabilitate",
+    "Reminiscence",
+    "Cheerful",
+    "Whimsical"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Melancholic\" is \"Cheerful\". \"Melancholic\" means: Characterized by or causing or expressing sadness"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Concise",
+   "options": [
+    "A divider that breaks up an area",
+    "Expressing much in few words",
+    "Raise in rank or condition",
+    "Highly involved or complex"
+   ],
+   "answer": 1,
+   "explain": "\"Concise\" means: Expressing much in few words"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Concise",
+   "options": [
+    "Ingredients",
+    "Gloomy",
+    "Inflate",
+    "Brief"
+   ],
+   "answer": 3,
+   "explain": "A synonym of \"Concise\" is \"Brief\". \"Concise\" means: Expressing much in few words"
+  },
+  {
+   "q": "Select the most appropriate antonym of the given word: Concise",
+   "options": [
+    "Profound",
+    "Parched",
+    "Wordy",
+    "Audacious"
+   ],
+   "answer": 2,
+   "explain": "An antonym of \"Concise\" is \"Wordy\". \"Concise\" means: Expressing much in few words"
+  },
+  {
+   "q": "Select the most appropriate meaning of the given word: Glorious",
+   "options": [
+    "Characterized by grandeur",
+    "Sufficient for the purpose",
+    "Expressing much in few words",
+    "Filled with dejection"
+   ],
+   "answer": 0,
+   "explain": "\"Glorious\" means: Characterized by grandeur"
+  },
+  {
+   "q": "Select the most appropriate synonym of the given word: Glorious",
+   "options": [
+    "Humility",
+    "Magnificent",
+    "Whimsical",
+    "Rehabilitate"
+   ],
+   "answer": 1,
+   "explain": "A synonym of \"Glorious\" is \"Magnificent\". \"Glorious\" means: Characterized by grandeur"
+  }
+ ]
+}
