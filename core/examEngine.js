@@ -287,7 +287,7 @@ export function mountHcmStage(container, opts) {
         '<div class="paperSheet" id="paperSheet"><div id="paperSheetText"></div></div>' +
       '</div>' +
       '<div class="typeBox" id="typeBox"><div class="typeText" id="typeText"></div><div class="caretEl" id="caretEl"></div><div class="paperTyped" id="paperTyped"></div>' +
-        '<textarea id="capture" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type here"></textarea>' +
+        '<textarea id="capture" rows="3" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Type here"></textarea>' +
       '</div>' +
       '</div>' +
       '<p class="modeHint small" id="modeHint"></p>' +
@@ -705,12 +705,23 @@ export function mountHcmStage(container, opts) {
        just under the sticky site header, so HUD + sheet + typed box are
        on screen together with no manual arranging. Never per keystroke;
        leaving Paper View adjusts nothing.
+       v24 QA fix (Defect B): exam mounts also call this once on entry
+       (see the boot section) so screen-view entry lands on the same
+       mark instead of inheriting the hub's scroll position.
        v23: on exam mounts the HUD strip no longer exists — the anchor
        becomes the type area, and the landing mark moves down by the
        sticky timer pill (header + pill + a gap), so the sheet's first
        line never sits under the pill. Practice mounts keep the v18
-       HUD anchoring byte-for-byte. */
-    const anchor = pill ? (q("#typeArea") || q("#hcmStage")) : (q("#stHud") || q("#hcmStage")); if (!anchor) return;
+       HUD anchoring byte-for-byte.
+       v24: the exam anchor is the command bar (#stBar), not the type
+       area. Anchoring on the type area dragged the bar — which sits
+       above it — up into the pill's band (its top row ended partly
+       under the pill, and the Paper toggle's centre under the fixed
+       header, where a click could land on a header tab instead).
+       Landing the bar itself at the same mark keeps every stage
+       control below the pill; the sheet still clears the pill
+       because it follows below the bar. */
+    const anchor = pill ? (q("#stBar") || q("#hcmStage")) : (q("#stHud") || q("#hcmStage")); if (!anchor) return;
     const hdr = document.querySelector(".site-header");
     const clearance = function () {
       const hh = hdr ? hdr.getBoundingClientRect().height : 0;
@@ -728,7 +739,13 @@ export function mountHcmStage(container, opts) {
        per keystroke. */
     window.scrollTo(0, y);
     const correct = function () {
-      if (!S.paperView || !anchor.isConnected) return; /* toggled off / stage gone */
+      if (!anchor.isConnected) return; /* stage gone */
+      /* Practice mounts keep the v18 rule: corrections only while in
+         Paper View. Exam mounts anchor to the SAME mark in both views
+         (the bar, with header + pill clearance), so a mount-time
+         anchor (Defect B fix, below) may keep correcting after the
+         user toggles back to screen view — the landing is identical. */
+      if (!pill && !S.paperView) return; /* toggled off (practice) */
       /* Bottom clamp: on tall viewports the document may not be tall
          enough to scroll the anchor all the way to the mark — once the
          page is at its scroll limit the anchor is as high as it can go
@@ -823,6 +840,77 @@ export function mountHcmStage(container, opts) {
 
   /* ---------- input path (verbatim ports) ---------- */
   let pendingWinY = null, pendingWinX = null;
+  /* v24 fix — end-of-passage input lockout. The input path used to
+     hard-cap the typed text at S.target.length (the capture value was
+     truncated and the S.typed build stopped there). Any extra
+     characters typed earlier — a doubled letter, a double space, a
+     stray key, none of them corrected — shifted the typist's position
+     against the passage, so the cap was reached BEFORE the visible
+     end and the final characters became untypeable (user report: the
+     last word "TREATED" stopped at "TREA"; reproduced locally: with
+     3 early extras the capture froze at exactly target.length with
+     the passage tail "...another's trust." stuck at "...tru").
+     Two changes:
+       1. inputCap(): the ceiling is now the passage length plus a
+          mistake allowance — 25% of the passage, at least 250 chars.
+          It can never bind in genuine typing (an extremely
+          error-heavy full run adds only a few percent of stray
+          characters; verified with +30 extras on a 2,657-char
+          passage, ~1%), but it still stops a paste flood from
+          feeding unbounded text into the per-keystroke word-
+          alignment DP. Characters typed past the passage end are
+          kept (see the build loop) and scored by the existing word
+          alignment as extra/spelling mistakes — the same treatment
+          the EX stage has always given over-typing; its input path
+          never had a cap, so the two stages are now consistent.
+       2. textComplete(): "Text complete" (and the Submit button's
+          ready state) used to fire on S.typed.length >=
+          S.target.length, which with extras fires EARLY — it even
+          fired in the lockout repro while the last word was still
+          incomplete. Completion now means the word alignment has
+          paired the passage's final word with a fully-typed typed
+          word. For a perfect run this fires at exactly the same
+          keystroke as the old length check. */
+  function inputCap() { return S.target.length + Math.max(250, Math.ceil(S.target.length * 0.25)); }
+  function textComplete() {
+    if (!S.target) return false;
+    const tt = typedString();
+    if (!tt) return false;
+    const T = hcmWordTokens(S.target), n = T.length;
+    if (!n) return false;
+    /* Cheap gate: short of this, the final word cannot have been
+       reached, so skip the alignment DP (it already runs twice per
+       keystroke elsewhere). A run that dropped whole words wholesale
+       is the only exception, and it has not completed the passage. */
+    if (tt.length < S.target.length - 1 && hcmWordTokens(tt).length < n) return false;
+    const al = alignWordsHcm(S.target, tt);
+    let lp = null;
+    al.pairs.forEach(function (p) { if (p.gi >= 0 && p.ti >= 0 && (!lp || p.ti >= lp.ti)) lp = p; });
+    if (!lp) return false;
+    if (lp.ti === n - 1) return lp.got.length >= lp.exp.length;
+    /* The last two target words typed as one merged word collapse
+       into a single "spacing" pair anchored at the first of them;
+       its got is the two words joined without the space. */
+    if (lp.kind === "spacing" && lp.ti === n - 2) return lp.got.length >= lp.exp.length - 1;
+    /* v24 QA fix (Defect A): the merged-final-words case does not
+       always reach the collapse above. When the typist deletes the
+       final space, the alignment pairs the merged token with the
+       FIRST of the two words (a lone "sub" at ti = n−2 whose got is
+       the two words concatenated) and the trailing "del" for the
+       final word is trimmed from the pair list (it sits past the
+       last paired word), so no pair remains to collapse — and the
+       hint never fired even though the typist reached the end
+       (scoring itself was always correct: 1 spacing mistake).
+       Completion here means the merged token carries the final word
+       in full, sitting exactly where the deleted space was. A
+       skipped final word (pair is "ok"/short at n−2) and a
+       half-typed merged final word (final word absent or truncated
+       in the token) both fail this test, as they must. */
+    if (lp.kind === "sub" && lp.ti === n - 2) {
+      return lp.got.length >= T[n - 2].w.length + T[n - 1].w.length && lp.got.indexOf(T[n - 1].w) === T[n - 2].w.length;
+    }
+    return false;
+  }
   capture.addEventListener("input", function () {
     if (S.finished) return;
     lastPaperInputAt = performance.now();
@@ -830,17 +918,29 @@ export function mountHcmStage(container, opts) {
     let v = capture.value;
     TEL.feed(v);
     if (!S.started && v.length > 0) startTimer();
-    if (v.length > S.target.length) {
+    if (v.length > inputCap()) {
       const csCap = capture.selectionStart;
-      v = v.slice(0, S.target.length);
+      v = v.slice(0, inputCap());
       capture.value = v;
       const csNew = Math.max(0, Math.min(csCap != null ? csCap : v.length, v.length));
       try { capture.setSelectionRange(csNew, csNew); } catch (e) {}
     }
     S.errCat = { spelling: 0, capital: 0, punct: 0, spacing: 0, other: 0 }; S.errKeys = {}; S.errWords = {};
     S.typed = [];
-    for (let i = 0; i < v.length && i < S.target.length; i++) {
-      const exp = S.target[i], got = v[i], ok = exp === got;
+    for (let i = 0; i < v.length; i++) {
+      const got = v[i];
+      if (i >= S.target.length) {
+        /* Past the passage end (reachable only via earlier extra
+           characters): there is no expected character. Keep the char —
+           the typist can always finish the last word and can backspace
+           back — and flag it wrong for display; the finish-time word
+           alignment (deriveErrCats / computeMistakes) scores it as an
+           extra, so this transient category is never what is stored. */
+        S.typed.push({ ch: got, ok: false });
+        S.errCat.other++;
+        continue;
+      }
+      const exp = S.target[i], ok = exp === got;
       S.typed.push({ ch: got, ok: ok });
       if (!ok) {
         S.errCat[classifyChar(exp, got)]++;
@@ -860,7 +960,7 @@ export function mountHcmStage(container, opts) {
       pendingWinY = null; pendingWinX = null;
     });
     const mhEl = q("#modeHint");
-    if (S.typed.length >= S.target.length) {
+    if (textComplete()) {
       if (mhEl) mhEl.textContent = isExamCtx()
         ? "Text complete — timer still running. You can still correct anything; press Submit when ready."
         : "Text complete — that's the whole text. You can still correct anything; press Finish to see your result.";
@@ -1072,23 +1172,57 @@ export function mountHcmStage(container, opts) {
       e.preventDefault(); focusCapture();
       if (S.finished) return;
       if (!bsEffective()) return;
-      if (capture.value.length) {
-        S.bsCount++;
-        capture.value = capture.value.slice(0, -1);
-        capture.dispatchEvent(new Event("input", { bubbles: true }));
+      /* v24 senior pass: this fallback path (keydown landed on the box,
+         not the capture) used to delete the LAST character of the whole
+         text regardless of where the free cursor sat — with click-to-
+         place editing, that deletes a different character than the one
+         the user sees the caret on. Delete at the caret/selection
+         instead, like the native path. Selection unavailable (never
+         focused) keeps the old end-of-text behaviour. */
+      const csB = capture.selectionStart, ceB = capture.selectionEnd;
+      if (csB == null) {
+        if (capture.value.length) {
+          S.bsCount++;
+          capture.value = capture.value.slice(0, -1);
+          capture.dispatchEvent(new Event("input", { bubbles: true }));
+        }
+        return;
       }
+      if (csB === ceB && csB === 0) return;
+      const delFrom = csB === ceB ? csB - 1 : csB;
+      S.bsCount++;
+      capture.value = capture.value.slice(0, delFrom) + capture.value.slice(ceB);
+      try { capture.setSelectionRange(delFrom, delFrom); } catch (err) {}
+      capture.dispatchEvent(new Event("input", { bubbles: true }));
       return;
     }
     if (e.key && e.key.length === 1) {
       e.preventDefault(); focusCapture();
       if (!S.finished) {
-        capture.value += e.key;
+        /* v24 senior pass: same desync — this used to append at the
+           very end even when the free cursor sat mid-text. Insert at
+           the caret (replacing any selection), like the native path. */
+        const csT = capture.selectionStart, ceT = capture.selectionEnd;
+        if (csT == null) {
+          capture.value += e.key;
+        } else {
+          capture.value = capture.value.slice(0, csT) + e.key + capture.value.slice(ceT);
+          try { capture.setSelectionRange(csT + 1, csT + 1); } catch (err) {}
+        }
         capture.dispatchEvent(new Event("input", { bubbles: true }));
       }
       return;
     }
     if (document.activeElement !== capture) focusCapture();
   });
+  /* v24 senior pass: paste is blocked in the typing capture. Real
+     exam software allows no paste; without this, pasted text injected
+     the whole clipboard as typed content through the normal input
+     event (and on a backspace-disabled stage it also bypassed the
+     editing rules). The custom-test / practise-text INTAKE textareas
+     (#ctText, #pasteText) are not typing captures — pasting there is
+     their purpose and stays allowed. */
+  capture.addEventListener("paste", function (e) { e.preventDefault(); });
   capture.addEventListener("blur", function () { typeBox.classList.remove("focused"); });
 
   /* ---------- scoring helpers (verbatim) ---------- */
@@ -1369,7 +1503,7 @@ export function mountHcmStage(container, opts) {
     const show = S.started && !S.finished;
     sb.style.display = show ? "" : "none";
     if (show) {
-      const ready = S.target.length > 0 && S.typed.length >= S.target.length;
+      const ready = S.target.length > 0 && textComplete();
       if (isExamCtx()) sb.textContent = ready ? "✓ Submit result" : "Submit";
       else sb.textContent = ready ? "✓ Finish" : "Finish";
       sb.classList.toggle("big", ready);
@@ -1429,6 +1563,15 @@ export function mountHcmStage(container, opts) {
     if (opts.initialIsDrill === false) { S.isDrill = false; }
   }
   if (S.paperView) { updatePaperSheet(); paintPaperLayout(); }
+  /* v24 QA fix (Defect B): entering a mock from a scrolled hub used
+     to leave the stage wherever the hub's scroll position put it —
+     in SCREEN view the command bar could land up to ~16px under the
+     timer pill, because scrollStageIntoView ran only on the Paper
+     toggle. Exam mounts now anchor on entry too, to the same mark
+     (the command bar at header + pill clearance). Practice mounts
+     are deliberately not anchored — their entry behaviour is
+     exactly as before. */
+  if (pill) requestAnimationFrame(scrollStageIntoView);
 
   return {
     destroy: function () { clearInterval(S.timer); zen.destroy(); more.destroy(); if (pill) pill.destroy(); },
@@ -1487,7 +1630,7 @@ export function mountExamStage(container, opts) {
       '<div id="exStage" style="display:none">' +
         '<div class="exPassage" id="exPassage"></div>' +
         '<div class="exTypedWrap" id="exTypedWrap"><div id="exTyped"></div>' +
-          '<textarea id="exCapture" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type here"></textarea>' +
+          '<textarea id="exCapture" rows="3" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Type here"></textarea>' +
         '</div>' +
         '<div class="stage-actions">' +
           '<button class="btn" type="button" id="exSubmit">Submit test</button>' +
@@ -1528,6 +1671,32 @@ export function mountExamStage(container, opts) {
     const pp = bar.querySelector('[data-act="paper"]'); if (pp) { pp.disabled = true; pp.setAttribute("data-tip", "This exam is typed on screen"); }
     if (!opts.silo) { const ps = bar.querySelector('[data-act="passage"]'); if (ps) ps.disabled = true; }
     slot.appendChild(bar);
+  }
+  /* v24 QA fix (Defect B, EX stage): the same mount anchoring the HCM
+     stage got — entering from a scrolled hub otherwise leaves this
+     stage at the hub's scroll position, with the command bar up
+     under the timer pill. Land #exBar at header + pill clearance on
+     entry, with the same verify-and-correct settle passes (async
+     content can shift the stage briefly after mount). */
+  function anchorExBar() {
+    const anchor = q("#exBar"); if (!anchor) return;
+    const hdr = document.querySelector(".site-header");
+    const clearance = function () {
+      const hh = hdr ? hdr.getBoundingClientRect().height : 0;
+      return hh + 8 + (pill.el.getBoundingClientRect().height || 0) + 8;
+    };
+    const y = anchor.getBoundingClientRect().top + window.scrollY - clearance();
+    if (!(y > 0)) return;
+    window.scrollTo(0, y);
+    const correct = function () {
+      if (!anchor.isConnected) return;
+      const maxY = document.documentElement.scrollHeight - window.innerHeight;
+      if (window.scrollY >= maxY - 1) return;
+      const off = anchor.getBoundingClientRect().top - clearance();
+      if (Math.abs(off) > 4) window.scrollTo(0, window.scrollY + off);
+    };
+    requestAnimationFrame(correct);
+    [200, 600, 1200, 2000].forEach(function (ms) { setTimeout(correct, ms); });
   }
   /* v21: text size on this stage's surfaces — the passage and the
      typed display — from the same shared step (module-level reader). */
@@ -1688,6 +1857,10 @@ export function mountExamStage(container, opts) {
       if (cs != null) { EX.caret = cs; renderExTyped(); }
     }
   });
+  /* v24 senior pass: paste blocked here too — see the HCM capture's
+     paste listener. On this stage it additionally mattered for RRB,
+     where backspace is disabled: a paste injected uneditable text. */
+  exCaptureEl.addEventListener("paste", function (e) { e.preventDefault(); });
   exCaptureEl.addEventListener("input", function () {
     if (EX.finished) return;
     const v = exCaptureEl.value;
@@ -1802,6 +1975,7 @@ export function mountExamStage(container, opts) {
   paintBar();
   applyExTypeFont();
   openExamTest(EX.test);
+  requestAnimationFrame(anchorExBar); /* v24 QA fix (Defect B): anchor on entry, as the HCM stage does */
 
   return {
     destroy: function () { clearInterval(EX.timer); zen.destroy(); more.destroy(); pill.destroy(); },
